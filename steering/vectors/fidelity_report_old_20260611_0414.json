@@ -1,0 +1,58 @@
+{
+  "_meta": {
+    "alpha": 0.15,
+    "hi": 0.95,
+    "lo": 0.05,
+    "tokens": 110,
+    "phrases": [
+      "Hablame de un dia cualquiera."
+    ],
+    "vectors": "control_vectors_caa_white.npy"
+  },
+  "d023_consciencia": {
+    "effect": -0.1007,
+    "z": -0.93,
+    "rank": 27,
+    "sign_ok": false
+  },
+  "d090_divinidad": {
+    "effect": 0.0175,
+    "z": 0.38,
+    "rank": 66,
+    "sign_ok": true,
+    "top_movers": [
+      [
+        "d051_valentía",
+        0.365
+      ],
+      [
+        "d096_dificultad_de_ejecución",
+        -0.266
+      ],
+      [
+        "d014_fragilidad",
+        -0.225
+      ],
+      [
+        "d088_peligrosidad_social",
+        -0.22
+      ],
+      [
+        "d094_caos_entropía",
+        -0.219
+      ],
+      [
+        "d066_complejidad_lógica",
+        -0.205
+      ],
+      [
+        "d076_legalidad",
+        0.189
+      ],
+      [
+        "d062_estrés",
+        -0.181
+      ]
+    ]
+  }
+}

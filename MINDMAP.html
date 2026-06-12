@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>embtoconcept + steering — Mind Map</title>
+<style>
+  :root {
+    --bg: #0d1117; --panel: #161b22; --card: #1c2128;
+    --text: #c9d1d9; --dim: #8b949e; --line: #30363d;
+    --blue: #58a6ff; --green: #3fb950; --orange: #d29922;
+    --red: #f85149; --purple: #bc8cff; --cyan: #39c5cf; --pink: #ff7b72;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font: 14px/1.45 "Segoe UI", system-ui, sans-serif;
+  }
+  header {
+    position: sticky; top: 0; z-index: 10; background: var(--panel);
+    border-bottom: 1px solid var(--line); padding: 10px 18px;
+    display: flex; align-items: center; gap: 14px; flex-wrap: wrap;
+  }
+  header h1 { font-size: 16px; margin: 0; color: var(--blue); font-weight: 600; }
+  header .sub { color: var(--dim); font-size: 12px; }
+  header button {
+    background: var(--card); color: var(--text); border: 1px solid var(--line);
+    border-radius: 6px; padding: 4px 10px; cursor: pointer; font-size: 12px;
+  }
+  header button:hover { border-color: var(--blue); }
+  header input {
+    background: var(--card); color: var(--text); border: 1px solid var(--line);
+    border-radius: 6px; padding: 4px 10px; font-size: 12px; width: 220px;
+  }
+  #map { padding: 24px 18px 80px; }
+
+  /* tree as mind map */
+  ul.tree, ul.tree ul { list-style: none; margin: 0; padding-left: 26px; }
+  ul.tree ul { border-left: 1px solid var(--line); margin-left: 9px; }
+  li { margin: 3px 0; position: relative; }
+  .node {
+    display: inline-flex; align-items: baseline; gap: 7px;
+    background: var(--card); border: 1px solid var(--line);
+    border-radius: 8px; padding: 4px 10px; cursor: default;
+    max-width: 980px;
+  }
+  .node.clickable { cursor: pointer; }
+  .node:hover { border-color: var(--dim); }
+  .twist { color: var(--dim); font-size: 11px; width: 11px; display: inline-block; }
+  .name { font-weight: 600; white-space: nowrap; }
+  .file { font-family: Consolas, monospace; font-size: 12.5px; }
+  .desc { color: var(--dim); font-size: 12.5px; }
+  .io { color: var(--cyan); font-family: Consolas, monospace; font-size: 11.5px; }
+  .tag {
+    font-size: 10px; border-radius: 4px; padding: 1px 6px; font-weight: 600;
+    letter-spacing: .3px; white-space: nowrap;
+  }
+  .tag.gpu { background: #3d1d1d; color: var(--red); }
+  .tag.nogpu { background: #15301c; color: var(--green); }
+  .tag.gui { background: #2b2440; color: var(--purple); }
+  .tag.legacy { background: #332a14; color: var(--orange); }
+  .tag.artifact { background: #10303a; color: var(--cyan); }
+  .tag.test { background: #2d1530; color: #ff9bce; }
+  li.collapsed > ul { display: none; }
+  li.hit > .node { border-color: var(--orange); box-shadow: 0 0 0 1px var(--orange); }
+  li.dimmed { opacity: .25; }
+
+  /* branch accents */
+  .b-blue   > .node { border-left: 3px solid var(--blue); }
+  .b-green  > .node { border-left: 3px solid var(--green); }
+  .b-orange > .node { border-left: 3px solid var(--orange); }
+  .b-purple > .node { border-left: 3px solid var(--purple); }
+  .b-cyan   > .node { border-left: 3px solid var(--cyan); }
+  .b-red    > .node { border-left: 3px solid var(--red); }
+  .b-pink   > .node { border-left: 3px solid var(--pink); }
+
+  .root > .node {
+    background: linear-gradient(135deg, #13233a, #1c2128);
+    border-color: var(--blue); padding: 8px 16px; font-size: 15px;
+  }
+  footer { color: var(--dim); font-size: 11px; padding: 12px 18px; border-top: 1px solid var(--line); }
+</style>
+</head>
+<body>
+<header>
+  <h1>🧠 embtoconcept</h1>
+  <span class="sub">interpretable 104-dim semantic space + LLM steering · map of both projects · 2026-06-11</span>
+  <button onclick="setAll(false)">Expand all</button>
+  <button onclick="setAll(true)">Collapse all</button>
+  <input id="q" placeholder="filter… (e.g. fidelity, .npy, judge)" oninput="filter(this.value)">
+</header>
+
+<div id="map">
+<ul class="tree">
+<li class="root">
+  <span class="node"><span class="name">Humanized Embeddings — embtoconcept</span>
+  <span class="desc">384 opaque dims → 104 human-readable axes → explore · arithmetic · steer a live LLM</span></span>
+  <ul>
+
+  <!-- ════════ 1. CORE IDEA ════════ -->
+  <li class="b-blue">
+    <span class="node"><span class="name">① Core idea</span>
+    <span class="desc">an LLM as a calibrated measuring instrument</span></span>
+    <ul>
+      <li><span class="node"><span class="desc">104 axes in 9 families (physics → matter → life → senses → emotion → cognition → society → metaphysics → action), each anchored by two absolute extremes (0.0 / 1.0)</span></span></li>
+      <li><span class="node"><span class="desc">One dimension per LLM call · low temperature (≈0.1) · regex-parse the float · clamp [0,1]</span></span></li>
+      <li><span class="node"><span class="desc">Train a small MLP to predict the 104 scores straight from the 384-dim MiniLM embedding</span></span></li>
+      <li><span class="node"><span class="desc">Honesty loop: 30_normalize.py flags dead/correlated axes, steering/ proves which are causally real → both feed back into axis design</span></span></li>
+    </ul>
+  </li>
+
+  <!-- ════════ 2. DIMENSION PIPELINE ════════ -->
+  <li class="b-green">
+    <span class="node"><span class="name">② Dimension-building pipeline</span>
+    <span class="desc">RECIPE.md — the reproducible runbook</span></span>
+    <ul>
+      <li><span class="node"><span class="file">10_define_dimensions.py</span><span class="desc">defines the 104 axes (DIMENSIONS_DB: name + two anchors)</span><span class="io">→ master_dimensions_prompts.json</span></span></li>
+      <li><span class="node"><span class="file">20_score_concepts.py</span><span class="tag gpu">GPU</span><span class="desc">the humanizer: scores every concept on all 104 axes, local Llama-3-8B, incremental save</span><span class="io">→ humanized_embeddings_dataset.json (5,654 concepts)</span></span></li>
+      <li><span class="node"><span class="file">30_normalize.py</span><span class="tag nogpu">no GPU</span><span class="desc">percentile clip 5–95 + robust IQR scale to [0.05,0.95]; reports dead/dominant/correlated dims (|r|>0.85)</span><span class="io">→ …_norm.json</span></span></li>
+      <li><span class="node"><span class="file">40_build_training_data.py</span><span class="desc">MiniLM-encodes each concept (X), stacks 104 scores sorted by dim id (Y)</span><span class="io">→ dataset_X_embeddings.npy (5578×384) · dataset_Y_human.npy (5578×104) · dataset_metadata.json (pins dim order)</span></span></li>
+      <li><span class="node"><span class="file">50_train_translator.py</span><span class="desc">MLP 384→512→256→104 (sigmoid), MSE, Adam 1e-3, 80/20 split</span><span class="io">→ semantic_translator.pth ← THE deliverable</span></span></li>
+      <li><span class="node"><span class="file">51_train_reverse.py</span><span class="desc">reverse map: author a profile in human terms, find what lives there</span><span class="io">→ reverse_translator.pth (104→384)</span></span></li>
+    </ul>
+  </li>
+
+  <!-- ════════ 3. CORPUS & EXPLORER ════════ -->
+  <li class="b-cyan">
+    <span class="node"><span class="name">③ Corpus &amp; explorer</span>
+    <span class="desc">project millions of terms into the human space</span></span>
+    <ul>
+      <li><span class="node"><span class="file">60_download_corpus.py</span><span class="desc">ConceptNet 5.7 + Wikipedia titles + Wikidata + OpenSubtitles, cleaned &amp; deduped</span><span class="io">→ corpus/corpus_final.txt</span></span></li>
+      <li><span class="node"><span class="file">70_build_table.py</span><span class="tag gpu">GPU</span><span class="desc">batch: corpus → MiniLM → translator; memmap storage, checkpoint/resume</span><span class="io">→ tabla_embeddings.npy · tabla_words.json · tabla_stats.npy</span></span></li>
+      <li><span class="node"><span class="file">80_build_faiss_index.py</span><span class="desc">nearest-neighbour index over the humanized table</span><span class="io">→ faiss_index.bin</span></span></li>
+      <li><span class="node"><span class="file">90_query_explorer.py</span><span class="tag gui">interactive</span><span class="desc">the toy 🎮</span></span>
+        <ul>
+          <li><span class="node"><span class="desc">neighbours <span class="io">priest</span> · arithmetic <span class="io">+ king woman - man</span> · interpolate <span class="io">~ science mysticism</span> · top-by-dim <span class="io">! religiosity</span> · profile <span class="io">? AI</span> · polygraph <span class="io">pg t1 | t2</span> · anomaly detector</span></span></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+
+  <!-- ════════ 4. STEERING ════════ -->
+  <li class="b-red">
+    <span class="node"><span class="name">④ steering/ — causal verification &amp; control</span>
+    <span class="desc">do the 104 axes really exist inside Llama-3.1-8B?</span></span>
+    <ul>
+      <li><span class="node"><span class="file">config.py</span><span class="desc">single source of truth</span></span>
+        <ul>
+          <li><span class="node"><span class="desc">derive layers 12–19 · inject layer 15 only · ALPHA 0.12 (fraction of residual norm) · STEER_MODE "clamp" (P-controller, KP=1) · DERIVE_MODE "caa" · WHITEN=True (z-score vs 800 ref concepts kills outlier coords)</span></span></li>
+        </ul>
+      </li>
+      <li><span class="node"><span class="name">derivation chain</span></span>
+        <ul>
+          <li><span class="node"><span class="file">generate_stimuli.py</span><span class="tag gpu">GPU</span><span class="desc">Llama writes ~24 rich sentences per pole per dim — semantic (not lexical) contrast; editable cache</span><span class="io">→ vectors/caa_stimuli.json</span></span></li>
+          <li><span class="node"><span class="file">derive_vectors.py</span><span class="tag gpu">GPU</span><span class="desc">CAA: mean(residual hi-pole) − mean(lo-pole) per dim per layer, whitened, unit-norm</span><span class="io">→ control_vectors_caa_white.npy (8×104×4096) + control_meta…json</span></span></li>
+          <li><span class="node"><span class="file">geometry.py</span><span class="tag nogpu">no GPU</span><span class="desc">health check: effective rank (participation ratio + entropy rank). ~1–2 = collapse, ~15–18 = healthy</span></span></li>
+        </ul>
+      </li>
+      <li><span class="node"><span class="name">injection engine</span></span>
+        <ul>
+          <li><span class="node"><span class="file">steering_model.py</span><span class="tag gpu">GPU</span><span class="desc">SteeredLlama: forward hooks on residual stream; steering = Σ (pᵢ−0.5)·cvᵢ; "add": h += α|h|·v · "clamp": h += KP·(α|h| − h·v)·v (setpoint, only pushes what's missing)</span></span></li>
+          <li><span class="node"><span class="file">translator.py</span><span class="desc">Humanizer: text → MiniLM → semantic_translator.pth → 104 profile. Reused as THE JUDGE</span></span></li>
+        </ul>
+      </li>
+      <li><span class="node"><span class="name">measurement chain (the existing automatic judge)</span><span class="tag test">judge</span></span>
+        <ul>
+          <li><span class="node"><span class="file">fidelity.py</span><span class="tag gpu">GPU</span><span class="tag test">judge</span><span class="desc">closed loop per dim: generate hi(0.95)/lo(0.05) isolated, greedy, domain-matched probes; judge = Humanizer; stores full 104-d effect vector; resumable, version-guarded</span><span class="io">→ fidelity_report.json</span></span></li>
+          <li><span class="node"><span class="file">analyze.py</span><span class="tag nogpu">no GPU</span><span class="desc">kin-aware scorecard: subtract common mode of NON-related dims (kinship = |r|>0.4 in human table) → z_kin, rank_kin, sign</span><span class="io">→ scorecard.md — 26/104 real dials (z_kin ≥ 1.5, sign OK)</span></span></li>
+          <li><span class="node"><span class="file">tuner.py</span><span class="tag gpu">GPU</span><span class="desc">alpha sweep (0.15/0.25/0.35), one subprocess per alpha, merges per-dim optimum</span><span class="io">→ fidelity_aXXX.json · afinacion.md</span></span></li>
+          <li><span class="node"><span class="file">harmony.py</span><span class="tag gpu">GPU</span><span class="desc">resonance: alignment (prompt already lives there?) vs effect vs quality (relative perplexity under clean model)</span></span></li>
+          <li><span class="node"><span class="file">night_run.py</span><span class="desc">unattended chain: stimuli → backup → derive → geometry → fidelity; each step its own process (VRAM freed); keep-awake; logs</span><span class="io">→ vectors/night_*.log</span></span></li>
+        </ul>
+      </li>
+      <li><span class="node"><span class="name">mechanics tests (no judgement, pure correctness)</span><span class="tag test">test</span></span>
+        <ul>
+          <li><span class="node"><span class="file">verify_mechanics.py</span><span class="tag nogpu">no GPU</span><span class="desc">numpy-only toy brain: shapes, flat-0.5-profile ⇒ zero steering, max-dim ⇒ aligned steering</span></span></li>
+          <li><span class="node"><span class="file">smoke_test.py</span><span class="tag nogpu">CPU ok</span><span class="desc">SmolLM2-135M (same arch): [A] hook attaches [B] steering=0 ⇒ identical output [C] ≠0 changes generation [D] full 104→cv→inject path</span></span></li>
+          <li><span class="node"><span class="file">blind_test.py</span><span class="tag gpu">GPU</span><span class="desc">anti-pareidolia: random dims, unlabeled texts, human matches letter→dim, scored vs chance</span></span></li>
+        </ul>
+      </li>
+      <li><span class="node"><span class="name">cockpits</span><span class="tag gui">GUI</span></span>
+        <ul>
+          <li><span class="node"><span class="file">console.py</span><span class="desc">ChronoLLMPuppet: validated presets + 4 note slots; note = (dim, value, layer, alpha) — voicing across layers</span></span></li>
+          <li><span class="node"><span class="file">ui.py</span><span class="desc">104 live sliders, neutral vs steered side by side</span></span></li>
+          <li><span class="node"><span class="file">demo.py</span> / <span class="file">sweep.py</span><span class="desc">CLI: one phrase neutral vs steered; sweep = several alphas at once, --voice notes</span></span></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+
+  <!-- ════════ 5. ARTIFACTS ════════ -->
+  <li class="b-purple">
+    <span class="node"><span class="name">⑤ Key artifacts</span><span class="tag artifact">data</span></span>
+    <ul>
+      <li><span class="node"><span class="io">master_dimensions_prompts.json</span><span class="desc">104 calibrated measurement prompts (the rulers)</span></span></li>
+      <li><span class="node"><span class="io">dataset_metadata.json</span><span class="desc">concepts + dimension_names — pins the dim order everything relies on</span></span></li>
+      <li><span class="node"><span class="io">semantic_translator.pth · reverse_translator.pth</span><span class="desc">the two maps (384↔104)</span></span></li>
+      <li><span class="node"><span class="io">dataset_X_embeddings.npy · dataset_Y_human.npy</span><span class="desc">training pairs (5578 × 384 / × 104)</span></span></li>
+      <li><span class="node"><span class="io">steering/vectors/control_vectors_caa_white.npy</span><span class="desc">(8 layers × 104 dims × 4096) unit-norm control vectors</span></span></li>
+      <li><span class="node"><span class="io">steering/vectors/fidelity_report*.json · scorecard.md</span><span class="desc">judge output + kin-corrected verdicts</span></span></li>
+    </ul>
+  </li>
+
+  <!-- ════════ 6. LEGACY ════════ -->
+  <li class="b-orange">
+    <span class="node"><span class="name">⑥ Experiments &amp; legacy</span><span class="tag legacy">superseded / side quests</span></span>
+    <ul>
+      <li><span class="node"><span class="file">legacy/index.py · legacy/index2.py</span><span class="tag legacy">legacy</span><span class="desc">earlier HF-transformers concept scorers, superseded by 20_score_concepts.py</span></span></li>
+      <li><span class="node"><span class="file">legacy/semantic_attention_injection.py</span><span class="tag legacy">legacy</span><span class="desc">v3 logit-bias steering (llama-cpp / Ollama) — pre-dates true activation steering in steering/</span></span></li>
+      <li><span class="node"><span class="file">legacy/cognitive_generator_v4.py</span><span class="tag gui">GUI</span><span class="desc">Tkinter sliders + Ollama/llama-cpp generation (logit/prompt bias era)</span></span></li>
+      <li><span class="node"><span class="file">semantic_console.py</span><span class="desc">forward+reverse console: query ↔ profile ↔ nearest concepts (uses both .pth)</span></span></li>
+      <li><span class="node"><span class="file">legacy/build_global_dictionary.py</span><span class="desc">top-20k Spanish frequency words → global_embeddings.npy / global_words.json</span></span></li>
+      <li><span class="node"><span class="file">conceptualizador/</span><span class="desc">4096-concept "semantic universe" variants scored via Ollama (llama) / GPT / Anthropic backends</span></span></li>
+      <li><span class="node"><span class="file">check_variance.py · debug_data.py</span><span class="desc">dataset vital signs &amp; debugging helpers</span></span></li>
+    </ul>
+  </li>
+
+  <!-- ════════ 7. STATUS & NEXT ════════ -->
+  <li class="b-pink">
+    <span class="node"><span class="name">⑦ Status &amp; next step</span></span>
+    <ul>
+      <li><span class="node"><span class="desc">5,654 concepts × 104 dims · translator trained on 5,578 pairs · <b>26/104 axes verified as causal dials</b> (top: necessity +4.2, speed of action +3.6, curiosity +3.6, anger +3.2, hardness +3.1)</span></span></li>
+      <li><span class="node"><span class="desc">Weak tail = fine-grained physics (mass, magnetism, radioactivity…) — same axes the text model scored noisily in step 2. Feedback target for axis redesign.</span></span></li>
+      <li><span class="node"><span class="tag test">next</span><span class="desc"><b>Automatic judge-test sequence</b> — formalize the fidelity loop into a regression suite: L0 math invariants → L1 artifact contracts → L2 small-model hook tests → L3 closed-loop fidelity on the 26 dials → L4 scorecard regression. See ARCHITECTURE.md §6.</span></span></li>
+    </ul>
+  </li>
+
+  </ul>
+</li>
+</ul>
+</div>
+
+<footer>embtoconcept · part of the Chrono family · generated 2026-06-11 · companion: ARCHITECTURE.md, README.md, RECIPE.md, PUBLICATION.md, steering/vectors/scorecard.md</footer>
+
+<script>
+  // collapsible nodes
+  document.querySelectorAll('#map li').forEach(li => {
+    const node = li.querySelector(':scope > .node');
+    const kids = li.querySelector(':scope > ul');
+    if (!node || !kids) return;
+    node.classList.add('clickable');
+    const tw = document.createElement('span');
+    tw.className = 'twist'; tw.textContent = '▾';
+    node.prepend(tw);
+    node.addEventListener('click', () => {
+      li.classList.toggle('collapsed');
+      tw.textContent = li.classList.contains('collapsed') ? '▸' : '▾';
+    });
+  });
+
+  function setAll(collapse) {
+    document.querySelectorAll('#map li').forEach(li => {
+      if (!li.querySelector(':scope > ul')) return;
+      if (li.classList.contains('root')) { li.classList.remove('collapsed'); return; }
+      li.classList.toggle('collapsed', collapse);
+      const tw = li.querySelector(':scope > .node > .twist');
+      if (tw) tw.textContent = collapse ? '▸' : '▾';
+    });
+  }
+
+  function filter(q) {
+    q = q.trim().toLowerCase();
+    const lis = document.querySelectorAll('#map li');
+    lis.forEach(li => li.classList.remove('hit', 'dimmed'));
+    if (!q) return;
+    lis.forEach(li => {
+      const node = li.querySelector(':scope > .node');
+      if (!node) return;
+      if (node.textContent.toLowerCase().includes(q)) {
+        li.classList.add('hit');
+        // expand ancestors
+        let p = li.parentElement;
+        while (p && p.id !== 'map') {
+          if (p.tagName === 'LI') {
+            p.classList.remove('collapsed');
+            const tw = p.querySelector(':scope > .node > .twist');
+            if (tw) tw.textContent = '▾';
+          }
+          p = p.parentElement;
+        }
+      } else {
+        li.classList.add('dimmed');
+      }
+    });
+    document.querySelectorAll('#map li.hit').forEach(hit => {
+      let p = hit.parentElement;
+      while (p && p.id !== 'map') {
+        if (p.tagName === 'LI') p.classList.remove('dimmed');
+        p = p.parentElement;
+      }
+      hit.querySelectorAll('li').forEach(d => d.classList.remove('dimmed'));
+    });
+  }
+</script>
+</body>
+</html>

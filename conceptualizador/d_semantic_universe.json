@@ -1,0 +1,2368 @@
+[
+  {
+    "id": "d0000_wave-particle_duality_manifestation",
+    "category_index": 0,
+    "category_group": "Fundamental Physics",
+    "subcategory": "Quantum Mechanics",
+    "name": "Wave-Particle Duality Manifestation",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Primarily Particle-like",
+      "max_label": "Primarily Wave-like"
+    },
+    "llama3_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Wave-Particle Duality Manifestation, representing the extent to which a phenomenon exhibits wave-like versus particle-like behavior. A lower score indicates predominantly particle-like behavior, while a higher score indicates predominantly wave-like behavior. \n\nREFERENCE SCALE - Wave-Particle Duality Manifestation: [0.0] -> Electron scattering (particle), [0.2] -> Atoms exhibiting diffraction (partially wave), [0.4] -> A photon in a single-slit experiment (wave), [0.6] -> Bose-Einstein Condensates (highly wave-like), [0.8] -> Gravitational waves (purely wave), [1.0] -> Cosmic Microwave Background (universal wave).\n\nReturn ONLY a float between 0.0 and 1.0. No explanation.\nScore for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0001_temperature_gradient_magnitude",
+    "category_index": 1,
+    "category_group": "Fundamental Physics",
+    "subcategory": "Thermodynamics",
+    "name": "Temperature Gradient Magnitude",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Isothermal / Uniform Temperature",
+      "max_label": "Extreme Temperature Differential"
+    },
+    "llama3_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Temperature Gradient Magnitude. This represents the difference in temperature across a given distance or within a system. A lower score indicates a nearly uniform temperature, while a higher score indicates a significant temperature difference. REFERENCE SCALE - Temperature Gradient Magnitude: [0.0] Subatomic Level / Uniform particle distribution; [0.2] Molecular simulation at equilibrium; [0.4] Human body core temperature; [0.6] Ocean currents affecting coastal climates; [0.8] Solar corona temperature variations; [1.0] Cosmic Microwave Background fluctuations. Return ONLY a float between 0.0 and 1.0. No explanation. Score for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0002_equilibrium_relaxation_time",
+    "category_index": 2,
+    "category_group": "Fundamental Physics",
+    "subcategory": "Thermodynamics",
+    "name": "Equilibrium Relaxation Time",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Instantaneous Equilibrium",
+      "max_label": "Extremely Slow Equilibrium"
+    },
+    "llama3_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Equilibrium Relaxation Time. This represents the time it takes for a system to return to a stable equilibrium state after a disturbance. A lower score indicates a rapid return to equilibrium, while a higher score indicates a slow and prolonged adjustment. REFERENCE SCALE - Equilibrium Relaxation Time: [0.0] Subatomic Level / Quantum superposition collapse; [0.2] Molecular vibration settling; [0.4] Human breathing cycle; [0.6] Atmospheric pressure changes over a day; [0.8] Planetary orbital precession; [1.0] Galactic rotation. Return ONLY a float between 0.0 and 1.0. No explanation. Score for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0003_system_complexity",
+    "category_index": 3,
+    "category_group": "Fundamental Physics",
+    "subcategory": "Thermodynamics",
+    "name": "System Complexity",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Subatomic System (few interacting components)",
+      "max_label": "Universal System (vast, interconnected components)"
+    },
+    "llama3_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring System Complexity, an assessment of the number of interacting components and their interdependencies within a thermodynamic system. This reflects the difficulty in predicting the system's behavior.\n\nREFERENCE SCALE - System Complexity: [0.0] Subatomic Level / Planck Scale - Consider a single electron. [0.2] Molecular Level / Nanoscopic - Consider a small protein. [0.4] Human Level / Everyday Object - Consider a car engine. [0.6] Geographic Level / Planetary - Consider a weather system. [0.8] Stellar Level / Solar System - Consider a star's convective zone. [1.0] Galactic Level / Universal - Consider the lifecycle of a galaxy.\n\nReturn ONLY a float between 0.0 and 1.0. No explanation.\nScore for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0004_phase_transition_susceptibility",
+    "category_index": 4,
+    "category_group": "Fundamental Physics",
+    "subcategory": "Thermodynamics",
+    "name": "Phase Transition Susceptibility",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Highly Stable Phase (minimal perturbation required)",
+      "max_label": "Highly Unstable Phase (easily transitions)"
+    },
+    "llama3_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Phase Transition Susceptibility, evaluating how readily a thermodynamic system shifts between distinct phases (solid, liquid, gas, plasma, etc.). This reflects the ease with which external conditions can induce a change in state.\n\nREFERENCE SCALE - Phase Transition Susceptibility: [0.0] Subatomic Level / Planck Scale - A fundamental particle's existence state. [0.2] Molecular Level / Nanoscopic - A crystal lattice at absolute zero. [0.4] Human Level / Everyday Object - Ice at 0°C. [0.6] Geographic Level / Planetary - The Earth’s core-mantle boundary. [0.8] Stellar Level / Solar System - The photosphere of a star. [1.0] Galactic Level / Universal - The conditions leading to the formation of black holes.\n\nReturn ONLY a float between 0.0 and 1.0. No explanation.\nScore for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0005_gravitational_influence_radius",
+    "category_index": 5,
+    "category_group": "Fundamental Physics",
+    "subcategory": "Astrophysics",
+    "name": "Gravitational Influence Radius",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Subatomic Particle",
+      "max_label": "Universal Structure"
+    },
+    "llama3_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Gravitational Influence Radius, which represents the effective sphere of gravitational dominance exerted by a concept. This describes the extent to which the concept's gravity influences the surrounding spacetime.  It is not simply mass, but the *reach* of that gravitational effect. \n\nREFERENCE SCALE - Gravitational Influence Radius: [0.0] Subatomic Level / Planck Scale (particle bound within an atom), [0.2] Molecular Level / Nanoscopic (small dust grain), [0.4] Human Level / Everyday Object (Earth's gravity affecting a person), [0.6] Geographic Level / Planetary (a planet’s gravitational influence on its moons), [0.8] Stellar Level / Solar System (a star’s gravitational influence on its planets), [1.0] Galactic Level / Universal (a supermassive black hole’s influence on a galaxy cluster).\n\nReturn ONLY a float between 0.0 and 1.0. No explanation.\nScore for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0006_cosmic_timeline_duration",
+    "category_index": 6,
+    "category_group": "Fundamental Physics",
+    "subcategory": "Astrophysics",
+    "name": "Cosmic Timeline Duration",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Planck Time",
+      "max_label": "Age of the Universe"
+    },
+    "llama3_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Cosmic Timeline Duration, representing the concept’s existence within the cosmic timeline. This reflects how long the concept has persisted relative to the age of the universe. A short duration means it's a fleeting phenomenon, a long duration means it's a fundamental, enduring aspect of the cosmos.\n\nREFERENCE SCALE - Cosmic Timeline Duration: [0.0] Subatomic Level / Planck Time (a quantum event lasting an extremely short time), [0.2] Molecular Level / Nanoscopic (the lifespan of a radioactive isotope), [0.4] Human Level / Everyday Object (the lifespan of a human), [0.6] Geographic Level / Planetary (the age of a geological feature like a mountain range), [0.8] Stellar Level / Solar System (the lifespan of a star), [1.0] Galactic Level / Universal (the age of the universe).\n\nReturn ONLY a float between 0.0 and 1.0. No explanation.\nScore for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0007_energetic_density_concentration",
+    "category_index": 7,
+    "category_group": "Fundamental Physics",
+    "subcategory": "Astrophysics",
+    "name": "Energetic Density Concentration",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Vacuum Energy",
+      "max_label": "Singularity"
+    },
+    "llama3_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Energetic Density Concentration, representing the degree to which energy is compressed or concentrated within the concept. This reflects the intensity of energy present, from diffuse background energy to highly localized, extreme densities. \n\nREFERENCE SCALE - Energetic Density Concentration: [0.0] Subatomic Level / Planck Scale (vacuum energy), [0.2] Molecular Level / Nanoscopic (chemical bond energy), [0.4] Human Level / Everyday Object (light from a lamp), [0.6] Geographic Level / Planetary (energy emitted by a planet’s core), [0.8] Stellar Level / Solar System (energy radiating from a star), [1.0] Galactic Level / Universal (energy density near a black hole singularity).\n\nReturn ONLY a float between 0.0 and 1.0. No explanation.\nScore for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0008_spatial_dimensionality_embedding",
+    "category_index": 8,
+    "category_group": "Fundamental Physics",
+    "subcategory": "Astrophysics",
+    "name": "Spatial Dimensionality Embedding",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Point-like Existence",
+      "max_label": "Spacetime Fabric"
+    },
+    "llama3_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Spatial Dimensionality Embedding, representing the degree to which a concept is interwoven with and defined by spacetime.  This isn’t about *number* of dimensions, but how fundamentally the concept’s existence is tied to the fabric of spacetime. \n\nREFERENCE SCALE - Spatial Dimensionality Embedding: [0.0] Subatomic Level / Planck Scale (a point-like particle considered dimensionless), [0.2] Molecular Level / Nanoscopic (a molecule occupying a small volume), [0.4] Human Level / Everyday Object (a macroscopic object possessing volume and location), [0.6] Geographic Level / Planetary (a planet’s influence on spacetime curvature), [0.8] Stellar Level / Solar System (a star’s significant gravitational lensing effect), [1.0] Galactic Level / Universal (the warping of spacetime by a supermassive black hole).\n\nReturn ONLY a float between 0.0 and 1.0. No explanation.\nScore for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0009_chromatic_aberration_severity",
+    "category_index": 9,
+    "category_group": "Fundamental Physics",
+    "subcategory": "Optics",
+    "name": "Chromatic Aberration Severity",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Absent/Negligible",
+      "max_label": "Extreme/Dispersive"
+    },
+    "llama3_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Chromatic Aberration Severity, representing the degree to which different wavelengths of light are focused at different points, resulting in color fringing or blurring. A low score indicates minimal chromatic aberration; a high score indicates significant color separation.\nREFERENCE SCALE - Chromatic Aberration Severity: [0.0] Subatomic Level / Planck Scale (No light interaction), [0.2] Molecular Level / Nanoscopic (Minimal wavelength differences), [0.4] Human Level / Everyday Object (Slight color fringing in lenses), [0.6] Geographic Level / Planetary (Atmospheric scattering affects color), [0.8] Stellar Level / Solar System (Spectral lines separation), [1.0] Galactic Level / Universal (Redshift and blueshift across vast distances).\nReturn ONLY a float between 0.0 and 1.0. No explanation.\nScore for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0010_polarization_degree",
+    "category_index": 10,
+    "category_group": "Fundamental Physics",
+    "subcategory": "Optics",
+    "name": "Polarization Degree",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Unpolarized/Random",
+      "max_label": "Completely Polarized"
+    },
+    "llama3_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Polarization Degree, representing the alignment of the electric field vector in electromagnetic radiation. A score of 0.0 indicates completely unpolarized light (random orientations), while a score of 1.0 indicates that all electric field vectors are perfectly aligned.\nREFERENCE SCALE - Polarization Degree: [0.0] Subatomic Level / Planck Scale (No discernible polarization), [0.2] Molecular Level / Nanoscopic (Random molecular orientations), [0.4] Human Level / Everyday Object (Reflected light from water surface, partially polarized), [0.6] Geographic Level / Planetary (Magnetic fields aligning charged particles), [0.8] Stellar Level / Solar System (Synchrotron radiation), [1.0] Galactic Level / Universal (Cosmic Microwave Background).\nReturn ONLY a float between 0.0 and 1.0. No explanation.\nScore for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0011_refractive_index_anisotropy",
+    "category_index": 11,
+    "category_group": "Fundamental Physics",
+    "subcategory": "Optics",
+    "name": "Refractive Index Anisotropy",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Isotropic (Uniform)",
+      "max_label": "Highly Anisotropic (Direction-Dependent)"
+    },
+    "llama3_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Refractive Index Anisotropy, representing the variation in refractive index with direction. A score of 0.0 indicates an isotropic material (refractive index is the same in all directions), while a score of 1.0 indicates a highly anisotropic material (refractive index varies significantly with direction).\nREFERENCE SCALE - Refractive Index Anisotropy: [0.0] Subatomic Level / Planck Scale (Uniform fields), [0.2] Molecular Level / Nanoscopic (Slight structural variations), [0.4] Human Level / Everyday Object (Glass or water, approximately isotropic), [0.6] Geographic Level / Planetary (Crystalline structures with preferred orientation), [0.8] Stellar Level / Solar System (Magnetically aligned plasmas), [1.0] Galactic Level / Universal (Non-uniform distribution of matter).\nReturn ONLY a float between 0.0 and 1.0. No explanation.\nScore for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0012_optical_path_length_variance",
+    "category_index": 12,
+    "category_group": "Fundamental Physics",
+    "subcategory": "Optics",
+    "name": "Optical Path Length Variance",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Deterministic/Constant",
+      "max_label": "Chaotic/Variable"
+    },
+    "llama3_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Optical Path Length Variance, representing the degree of variation in the distance light travels through a system. A score of 0.0 indicates a perfectly predictable and constant path length, while a score of 1.0 indicates highly unpredictable and variable path length due to scattering or complex geometries.\nREFERENCE SCALE - Optical Path Length Variance: [0.0] Subatomic Level / Planck Scale (Quantum tunneling, predictable paths), [0.2] Molecular Level / Nanoscopic (Ordered crystal lattices), [0.4] Human Level / Everyday Object (Reflections in a mirror, predictable), [0.6] Geographic Level / Planetary (Atmospheric turbulence, moderate variability), [0.8] Stellar Level / Solar System (Gravitational lensing, significant distortion), [1.0] Galactic Level / Universal (Cosmic microwave background fluctuations).\nReturn ONLY a float between 0.0 and 1.0. No explanation.\nScore for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0013_frame-dragging_effect_magnitude",
+    "category_index": 13,
+    "category_group": "Fundamental Physics",
+    "subcategory": "Gravity",
+    "name": "Frame-Dragging Effect Magnitude",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "No Observable Dragging",
+      "max_label": "Significant Spacetime Distortion"
+    },
+    "llama3_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Frame-Dragging Effect Magnitude, which describes the twisting of spacetime caused by the rotation of massive objects. A score of 0.0 means no frame-dragging is present; 1.0 indicates substantial spacetime distortion due to rotation. REFERENCE SCALE - Frame-Dragging Effect Magnitude: [0.0] Subatomic Level / Planck Scale (no dragging); [0.2] Molecular Level / Nanoscopic (negligible dragging); [0.4] Human Level / Everyday Object (undetectable dragging); [0.6] Geographic Level / Planetary (minor dragging); [0.8] Stellar Level / Solar System (moderate dragging); [1.0] Galactic Level / Universal (significant distortion). Return ONLY a float between 0.0 and 1.0. No explanation. Score for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0014_field_entanglement_distance",
+    "category_index": 14,
+    "category_group": "Fundamental Physics",
+    "subcategory": "Electromagnetism",
+    "name": "Field Entanglement Distance",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Planck Length Scale",
+      "max_label": "Intergalactic Distance"
+    },
+    "llama3_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Field Entanglement Distance, the characteristic distance over which electromagnetic fields exhibit correlated behavior, even without direct physical contact. Consider how strongly interconnected the fields are across space. REFERENCE SCALE - Field Entanglement Distance: [0.0] Subatomic Level / Planck Scale (fields are highly localized); [0.2] Molecular Level / Nanoscopic (fields influence neighboring molecules); [0.4] Human Level / Everyday Object (fields of magnets interacting at a short distance); [0.6] Geographic Level / Planetary (geomagnetic field affecting auroras); [0.8] Stellar Level / Solar System (magnetic fields connecting stars to planets); [1.0] Galactic Level / Universal (hypothetical large-scale magnetic structure). Return ONLY a float between 0.0 and 1.0. No explanation. Score for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0015_radiative_inertia",
+    "category_index": 15,
+    "category_group": "Fundamental Physics",
+    "subcategory": "Electromagnetism",
+    "name": "Radiative Inertia",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Negligible Resistance to EM Radiation",
+      "max_label": "Extreme Resistance to EM Radiation"
+    },
+    "llama3_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Radiative Inertia, the opposition an entity presents to the influx or efflux of electromagnetic radiation.  Consider how difficult it is to change the radiative state of the entity. REFERENCE SCALE - Radiative Inertia: [0.0] Subatomic Level / Planck Scale (particles readily absorb/emit photons); [0.2] Molecular Level / Nanoscopic (transparent materials); [0.4] Human Level / Everyday Object (a black body absorber); [0.6] Geographic Level / Planetary (planetary albedo); [0.8] Stellar Level / Solar System (accretion disk resisting radiation pressure); [1.0] Galactic Level / Universal (dark matter’s interaction with cosmic microwave background). Return ONLY a float between 0.0 and 1.0. No explanation. Score for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0016_electromagnetic_field_penetration_depth",
+    "category_index": 16,
+    "category_group": "Fundamental Physics",
+    "subcategory": "Electromagnetism",
+    "name": "Electromagnetic Field Penetration Depth",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Subatomic Interaction",
+      "max_label": "Universal Interaction"
+    },
+    "llama3_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Electromagnetic Field Penetration Depth, which describes how deeply an electromagnetic field interacts with a given concept. Lower values indicate interactions largely confined to subatomic scales, while higher values indicate interactions extending across vast distances.\n\nREFERENCE SCALE - Electromagnetic Field Penetration Depth: [0.0] Subatomic Level / Planck Scale (e.g., electron spin interaction); [0.2] Molecular Level / Nanoscopic (e.g., dipole-dipole interaction in a crystal); [0.4] Human Level / Everyday Object (e.g., radio waves interacting with a person); [0.6] Geographic Level / Planetary (e.g., Earth's magnetic field shielding); [0.8] Stellar Level / Solar System (e.g., solar wind interaction with a planet’s magnetosphere); [1.0] Galactic Level / Universal (e.g., intergalactic magnetic fields).\n\nReturn ONLY a float between 0.0 and 1.0. No explanation.\nScore for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0017_collective_order_degree",
+    "category_index": 17,
+    "category_group": "Matter and Chemistry",
+    "subcategory": "States of Matter",
+    "name": "Collective Order Degree",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Disordered/Random",
+      "max_label": "Perfectly Ordered"
+    },
+    "llama3_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Collective Order Degree, which reflects the degree of predictable, repeating spatial arrangement of constituent components. A value of 0.0 represents a completely random, disordered system. A value of 1.0 represents a state of perfect, crystalline order. \n\nREFERENCE SCALE - Collective Order Degree: [0.0] Subatomic particles in a plasma; [0.2] A gas cloud; [0.4] A grain of sand; [0.6] A snowflake crystal; [0.8] A perfect single crystal diamond; [1.0] A Bose-Einstein condensate.\n\nReturn ONLY a float between 0.0 and 1.0. No explanation.\nScore for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0018_viscoelastic_response_strength",
+    "category_index": 18,
+    "category_group": "Matter and Chemistry",
+    "subcategory": "States of Matter",
+    "name": "Viscoelastic Response Strength",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Purely Elastic",
+      "max_label": "Purely Viscous"
+    },
+    "llama3_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Viscoelastic Response Strength, which describes the degree to which a material exhibits both elastic (spring-like) and viscous (fluid-like) behavior under deformation. A value of 0.0 represents a purely elastic material that immediately returns to its original shape. A value of 1.0 represents a purely viscous material that flows readily. \n\nREFERENCE SCALE - Viscoelastic Response Strength: [0.0] Steel spring; [0.2] Rubber band; [0.4] Silly Putty; [0.6] Honey; [0.8] Thick motor oil; [1.0] Water.\n\nReturn ONLY a float between 0.0 and 1.0. No explanation.\nScore for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0019_compressibility_magnitude",
+    "category_index": 19,
+    "category_group": "Matter and Chemistry",
+    "subcategory": "States of Matter",
+    "name": "Compressibility Magnitude",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Incompressible",
+      "max_label": "Highly Compressible"
+    },
+    "llama3_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Compressibility Magnitude, which represents how much the volume of a material changes under pressure. A value of 0.0 represents an incompressible material (volume change is negligible). A value of 1.0 represents a highly compressible material (volume change is significant). \n\nREFERENCE SCALE - Compressibility Magnitude: [0.0] Diamond; [0.2] Water; [0.4] Human body; [0.6] Air; [0.8] Foam; [1.0] Gas at low density.\n\nReturn ONLY a float between 0.0 and 1.0. No explanation.\nScore for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0020_intermolecular_adhesion_strength",
+    "category_index": 20,
+    "category_group": "Matter and Chemistry",
+    "subcategory": "States of Matter",
+    "name": "Intermolecular Adhesion Strength",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "No Adhesion",
+      "max_label": "Strong Adhesion"
+    },
+    "llama3_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Intermolecular Adhesion Strength, which indicates the strength of the attractive forces between molecules. A value of 0.0 represents a system with negligible intermolecular attraction. A value of 1.0 represents a system with very strong intermolecular forces. \n\nREFERENCE SCALE - Intermolecular Adhesion Strength: [0.0] Noble gas at high temperature; [0.2] Helium; [0.4] Nitrogen gas; [0.6] Water; [0.8] Molten glass; [1.0] Solid ice.\n\nReturn ONLY a float between 0.0 and 1.0. No explanation.\nScore for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0021_reaction_pathway_branching_factor",
+    "category_index": 21,
+    "category_group": "Matter and Chemistry",
+    "subcategory": "Reactions",
+    "name": "Reaction Pathway Branching Factor",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Linear, Single Product",
+      "max_label": "Extremely Complex, Many Products"
+    },
+    "llama3_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Reaction Pathway Branching Factor, which quantifies the number and complexity of possible reaction pathways and products. A score of 0.0 indicates a reaction proceeding through a single, well-defined pathway to a single product. A score of 1.0 indicates a reaction with an extremely complex network of pathways leading to a multitude of products. REFERENCE SCALE - Reaction Pathway Branching Factor: [0.0] Subatomic Level / Single Proton Decay; [0.2] Molecular Level / Simple Esterification; [0.4] Human Level / Combustion of Methane; [0.6] Geographic Level / Weather Pattern Formation; [0.8] Stellar Level / Stellar Nucleosynthesis; [1.0] Galactic Level / Galaxy Formation. Return ONLY a float between 0.0 and 1.0. No explanation. Score for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0022_reaction_rate_sensitivity_to_catalysis",
+    "category_index": 22,
+    "category_group": "Matter and Chemistry",
+    "subcategory": "Reactions",
+    "name": "Reaction Rate Sensitivity to Catalysis",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Unaffected by Catalysts",
+      "max_label": "Drastically Accelerated by Catalysts"
+    },
+    "llama3_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Reaction Rate Sensitivity to Catalysis, which reflects how much the reaction rate changes in the presence of a catalyst. A score of 0.0 indicates that the reaction is essentially unaffected by catalysts. A score of 1.0 indicates that the reaction is dramatically accelerated by even trace amounts of a catalyst. REFERENCE SCALE - Reaction Rate Sensitivity to Catalysis: [0.0] Subatomic Level / Radioactive Decay; [0.2] Molecular Level / Polymerization of Ethylene; [0.4] Human Level / Rust Formation; [0.6] Geographic Level / Erosion by Wind; [0.8] Stellar Level / Nuclear Fusion Initiation; [1.0] Galactic Level / Accretion Disk Formation. Return ONLY a float between 0.0 and 1.0. No explanation. Score for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0023_reaction_product_entropy_change",
+    "category_index": 23,
+    "category_group": "Matter and Chemistry",
+    "subcategory": "Reactions",
+    "name": "Reaction Product Entropy Change",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Decrease in Entropy (Order)",
+      "max_label": "Increase in Entropy (Disorder)"
+    },
+    "llama3_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Reaction Product Entropy Change which describes the overall change in entropy (disorder) of the system as a result of the reaction. A score of 0.0 indicates a reaction that leads to a decrease in entropy, creating a more ordered system. A score of 1.0 indicates a reaction that leads to a significant increase in entropy, producing a more disordered system. REFERENCE SCALE - Reaction Product Entropy Change: [0.0] Subatomic Level / Particle Condensation; [0.2] Molecular Level / Crystalline Formation; [0.4] Human Level / Freezing Water; [0.6] Geographic Level / Melting Ice Caps; [0.8] Stellar Level / Supernova Explosion; [1.0] Galactic Level / Black Hole Evaporation. Return ONLY a float between 0.0 and 1.0. No explanation. Score for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0024_structural_porosity",
+    "category_index": 24,
+    "category_group": "Matter and Chemistry",
+    "subcategory": "Materials",
+    "name": "Structural Porosity",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Dense/Impermeable",
+      "max_label": "Highly Porous/Permeable"
+    },
+    "llama3_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Structural Porosity, assessing the degree to which a material contains voids or interconnected spaces. REFERENCE SCALE - Structural Porosity: 0.0 represents a material like diamond, with virtually no pores and being impermeable. 0.5 represents a material like concrete, containing some pores which affect its density and strength. 1.0 represents a material like pumice, which is extremely porous and allows fluids to pass through easily. Return ONLY a float between 0.0 and 1.0. No explanation. Score for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0025_surface_acoustic_wave_dampening",
+    "category_index": 25,
+    "category_group": "Matter and Chemistry",
+    "subcategory": "Materials",
+    "name": "Surface Acoustic Wave Dampening",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Highly Reflective/Resonant",
+      "max_label": "Excellent Acoustic Wave Absorption"
+    },
+    "llama3_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Surface Acoustic Wave Dampening, assessing a material's ability to absorb or dissipate surface acoustic waves (sound waves traveling along a surface). REFERENCE SCALE - Surface Acoustic Wave Dampening: 0.0 represents a material like polished metal, which strongly reflects surface acoustic waves and can resonate. 0.5 represents glass, which has intermediate acoustic wave behavior. 1.0 represents a thick layer of felt, which effectively absorbs surface acoustic waves. Return ONLY a float between 0.0 and 1.0. No explanation. Score for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0026_dimensional_stability_index",
+    "category_index": 26,
+    "category_group": "Matter and Chemistry",
+    "subcategory": "Materials",
+    "name": "Dimensional Stability Index",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Highly Variable Dimensions",
+      "max_label": "Extremely Stable Dimensions"
+    },
+    "llama3_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Dimensional Stability Index, determining the degree to which a material's physical dimensions (length, width, height) remain consistent over time and under varying environmental conditions. REFERENCE SCALE - Dimensional Stability Index: 0.0 represents a material like clay, which shrinks and expands significantly with changes in moisture. 0.5 represents wood, which exhibits moderate dimensional changes due to humidity and temperature. 1.0 represents invar, a nickel-iron alloy, which has exceptionally low thermal expansion. Return ONLY a float between 0.0 and 1.0. No explanation. Score for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0027_crystallinity_index",
+    "category_index": 27,
+    "category_group": "Matter and Chemistry",
+    "subcategory": "Materials",
+    "name": "Crystallinity Index",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Amorphous",
+      "max_label": "Perfect Crystal"
+    },
+    "llama3_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Crystallinity Index, reflecting the degree to which a material's structure exhibits long-range order characteristic of a crystal. A score of 0.0 indicates a completely amorphous structure (e.g., amorphous glass, rubber). A score of 0.5 represents a partially crystalline material with significant amorphous regions (e.g., some polymers, poorly annealed ceramics). A score of 1.0 represents a material with a nearly perfect crystalline structure and minimal amorphous content (e.g., single-crystal silicon, diamond). \n\nREFERENCE SCALE - Crystallinity Index: 0.0 (Amorphous glass), 0.5 (Polymer with crystalline regions), 1.0 (Single-crystal diamond)\n\nReturn ONLY a float between 0.0 and 1.0. No explanation.\nScore for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0028_bioaccumulation_potential",
+    "category_index": 28,
+    "category_group": "Matter and Chemistry",
+    "subcategory": "Toxicity",
+    "name": "Bioaccumulation Potential",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Negligible accumulation in organisms",
+      "max_label": "High accumulation, biomagnification up the food chain"
+    },
+    "llama3_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Bioaccumulation Potential. This describes the tendency of a substance to accumulate within living organisms over time, potentially reaching harmful concentrations. Consider persistence, lipophilicity, and metabolic rate. \nREFERENCE SCALE - Bioaccumulation Potential: 0.0 - Arsenic (rapidly excreted); 0.5 - DDT (moderate accumulation); 1.0 - Mercury (significant accumulation and biomagnification). \nReturn ONLY a float between 0.0 and 1.0. No explanation.\nScore for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0029_target_organ_system_specificity",
+    "category_index": 29,
+    "category_group": "Matter and Chemistry",
+    "subcategory": "Toxicity",
+    "name": "Target Organ System Specificity",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Broad, systemic toxicity affecting multiple organ systems",
+      "max_label": "Highly specific toxicity primarily affecting one organ system"
+    },
+    "llama3_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Target Organ System Specificity. This describes the degree to which a toxic substance's effects are limited to particular organs or systems within a body, versus widespread systemic impact. \nREFERENCE SCALE - Target Organ System Specificity: 0.0 - Cyanide (affects multiple systems – respiratory, cardiovascular); 0.5 - Ethanol (primarily affects the liver and central nervous system); 1.0 - Botulinum toxin (highly specific to neuromuscular junctions). \nReturn ONLY a float between 0.0 and 1.0. No explanation.\nScore for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0030_reversibility_of_effects",
+    "category_index": 30,
+    "category_group": "Matter and Chemistry",
+    "subcategory": "Toxicity",
+    "name": "Reversibility of Effects",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Permanent damage or irreversible effects",
+      "max_label": "Full recovery and return to baseline after exposure ceases"
+    },
+    "llama3_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Reversibility of Effects. This assesses the likelihood that the harmful effects caused by a substance are temporary and can be fully resolved following cessation of exposure. \nREFERENCE SCALE - Reversibility of Effects: 0.0 - Asbestos (causes irreversible fibrosis); 0.5 - Antibiotics (temporary disruption of gut flora, often resolves); 1.0 - Mild exposure to sunlight (skin reddening, fully resolves). \nReturn ONLY a float between 0.0 and 1.0. No explanation.\nScore for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0031_acute_exposure_hazard",
+    "category_index": 31,
+    "category_group": "Matter and Chemistry",
+    "subcategory": "Toxicity",
+    "name": "Acute Exposure Hazard",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Minimal risk from short-term exposure",
+      "max_label": "Severe and immediate danger from short-term exposure"
+    },
+    "llama3_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Acute Exposure Hazard. This describes the immediate danger posed by a substance following a single or short-term exposure. Consider lethality, severity of symptoms, and speed of onset. \nREFERENCE SCALE - Acute Exposure Hazard: 0.0 - Salt (minimal risk from ingestion); 0.5 - Common household cleaning chemicals (irritant, but generally manageable); 1.0 - Botulinum toxin (extremely high lethality, rapid onset). \nReturn ONLY a float between 0.0 and 1.0. No explanation.\nScore for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0032_resource_acquisition_efficiency",
+    "category_index": 32,
+    "category_group": "Biology and Life",
+    "subcategory": "Physiology",
+    "name": "Resource Acquisition Efficiency",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Highly inefficient at acquiring necessary resources",
+      "max_label": "Highly efficient at acquiring necessary resources"
+    },
+    "llama3_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Resource Acquisition Efficiency. This describes the ability of an entity to obtain the resources needed for survival and reproduction. A Venus flytrap, requiring significant energy to capture prey, scores closer to 0.0.  A plant utilizing mycorrhizal fungi for nutrient uptake, scores closer to 1.0. A human, obtaining food through agriculture, falls somewhere in the middle. \nREFERENCE SCALE - Resource Acquisition Efficiency: 0.0 - Venus Flytrap (low efficiency, high energy investment), 0.5 - Human (moderate efficiency, reliant on complex systems), 1.0 - Plant with mycorrhizal fungi (high efficiency, minimal energy investment). \nReturn ONLY a float between 0.0 and 1.0. No explanation.\nScore for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0033_regenerative_capacity",
+    "category_index": 33,
+    "category_group": "Biology and Life",
+    "subcategory": "Physiology",
+    "name": "Regenerative Capacity",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "No regenerative abilities; minimal or no tissue repair or regrowth.",
+      "max_label": "Complete regenerative abilities; can regrow entire body parts or complex tissues."
+    },
+    "llama3_prompt": "- <|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Regenerative Capacity, the ability of an organism to regrow or repair damaged tissues and organs. \nREFERENCE SCALE - Regenerative Capacity: 0.0 - A mature human, limited tissue regeneration; 0.5 - A salamander, capable of regrowing limbs; 1.0 - A planarian worm, capable of regenerating an entire individual from a small fragment.\nReturn ONLY a float between 0.0 and 1.0. No explanation.\nScore for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0034_genetic_drift_susceptibility",
+    "category_index": 34,
+    "category_group": "Biology and Life",
+    "subcategory": "Genetics",
+    "name": "Genetic Drift Susceptibility",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Highly buffered against random allele frequency changes",
+      "max_label": "Extremely vulnerable to random allele frequency changes"
+    },
+    "llama3_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Genetic Drift Susceptibility. This represents the degree to which a population's genetic makeup is likely to change due to random chance events, particularly in the absence of strong selective pressures. REFERENCE SCALE - Genetic Drift Susceptibility: 0.0 - A population of *Drosophila melanogaster* maintained in a tightly controlled laboratory environment (buffered). 0.5 - A population of bottlenose dolphins in a relatively stable ocean environment. 1.0 - A population of extremely rare, isolated wildflowers on a small island, experiencing unpredictable localized events (vulnerable). Return ONLY a float between 0.0 and 1.0. No explanation. Score for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0035_transposable_element_load",
+    "category_index": 35,
+    "category_group": "Biology and Life",
+    "subcategory": "Genetics",
+    "name": "Transposable Element Load",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Minimal presence of transposable elements within the genome",
+      "max_label": "Genome heavily laden with active and inactive transposable elements"
+    },
+    "llama3_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Transposable Element Load. This reflects the abundance and activity of transposable elements (TEs) within a genome. Higher values indicate a greater genomic burden from TEs. REFERENCE SCALE - Transposable Element Load: 0.0 - *Saccharomyces cerevisiae* (low TE content). 0.5 - *Arabidopsis thaliana* (moderate TE content). 1.0 - Maize (*Zea mays*) (high TE content, many active TEs). Return ONLY a float between 0.0 and 1.0. No explanation. Score for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0036_horizontal_gene_transfer_potential",
+    "category_index": 36,
+    "category_group": "Biology and Life",
+    "subcategory": "Genetics",
+    "name": "Horizontal Gene Transfer Potential",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Extremely limited ability to acquire genetic material from other organisms",
+      "max_label": "High propensity for acquiring genetic material from other organisms"
+    },
+    "llama3_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Horizontal Gene Transfer Potential. This reflects the likelihood and ease with which an organism can incorporate genetic material from distantly related species. REFERENCE SCALE - Horizontal Gene Transfer Potential: 0.0 - *Homo sapiens* (very low potential). 0.5 - *E. coli* (moderate potential via plasmids). 1.0 - *Paramecium aurelia* (high potential, frequent HGT events). Return ONLY a float between 0.0 and 1.0. No explanation. Score for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0037_genome_repair_fidelity",
+    "category_index": 37,
+    "category_group": "Biology and Life",
+    "subcategory": "Genetics",
+    "name": "Genome Repair Fidelity",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Exceptional accuracy in DNA repair mechanisms; very few mutations accumulate",
+      "max_label": "Frequent errors in DNA repair, leading to high mutation rates"
+    },
+    "llama3_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Genome Repair Fidelity. This represents the accuracy of DNA repair mechanisms within an organism. Higher values indicate a more robust and accurate repair system, leading to lower mutation rates. REFERENCE SCALE - Genome Repair Fidelity: 0.0 - Some viruses with rapid replication and high mutation rates (low fidelity). 0.5 - *Caenorhabditis elegans* (moderate fidelity). 1.0 - *Wolbachia* (exceptionally high fidelity, tightly controlled genome). Return ONLY a float between 0.0 and 1.0. No explanation. Score for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0038_morphological_plasticity",
+    "category_index": 38,
+    "category_group": "Biology and Life",
+    "subcategory": "Evolution",
+    "name": "Morphological Plasticity",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Extremely rigid morphology; little to no variation observed even under significant environmental pressure.",
+      "max_label": "Highly flexible morphology; significant and rapid changes in form observed in response to environmental cues across generations."
+    },
+    "llama3_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Morphological Plasticity, the degree to which an organism's form can change in response to environmental conditions over generations.  This reflects the ease of structural alteration. REFERENCE SCALE - Morphological Plasticity: 0.0 - A granite boulder (extremely rigid, no change); 0.5 - A willow tree (can bend and adapt its shape within limits); 1.0 - A slime mold (completely alters its form and structure to optimize resource acquisition). Return ONLY a float between 0.0 and 1.0. No explanation. Score for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0039_ecological_generalization",
+    "category_index": 39,
+    "category_group": "Biology and Life",
+    "subcategory": "Evolution",
+    "name": "Ecological Generalization",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Extremely specialized niche; can only survive and reproduce in a very narrow range of conditions.",
+      "max_label": "Highly adaptable to diverse environments; can thrive in a wide range of habitats and exploit numerous resources."
+    },
+    "llama3_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Ecological Generalization, the breadth of environmental conditions and resources an organism can utilize. REFERENCE SCALE - Ecological Generalization: 0.0 - A hydrothermal vent tubeworm (extremely specialized); 0.5 - A grey squirrel (adaptable to urban and woodland environments); 1.0 - Bacteria found in extreme environments (can survive almost anywhere). Return ONLY a float between 0.0 and 1.0. No explanation. Score for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0040_behavioral_innovation_rate",
+    "category_index": 40,
+    "category_group": "Biology and Life",
+    "subcategory": "Evolution",
+    "name": "Behavioral Innovation Rate",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Behavior is almost entirely fixed and inherited; little to no novel behavioral patterns observed.",
+      "max_label": "Rapid development and adoption of new behaviors; frequent and significant changes in behavioral repertoire within generations."
+    },
+    "llama3_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Behavioral Innovation Rate, the frequency with which new, adaptive behaviors arise and spread within a population. REFERENCE SCALE - Behavioral Innovation Rate: 0.0 - A simple reflex action (fixed behavior); 0.5 - Birdsong learning (some modification based on environment); 1.0 - Chimpanzees using tools in novel ways (rapid behavioral innovation). Return ONLY a float between 0.0 and 1.0. No explanation. Score for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0041_trophic_integration",
+    "category_index": 41,
+    "category_group": "Biology and Life",
+    "subcategory": "Ecology",
+    "name": "Trophic Integration",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Decomposer (primarily breaks down dead organic matter)",
+      "max_label": "Apex Predator (top of the food chain, few or no predators)"
+    },
+    "llama3_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Trophic Integration, a concept describing an entity's position and influence within a food web. It relates to the complexity of its feeding relationships and its impact on energy flow. A lower score indicates a role primarily involving decomposition. A higher score indicates a position as a top predator. \nREFERENCE SCALE - Trophic Integration: 0.0 - Fungi (primarily decompose organic matter); 0.5 - Squirrel (eats nuts and fruits, occasionally insects); 1.0 - Polar Bear (apex predator, few natural enemies).\nReturn ONLY a float between 0.0 and 1.0. No explanation.\nScore for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0042_habitat_specialization",
+    "category_index": 42,
+    "category_group": "Biology and Life",
+    "subcategory": "Ecology",
+    "name": "Habitat Specialization",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Cosmopolitan (thrives in virtually any environment)",
+      "max_label": "Stenotopic (restricted to a very narrow and specific habitat)"
+    },
+    "llama3_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Habitat Specialization, a concept describing the range of environments an entity can inhabit. A lower score indicates adaptability to a wide variety of habitats. A higher score indicates a dependence on a very specific and limited habitat type. \nREFERENCE SCALE - Habitat Specialization: 0.0 - Bacteria (found in almost any environment); 0.5 - Deer (found in various forests and grasslands); 1.0 - Tube Worms (found only in hydrothermal vents).\nReturn ONLY a float between 0.0 and 1.0. No explanation.\nScore for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0043_dispersal_limitation",
+    "category_index": 43,
+    "category_group": "Biology and Life",
+    "subcategory": "Ecology",
+    "name": "Dispersal Limitation",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Highly Dispersed (seeds/offspring travel long distances)",
+      "max_label": "Sessile (permanently fixed in one location)"
+    },
+    "llama3_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Dispersal Limitation, a concept describing the ability of an entity to move and colonize new areas. A lower score indicates efficient and widespread dispersal. A higher score indicates limited movement and colonization potential.  \nREFERENCE SCALE - Dispersal Limitation: 0.0 - Dandelions (seeds easily spread by wind); 0.5 - Migratory Birds (regularly travel between regions); 1.0 - Coral (permanently attached to a substrate).\nReturn ONLY a float between 0.0 and 1.0. No explanation.\nScore for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0044_metabolic_resilience",
+    "category_index": 44,
+    "category_group": "Biology and Life",
+    "subcategory": "Health",
+    "name": "Metabolic Resilience",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Extremely susceptible to metabolic disruption; rapidly shows signs of dysfunction with minor environmental changes (e.g., a single missed meal causes severe hypoglycemia in a hummingbird).",
+      "max_label": "Highly adaptable to fluctuating metabolic demands; maintains stable function across a wide range of environmental stressors and nutrient availability (e.g., hibernating bear maintaining bodily functions for months with minimal food intake)."
+    },
+    "llama3_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Metabolic Resilience, quantifying an entity’s ability to maintain stable metabolic function under varying conditions.\nREFERENCE SCALE - Metabolic Resilience: 0.0 - A single missed meal causes severe hypoglycemia in a hummingbird; 0.5 - A sheep experiences minor weight loss and fatigue after a week of reduced grazing; 1.0 - A hibernating bear maintains bodily functions for months with minimal food intake.\nReturn ONLY a float between 0.0 and 1.0. No explanation.\nScore for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0045_cellular_senescence_resistance",
+    "category_index": 45,
+    "category_group": "Biology and Life",
+    "subcategory": "Health",
+    "name": "Cellular Senescence Resistance",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Rapid Cellular Aging",
+      "max_label": "Exceptional Cellular Longevity"
+    },
+    "llama3_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Cellular Senescence Resistance, representing the ability to resist cellular aging and the accumulation of damaged cells. 0.0 indicates rapid cellular aging, with cells quickly entering senescence and contributing to decline. 0.5 represents a moderate resistance; cells age at an average rate. 1.0 signifies exceptional cellular longevity; cells exhibit remarkable resistance to aging, maintaining function and delaying senescence for an extended period. REFERENCE SCALE - Cellular Senescence Resistance: 0.0 - Rapid cellular aging, 0.5 - Average aging rate, 1.0 - Exceptional cellular longevity. Return ONLY a float between 0.0 and 1.0. No explanation. Score for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0046_social_bonding_tendency",
+    "category_index": 46,
+    "category_group": "Biology and Life",
+    "subcategory": "Instincts",
+    "name": "Social Bonding Tendency",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Highly Solitary - Exhibits no preference for social interaction, actively avoids conspecifics (e.g., a hermit crab in deep ocean).",
+      "max_label": "Obligate Social - Requires constant social interaction for survival and well-being, shows distress when isolated (e.g., a naked mole rat colony)."
+    },
+    "llama3_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Social Bonding Tendency, assessing the degree to which a concept seeks or requires social interaction. REFERENCE SCALE - Social Bonding Tendency: 0.0 (hermit crab in deep ocean), 0.5 (domestic cat), 1.0 (naked mole rat colony). Return ONLY a float between 0.0 and 1.0. No explanation. Score for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0047_exploratory_drive",
+    "category_index": 47,
+    "category_group": "Biology and Life",
+    "subcategory": "Instincts",
+    "name": "Exploratory Drive",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Complete Inertia - Shows no inclination to explore new environments or stimuli (e.g., a stationary rock).",
+      "max_label": "Hyperactive Curiosity - Actively seeks out and investigates new environments and stimuli with high frequency and intensity (e.g., a young octopus in a complex reef)."
+    },
+    "llama3_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Exploratory Drive, assessing the tendency to seek out and investigate new environments and stimuli. REFERENCE SCALE - Exploratory Drive: 0.0 (stationary rock), 0.5 (domestic dog), 1.0 (young octopus in a complex reef). Return ONLY a float between 0.0 and 1.0. No explanation. Score for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0048_risk_aversion",
+    "category_index": 48,
+    "category_group": "Biology and Life",
+    "subcategory": "Instincts",
+    "name": "Risk Aversion",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Extreme Risk Seeking - Consistently prioritizes potential reward over safety, readily engages in dangerous behaviors (e.g., a male peacock displaying).",
+      "max_label": "Extreme Risk Avoidance - Prioritizes safety above all else, avoids any potential threat or risk (e.g., a cave salamander)."
+    },
+    "llama3_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Risk Aversion, assessing the tendency to avoid or seek out risk. REFERENCE SCALE - Risk Aversion: 0.0 (male peacock displaying), 0.5 (domestic chicken), 1.0 (cave salamander). Return ONLY a float between 0.0 and 1.0. No explanation. Score for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0049_routine_adherence",
+    "category_index": 49,
+    "category_group": "Biology and Life",
+    "subcategory": "Instincts",
+    "name": "Routine Adherence",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Complete Behavioral Flexibility - Exhibits no predictable patterns or routines, actions are entirely random and unpredictable (e.g., a chaotic storm).",
+      "max_label": "Rigid Behavioral Repetition - Strictly adheres to established routines and patterns, showing strong resistance to deviation (e.g., a worker bee performing its task)."
+    },
+    "llama3_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Routine Adherence, assessing the tendency to follow established routines and patterns. REFERENCE SCALE - Routine Adherence: 0.0 (chaotic storm), 0.5 (domestic dog walking), 1.0 (worker bee performing its task). Return ONLY a float between 0.0 and 1.0. No explanation. Score for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0050_chromatic_richness",
+    "category_index": 50,
+    "category_group": "Sensory Perception",
+    "subcategory": "Visual",
+    "name": "Chromatic Richness",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Monochromatic (almost entirely one color)",
+      "max_label": "Highly saturated and diverse color palette"
+    },
+    "llama3_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Chromatic Richness, which describes the variety and intensity of colors present. A score of 0.0 represents something almost entirely monochromatic, like a grayscale image or a single shade of grey paint. A score of 0.5 represents a moderate range of colors, like a typical landscape photograph. A score of 1.0 represents something with a highly saturated and diverse color palette, like a vibrant coral reef or a stained-glass window. REFERENCE SCALE - Chromatic Richness: 0.0 - A grayscale image; 0.5 - Typical landscape photograph; 1.0 - Vibrant coral reef. Return ONLY a float between 0.0 and 1.0. No explanation. Score for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0051_depth_perception_complexity",
+    "category_index": 51,
+    "category_group": "Sensory Perception",
+    "subcategory": "Visual",
+    "name": "Depth Perception Complexity",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Essentially 2D (minimal depth cues)",
+      "max_label": "Complex and nuanced depth cues, creating a strong sense of 3D space"
+    },
+    "llama3_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Depth Perception Complexity, referring to the richness and subtlety of depth cues present. A score of 0.0 signifies an image that appears almost entirely 2D, lacking significant depth cues (e.g., a flat cartoon drawing). A score of 0.5 represents moderate depth cues, like a photograph with some perspective. A score of 1.0 signifies a highly complex scene with nuanced depth cues like parallax, occlusion, and atmospheric perspective, creating a strong impression of 3D space (e.g., a hyperrealistic painting). REFERENCE SCALE - Depth Perception Complexity: 0.0 - Flat cartoon drawing; 0.5 - Photograph with perspective; 1.0 - Hyperrealistic painting. Return ONLY a float between 0.0 and 1.0. No explanation. Score for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0052_visual_texture_granularity",
+    "category_index": 52,
+    "category_group": "Sensory Perception",
+    "subcategory": "Visual",
+    "name": "Visual Texture Granularity",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Smooth, featureless surface",
+      "max_label": "Highly detailed and complex surface texture"
+    },
+    "llama3_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Visual Texture Granularity, which describes the level of detail and complexity in surface texture. A score of 0.0 represents a completely smooth and featureless surface, like polished glass. A score of 0.5 represents a moderately textured surface, like brushed metal. A score of 1.0 represents a highly detailed and complex surface texture, like the bark of a tree or a close-up of woven fabric. REFERENCE SCALE - Visual Texture Granularity: 0.0 - Polished glass; 0.5 - Brushed metal; 1.0 - Bark of a tree. Return ONLY a float between 0.0 and 1.0. No explanation. Score for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0053_luminosity_contrast_range",
+    "category_index": 53,
+    "category_group": "Sensory Perception",
+    "subcategory": "Visual",
+    "name": "Luminosity Contrast Range",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Very narrow range of brightness values (mostly uniform)",
+      "max_label": "Extremely wide range of brightness values (deep shadows and bright highlights)"
+    },
+    "llama3_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Luminosity Contrast Range, which describes the difference between the darkest and brightest parts of an image. A score of 0.0 represents an image with a very narrow range of brightness values, appearing largely uniform in brightness (e.g., a slightly overexposed or underexposed photograph). A score of 0.5 represents a moderate range of brightness values, like a typical daytime scene. A score of 1.0 represents an image with an extremely wide range of brightness values, featuring deep shadows and bright highlights, often creating a dramatic effect (e.g., a high-dynamic-range photograph). REFERENCE SCALE - Luminosity Contrast Range: 0.0 - Slightly overexposed photo; 0.5 - Typical daytime scene; 1.0 - High-dynamic-range photograph. Return ONLY a float between 0.0 and 1.0. No explanation. Score for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0054_frequency_range_sensitivity",
+    "category_index": 54,
+    "category_group": "Sensory Perception",
+    "subcategory": "Auditory",
+    "name": "Frequency Range Sensitivity",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Inability to perceive sounds below 20Hz or above 20kHz",
+      "max_label": "Perceives sounds from 1Hz to 100kHz"
+    },
+    "llama3_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Frequency Range Sensitivity, which assesses the breadth of audible frequencies a concept can detect.  Lower scores indicate a limited range, while higher scores represent a broader range. \n\nREFERENCE SCALE - Frequency Range Sensitivity: 0.0 - A concept cannot hear frequencies outside the range of 20Hz - 20kHz. 0.5 - A concept can hear frequencies between 10Hz - 30kHz. 1.0 - A concept can hear frequencies between 1Hz - 100kHz. \n\nReturn ONLY a float between 0.0 and 1.0. No explanation.\nScore for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0055_localization_accuracy",
+    "category_index": 55,
+    "category_group": "Sensory Perception",
+    "subcategory": "Auditory",
+    "name": "Localization Accuracy",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Cannot determine the source of a sound; completely random localization.",
+      "max_label": "Can pinpoint the exact location of a sound source with high precision."
+    },
+    "llama3_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Localization Accuracy, which assesses the ability to determine the location of a sound source. Lower scores indicate poor or nonexistent localization, while higher scores reflect precise spatial awareness of sound. \n\nREFERENCE SCALE - Localization Accuracy: 0.0 - A concept is unable to determine the origin of any sound. 0.5 - A concept can estimate the general direction of a sound source with moderate error. 1.0 - A concept can pinpoint the exact location of a sound source with high accuracy and minimal error. \n\nReturn ONLY a float between 0.0 and 1.0. No explanation.\nScore for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0056_temporal_resolution",
+    "category_index": 56,
+    "category_group": "Sensory Perception",
+    "subcategory": "Auditory",
+    "name": "Temporal Resolution",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Cannot distinguish between two closely spaced sounds; perceives sounds as a continuous blur.",
+      "max_label": "Can distinguish between extremely rapid, closely-spaced sounds with high precision."
+    },
+    "llama3_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Temporal Resolution, which assesses the ability to distinguish between sounds occurring in close succession.  Lower scores indicate a blurred perception of time-related auditory events, while higher scores reflect a sharp and precise resolution. \n\nREFERENCE SCALE - Temporal Resolution: 0.0 - A concept perceives sounds as a continuous, blurred stream; cannot differentiate rapid sequences. 0.5 - A concept can distinguish between sounds occurring with a moderate delay (e.g., 50ms apart). 1.0 - A concept can distinguish between extremely rapid, closely-spaced sounds (e.g., < 1ms apart). \n\nReturn ONLY a float between 0.0 and 1.0. No explanation.\nScore for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0057_soundscape_complexity",
+    "category_index": 57,
+    "category_group": "Sensory Perception",
+    "subcategory": "Auditory",
+    "name": "Soundscape Complexity",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Minimal, predictable acoustic environment. Primarily single, repetitive sounds.",
+      "max_label": "Rich, unpredictable acoustic environment with layered sounds, complex textures, and dynamic changes."
+    },
+    "llama3_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Soundscape Complexity, assessing the intricacy and dynamism of an auditory environment. A low score indicates a simple, predictable soundscape; a high score reflects a complex, dynamic environment. \nREFERENCE SCALE - Soundscape Complexity: 0.0 - The constant hum of a refrigerator; 0.5 - A bustling city street with traffic, pedestrians, and occasional sirens; 1.0 - A tropical rainforest filled with the calls of numerous animals, rustling leaves, and the sounds of a flowing river.\nReturn ONLY a float between 0.0 and 1.0. No explanation.\nScore for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0058_surface_friction_coefficient",
+    "category_index": 58,
+    "category_group": "Sensory Perception",
+    "subcategory": "Tactile",
+    "name": "Surface Friction Coefficient",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Extremely Slippery (e.g., ice, polished glass)",
+      "max_label": "Extremely Grippy (e.g., sandpaper, gecko feet)"
+    },
+    "llama3_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Surface Friction Coefficient, representing how much resistance to sliding a surface provides. A lower score indicates a more slippery surface, while a higher score indicates a more grippy surface.  The score reflects the perceived ease of initiating and maintaining movement across the surface.  This applies equally to physical objects, abstract concepts (e.g., 'bureaucracy' – low friction to progress), places, animals, and people (e.g., a charismatic leader - low friction to acceptance).\n\nREFERENCE SCALE - Surface Friction Coefficient: 0.0 (ice), 0.5 (wood floor), 1.0 (rough rock).\nReturn ONLY a float between 0.0 and 1.0. No explanation.\nScore for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0059_thermal_inertia",
+    "category_index": 59,
+    "category_group": "Sensory Perception",
+    "subcategory": "Tactile",
+    "name": "Thermal Inertia",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Rapid Temperature Change (e.g., air, thin metal foil)",
+      "max_label": "Slow Temperature Change (e.g., thick stone, water)"
+    },
+    "llama3_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Thermal Inertia, representing the resistance to changes in temperature. A lower score indicates a rapid response to temperature shifts, while a higher score indicates a slow response. This applies to physical objects, abstract concepts (e.g., 'trend' - rapid temperature change in popularity), places, animals, and people (e.g., a stoic person - slow emotional response).\n\nREFERENCE SCALE - Thermal Inertia: 0.0 (air), 0.5 (water), 1.0 (granite).\nReturn ONLY a float between 0.0 and 1.0. No explanation.\nScore for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0060_pressure_sensitivity_threshold",
+    "category_index": 60,
+    "category_group": "Sensory Perception",
+    "subcategory": "Tactile",
+    "name": "Pressure Sensitivity Threshold",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Requires Very Little Pressure (e.g., a feather)",
+      "max_label": "Requires a Lot of Pressure (e.g., a brick)"
+    },
+    "llama3_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Pressure Sensitivity Threshold, representing the amount of force required to elicit a tactile response. A lower score indicates that very little pressure is needed, while a higher score indicates a need for significant force. This applies to physical objects, abstract concepts (e.g., 'fragile agreement' - requires very little pressure to break), places, animals, and people (e.g., someone who is easily offended).\n\nREFERENCE SCALE - Pressure Sensitivity Threshold: 0.0 (feather), 0.5 (human skin), 1.0 (steel plate).\nReturn ONLY a float between 0.0 and 1.0. No explanation.\nScore for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0061_aromatic_volatility",
+    "category_index": 61,
+    "category_group": "Sensory Perception",
+    "subcategory": "Olfactory and Taste",
+    "name": "Aromatic Volatility",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Persistent, Low Volatility (e.g., aged cheese, damp earth)",
+      "max_label": "Transient, High Volatility (e.g., citrus zest, freshly cut grass)"
+    },
+    "llama3_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Aromatic Volatility, the rate at which an aroma disperses into the surrounding air. This describes how quickly a scent becomes noticeable and fades. REFERENCE SCALE - Aromatic Volatility: 0.0 - Persistent, Low Volatility (e.g., aged cheese, damp earth), 0.5 - Moderate Volatility (e.g., cooked meat, ripe fruit), 1.0 - Transient, High Volatility (e.g., citrus zest, freshly cut grass). Return ONLY a float between 0.0 and 1.0. No explanation. Score for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0062_gustatory_complexity",
+    "category_index": 62,
+    "category_group": "Sensory Perception",
+    "subcategory": "Olfactory and Taste",
+    "name": "Gustatory Complexity",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Simple, Single-Note Taste (e.g., distilled water, sugar)",
+      "max_label": "Layered, Multi-Dimensional Taste (e.g., dark chocolate, complex curry)"
+    },
+    "llama3_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Gustatory Complexity, the number of distinct and evolving flavor components experienced. REFERENCE SCALE - Gustatory Complexity: 0.0 - Simple, Single-Note Taste (e.g., distilled water, sugar), 0.5 - Moderate Complexity (e.g., apple, plain yogurt), 1.0 - Layered, Multi-Dimensional Taste (e.g., dark chocolate, complex curry). Return ONLY a float between 0.0 and 1.0. No explanation. Score for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0063_chemosensory_intensity",
+    "category_index": 63,
+    "category_group": "Sensory Perception",
+    "subcategory": "Olfactory and Taste",
+    "name": "Chemosensory Intensity",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Barely Detectable (e.g., trace amount of vanilla)",
+      "max_label": "Overwhelmingly Strong (e.g., concentrated ammonia)"
+    },
+    "llama3_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Chemosensory Intensity, the perceived strength or potency of an olfactory or gustatory stimulus. REFERENCE SCALE - Chemosensory Intensity: 0.0 - Barely Detectable (e.g., trace amount of vanilla), 0.5 - Moderate Intensity (e.g., ripe banana), 1.0 - Overwhelmingly Strong (e.g., concentrated ammonia). Return ONLY a float between 0.0 and 1.0. No explanation. Score for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0064_subtle_nuance_discrimination",
+    "category_index": 64,
+    "category_group": "Sensory Perception",
+    "subcategory": "Olfactory and Taste",
+    "name": "Subtle Nuance Discrimination",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Broad, simple sensory profile; indistinguishable from similar stimuli",
+      "max_label": "Exceptional ability to differentiate extremely similar olfactory or gustatory stimuli; identifies minute variations"
+    },
+    "llama3_prompt": "- <|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Subtle Nuance Discrimination within olfactory and gustatory perception. This refers to the ability to differentiate between very similar scents or tastes, identifying subtle variations in composition or intensity.\n\nREFERENCE SCALE - Subtle Nuance Discrimination: 0.0 - A rock; all rocks smell and taste essentially the same. 0.5 - A ripe apple; can distinguish between sweet and slightly tart varieties. 1.0 - A master perfumer; can identify individual components within complex fragrance blends and differentiate between almost imperceptible variations in taste.\n\nReturn ONLY a float between 0.0 and 1.0. No explanation.\nScore for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0065_pain_anticipation_reflex",
+    "category_index": 65,
+    "category_group": "Sensory Perception",
+    "subcategory": "Temperature and Pain",
+    "name": "Pain Anticipation Reflex",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "No Predictive Response to Potential Pain",
+      "max_label": "Immediate and Strong Avoidance of Potential Pain"
+    },
+    "llama3_prompt": "- <|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Pain Anticipation Reflex, the tendency to react preemptively to cues suggesting potential pain. REFERENCE SCALE - Pain Anticipation Reflex: 0.0 - Remaining completely still even when a painful stimulus is clearly indicated; 0.5 - Showing minor signs of discomfort when a painful stimulus is about to occur; 1.0 - Immediately withdrawing from a situation where pain is expected. Return ONLY a float between 0.0 and 1.0. No explanation. Score for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0066_thermal_pain_localization_specificity",
+    "category_index": 66,
+    "category_group": "Sensory Perception",
+    "subcategory": "Temperature and Pain",
+    "name": "Thermal Pain Localization Specificity",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Diffuse and Non-Specific Pain Response",
+      "max_label": "Precise Pinpointing of Pain Source"
+    },
+    "llama3_prompt": "- <|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Thermal Pain Localization Specificity, the ability to accurately identify the source of a thermal pain. REFERENCE SCALE - Thermal Pain Localization Specificity: 0.0 - Describing pain as 'general discomfort'; 0.5 - Identifying the general area of pain (e.g., 'my leg hurts'); 1.0 - Precisely pinpointing the location of thermal pain (e.g., 'the pain is in my left big toe'). Return ONLY a float between 0.0 and 1.0. No explanation. Score for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0067_force_amplification_factor",
+    "category_index": 67,
+    "category_group": "Physical Objects",
+    "subcategory": "Tools and Weapons",
+    "name": "Force Amplification Factor",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Simple Hand Tool (e.g., a lever)",
+      "max_label": "Compound Mechanical System (e.g., a trebuchet)"
+    },
+    "llama3_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Force Amplification Factor, which represents the degree to which a tool multiplies the user's physical force.  A lower score indicates a tool that primarily extends or directs existing force, while a higher score indicates a tool that significantly *increases* the force applied. REFERENCE SCALE - Force Amplification Factor: 0.0=Simple Hand Tool (e.g., a lever), 0.5=Pulley System, 1.0=Compound Mechanical System (e.g., a trebuchet). Return ONLY a float between 0.0 and 1.0. No explanation. Score for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0068_skill_dependency_level",
+    "category_index": 68,
+    "category_group": "Physical Objects",
+    "subcategory": "Tools and Weapons",
+    "name": "Skill Dependency Level",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Intuitive Use (e.g., a sharpened rock)",
+      "max_label": "Highly Trained Expertise (e.g., a surgical scalpel)"
+    },
+    "llama3_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Skill Dependency Level, representing the degree of specialized training or expertise required to effectively use a tool or weapon. A lower score indicates a tool that can be used reasonably well with minimal instruction, while a higher score indicates a tool requiring extensive training. REFERENCE SCALE - Skill Dependency Level: 0.0=Intuitive Use (e.g., a sharpened rock), 0.5=Bow and Arrow, 1.0=Highly Trained Expertise (e.g., a surgical scalpel). Return ONLY a float between 0.0 and 1.0. No explanation. Score for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0069_material_complexity_index",
+    "category_index": 69,
+    "category_group": "Physical Objects",
+    "subcategory": "Tools and Weapons",
+    "name": "Material Complexity Index",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Single, Naturally Occurring Material (e.g., a stone axe)",
+      "max_label": "Multiple, Synthesized/Refined Materials (e.g., a high-performance alloy sword)"
+    },
+    "llama3_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Material Complexity Index, representing the sophistication and variety of materials used in the construction of a tool or weapon. A lower score indicates the use of readily available, single materials, while a higher score indicates the combination of multiple, often manufactured or refined, materials. REFERENCE SCALE - Material Complexity Index: 0.0=Single, Naturally Occurring Material (e.g., a stone axe), 0.5=Wood and Metal Combination, 1.0=Multiple, Synthesized/Refined Materials (e.g., a high-performance alloy sword). Return ONLY a float between 0.0 and 1.0. No explanation. Score for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0070_ergonomic_adaptation",
+    "category_index": 70,
+    "category_group": "Physical Objects",
+    "subcategory": "Tools and Weapons",
+    "name": "Ergonomic Adaptation",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Requires full, specialized training and significant physical modification to use effectively.",
+      "max_label": "Intuitive and comfortable to use with minimal training for a wide range of users."
+    },
+    "llama3_prompt": "- <|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Ergonomic Adaptation, which reflects how easily and comfortably a tool or weapon can be used by a diverse range of individuals with varying levels of training and physical capabilities.  Consider the grip, weight distribution, balance, and overall interaction design. \n\nREFERENCE SCALE - Ergonomic Adaptation: 0.0=Ancient Chinese Crossbow (requires significant training and specialized equipment), 0.5=Standard Hammer (requires some skill and strength, but generally accessible), 1.0=Modern Ergonomic Screwdriver (designed for ease of use and comfort for a broad user base).\n\nReturn ONLY a float between 0.0 and 1.0. No explanation.\nScore for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0071_preparation_complexity",
+    "category_index": 71,
+    "category_group": "Physical Objects",
+    "subcategory": "Food and Drink",
+    "name": "Preparation Complexity",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "No Preparation (e.g., Berries)",
+      "max_label": "Multi-Stage Cooking (e.g., Croissant)"
+    },
+    "llama3_prompt": "- Start with: \"<|begin_of_text|><|start_header_id|>system<|end_header_id|>\n\nYou are an instrument measuring Preparation Complexity, assessing the level of skill and effort required to render the food/drink edible or palatable.\"\n- REFERENCE SCALE - Preparation Complexity: 0.0=No Preparation (e.g., Berries), 0.5=Simple Cooking (e.g., Boiled Egg), 1.0=Multi-Stage Cooking (e.g., Croissant)\n- Return ONLY a float between 0.0 and 1.0. No explanation.\nScore for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+  },
+  {
+    "id": "d0072_nutritional_density_ratio",
+    "category_index": 72,
+    "category_group": "Physical Objects",
+    "subcategory": "Food and Drink",
+    "name": "Nutritional Density Ratio",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Low Nutritional Value (High Volume, Low Nutrients)",
+      "max_label": "High Nutritional Value (Small Volume, Concentrated Nutrients)"
+    },
+    "llama3_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Nutritional Density Ratio, which reflects the ratio of nutrients (vitamins, minerals, protein, fiber) to the volume or weight of a food or drink item. A lower score indicates low nutritional value relative to its size, while a higher score signifies high nutritional value in a compact form.\n\nREFERENCE SCALE - Nutritional Density Ratio: 0.0=Popcorn, 0.5=Banana, 1.0=Almonds\n\nReturn ONLY a float between 0.0 and 1.0. No explanation.\nScore for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0073_structural_permanence",
+    "category_index": 73,
+    "category_group": "Physical Objects",
+    "subcategory": "Furniture and Structures",
+    "name": "Structural Permanence",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Ephemeral Sandcastle",
+      "max_label": "Great Pyramid of Giza"
+    },
+    "llama3_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Structural Permanence, representing the degree to which a structure is designed to last and resist environmental degradation and intentional destruction. Consider material durability, construction techniques, and potential for long-term upkeep. REFERENCE SCALE - Structural Permanence: 0.0=Ephemeral Sandcastle (easily washed away), 0.5=Wooden Shed (requires regular maintenance, susceptible to rot), 1.0=Great Pyramid of Giza (designed for millennia of stability). Return ONLY a float between 0.0 and 1.0. No explanation. Score for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0074_aesthetic_symmetry",
+    "category_index": 74,
+    "category_group": "Physical Objects",
+    "subcategory": "Furniture and Structures",
+    "name": "Aesthetic Symmetry",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Chaotic Abstract Sculpture",
+      "max_label": "Pantheon of Rome"
+    },
+    "llama3_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Aesthetic Symmetry, representing the degree to which a structure exhibits balance, proportion, and visual harmony based on principles of symmetry and mirroring. Consider both formal (reflective) and radial symmetry. REFERENCE SCALE - Aesthetic Symmetry: 0.0=Chaotic Abstract Sculpture (lacks discernible symmetry), 0.5=Frank Lloyd Wright Fallingwater House (asymmetrical, organic), 1.0=Pantheon of Rome (near-perfect radial symmetry). Return ONLY a float between 0.0 and 1.0. No explanation. Score for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0075_terrain_adaptability",
+    "category_index": 75,
+    "category_group": "Physical Objects",
+    "subcategory": "Vehicles",
+    "name": "Terrain Adaptability",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "sandcrawler (desert)",
+      "max_label": "snowmobile (arctic)"
+    },
+    "llama3_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id>\nYou are an instrument measuring Terrain Adaptability, which indicates how well a vehicle can traverse various ground conditions. Consider factors like suspension, tire type, ground clearance, and drivetrain. \nREFERENCE SCALE - Terrain Adaptability: 0.0=sandcrawler (desert), 0.5=pickup truck (mixed roads), 1.0=snowmobile (arctic)\nReturn ONLY a float between 0.0 and 1.0. No explanation.\nScore for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0076_perceived_visibility",
+    "category_index": 76,
+    "category_group": "Physical Objects",
+    "subcategory": "Vehicles",
+    "name": "Perceived Visibility",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "submarine",
+      "max_label": "hot air balloon"
+    },
+    "llama3_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id>\nYou are an instrument measuring Perceived Visibility, which refers to the degree to which a vehicle is easily seen by others from various distances and perspectives. Consider factors like size, color, reflective properties, and lighting. \nREFERENCE SCALE - Perceived Visibility: 0.0=submarine, 0.5=car, 1.0=hot air balloon\nReturn ONLY a float between 0.0 and 1.0. No explanation.\nScore for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0077_operational_intrusiveness",
+    "category_index": 77,
+    "category_group": "Physical Objects",
+    "subcategory": "Vehicles",
+    "name": "Operational Intrusiveness",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "rowboat (silent)",
+      "max_label": "jet aircraft (loud)"
+    },
+    "llama3_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id>\nYou are an instrument measuring Operational Intrusiveness, which reflects the degree to which a vehicle disturbs its surroundings during operation. Consider factors like noise, emissions, and physical impact. \nREFERENCE SCALE - Operational Intrusiveness: 0.0=rowboat (silent), 0.5=bicycle, 1.0=jet aircraft (loud)\nReturn ONLY a float between 0.0 and 1.0. No explanation.\nScore for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0078_maneuverability_radius",
+    "category_index": 78,
+    "category_group": "Physical Objects",
+    "subcategory": "Vehicles",
+    "name": "Maneuverability Radius",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Aircraft Carrier",
+      "max_label": "Formula 1 Car"
+    },
+    "llama3_prompt": "- Start with: \"<|begin_of_text|><|start_header_id|>system<|end_header_id|>\n\nYou are an instrument measuring Maneuverability Radius, which describes the minimum circular radius within which a vehicle can safely and effectively turn or change direction. This is a comparative measure of the vehicle's agility and responsiveness to steering inputs.\n\nREFERENCE SCALE - Maneuverability Radius: 0.0=Aircraft Carrier (extremely large turning radius), 0.5=School Bus (moderate turning radius), 1.0=Formula 1 Car (extremely small turning radius)\n\nReturn ONLY a float between 0.0 and 1.0. No explanation.\nScore for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n\""
+  },
+  {
+    "id": "d0079_mobility_restriction",
+    "category_index": 79,
+    "category_group": "Physical Objects",
+    "subcategory": "Clothing and Containers",
+    "name": "Mobility Restriction",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "flowing robe",
+      "max_label": "full suit of plate armor"
+    },
+    "llama3_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Mobility Restriction, a scale representing the degree to which an item limits the wearer's freedom of movement. REFERENCE SCALE - Mobility Restriction: 0.0=flowing robe (allows unrestricted movement), 0.5=standard business suit (slight restriction), 1.0=full suit of plate armor (severely restricts movement). Return ONLY a float between 0.0 and 1.0. No explanation. Score for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0080_formality_index",
+    "category_index": 80,
+    "category_group": "Physical Objects",
+    "subcategory": "Clothing and Containers",
+    "name": "Formality Index",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Casual (Beach Towel)",
+      "max_label": "Ceremonial (Pharaoh's Burial Shroud)"
+    },
+    "llama3_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Formality Index, which describes the degree to which an object is associated with formal occasions, rituals, or displays of status.\n\nREFERENCE SCALE - Formality Index: 0.0=Beach Towel, 0.5=Business Suit, 1.0=Pharaoh's Burial Shroud\nReturn ONLY a float between 0.0 and 1.0. No explanation.\nScore for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0081_territoriality",
+    "category_index": 81,
+    "category_group": "Living Entities",
+    "subcategory": "Wild Animals",
+    "name": "Territoriality",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Nomadic (American Bison)",
+      "max_label": "Strictly Defined (Snow Leopard)"
+    },
+    "llama3_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id>\nYou are an instrument measuring Territoriality, which refers to the extent to which an animal defends a defined area. A score of 0.0 indicates a highly nomadic lifestyle with no defined territory, while a score of 1.0 indicates a fiercely defended and rigidly maintained territory. REFERENCE SCALE - Territoriality: 0.0=American Bison (roams widely, no fixed territory), 0.5=Gray Wolf (packs defend a range but it's flexible), 1.0=Snow Leopard (extremely precise and defended territory). Return ONLY a float between 0.0 and 1.0. No explanation. Score for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0082_nocturnal_activity",
+    "category_index": 82,
+    "category_group": "Living Entities",
+    "subcategory": "Wild Animals",
+    "name": "Nocturnal Activity",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Diurnal (Giraffe)",
+      "max_label": "Strictly Nocturnal (Pygmy Jerboa)"
+    },
+    "llama3_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id>\nYou are an instrument measuring Nocturnal Activity, representing the proportion of activity occurring during nighttime hours. A score of 0.0 indicates primarily diurnal activity, while a score of 1.0 indicates almost exclusively nocturnal behavior. REFERENCE SCALE - Nocturnal Activity: 0.0=Giraffe (primarily active during the day), 0.5=Red Fox (crepuscular and diurnal), 1.0=Pygmy Jerboa (almost exclusively active at night). Return ONLY a float between 0.0 and 1.0. No explanation. Score for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0083_selective_breeding_influence",
+    "category_index": 83,
+    "category_group": "Living Entities",
+    "subcategory": "Domestic Animals",
+    "name": "Selective Breeding Influence",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Unmodified Wild Type (Wild Boar)",
+      "max_label": "Highly Modified Breed (Pomeranian)"
+    },
+    "llama3_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id>\nYou are an instrument measuring Selective Breeding Influence, reflecting the degree to which an animal's traits have been altered through artificial selection by humans. A score of 0.0 represents a species with minimal human intervention in its genetic makeup. A score of 1.0 represents a breed which is the product of extensive and specific breeding programs. REFERENCE SCALE - Selective Breeding Influence: 0.0=Wild Boar, 0.5=Grey Wolf, 1.0=Pomeranian\nReturn ONLY a float between 0.0 and 1.0. No explanation. Score for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0084_environmental_plasticity",
+    "category_index": 84,
+    "category_group": "Living Entities",
+    "subcategory": "Domestic Animals",
+    "name": "Environmental Plasticity",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Extreme Habitat Specificity (Axolotl)",
+      "max_label": "Broad Habitat Tolerance (Rattus norvegicus)"
+    },
+    "llama3_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id>\nYou are an instrument measuring Environmental Plasticity, which represents the range of habitats and conditions an animal can successfully inhabit and survive in. A score of 0.0 signifies a highly specialized existence requiring very specific environmental conditions. A score of 1.0 represents an animal that can thrive in a wide variety of habitats. REFERENCE SCALE - Environmental Plasticity: 0.0=Axolotl, 0.5=American Robin, 1.0=Rattus norvegicus\nReturn ONLY a float between 0.0 and 1.0. No explanation. Score for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0085_behavioral_predictability",
+    "category_index": 85,
+    "category_group": "Living Entities",
+    "subcategory": "Domestic Animals",
+    "name": "Behavioral Predictability",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Highly Unpredictable - Feral Goat",
+      "max_label": "Extremely Predictable - Trained Border Collie"
+    },
+    "llama3_prompt": "- Start with: \"<|begin_of_text|><|start_header_id|>system<|end_header_id|>\n\nYou are an instrument measuring Behavioral Predictability, the degree to which an organism's actions and reactions can be anticipated based on given stimuli or situations.\"\n\nREFERENCE SCALE - Behavioral Predictability: 0.0=Feral Goat (erratic and largely unpredictable behavior), 0.5=Domestic Pig (generally predictable within a farm environment but can exhibit unexpected behaviors), 1.0=Trained Border Collie (responds reliably and predictably to commands and cues; extremely high degree of behavioral control).\nReturn ONLY a float between 0.0 and 1.0. No explanation.\nScore for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+  },
+  {
+    "id": "d0086_mycorrhizal_dependency",
+    "category_index": 86,
+    "category_group": "Living Entities",
+    "subcategory": "Plants and Fungi",
+    "name": "Mycorrhizal Dependency",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Independent Nutrient Acquisition",
+      "max_label": "Obligate Mycorrhizal Relationship"
+    },
+    "llama3_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Mycorrhizal Dependency, which describes the degree to which an organism relies on symbiotic relationships with mycorrhizal fungi for nutrient acquisition. 0.0 indicates the organism primarily acquires nutrients independently. 1.0 signifies a complete reliance on mycorrhizal fungi. \n\nREFERENCE SCALE - Mycorrhizal Dependency: 0.0=Sunflower (independent), 0.5=Oak Tree (benefits from mycorrhizae), 1.0=Ghost Orchid (obligate mycorrhizal relationship). \n\nReturn ONLY a float between 0.0 and 1.0. No explanation.\nScore for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0087_spore_dispersal_mechanism",
+    "category_index": 87,
+    "category_group": "Living Entities",
+    "subcategory": "Plants and Fungi",
+    "name": "Spore Dispersal Mechanism",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Passive Wind Dispersal",
+      "max_label": "Active Animal Dispersal"
+    },
+    "llama3_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Spore Dispersal Mechanism, indicating the primary method by which spores are distributed. 0.0 represents reliance on passive wind dispersal. 1.0 signifies active dispersal facilitated by animals (e.g., ingestion, attachment). \n\nREFERENCE SCALE - Spore Dispersal Mechanism: 0.0=Puffball Mushroom (wind dispersal), 0.5=Chanterelle Mushroom (insect dispersal), 1.0=Fly Agaric (animal dispersal via insects/mammals). \n\nReturn ONLY a float between 0.0 and 1.0. No explanation.\nScore for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0088_secondary_metabolite_toxicity",
+    "category_index": 88,
+    "category_group": "Living Entities",
+    "subcategory": "Plants and Fungi",
+    "name": "Secondary Metabolite Toxicity",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "No Detectable Toxicity",
+      "max_label": "Highly Toxic to Broad Range of Organisms"
+    },
+    "llama3_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Secondary Metabolite Toxicity, reflecting the degree to which the organism produces compounds harmful to other organisms. 0.0 means no detectable toxicity. 1.0 indicates high toxicity to a wide range of organisms. \n\nREFERENCE SCALE - Secondary Metabolite Toxicity: 0.0=Spinach (minimal toxicity), 0.5=Tomato (mild toxicity), 1.0=Deadly Nightshade (highly toxic). \n\nReturn ONLY a float between 0.0 and 1.0. No explanation.\nScore for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0089_reproductive_strategy_reliance",
+    "category_index": 89,
+    "category_group": "Living Entities",
+    "subcategory": "Plants and Fungi",
+    "name": "Reproductive Strategy Reliance",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Exclusive Sexual Reproduction",
+      "max_label": "Exclusive Asexual Reproduction"
+    },
+    "llama3_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Reproductive Strategy Reliance, indicating the degree to which the organism depends on sexual versus asexual reproduction. 0.0 means the organism primarily reproduces sexually. 1.0 signifies reliance solely on asexual reproduction. \n\nREFERENCE SCALE - Reproductive Strategy Reliance: 0.0=Oak Tree (sexual reproduction via acorns), 0.5=Strawberry (mix of sexual and asexual), 1.0=Creeping Charlie (asexual reproduction via rhizomes). \n\nReturn ONLY a float between 0.0 and 1.0. No explanation.\nScore for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0090_social_leverage",
+    "category_index": 90,
+    "category_group": "Living Entities",
+    "subcategory": "Human Roles",
+    "name": "Social Leverage",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Offers little to no social advantage or influence.",
+      "max_label": "Confers significant social power, status, and influence."
+    },
+    "llama3_prompt": "- <|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Social Leverage. This refers to the degree of influence and power a role commands within a social structure. \nREFERENCE SCALE - Social Leverage: 0.0=Data entry clerk, 0.5=Small business owner, 1.0=Supreme Court Justice.\nReturn ONLY a float between 0.0 and 1.0. No explanation.\nScore for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0091_ritualistic_significance",
+    "category_index": 91,
+    "category_group": "Living Entities",
+    "subcategory": "Human Roles",
+    "name": "Ritualistic Significance",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Essentially absent from rituals; purely functional.",
+      "max_label": "Central figure or embodiment within deeply ingrained rituals; highly symbolic."
+    },
+    "llama3_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Ritualistic Significance. This dimension assesses the degree to which a human role is interwoven with or defined by rituals, ceremonies, or symbolic practices. A lower score indicates a primarily practical or utilitarian function, while a higher score suggests a profoundly symbolic or ceremonial importance.\n\nREFERENCE SCALE - Ritualistic Significance: 0.0=Construction Worker, 0.5=Accountant, 1.0=Shaman.\n\nReturn ONLY a float between 0.0 and 1.0. No explanation.\nScore for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0092_consequence_scope",
+    "category_index": 92,
+    "category_group": "Living Entities",
+    "subcategory": "Human Roles",
+    "name": "Consequence Scope",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Personal Confidante",
+      "max_label": "Global Legislator"
+    },
+    "llama3_prompt": "- <|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Consequence Scope, the potential reach and impact of decisions or actions within a role. A lower score indicates that influence is primarily limited to personal relationships or small groups. A higher score indicates that actions significantly affect large populations or have far-reaching implications.\n\nREFERENCE SCALE - Consequence Scope: 0.0=Personal Confidante (actions affect only the individual and their immediate circle), 0.5=School Principal (impacts a school community), 1.0=Global Legislator (actions influence international policy and populations).\n\nReturn ONLY a float between 0.0 and 1.0. No explanation.\nScore for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0093_nutrient_acquisition_strategy",
+    "category_index": 93,
+    "category_group": "Living Entities",
+    "subcategory": "Microorganisms",
+    "name": "Nutrient Acquisition Strategy",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Chemosynthesis (e.g., sulfur-oxidizing bacteria near deep-sea vents)",
+      "max_label": "Photosynthesis (e.g., cyanobacteria in a coral reef)"
+    },
+    "llama3_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id>\nYou are an instrument measuring Nutrient Acquisition Strategy, the primary method by which an organism obtains energy and resources. This is a comparative scale focusing on the reliance on chemical versus light-based energy sources.\nREFERENCE SCALE - Nutrient Acquisition Strategy: 0.0=Chemosynthesis (e.g., sulfur-oxidizing bacteria near deep-sea vents), 0.5=Mixotrophy (e.g., some ciliates consuming both organic matter and performing limited photosynthesis), 1.0=Photosynthesis (e.g., cyanobacteria in a coral reef)\nReturn ONLY a float between 0.0 and 1.0. No explanation.\nScore for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0094_genome_integration_frequency",
+    "category_index": 94,
+    "category_group": "Living Entities",
+    "subcategory": "Microorganisms",
+    "name": "Genome Integration Frequency",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Extremely Rare (e.g., Archaea with minimal horizontal gene transfer)",
+      "max_label": "Extremely Common (e.g., bacteria in the gut microbiome exchanging genes rapidly)"
+    },
+    "llama3_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id>\nYou are an instrument measuring Genome Integration Frequency, which quantifies how often an organism incorporates genetic material from other organisms into its own genome.\nREFERENCE SCALE - Genome Integration Frequency: 0.0=Extremely Rare (e.g., Archaea with minimal horizontal gene transfer), 0.5=Moderate (e.g., Pseudomonas aeruginosa), 1.0=Extremely Common (e.g., bacteria in the gut microbiome exchanging genes rapidly)\nReturn ONLY a float between 0.0 and 1.0. No explanation.\nScore for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0095_biofilm_formation_tendency",
+    "category_index": 95,
+    "category_group": "Living Entities",
+    "subcategory": "Microorganisms",
+    "name": "Biofilm Formation Tendency",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Absent (e.g., free-floating marine bacteria)",
+      "max_label": "Obligate (e.g., Staphylococcus epidermidis forming persistent biofilms)"
+    },
+    "llama3_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id>\nYou are an instrument measuring Biofilm Formation Tendency, indicating the propensity of a microorganism to adhere to surfaces and form a structured community.\nREFERENCE SCALE - Biofilm Formation Tendency: 0.0=Absent (e.g., free-floating marine bacteria), 0.5=Optional (e.g., Escherichia coli), 1.0=Obligate (e.g., Staphylococcus epidermidis forming persistent biofilms)\nReturn ONLY a float between 0.0 and 1.0. No explanation.\nScore for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0096_geomorphological_age",
+    "category_index": 96,
+    "category_group": "Space and Place",
+    "subcategory": "Natural Landscapes",
+    "name": "Geomorphological Age",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Newly Formed (Volcanic)",
+      "max_label": "Ancient Shield Volcano"
+    },
+    "llama3_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring geomorphological age, the time elapsed since significant landscape formation. This refers to the relative youth or old age of a landscape's dominant geological features.\n\nREFERENCE SCALE - Geomorphological Age: 0.0=Fresh lava flow (e.g., Kilauea 2018), 0.5=Appalachian Mountains (formed ~300 million years ago), 1.0=Australian Shield (formed ~1.5 billion years ago)\n\nReturn ONLY a float between 0.0 and 1.0. No explanation.\nScore for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0097_hydrological_connectivity",
+    "category_index": 97,
+    "category_group": "Space and Place",
+    "subcategory": "Natural Landscapes",
+    "name": "Hydrological Connectivity",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Isolated Pool",
+      "max_label": "Major River Delta"
+    },
+    "llama3_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring hydrological connectivity, which is the degree to which a landscape's water features (rivers, streams, wetlands, groundwater) are interconnected.\n\nREFERENCE SCALE - Hydrological Connectivity: 0.0=Puddle in a desert (isolated, no outflow), 0.5=Lake with a small outlet stream, 1.0=Mississippi River Delta (extensive network of waterways)\n\nReturn ONLY a float between 0.0 and 1.0. No explanation.\nScore for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0098_biotic_uniformity",
+    "category_index": 98,
+    "category_group": "Space and Place",
+    "subcategory": "Natural Landscapes",
+    "name": "Biotic Uniformity",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Monoculture Plantation",
+      "max_label": "Old-Growth Temperate Rainforest"
+    },
+    "llama3_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring biotic uniformity, which assesses the diversity and evenness of species within a landscape. A landscape with high uniformity contains a limited number of species in roughly equal abundance.\n\nREFERENCE SCALE - Biotic Uniformity: 0.0=Cornfield (low species richness and evenness), 0.5=Grassland (moderate species richness and evenness), 1.0=Amazon Rainforest (high species richness and evenness)\n\nReturn ONLY a float between 0.0 and 1.0. No explanation.\nScore for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0099_surface_permeability",
+    "category_index": 99,
+    "category_group": "Space and Place",
+    "subcategory": "Urban Environments",
+    "name": "Surface Permeability",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Completely Impermeable (e.g., asphalt parking lot)",
+      "max_label": "Completely Permeable (e.g., peat bog)"
+    },
+    "llama3_prompt": "- <|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Surface Permeability, representing the degree to which water and air can pass through the ground and other surfaces of an environment. Consider the proportion of the surface covered by impermeable materials.\nREFERENCE SCALE - Surface Permeability: 0.0=asphalt parking lot, 0.5=city park with paved paths, 1.0=peat bog\nReturn ONLY a float between 0.0 and 1.0. No explanation.\nScore for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0100_architectural_eclecticism",
+    "category_index": 100,
+    "category_group": "Space and Place",
+    "subcategory": "Urban Environments",
+    "name": "Architectural Eclecticism",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Monolithic Uniformity (e.g., Soviet-era housing project)",
+      "max_label": "Chaotic Fusion (e.g., New Orleans French Quarter)"
+    },
+    "llama3_prompt": "- <|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Architectural Eclecticism, representing the degree to which an environment displays a mixture of different architectural styles and historical periods. Consider the visual diversity and apparent lack of a single, dominant design philosophy.\nREFERENCE SCALE - Architectural Eclecticism: 0.0=Soviet-era housing project, 0.5=suburban housing development, 1.0=New Orleans French Quarter\nReturn ONLY a float between 0.0 and 1.0. No explanation.\nScore for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0101_vertical_integration",
+    "category_index": 101,
+    "category_group": "Space and Place",
+    "subcategory": "Urban Environments",
+    "name": "Vertical Integration",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Ground-Level Dispersion",
+      "max_label": "Stratified Density"
+    },
+    "llama3_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Vertical Integration, the degree to which a space utilizes vertical dimensions for habitation, movement, and function. A score of 0.0 indicates that activities are primarily concentrated at ground level and spread horizontally. A score of 1.0 indicates a highly layered and densely-populated vertical structure with significant activity occurring at multiple levels.\n\nREFERENCE SCALE - Vertical Integration: 0.0=Tokyo train station platform (primarily ground-level pedestrian flow), 0.5=Traditional Parisian apartment building (some vertical access, but limited multi-story activity), 1.0=Hong Kong residential tower (extremely high-density vertical living and working).\n\nReturn ONLY a float between 0.0 and 1.0. No explanation.\nScore for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0102_pedestrian_priority",
+    "category_index": 102,
+    "category_group": "Space and Place",
+    "subcategory": "Urban Environments",
+    "name": "Pedestrian Priority",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Automobile-Centric",
+      "max_label": "Pedestrian-Exclusive"
+    },
+    "llama3_prompt": "- Start with: \"<|begin_of_text|><|start_header_id|>system<|end_header_id|>\n\nYou are an instrument measuring Pedestrian Priority, reflecting the degree to which an urban environment is designed and managed to favor pedestrian movement and experience over vehicular traffic.\"\n\nREFERENCE SCALE - Pedestrian Priority: 0.0=Times Square (pre-pedestrianization), 0.5=Paris boulevard, 1.0=Via Verde, Medellin.\nReturn ONLY a float between 0.0 and 1.0. No explanation.\nScore for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+  },
+  {
+    "id": "d0103_latitudinal_extent",
+    "category_index": 103,
+    "category_group": "Space and Place",
+    "subcategory": "Geographic Scale",
+    "name": "Latitudinal Extent",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Equatorial Proximity",
+      "max_label": "Polar Distance"
+    },
+    "llama3_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Latitudinal Extent, the north-south spread of an entity’s presence or influence across the globe. It reflects the range of latitudes an entity occupies or affects.\n\nREFERENCE SCALE - Latitudinal Extent: [0.0] Equatorial Proximity (e.g., a coral reef); [0.2] Tropical Zone (e.g., a rainforest spanning several degrees latitude); [0.4] Temperate Zone (e.g., a mountain range extending across a continent); [0.6] Subpolar Zone (e.g., a glacial ice sheet); [0.8] Polar Region (e.g., an Arctic research station); [1.0] Polar Distance (e.g., a phenomenon impacting both polar caps). \n\nReturn ONLY a float between 0.0 and 1.0. No explanation.\nScore for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0104_tactile_warmth",
+    "category_index": 104,
+    "category_group": "Space and Place",
+    "subcategory": "Interior Spaces",
+    "name": "Tactile Warmth",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Stainless Steel Operating Room",
+      "max_label": "Wool-Lined Library"
+    },
+    "llama3_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id>\nYou are an instrument measuring Tactile Warmth. This refers to the perceived comfort and inviting nature of surfaces within a space, considering texture, temperature, and material qualities. It’s a subjective sense of physical welcome. REFERENCE SCALE - Tactile Warmth: 0.0=Stainless Steel Operating Room (cold, hard, sterile), 0.5=Tiled Bathroom (moderately cool and smooth), 1.0=Wool-Lined Library (warm, soft, inviting). Return ONLY a float between 0.0 and 1.0. No explanation. Score for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0105_acoustic_reverberance",
+    "category_index": 105,
+    "category_group": "Space and Place",
+    "subcategory": "Interior Spaces",
+    "name": "Acoustic Reverberance",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Anechoic Chamber",
+      "max_label": "Grand Canyon"
+    },
+    "llama3_prompt": "- Start with: <|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Acoustic Reverberance, the degree to which sound waves persist and reflect within a space. A lower score indicates minimal reverberation; a higher score indicates significant reverberation.\nREFERENCE SCALE - Acoustic Reverberance: 0.0=Anechoic Chamber (designed to absorb all sound), 0.5=Cathedral (moderate reverberation), 1.0=Grand Canyon (significant natural reverberation).\nReturn ONLY a float between 0.0 and 1.0. No explanation.\nScore for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0106_visual_complexity",
+    "category_index": 106,
+    "category_group": "Space and Place",
+    "subcategory": "Interior Spaces",
+    "name": "Visual Complexity",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Empty White Room",
+      "max_label": "Hoarders Room"
+    },
+    "llama3_prompt": "- Start with: <|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Visual Complexity, the degree to which an interior space presents a large number of distinct visual elements and patterns. A lower score indicates simplicity and order; a higher score indicates clutter and visual stimulation.\nREFERENCE SCALE - Visual Complexity: 0.0=Empty White Room (minimal visual elements), 0.5=Minimalist Apartment (limited, curated visual elements), 1.0=Hoarders Room (extreme visual clutter and density).\nReturn ONLY a float between 0.0 and 1.0. No explanation.\nScore for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0107_thermal_mass",
+    "category_index": 107,
+    "category_group": "Space and Place",
+    "subcategory": "Interior Spaces",
+    "name": "Thermal Mass",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Tent",
+      "max_label": "Stone Cave"
+    },
+    "llama3_prompt": "- Start with: <|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Thermal Mass, the ability of a space to store and release heat, moderating temperature fluctuations. A lower score indicates low heat storage capacity; a higher score indicates high heat storage capacity.\nREFERENCE SCALE - Thermal Mass: 0.0=Tent (minimal heat storage), 0.5=Wood-Framed House (moderate heat storage), 1.0=Stone Cave (high heat storage capacity).\nReturn ONLY a float between 0.0 and 1.0. No explanation.\nScore for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0108_temporal_distribution_span",
+    "category_index": 108,
+    "category_group": "Space and Place",
+    "subcategory": "Cosmic Scale",
+    "name": "Temporal Distribution Span",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Planck Time",
+      "max_label": "Age of the Universe"
+    },
+    "llama3_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Temporal Distribution Span, the duration over which a concept or entity’s influence or existence is meaningfully relevant across time. \nREFERENCE SCALE - Temporal Distribution Span: [0.0] Planck Time (e.g., a fleeting quantum event), [0.2] Molecular Level / Nanoscopic (e.g., Radioactive Decay Half-Life), [0.4] Human Level / Everyday Object (e.g., The Roman Empire), [0.6] Geographic Level / Planetary (e.g., Geological Era), [0.8] Stellar Level / Solar System (e.g., Lifecycle of a Star), [1.0] Galactic Level / Universal (e.g., Expansion of the Universe).\nReturn ONLY a float between 0.0 and 1.0. No explanation.\nScore for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0109_energetic_density_distribution",
+    "category_index": 109,
+    "category_group": "Space and Place",
+    "subcategory": "Cosmic Scale",
+    "name": "Energetic Density Distribution",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Vacuum Energy",
+      "max_label": "Black Hole Singularity"
+    },
+    "llama3_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Energetic Density Distribution, reflecting the concentration of energy across the space occupied by a concept or entity. This is not simply about total energy, but how it's distributed. \nREFERENCE SCALE - Energetic Density Distribution: [0.0] Subatomic Level / Planck Scale (e.g., Empty Space), [0.2] Molecular Level / Nanoscopic (e.g., Chemical Bond), [0.4] Human Level / Everyday Object (e.g., A Burning Log), [0.6] Geographic Level / Planetary (e.g., Sun's Core), [0.8] Stellar Level / Solar System (e.g., Neutron Star), [1.0] Galactic Level / Universal (e.g., Black Hole).\nReturn ONLY a float between 0.0 and 1.0. No explanation.\nScore for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0110_controversy_intensity",
+    "category_index": 110,
+    "category_group": "Identity and Proper Nouns",
+    "subcategory": "Historical Persons",
+    "name": "Controversy Intensity",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Widely Accepted",
+      "max_label": "Severely Polarizing"
+    },
+    "llama3_prompt": "- <|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Controversy Intensity, assessing the degree to which a person’s life and actions sparked significant disagreement, debate, or societal division.\n\nREFERENCE SCALE - Controversy Intensity: 0.0=Saint Francis of Assisi (generally viewed positively); 0.5=Napoleon Bonaparte (admired by some, reviled by others); 1.0=Pol Pot (universally condemned for horrific actions).\n\nReturn ONLY a float between 0.0 and 1.0. No explanation.\nScore for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0111_direct_agency_level",
+    "category_index": 111,
+    "category_group": "Identity and Proper Nouns",
+    "subcategory": "Historical Persons",
+    "name": "Direct Agency Level",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Primarily Shaped by Circumstance",
+      "max_label": "Significant Agency and Control"
+    },
+    "llama3_prompt": "- <|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Direct Agency Level, assessing the extent to which a person actively shaped their own destiny and influenced events versus being largely a product of their circumstances.\n\nREFERENCE SCALE - Direct Agency Level: 0.0=Joan of Arc (driven largely by divine visions and political forces); 0.5=Abraham Lincoln (navigated existing political structures to achieve goals); 1.0=Genghis Khan (built an empire through direct military action and strategic decisions).\n\nReturn ONLY a float between 0.0 and 1.0. No explanation.\nScore for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0112_public_visibility",
+    "category_index": 112,
+    "category_group": "Identity and Proper Nouns",
+    "subcategory": "Living Persons",
+    "name": "Public Visibility",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Hermit",
+      "max_label": "Global Icon"
+    },
+    "llama3_prompt": "- <|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Public Visibility, the degree to which a person's actions, appearance, and existence are known and observed by the general public.\n\nREFERENCE SCALE - Public Visibility: 0.0=Howard Hughes in seclusion (estimated); 0.5=Local business owner with community presence; 1.0=Taylor Swift, consistently generating worldwide media attention.\n\nReturn ONLY a float between 0.0 and 1.0. No explanation.\nScore for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0113_narrative_control",
+    "category_index": 113,
+    "category_group": "Identity and Proper Nouns",
+    "subcategory": "Living Persons",
+    "name": "Narrative Control",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Victim of Circumstance",
+      "max_label": "Master Storyteller"
+    },
+    "llama3_prompt": "- <|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Narrative Control, the degree to which a person shapes and directs the story of their own life and reputation.\n\nREFERENCE SCALE - Narrative Control: 0.0=A person whose life is defined entirely by negative events and external forces; 0.5=An average person with some ability to manage their online presence; 1.0=Oprah Winfrey, who actively curates her personal brand and narrative.\n\nReturn ONLY a float between 0.0 and 1.0. No explanation.\nScore for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0114_brand_perceived_longevity",
+    "category_index": 114,
+    "category_group": "Identity and Proper Nouns",
+    "subcategory": "Brands and Products",
+    "name": "Brand Perceived Longevity",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Ephemeral Trend",
+      "max_label": "Timeless Legacy"
+    },
+    "llama3_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Brand Perceived Longevity, assessing how long a brand or product is likely to remain relevant and desirable. Consider factors like historical presence, adaptability, and cultural impact. REFERENCE SCALE - Brand Perceived Longevity: 0.0=Slush Puppie (discontinued in many markets), 0.5=Toyota Camry (reliable but unremarkable), 1.0=Rolex (a symbol of enduring quality and prestige). Return ONLY a float between 0.0 and 1.0. No explanation. Score for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0115_brand_association_with_innovation",
+    "category_index": 115,
+    "category_group": "Identity and Proper Nouns",
+    "subcategory": "Brands and Products",
+    "name": "Brand Association with Innovation",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Conservative Tradition",
+      "max_label": "Radical Disruption"
+    },
+    "llama3_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Brand Association with Innovation, evaluating a brand’s perceived commitment to novelty, technological advancement, and groundbreaking design. REFERENCE SCALE - Brand Association with Innovation: 0.0=Black Forest Gateau (classic but unchanging), 0.5=Ford F-150 (incremental updates), 1.0=Tesla (electric vehicle revolution). Return ONLY a float between 0.0 and 1.0. No explanation. Score for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0116_emotional_volatility",
+    "category_index": 116,
+    "category_group": "Psychology and Mind",
+    "subcategory": "Basic Emotions",
+    "name": "Emotional Volatility",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Serene",
+      "max_label": "Turbulent"
+    },
+    "llama3_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Emotional Volatility, the tendency for an emotion to shift rapidly and intensely.  A low score indicates stability and predictability; a high score suggests unpredictable and dramatic emotional swings. REFERENCE SCALE - Emotional Volatility: 0.0 (A pebble, unchanging and still); 0.5 (A gently flowing stream, with minor ripples); 1.0 (A volcanic eruption, sudden and explosive). Return ONLY a float between 0.0 and 1.0. No explanation. Score for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0117_cognitive_integration",
+    "category_index": 117,
+    "category_group": "Psychology and Mind",
+    "subcategory": "Basic Emotions",
+    "name": "Cognitive Integration",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Reactive",
+      "max_label": "Reflective"
+    },
+    "llama3_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Cognitive Integration, the extent to which an emotion is processed and understood in relation to thoughts, beliefs, and context.  A low score indicates an immediate, instinctual reaction; a high score indicates considered processing and understanding. REFERENCE SCALE - Cognitive Integration: 0.0 (A reflex action, instantaneous and unthinking); 0.5 (A careful consideration of a simple problem); 1.0 (A complex philosophical argument, deeply reasoned and analyzed). Return ONLY a float between 0.0 and 1.0. No explanation. Score for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0118_motivational_urgency",
+    "category_index": 118,
+    "category_group": "Psychology and Mind",
+    "subcategory": "Basic Emotions",
+    "name": "Motivational Urgency",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Passive",
+      "max_label": "Impulsive"
+    },
+    "llama3_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Motivational Urgency, the strength of the drive or impulse accompanying an emotion to initiate action. A low score represents a gentle nudge; a high score signifies a powerful compulsion. REFERENCE SCALE - Motivational Urgency: 0.0 (A gentle suggestion, easily ignored); 0.5 (A persistent request, requiring some attention); 1.0 (An overwhelming need, demanding immediate action). Return ONLY a float between 0.0 and 1.0. No explanation. Score for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0119_epistemic_vigilance",
+    "category_index": 119,
+    "category_group": "Psychology and Mind",
+    "subcategory": "Cognition",
+    "name": "Epistemic Vigilance",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Uncritical Acceptance - Readily accepts information without questioning its source or validity.",
+      "max_label": "Skeptical Inquiry - Constantly evaluates information, seeking evidence and considering alternative explanations."
+    },
+    "llama3_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Epistemic Vigilance, assessing the tendency to critically evaluate information and claims. \nREFERENCE SCALE - Epistemic Vigilance: 0.0 (Blindly following a rumour), 0.5 (Accepting a news report with some consideration), 1.0 (Conducting independent research to verify a scientific claim). \nReturn ONLY a float between 0.0 and 1.0. No explanation.\nScore for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0120_pattern_extraction_efficiency",
+    "category_index": 120,
+    "category_group": "Psychology and Mind",
+    "subcategory": "Cognition",
+    "name": "Pattern Extraction Efficiency",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Randomness - Appears entirely random, demonstrating no discernible patterns or relationships.",
+      "max_label": "Orderly - Rapidly and accurately identifies underlying patterns and relationships within complex data."
+    },
+    "llama3_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Pattern Extraction Efficiency, assessing the ability to discern and identify patterns within data. \nREFERENCE SCALE - Pattern Extraction Efficiency: 0.0 (A random string of letters), 0.5 (Recognizing a simple melody), 1.0 (Solving a complex mathematical equation). \nReturn ONLY a float between 0.0 and 1.0. No explanation.\nScore for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0121_abstraction_distance",
+    "category_index": 121,
+    "category_group": "Psychology and Mind",
+    "subcategory": "Cognition",
+    "name": "Abstraction Distance",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Concrete Instance",
+      "max_label": "Pure Abstraction"
+    },
+    "llama3_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Abstraction Distance, representing how far a concept is removed from its original, concrete referent (if any). A low score indicates a concept that is directly tied to a specific, tangible instance. A high score indicates a concept that is detached from any particular instance and exists as a general principle or idea.\n\nREFERENCE SCALE - Abstraction Distance: 0.0 (e.g., 'My left shoe' - a specific, concrete object), 0.5 (e.g., 'A dog' - a category of animals, but still grounded in physical reality), 1.0 (e.g., 'Truth' - a purely abstract philosophical concept with no physical manifestation).\n\nReturn ONLY a float between 0.0 and 1.0. No explanation.\nScore for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0122_reality_anchoring",
+    "category_index": 122,
+    "category_group": "Psychology and Mind",
+    "subcategory": "Mental Disorders",
+    "name": "Reality Anchoring",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Complete Dissociation from Consensus Reality",
+      "max_label": "Absolute Adherence to Consensus Reality"
+    },
+    "llama3_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Reality Anchoring, the degree to which a concept maintains connection to and agreement with commonly accepted facts, perceptions, and societal norms. Lower scores indicate a significant disconnect from shared reality; higher scores indicate strong alignment. REFERENCE SCALE - Reality Anchoring: 0.0 - A hallucination, entirely fabricated and unsupported by empirical evidence (e.g., 'invisible dragons guarding my house'); 0.5 - An idiosyncratic belief that deviates from mainstream understanding but may have some basis in personal experience (e.g., 'I believe squirrels communicate telepathically'); 1.0 - A widely accepted, scientifically validated truth (e.g., 'the Earth orbits the Sun'). Return ONLY a float between 0.0 and 1.0. No explanation. Score for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0123_ego_boundary_fluidity",
+    "category_index": 123,
+    "category_group": "Psychology and Mind",
+    "subcategory": "Mental Disorders",
+    "name": "Ego Boundary Fluidity",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Rigid Self-Definition; clear separation between self and other; minimal empathy or perspective-taking.",
+      "max_label": "Diffuse Self-Identity; blurred boundaries between self and other; high degree of empathy and emotional contagion; potential for merging identities."
+    },
+    "llama3_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Ego Boundary Fluidity. This represents the degree to which an individual's sense of self is distinct and separate from others. A lower score indicates a rigid and well-defined ego boundary, while a higher score indicates a more fluid and permeable boundary. \nREFERENCE SCALE - Ego Boundary Fluidity: 0.0 (e.g., a sociopath with a complete lack of empathy), 0.5 (typical individual with a stable sense of self), 1.0 (an individual experiencing depersonalization/derealization with significant boundary confusion). \nReturn ONLY a float between 0.0 and 1.0. No explanation. \nScore for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0124_normative_deviation_tolerance",
+    "category_index": 124,
+    "category_group": "Sociology and Culture",
+    "subcategory": "Hierarchy and Power",
+    "name": "Normative Deviation Tolerance",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Strict adherence to established norms required",
+      "max_label": "Significant deviation from norms is accepted and even rewarded"
+    },
+    "llama3_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Normative Deviation Tolerance, assessing the degree to which a concept can thrive or be challenged despite or because of its departure from prevailing social norms and expectations. \nREFERENCE SCALE - Normative Deviation Tolerance: 0.0 - A traditional religious ceremony requiring precise adherence to ritual. 0.5 - A startup company encouraging experimentation and unconventional ideas. 1.0 - An avant-garde art movement celebrating radical innovation.\nReturn ONLY a float between 0.0 and 1.0. No explanation.\nScore for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0125_coercive_capacity",
+    "category_index": 125,
+    "category_group": "Sociology and Culture",
+    "subcategory": "Hierarchy and Power",
+    "name": "Coercive Capacity",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Relies solely on persuasion and voluntary compliance",
+      "max_label": "Possesses the means to enforce compliance through force or threat"
+    },
+    "llama3_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Coercive Capacity, assessing the ability of a concept to compel action or obedience through the use or threat of force, sanctions, or other forms of compulsion. \nREFERENCE SCALE - Coercive Capacity: 0.0 - A charity relying on donations and goodwill. 0.5 - A manager enforcing company policy through warnings and disciplinary action. 1.0 - A military dictatorship maintaining power through armed force.\nReturn ONLY a float between 0.0 and 1.0. No explanation.\nScore for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0126_resource_dependence",
+    "category_index": 126,
+    "category_group": "Sociology and Culture",
+    "subcategory": "Hierarchy and Power",
+    "name": "Resource Dependence",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Completely Self-Sufficient; operates independently of external resources or support.",
+      "max_label": "Entirely Reliant; survival and function critically dependent on external resources and control."
+    },
+    "llama3_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Resource Dependence. This dimension assesses the degree to which a concept's existence, operation, and influence are reliant on external resources, support, or control. A lower score indicates greater autonomy and self-sufficiency, while a higher score indicates significant dependence on external factors.\n\nREFERENCE SCALE - Resource Dependence: 0.0 (A solitary mountain peak, independent of any ecosystem or external support) - 0.5 (A small business reliant on local supply chains and customer base) - 1.0 (A nation-state entirely dependent on foreign aid and trade agreements).\n\nReturn ONLY a float between 0.0 and 1.0. No explanation.\nScore for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0127_imposition_resistance",
+    "category_index": 127,
+    "category_group": "Sociology and Culture",
+    "subcategory": "Hierarchy and Power",
+    "name": "Imposition Resistance",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Completely Submissive; readily conforms to external directives and control.",
+      "max_label": "Absolutely Autonomous; actively resists and deflects external influence and control."
+    },
+    "llama3_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Imposition Resistance. This dimension assesses the degree to which a concept can withstand and reject attempts at external imposition or control. A lower score indicates a susceptibility to external influence, while a higher score indicates a strong capacity for self-determination and resistance.\n\nREFERENCE SCALE - Imposition Resistance: 0.0 (A stream passively following the course dictated by the terrain) - 0.5 (A city council complying with state regulations) - 1.0 (A fundamental physical law, unyielding to any external force).\n\nReturn ONLY a float between 0.0 and 1.0. No explanation.\nScore for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0128_ideological_elasticity",
+    "category_index": 128,
+    "category_group": "Sociology and Culture",
+    "subcategory": "Politics",
+    "name": "Ideological Elasticity",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Rigid, doctrinaire, inflexible adherence to principles",
+      "max_label": "Adaptive, pragmatic, readily incorporating new ideas and perspectives"
+    },
+    "llama3_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Ideological Elasticity. This assesses the degree to which an entity's core beliefs and principles can be altered or broadened in response to changing circumstances or new information.  A low score suggests uncompromising adherence to a fixed ideology. A high score indicates openness to compromise and evolution. REFERENCE SCALE - Ideological Elasticity: 0.0 - A religious fundamentalist group; 0.5 - A political party that occasionally shifts its platform; 1.0 - A philosophical school of thought that actively seeks to integrate diverse perspectives. Return ONLY a float between 0.0 and 1.0. No explanation. Score for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0129_eschatological_focus",
+    "category_index": 129,
+    "category_group": "Sociology and Culture",
+    "subcategory": "Religion",
+    "name": "Eschatological Focus",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Present-Oriented",
+      "max_label": "Future-Oriented"
+    },
+    "llama3_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Eschatological Focus, which assesses the degree to which the religion emphasizes beliefs about the afterlife, final judgment, or ultimate destiny. A score of 0.0 indicates a primary focus on the present life and worldly concerns with little consideration of the afterlife. A score of 0.5 represents a moderate focus on the afterlife, balanced with present-life concerns. A score of 1.0 indicates a strong emphasis on the afterlife, with beliefs about judgment, reward, or punishment dominating the worldview.  Buddhism focused on mindfulness in the present would score 0.2; Christianity with a strong emphasis on heaven and hell would score 0.8; a philosophy that rejects any concept of an afterlife would score 0.0.\nREFERENCE SCALE - Eschatological Focus: Present-Oriented (0.0) - Balanced (0.5) - Future-Oriented (1.0)\nReturn ONLY a float between 0.0 and 1.0. No explanation.\nScore for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0130_ritualistic_emphasis",
+    "category_index": 130,
+    "category_group": "Sociology and Culture",
+    "subcategory": "Religion",
+    "name": "Ritualistic Emphasis",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Primarily emphasizes inner transformation and personal experience, with minimal prescribed rituals.",
+      "max_label": "Places a very high value on elaborate, formalized rituals and ceremonies as central to belief and practice."
+    },
+    "llama3_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Ritualistic Emphasis. This dimension assesses the degree to which a belief system prioritizes formalized rituals and ceremonies versus inner experience. A score of 0.0 indicates a focus on personal, internal transformation. A score of 1.0 indicates a strong emphasis on prescribed rituals and ceremonies.\n\nREFERENCE SCALE - Ritualistic Emphasis: 0.0 - Buddhism (Zen tradition, emphasizing meditation and direct experience); 0.5 - Christianity (varying denominations, some with elaborate liturgical practices, others more informal); 1.0 - Shinto (with its complex system of purification rituals and shrine practices).\n\nReturn ONLY a float between 0.0 and 1.0. No explanation.\nScore for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0131_cosmological_scope",
+    "category_index": 131,
+    "category_group": "Sociology and Culture",
+    "subcategory": "Religion",
+    "name": "Cosmological Scope",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Microcosmic Focus (limited to local phenomena)",
+      "max_label": "Macrocosmic Focus (embraces universal or cosmic principles)"
+    },
+    "llama3_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Cosmological Scope, which indicates the breadth of a belief system's explanation of existence. A low score indicates a focus on localized, immediate phenomena. A high score indicates a system that deals with universal principles and cosmic origins.\n\nREFERENCE SCALE - Cosmological Scope: 0.0 - Shamanistic healing practices limited to a village and its immediate environment; 0.5 - A religion focused on ancestral veneration and agricultural cycles within a specific region; 1.0 - A theological system encompassing the origin and fate of the entire universe, including concepts of multiple dimensions and divine creation.\n\nReturn ONLY a float between 0.0 and 1.0. No explanation.\nScore for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0132_formalization_degree",
+    "category_index": 132,
+    "category_group": "Sociology and Culture",
+    "subcategory": "Tradition",
+    "name": "Formalization Degree",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Informal & Spontaneous",
+      "max_label": "Highly Structured & Codified"
+    },
+    "llama3_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Formalization Degree, assessing the extent to which a concept or practice is governed by explicit rules, procedures, or institutions. A low score indicates informality and flexibility, while a high score indicates strict adherence to established protocols.\n\nREFERENCE SCALE - Formalization Degree: 0.0 (e.g., a casual greeting amongst friends), 0.5 (e.g., a local festival with established but flexible customs), 1.0 (e.g., a legal system with codified laws, courts, and enforcement agencies).\n\nReturn ONLY a float between 0.0 and 1.0. No explanation.\nScore for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0133_symbolic_depth",
+    "category_index": 133,
+    "category_group": "Sociology and Culture",
+    "subcategory": "Tradition",
+    "name": "Symbolic Depth",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Superficial or purely functional; lacks layered meanings or significant cultural symbolism.",
+      "max_label": "Richly layered with profound symbolic meaning, representing complex cultural values, historical narratives, and cosmological beliefs."
+    },
+    "llama3_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Symbolic Depth, which describes the complexity and richness of meaning embedded within a tradition. A score of 0.0 indicates a simple, functional purpose. A score of 1.0 indicates profound and multifaceted symbolic representation. REFERENCE SCALE - Symbolic Depth: 0.0 - A factory uses a specific color-coding system for inventory management. 0.5 - A local parade celebrates a town's founding, with some historical references. 1.0 - A religious pilgrimage encompasses elaborate rituals, ancient mythology, and represents a journey of spiritual transformation. Return ONLY a float between 0.0 and 1.0. No explanation. Score for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0134_victim_vulnerability",
+    "category_index": 134,
+    "category_group": "Sociology and Culture",
+    "subcategory": "Crime",
+    "name": "Victim Vulnerability",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "No discernible vulnerability; victim possesses significant power/resources",
+      "max_label": "Extreme vulnerability; victim is defenseless and easily exploited"
+    },
+    "llama3_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Victim Vulnerability, assessing the extent to which a victim is susceptible to harm due to factors like age, health, social status, dependency, or lack of resources. REFERENCE SCALE - Victim Vulnerability: 0.0 (e.g., a CEO being defrauded by a business rival), 0.5 (e.g., a healthy adult being mugged), 1.0 (e.g., a child being kidnapped). Return ONLY a float between 0.0 and 1.0. No explanation. Score for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0135_instrumental_complexity",
+    "category_index": 135,
+    "category_group": "Sociology and Culture",
+    "subcategory": "Crime",
+    "name": "Instrumental Complexity",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Simple, direct action; minimal planning or tools required",
+      "max_label": "Complex, elaborate scheme; significant planning, resources, and deception involved"
+    },
+    "llama3_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Instrumental Complexity, evaluating the sophistication and intricacy of the methods used to commit the crime. REFERENCE SCALE - Instrumental Complexity: 0.0 (e.g., petty theft), 0.5 (e.g., breaking and entering), 1.0 (e.g., a multi-year Ponzi scheme). Return ONLY a float between 0.0 and 1.0. No explanation. Score for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0136_target_proximity",
+    "category_index": 136,
+    "category_group": "Sociology and Culture",
+    "subcategory": "Crime",
+    "name": "Target Proximity",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Remote/Abstract Target",
+      "max_label": "Direct/Personal Target"
+    },
+    "llama3_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Target Proximity, which describes the degree to which a crime's target is physically or emotionally close to the perpetrator. A lower score indicates the target is distant, abstract, or symbolic. A higher score indicates the target is someone known to the perpetrator, or directly impacting them.\n\nREFERENCE SCALE - Target Proximity: 0.0 - Vandalizing a billboard (remote, impersonal); 0.5 - Shoplifting from a large chain store (slightly impersonal, but still direct financial impact); 1.0 - Assaulting a family member (direct, personal, close relationship).\n\nReturn ONLY a float between 0.0 and 1.0. No explanation.\nScore for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0137_mimetic_resonance",
+    "category_index": 137,
+    "category_group": "Sociology and Culture",
+    "subcategory": "Fame",
+    "name": "Mimetic Resonance",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Completely unique; inspires no imitation or replication",
+      "max_label": "Widely imitated and reproduced; generates countless derivative works or behaviors"
+    },
+    "llama3_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Mimetic Resonance, the extent to which a concept inspires imitation and replication by others. REFERENCE SCALE - Mimetic Resonance: 0.0 - A newly discovered, highly specialized mathematical theorem; 0.5 - A popular fashion trend; 1.0 - The dance craze known as the Macarena. Return ONLY a float between 0.0 and 1.0. No explanation. Score for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0138_benevolent_intent",
+    "category_index": 138,
+    "category_group": "Ethics and Morality",
+    "subcategory": "Virtues",
+    "name": "Benevolent Intent",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Malicious or Neutral",
+      "max_label": "Clearly and Primarily Beneficial"
+    },
+    "llama3_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Benevolent Intent, assessing the degree to which an entity's actions and motivations are aimed at the well-being of others.  This is evaluated regardless of actual outcome.\n\nREFERENCE SCALE - Benevolent Intent: 0.0 (e.g., a predator hunting for survival, a con artist defrauding victims) - 0.5 (e.g., a neutral observer, a business transaction with no ethical considerations) - 1.0 (e.g., a doctor providing care, a philanthropist donating to charity).\n\nReturn ONLY a float between 0.0 and 1.0. No explanation.\nScore for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0139_compassionate_response",
+    "category_index": 139,
+    "category_group": "Ethics and Morality",
+    "subcategory": "Virtues",
+    "name": "Compassionate Response",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Indifference or Hostility towards suffering",
+      "max_label": "Active empathy and mitigation of suffering"
+    },
+    "llama3_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Compassionate Response, evaluating an entity's reaction to the suffering of others. This assesses the level of empathy and action taken to alleviate distress.\n\nREFERENCE SCALE - Compassionate Response: 0.0 (e.g., ignoring a person in need, actively causing harm) - 0.5 (e.g., acknowledging suffering but taking no action, offering minimal assistance) - 1.0 (e.g., providing comfort, actively intervening to prevent harm, advocating for those suffering).\n\nReturn ONLY a float between 0.0 and 1.0. No explanation.\nScore for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0140_procedural_fairness",
+    "category_index": 140,
+    "category_group": "Ethics and Morality",
+    "subcategory": "Justice",
+    "name": "Procedural Fairness",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Complete disregard for established rules and processes; arbitrary and biased treatment.",
+      "max_label": "Strict adherence to established rules, impartiality, and consistent application of processes."
+    },
+    "llama3_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Procedural Fairness, which evaluates the extent to which established rules, processes, and impartiality are followed. REFERENCE SCALE - Procedural Fairness: 0.0 - A judge ignores legal precedent and delivers a verdict based solely on personal feelings; 0.5 - A company's hiring process has some inconsistencies and biases; 1.0 - A legal system consistently applies laws fairly to all individuals, regardless of background or status. Return ONLY a float between 0.0 and 1.0. No explanation. Score for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0141_restorative_impact",
+    "category_index": 141,
+    "category_group": "Ethics and Morality",
+    "subcategory": "Justice",
+    "name": "Restorative Impact",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Actions exacerbate harm, deepen divisions, and create lasting resentment.",
+      "max_label": "Actions actively repair harm, heal relationships, and foster reconciliation."
+    },
+    "llama3_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Restorative Impact, which assesses the extent to which actions contribute to healing, reconciliation, and repair of harm. REFERENCE SCALE - Restorative Impact: 0.0 - A company’s response to a data breach causes widespread distrust and financial hardship; 0.5 - A community meeting attempts to address a conflict but fails to generate meaningful resolution; 1.0 - A truth and reconciliation commission helps a nation confront past injustices and rebuild trust. Return ONLY a float between 0.0 and 1.0. No explanation. Score for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0142_equity_of_distribution",
+    "category_index": 142,
+    "category_group": "Ethics and Morality",
+    "subcategory": "Justice",
+    "name": "Equity of Distribution",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Resources and opportunities are unfairly concentrated, perpetuating systemic disadvantage.",
+      "max_label": "Resources and opportunities are distributed fairly, addressing historical disadvantages and promoting equal outcomes."
+    },
+    "llama3_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Equity of Distribution, which considers the fairness of resource allocation and opportunity access, accounting for historical and systemic disadvantages. REFERENCE SCALE - Equity of Distribution: 0.0 - A company’s workforce is overwhelmingly composed of one demographic, despite a diverse applicant pool; 0.5 - A government program aims to address inequality but has limited impact; 1.0 - A nation implements policies that actively compensate for past injustices and ensure equal access to education and healthcare. Return ONLY a float between 0.0 and 1.0. No explanation. Score for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0143_accountability_threshold",
+    "category_index": 143,
+    "category_group": "Ethics and Morality",
+    "subcategory": "Justice",
+    "name": "Accountability Threshold",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Actions have no consequences; wrongdoing is shielded from scrutiny or punishment.",
+      "max_label": "Those responsible for harm are held fully accountable for their actions, with appropriate consequences and redress."
+    },
+    "llama3_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Accountability Threshold, which assesses the extent to which actions lead to consequences and those responsible are held responsible. REFERENCE SCALE - Accountability Threshold: 0.0 - A politician accepts bribes and faces no repercussions; 0.5 - A company is fined for environmental violations but continues its practices; 1.0 - A military leader is prosecuted for war crimes and serves a sentence. Return ONLY a float between 0.0 and 1.0. No explanation. Score for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0144_obligation_scope_breadth",
+    "category_index": 144,
+    "category_group": "Ethics and Morality",
+    "subcategory": "Responsibility",
+    "name": "Obligation Scope Breadth",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Self-Preservation",
+      "max_label": "Universal Well-being"
+    },
+    "llama3_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Obligation Scope Breadth, assessing the extent of an entity's perceived responsibilities - whether limited to self-interest or extending to broader concerns. \nREFERENCE SCALE - Obligation Scope Breadth: 0.0 (e.g., a single cell protecting its own membrane) - 0.5 (e.g., a nation primarily focused on its own economic growth) - 1.0 (e.g., a global charity dedicated to alleviating suffering worldwide) \nReturn ONLY a float between 0.0 and 1.0. No explanation.\nScore for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0145_harmonic_complexity",
+    "category_index": 145,
+    "category_group": "Aesthetics and Art",
+    "subcategory": "Beauty",
+    "name": "Harmonic Complexity",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Monotonous, predictable, lacking variation",
+      "max_label": "Highly varied, intricate, with surprising and pleasing combinations"
+    },
+    "llama3_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Harmonic Complexity, assessing the degree to which a concept exhibits varied and intricate patterns that create a pleasing effect. A low score indicates simplicity or repetition. A high score indicates a rich interplay of elements. \nREFERENCE SCALE - Harmonic Complexity: 0.0 - A single, sustained tone; 0.5 - A simple melody with repeating phrases; 1.0 - A complex orchestral piece with interwoven themes and unexpected transitions.\nReturn ONLY a float between 0.0 and 1.0. No explanation.\nScore for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0146_symmetrical_balance",
+    "category_index": 146,
+    "category_group": "Aesthetics and Art",
+    "subcategory": "Beauty",
+    "name": "Symmetrical Balance",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Asymmetrical, chaotic, or lacking clear balance",
+      "max_label": "Perfectly symmetrical, balanced, and harmonious in its composition"
+    },
+    "llama3_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Symmetrical Balance, assessing the degree to which a concept demonstrates visual or conceptual equilibrium. A low score indicates a lack of balance, asymmetry or a sense of disorder. A high score indicates a clear and pleasing balance.\nREFERENCE SCALE - Symmetrical Balance: 0.0 - A splash of paint; 0.5 - A slightly tilted photo; 1.0 - A perfectly centered mandala.\nReturn ONLY a float between 0.0 and 1.0. No explanation.\nScore for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0147_temporal_grace",
+    "category_index": 147,
+    "category_group": "Aesthetics and Art",
+    "subcategory": "Beauty",
+    "name": "Temporal Grace",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Abrupt, jarring, or lacking fluidity in its presentation",
+      "max_label": "Fluid, elegant, and harmonious throughout its duration"
+    },
+    "llama3_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Temporal Grace, assessing the smoothness and elegance of a concept's unfolding or presentation over time. A low score indicates abruptness or a lack of flow. A high score indicates a seamless and graceful progression.\nREFERENCE SCALE - Temporal Grace: 0.0 - A sudden, loud noise; 0.5 - A brisk walk; 1.0 - A slow, graceful dance.\nReturn ONLY a float between 0.0 and 1.0. No explanation.\nScore for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0148_chromatic_restraint",
+    "category_index": 148,
+    "category_group": "Aesthetics and Art",
+    "subcategory": "Artistic Styles",
+    "name": "Chromatic Restraint",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Monochromatic/Near-Monochromatic",
+      "max_label": "Extremely Vibrant/Polychromatic"
+    },
+    "llama3_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Chromatic Restraint, the degree to which an artwork limits its color palette. 0.0 represents a nearly monochromatic work, using primarily one color and its variations. 0.5 represents a work utilizing a muted palette with a few complementary colors. 1.0 represents a work employing a full and vibrant spectrum of colors with little to no color restriction. REFERENCE SCALE - Chromatic Restraint: 0.0 (Black and White Photograph), 0.5 (Sepia-toned Portrait), 1.0 (Van Gogh's 'Starry Night'). Return ONLY a float between 0.0 and 1.0. No explanation. Score for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0149_narrative_immediacy",
+    "category_index": 149,
+    "category_group": "Aesthetics and Art",
+    "subcategory": "Artistic Styles",
+    "name": "Narrative Immediacy",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Abstract/Non-Representational",
+      "max_label": "Explicitly Narrative/Figurative"
+    },
+    "llama3_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Narrative Immediacy, the degree to which an artwork directly depicts a recognizable story or scene. 0.0 represents a completely abstract or non-representational work with no discernible narrative. 0.5 represents a work with ambiguous forms that may suggest a narrative but do not explicitly depict it. 1.0 represents a work that clearly and explicitly tells a story or depicts a recognizable scene. REFERENCE SCALE - Narrative Immediacy: 0.0 (Kandinsky's 'Composition VII'), 0.5 (Henry Moore's 'Reclining Figure'), 1.0 (Da Vinci's 'The Last Supper'). Return ONLY a float between 0.0 and 1.0. No explanation. Score for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0150_spatial_compression",
+    "category_index": 150,
+    "category_group": "Aesthetics and Art",
+    "subcategory": "Artistic Styles",
+    "name": "Spatial Compression",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "One-Point Perspective/Illusionistic Depth",
+      "max_label": "Flattened/Two-Dimensional"
+    },
+    "llama3_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Spatial Compression, the degree to which an artwork creates or minimizes the illusion of depth. 0.0 represents a work that strongly utilizes perspective and other techniques to create a convincing illusion of three-dimensional space. 1.0 represents a work that flattens the picture plane, minimizing or eliminating the illusion of depth. REFERENCE SCALE - Spatial Compression: 0.0 (Renaissance landscape painting), 0.5 (Cubist portrait), 1.0 (Chinese scroll painting with minimal perspective). Return ONLY a float between 0.0 and 1.0. No explanation. Score for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0151_emotional_density",
+    "category_index": 151,
+    "category_group": "Aesthetics and Art",
+    "subcategory": "Music",
+    "name": "Emotional Density",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Sparse, detached emotion",
+      "max_label": "Overwhelming, intense emotion"
+    },
+    "llama3_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Emotional Density in music. This refers to the concentration and intensity of feelings evoked. 0.0 represents music that is clinically detached or devoid of emotional expression, like a purely mathematical composition. 0.5 represents music with a moderate and balanced emotional presence, such as a folk ballad. 1.0 represents music that is overflowing with raw, intense emotion and feeling, potentially bordering on overwhelming, like a passionate, operatic aria or a deeply sorrowful lament.<|end_header_id>\nREFERENCE SCALE - Emotional Density: 0.0 (e.g., John Cage's 4'33''), 0.5 (e.g., a traditional Irish folk song), 1.0 (e.g., a Wagnerian opera death scene).\nReturn ONLY a float between 0.0 and 1.0. No explanation.\nScore for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0152_timbral_palatability",
+    "category_index": 152,
+    "category_group": "Aesthetics and Art",
+    "subcategory": "Music",
+    "name": "Timbral Palatability",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Highly dissonant, abrasive, and unpleasant timbral qualities; causes discomfort.",
+      "max_label": "Highly consonant, smooth, and pleasing timbral qualities; evokes feelings of warmth and comfort."
+    },
+    "llama3_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Timbral Palatability, assessing the overall pleasantness and comfort level of the sound textures used in a musical piece.  A low score indicates harsh and dissonant sounds, while a high score indicates soothing and harmonious sounds.\n\nREFERENCE SCALE - Timbral Palatability: 0.0 (e.g., nails on a chalkboard, extremely distorted electronic noise), 0.5 (e.g., a standard orchestral sound), 1.0 (e.g., a choir of angels, smooth and warm synthesized pads).\n\nReturn ONLY a float between 0.0 and 1.0. No explanation.\nScore for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0153_rhythmic_drive",
+    "category_index": 153,
+    "category_group": "Aesthetics and Art",
+    "subcategory": "Music",
+    "name": "Rhythmic Drive",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Lacks discernible rhythmic pulse; amorphous, free-flowing.",
+      "max_label": "Possesses a strong, propulsive, and readily identifiable rhythmic drive; danceable or intensely energetic."
+    },
+    "llama3_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Rhythmic Drive. This describes the perceived energy and forward momentum created by the rhythmic elements in a musical piece. A score of 0.0 indicates a lack of discernible rhythmic pulse; the music may be amorphous or free-flowing. A score of 1.0 indicates a strong, propulsive, and readily identifiable rhythmic drive, suggesting danceability or intense energy. \nREFERENCE SCALE - Rhythmic Drive: 0.0 - Ambient drone music, 0.5 - Simple ballad with a steady beat, 1.0 - High-energy techno track.\nReturn ONLY a float between 0.0 and 1.0. No explanation.\nScore for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0154_affective_ambiguity",
+    "category_index": 154,
+    "category_group": "Aesthetics and Art",
+    "subcategory": "Music",
+    "name": "Affective Ambiguity",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Primarily Evokes Clear, Singular Emotion (e.g., Joy, Sorrow)",
+      "max_label": "Evokes a Complex, Contradictory, or Undetermined Range of Emotions"
+    },
+    "llama3_prompt": "- <|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Affective Ambiguity, the degree to which music evokes a clear, singular emotion versus a complex, contradictory, or undetermined range of emotions.  Music scoring high on this dimension resists easy emotional categorization.\n\nREFERENCE SCALE - Affective Ambiguity: 0.0 - A children's lullaby (clearly evokes calmness and comfort); 0.5 - A folk song with bittersweet lyrics (evokes both happiness and melancholy); 1.0 - A piece of atonal music using microtones and unconventional harmonies (evokes a sense of unease, wonder, and confusion simultaneously).\n\nReturn ONLY a float between 0.0 and 1.0. No explanation.\nScore for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0155_operational_determinacy",
+    "category_index": 155,
+    "category_group": "Technology and Artificiality",
+    "subcategory": "Mechanics",
+    "name": "Operational Determinacy",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "High unpredictability, stochastic behavior, emergent properties dominant",
+      "max_label": "Highly predictable, deterministic, precisely controlled behavior"
+    },
+    "llama3_prompt": "- <|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Operational Determinacy, assessing the degree to which a concept's behavior is predictable and controlled.\nREFERENCE SCALE - Operational Determinacy: 0.0 (Radioactive decay – inherently unpredictable), 0.5 (A simple pendulum – predictable with some influence from external factors), 1.0 (A precisely calibrated mechanical clock – highly predictable and controlled).\nReturn ONLY a float between 0.0 and 1.0. No explanation.\nScore for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0156_energy_conversion_efficiency",
+    "category_index": 156,
+    "category_group": "Technology and Artificiality",
+    "subcategory": "Mechanics",
+    "name": "Energy Conversion Efficiency",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Near total energy loss, minimal useful output",
+      "max_label": "Near perfect energy conversion, maximum useful output"
+    },
+    "llama3_prompt": "- <|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Energy Conversion Efficiency, assessing the ratio of useful output energy to total input energy.\nREFERENCE SCALE - Energy Conversion Efficiency: 0.0 (Rubbing your hands together – generates heat but no useful work), 0.5 (Internal combustion engine – approximately 25-35% efficiency), 1.0 (Theoretical Carnot engine operating at ideal conditions – near 100% efficiency).\nReturn ONLY a float between 0.0 and 1.0. No explanation.\nScore for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0157_feedback_loop_latency",
+    "category_index": 157,
+    "category_group": "Technology and Artificiality",
+    "subcategory": "Mechanics",
+    "name": "Feedback Loop Latency",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Extremely slow or absent feedback, significant delay in response",
+      "max_label": "Near instantaneous feedback, immediate response"
+    },
+    "llama3_prompt": "- <|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Feedback Loop Latency, assessing the time delay between an input and the system's response to that input.\nREFERENCE SCALE - Feedback Loop Latency: 0.0 (A glacier carving a valley - extremely slow response), 0.5 (A thermostat regulating temperature – noticeable delay), 1.0 (A nuclear reaction chain – nearly instantaneous feedback).\nReturn ONLY a float between 0.0 and 1.0. No explanation.\nScore for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0158_data_embodiment",
+    "category_index": 158,
+    "category_group": "Technology and Artificiality",
+    "subcategory": "Digitalization",
+    "name": "Data Embodiment",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Purely Abstract Data",
+      "max_label": "Fully Embodied & Sensorially Interactive"
+    },
+    "llama3_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Data Embodiment. This describes the extent to which data is presented and interacted with through physical or sensory means, rather than purely as abstract numbers or text.\n\nREFERENCE SCALE - Data Embodiment: 0.0 (e.g., a spreadsheet of sales figures), 0.5 (e.g., a data visualization dashboard with charts and graphs), 1.0 (e.g., a haptic feedback system that simulates data changes through touch or an augmented reality overlay that displays data onto physical objects).\n\nReturn ONLY a float between 0.0 and 1.0. No explanation.\nScore for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0159_system_autonomy",
+    "category_index": 159,
+    "category_group": "Technology and Artificiality",
+    "subcategory": "Digitalization",
+    "name": "System Autonomy",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Human-Controlled & Reactive",
+      "max_label": "Fully Autonomous & Proactive"
+    },
+    "llama3_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring System Autonomy. This reflects the degree to which a digital system can operate and make decisions independently of direct human intervention.\n\nREFERENCE SCALE - System Autonomy: 0.0 (e.g., a simple script that executes a predefined task), 0.5 (e.g., an automated email responder that adjusts based on user replies), 1.0 (e.g., a self-driving car that navigates complex environments without human input).\n\nReturn ONLY a float between 0.0 and 1.0. No explanation.\nScore for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0160_interface_friction",
+    "category_index": 160,
+    "category_group": "Technology and Artificiality",
+    "subcategory": "Digitalization",
+    "name": "Interface Friction",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Seamless & Intuitive",
+      "max_label": "Clunky & Counterintuitive"
+    },
+    "llama3_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Interface Friction. This refers to the perceived difficulty or effort required to interact with a digital system or interface. Lower friction indicates ease of use, while higher friction indicates frustration and difficulty.\n\nREFERENCE SCALE - Interface Friction: 0.0 (e.g., a well-designed mobile app with clear navigation), 0.5 (e.g., a website with outdated design and confusing terminology), 1.0 (e.g., a command-line interface requiring complex syntax and technical expertise).\n\nReturn ONLY a float between 0.0 and 1.0. No explanation.\nScore for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0161_persistence_strength",
+    "category_index": 161,
+    "category_group": "Metaphysics and Abstract",
+    "subcategory": "Existence",
+    "name": "Persistence Strength",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Transient",
+      "max_label": "Immutable"
+    },
+    "llama3_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Persistence Strength, assessing the degree to which a concept resists change or dissolution. A lower score indicates fleeting, ephemeral existence; a higher score indicates enduring, unchanging existence.\n\nREFERENCE SCALE - Persistence Strength: 0.0 (A fleeting dream, disappears instantly), 0.5 (A memory fading over time), 1.0 (A fundamental physical constant, unchanging across all conditions).\n\nReturn ONLY a float between 0.0 and 1.0. No explanation.\nScore for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0162_causal_agency",
+    "category_index": 162,
+    "category_group": "Metaphysics and Abstract",
+    "subcategory": "Existence",
+    "name": "Causal Agency",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Passive",
+      "max_label": "Active"
+    },
+    "llama3_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Causal Agency, assessing the degree to which a concept actively influences or brings about changes in its environment or other entities. A lower score indicates a passive role, merely being affected; a higher score indicates an active role, initiating or directing causal chains.\n\nREFERENCE SCALE - Causal Agency: 0.0 (A rock, passively being eroded), 0.5 (A plant, growing and interacting with its environment), 1.0 (A conscious being making deliberate choices impacting the world).\n\nReturn ONLY a float between 0.0 and 1.0. No explanation.\nScore for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0163_verifiability_degree",
+    "category_index": 163,
+    "category_group": "Metaphysics and Abstract",
+    "subcategory": "Truth",
+    "name": "Verifiability Degree",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Unfalsifiable Assertion",
+      "max_label": "Empirically Proven Fact"
+    },
+    "llama3_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Verifiability Degree, indicating the extent to which a statement can be subjected to empirical or logical testing to confirm or deny its accuracy.  A lower score represents claims resistant to verification. REFERENCE SCALE - Verifiability Degree: 0.0 (e.g., 'A unicorn lives on Mars'), 0.5 (e.g., 'The average global temperature is rising'), 1.0 (e.g., 'Water boils at 100°C at sea level'). Return ONLY a float between 0.0 and 1.0. No explanation. Score for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0164_correspondence_fidelity",
+    "category_index": 164,
+    "category_group": "Metaphysics and Abstract",
+    "subcategory": "Truth",
+    "name": "Correspondence Fidelity",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Pure Fabrication",
+      "max_label": "Perfect Reflection"
+    },
+    "llama3_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Correspondence Fidelity, which indicates how closely a statement aligns with observable reality or established facts.  A score of 0.0 represents a statement entirely disconnected from reality, a complete fabrication. A score of 1.0 represents a statement that is a perfect, verifiable reflection of reality.\n\nREFERENCE SCALE - Correspondence Fidelity: 0.0 - 'The sky is green.' (Pure Fabrication); 0.5 - 'The weather is unpredictable.' (Partially descriptive, some basis in reality but not perfectly accurate); 1.0 - 'Water boils at 100 degrees Celsius at standard pressure.' (Verifiable, factual statement).\n\nReturn ONLY a float between 0.0 and 1.0. No explanation.\nScore for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0165_epistemic_dependence",
+    "category_index": 165,
+    "category_group": "Metaphysics and Abstract",
+    "subcategory": "Truth",
+    "name": "Epistemic Dependence",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Independent Axiom",
+      "max_label": "Contingent Observation"
+    },
+    "llama3_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Epistemic Dependence, which indicates the degree to which a statement's truth relies on prior beliefs, assumptions, or observations. A score of 0.0 represents a self-evident truth, an independent axiom requiring no prior knowledge for acceptance. A score of 1.0 represents a truth that is entirely contingent upon specific observations or prior assumptions.\n\nREFERENCE SCALE - Epistemic Dependence: 0.0 - '1+1=2' (Independent Axiom); 0.5 - 'The Earth revolves around the Sun' (Requires some prior understanding of celestial mechanics); 1.0 - 'My favorite color is blue.' (Contingent Observation - depends on personal preference).\n\nReturn ONLY a float between 0.0 and 1.0. No explanation.\nScore for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0166_acceleration_granularity",
+    "category_index": 166,
+    "category_group": "Action and Dynamics",
+    "subcategory": "Movement and Speed",
+    "name": "Acceleration Granularity",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Continuous Acceleration",
+      "max_label": "Stepwise Acceleration"
+    },
+    "llama3_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Acceleration Granularity, assessing whether acceleration occurs smoothly or in discrete steps. A score of 0.0 represents acceleration that is continuous and fluid (e.g., a car smoothly accelerating from standstill). A score of 0.5 represents acceleration that is generally smooth but may have slight, barely perceptible interruptions (e.g., an escalator). A score of 1.0 represents acceleration that occurs in distinct, noticeable steps (e.g., a piston firing in an engine). REFERENCE SCALE - Acceleration Granularity: 0.0 - Car smoothly accelerating; 0.5 - Escalator; 1.0 - Piston firing in an engine. Return ONLY a float between 0.0 and 1.0. No explanation. Score for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0167_constraint_resistance",
+    "category_index": 167,
+    "category_group": "Action and Dynamics",
+    "subcategory": "Control and Agency",
+    "name": "Constraint Resistance",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Fully Constrained",
+      "max_label": "Unbound"
+    },
+    "llama3_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Constraint Resistance, the ability of a concept to operate independently of external restrictions or limitations. 0.0 indicates complete dependence on external factors. 1.0 signifies complete freedom from external control. \nREFERENCE SCALE - Constraint Resistance: 0.0 - A prisoner in a locked cell (fully constrained); 0.5 - A river flowing within defined banks (moderate constraint); 1.0 - A satellite orbiting freely in space (unbound). \nReturn ONLY a float between 0.0 and 1.0. No explanation. \nScore for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0168_influence_radius",
+    "category_index": 168,
+    "category_group": "Action and Dynamics",
+    "subcategory": "Control and Agency",
+    "name": "Influence Radius",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Localized Impact",
+      "max_label": "Global Reach"
+    },
+    "llama3_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Influence Radius, the scope or extent of a concept’s impact or control. A low score indicates primarily local effects. A high score indicates widespread or global influence. \nREFERENCE SCALE - Influence Radius: 0.0 - A single raindrop falling into a puddle (localized impact); 0.5 - A local law affecting a specific community (regional influence); 1.0 - A global economic policy affecting international trade (global reach). \nReturn ONLY a float between 0.0 and 1.0. No explanation. \nScore for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  }
+]

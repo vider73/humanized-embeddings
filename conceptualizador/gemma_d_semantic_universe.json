@@ -1,0 +1,100 @@
+[
+  {
+    "id": "d0000_wave-particle_duality_manifestation",
+    "category_index": 0,
+    "category_group": "Fundamental Physics",
+    "subcategory": "Quantum Mechanics",
+    "name": "Wave-Particle Duality Manifestation",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Primarily Particle-like",
+      "max_label": "Primarily Wave-like"
+    },
+    "llama3_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Wave-Particle Duality Manifestation, assessing the degree to which a concept exhibits wave-like versus particle-like behavior. A lower score indicates a predominantly particle-like nature, while a higher score signifies a predominantly wave-like nature.\n\nREFERENCE SCALE - Wave-Particle Duality Manifestation: [0.0] -> Subatomic particle exhibiting discrete properties (e.g., electron scattering); [0.2] -> Molecule behaving as a localized entity; [0.4] -> A billiard ball demonstrating predictable trajectory; [0.6] -> Water ripples spreading across a surface; [0.8] -> Light exhibiting diffraction patterns; [1.0] -> Cosmological gravitational waves propagating through spacetime.\n\nReturn ONLY a float between 0.0 and 1.0. No explanation.\nScore for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0001_quantization_granularity",
+    "category_index": 1,
+    "category_group": "Fundamental Physics",
+    "subcategory": "Quantum Mechanics",
+    "name": "Quantization Granularity",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Continuous/Classical",
+      "max_label": "Discrete/Highly Quantized"
+    },
+    "llama3_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Quantization Granularity, representing the degree to which a physical property (e.g., energy, angular momentum) is restricted to discrete, specific values rather than existing continuously. A score of 0.0 indicates a continuous, classical property; a score of 1.0 represents a property with extremely fine-grained, well-defined quanta. REFERENCE SCALE - Quantization Granularity: [0.0] Classical fluid flow; [0.2] Molecular rotational energy levels; [0.4] Atomic energy levels; [0.6] Phonons in a crystal lattice; [0.8] Planck's constant-related energy levels; [1.0] Discrete spacetime (hypothetical). Return ONLY a float between 0.0 and 1.0. No explanation. Score for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0002_quantum_coherence_duration",
+    "category_index": 2,
+    "category_group": "Fundamental Physics",
+    "subcategory": "Quantum Mechanics",
+    "name": "Quantum Coherence Duration",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Extremely Brief (femtoseconds)",
+      "max_label": "Persistent (effectively infinite)"
+    },
+    "llama3_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Quantum Coherence Duration, representing the time scale over which quantum superposition and entanglement are maintained before decoherence occurs. This reflects the system's resistance to environmental interference.\n\nREFERENCE SCALE - Quantum Coherence Duration: [0.0] Subatomic Level - Femtoseconds (e.g., electron spin flip), [0.2] Molecular Level - Picoseconds (e.g., organic dye molecule), [0.4] Human Level - Nanoseconds (e.g., superconducting qubit), [0.6] Geographic Level - Microseconds (e.g., macroscopic quantum resonators), [0.8] Stellar Level - Milliseconds (e.g., trapped Bose-Einstein condensates), [1.0] Galactic Level - Seconds or longer (hypothetical, extremely isolated systems).\n\nReturn ONLY a float between 0.0 and 1.0. No explanation.\nScore for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0003_quantum_entanglement_spanning_distance",
+    "category_index": 3,
+    "category_group": "Fundamental Physics",
+    "subcategory": "Quantum Mechanics",
+    "name": "Quantum Entanglement Spanning Distance",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Subatomic Distance (Planck Length)",
+      "max_label": "Universal Distance (Observable Universe)"
+    },
+    "llama3_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Quantum Entanglement Spanning Distance, which represents the physical distance over which entanglement is demonstrably maintained and measurable. This assesses the scale of the interconnectedness between quantum systems. REFERENCE SCALE - Quantum Entanglement Spanning Distance: [0.0] Subatomic Level / Planck Scale (Entanglement across two electrons in a lab); [0.2] Molecular Level / Nanoscopic (Entanglement between molecules in a quantum circuit); [0.4] Human Level / Everyday Object (Theoretical entanglement across macroscopic objects, extremely limited); [0.6] Geographic Level / Planetary (Entanglement across continents, hypothetical); [0.8] Stellar Level / Solar System (Entanglement between stars, speculative); [1.0] Galactic Level / Universal (Entanglement across galaxies, purely theoretical). Return ONLY a float between 0.0 and 1.0. No explanation. Score for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0004_thermal_gradients",
+    "category_index": 4,
+    "category_group": "Fundamental Physics",
+    "subcategory": "Thermodynamics",
+    "name": "Thermal Gradients",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Near Isothermal",
+      "max_label": "Extreme Differential"
+    },
+    "llama3_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Thermal Gradients, which indicates the difference in temperature across a system or within a region. A score of 0.0 represents a nearly isothermal environment, where temperature is uniform. A score of 1.0 represents an environment with extreme temperature differentials and rapid thermal transitions. \n\nREFERENCE SCALE - Thermal Gradients: [0.0] Subatomic Level - Near absolute zero, minimal temperature differences. [0.2] Molecular Level - Slight temperature variations within a crystal lattice. [0.4] Human Level - Room temperature with minor drafts. [0.6] Geographic Level - Difference between equatorial and polar regions. [0.8] Stellar Level - Core temperature gradient within a star. [1.0] Galactic Level - Temperature difference between the cosmic microwave background and active galactic nuclei.\nReturn ONLY a float between 0.0 and 1.0. No explanation.\nScore for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0005_entropy_production_rate",
+    "category_index": 5,
+    "category_group": "Fundamental Physics",
+    "subcategory": "Thermodynamics",
+    "name": "Entropy Production Rate",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Minimal Entropy Generation",
+      "max_label": "Maximum Dissipation"
+    },
+    "llama3_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Entropy Production Rate, indicating the speed at which entropy increases within a system, representing the degree of disorder or dissipation. A score of 0.0 signifies minimal entropy generation and high order. A score of 1.0 signifies maximum entropy generation and chaotic dissipation. \n\nREFERENCE SCALE - Entropy Production Rate: [0.0] Subatomic Level - Highly ordered quantum states with minimal dissipation. [0.2] Molecular Level - Crystal growth with ordered structure. [0.4] Human Level - A well-maintained engine operating efficiently. [0.6] Geographic Level - Weather patterns with organized storms. [0.8] Stellar Level - Nuclear fusion processes releasing vast energy. [1.0] Galactic Level - Black hole mergers and the expansion of the universe.\nReturn ONLY a float between 0.0 and 1.0. No explanation.\nScore for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  },
+  {
+    "id": "d0006_phase_transition_energy_requirement",
+    "category_index": 6,
+    "category_group": "Fundamental Physics",
+    "subcategory": "Thermodynamics",
+    "name": "Phase Transition Energy Requirement",
+    "scale": {
+      "min": 0.0,
+      "max": 1.0,
+      "min_label": "Negligible Energy for Phase Change",
+      "max_label": "Extremely High Energy for Phase Change"
+    },
+    "llama3_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id>\n\nYou are an instrument measuring Phase Transition Energy Requirement, quantifying the energy needed to induce a phase transition (e.g., solid to liquid, liquid to gas) in a substance. This reflects the strength of intermolecular forces. \n\nREFERENCE SCALE - Phase Transition Energy Requirement: [0.0] - A gas expanding freely; [0.2] - Melting ice; [0.4] - Boiling water; [0.6] - Sublimation of dry ice; [0.8] - Transition to a plasma state; [1.0] - Formation of a neutron star. \n\nReturn ONLY a float between 0.0 and 1.0. No explanation.\nScore for '{concept}':<|eot_id|><|start_header_id|>assistant<|end_header_id>\n\n"
+  }
+]

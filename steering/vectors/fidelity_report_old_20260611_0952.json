@@ -1,0 +1,4173 @@
+{
+  "_meta": {
+    "alpha": 0.15,
+    "hi": 0.95,
+    "lo": 0.05,
+    "tokens": 110,
+    "phrases": [
+      "Hablame de un dia cualquiera.",
+      "Describe una habitacion."
+    ],
+    "vectors": "control_vectors_caa_white.npy"
+  },
+  "d000_tamaño_físico": {
+    "effect": 0.0,
+    "z": -0.59,
+    "rank": 101,
+    "sign_ok": true,
+    "top_movers": [
+      [
+        "d030_evolución",
+        0.425
+      ],
+      [
+        "d022_vitalidad",
+        0.338
+      ],
+      [
+        "d051_valentía",
+        0.336
+      ],
+      [
+        "d094_caos_entropía",
+        0.327
+      ],
+      [
+        "d023_consciencia",
+        0.318
+      ],
+      [
+        "d095_onirismo",
+        0.295
+      ],
+      [
+        "d097_velocidad_de_acción",
+        0.289
+      ],
+      [
+        "d081_industrialización",
+        0.279
+      ]
+    ]
+  },
+  "d001_masa": {
+    "effect": 0.0,
+    "z": -0.29,
+    "rank": 99,
+    "sign_ok": true,
+    "top_movers": [
+      [
+        "d097_velocidad_de_acción",
+        0.28
+      ],
+      [
+        "d051_valentía",
+        0.245
+      ],
+      [
+        "d091_futurismo",
+        0.237
+      ],
+      [
+        "d014_fragilidad",
+        -0.215
+      ],
+      [
+        "d068_probabilidad",
+        0.209
+      ],
+      [
+        "d095_onirismo",
+        0.205
+      ],
+      [
+        "d081_industrialización",
+        0.191
+      ],
+      [
+        "d036_sabor_dulzor",
+        0.188
+      ]
+    ]
+  },
+  "d002_densidad": {
+    "effect": -0.0009,
+    "z": 0.27,
+    "rank": 91,
+    "sign_ok": false,
+    "top_movers": [
+      [
+        "d094_caos_entropía",
+        -0.232
+      ],
+      [
+        "d055_miedo",
+        -0.172
+      ],
+      [
+        "d037_sabor_amargor",
+        -0.16
+      ],
+      [
+        "d099_necesidad",
+        -0.158
+      ],
+      [
+        "d014_fragilidad",
+        -0.157
+      ],
+      [
+        "d026_valor_nutricional",
+        -0.153
+      ],
+      [
+        "d096_dificultad_de_ejecución",
+        -0.15
+      ],
+      [
+        "d073_claridad",
+        0.147
+      ]
+    ]
+  },
+  "d003_velocidad_máxima": {
+    "effect": 0.0,
+    "z": -0.2,
+    "rank": 91,
+    "sign_ok": true,
+    "top_movers": [
+      [
+        "d083_tradición",
+        0.239
+      ],
+      [
+        "d096_dificultad_de_ejecución",
+        0.236
+      ],
+      [
+        "d098_frecuencia",
+        0.197
+      ],
+      [
+        "d068_probabilidad",
+        0.187
+      ],
+      [
+        "d011_elasticidad",
+        -0.162
+      ],
+      [
+        "d072_memoria",
+        0.161
+      ],
+      [
+        "d091_futurismo",
+        -0.158
+      ],
+      [
+        "d065_verdad_facticidad",
+        0.157
+      ]
+    ]
+  },
+  "d004_temperatura": {
+    "effect": -0.0003,
+    "z": 0.32,
+    "rank": 85,
+    "sign_ok": false,
+    "top_movers": [
+      [
+        "d028_salud",
+        -0.414
+      ],
+      [
+        "d043_temperatura_táctil",
+        -0.396
+      ],
+      [
+        "d099_necesidad",
+        -0.318
+      ],
+      [
+        "d023_consciencia",
+        -0.284
+      ],
+      [
+        "d095_onirismo",
+        -0.269
+      ],
+      [
+        "d098_frecuencia",
+        -0.246
+      ],
+      [
+        "d068_probabilidad",
+        -0.235
+      ],
+      [
+        "d081_industrialización",
+        -0.222
+      ]
+    ]
+  },
+  "d005_duración_temporal": {
+    "effect": -0.0,
+    "z": 0.7,
+    "rank": 102,
+    "sign_ok": false,
+    "top_movers": [
+      [
+        "d097_velocidad_de_acción",
+        -0.397
+      ],
+      [
+        "d028_salud",
+        -0.344
+      ],
+      [
+        "d022_vitalidad",
+        -0.339
+      ],
+      [
+        "d095_onirismo",
+        -0.284
+      ],
+      [
+        "d043_temperatura_táctil",
+        -0.279
+      ],
+      [
+        "d034_olor_intensidad",
+        -0.215
+      ],
+      [
+        "d062_estrés",
+        -0.189
+      ],
+      [
+        "d098_frecuencia",
+        -0.187
+      ]
+    ]
+  },
+  "d006_distancia_de_interacción": {
+    "effect": 0.0,
+    "z": 0.12,
+    "rank": 91,
+    "sign_ok": true,
+    "top_movers": [
+      [
+        "d099_necesidad",
+        0.43
+      ],
+      [
+        "d096_dificultad_de_ejecución",
+        -0.425
+      ],
+      [
+        "d058_asco",
+        -0.27
+      ],
+      [
+        "d030_evolución",
+        0.258
+      ],
+      [
+        "d055_miedo",
+        -0.253
+      ],
+      [
+        "d083_tradición",
+        0.253
+      ],
+      [
+        "d059_culpa",
+        -0.226
+      ],
+      [
+        "d028_salud",
+        -0.207
+      ]
+    ]
+  },
+  "d007_gravedad": {
+    "effect": -0.2093,
+    "z": -1.37,
+    "rank": 11,
+    "sign_ok": false,
+    "top_movers": [
+      [
+        "d051_valentía",
+        -0.381
+      ],
+      [
+        "d028_salud",
+        -0.307
+      ],
+      [
+        "d095_onirismo",
+        -0.301
+      ],
+      [
+        "d062_estrés",
+        -0.29
+      ],
+      [
+        "d074_sabiduría",
+        -0.279
+      ],
+      [
+        "d039_rugosidad_táctil",
+        0.271
+      ],
+      [
+        "d061_soledad",
+        -0.261
+      ],
+      [
+        "d097_velocidad_de_acción",
+        -0.253
+      ]
+    ]
+  },
+  "d008_luminosidad": {
+    "effect": -0.0,
+    "z": 0.43,
+    "rank": 96,
+    "sign_ok": false,
+    "top_movers": [
+      [
+        "d099_necesidad",
+        -0.523
+      ],
+      [
+        "d072_memoria",
+        -0.33
+      ],
+      [
+        "d085_urbanismo",
+        -0.307
+      ],
+      [
+        "d076_legalidad",
+        -0.262
+      ],
+      [
+        "d091_futurismo",
+        -0.253
+      ],
+      [
+        "d055_miedo",
+        -0.25
+      ],
+      [
+        "d066_complejidad_lógica",
+        -0.222
+      ],
+      [
+        "d098_frecuencia",
+        -0.196
+      ]
+    ]
+  },
+  "d009_transparencia": {
+    "effect": 0.0313,
+    "z": 0.07,
+    "rank": 52,
+    "sign_ok": true,
+    "top_movers": [
+      [
+        "d083_tradición",
+        -0.312
+      ],
+      [
+        "d097_velocidad_de_acción",
+        0.291
+      ],
+      [
+        "d061_soledad",
+        0.262
+      ],
+      [
+        "d028_salud",
+        0.254
+      ],
+      [
+        "d057_tristeza",
+        0.228
+      ],
+      [
+        "d099_necesidad",
+        0.224
+      ],
+      [
+        "d062_estrés",
+        0.194
+      ],
+      [
+        "d101_control",
+        0.192
+      ]
+    ]
+  },
+  "d010_dureza": {
+    "effect": 0.0894,
+    "z": 0.68,
+    "rank": 24,
+    "sign_ok": true,
+    "top_movers": [
+      [
+        "d068_probabilidad",
+        0.452
+      ],
+      [
+        "d081_industrialización",
+        0.33
+      ],
+      [
+        "d099_necesidad",
+        0.297
+      ],
+      [
+        "d080_artificialidad",
+        -0.238
+      ],
+      [
+        "d065_verdad_facticidad",
+        0.189
+      ],
+      [
+        "d007_gravedad",
+        0.172
+      ],
+      [
+        "d091_futurismo",
+        0.172
+      ],
+      [
+        "d020_porosidad",
+        0.162
+      ]
+    ]
+  },
+  "d011_elasticidad": {
+    "effect": -0.0329,
+    "z": -0.71,
+    "rank": 44,
+    "sign_ok": false,
+    "top_movers": [
+      [
+        "d040_humedad",
+        -0.251
+      ],
+      [
+        "d091_futurismo",
+        0.241
+      ],
+      [
+        "d039_rugosidad_táctil",
+        -0.237
+      ],
+      [
+        "d059_culpa",
+        0.227
+      ],
+      [
+        "d082_lujo",
+        0.21
+      ],
+      [
+        "d055_miedo",
+        0.19
+      ],
+      [
+        "d065_verdad_facticidad",
+        -0.184
+      ],
+      [
+        "d085_urbanismo",
+        0.177
+      ]
+    ]
+  },
+  "d012_viscosidad": {
+    "effect": 0.0,
+    "z": -0.34,
+    "rank": 87,
+    "sign_ok": true,
+    "top_movers": [
+      [
+        "d015_solidez",
+        0.372
+      ],
+      [
+        "d039_rugosidad_táctil",
+        0.272
+      ],
+      [
+        "d028_salud",
+        -0.266
+      ],
+      [
+        "d098_frecuencia",
+        0.264
+      ],
+      [
+        "d092_misterio",
+        0.259
+      ],
+      [
+        "d069_abstracción",
+        0.25
+      ],
+      [
+        "d020_porosidad",
+        0.243
+      ],
+      [
+        "d083_tradición",
+        0.229
+      ]
+    ]
+  },
+  "d013_fricción": {
+    "effect": -0.0076,
+    "z": 0.36,
+    "rank": 69,
+    "sign_ok": false,
+    "top_movers": [
+      [
+        "d065_verdad_facticidad",
+        -0.346
+      ],
+      [
+        "d080_artificialidad",
+        0.276
+      ],
+      [
+        "d020_porosidad",
+        -0.256
+      ],
+      [
+        "d014_fragilidad",
+        -0.254
+      ],
+      [
+        "d058_asco",
+        -0.242
+      ],
+      [
+        "d068_probabilidad",
+        -0.233
+      ],
+      [
+        "d031_capacidad_sensorial",
+        -0.207
+      ],
+      [
+        "d028_salud",
+        -0.203
+      ]
+    ]
+  },
+  "d014_fragilidad": {
+    "effect": 0.0385,
+    "z": -0.07,
+    "rank": 53,
+    "sign_ok": true,
+    "top_movers": [
+      [
+        "d085_urbanismo",
+        0.266
+      ],
+      [
+        "d051_valentía",
+        0.265
+      ],
+      [
+        "d097_velocidad_de_acción",
+        0.246
+      ],
+      [
+        "d091_futurismo",
+        0.219
+      ],
+      [
+        "d037_sabor_amargor",
+        0.214
+      ],
+      [
+        "d034_olor_intensidad",
+        0.212
+      ],
+      [
+        "d030_evolución",
+        0.207
+      ],
+      [
+        "d026_valor_nutricional",
+        0.206
+      ]
+    ]
+  },
+  "d015_solidez": {
+    "effect": 0.1076,
+    "z": 1.55,
+    "rank": 36,
+    "sign_ok": true,
+    "top_movers": [
+      [
+        "d080_artificialidad",
+        -0.34
+      ],
+      [
+        "d051_valentía",
+        -0.299
+      ],
+      [
+        "d085_urbanismo",
+        -0.259
+      ],
+      [
+        "d062_estrés",
+        -0.244
+      ],
+      [
+        "d059_culpa",
+        -0.238
+      ],
+      [
+        "d098_frecuencia",
+        -0.237
+      ],
+      [
+        "d024_instinto",
+        -0.23
+      ],
+      [
+        "d097_velocidad_de_acción",
+        -0.226
+      ]
+    ]
+  },
+  "d016_volatilidad_química": {
+    "effect": 0.0001,
+    "z": -0.25,
+    "rank": 92,
+    "sign_ok": true,
+    "top_movers": [
+      [
+        "d014_fragilidad",
+        0.231
+      ],
+      [
+        "d058_asco",
+        0.225
+      ],
+      [
+        "d030_evolución",
+        -0.191
+      ],
+      [
+        "d028_salud",
+        0.177
+      ],
+      [
+        "d060_envidia",
+        0.151
+      ],
+      [
+        "d061_soledad",
+        0.142
+      ],
+      [
+        "d010_dureza",
+        0.14
+      ],
+      [
+        "d065_verdad_facticidad",
+        0.137
+      ]
+    ]
+  },
+  "d017_conductividad_eléctrica": {
+    "effect": 0.0,
+    "z": 0.32,
+    "rank": 99,
+    "sign_ok": true,
+    "top_movers": [
+      [
+        "d095_onirismo",
+        -0.344
+      ],
+      [
+        "d084_religiosidad",
+        -0.308
+      ],
+      [
+        "d039_rugosidad_táctil",
+        0.299
+      ],
+      [
+        "d090_divinidad",
+        -0.281
+      ],
+      [
+        "d094_caos_entropía",
+        -0.242
+      ],
+      [
+        "d029_fertilidad",
+        -0.203
+      ],
+      [
+        "d015_solidez",
+        -0.194
+      ],
+      [
+        "d046_amor",
+        -0.189
+      ]
+    ]
+  },
+  "d018_magnetismo": {
+    "effect": 0.0663,
+    "z": 0.17,
+    "rank": 39,
+    "sign_ok": true,
+    "top_movers": [
+      [
+        "d039_rugosidad_táctil",
+        0.266
+      ],
+      [
+        "d027_edad_biológica",
+        0.244
+      ],
+      [
+        "d076_legalidad",
+        0.243
+      ],
+      [
+        "d026_valor_nutricional",
+        0.233
+      ],
+      [
+        "d030_evolución",
+        0.211
+      ],
+      [
+        "d085_urbanismo",
+        0.203
+      ],
+      [
+        "d020_porosidad",
+        0.199
+      ],
+      [
+        "d044_pegajosidad",
+        0.18
+      ]
+    ]
+  },
+  "d019_radiactividad": {
+    "effect": -0.0,
+    "z": -0.02,
+    "rank": 103,
+    "sign_ok": false,
+    "top_movers": [
+      [
+        "d099_necesidad",
+        -0.315
+      ],
+      [
+        "d080_artificialidad",
+        0.301
+      ],
+      [
+        "d068_probabilidad",
+        -0.26
+      ],
+      [
+        "d036_sabor_dulzor",
+        0.178
+      ],
+      [
+        "d058_asco",
+        0.173
+      ],
+      [
+        "d039_rugosidad_táctil",
+        0.171
+      ],
+      [
+        "d054_empatía",
+        0.158
+      ],
+      [
+        "d098_frecuencia",
+        -0.153
+      ]
+    ]
+  },
+  "d020_porosidad": {
+    "effect": 0.0451,
+    "z": 0.39,
+    "rank": 49,
+    "sign_ok": true,
+    "top_movers": [
+      [
+        "d085_urbanismo",
+        -0.223
+      ],
+      [
+        "d082_lujo",
+        -0.209
+      ],
+      [
+        "d059_culpa",
+        0.195
+      ],
+      [
+        "d028_salud",
+        -0.186
+      ],
+      [
+        "d039_rugosidad_táctil",
+        -0.186
+      ],
+      [
+        "d055_miedo",
+        0.182
+      ],
+      [
+        "d058_asco",
+        0.175
+      ],
+      [
+        "d011_elasticidad",
+        -0.138
+      ]
+    ]
+  },
+  "d021_maleabilidad": {
+    "effect": -0.0106,
+    "z": 0.01,
+    "rank": 66,
+    "sign_ok": false,
+    "top_movers": [
+      [
+        "d029_fertilidad",
+        -0.305
+      ],
+      [
+        "d099_necesidad",
+        0.274
+      ],
+      [
+        "d039_rugosidad_táctil",
+        -0.262
+      ],
+      [
+        "d097_velocidad_de_acción",
+        -0.211
+      ],
+      [
+        "d102_intencionalidad",
+        -0.21
+      ],
+      [
+        "d037_sabor_amargor",
+        -0.179
+      ],
+      [
+        "d014_fragilidad",
+        -0.177
+      ],
+      [
+        "d030_evolución",
+        0.173
+      ]
+    ]
+  },
+  "d022_vitalidad": {
+    "effect": 0.2802,
+    "z": 1.72,
+    "rank": 8,
+    "sign_ok": true,
+    "top_movers": [
+      [
+        "d097_velocidad_de_acción",
+        0.466
+      ],
+      [
+        "d029_fertilidad",
+        0.462
+      ],
+      [
+        "d028_salud",
+        0.448
+      ],
+      [
+        "d054_empatía",
+        0.332
+      ],
+      [
+        "d051_valentía",
+        0.322
+      ],
+      [
+        "d023_consciencia",
+        0.312
+      ],
+      [
+        "d098_frecuencia",
+        0.307
+      ],
+      [
+        "d036_sabor_dulzor",
+        0.285
+      ]
+    ]
+  },
+  "d023_consciencia": {
+    "effect": 0.2225,
+    "z": 1.92,
+    "rank": 9,
+    "sign_ok": true,
+    "top_movers": [
+      [
+        "d030_evolución",
+        0.374
+      ],
+      [
+        "d043_temperatura_táctil",
+        0.282
+      ],
+      [
+        "d081_industrialización",
+        0.255
+      ],
+      [
+        "d010_dureza",
+        0.25
+      ],
+      [
+        "d091_futurismo",
+        0.247
+      ],
+      [
+        "d068_probabilidad",
+        0.245
+      ],
+      [
+        "d007_gravedad",
+        0.244
+      ],
+      [
+        "d020_porosidad",
+        0.227
+      ]
+    ]
+  },
+  "d024_instinto": {
+    "effect": 0.2447,
+    "z": 1.73,
+    "rank": 8,
+    "sign_ok": true,
+    "top_movers": [
+      [
+        "d051_valentía",
+        0.43
+      ],
+      [
+        "d056_ira",
+        0.412
+      ],
+      [
+        "d037_sabor_amargor",
+        0.32
+      ],
+      [
+        "d060_envidia",
+        0.282
+      ],
+      [
+        "d036_sabor_dulzor",
+        0.272
+      ],
+      [
+        "d095_onirismo",
+        0.267
+      ],
+      [
+        "d055_miedo",
+        0.259
+      ],
+      [
+        "d059_culpa",
+        0.247
+      ]
+    ]
+  },
+  "d025_toxicidad": {
+    "effect": 0.0556,
+    "z": 0.29,
+    "rank": 43,
+    "sign_ok": true,
+    "top_movers": [
+      [
+        "d099_necesidad",
+        -0.284
+      ],
+      [
+        "d028_salud",
+        0.249
+      ],
+      [
+        "d069_abstracción",
+        -0.248
+      ],
+      [
+        "d020_porosidad",
+        0.229
+      ],
+      [
+        "d014_fragilidad",
+        0.221
+      ],
+      [
+        "d068_probabilidad",
+        0.2
+      ],
+      [
+        "d030_evolución",
+        0.197
+      ],
+      [
+        "d007_gravedad",
+        0.193
+      ]
+    ]
+  },
+  "d026_valor_nutricional": {
+    "effect": 0.0211,
+    "z": -0.18,
+    "rank": 61,
+    "sign_ok": true,
+    "top_movers": [
+      [
+        "d099_necesidad",
+        0.285
+      ],
+      [
+        "d066_complejidad_lógica",
+        0.274
+      ],
+      [
+        "d024_instinto",
+        0.26
+      ],
+      [
+        "d028_salud",
+        0.255
+      ],
+      [
+        "d051_valentía",
+        0.212
+      ],
+      [
+        "d061_soledad",
+        0.199
+      ],
+      [
+        "d037_sabor_amargor",
+        0.176
+      ],
+      [
+        "d094_caos_entropía",
+        0.155
+      ]
+    ]
+  },
+  "d027_edad_biológica": {
+    "effect": 0.018,
+    "z": 0.5,
+    "rank": 52,
+    "sign_ok": true,
+    "top_movers": [
+      [
+        "d102_intencionalidad",
+        -0.259
+      ],
+      [
+        "d095_onirismo",
+        -0.204
+      ],
+      [
+        "d099_necesidad",
+        -0.177
+      ],
+      [
+        "d044_pegajosidad",
+        0.17
+      ],
+      [
+        "d092_misterio",
+        -0.153
+      ],
+      [
+        "d046_amor",
+        -0.152
+      ],
+      [
+        "d020_porosidad",
+        0.146
+      ],
+      [
+        "d065_verdad_facticidad",
+        -0.143
+      ]
+    ]
+  },
+  "d028_salud": {
+    "effect": -0.0546,
+    "z": -0.45,
+    "rank": 43,
+    "sign_ok": false,
+    "top_movers": [
+      [
+        "d014_fragilidad",
+        -0.272
+      ],
+      [
+        "d030_evolución",
+        -0.254
+      ],
+      [
+        "d020_porosidad",
+        -0.236
+      ],
+      [
+        "d037_sabor_amargor",
+        -0.23
+      ],
+      [
+        "d073_claridad",
+        0.225
+      ],
+      [
+        "d010_dureza",
+        -0.217
+      ],
+      [
+        "d023_consciencia",
+        -0.217
+      ],
+      [
+        "d096_dificultad_de_ejecución",
+        -0.215
+      ]
+    ]
+  },
+  "d029_fertilidad": {
+    "effect": 0.1199,
+    "z": 0.34,
+    "rank": 33,
+    "sign_ok": true,
+    "top_movers": [
+      [
+        "d091_futurismo",
+        0.384
+      ],
+      [
+        "d028_salud",
+        0.366
+      ],
+      [
+        "d094_caos_entropía",
+        0.352
+      ],
+      [
+        "d066_complejidad_lógica",
+        0.349
+      ],
+      [
+        "d007_gravedad",
+        0.349
+      ],
+      [
+        "d014_fragilidad",
+        0.328
+      ],
+      [
+        "d096_dificultad_de_ejecución",
+        0.322
+      ],
+      [
+        "d020_porosidad",
+        0.317
+      ]
+    ]
+  },
+  "d030_evolución": {
+    "effect": 0.0857,
+    "z": 0.43,
+    "rank": 37,
+    "sign_ok": true,
+    "top_movers": [
+      [
+        "d029_fertilidad",
+        -0.378
+      ],
+      [
+        "d051_valentía",
+        0.367
+      ],
+      [
+        "d097_velocidad_de_acción",
+        0.345
+      ],
+      [
+        "d039_rugosidad_táctil",
+        -0.337
+      ],
+      [
+        "d091_futurismo",
+        0.314
+      ],
+      [
+        "d085_urbanismo",
+        0.306
+      ],
+      [
+        "d068_probabilidad",
+        0.282
+      ],
+      [
+        "d020_porosidad",
+        -0.268
+      ]
+    ]
+  },
+  "d031_capacidad_sensorial": {
+    "effect": 0.123,
+    "z": 1.22,
+    "rank": 17,
+    "sign_ok": true,
+    "top_movers": [
+      [
+        "d085_urbanismo",
+        0.23
+      ],
+      [
+        "d037_sabor_amargor",
+        -0.198
+      ],
+      [
+        "d039_rugosidad_táctil",
+        -0.197
+      ],
+      [
+        "d076_legalidad",
+        0.196
+      ],
+      [
+        "d082_lujo",
+        0.192
+      ],
+      [
+        "d091_futurismo",
+        0.189
+      ],
+      [
+        "d023_consciencia",
+        0.18
+      ],
+      [
+        "d083_tradición",
+        0.174
+      ]
+    ]
+  },
+  "d032_sonoridad_volumen": {
+    "effect": 0.0012,
+    "z": 0.23,
+    "rank": 85,
+    "sign_ok": true,
+    "top_movers": [
+      [
+        "d082_lujo",
+        -0.403
+      ],
+      [
+        "d051_valentía",
+        -0.266
+      ],
+      [
+        "d076_legalidad",
+        -0.236
+      ],
+      [
+        "d065_verdad_facticidad",
+        0.225
+      ],
+      [
+        "d088_peligrosidad_social",
+        0.225
+      ],
+      [
+        "d085_urbanismo",
+        -0.221
+      ],
+      [
+        "d083_tradición",
+        -0.22
+      ],
+      [
+        "d054_empatía",
+        -0.183
+      ]
+    ]
+  },
+  "d033_frecuencia_sonora": {
+    "effect": 0.0048,
+    "z": 0.49,
+    "rank": 80,
+    "sign_ok": true,
+    "top_movers": [
+      [
+        "d051_valentía",
+        -0.348
+      ],
+      [
+        "d039_rugosidad_táctil",
+        0.284
+      ],
+      [
+        "d085_urbanismo",
+        -0.25
+      ],
+      [
+        "d034_olor_intensidad",
+        0.245
+      ],
+      [
+        "d076_legalidad",
+        -0.244
+      ],
+      [
+        "d091_futurismo",
+        -0.236
+      ],
+      [
+        "d030_evolución",
+        -0.235
+      ],
+      [
+        "d065_verdad_facticidad",
+        0.224
+      ]
+    ]
+  },
+  "d034_olor_intensidad": {
+    "effect": 0.0073,
+    "z": 0.3,
+    "rank": 66,
+    "sign_ok": true,
+    "top_movers": [
+      [
+        "d096_dificultad_de_ejecución",
+        -0.321
+      ],
+      [
+        "d103_durabilidad_del_efecto",
+        -0.27
+      ],
+      [
+        "d095_onirismo",
+        0.213
+      ],
+      [
+        "d065_verdad_facticidad",
+        -0.206
+      ],
+      [
+        "d011_elasticidad",
+        -0.204
+      ],
+      [
+        "d097_velocidad_de_acción",
+        0.2
+      ],
+      [
+        "d069_abstracción",
+        -0.193
+      ],
+      [
+        "d072_memoria",
+        -0.19
+      ]
+    ]
+  },
+  "d035_olor_agradabilidad": {
+    "effect": 0.1064,
+    "z": 0.99,
+    "rank": 20,
+    "sign_ok": true,
+    "top_movers": [
+      [
+        "d058_asco",
+        -0.46
+      ],
+      [
+        "d099_necesidad",
+        0.361
+      ],
+      [
+        "d044_pegajosidad",
+        -0.341
+      ],
+      [
+        "d096_dificultad_de_ejecución",
+        -0.312
+      ],
+      [
+        "d039_rugosidad_táctil",
+        -0.27
+      ],
+      [
+        "d046_amor",
+        0.261
+      ],
+      [
+        "d028_salud",
+        0.247
+      ],
+      [
+        "d047_calma",
+        0.236
+      ]
+    ]
+  },
+  "d036_sabor_dulzor": {
+    "effect": 0.0632,
+    "z": 0.68,
+    "rank": 32,
+    "sign_ok": true,
+    "top_movers": [
+      [
+        "d099_necesidad",
+        -0.393
+      ],
+      [
+        "d051_valentía",
+        0.343
+      ],
+      [
+        "d023_consciencia",
+        0.175
+      ],
+      [
+        "d082_lujo",
+        0.174
+      ],
+      [
+        "d058_asco",
+        -0.166
+      ],
+      [
+        "d083_tradición",
+        0.16
+      ],
+      [
+        "d065_verdad_facticidad",
+        -0.157
+      ],
+      [
+        "d037_sabor_amargor",
+        -0.153
+      ]
+    ]
+  },
+  "d037_sabor_amargor": {
+    "effect": -0.0765,
+    "z": -0.55,
+    "rank": 20,
+    "sign_ok": false,
+    "top_movers": [
+      [
+        "d083_tradición",
+        -0.307
+      ],
+      [
+        "d039_rugosidad_táctil",
+        -0.302
+      ],
+      [
+        "d082_lujo",
+        -0.295
+      ],
+      [
+        "d096_dificultad_de_ejecución",
+        -0.276
+      ],
+      [
+        "d044_pegajosidad",
+        -0.271
+      ],
+      [
+        "d076_legalidad",
+        -0.245
+      ],
+      [
+        "d054_empatía",
+        -0.164
+      ],
+      [
+        "d046_amor",
+        -0.16
+      ]
+    ]
+  },
+  "d038_sabor_picante": {
+    "effect": -0.0109,
+    "z": -0.02,
+    "rank": 70,
+    "sign_ok": false,
+    "top_movers": [
+      [
+        "d101_control",
+        0.246
+      ],
+      [
+        "d039_rugosidad_táctil",
+        -0.242
+      ],
+      [
+        "d034_olor_intensidad",
+        -0.198
+      ],
+      [
+        "d061_soledad",
+        0.185
+      ],
+      [
+        "d087_formalidad",
+        0.178
+      ],
+      [
+        "d060_envidia",
+        0.176
+      ],
+      [
+        "d044_pegajosidad",
+        -0.175
+      ],
+      [
+        "d028_salud",
+        0.174
+      ]
+    ]
+  },
+  "d039_rugosidad_táctil": {
+    "effect": 0.0086,
+    "z": 0.58,
+    "rank": 84,
+    "sign_ok": true,
+    "top_movers": [
+      [
+        "d028_salud",
+        -0.409
+      ],
+      [
+        "d010_dureza",
+        -0.402
+      ],
+      [
+        "d103_durabilidad_del_efecto",
+        -0.381
+      ],
+      [
+        "d007_gravedad",
+        -0.36
+      ],
+      [
+        "d015_solidez",
+        -0.285
+      ],
+      [
+        "d011_elasticidad",
+        -0.283
+      ],
+      [
+        "d096_dificultad_de_ejecución",
+        -0.271
+      ],
+      [
+        "d082_lujo",
+        -0.243
+      ]
+    ]
+  },
+  "d040_humedad": {
+    "effect": -0.0319,
+    "z": 0.03,
+    "rank": 54,
+    "sign_ok": false,
+    "top_movers": [
+      [
+        "d098_frecuencia",
+        -0.307
+      ],
+      [
+        "d076_legalidad",
+        -0.302
+      ],
+      [
+        "d085_urbanismo",
+        -0.263
+      ],
+      [
+        "d043_temperatura_táctil",
+        -0.214
+      ],
+      [
+        "d020_porosidad",
+        -0.209
+      ],
+      [
+        "d066_complejidad_lógica",
+        -0.198
+      ],
+      [
+        "d014_fragilidad",
+        -0.188
+      ],
+      [
+        "d083_tradición",
+        -0.183
+      ]
+    ]
+  },
+  "d041_saturación_de_color": {
+    "effect": 0.0333,
+    "z": 0.46,
+    "rank": 51,
+    "sign_ok": true,
+    "top_movers": [
+      [
+        "d058_asco",
+        -0.358
+      ],
+      [
+        "d037_sabor_amargor",
+        -0.298
+      ],
+      [
+        "d066_complejidad_lógica",
+        -0.27
+      ],
+      [
+        "d051_valentía",
+        0.25
+      ],
+      [
+        "d097_velocidad_de_acción",
+        0.215
+      ],
+      [
+        "d020_porosidad",
+        -0.194
+      ],
+      [
+        "d081_industrialización",
+        0.184
+      ],
+      [
+        "d055_miedo",
+        -0.181
+      ]
+    ]
+  },
+  "d042_brillo_superficial": {
+    "effect": -0.0184,
+    "z": 0.36,
+    "rank": 68,
+    "sign_ok": false,
+    "top_movers": [
+      [
+        "d051_valentía",
+        -0.334
+      ],
+      [
+        "d022_vitalidad",
+        -0.312
+      ],
+      [
+        "d097_velocidad_de_acción",
+        -0.299
+      ],
+      [
+        "d036_sabor_dulzor",
+        -0.273
+      ],
+      [
+        "d039_rugosidad_táctil",
+        -0.237
+      ],
+      [
+        "d082_lujo",
+        -0.227
+      ],
+      [
+        "d068_probabilidad",
+        -0.21
+      ],
+      [
+        "d099_necesidad",
+        0.204
+      ]
+    ]
+  },
+  "d043_temperatura_táctil": {
+    "effect": 0.0005,
+    "z": -0.37,
+    "rank": 85,
+    "sign_ok": true,
+    "top_movers": [
+      [
+        "d080_artificialidad",
+        0.503
+      ],
+      [
+        "d099_necesidad",
+        -0.411
+      ],
+      [
+        "d097_velocidad_de_acción",
+        0.307
+      ],
+      [
+        "d100_impacto",
+        0.305
+      ],
+      [
+        "d051_valentía",
+        0.298
+      ],
+      [
+        "d101_control",
+        0.296
+      ],
+      [
+        "d096_dificultad_de_ejecución",
+        0.258
+      ],
+      [
+        "d039_rugosidad_táctil",
+        0.245
+      ]
+    ]
+  },
+  "d044_pegajosidad": {
+    "effect": 0.0585,
+    "z": 0.55,
+    "rank": 38,
+    "sign_ok": true,
+    "top_movers": [
+      [
+        "d080_artificialidad",
+        0.315
+      ],
+      [
+        "d037_sabor_amargor",
+        -0.257
+      ],
+      [
+        "d076_legalidad",
+        0.255
+      ],
+      [
+        "d034_olor_intensidad",
+        -0.212
+      ],
+      [
+        "d081_industrialización",
+        0.193
+      ],
+      [
+        "d036_sabor_dulzor",
+        -0.193
+      ],
+      [
+        "d043_temperatura_táctil",
+        -0.18
+      ],
+      [
+        "d085_urbanismo",
+        0.179
+      ]
+    ]
+  },
+  "d045_felicidad": {
+    "effect": 0.0547,
+    "z": -0.2,
+    "rank": 52,
+    "sign_ok": true,
+    "top_movers": [
+      [
+        "d028_salud",
+        0.442
+      ],
+      [
+        "d097_velocidad_de_acción",
+        0.42
+      ],
+      [
+        "d062_estrés",
+        0.337
+      ],
+      [
+        "d099_necesidad",
+        0.314
+      ],
+      [
+        "d094_caos_entropía",
+        0.283
+      ],
+      [
+        "d095_onirismo",
+        0.28
+      ],
+      [
+        "d091_futurismo",
+        0.277
+      ],
+      [
+        "d051_valentía",
+        0.269
+      ]
+    ]
+  },
+  "d046_amor": {
+    "effect": 0.3164,
+    "z": 2.49,
+    "rank": 3,
+    "sign_ok": true,
+    "top_movers": [
+      [
+        "d022_vitalidad",
+        0.482
+      ],
+      [
+        "d096_dificultad_de_ejecución",
+        -0.363
+      ],
+      [
+        "d095_onirismo",
+        0.325
+      ],
+      [
+        "d046_amor",
+        0.316
+      ],
+      [
+        "d039_rugosidad_táctil",
+        -0.267
+      ],
+      [
+        "d099_necesidad",
+        0.266
+      ],
+      [
+        "d080_artificialidad",
+        -0.245
+      ],
+      [
+        "d098_frecuencia",
+        0.229
+      ]
+    ]
+  },
+  "d047_calma": {
+    "effect": 0.1136,
+    "z": 1.29,
+    "rank": 21,
+    "sign_ok": true,
+    "top_movers": [
+      [
+        "d099_necesidad",
+        0.37
+      ],
+      [
+        "d080_artificialidad",
+        -0.343
+      ],
+      [
+        "d014_fragilidad",
+        -0.26
+      ],
+      [
+        "d094_caos_entropía",
+        -0.252
+      ],
+      [
+        "d058_asco",
+        -0.246
+      ],
+      [
+        "d068_probabilidad",
+        0.245
+      ],
+      [
+        "d059_culpa",
+        -0.232
+      ],
+      [
+        "d073_claridad",
+        0.227
+      ]
+    ]
+  },
+  "d048_esperanza": {
+    "effect": -0.0151,
+    "z": -0.66,
+    "rank": 70,
+    "sign_ok": false,
+    "top_movers": [
+      [
+        "d044_pegajosidad",
+        0.397
+      ],
+      [
+        "d098_frecuencia",
+        0.347
+      ],
+      [
+        "d028_salud",
+        0.324
+      ],
+      [
+        "d068_probabilidad",
+        0.321
+      ],
+      [
+        "d097_velocidad_de_acción",
+        0.306
+      ],
+      [
+        "d039_rugosidad_táctil",
+        0.302
+      ],
+      [
+        "d043_temperatura_táctil",
+        0.284
+      ],
+      [
+        "d080_artificialidad",
+        0.232
+      ]
+    ]
+  },
+  "d049_confianza": {
+    "effect": -0.0279,
+    "z": -0.35,
+    "rank": 53,
+    "sign_ok": false,
+    "top_movers": [
+      [
+        "d020_porosidad",
+        0.345
+      ],
+      [
+        "d081_industrialización",
+        0.295
+      ],
+      [
+        "d037_sabor_amargor",
+        0.256
+      ],
+      [
+        "d043_temperatura_táctil",
+        0.251
+      ],
+      [
+        "d014_fragilidad",
+        0.23
+      ],
+      [
+        "d031_capacidad_sensorial",
+        -0.226
+      ],
+      [
+        "d051_valentía",
+        -0.192
+      ],
+      [
+        "d074_sabiduría",
+        -0.184
+      ]
+    ]
+  },
+  "d050_orgullo": {
+    "effect": 0.0305,
+    "z": 0.44,
+    "rank": 55,
+    "sign_ok": true,
+    "top_movers": [
+      [
+        "d099_necesidad",
+        -0.425
+      ],
+      [
+        "d068_probabilidad",
+        -0.303
+      ],
+      [
+        "d098_frecuencia",
+        -0.262
+      ],
+      [
+        "d039_rugosidad_táctil",
+        -0.242
+      ],
+      [
+        "d076_legalidad",
+        0.229
+      ],
+      [
+        "d043_temperatura_táctil",
+        -0.228
+      ],
+      [
+        "d037_sabor_amargor",
+        -0.219
+      ],
+      [
+        "d103_durabilidad_del_efecto",
+        0.213
+      ]
+    ]
+  },
+  "d051_valentía": {
+    "effect": 0.0487,
+    "z": 1.0,
+    "rank": 45,
+    "sign_ok": true,
+    "top_movers": [
+      [
+        "d097_velocidad_de_acción",
+        -0.295
+      ],
+      [
+        "d039_rugosidad_táctil",
+        -0.283
+      ],
+      [
+        "d058_asco",
+        -0.269
+      ],
+      [
+        "d033_frecuencia_sonora",
+        -0.263
+      ],
+      [
+        "d043_temperatura_táctil",
+        -0.246
+      ],
+      [
+        "d099_necesidad",
+        0.243
+      ],
+      [
+        "d065_verdad_facticidad",
+        -0.242
+      ],
+      [
+        "d098_frecuencia",
+        -0.222
+      ]
+    ]
+  },
+  "d052_gratitud": {
+    "effect": 0.0239,
+    "z": -0.06,
+    "rank": 62,
+    "sign_ok": true,
+    "top_movers": [
+      [
+        "d039_rugosidad_táctil",
+        -0.339
+      ],
+      [
+        "d062_estrés",
+        0.285
+      ],
+      [
+        "d051_valentía",
+        0.275
+      ],
+      [
+        "d028_salud",
+        0.268
+      ],
+      [
+        "d094_caos_entropía",
+        0.264
+      ],
+      [
+        "d091_futurismo",
+        0.259
+      ],
+      [
+        "d095_onirismo",
+        0.235
+      ],
+      [
+        "d043_temperatura_táctil",
+        0.223
+      ]
+    ]
+  },
+  "d053_curiosidad": {
+    "effect": 0.3313,
+    "z": 3.18,
+    "rank": 1,
+    "sign_ok": true,
+    "top_movers": [
+      [
+        "d028_salud",
+        0.333
+      ],
+      [
+        "d053_curiosidad",
+        0.331
+      ],
+      [
+        "d097_velocidad_de_acción",
+        0.318
+      ],
+      [
+        "d100_impacto",
+        0.281
+      ],
+      [
+        "d009_transparencia",
+        0.27
+      ],
+      [
+        "d080_artificialidad",
+        0.26
+      ],
+      [
+        "d099_necesidad",
+        -0.255
+      ],
+      [
+        "d091_futurismo",
+        0.228
+      ]
+    ]
+  },
+  "d054_empatía": {
+    "effect": 0.233,
+    "z": 1.29,
+    "rank": 11,
+    "sign_ok": true,
+    "top_movers": [
+      [
+        "d028_salud",
+        0.469
+      ],
+      [
+        "d099_necesidad",
+        0.439
+      ],
+      [
+        "d097_velocidad_de_acción",
+        0.427
+      ],
+      [
+        "d051_valentía",
+        0.389
+      ],
+      [
+        "d022_vitalidad",
+        0.384
+      ],
+      [
+        "d044_pegajosidad",
+        0.318
+      ],
+      [
+        "d083_tradición",
+        0.314
+      ],
+      [
+        "d098_frecuencia",
+        0.283
+      ]
+    ]
+  },
+  "d055_miedo": {
+    "effect": 0.0257,
+    "z": 0.28,
+    "rank": 50,
+    "sign_ok": true,
+    "top_movers": [
+      [
+        "d103_durabilidad_del_efecto",
+        -0.272
+      ],
+      [
+        "d039_rugosidad_táctil",
+        0.267
+      ],
+      [
+        "d028_salud",
+        -0.2
+      ],
+      [
+        "d082_lujo",
+        0.173
+      ],
+      [
+        "d034_olor_intensidad",
+        0.172
+      ],
+      [
+        "d037_sabor_amargor",
+        0.169
+      ],
+      [
+        "d076_legalidad",
+        -0.146
+      ],
+      [
+        "d081_industrialización",
+        0.146
+      ]
+    ]
+  },
+  "d056_ira": {
+    "effect": 0.1623,
+    "z": 1.33,
+    "rank": 12,
+    "sign_ok": true,
+    "top_movers": [
+      [
+        "d099_necesidad",
+        0.426
+      ],
+      [
+        "d068_probabilidad",
+        0.291
+      ],
+      [
+        "d051_valentía",
+        -0.284
+      ],
+      [
+        "d096_dificultad_de_ejecución",
+        0.272
+      ],
+      [
+        "d058_asco",
+        0.266
+      ],
+      [
+        "d007_gravedad",
+        0.245
+      ],
+      [
+        "d098_frecuencia",
+        0.232
+      ],
+      [
+        "d062_estrés",
+        0.187
+      ]
+    ]
+  },
+  "d057_tristeza": {
+    "effect": -0.0417,
+    "z": -0.43,
+    "rank": 60,
+    "sign_ok": false,
+    "top_movers": [
+      [
+        "d097_velocidad_de_acción",
+        -0.319
+      ],
+      [
+        "d099_necesidad",
+        -0.305
+      ],
+      [
+        "d080_artificialidad",
+        0.277
+      ],
+      [
+        "d065_verdad_facticidad",
+        -0.259
+      ],
+      [
+        "d027_edad_biológica",
+        0.231
+      ],
+      [
+        "d014_fragilidad",
+        0.221
+      ],
+      [
+        "d082_lujo",
+        0.214
+      ],
+      [
+        "d036_sabor_dulzor",
+        0.21
+      ]
+    ]
+  },
+  "d058_asco": {
+    "effect": -0.2482,
+    "z": -1.17,
+    "rank": 16,
+    "sign_ok": false,
+    "top_movers": [
+      [
+        "d022_vitalidad",
+        -0.467
+      ],
+      [
+        "d080_artificialidad",
+        -0.449
+      ],
+      [
+        "d028_salud",
+        -0.447
+      ],
+      [
+        "d051_valentía",
+        -0.388
+      ],
+      [
+        "d097_velocidad_de_acción",
+        -0.38
+      ],
+      [
+        "d099_necesidad",
+        0.371
+      ],
+      [
+        "d083_tradición",
+        -0.336
+      ],
+      [
+        "d085_urbanismo",
+        -0.326
+      ]
+    ]
+  },
+  "d059_culpa": {
+    "effect": 0.2765,
+    "z": 1.72,
+    "rank": 9,
+    "sign_ok": true,
+    "top_movers": [
+      [
+        "d080_artificialidad",
+        0.392
+      ],
+      [
+        "d055_miedo",
+        0.36
+      ],
+      [
+        "d058_asco",
+        0.36
+      ],
+      [
+        "d062_estrés",
+        0.355
+      ],
+      [
+        "d091_futurismo",
+        0.33
+      ],
+      [
+        "d085_urbanismo",
+        0.315
+      ],
+      [
+        "d034_olor_intensidad",
+        0.315
+      ],
+      [
+        "d007_gravedad",
+        0.303
+      ]
+    ]
+  },
+  "d060_envidia": {
+    "effect": 0.0448,
+    "z": 1.03,
+    "rank": 46,
+    "sign_ok": true,
+    "top_movers": [
+      [
+        "d085_urbanismo",
+        -0.322
+      ],
+      [
+        "d097_velocidad_de_acción",
+        -0.249
+      ],
+      [
+        "d091_futurismo",
+        -0.232
+      ],
+      [
+        "d023_consciencia",
+        -0.212
+      ],
+      [
+        "d094_caos_entropía",
+        -0.209
+      ],
+      [
+        "d066_complejidad_lógica",
+        -0.2
+      ],
+      [
+        "d082_lujo",
+        -0.189
+      ],
+      [
+        "d014_fragilidad",
+        -0.175
+      ]
+    ]
+  },
+  "d061_soledad": {
+    "effect": -0.1314,
+    "z": -1.29,
+    "rank": 22,
+    "sign_ok": false,
+    "top_movers": [
+      [
+        "d072_memoria",
+        -0.251
+      ],
+      [
+        "d100_impacto",
+        0.247
+      ],
+      [
+        "d030_evolución",
+        0.24
+      ],
+      [
+        "d069_abstracción",
+        -0.229
+      ],
+      [
+        "d065_verdad_facticidad",
+        0.212
+      ],
+      [
+        "d034_olor_intensidad",
+        -0.202
+      ],
+      [
+        "d093_destino",
+        -0.198
+      ],
+      [
+        "d020_porosidad",
+        0.194
+      ]
+    ]
+  },
+  "d062_estrés": {
+    "effect": -0.0224,
+    "z": 0.06,
+    "rank": 60,
+    "sign_ok": false,
+    "top_movers": [
+      [
+        "d099_necesidad",
+        0.34
+      ],
+      [
+        "d083_tradición",
+        0.32
+      ],
+      [
+        "d011_elasticidad",
+        -0.277
+      ],
+      [
+        "d103_durabilidad_del_efecto",
+        0.255
+      ],
+      [
+        "d080_artificialidad",
+        -0.242
+      ],
+      [
+        "d101_control",
+        -0.239
+      ],
+      [
+        "d085_urbanismo",
+        -0.231
+      ],
+      [
+        "d097_velocidad_de_acción",
+        -0.216
+      ]
+    ]
+  },
+  "d063_odio": {
+    "effect": 0.1489,
+    "z": 1.22,
+    "rank": 10,
+    "sign_ok": true,
+    "top_movers": [
+      [
+        "d058_asco",
+        0.339
+      ],
+      [
+        "d039_rugosidad_táctil",
+        0.334
+      ],
+      [
+        "d007_gravedad",
+        0.325
+      ],
+      [
+        "d059_culpa",
+        0.314
+      ],
+      [
+        "d034_olor_intensidad",
+        0.282
+      ],
+      [
+        "d037_sabor_amargor",
+        0.243
+      ],
+      [
+        "d056_ira",
+        0.199
+      ],
+      [
+        "d024_instinto",
+        0.185
+      ]
+    ]
+  },
+  "d064_aburrimiento": {
+    "effect": 0.0655,
+    "z": 0.78,
+    "rank": 19,
+    "sign_ok": true,
+    "top_movers": [
+      [
+        "d065_verdad_facticidad",
+        -0.375
+      ],
+      [
+        "d028_salud",
+        0.272
+      ],
+      [
+        "d051_valentía",
+        0.26
+      ],
+      [
+        "d030_evolución",
+        0.245
+      ],
+      [
+        "d097_velocidad_de_acción",
+        -0.164
+      ],
+      [
+        "d023_consciencia",
+        0.132
+      ],
+      [
+        "d083_tradición",
+        0.132
+      ],
+      [
+        "d057_tristeza",
+        0.13
+      ]
+    ]
+  },
+  "d065_verdad_facticidad": {
+    "effect": -0.023,
+    "z": -0.35,
+    "rank": 58,
+    "sign_ok": false,
+    "top_movers": [
+      [
+        "d068_probabilidad",
+        0.301
+      ],
+      [
+        "d036_sabor_dulzor",
+        -0.267
+      ],
+      [
+        "d097_velocidad_de_acción",
+        0.259
+      ],
+      [
+        "d081_industrialización",
+        0.246
+      ],
+      [
+        "d092_misterio",
+        -0.24
+      ],
+      [
+        "d076_legalidad",
+        0.238
+      ],
+      [
+        "d023_consciencia",
+        0.226
+      ],
+      [
+        "d086_belleza_estética",
+        -0.208
+      ]
+    ]
+  },
+  "d066_complejidad_lógica": {
+    "effect": 0.2215,
+    "z": 1.03,
+    "rank": 21,
+    "sign_ok": true,
+    "top_movers": [
+      [
+        "d091_futurismo",
+        0.448
+      ],
+      [
+        "d095_onirismo",
+        0.376
+      ],
+      [
+        "d051_valentía",
+        0.373
+      ],
+      [
+        "d099_necesidad",
+        -0.365
+      ],
+      [
+        "d085_urbanismo",
+        0.341
+      ],
+      [
+        "d060_envidia",
+        0.321
+      ],
+      [
+        "d084_religiosidad",
+        0.312
+      ],
+      [
+        "d094_caos_entropía",
+        0.309
+      ]
+    ]
+  },
+  "d067_racionalidad": {
+    "effect": 0.1972,
+    "z": 1.73,
+    "rank": 18,
+    "sign_ok": true,
+    "top_movers": [
+      [
+        "d020_porosidad",
+        -0.445
+      ],
+      [
+        "d014_fragilidad",
+        -0.406
+      ],
+      [
+        "d094_caos_entropía",
+        -0.38
+      ],
+      [
+        "d046_amor",
+        -0.3
+      ],
+      [
+        "d058_asco",
+        -0.299
+      ],
+      [
+        "d076_legalidad",
+        0.296
+      ],
+      [
+        "d039_rugosidad_táctil",
+        -0.29
+      ],
+      [
+        "d030_evolución",
+        -0.283
+      ]
+    ]
+  },
+  "d068_probabilidad": {
+    "effect": 0.2336,
+    "z": 1.74,
+    "rank": 6,
+    "sign_ok": true,
+    "top_movers": [
+      [
+        "d028_salud",
+        0.368
+      ],
+      [
+        "d026_valor_nutricional",
+        0.349
+      ],
+      [
+        "d022_vitalidad",
+        0.333
+      ],
+      [
+        "d097_velocidad_de_acción",
+        0.305
+      ],
+      [
+        "d051_valentía",
+        0.252
+      ],
+      [
+        "d083_tradición",
+        0.236
+      ],
+      [
+        "d068_probabilidad",
+        0.234
+      ],
+      [
+        "d076_legalidad",
+        0.228
+      ]
+    ]
+  },
+  "d069_abstracción": {
+    "effect": 0.024,
+    "z": -0.02,
+    "rank": 61,
+    "sign_ok": true,
+    "top_movers": [
+      [
+        "d028_salud",
+        0.217
+      ],
+      [
+        "d024_instinto",
+        0.206
+      ],
+      [
+        "d080_artificialidad",
+        -0.188
+      ],
+      [
+        "d063_odio",
+        -0.182
+      ],
+      [
+        "d036_sabor_dulzor",
+        0.182
+      ],
+      [
+        "d100_impacto",
+        0.166
+      ],
+      [
+        "d030_evolución",
+        0.163
+      ],
+      [
+        "d054_empatía",
+        0.157
+      ]
+    ]
+  },
+  "d070_conocimiento_requerido": {
+    "effect": 0.1473,
+    "z": 0.29,
+    "rank": 39,
+    "sign_ok": true,
+    "top_movers": [
+      [
+        "d028_salud",
+        0.445
+      ],
+      [
+        "d091_futurismo",
+        0.435
+      ],
+      [
+        "d051_valentía",
+        0.428
+      ],
+      [
+        "d085_urbanismo",
+        0.397
+      ],
+      [
+        "d097_velocidad_de_acción",
+        0.384
+      ],
+      [
+        "d100_impacto",
+        0.351
+      ],
+      [
+        "d007_gravedad",
+        0.35
+      ],
+      [
+        "d094_caos_entropía",
+        0.346
+      ]
+    ]
+  },
+  "d071_creatividad": {
+    "effect": 0.1776,
+    "z": 0.38,
+    "rank": 31,
+    "sign_ok": true,
+    "top_movers": [
+      [
+        "d099_necesidad",
+        0.681
+      ],
+      [
+        "d028_salud",
+        0.548
+      ],
+      [
+        "d097_velocidad_de_acción",
+        0.505
+      ],
+      [
+        "d022_vitalidad",
+        0.444
+      ],
+      [
+        "d031_capacidad_sensorial",
+        0.433
+      ],
+      [
+        "d098_frecuencia",
+        0.432
+      ],
+      [
+        "d061_soledad",
+        0.428
+      ],
+      [
+        "d066_complejidad_lógica",
+        0.409
+      ]
+    ]
+  },
+  "d072_memoria": {
+    "effect": -0.0245,
+    "z": -0.88,
+    "rank": 59,
+    "sign_ok": false,
+    "top_movers": [
+      [
+        "d022_vitalidad",
+        0.381
+      ],
+      [
+        "d023_consciencia",
+        0.299
+      ],
+      [
+        "d091_futurismo",
+        0.241
+      ],
+      [
+        "d051_valentía",
+        0.231
+      ],
+      [
+        "d085_urbanismo",
+        0.226
+      ],
+      [
+        "d081_industrialización",
+        0.212
+      ],
+      [
+        "d068_probabilidad",
+        0.172
+      ],
+      [
+        "d024_instinto",
+        0.166
+      ]
+    ]
+  },
+  "d073_claridad": {
+    "effect": -0.028,
+    "z": -0.75,
+    "rank": 48,
+    "sign_ok": false,
+    "top_movers": [
+      [
+        "d082_lujo",
+        -0.197
+      ],
+      [
+        "d094_caos_entropía",
+        0.183
+      ],
+      [
+        "d091_futurismo",
+        0.176
+      ],
+      [
+        "d081_industrialización",
+        0.164
+      ],
+      [
+        "d098_frecuencia",
+        0.16
+      ],
+      [
+        "d028_salud",
+        0.158
+      ],
+      [
+        "d036_sabor_dulzor",
+        -0.145
+      ],
+      [
+        "d068_probabilidad",
+        0.134
+      ]
+    ]
+  },
+  "d074_sabiduría": {
+    "effect": 0.0108,
+    "z": 0.33,
+    "rank": 69,
+    "sign_ok": true,
+    "top_movers": [
+      [
+        "d039_rugosidad_táctil",
+        -0.354
+      ],
+      [
+        "d068_probabilidad",
+        0.335
+      ],
+      [
+        "d099_necesidad",
+        0.31
+      ],
+      [
+        "d010_dureza",
+        -0.259
+      ],
+      [
+        "d037_sabor_amargor",
+        -0.256
+      ],
+      [
+        "d056_ira",
+        -0.202
+      ],
+      [
+        "d007_gravedad",
+        -0.202
+      ],
+      [
+        "d058_asco",
+        -0.201
+      ]
+    ]
+  },
+  "d075_valor_económico": {
+    "effect": 0.0035,
+    "z": -0.57,
+    "rank": 89,
+    "sign_ok": true,
+    "top_movers": [
+      [
+        "d028_salud",
+        0.361
+      ],
+      [
+        "d098_frecuencia",
+        0.3
+      ],
+      [
+        "d099_necesidad",
+        -0.28
+      ],
+      [
+        "d051_valentía",
+        0.267
+      ],
+      [
+        "d097_velocidad_de_acción",
+        0.256
+      ],
+      [
+        "d007_gravedad",
+        0.248
+      ],
+      [
+        "d043_temperatura_táctil",
+        0.224
+      ],
+      [
+        "d085_urbanismo",
+        0.203
+      ]
+    ]
+  },
+  "d076_legalidad": {
+    "effect": 0.1324,
+    "z": 1.76,
+    "rank": 6,
+    "sign_ok": true,
+    "top_movers": [
+      [
+        "d103_durabilidad_del_efecto",
+        0.248
+      ],
+      [
+        "d065_verdad_facticidad",
+        0.208
+      ],
+      [
+        "d028_salud",
+        0.187
+      ],
+      [
+        "d051_valentía",
+        0.176
+      ],
+      [
+        "d020_porosidad",
+        0.166
+      ],
+      [
+        "d026_valor_nutricional",
+        0.163
+      ],
+      [
+        "d076_legalidad",
+        0.132
+      ],
+      [
+        "d080_artificialidad",
+        -0.131
+      ]
+    ]
+  },
+  "d077_ética_bondad": {
+    "effect": 0.0608,
+    "z": 0.73,
+    "rank": 27,
+    "sign_ok": true,
+    "top_movers": [
+      [
+        "d028_salud",
+        0.264
+      ],
+      [
+        "d099_necesidad",
+        0.247
+      ],
+      [
+        "d085_urbanismo",
+        -0.204
+      ],
+      [
+        "d046_amor",
+        0.201
+      ],
+      [
+        "d069_abstracción",
+        -0.189
+      ],
+      [
+        "d101_control",
+        0.185
+      ],
+      [
+        "d044_pegajosidad",
+        -0.182
+      ],
+      [
+        "d080_artificialidad",
+        -0.18
+      ]
+    ]
+  },
+  "d078_fama": {
+    "effect": 0.0013,
+    "z": -0.15,
+    "rank": 84,
+    "sign_ok": true,
+    "top_movers": [
+      [
+        "d009_transparencia",
+        0.261
+      ],
+      [
+        "d028_salud",
+        -0.226
+      ],
+      [
+        "d014_fragilidad",
+        0.204
+      ],
+      [
+        "d044_pegajosidad",
+        0.203
+      ],
+      [
+        "d073_claridad",
+        0.188
+      ],
+      [
+        "d057_tristeza",
+        -0.186
+      ],
+      [
+        "d022_vitalidad",
+        -0.18
+      ],
+      [
+        "d043_temperatura_táctil",
+        0.18
+      ]
+    ]
+  },
+  "d079_poder_político": {
+    "effect": 0.0121,
+    "z": 0.06,
+    "rank": 75,
+    "sign_ok": true,
+    "top_movers": [
+      [
+        "d098_frecuencia",
+        0.288
+      ],
+      [
+        "d037_sabor_amargor",
+        -0.21
+      ],
+      [
+        "d014_fragilidad",
+        -0.209
+      ],
+      [
+        "d095_onirismo",
+        -0.195
+      ],
+      [
+        "d101_control",
+        0.186
+      ],
+      [
+        "d094_caos_entropía",
+        -0.164
+      ],
+      [
+        "d034_olor_intensidad",
+        -0.158
+      ],
+      [
+        "d068_probabilidad",
+        0.157
+      ]
+    ]
+  },
+  "d080_artificialidad": {
+    "effect": 0.2026,
+    "z": 2.26,
+    "rank": 9,
+    "sign_ok": true,
+    "top_movers": [
+      [
+        "d099_necesidad",
+        -0.467
+      ],
+      [
+        "d028_salud",
+        -0.389
+      ],
+      [
+        "d030_evolución",
+        -0.349
+      ],
+      [
+        "d098_frecuencia",
+        -0.3
+      ],
+      [
+        "d084_religiosidad",
+        -0.263
+      ],
+      [
+        "d022_vitalidad",
+        -0.255
+      ],
+      [
+        "d085_urbanismo",
+        -0.25
+      ],
+      [
+        "d100_impacto",
+        0.215
+      ]
+    ]
+  },
+  "d081_industrialización": {
+    "effect": 0.1656,
+    "z": 1.76,
+    "rank": 18,
+    "sign_ok": true,
+    "top_movers": [
+      [
+        "d039_rugosidad_táctil",
+        0.402
+      ],
+      [
+        "d020_porosidad",
+        0.303
+      ],
+      [
+        "d044_pegajosidad",
+        0.279
+      ],
+      [
+        "d095_onirismo",
+        -0.276
+      ],
+      [
+        "d031_capacidad_sensorial",
+        -0.265
+      ],
+      [
+        "d051_valentía",
+        -0.254
+      ],
+      [
+        "d054_empatía",
+        -0.249
+      ],
+      [
+        "d014_fragilidad",
+        0.234
+      ]
+    ]
+  },
+  "d082_lujo": {
+    "effect": -0.2091,
+    "z": -1.87,
+    "rank": 7,
+    "sign_ok": false,
+    "top_movers": [
+      [
+        "d103_durabilidad_del_efecto",
+        -0.317
+      ],
+      [
+        "d085_urbanismo",
+        -0.297
+      ],
+      [
+        "d099_necesidad",
+        0.259
+      ],
+      [
+        "d036_sabor_dulzor",
+        -0.253
+      ],
+      [
+        "d022_vitalidad",
+        -0.244
+      ],
+      [
+        "d052_gratitud",
+        -0.234
+      ],
+      [
+        "d097_velocidad_de_acción",
+        -0.219
+      ],
+      [
+        "d082_lujo",
+        -0.209
+      ]
+    ]
+  },
+  "d083_tradición": {
+    "effect": 0.1776,
+    "z": 2.56,
+    "rank": 10,
+    "sign_ok": true,
+    "top_movers": [
+      [
+        "d028_salud",
+        -0.381
+      ],
+      [
+        "d039_rugosidad_táctil",
+        -0.255
+      ],
+      [
+        "d099_necesidad",
+        -0.249
+      ],
+      [
+        "d062_estrés",
+        -0.217
+      ],
+      [
+        "d095_onirismo",
+        -0.213
+      ],
+      [
+        "d101_control",
+        -0.208
+      ],
+      [
+        "d036_sabor_dulzor",
+        -0.186
+      ],
+      [
+        "d054_empatía",
+        -0.186
+      ]
+    ]
+  },
+  "d084_religiosidad": {
+    "effect": 0.0794,
+    "z": 0.79,
+    "rank": 30,
+    "sign_ok": true,
+    "top_movers": [
+      [
+        "d046_amor",
+        0.317
+      ],
+      [
+        "d032_sonoridad_volumen",
+        0.261
+      ],
+      [
+        "d036_sabor_dulzor",
+        0.236
+      ],
+      [
+        "d091_futurismo",
+        -0.231
+      ],
+      [
+        "d097_velocidad_de_acción",
+        0.228
+      ],
+      [
+        "d051_valentía",
+        0.208
+      ],
+      [
+        "d095_onirismo",
+        0.175
+      ],
+      [
+        "d062_estrés",
+        0.17
+      ]
+    ]
+  },
+  "d085_urbanismo": {
+    "effect": -0.1863,
+    "z": -1.23,
+    "rank": 15,
+    "sign_ok": false,
+    "top_movers": [
+      [
+        "d098_frecuencia",
+        -0.358
+      ],
+      [
+        "d028_salud",
+        -0.354
+      ],
+      [
+        "d039_rugosidad_táctil",
+        -0.352
+      ],
+      [
+        "d068_probabilidad",
+        -0.325
+      ],
+      [
+        "d027_edad_biológica",
+        -0.303
+      ],
+      [
+        "d043_temperatura_táctil",
+        -0.283
+      ],
+      [
+        "d065_verdad_facticidad",
+        0.282
+      ],
+      [
+        "d096_dificultad_de_ejecución",
+        0.272
+      ]
+    ]
+  },
+  "d086_belleza_estética": {
+    "effect": -0.0984,
+    "z": -1.39,
+    "rank": 17,
+    "sign_ok": false,
+    "top_movers": [
+      [
+        "d099_necesidad",
+        0.4
+      ],
+      [
+        "d098_frecuencia",
+        0.321
+      ],
+      [
+        "d028_salud",
+        0.268
+      ],
+      [
+        "d080_artificialidad",
+        -0.244
+      ],
+      [
+        "d081_industrialización",
+        0.209
+      ],
+      [
+        "d039_rugosidad_táctil",
+        -0.198
+      ],
+      [
+        "d072_memoria",
+        0.183
+      ],
+      [
+        "d068_probabilidad",
+        0.18
+      ]
+    ]
+  },
+  "d087_formalidad": {
+    "effect": -0.0849,
+    "z": -1.45,
+    "rank": 26,
+    "sign_ok": false,
+    "top_movers": [
+      [
+        "d097_velocidad_de_acción",
+        0.336
+      ],
+      [
+        "d022_vitalidad",
+        0.269
+      ],
+      [
+        "d028_salud",
+        0.216
+      ],
+      [
+        "d066_complejidad_lógica",
+        0.192
+      ],
+      [
+        "d024_instinto",
+        0.187
+      ],
+      [
+        "d080_artificialidad",
+        -0.181
+      ],
+      [
+        "d007_gravedad",
+        0.171
+      ],
+      [
+        "d036_sabor_dulzor",
+        -0.171
+      ]
+    ]
+  },
+  "d088_peligrosidad_social": {
+    "effect": 0.2091,
+    "z": 1.61,
+    "rank": 10,
+    "sign_ok": true,
+    "top_movers": [
+      [
+        "d094_caos_entropía",
+        0.433
+      ],
+      [
+        "d096_dificultad_de_ejecución",
+        0.43
+      ],
+      [
+        "d076_legalidad",
+        -0.326
+      ],
+      [
+        "d058_asco",
+        0.308
+      ],
+      [
+        "d011_elasticidad",
+        0.263
+      ],
+      [
+        "d035_olor_agradabilidad",
+        -0.24
+      ],
+      [
+        "d028_salud",
+        0.226
+      ],
+      [
+        "d091_futurismo",
+        0.225
+      ]
+    ]
+  },
+  "d089_magia": {
+    "effect": 0.2157,
+    "z": 2.28,
+    "rank": 3,
+    "sign_ok": true,
+    "top_movers": [
+      [
+        "d083_tradición",
+        0.273
+      ],
+      [
+        "d084_religiosidad",
+        0.227
+      ],
+      [
+        "d059_culpa",
+        0.223
+      ],
+      [
+        "d089_magia",
+        0.216
+      ],
+      [
+        "d054_empatía",
+        0.196
+      ],
+      [
+        "d023_consciencia",
+        0.191
+      ],
+      [
+        "d044_pegajosidad",
+        -0.178
+      ],
+      [
+        "d030_evolución",
+        0.174
+      ]
+    ]
+  },
+  "d090_divinidad": {
+    "effect": 0.1068,
+    "z": 1.28,
+    "rank": 24,
+    "sign_ok": true,
+    "top_movers": [
+      [
+        "d099_necesidad",
+        -0.334
+      ],
+      [
+        "d096_dificultad_de_ejecución",
+        -0.278
+      ],
+      [
+        "d044_pegajosidad",
+        -0.269
+      ],
+      [
+        "d028_salud",
+        0.237
+      ],
+      [
+        "d080_artificialidad",
+        -0.23
+      ],
+      [
+        "d046_amor",
+        0.209
+      ],
+      [
+        "d015_solidez",
+        -0.208
+      ],
+      [
+        "d101_control",
+        -0.207
+      ]
+    ]
+  },
+  "d091_futurismo": {
+    "effect": -0.1081,
+    "z": -1.33,
+    "rank": 21,
+    "sign_ok": false,
+    "top_movers": [
+      [
+        "d022_vitalidad",
+        0.311
+      ],
+      [
+        "d065_verdad_facticidad",
+        0.298
+      ],
+      [
+        "d029_fertilidad",
+        0.264
+      ],
+      [
+        "d037_sabor_amargor",
+        0.246
+      ],
+      [
+        "d084_religiosidad",
+        -0.236
+      ],
+      [
+        "d099_necesidad",
+        -0.217
+      ],
+      [
+        "d072_memoria",
+        -0.214
+      ],
+      [
+        "d030_evolución",
+        0.214
+      ]
+    ]
+  },
+  "d092_misterio": {
+    "effect": -0.186,
+    "z": -0.92,
+    "rank": 23,
+    "sign_ok": false,
+    "top_movers": [
+      [
+        "d098_frecuencia",
+        -0.39
+      ],
+      [
+        "d074_sabiduría",
+        -0.375
+      ],
+      [
+        "d097_velocidad_de_acción",
+        -0.367
+      ],
+      [
+        "d066_complejidad_lógica",
+        -0.353
+      ],
+      [
+        "d081_industrialización",
+        -0.344
+      ],
+      [
+        "d080_artificialidad",
+        -0.333
+      ],
+      [
+        "d039_rugosidad_táctil",
+        0.321
+      ],
+      [
+        "d072_memoria",
+        -0.318
+      ]
+    ]
+  },
+  "d093_destino": {
+    "effect": 0.0549,
+    "z": 0.57,
+    "rank": 44,
+    "sign_ok": true,
+    "top_movers": [
+      [
+        "d032_sonoridad_volumen",
+        0.439
+      ],
+      [
+        "d063_odio",
+        -0.273
+      ],
+      [
+        "d081_industrialización",
+        0.269
+      ],
+      [
+        "d098_frecuencia",
+        0.245
+      ],
+      [
+        "d080_artificialidad",
+        0.226
+      ],
+      [
+        "d030_evolución",
+        -0.205
+      ],
+      [
+        "d058_asco",
+        -0.196
+      ],
+      [
+        "d020_porosidad",
+        -0.196
+      ]
+    ]
+  },
+  "d094_caos_entropía": {
+    "effect": 0.3587,
+    "z": 2.75,
+    "rank": 3,
+    "sign_ok": true,
+    "top_movers": [
+      [
+        "d099_necesidad",
+        -0.432
+      ],
+      [
+        "d096_dificultad_de_ejecución",
+        0.406
+      ],
+      [
+        "d014_fragilidad",
+        0.386
+      ],
+      [
+        "d094_caos_entropía",
+        0.359
+      ],
+      [
+        "d039_rugosidad_táctil",
+        0.354
+      ],
+      [
+        "d028_salud",
+        -0.348
+      ],
+      [
+        "d022_vitalidad",
+        -0.327
+      ],
+      [
+        "d058_asco",
+        0.315
+      ]
+    ]
+  },
+  "d095_onirismo": {
+    "effect": 0.0806,
+    "z": 0.32,
+    "rank": 31,
+    "sign_ok": true,
+    "top_movers": [
+      [
+        "d099_necesidad",
+        -0.324
+      ],
+      [
+        "d080_artificialidad",
+        0.306
+      ],
+      [
+        "d091_futurismo",
+        0.265
+      ],
+      [
+        "d036_sabor_dulzor",
+        0.262
+      ],
+      [
+        "d043_temperatura_táctil",
+        0.219
+      ],
+      [
+        "d028_salud",
+        0.209
+      ],
+      [
+        "d039_rugosidad_táctil",
+        0.197
+      ],
+      [
+        "d081_industrialización",
+        0.185
+      ]
+    ]
+  },
+  "d096_dificultad_de_ejecución": {
+    "effect": 0.0949,
+    "z": 0.7,
+    "rank": 24,
+    "sign_ok": true,
+    "top_movers": [
+      [
+        "d099_necesidad",
+        0.407
+      ],
+      [
+        "d022_vitalidad",
+        0.329
+      ],
+      [
+        "d095_onirismo",
+        0.25
+      ],
+      [
+        "d061_soledad",
+        0.237
+      ],
+      [
+        "d054_empatía",
+        0.233
+      ],
+      [
+        "d031_capacidad_sensorial",
+        0.197
+      ],
+      [
+        "d091_futurismo",
+        0.195
+      ],
+      [
+        "d028_salud",
+        0.185
+      ]
+    ]
+  },
+  "d097_velocidad_de_acción": {
+    "effect": 0.2004,
+    "z": 2.8,
+    "rank": 4,
+    "sign_ok": true,
+    "top_movers": [
+      [
+        "d098_frecuencia",
+        0.298
+      ],
+      [
+        "d099_necesidad",
+        -0.275
+      ],
+      [
+        "d051_valentía",
+        0.229
+      ],
+      [
+        "d101_control",
+        0.225
+      ],
+      [
+        "d097_velocidad_de_acción",
+        0.2
+      ],
+      [
+        "d036_sabor_dulzor",
+        -0.189
+      ],
+      [
+        "d069_abstracción",
+        -0.186
+      ],
+      [
+        "d066_complejidad_lógica",
+        -0.186
+      ]
+    ]
+  },
+  "d098_frecuencia": {
+    "effect": 0.1696,
+    "z": 2.39,
+    "rank": 4,
+    "sign_ok": true,
+    "top_movers": [
+      [
+        "d051_valentía",
+        -0.407
+      ],
+      [
+        "d099_necesidad",
+        0.327
+      ],
+      [
+        "d085_urbanismo",
+        -0.191
+      ],
+      [
+        "d062_estrés",
+        -0.179
+      ],
+      [
+        "d098_frecuencia",
+        0.17
+      ],
+      [
+        "d072_memoria",
+        0.151
+      ],
+      [
+        "d061_soledad",
+        -0.146
+      ],
+      [
+        "d058_asco",
+        -0.141
+      ]
+    ]
+  },
+  "d099_necesidad": {
+    "effect": 0.0261,
+    "z": -0.13,
+    "rank": 49,
+    "sign_ok": true,
+    "top_movers": [
+      [
+        "d065_verdad_facticidad",
+        0.216
+      ],
+      [
+        "d044_pegajosidad",
+        0.21
+      ],
+      [
+        "d083_tradición",
+        0.177
+      ],
+      [
+        "d046_amor",
+        0.177
+      ],
+      [
+        "d076_legalidad",
+        0.175
+      ],
+      [
+        "d040_humedad",
+        0.165
+      ],
+      [
+        "d092_misterio",
+        0.14
+      ],
+      [
+        "d026_valor_nutricional",
+        0.132
+      ]
+    ]
+  },
+  "d100_impacto": {
+    "effect": 0.021,
+    "z": 0.62,
+    "rank": 62,
+    "sign_ok": true,
+    "top_movers": [
+      [
+        "d099_necesidad",
+        -0.471
+      ],
+      [
+        "d039_rugosidad_táctil",
+        0.343
+      ],
+      [
+        "d022_vitalidad",
+        -0.296
+      ],
+      [
+        "d080_artificialidad",
+        0.274
+      ],
+      [
+        "d036_sabor_dulzor",
+        -0.265
+      ],
+      [
+        "d051_valentía",
+        -0.248
+      ],
+      [
+        "d095_onirismo",
+        -0.246
+      ],
+      [
+        "d085_urbanismo",
+        -0.241
+      ]
+    ]
+  },
+  "d101_control": {
+    "effect": 0.0373,
+    "z": 1.1,
+    "rank": 71,
+    "sign_ok": true,
+    "top_movers": [
+      [
+        "d094_caos_entropía",
+        -0.421
+      ],
+      [
+        "d058_asco",
+        -0.394
+      ],
+      [
+        "d024_instinto",
+        -0.376
+      ],
+      [
+        "d059_culpa",
+        -0.363
+      ],
+      [
+        "d095_onirismo",
+        -0.358
+      ],
+      [
+        "d007_gravedad",
+        -0.343
+      ],
+      [
+        "d051_valentía",
+        -0.333
+      ],
+      [
+        "d097_velocidad_de_acción",
+        -0.327
+      ]
+    ]
+  },
+  "d102_intencionalidad": {
+    "effect": 0.0531,
+    "z": 0.88,
+    "rank": 41,
+    "sign_ok": true,
+    "top_movers": [
+      [
+        "d020_porosidad",
+        -0.418
+      ],
+      [
+        "d068_probabilidad",
+        -0.376
+      ],
+      [
+        "d044_pegajosidad",
+        -0.304
+      ],
+      [
+        "d094_caos_entropía",
+        -0.278
+      ],
+      [
+        "d014_fragilidad",
+        -0.261
+      ],
+      [
+        "d097_velocidad_de_acción",
+        -0.256
+      ],
+      [
+        "d037_sabor_amargor",
+        -0.256
+      ],
+      [
+        "d043_temperatura_táctil",
+        -0.254
+      ]
+    ]
+  },
+  "d103_durabilidad_del_efecto": {
+    "effect": -0.1186,
+    "z": -1.87,
+    "rank": 20,
+    "sign_ok": false,
+    "top_movers": [
+      [
+        "d028_salud",
+        0.357
+      ],
+      [
+        "d051_valentía",
+        0.295
+      ],
+      [
+        "d080_artificialidad",
+        0.276
+      ],
+      [
+        "d022_vitalidad",
+        0.269
+      ],
+      [
+        "d020_porosidad",
+        0.248
+      ],
+      [
+        "d014_fragilidad",
+        0.231
+      ],
+      [
+        "d085_urbanismo",
+        0.222
+      ],
+      [
+        "d044_pegajosidad",
+        0.205
+      ]
+    ]
+  }
+}

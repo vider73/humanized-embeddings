@@ -1,0 +1,526 @@
+[
+  {
+    "name": "Quantum Superposition Persistence",
+    "reason": "redundant_with_Wave-Particle Duality Manifestation"
+  },
+  {
+    "name": "Quantum Entanglement Connectivity",
+    "reason": "redundant_with_Wave-Particle Duality Manifestation"
+  },
+  {
+    "name": "Quantum Tunneling Probability",
+    "reason": "redundant_with_Wave-Particle Duality Manifestation"
+  },
+  {
+    "name": "Entropy Generation Rate",
+    "reason": "redundant_with_Wave-Particle Duality Manifestation"
+  },
+  {
+    "name": "Heat Transfer Efficiency",
+    "reason": "redundant_with_Temperature Gradient Magnitude"
+  },
+  {
+    "name": "Gravitational Redshift Intensity",
+    "reason": "redundant_with_Gravitational Influence Radius"
+  },
+  {
+    "name": "Gravitational Well Depth",
+    "reason": "redundant_with_Gravitational Influence Radius"
+  },
+  {
+    "name": "Gravitational Time Dilation Factor",
+    "reason": "redundant_with_Gravitational Influence Radius"
+  },
+  {
+    "name": "Temporal Electromagnetic Memory",
+    "reason": "redundant_with_Cosmic Timeline Duration"
+  },
+  {
+    "name": "Electromagnetic Gradient Coherence",
+    "reason": "redundant_with_Energetic Density Concentration"
+  },
+  {
+    "name": "Electromagnetic Field Frequency Spectrum Spanning",
+    "reason": "redundant_with_Electromagnetic Field Penetration Depth"
+  },
+  {
+    "name": "Reaction Reversibility Tendency",
+    "reason": "redundant_with_Reaction Rate Sensitivity to Catalysis"
+  },
+  {
+    "name": "Thermal Conductivity Resilience",
+    "reason": "redundant_with_Viscoelastic Response Strength"
+  },
+  {
+    "name": "Metabolic Efficiency",
+    "reason": "redundant_with_Energetic Density Concentration"
+  },
+  {
+    "name": "Homeostatic Resilience",
+    "reason": "redundant_with_Viscoelastic Response Strength"
+  },
+  {
+    "name": "Adaptive Plasticity",
+    "reason": "redundant_with_Viscoelastic Response Strength"
+  },
+  {
+    "name": "Metabolic Rate Plasticity",
+    "reason": "redundant_with_Reaction Rate Sensitivity to Catalysis"
+  },
+  {
+    "name": "Homeostatic Resilience",
+    "reason": "redundant_with_Viscoelastic Response Strength"
+  },
+  {
+    "name": "Reproductive Fidelity",
+    "reason": "redundant_with_Genome Repair Fidelity"
+  },
+  {
+    "name": "Community Keystone Influence",
+    "reason": "redundant_with_Collective Order Degree"
+  },
+  {
+    "name": "Homeostatic Plasticity",
+    "reason": "redundant_with_Morphological Plasticity"
+  },
+  {
+    "name": "Cellular Senescence Resistance",
+    "reason": "redundant_with_Metabolic Resilience"
+  },
+  {
+    "name": "Immune System Adaptability",
+    "reason": "redundant_with_Morphological Plasticity"
+  },
+  {
+    "name": "Homeostatic Responsiveness",
+    "reason": "redundant_with_Metabolic Resilience"
+  },
+  {
+    "name": "Adaptive Plasticity Threshold",
+    "reason": "redundant_with_Morphological Plasticity"
+  },
+  {
+    "name": "Dynamic Range Perception",
+    "reason": "redundant_with_Luminosity Contrast Range"
+  },
+  {
+    "name": "Texture Granularity",
+    "reason": "redundant_with_Visual Texture Granularity"
+  },
+  {
+    "name": "Umami Saturation",
+    "reason": "redundant_with_Gustatory Complexity"
+  },
+  {
+    "name": "Thermal Acuity",
+    "reason": "redundant_with_Thermal Inertia"
+  },
+  {
+    "name": "Thermal Tolerance Threshold",
+    "reason": "redundant_with_Thermal Inertia"
+  },
+  {
+    "name": "Range of Effective Engagement",
+    "reason": "redundant_with_Ecological Generalization"
+  },
+  {
+    "name": "Mouthfeel Texture Profile",
+    "reason": "redundant_with_Gustatory Complexity"
+  },
+  {
+    "name": "Flavor Persistence Duration",
+    "reason": "redundant_with_Aromatic Volatility"
+  },
+  {
+    "name": "Culinary Adaptability",
+    "reason": "redundant_with_Preparation Complexity"
+  },
+  {
+    "name": "Culinary Transformation Effort",
+    "reason": "redundant_with_Preparation Complexity"
+  },
+  {
+    "name": "Flavor Profile Persistence",
+    "reason": "redundant_with_Gustatory Complexity"
+  },
+  {
+    "name": "Social Integration",
+    "reason": "redundant_with_Social Bonding Tendency"
+  },
+  {
+    "name": "Adaptive Versatility",
+    "reason": "redundant_with_Ergonomic Adaptation"
+  },
+  {
+    "name": "Cargo Flexibility",
+    "reason": "redundant_with_Material Complexity Index"
+  },
+  {
+    "name": "Formality Index",
+    "reason": "redundant_with_Subtle Nuance Discrimination"
+  },
+  {
+    "name": "Concealment Factor",
+    "reason": "redundant_with_Perceived Visibility"
+  },
+  {
+    "name": "Structural Support Level",
+    "reason": "redundant_with_Structural Permanence"
+  },
+  {
+    "name": "Portability Efficiency",
+    "reason": "redundant_with_Mobility Restriction"
+  },
+  {
+    "name": "Structural Rigidity",
+    "reason": "redundant_with_Structural Permanence"
+  },
+  {
+    "name": "Social Complexity",
+    "reason": "redundant_with_Soundscape Complexity"
+  },
+  {
+    "name": "Locomotion Diversity",
+    "reason": "redundant_with_Terrain Adaptability"
+  },
+  {
+    "name": "Social Dependence",
+    "reason": "redundant_with_Skill Dependency Level"
+  },
+  {
+    "name": "Vocalization Complexity",
+    "reason": "redundant_with_Soundscape Complexity"
+  },
+  {
+    "name": "Social Bonding Dependency",
+    "reason": "redundant_with_Territoriality"
+  },
+  {
+    "name": "Ritualistic Significance",
+    "reason": "redundant_with_Formality Index"
+  },
+  {
+    "name": "Emotional Labor Requirement",
+    "reason": "redundant_with_Behavioral Predictability"
+  },
+  {
+    "name": "Knowledge Transfer Dependency",
+    "reason": "redundant_with_Skill Dependency Level"
+  },
+  {
+    "name": "Direct Physical Exertion",
+    "reason": "redundant_with_Force Amplification Factor"
+  },
+  {
+    "name": "Interpersonal Mediation",
+    "reason": "redundant_with_Social Leverage"
+  },
+  {
+    "name": "Social Dependency",
+    "reason": "redundant_with_Social Leverage"
+  },
+  {
+    "name": "Metabolic Redundancy",
+    "reason": "redundant_with_Secondary Metabolite Toxicity"
+  },
+  {
+    "name": "Erosional Dominance",
+    "reason": "redundant_with_Terrain Adaptability"
+  },
+  {
+    "name": "Anthropogenic Light Pollution",
+    "reason": "redundant_with_Perceived Visibility"
+  },
+  {
+    "name": "Soundscape Complexity",
+    "reason": "exact_duplicate"
+  },
+  {
+    "name": "Pedestrian Impedance",
+    "reason": "redundant_with_Mobility Restriction"
+  },
+  {
+    "name": "Territorial Breadth",
+    "reason": "redundant_with_Territoriality"
+  },
+  {
+    "name": "Stratigraphic Depth",
+    "reason": "redundant_with_Geomorphological Age"
+  },
+  {
+    "name": "Temporal Persistence",
+    "reason": "redundant_with_Environmental Plasticity"
+  },
+  {
+    "name": "Aesthetic Complexity",
+    "reason": "redundant_with_Architectural Eclecticism"
+  },
+  {
+    "name": "Sensory Insulation",
+    "reason": "redundant_with_Mobility Restriction"
+  },
+  {
+    "name": "Spatial Flexibility",
+    "reason": "redundant_with_Terrain Adaptability"
+  },
+  {
+    "name": "Gravitational Influence Radius",
+    "reason": "exact_duplicate"
+  },
+  {
+    "name": "Spatial Extent Coherence",
+    "reason": "redundant_with_Territoriality"
+  },
+  {
+    "name": "Legacy Duration",
+    "reason": "redundant_with_Temporal Distribution Span"
+  },
+  {
+    "name": "Geographic Reach of Influence",
+    "reason": "redundant_with_Latitudinal Extent"
+  },
+  {
+    "name": "Networked Influence",
+    "reason": "redundant_with_Social Leverage"
+  },
+  {
+    "name": "Geographic Mobility",
+    "reason": "redundant_with_Latitudinal Extent"
+  },
+  {
+    "name": "Product Perceived Utility Scope",
+    "reason": "redundant_with_Consequence Scope"
+  },
+  {
+    "name": "Product Perceived Sensory Impact",
+    "reason": "redundant_with_Brand Perceived Longevity"
+  },
+  {
+    "name": "Social Expressiveness",
+    "reason": "redundant_with_Social Leverage"
+  },
+  {
+    "name": "Abstract Reasoning Capacity",
+    "reason": "redundant_with_Cognitive Integration"
+  },
+  {
+    "name": "Cognitive Flexibility Index",
+    "reason": "redundant_with_Cognitive Integration"
+  },
+  {
+    "name": "Conceptual Fluidity",
+    "reason": "redundant_with_Cognitive Integration"
+  },
+  {
+    "name": "Behavioral Rigidity",
+    "reason": "redundant_with_Behavioral Rigidity"
+  },
+  {
+    "name": "Emotional Resonance",
+    "reason": "redundant_with_Emotional Volatility"
+  },
+  {
+    "name": "Cognitive Distortionality",
+    "reason": "redundant_with_Cognitive Integration"
+  },
+  {
+    "name": "Reality Testing Flexibility",
+    "reason": "redundant_with_Reality Anchoring"
+  },
+  {
+    "name": "Affective Response Lability",
+    "reason": "redundant_with_Emotional Volatility"
+  },
+  {
+    "name": "Institutional Entrenchment",
+    "reason": "redundant_with_Brand Perceived Longevity"
+  },
+  {
+    "name": "Resource Leverage",
+    "reason": "redundant_with_Vertical Integration"
+  },
+  {
+    "name": "Institutional Entrenchment",
+    "reason": "redundant_with_Resource Dependence"
+  },
+  {
+    "name": "Coalition Dependency",
+    "reason": "redundant_with_Resource Dependence"
+  },
+  {
+    "name": "Symbolic Resonance",
+    "reason": "redundant_with_Emotional Volatility"
+  },
+  {
+    "name": "Ritualistic Structure",
+    "reason": "redundant_with_Narrative Control"
+  },
+  {
+    "name": "Cosmological Complexity",
+    "reason": "redundant_with_Visual Complexity"
+  },
+  {
+    "name": "Transcendent Authority",
+    "reason": "redundant_with_Normative Deviation Tolerance"
+  },
+  {
+    "name": "Cosmological Complexity",
+    "reason": "redundant_with_Visual Complexity"
+  },
+  {
+    "name": "Mystical Experience Orientation",
+    "reason": "redundant_with_Eschatological Focus"
+  },
+  {
+    "name": "Moral Ambiguity",
+    "reason": "redundant_with_Controversy Intensity"
+  },
+  {
+    "name": "Generational Transmission",
+    "reason": "redundant_with_Temporal Distribution Span"
+  },
+  {
+    "name": "Adaptive Resilience",
+    "reason": "redundant_with_Ideological Elasticity"
+  },
+  {
+    "name": "Symbolic Density",
+    "reason": "redundant_with_Energetic Density Distribution"
+  },
+  {
+    "name": "Generational Transmission",
+    "reason": "redundant_with_Temporal Distribution Span"
+  },
+  {
+    "name": "Adaptive Flexibility",
+    "reason": "redundant_with_Ideological Elasticity"
+  },
+  {
+    "name": "Social Disruption Radius",
+    "reason": "redundant_with_Controversy Intensity"
+  },
+  {
+    "name": "Moral Ambiguity Quotient",
+    "reason": "redundant_with_Controversy Intensity"
+  },
+  {
+    "name": "Opportunity Dependence",
+    "reason": "redundant_with_Resource Dependence"
+  },
+  {
+    "name": "Public Scrutiny Threshold",
+    "reason": "redundant_with_Public Visibility"
+  },
+  {
+    "name": "Transience of Attention",
+    "reason": "redundant_with_Public Visibility"
+  },
+  {
+    "name": "Narrative Control",
+    "reason": "exact_duplicate"
+  },
+  {
+    "name": "Integrity of Action",
+    "reason": "redundant_with_Normative Deviation Tolerance"
+  },
+  {
+    "name": "Selfless Contribution",
+    "reason": "redundant_with_Benevolent Intent"
+  },
+  {
+    "name": "Harm Mitigation Proactivity",
+    "reason": "redundant_with_Normative Deviation Tolerance"
+  },
+  {
+    "name": "Consequence Attribution Complexity",
+    "reason": "redundant_with_Instrumental Complexity"
+  },
+  {
+    "name": "Accountability Mechanism Transparency",
+    "reason": "redundant_with_Accountability Threshold"
+  },
+  {
+    "name": "Evocative Resonance",
+    "reason": "redundant_with_Mimetic Resonance"
+  },
+  {
+    "name": "Gestural Deliberation",
+    "reason": "redundant_with_Procedural Fairness"
+  },
+  {
+    "name": "Rhythmic Elasticity",
+    "reason": "redundant_with_Ideological Elasticity"
+  },
+  {
+    "name": "Timbral Opulence",
+    "reason": "redundant_with_Harmonic Complexity"
+  },
+  {
+    "name": "Narrative Ambiguity",
+    "reason": "redundant_with_Narrative Immediacy"
+  },
+  {
+    "name": "Rhythmic Fluidity",
+    "reason": "redundant_with_Temporal Grace"
+  },
+  {
+    "name": "Melodic Narrative Arc",
+    "reason": "redundant_with_Narrative Immediacy"
+  },
+  {
+    "name": "Textural Opacity",
+    "reason": "redundant_with_Emotional Density"
+  },
+  {
+    "name": "Structural Rigidity",
+    "reason": "redundant_with_Instrumental Complexity"
+  },
+  {
+    "name": "Algorithmic Opacity",
+    "reason": "redundant_with_Affective Ambiguity"
+  },
+  {
+    "name": "Ontological Dependence",
+    "reason": "redundant_with_Ontological Dependence"
+  },
+  {
+    "name": "Dimensional Breadth",
+    "reason": "redundant_with_Obligation Scope Breadth"
+  },
+  {
+    "name": "Contextual Dependence",
+    "reason": "redundant_with_Causal Agency"
+  },
+  {
+    "name": "Logical Coherence",
+    "reason": "redundant_with_Harmonic Complexity"
+  },
+  {
+    "name": "Epistemic Vulnerability",
+    "reason": "redundant_with_Victim Vulnerability"
+  },
+  {
+    "name": "Logical Coherence",
+    "reason": "redundant_with_Narrative Immediacy"
+  },
+  {
+    "name": "Trajectory Predictability",
+    "reason": "redundant_with_Operational Determinacy"
+  },
+  {
+    "name": "Momentum Inertia",
+    "reason": "redundant_with_Causal Agency"
+  },
+  {
+    "name": "Pathline Complexity",
+    "reason": "redundant_with_Harmonic Complexity"
+  },
+  {
+    "name": "Directive Force",
+    "reason": "redundant_with_Causal Agency"
+  },
+  {
+    "name": "Intentionality Complexity",
+    "reason": "redundant_with_Affective Ambiguity"
+  }
+]

@@ -1,0 +1,21 @@
+# --- heavy data & models (regenerable or distributed separately) ---
+models/
+corpus/
+tabla/
+*.npy
+*.pth
+*.gguf
+humanized_embeddings_dataset*.json
+
+# --- caches & runtime junk ---
+__pycache__/
+.pytest_cache/
+.cache/
+*.pyc
+*.log
+
+# --- test run artifacts ---
+tests/_artifacts/
+
+# --- one-shot tooling ---
+refactor_phase1.bat
