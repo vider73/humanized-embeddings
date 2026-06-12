@@ -1,7 +1,18 @@
 """
 config.py — Parameters of the semantic steering engine.
 A single place to tweak paths, target layer and injection strength.
+
+MULTI-MODEL OVERRIDES (for the periodic-table experiments): every steering
+tool reads this module, so overriding via environment variables makes the
+whole toolchain model-agnostic without touching any tool:
+  EMB_LLM    = HF model name           (default: Llama-3.1-8B-Instruct)
+  EMB_TAG    = artifact suffix         (vectors/reports become *_<tag>.*)
+  EMB_LAYERS = "a-b" derive band       (default: 12-19)
+  EMB_INJECT = injection layer         (default: middle of the band / 15)
+  EMB_4BIT   = "1"/"0"                 (default: 1)
+With no env set, everything behaves exactly as before.
 """
+import os
 from pathlib import Path
 
 # --- Roots -----------------------------------------------------------------
@@ -19,8 +30,8 @@ EMBEDDING_MODEL = "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
 # --- Target LLM (HuggingFace, runs on your 4090) ---------------------------
 # meta-llama is "gated": accept the license on HF and do `huggingface-cli login`,
 # or use an open mirror: "NousResearch/Meta-Llama-3.1-8B-Instruct"
-LLM_NAME   = "meta-llama/Meta-Llama-3.1-8B-Instruct"
-LOAD_4BIT  = True          # 4-bit fits comfortably in 24GB; set False for fp16
+LLM_NAME   = os.environ.get("EMB_LLM", "meta-llama/Meta-Llama-3.1-8B-Instruct")
+LOAD_4BIT  = os.environ.get("EMB_4BIT", "1") == "1"   # 4-bit fits in 24GB; "0" for fp16
 # hidden_size and number of layers are read from the model at runtime (don't hardcode).
 # These values are for reference only, for Llama-3.1-8B:
 HIDDEN_DIM = 4096
@@ -32,12 +43,21 @@ SMOKE_LLM_NAME = "HuggingFaceTB/SmolLM2-135M-Instruct"  # Llama architecture
 # --- Where and how much to inject -------------------------------------------
 # Layers for which control vectors are DERIVED (derive_vectors.py).
 # Derive a wide band once; then choose which ones to inject into.
-TARGET_LAYERS = tuple(range(12, 20))   # layers 12..19 (the ones you already derived)
+if os.environ.get("EMB_LAYERS"):                       # e.g. "5-9"
+    _a, _b = os.environ["EMB_LAYERS"].split("-")
+    TARGET_LAYERS = tuple(range(int(_a), int(_b) + 1))
+else:
+    TARGET_LAYERS = tuple(range(12, 20))   # layers 12..19 (the ones you already derived)
 
 # Layers where injection ACTUALLY happens (subset of the derived ones).
 # No re-derivation needed. VALIDATED 2026-06-11: ONE layer with clamp holds up to
 # alpha ~0.35 where three layers compounded distortion and broke at ~0.25.
-INJECT_LAYERS = (15,)
+if os.environ.get("EMB_INJECT"):
+    INJECT_LAYERS = (int(os.environ["EMB_INJECT"]),)
+elif os.environ.get("EMB_LAYERS"):
+    INJECT_LAYERS = (TARGET_LAYERS[len(TARGET_LAYERS) // 2],)   # middle of the band
+else:
+    INJECT_LAYERS = (15,)
 # ALPHA is now a FRACTION of the residual norm at each position:
 #   0.1  -> push ~10% of the local magnitude in the profile's direction.
 # This way the push does NOT depend on the sentence nor on how many dims activate.
@@ -100,5 +120,6 @@ N_REF  = 800               # reference concepts to estimate the per-layer std
 # final shape: (n_target_layers, 104, HIDDEN_DIM)
 _MODE = "_caa" if DERIVE_MODE == "caa" else ""
 _SUF  = "_white" if WHITEN else ""
-CONTROL_VECTORS_FILE = VEC_DIR / f"control_vectors{_MODE}{_SUF}.npy"
-CONTROL_META_FILE    = VEC_DIR / f"control_meta{_MODE}{_SUF}.json"
+_TAG  = f"_{os.environ['EMB_TAG']}" if os.environ.get("EMB_TAG") else ""
+CONTROL_VECTORS_FILE = VEC_DIR / f"control_vectors{_MODE}{_SUF}{_TAG}.npy"
+CONTROL_META_FILE    = VEC_DIR / f"control_meta{_MODE}{_SUF}{_TAG}.json"
