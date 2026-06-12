@@ -1,12 +1,12 @@
 """
-console.py — ChronoLLMPuppet, consola de demo. Los exitos validados a un
-boton, y cuatro ranuras de nota para improvisar acordes y voicing.
+console.py — ChronoLLMPuppet, demo console. The validated hits one button
+away, and four note slots to improvise chords and voicing.
 
-Cada NOTA = (dim, valor, capa, alpha). Notas en capas distintas = voicing:
-la cuerda floja puede sonar fuerte en su capa sin pisar a las demas.
-Presets = los experimentos que ya sabemos que suenan.
+Each NOTE = (dim, value, layer, alpha). Notes on different layers = voicing:
+the weak string can ring loud on its own layer without stepping on the others.
+Presets = the experiments we already know sound good.
 
-  python -m steering.console        (GPU; el modelo carga en segundo plano)
+  python -m steering.console        (GPU; the model loads in the background)
 """
 import json
 import threading
@@ -25,7 +25,7 @@ MONO = ("Consolas", 9)
 
 DEFAULT_TEXT = "Una habitacion vacia."
 
-# Presets validados (2026-06-11). Cada nota: (dim, valor, capa, alpha)
+# Validated presets (2026-06-11). Each note: (dim, value, layer, alpha)
 PRESETS = {
     "🌅 Genesis":           [(90, 0.95, 15, 0.30)],
     "🍂 Memento mori":      [(90, 0.05, 15, 0.15)],
@@ -37,7 +37,7 @@ N_SLOTS = 4
 
 
 class NoteSlot(tk.Frame):
-    """Una ranura de nota: on/off, dim, valor, capa, alpha."""
+    """One note slot: on/off, dim, value, layer, alpha."""
 
     def __init__(self, parent, idx, dim_names):
         super().__init__(parent, bg=BG_CARD, padx=4, pady=2)
@@ -178,7 +178,7 @@ class Console(tk.Tk):
             s.off()
 
     def _voices(self):
-        """Agrupa las notas activas por capa -> {capa: (perfil, alpha)}."""
+        """Groups the active notes by layer -> {layer: (profile, alpha)}."""
         voices = {}
         for s in self.slots:
             if not s.on.get():
@@ -190,7 +190,7 @@ class Console(tk.Tk):
             voices[L] = (prof, float(s.alpha.get()))
         return voices
 
-    # ── motor ──────────────────────────────────────────────────────────────
+    # ── engine ─────────────────────────────────────────────────────────────
     def _load(self):
         llm = SteeredLlama()
         self.after(0, lambda: self._ready(llm))

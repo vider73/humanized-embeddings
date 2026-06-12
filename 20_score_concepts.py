@@ -6,7 +6,7 @@ import os
 from tqdm import tqdm
 from sentence_transformers import SentenceTransformer
 
-# --- CONFIGURACIÓN ---
+# --- CONFIGURATION ---
 MODEL_LLM = "meta-llama/Meta-Llama-3-8B-Instruct"
 OUTPUT_FILE = "dataset_humanizer_v3.json"
 MODEL_EMB = "all-MiniLM-L6-v2"
@@ -28,17 +28,17 @@ model_emb = SentenceTransformer(MODEL_EMB, device='cuda')
 def llamar_a_llama(prompt):
     messages = [{"role": "system", "content": "Eres un experto en análisis semántico y físico de alta precisión. Responde solo en JSON."},
                 {"role": "user", "content": prompt}]
-    # Bajamos la temperatura para mayor consistencia numérica
+    # We lower the temperature for greater numerical consistency
     outputs = pipe(messages, max_new_tokens=512, do_sample=True, temperature=0.1)
     return outputs[0]["generated_text"][-1]["content"]
 
 def imprimir_reporte_palabra(palabra, scores, categoria):
-    """Muestra los pesos recolectados de forma elegante en consola."""
+    """Displays the collected weights elegantly in the console."""
     print(f"\n" + "═"*60)
     print(f" 💎 CONCEPTO: {palabra.upper()} | Categoría: {categoria}")
     print("═"*60)
     
-    # Imprimir por bloques para que sea legible
+    # Print by blocks so it is readable
     for i, bloque in enumerate(BLOQUES_DIMENSIONES):
         linea = []
         for dim in bloque:
@@ -67,9 +67,9 @@ def etiquetar_concepto_por_bloques(palabra, subcat):
         except:
             continue
     
-    return resultados_palabra if len(resultados_palabra) >= 28 else None # Tolerancia de 2 nulos
+    return resultados_palabra if len(resultados_palabra) >= 28 else None # Tolerance of 2 nulls
 
-# --- CATEGORÍAS ---
+# --- CATEGORIES ---
 CATEGORIAS = {
     "Materia": ["Elementos Químicos", "Minerales", "Astrofísica"],
     "Vida": ["Botánica", "Animales", "Anatomía"],
@@ -87,7 +87,7 @@ vistas = {d['palabra'].lower() for d in dataset}
 try:
     for cat, subs in CATEGORIAS.items():
         for sub in subs:
-            # Generación de palabras
+            # Word generation
             res_gen = llamar_a_llama(f"Lista 15 palabras únicas de {sub}. Solo palabras separadas por comas.")
             palabras = [x.strip() for x in res_gen.split(',')]
             
@@ -104,7 +104,7 @@ try:
                     })
                     vistas.add(p.lower())
                     
-                    # IMPRIMIR REPORTE EN TIEMPO REAL
+                    # PRINT REPORT IN REAL TIME
                     imprimir_reporte_palabra(p, scores, sub)
                     
                     if len(dataset) % 5 == 0:

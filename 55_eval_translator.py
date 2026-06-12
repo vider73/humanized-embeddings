@@ -10,15 +10,15 @@ from sklearn.metrics import mean_absolute_error, mean_squared_error
 import os
 
 # ==========================================
-# CONFIGURACIÓN
+# CONFIGURATION
 # ==========================================
 MODEL_PATH = "semantic_translator.pth"
 METADATA_FILE = "dataset_metadata.json"
 DATA_X_FILE = "dataset_X_embeddings.npy"
 DATA_Y_FILE = "dataset_Y_human.npy"
-EMBEDDING_MODEL_NAME = "all-MiniLM-L6-v2" # Debe coincidir con el usado en training
+EMBEDDING_MODEL_NAME = "all-MiniLM-L6-v2" # Must match the one used in training
 
-# Definición de la Red (Debe ser idéntica a la usada en training)
+# Network definition (Must be identical to the one used in training)
 class SemanticTranslator(nn.Module):
     def __init__(self, input_dim, output_dim):
         super().__init__()
@@ -52,12 +52,12 @@ def load_data():
 
 def analyze_dimension_performance(Y_true, Y_pred, dim_names):
     """
-    Calcula el error promedio por dimensión para ver cuáles son aprendibles y cuáles no.
+    Computes the average error per dimension to see which ones are learnable and which are not.
     """
-    errors = np.abs(Y_true - Y_pred) # Matriz de errores absolutos
-    mean_errors = np.mean(errors, axis=0) # Promedio por columna (dimensión)
-    
-    # Crear DataFrame para ordenar
+    errors = np.abs(Y_true - Y_pred) # Matrix of absolute errors
+    mean_errors = np.mean(errors, axis=0) # Average per column (dimension)
+
+    # Create DataFrame for sorting
     df = pd.DataFrame({
         "Dimension": dim_names,
         "MAE": mean_errors
@@ -73,7 +73,7 @@ def analyze_dimension_performance(Y_true, Y_pred, dim_names):
 
 def test_manual_words(model, embedder, dim_names):
     """
-    Permite probar palabras nuevas que NO estaban en el dataset original.
+    Allows testing new words that were NOT in the original dataset.
     """
     print("\n🧪 --- TEST DE GENERALIZACIÓN (Palabras Nuevas) ---")
     test_words = ["amor", "pistola", "microbio", "galaxia", "mentira"]
@@ -85,14 +85,14 @@ def test_manual_words(model, embedder, dim_names):
     with torch.no_grad():
         predictions = model(tensor_x).numpy()
     
-    # Mostrar resultados clave para cada palabra
-    # Seleccionamos algunas dimensiones interesantes para mostrar
+    # Show key results for each word
+    # We select some interesting dimensions to display
     target_dims = ["tamaño_físico", "peligrosidad", "positividad", "tangibilidad", "temperatura"]
     
-    # Encontrar índices de esas dimensiones
+    # Find the indices of those dimensions
     indices = []
     for target in target_dims:
-        # Buscamos coincidencias parciales (ej. "d000_tamaño_físico")
+        # We look for partial matches (e.g. "d000_tamaño_físico")
         for i, name in enumerate(dim_names):
             if target in name.lower():
                 indices.append((i, name))
@@ -109,7 +109,7 @@ def test_manual_words(model, embedder, dim_names):
 def main():
     print("🔍 Iniciando Auditoría del Traductor Semántico...")
     
-    # 1. Cargar Datos y Modelo
+    # 1. Load Data and Model
     X, Y, concepts, dim_names = load_data()
     if X is None: return
 
@@ -125,12 +125,12 @@ def main():
         print(f"❌ No encuentro '{MODEL_PATH}'. Entrena primero.")
         return
 
-    # 2. Generar Predicciones Masivas (Dataset Completo)
+    # 2. Generate Mass Predictions (Full Dataset)
     tensor_X = torch.Tensor(X)
     with torch.no_grad():
         Y_pred = model(tensor_X).numpy()
 
-    # 3. Métricas Globales
+    # 3. Global Metrics
     mae = mean_absolute_error(Y, Y_pred)
     mse = mean_squared_error(Y, Y_pred)
     print(f"\n📊 ERROR GLOBAL DEL MODELO:")
@@ -144,11 +144,11 @@ def main():
     else:
         print("   ❌ Resultado: POBRE. La red no está convergiendo (datos insuficientes o ruidosos).")
 
-    # 4. Análisis por Dimensión
+    # 4. Per-Dimension Analysis
     df_metrics = analyze_dimension_performance(Y, Y_pred, dim_names)
-    
-    # 5. Análisis Visual de un Caso Concreto
-    # Buscamos una palabra específica si existe, si no, una aleatoria
+
+    # 5. Visual Analysis of a Concrete Case
+    # We look for a specific word if it exists; if not, a random one
     target_word = "acero inoxidable"
     if target_word in concepts:
         idx = concepts.index(target_word)
@@ -159,15 +159,15 @@ def main():
         
         diff = np.abs(real - pred)
         
-        # Mostramos las dimensiones con mayor error para esta palabra
-        worst_indices = np.argsort(diff)[-5:][::-1] # Top 5 errores
+        # We show the dimensions with the highest error for this word
+        worst_indices = np.argsort(diff)[-5:][::-1] # Top 5 errors
         
         print("   Dimensiones con MAYOR DISCREPANCIA (Real vs Predicho):")
         for i in worst_indices:
             d_name = dim_names[i]
             print(f"   ❌ {d_name}: Real={real[i]:.4f} | Pred={pred[i]:.4f} | Diff={diff[i]:.4f}")
     
-    # 6. Test de Generalización (Palabras Nuevas)
+    # 6. Generalization Test (New Words)
     print("\n🔄 Cargando SentenceTransformer para pruebas en vivo...")
     embedder = SentenceTransformer(EMBEDDING_MODEL_NAME)
     test_manual_words(model, embedder, dim_names)

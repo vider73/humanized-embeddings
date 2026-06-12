@@ -1,13 +1,13 @@
 """
-sweep.py — Modo facil: una frase, varios alpha de golpe.
+sweep.py — Easy mode: one phrase, several alphas in one go.
 
-Escribes la frase en el prompt y ves la NEUTRAL una vez y luego la DIRIGIDA
-con cada alpha (0.1, 0.2, 0.4, 0.8 por defecto), una tras otra. Greedy
-(determinista) para que lo unico que cambie sea el steering.
+You type the phrase at the prompt and see the NEUTRAL once and then the STEERED
+with each alpha (0.1, 0.2, 0.4, 0.8 by default), one after another. Greedy
+(deterministic) so that the only thing that changes is the steering.
 
-  python -m steering.sweep                       # perfil = el de tu frase
-  python -m steering.sweep --dim 23 0.95         # fuerza d023_consciencia
-  python -m steering.sweep --alphas 0.1 0.3 0.6  # tus propios alphas
+  python -m steering.sweep                       # profile = your phrase's own
+  python -m steering.sweep --dim 23 0.95         # forces d023_consciencia
+  python -m steering.sweep --alphas 0.1 0.3 0.6  # your own alphas
   python -m steering.sweep --tokens 120
 """
 import argparse
@@ -60,7 +60,7 @@ def main():
         if q.lower() in ("salir", "exit", "q", ""):
             break
 
-        # --isolate: ignora el perfil de la frase, parte de 0.5 plano (neutro)
+        # --isolate: ignores the phrase's profile, starts from flat 0.5 (neutral)
         prof = np.full(hz.human_dim, 0.5, np.float32) if args.isolate else hz.profile(q)
         if args.dim:
             for idx, val in args.dim:
@@ -71,14 +71,14 @@ def main():
             bar = "█" * int(v * 15) + "░" * (15 - int(v * 15))
             print(f"   [{i:03d}] {name:<32} {v:.3f} {bar}")
 
-        # NEUTRAL (una vez, greedy)
+        # NEUTRAL (once, greedy)
         llm.clear()
         neutral = llm.generate(q, max_new_tokens=args.tokens, temperature=0.0)
         print(f"\n{'='*60}\n⚪ NEUTRAL\n{'='*60}\n{neutral}")
 
         if args.voice:
-            # VOICING: cada nota en su capa con su presion. --alphas aplica
-            # como alpha global para las notas SIN alpha propio.
+            # VOICING: each note on its own layer with its own pressure. --alphas
+            # applies as the global alpha for notes WITHOUT their own alpha.
             voices = {}
             for v in args.voice:
                 if len(v) not in (3, 4):
@@ -97,7 +97,7 @@ def main():
                                  for L, (_, al) in voices.items())
                 print(f"\n{'─'*60}\n🎹 voicing [{desc}]\n{'─'*60}\n{steered}")
         else:
-            # DIRIGIDA por cada alpha (todas las notas en self.layers)
+            # STEERED for each alpha (all notes on self.layers)
             llm.set_profile(prof)
             for a in args.alphas:
                 llm.alpha = a

@@ -1,13 +1,13 @@
 """
-conftest.py — Suite de judge tests de embtoconcept + steering.
+conftest.py — Judge test suite for embtoconcept + steering.
 
-Niveles (ver ARCHITECTURE.md §6):
-  L0  matematica pura          siempre          (milisegundos)
-  L1  contratos de artefactos  siempre          (segundos, solo lectura)
-  L2  mecanica small-model     RUN_L2=1         (~1 min, CPU ok)
-  L3  juez en bucle cerrado    RUN_L3=1         (GPU, minutos; NO con el tuner activo)
+Levels (see ARCHITECTURE.md §6):
+  L0  pure math                always           (milliseconds)
+  L1  artifact contracts       always           (seconds, read-only)
+  L2  small-model mechanics    RUN_L2=1         (~1 min, CPU ok)
+  L3  closed-loop judge        RUN_L3=1         (GPU, minutes; NOT while the tuner is active)
 
-Uso:
+Usage:
   python -m pytest                      # L0 + L1
   set RUN_L2=1 && python -m pytest      # + L2
   set RUN_L3=1 && python -m pytest tests/test_l3_sentinels.py
@@ -23,7 +23,7 @@ import pytest
 ROOT = Path(__file__).resolve().parent.parent          # .../embtoconcept
 sys.path.insert(0, str(ROOT))
 
-from steering import config                            # import ligero (solo pathlib)
+from steering import config                            # lightweight import (pathlib only)
 
 
 def _need(path) -> Path:
@@ -33,7 +33,7 @@ def _need(path) -> Path:
     return p
 
 
-# ── fixtures de artefactos (solo lectura, cacheadas por sesion) ─────────────
+# ── artifact fixtures (read-only, cached per session) ───────────────────────
 @pytest.fixture(scope="session")
 def metadata():
     return json.loads(_need(config.METADATA_FILE).read_text(encoding="utf-8"))
@@ -75,7 +75,7 @@ def stimuli():
     return json.loads(_need(config.STIMULI_FILE).read_text(encoding="utf-8"))
 
 
-# ── gating por nivel ─────────────────────────────────────────────────────────
+# ── gating per level ─────────────────────────────────────────────────────────
 def pytest_collection_modifyitems(items):
     skip_l2 = pytest.mark.skip(reason="L2: exporta RUN_L2=1 para correrlo")
     skip_l3 = pytest.mark.skip(reason="L3: exporta RUN_L3=1 (GPU; no con tuner activo)")

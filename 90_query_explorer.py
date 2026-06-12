@@ -1,20 +1,20 @@
 """
-04_query_explorer.py
+90_query_explorer.py
 ════════════════════
-El juguete principal 🎮
+The main toy 🎮
 
-Permite explorar la tabla de 5M embeddings humanizados con:
-  • Búsqueda por término/frase          → vecinos más cercanos
-  • Aritmética en espacio humanizado    → rey - hombre + mujer = ?
-  • Navegación por dimensión            → top términos en dimensión X
-  • Interpolación entre dos términos    → trayectoria semántica
-  • Perfil detallado de cualquier término
-  • Detector de anomalías               → términos con perfiles "imposibles"
-  • Modo polígrafo                      → compara perfil esperado vs real de un texto
+Lets you explore the table of 5M humanized embeddings with:
+  • Search by term/phrase               → nearest neighbors
+  • Arithmetic in humanized space       → king - man + woman = ?
+  • Navigation by dimension             → top terms in dimension X
+  • Interpolation between two terms     → semantic trajectory
+  • Detailed profile of any term
+  • Anomaly detector                    → terms with "impossible" profiles
+  • Polygraph mode                      → compares expected vs actual profile of a text
 
-Uso:
-  python 04_query_explorer.py
-  python 04_query_explorer.py --interactive    # modo CLI interactivo
+Usage:
+  python 90_query_explorer.py
+  python 90_query_explorer.py --interactive    # interactive CLI mode
 """
 
 import json
@@ -26,7 +26,7 @@ from pathlib import Path
 from typing import Optional
 
 # ──────────────────────────────────────────────────────────────────────────────
-# CONFIGURACIÓN
+# CONFIGURATION
 # ──────────────────────────────────────────────────────────────────────────────
 EMBEDDING_MODEL_NAME = "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
 TRANSLATOR_PATH      = "semantic_translator.pth"
@@ -45,7 +45,7 @@ INTERP_STEPS     = 20
 
 
 # ──────────────────────────────────────────────────────────────────────────────
-# ARQUITECTURAS
+# ARCHITECTURES
 # ──────────────────────────────────────────────────────────────────────────────
 class SemanticTranslator(nn.Module):
     def __init__(self, input_dim, output_dim):
@@ -71,7 +71,7 @@ class HumanToEmbedding(nn.Module):
 
 
 # ──────────────────────────────────────────────────────────────────────────────
-# EXPLORADOR
+# EXPLORER
 # ──────────────────────────────────────────────────────────────────────────────
 class HumanizedExplorer:
     def __init__(self):
@@ -83,7 +83,7 @@ class HumanizedExplorer:
 
         print("🧠 Cargando sistema…")
 
-        # Metadatos y dimensiones
+        # Metadata and dimensions
         with open(METADATA_FILE, "r", encoding="utf-8") as f:
             meta = json.load(f)
         self.dim_names = meta["dimension_names"]
@@ -102,18 +102,18 @@ class HumanizedExplorer:
         self.synthesizer.load_state_dict(torch.load(REVERSE_PATH, map_location="cpu"))
         self.synthesizer.eval()
 
-        # Tabla de palabras
+        # Word table
         print("📂 Cargando palabras…")
         with open(TABLE_WORDS_FILE, "r", encoding="utf-8") as f:
             self.words = json.load(f)
         self.N = len(self.words)
 
-        # Tabla de embeddings (memmap)
+        # Embeddings table (memmap)
         print(f"📂 Abriendo tabla memmap ({self.N:,} × {self.human_dim})…")
         self.table = np.memmap(TABLE_EMB_FILE, dtype="float32", mode="r",
                                shape=(self.N, self.human_dim))
 
-        # Estadísticas
+        # Statistics
         self.stats = np.load(TABLE_STATS_FILE) if TABLE_STATS_FILE.exists() else None
 
         # FAISS
@@ -128,7 +128,7 @@ class HumanizedExplorer:
 
     # ── Encoding ──────────────────────────────────────────────────────────────
     def encode(self, text: str) -> np.ndarray:
-        """Texto -> vector humanizado"""
+        """Text -> humanized vector"""
         with torch.no_grad():
             raw = self.embedder.encode(text, convert_to_tensor=False)
             raw = torch.tensor(raw, dtype=torch.float32).unsqueeze(0)
@@ -142,10 +142,10 @@ class HumanizedExplorer:
             vecs = self.translator(raw).cpu().numpy()
         return vecs
 
-    # ── Búsqueda ──────────────────────────────────────────────────────────────
+    # ── Search ────────────────────────────────────────────────────────────────
     def search_vec(self, vec: np.ndarray, k: int = TOP_K_DEFAULT,
                    exclude: list[str] | None = None) -> list[tuple[str, float, np.ndarray]]:
-        """Busca los k vecinos más cercanos de un vector humanizado."""
+        """Searches for the k nearest neighbors of a humanized vector."""
         query = vec.reshape(1, -1).astype(np.float32)
         D, I  = self.index.search(query, k + (len(exclude) if exclude else 0) + 5)
         results = []
@@ -165,21 +165,21 @@ class HumanizedExplorer:
         vec = self.encode(text)
         return self.search_vec(vec, k, exclude=[text])
 
-    # ── Perfil ────────────────────────────────────────────────────────────────
+    # ── Profile ───────────────────────────────────────────────────────────────
     def profile(self, text: str, top_n: int = 10) -> dict:
-        """Devuelve el perfil semántico completo de un término."""
+        """Returns the complete semantic profile of a term."""
         vec    = self.encode(text)
         ranked = sorted(enumerate(vec), key=lambda x: x[1], reverse=True)
         top    = [(self.dim_names[i], float(v)) for i, v in ranked[:top_n]]
         bottom = [(self.dim_names[i], float(v)) for i, v in ranked[-top_n:]]
         return {"term": text, "vector": vec, "top": top, "bottom": bottom}
 
-    # ── Aritmética ────────────────────────────────────────────────────────────
+    # ── Arithmetic ────────────────────────────────────────────────────────────
     def arithmetic(self, pos: list[str], neg: list[str] = None,
                    k: int = TOP_K_DEFAULT) -> list[tuple[str, float, np.ndarray]]:
         """
-        Aritmética vectorial en espacio humanizado.
-        Ejemplo: arithmetic(["rey", "mujer"], ["hombre"])
+        Vector arithmetic in humanized space.
+        Example: arithmetic(["rey", "mujer"], ["hombre"])
         """
         result = np.zeros(self.human_dim, dtype=np.float32)
         for t in pos:
@@ -190,12 +190,12 @@ class HumanizedExplorer:
         exclude = pos + (neg or [])
         return self.search_vec(result, k, exclude=exclude)
 
-    # ── Interpolación ─────────────────────────────────────────────────────────
+    # ── Interpolation ─────────────────────────────────────────────────────────
     def interpolate(self, term_a: str, term_b: str,
                     steps: int = INTERP_STEPS) -> list[dict]:
         """
-        Trayectoria semántica entre dos términos.
-        Devuelve `steps` puntos intermedios con su vecino más cercano.
+        Semantic trajectory between two terms.
+        Returns `steps` intermediate points with their nearest neighbor.
         """
         vec_a = self.encode(term_a)
         vec_b = self.encode(term_b)
@@ -216,14 +216,14 @@ class HumanizedExplorer:
     def interpolate_dual(self, term_a: str, term_b: str,
                          steps: int = INTERP_STEPS) -> list[dict]:
         """
-        Trayectoria DUAL: compara interpolacion en espacio humanizado
-        vs interpolacion en espacio raw (384-dims) traducido.
+        DUAL trajectory: compares interpolation in humanized space
+        vs interpolation in translated raw space (384-dims).
         """
-        # Vectores humanizados
+        # Humanized vectors
         vec_a_h = self.encode(term_a)
         vec_b_h = self.encode(term_b)
 
-        # Vectores raw (384-dims) del sentence transformer
+        # Raw vectors (384-dims) from the sentence transformer
         with torch.no_grad():
             vec_a_r = self.embedder.encode(term_a, convert_to_tensor=False).astype(np.float32)
             vec_b_r = self.embedder.encode(term_b, convert_to_tensor=False).astype(np.float32)
@@ -232,18 +232,18 @@ class HumanizedExplorer:
         for i in range(steps + 1):
             t = i / steps
 
-            # Trayectoria humanizada
+            # Humanized trajectory
             vec_h = np.clip((1 - t) * vec_a_h + t * vec_b_h, 0.0, 1.0)
             nn_h  = self.search_vec(vec_h, k=1)[0]
 
-            # Trayectoria raw → traducida al espacio humanizado
+            # Raw trajectory → translated into humanized space
             vec_r_interp = (1 - t) * vec_a_r + t * vec_b_r
             with torch.no_grad():
                 ten = torch.tensor(vec_r_interp, dtype=torch.float32).unsqueeze(0)
                 vec_r_h = self.translator(ten).cpu().numpy()[0]
             nn_r = self.search_vec(vec_r_h, k=1)[0]
 
-            # Divergencia entre las dos trayectorias
+            # Divergence between the two trajectories
             divergence = float(np.abs(vec_h - vec_r_h).mean())
 
             path.append({
@@ -255,30 +255,30 @@ class HumanizedExplorer:
             })
         return path
 
-    # ── Top por dimensión ─────────────────────────────────────────────────────
+    # ── Top by dimension ──────────────────────────────────────────────────────
     def top_by_dimension(self, dim_idx: int, k: int = 50,
                           descending: bool = True) -> list[tuple[str, float]]:
-        """Los k términos con mayor/menor valor en una dimensión."""
-        # Con 5M entradas leer toda la columna es viable (solo 20MB por dim)
+        """The k terms with the highest/lowest value in a dimension."""
+        # With 5M entries reading the whole column is viable (only 20MB per dim)
         col   = self.table[:, dim_idx].copy()
         order = np.argsort(col)
         if descending:
             order = order[::-1]
         return [(self.words[i], float(col[i])) for i in order[:k]]
 
-    # ── Polígrafo semántico ───────────────────────────────────────────────────
+    # ── Semantic polygraph ────────────────────────────────────────────────────
     def poligraph(self, texts: list[str]) -> dict:
         """
-        Analiza una lista de textos y detecta inconsistencias semánticas.
-        Útil para evaluar outputs de un LLM.
+        Analyzes a list of texts and detects semantic inconsistencies.
+        Useful for evaluating LLM outputs.
         """
         vecs    = self.encode_batch(texts)
         mean    = vecs.mean(axis=0)
         std     = vecs.std(axis=0)
 
-        # Dimensiones con mayor variación (inconsistentes)
+        # Dimensions with the most variation (inconsistent)
         volatile_dims = sorted(enumerate(std), key=lambda x: x[1], reverse=True)[:10]
-        # Dimensiones más activas en media
+        # Most active dimensions on average
         active_dims   = sorted(enumerate(mean), key=lambda x: x[1], reverse=True)[:10]
 
         return {
@@ -287,14 +287,14 @@ class HumanizedExplorer:
             "std_vec":       std,
             "volatile_dims": [(self.dim_names[i], float(v)) for i, v in volatile_dims],
             "active_dims":   [(self.dim_names[i], float(v)) for i, v in active_dims],
-            "coherence":     float(1.0 - std.mean()),   # 1=totalmente coherente
+            "coherence":     float(1.0 - std.mean()),   # 1=fully coherent
         }
 
-    # ── Detectar anomalías ────────────────────────────────────────────────────
+    # ── Detect anomalies ──────────────────────────────────────────────────────
     def find_anomalies(self, terms: list[str]) -> list[dict]:
         """
-        Detecta términos cuyo perfil humanizado es inusualmente extremo
-        o contradictorio respecto a sus vecinos.
+        Detects terms whose humanized profile is unusually extreme
+        or contradictory with respect to their neighbors.
         """
         vecs     = self.encode_batch(terms)
         results  = []
@@ -326,11 +326,11 @@ def _bar(v: float, width: int = 20) -> str:
     return bar[:width]
 
 def _color(v: float) -> str:
-    """ANSI color verde→rojo según valor."""
-    if   v > 0.8: return "\033[91m"   # rojo
-    elif v > 0.6: return "\033[93m"   # amarillo
-    elif v > 0.4: return "\033[92m"   # verde
-    else:         return "\033[94m"   # azul
+    """ANSI color green→red depending on value."""
+    if   v > 0.8: return "\033[91m"   # red
+    elif v > 0.6: return "\033[93m"   # yellow
+    elif v > 0.4: return "\033[92m"   # green
+    else:         return "\033[94m"   # blue
 RESET = "\033[0m"
 
 def print_results(results: list[tuple[str, float, np.ndarray]], title: str = ""):
@@ -394,7 +394,7 @@ def print_dual_interpolation(path, term_a, term_b):
 
 
 # ──────────────────────────────────────────────────────────────────────────────
-# CLI INTERACTIVO
+# INTERACTIVE CLI
 # ──────────────────────────────────────────────────────────────────────────────
 HELP_TEXT = """
 ╔══════════════════════════════════════════════════════╗
@@ -431,7 +431,7 @@ def interactive_loop(explorer: HumanizedExplorer):
             print(HELP_TEXT)
             continue
 
-        # ── Aritmética: + rey mujer - hombre ─────────────────────────────
+        # ── Arithmetic: + rey mujer - hombre ─────────────────────────────
         if raw.startswith("+") or (raw.startswith("-") and len(raw) > 1 and raw[1] != " "):
             pos_terms, neg_terms = [], []
             current = "pos"
@@ -449,7 +449,7 @@ def interactive_loop(explorer: HumanizedExplorer):
             results = explorer.arithmetic(pos_terms, neg_terms)
             print_results(results, f"Aritmética: {label}")
 
-        # ── Interpolación dual: ~~ sacerdote robot ────────────────────────
+        # ── Dual interpolation: ~~ sacerdote robot ────────────────────────
         elif raw.startswith("~~"):
             parts = raw[2:].strip().split()
             if len(parts) < 2:
@@ -460,7 +460,7 @@ def interactive_loop(explorer: HumanizedExplorer):
             path = explorer.interpolate_dual(a, b)
             print_dual_interpolation(path, a, b)
 
-        # ── Interpolación simple: ~ sacerdote robot ───────────────────────
+        # ── Simple interpolation: ~ sacerdote robot ───────────────────────
         elif raw.startswith("~~"):
             parts = raw[2:].strip().split()
             if len(parts) < 2:
@@ -483,7 +483,7 @@ def interactive_loop(explorer: HumanizedExplorer):
             path = explorer.interpolate(a, b)
             print_interpolation(path)
 
-        # ── Top por dimensión nombre: ! religiosidad ──────────────────────
+        # ── Top by dimension name: ! religiosidad ─────────────────────────
         elif raw.startswith("!"):
             query = raw[1:].strip().lower()
             matches = [(i, n) for i, n in enumerate(explorer.dim_names)
@@ -499,7 +499,7 @@ def interactive_loop(explorer: HumanizedExplorer):
                 bar = _bar(v, 15)
                 print(f"    {rank:2d}. {bar}  {v:.4f}  {w}")
 
-        # ── Top por índice numérico: dim 42 ──────────────────────────────
+        # ── Top by numeric index: dim 42 ─────────────────────────────────
         elif raw.lower().startswith("dim "):
             try:
                 idx = int(raw.split()[1])
@@ -512,14 +512,14 @@ def interactive_loop(explorer: HumanizedExplorer):
             except (ValueError, IndexError):
                 print("  ⚠ Uso: dim <número>")
 
-        # ── Perfil: ? sacerdote ────────────────────────────────────────────
+        # ── Profile: ? sacerdote ───────────────────────────────────────────
         elif raw.startswith("?"):
             term = raw[1:].strip()
             print(f"  ⚙️ Calculando perfil de «{term}»…")
             p = explorer.profile(term)
             print_profile(p)
 
-        # ── Polígrafo: pg texto1 | texto2 ─────────────────────────────────
+        # ── Polygraph: pg texto1 | texto2 ─────────────────────────────────
         elif raw.lower().startswith("pg "):
             texts = [t.strip() for t in raw[3:].split("|") if t.strip()]
             if len(texts) < 2:
@@ -537,7 +537,7 @@ def interactive_loop(explorer: HumanizedExplorer):
             for name, mean in result["active_dims"][:6]:
                 print(f"    {_bar(mean, 12)}  avg={mean:.4f}  {name}")
 
-        # ── Búsqueda normal ────────────────────────────────────────────────
+        # ── Regular search ─────────────────────────────────────────────────
         else:
             term = raw
             print(f"  ⚙️ Buscando vecinos de «{term}»…")
@@ -546,19 +546,19 @@ def interactive_loop(explorer: HumanizedExplorer):
 
 
 # ──────────────────────────────────────────────────────────────────────────────
-# DEMO AUTOMÁTICO
+# AUTOMATIC DEMO
 # ──────────────────────────────────────────────────────────────────────────────
 def run_demo(explorer: HumanizedExplorer):
     print("\n" + "═"*60)
     print("  🎮 DEMO AUTOMÁTICO")
     print("═"*60)
 
-    # 1. Perfil
+    # 1. Profile
     for term in ["sacerdote", "inteligencia artificial", "amor"]:
         p = explorer.profile(term)
         print_profile(p)
 
-    # 2. Aritmética
+    # 2. Arithmetic
     print("\n[Aritmética] sacerdote + tecnología - religión:")
     results = explorer.arithmetic(["sacerdote", "tecnología"], ["religión"])
     print_results(results)
@@ -567,12 +567,12 @@ def run_demo(explorer: HumanizedExplorer):
     results = explorer.arithmetic(["rey", "mujer"], ["hombre"])
     print_results(results)
 
-    # 3. Interpolación
+    # 3. Interpolation
     print("\n[Interpolación] ciencia → misticismo:")
     path = explorer.interpolate("ciencia", "misticismo", steps=8)
     print_interpolation(path)
 
-    # 4. Top dimensiones
+    # 4. Top dimensions
     print("\n[Dim] Top 10 en primera dimensión:")
     tops = explorer.top_by_dimension(0, k=10)
     for w, v in tops:
@@ -589,7 +589,7 @@ def main():
     parser.add_argument("--term",        type=str,            help="Buscar un término y salir")
     args = parser.parse_args()
 
-    # Verificar archivos
+    # Verify files
     for f in [FAISS_INDEX_FILE, TABLE_EMB_FILE, TABLE_WORDS_FILE, METADATA_FILE]:
         if not Path(f).exists():
             print(f"❌ No encontrado: {f}")
@@ -608,7 +608,7 @@ def main():
         run_demo(explorer)
 
     else:
-        # Por defecto: modo interactivo
+        # Default: interactive mode
         interactive_loop(explorer)
 
 

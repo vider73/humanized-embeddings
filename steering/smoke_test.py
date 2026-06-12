@@ -1,16 +1,16 @@
 """
-smoke_test.py — Valida los FORWARD HOOKS de verdad, en tu PC, en segundos.
+smoke_test.py — Validates the FORWARD HOOKS for real, on your PC, in seconds.
 
-Usa un modelo Llama diminuto y ABIERTO (SmolLM2-135M, misma arquitectura)
-para comprobar, sobre PyTorch real, que:
-  [A] el hook engancha en model.model.layers[L] y modifica el residual
-  [B] steering = 0  =>  salida IDENTICA a la neutral (invariante critico)
-  [C] un steering != 0 CAMBIA la generacion
-  [D] el camino completo perfil(104) -> (p-0.5)@cv -> inyeccion funciona
-      con un modelo real (cv fabricado al azar, solo probamos la mecanica)
+Uses a tiny, OPEN Llama model (SmolLM2-135M, same architecture)
+to verify, on real PyTorch, that:
+  [A] the hook attaches on model.model.layers[L] and modifies the residual
+  [B] steering = 0  =>  output IDENTICAL to the neutral (critical invariant)
+  [C] a steering != 0 CHANGES the generation
+  [D] the full path profile(104) -> (p-0.5)@cv -> injection works
+      with a real model (cv fabricated at random, we only test the mechanics)
 
-Si esto pasa, el mismo codigo de steering_model.py funcionara con Llama-3.1-8B;
-solo cambian tamaños (se leen del modelo) y la procedencia de los control vectors.
+If this passes, the same steering_model.py code will work with Llama-3.1-8B;
+only sizes change (read from the model) and the provenance of the control vectors.
 
     pip install -r steering/requirements.txt
     python -m steering.smoke_test
@@ -34,11 +34,11 @@ def main():
 
     H = model.config.hidden_size
     n_layers = model.config.num_hidden_layers
-    # banda central de capas, valida para este modelo
+    # central band of layers, valid for this model
     layers = list(range(n_layers // 3, n_layers // 3 + 3))
     print(f"   hidden_size={H}  capas={n_layers}  objetivo={layers}")
 
-    # --- estado de steering por capa (None = desactivado) ------------------
+    # --- per-layer steering state (None = disabled) -------------------------
     steer = {L: None for L in layers}
     handles = []
 
@@ -55,7 +55,7 @@ def main():
     for L in layers:
         handles.append(model.model.layers[L].register_forward_hook(make_hook(L)))
 
-    # --- generacion greedy (determinista) ---------------------------------
+    # --- greedy (deterministic) generation ---------------------------------
     @torch.no_grad()
     def gen(prompt="Cuentame algo sobre el mar.", n=40):
         msgs = [{"role": "user", "content": prompt}]
@@ -65,7 +65,7 @@ def main():
                              pad_token_id=tok.eos_token_id)
         return tok.decode(out[0, ids.shape[1]:], skip_special_tokens=True)
 
-    # [A]+[B] sin steering => baseline reproducible
+    # [A]+[B] without steering => reproducible baseline
     for L in layers:
         steer[L] = None
     base1 = gen()
@@ -73,7 +73,7 @@ def main():
     assert base1 == base2, "greedy deberia ser determinista"
     print("\n[A][B] hook instalado; steering=None => salida estable y == neutral  OK")
 
-    # [C] steering aleatorio fuerte => debe cambiar la salida
+    # [C] strong random steering => must change the output
     torch.manual_seed(0)
     for L in layers:
         v = torch.randn(H, device=dev)
@@ -82,22 +82,27 @@ def main():
     assert changed != base1, "el steering deberia cambiar la generacion"
     print("[C] steering != 0 cambia la generacion  OK")
 
-    # [D] camino completo perfil -> (p-0.5)@cv -> steering por capa
+    # [D] full path profile -> (p-0.5)@cv -> per-layer steering
     cv = {L: torch.randn(N_DIMS, H, device=dev) for L in layers}
     for L in layers:
-        cv[L] = cv[L] / cv[L].norm(dim=1, keepdim=True)   # normaliza por dim
+        cv[L] = cv[L] / cv[L].norm(dim=1, keepdim=True)   # normalizes per dim
     prof = np.full(N_DIMS, 0.5, np.float32)
     p0 = torch.tensor(prof - 0.5, device=dev)
-    for L in layers:                                       # perfil plano => 0
+    for L in layers:                                       # flat profile => 0
         steer[L] = (p0 @ cv[L])
     flat = gen()
     assert flat == base1, "perfil plano (0.5) debe igualar a la neutral"
     print("[D] perfil plano via (p-0.5)@cv => steering nulo => == neutral  OK")
 
-    prof[23] = 0.98                                        # sube una dimension
+    prof[23] = 0.98                                        # raises one dimension
     p1 = torch.tensor(prof - 0.5, device=dev)
+    # NOTE: the real engine scales by alpha*|h| per position (norm-relative);
+    # this plain hook adds raw vectors, so config.ALPHA (a fraction, ~0.12)
+    # would be invisible here. We only validate MECHANICS: unit-normalize the
+    # mixture and reuse the magnitude that [C] already proved changes greedy.
     for L in layers:
-        steer[L] = config.ALPHA * (p1 @ cv[L])
+        v = p1 @ cv[L]
+        steer[L] = 6.0 * v / v.norm()
     dirigida = gen()
     print("\n── NEUTRAL ──\n", base1)
     print("\n── DIRIGIDA (cv aleatorio, solo demo de mecanica) ──\n", dirigida)

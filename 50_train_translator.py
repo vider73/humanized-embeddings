@@ -5,8 +5,8 @@ import numpy as np
 from torch.utils.data import DataLoader, TensorDataset
 import matplotlib.pyplot as plt
 
-# CONFIGURACIÓN
-EPOCHS = 1500 # Ajustar según cantidad de datos (más datos = menos épocas necesarias)
+# CONFIGURATION
+EPOCHS = 1500 # Adjust according to the amount of data (more data = fewer epochs needed)
 BATCH_SIZE = 32
 LEARNING_RATE = 0.001
 
@@ -14,39 +14,39 @@ class SemanticTranslator(nn.Module):
     def __init__(self, input_dim, output_dim):
         super().__init__()
         
-        # Arquitectura "Embudo Invertido"
-        # Queremos expandir la representación para encontrar correlaciones ocultas
+        # "Inverted Funnel" architecture
+        # We want to expand the representation to find hidden correlations
         self.net = nn.Sequential(
             nn.Linear(input_dim, 512),
             nn.BatchNorm1d(512),
             nn.ReLU(),
-            nn.Dropout(0.1), # Evita memorizar datos exactos
+            nn.Dropout(0.1), # Prevents memorizing exact data
             
             nn.Linear(512, 256),
             nn.ReLU(),
             nn.Dropout(0.1),
             
             nn.Linear(256, output_dim),
-            nn.Sigmoid() # ¡Crucial! Fuerza la salida entre 0 y 1 (tus dimensiones)
+            nn.Sigmoid() # Crucial! Forces the output between 0 and 1 (your dimensions)
         )
 
     def forward(self, x):
         return self.net(x)
 
 def main():
-    # 1. Cargar Datos
+    # 1. Load Data
     try:
         X = np.load("dataset_X_embeddings.npy")
         Y = np.load("dataset_Y_human.npy")
     except:
-        print("❌ Ejecuta primero generate_training_data.py")
+        print("❌ Ejecuta primero 40_build_training_data.py")
         return
 
-    # Convertir a Tensores
+    # Convert to Tensors
     tensor_x = torch.Tensor(X) # (N, 384)
     tensor_y = torch.Tensor(Y) # (N, 104)
 
-    # Split (80% Train, 20% Test) para ver si generaliza de verdad
+    # Split (80% Train, 20% Test) to see whether it truly generalizes
     split_idx = int(len(X) * 0.8)
     train_ds = TensorDataset(tensor_x[:split_idx], tensor_y[:split_idx])
     test_ds = TensorDataset(tensor_x[split_idx:], tensor_y[split_idx:])
@@ -54,17 +54,17 @@ def main():
     train_loader = DataLoader(train_ds, batch_size=BATCH_SIZE, shuffle=True)
     test_loader = DataLoader(test_ds, batch_size=BATCH_SIZE)
 
-    # 2. Inicializar Red
+    # 2. Initialize Network
     input_dim = X.shape[1]
     output_dim = Y.shape[1]
-    model = SemanticTranslator(input_dim, output_dim).cuda() # ¡A la 4090!
-    
-    criterion = nn.MSELoss() # Error cuadrático medio (ideal para regresión)
+    model = SemanticTranslator(input_dim, output_dim).cuda() # Off to the 4090!
+
+    criterion = nn.MSELoss() # Mean squared error (ideal for regression)
     optimizer = optim.Adam(model.parameters(), lr=LEARNING_RATE)
 
     print(f"🔥 Entrenando Traductor: {input_dim} inputs -> {output_dim} outputs")
     
-    # 3. Bucle de Entrenamiento
+    # 3. Training Loop
     loss_history = []
     
     for epoch in range(EPOCHS):
@@ -82,7 +82,7 @@ def main():
             
             running_loss += loss.item()
             
-        # Validación
+        # Validation
         model.eval()
         val_loss = 0.0
         with torch.no_grad():
@@ -98,15 +98,15 @@ def main():
         if epoch % 10 == 0:
             print(f"Epoch {epoch}/{EPOCHS} | Train Loss: {avg_loss:.6f} | Val Loss: {avg_val_loss:.6f}")
 
-    # 4. Guardar Modelo
+    # 4. Save Model
     torch.save(model.state_dict(), "semantic_translator.pth")
     print("✅ Modelo entrenado y guardado.")
 
-    # 5. Visualizar un ejemplo del Test Set
+    # 5. Visualize an example from the Test Set
     print("\n--- TEST DE REALIDAD ---")
     model.eval()
     
-    # Tomamos un ejemplo aleatorio del test set
+    # We take a random example from the test set
     test_idx = 0 
     real_input = tensor_x[split_idx + test_idx].unsqueeze(0).cuda()
     real_target = tensor_y[split_idx + test_idx].cpu().numpy()

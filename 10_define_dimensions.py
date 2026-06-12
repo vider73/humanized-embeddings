@@ -3,12 +3,12 @@ import time
 import sys
 
 # ==========================================
-# 1. DEFINICIÓN DE LA REALIDAD (100+ Dimensiones)
+# 1. DEFINITION OF REALITY (100+ Dimensions)
 # ==========================================
-# Tuplas formato: (Nombre Dimensión, Anchor 0.0, Anchor 1.0)
+# Tuple format: (Dimension Name, Anchor 0.0, Anchor 1.0)
 
 DIMENSIONS_DB = [
-    # --- FÍSICA: ESPACIO Y TIEMPO ---
+    # --- PHYSICS: SPACE AND TIME ---
     ("Tamaño Físico", "Una partícula subatómica (Quark)", "El Universo Observable completo"),
     ("Masa", "Un fotón (sin masa)", "Singularidad de Agujero Negro Supermasivo"),
     ("Densidad", "Vacío intergaláctico perfecto", "Estrella de neutrones / Singularidad"),
@@ -20,7 +20,7 @@ DIMENSIONS_DB = [
     ("Luminosidad", "Oscuridad absoluta (Vantablack)", "Quasar activo / Supernova"),
     ("Transparencia", "Opacidad total (Plomo denso)", "Invisible / Transparencia perfecta"),
     
-    # --- FÍSICA: MATERIA Y MATERIALES ---
+    # --- PHYSICS: MATTER AND MATERIALS ---
     ("Dureza", "Gas noble difuso", "Diamante agregado de nanobarrenas"),
     ("Elasticidad", "Arcilla mojada (Deformación plástica)", "Grafeno tensado / Super-rebote"),
     ("Viscosidad", "Superfluido (Viscosidad cero)", "Sólido amorfo / Brea"),
@@ -34,7 +34,7 @@ DIMENSIONS_DB = [
     ("Porosidad", "Cristal denso perfecto", "Esponja a nivel molecular"),
     ("Maleabilidad", "Vidrio quebradizo", "Oro puro"),
 
-    # --- BIOLOGÍA: VIDA Y ORGANISMO ---
+    # --- BIOLOGY: LIFE AND ORGANISM ---
     ("Vitalidad", "Materia inorgánica inerte", "Organismo joven en plenitud"),
     ("Consciencia", "Roca", "Mente humana genial / IA General"),
     ("Instinto", "Objeto inanimado", "Depredador alfa cazando"),
@@ -46,7 +46,7 @@ DIMENSIONS_DB = [
     ("Evolución", "Bacteria primordial", "Ser post-biológico trascendido"),
     ("Capacidad Sensorial", "Ciego/Sordo/Insensible", "Percepción extrasensorial total"),
 
-    # --- CUALIA: LOS SENTIDOS ---
+    # --- QUALIA: THE SENSES ---
     ("Sonoridad (Volumen)", "Silencio anecoico", "Erupción volcánica / Onda de choque"),
     ("Frecuencia Sonora", "Infrasonido indetectable", "Ultrasonido de alta frecuencia"),
     ("Olor (Intensidad)", "Sin olor (Vacío)", "Amoníaco concentrado / Mofeta"),
@@ -61,7 +61,7 @@ DIMENSIONS_DB = [
     ("Temperatura Táctil", "Nitrógeno líquido", "Metal al rojo vivo"),
     ("Pegajosidad", "Teflón antiadherente", "Superpegamento industrial"),
 
-    # --- EMOCIÓN: ESPECTRO POSITIVO ---
+    # --- EMOTION: POSITIVE SPECTRUM ---
     ("Felicidad", "Miseria absoluta", "Éxtasis eufórico"),
     ("Amor", "Indiferencia fría", "Amor incondicional profundo"),
     ("Calma", "Pánico histérico", "Paz Zen absoluta"),
@@ -73,7 +73,7 @@ DIMENSIONS_DB = [
     ("Curiosidad", "Apatía total", "Obsesión por descubrir"),
     ("Empatía", "Psicopatía insensible", "Conexión emocional total"),
 
-    # --- EMOCIÓN: ESPECTRO NEGATIVO ---
+    # --- EMOTION: NEGATIVE SPECTRUM ---
     ("Miedo", "Seguridad total", "Terror primario visceral"),
     ("Ira", "Serenidad", "Furia berserker asesina"),
     ("Tristeza", "Alegría desbordante", "Depresión profunda / Duelo"),
@@ -85,7 +85,7 @@ DIMENSIONS_DB = [
     ("Odio", "Afecto", "Aversión destructiva total"),
     ("Aburrimiento", "Diversión frenética", "Tedio existencial"),
 
-    # --- INTELECTO Y LOGOS ---
+    # --- INTELLECT AND LOGOS ---
     ("Verdad (Facticidad)", "Falsedad absoluta / Mentira", "Verdad axiomática universal"),
     ("Complejidad Lógica", "Tautología simple (A=A)", "Paradoja irresoluble / Teoría del Todo"),
     ("Racionalidad", "Delirio irracional", "Lógica matemática pura"),
@@ -97,7 +97,7 @@ DIMENSIONS_DB = [
     ("Claridad", "Confusión críptica", "Evidencia cristalina"),
     ("Sabiduría", "Ignorancia necia", "Iluminación omnisciente"),
 
-    # --- SOCIEDAD Y CULTURA ---
+    # --- SOCIETY AND CULTURE ---
     ("Valor Económico", "Basura sin valor", "PIB Mundial combinado"),
     ("Legalidad", "Crimen capital", "Mandato constitucional"),
     ("Ética (Bondad)", "Maldad pura", "Santidad altruista"),
@@ -113,7 +113,7 @@ DIMENSIONS_DB = [
     ("Formalidad", "Vulgar / Callejero", "Protocolo real estricto"),
     ("Peligrosidad Social", "Ciudadano modelo", "Amenaza pública global"),
 
-    # --- METAFÍSICA Y NARRATIVA ---
+    # --- METAPHYSICS AND NARRATIVE ---
     ("Magia", "Mundo físico ordinario", "Omnipotencia mágica"),
     ("Divinidad", "Mortal efímero", "Dios Creador"),
     ("Futurismo", "Prehistoria", "Ciencia Ficción año 3000"),
@@ -122,7 +122,7 @@ DIMENSIONS_DB = [
     ("Caos (Entropía)", "Orden cristalino", "Anarquía total"),
     ("Onirismo", "Realidad vigil", "Sueño lúcido psicodélico"),
     
-    # --- ACCIÓN Y VERBOS ---
+    # --- ACTION AND VERBS ---
     ("Dificultad de Ejecución", "Automático / Sin esfuerzo", "Imposible humanamente"),
     ("Velocidad de Acción", "Letargo glaciar", "Instantáneo"),
     ("Frecuencia", "Evento único (Cisne Negro)", "Constante / Continuo"),
@@ -134,22 +134,22 @@ DIMENSIONS_DB = [
 ]
 
 # ==========================================
-# 2. GENERADOR DE PROMPTS (LLAMA 3 FORMAT)
+# 2. PROMPT GENERATOR (LLAMA 3 FORMAT)
 # ==========================================
 
 def build_llama3_prompt(dim_name, anchor_0, anchor_1):
     """
-    Construye el string exacto con tokens de control para Llama 3.
-    Mantiene {concepto} como variable para inyectar después.
+    Builds the exact string with control tokens for Llama 3.
+    Keeps {concepto} as a variable to be injected later.
     """
-    
-    # 1. Definición del sistema (System Prompt)
+
+    # 1. System definition (System Prompt)
     sys_msg = (
         f"Eres un instrumento de medición semántica calibrado para la dimensión: '{dim_name}'. "
         "Tu única función es calcular la posición relativa de un concepto entre dos extremos absolutos."
     )
     
-    # 2. Instrucción del usuario (User Prompt)
+    # 2. User instruction (User Prompt)
     user_msg = (
         f"Analiza el concepto: '{{concepto}}'.\n\n"
         f"ESCALA DE REFERENCIA - {dim_name}:\n"
@@ -162,10 +162,10 @@ def build_llama3_prompt(dim_name, anchor_0, anchor_1):
         f"Puntuación para '{{concepto}}':"
     )
     
-    # 3. Ensamblaje con tokens especiales Llama 3
-    # <|begin_of_text|> es el inicio
-    # <|start_header_id|>rol<|end_header_id|> marca los bloques
-    # <|eot_id|> marca el fin de turno
+    # 3. Assembly with Llama 3 special tokens
+    # <|begin_of_text|> is the start
+    # <|start_header_id|>role<|end_header_id|> marks the blocks
+    # <|eot_id|> marks the end of turn
     full_prompt = (
         "<|begin_of_text|>"
         "<|start_header_id|>system<|end_header_id|>\n\n"
@@ -178,7 +178,7 @@ def build_llama3_prompt(dim_name, anchor_0, anchor_1):
     return full_prompt
 
 # ==========================================
-# 3. EJECUCIÓN PRINCIPAL
+# 3. MAIN EXECUTION
 # ==========================================
 
 def main():
@@ -188,18 +188,18 @@ def main():
     
     master_json = []
     
-    # Configuración visual
+    # Visual configuration
     total = len(DIMENSIONS_DB)
-    
+
     for i, (name, a0, a1) in enumerate(DIMENSIONS_DB):
-        # Crear ID único y limpio
+        # Create a unique, clean ID
         clean_name = name.lower().replace(" ", "_").replace("/", "_").replace("(", "").replace(")", "")
         dim_id = f"d{i:03d}_{clean_name}"
         
-        # Generar prompt
+        # Generate prompt
         prompt_template = build_llama3_prompt(name, a0, a1)
-        
-        # Crear objeto de datos
+
+        # Create data object
         dim_obj = {
             "id": dim_id,
             "category_index": i,
@@ -210,27 +210,27 @@ def main():
         
         master_json.append(dim_obj)
         
-        # --- PREVISUALIZACIÓN VISUAL (User Feedback) ---
-        # Barra de progreso simple
+        # --- VISUAL PREVIEW (User Feedback) ---
+        # Simple progress bar
         percent = (i + 1) / total * 100
         bar_length = 20
         filled_length = int(bar_length * (i + 1) // total)
         bar = '█' * filled_length + '░' * (bar_length - filled_length)
         
-        # Imprimir estado actual borrando línea anterior si es posible o lineal
+        # Print current state, erasing the previous line if possible, or linearly
         sys.stdout.write(f"\r[{bar}] {percent:5.1f}% | Indexando: {name:30}")
         sys.stdout.flush()
         
-        # Opcional: Imprimir detalle completo cada 10 elementos o si se quiere ver todo:
-        # Aquí imprimimos una línea nueva para ver el log completo como pediste
+        # Optional: Print full detail every 10 elements or if you want to see everything:
+        # Here we print a new line to see the complete log as you requested
         print(f"\n   ↳ 0.0: {a0[:40]:<40} ... 1.0: {a1[:40]}")
         
-        # Pequeño delay para efecto visual (Matrix style)
+        # Small delay for visual effect (Matrix style)
         time.sleep(0.01)
 
     print("\n---------------------------------------------------------------")
     
-    # Guardar archivo
+    # Save file
     filename = "master_dimensions_prompts.json"
     with open(filename, "w", encoding="utf-8") as f:
         json.dump(master_json, f, indent=2, ensure_ascii=False)

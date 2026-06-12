@@ -1,5 +1,5 @@
 """
-03_build_faiss_index.py
+80_build_faiss_index.py
 """
 
 import json
@@ -94,7 +94,7 @@ def build_hnsw(data, dim):
 
 def build_ivfpq(data, dim):
     import faiss
-    # pq_m debe dividir dim exactamente
+    # pq_m must divide dim exactly
     pq_m = 4
     for m in [dim, dim//2, dim//4, 16, 8, 4]:
         if m > 0 and dim % m == 0:
@@ -148,7 +148,7 @@ def main():
 
     if not TABLE_EMB_FILE.exists():
         print(f"Tabla no encontrada: {TABLE_EMB_FILE}")
-        print("Ejecuta primero: python 02_build_table.py")
+        print("Ejecuta primero: python 70_build_table.py")
         return
 
     data, words, stats, human_dim = load_table(args.normalize)
@@ -191,7 +191,7 @@ def main():
     if not args.no_benchmark:
         benchmark_index(index, data, words)
 
-    print("\n-> Siguiente paso:  python 04_query_explorer.py")
+    print("\n-> Siguiente paso:  python 90_query_explorer.py")
 
 
 if __name__ == "__main__":

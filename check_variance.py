@@ -2,7 +2,7 @@ import numpy as np
 import json
 import os
 
-# CONFIGURACIÓN
+# CONFIGURATION
 METADATA_FILE = "dataset_metadata.json"
 HUMAN_VECTORS_DB = "dataset_Y_human.npy"
 
@@ -13,8 +13,8 @@ def main():
         print("❌ Faltan archivos.")
         return
 
-    # Cargar datos
-    Y = np.load(HUMAN_VECTORS_DB) # Matriz (Palabras x Dimensiones)
+    # Load data
+    Y = np.load(HUMAN_VECTORS_DB) # Matrix (Words x Dimensions)
     with open(METADATA_FILE, "r", encoding="utf-8") as f:
         meta = json.load(f)
     
@@ -23,7 +23,7 @@ def main():
     
     print(f"📊 Analizando {Y.shape[0]} palabras y {Y.shape[1]} dimensiones...\n")
 
-    # 1. BUSCAR DIMENSIONES MUERTAS (Sin varianza)
+    # 1. LOOK FOR DEAD DIMENSIONS (No variance)
     print("💀 DIMENSIONES 'ZOMBIE' (Casi todo es 0 o constante):")
     zombies = []
     
@@ -34,21 +34,21 @@ def main():
         min_val = np.min(col)
         mean_val = np.mean(col)
         
-        # Si la varianza es extremadamente baja, la dimensión está muerta
+        # If the variance is extremely low, the dimension is dead
         if variance < 0.001:
             zombies.append((dim, variance, max_val))
             # print(f"   - {dim[:30]:<30} | Var: {variance:.6f} | Max: {max_val:.6f}")
 
-    # Ordenar por las más muertas
+    # Sort by the most dead
     zombies.sort(key=lambda x: x[1])
     for z in zombies[:10]:
          print(f"   ❌ {z[0][:30]:<30} | Max Real: {z[2]:.6f} (Nadie supera esto)")
 
     print(f"\n   Total Dimensiones Muertas (<0.001 var): {len(zombies)} de {len(dim_names)}")
 
-    # 2. VER EL RANKING REAL DE UNA DIMENSIÓN
-    # Vamos a ver qué palabras son las "Reyes" de la Peligrosidad según tu dataset actual
-    target_dim = "peligrosidad_social" # Busca parcial
+    # 2. SEE THE REAL RANKING OF A DIMENSION
+    # Let's see which words are the "Kings" of Dangerousness according to your current dataset
+    target_dim = "peligrosidad_social" # Partial search
     
     found_idx = -1
     for i, name in enumerate(dim_names):
@@ -58,10 +58,10 @@ def main():
             break
             
     if found_idx != -1:
-        # Obtener valores de esa columna
+        # Get the values of that column
         col = Y[:, found_idx]
-        
-        # Ordenar índices de mayor a menor
+
+        # Sort indices from highest to lowest
         top_indices = np.argsort(col)[::-1]
         
         print("   🏆 TOP 10 MÁXIMOS VALORES (¿Tienen sentido?):")

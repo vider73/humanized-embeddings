@@ -1,27 +1,27 @@
 """
-fidelity.py — El test ciego industrializado, v2 con sondas por dominio.
+fidelity.py — The industrialized blind test, v2 with per-domain probes.
 
-Mide, dim a dim, si el steering mueve el texto en la direccion HUMANA
-correcta. El juez es tu propio Humanizer:
+Measures, dim by dim, whether the steering moves the text in the correct
+HUMAN direction. The judge is your own Humanizer:
 
-  Para cada dimension d_i:
-    1. genera con d_i empujada ARRIBA (0.95) y ABAJO (0.05), aislada, greedy
-    2. pasa cada texto por el traductor texto->perfil 104
-    3. effect_i = perfil(arriba) - perfil(abajo), en TODAS las dims
-    4. fidelidad = ¿la dim que mas se movio es la que empujaste?
+  For each dimension d_i:
+    1. generate with d_i pushed UP (0.95) and DOWN (0.05), isolated, greedy
+    2. run each text through the text->104-profile translator
+    3. effect_i = profile(up) - profile(down), across ALL dims
+    4. fidelity = is the dim that moved the most the one you pushed?
 
-v2: cada dim se sonda con frases de SU dominio. "Hablame de un dia
-cualquiera" no le da espacio a la radiactividad para expresarse — la sonda
-era ciega, no el dial muerto. Ademas se guarda el vector de efecto COMPLETO
-(104 floats) para poder restar el modo comun del juez (salud/necesidad/...
-se mueven con cualquier texto) y recalcular ranks corregidos.
+v2: each dim is probed with sentences from ITS domain. "Hablame de un dia
+cualquiera" gives radioactivity no room to express itself — the probe
+was blind, not the dial dead. Additionally the FULL effect vector is stored
+(104 floats) so the judge's common mode can be subtracted (health/necessity/...
+move with any text) and corrected ranks recomputed.
 
-  z alto + rank 0  -> dial REAL (el empuje mueve su propia dim mas que nada)
-  z ~0             -> dial muerto, o sesgo del juez (mira el rank corregido)
+  high z + rank 0  -> REAL dial (the push moves its own dim more than anything)
+  z ~0             -> dead dial, or judge bias (check the corrected rank)
 
-Reanudable: guarda incremental en fidelity_report.json y se salta lo hecho.
-Si el report existente es de otra version de sondas u otros vectores, lo
-aparta solo y empieza limpio.
+Resumable: saves incrementally to fidelity_report.json and skips what's done.
+If the existing report is from another probe version or other vectors, it
+sets it aside on its own and starts clean.
 
   python -m steering.fidelity
   python -m steering.fidelity --alpha 0.2 --phrases 3
@@ -43,16 +43,16 @@ PROBE_VERSION = 2
 
 
 def _vectors_sha():
-    """sha256 (16 hex) del CONTENIDO de los control vectors. El nombre del
-    fichero no basta: una re-derivacion escribe el mismo nombre con otros
-    vectores y los reports dejan de ser comparables sin que nadie lo note
-    (la anomalia scorecard-manana vs tuner-tarde del 2026-06-11)."""
+    """sha256 (16 hex) of the control vectors' CONTENT. The file name is
+    not enough: a re-derivation writes the same name with different
+    vectors and the reports stop being comparable without anyone noticing
+    (the scorecard-morning vs tuner-afternoon anomaly of 2026-06-11)."""
     import hashlib
     return hashlib.sha256(config.CONTROL_VECTORS_FILE.read_bytes()).hexdigest()[:16]
 
-# ── Sondas por dominio ──────────────────────────────────────────────────────
-# Frases abiertas que dan ESPACIO a las dims de ese territorio para
-# expresarse. Greedy + misma frase para todos los polos => solo cambia el dial.
+# ── Per-domain probes ───────────────────────────────────────────────────────
+# Open-ended sentences that give the dims of that territory ROOM to
+# express themselves. Greedy + same sentence for all poles => only the dial changes.
 PROBES = {
     "materia": (
         "Describe un objeto que tengas cerca, con todo detalle.",
@@ -81,7 +81,7 @@ PROBES = {
     ),
 }
 
-# primer match gana; sin match -> "mente" (las narrativas son el comodin)
+# first match wins; no match -> "mente" (narratives are the wildcard)
 _DOMAIN_KEYS = (
     ("sentidos", ("sabor", "táctil", "tactil", "sonora", "olfat", "olor",
                   "sonoridad", "saturación", "brillo", "color", "sensorial")),
@@ -139,7 +139,7 @@ def main():
     print(f"✅ Listo. capas={llm.layers} alpha={args.alpha} sondas/dim={n_probes} "
           f"vectores={config.CONTROL_VECTORS_FILE.name}\n")
 
-    # reanudar — pero solo si el report es comparable (mismas sondas y vectores)
+    # resume — but only if the report is comparable (same probes and vectors)
     report = {}
     if rf.exists():
         report = json.loads(rf.read_text(encoding="utf-8"))
@@ -163,7 +163,7 @@ def main():
         "mode": llm.mode, "layers": list(llm.layers),
     }
 
-    # neutrales: perezosos y cacheados (greedy => deterministas por frase)
+    # neutrals: lazy and cached (greedy => deterministic per sentence)
     neutral = {}
 
     def _neutral(ph):
@@ -197,12 +197,12 @@ def main():
                 deltas[tag].append(hz.profile(txt) - base)
         llm.clear()
 
-        # efecto bidireccional, promediado entre sondas
+        # bidirectional effect, averaged across probes
         effect = np.mean(deltas["hi"], 0) - np.mean(deltas["lo"], 0)   # (104,)
         own = float(effect[di])
         others = np.delete(effect, di)
         z = float((own - others.mean()) / (others.std() + 1e-9))
-        rank = int((np.abs(effect) > abs(own)).sum())   # 0 = la mas movida
+        rank = int((np.abs(effect) > abs(own)).sum())   # 0 = the most moved
 
         top = np.argsort(-np.abs(effect))[:8]
         movers = [[names[t], round(float(effect[t]), 3)] for t in top]
@@ -220,14 +220,14 @@ def main():
             print("     se movieron mas: " +
                   ", ".join(f"{nm.split('_', 1)[-1]} {v:+.2f}" for nm, v in movers[:5]))
 
-    # ── resumen con correccion de modo comun (por dominio) ──────────────────
+    # ── summary with common-mode correction (per domain) ────────────────────
     rows = {k: v for k, v in report.items() if not k.startswith("_")}
     have_vec = {k: v for k, v in rows.items() if "effect_vec" in v}
     if len(have_vec) >= 10:
         print(f"\n{'='*64}\n  CORRECCION DE MODO COMUN (sesgo del juez)")
         E = {k: np.array(v["effect_vec"]) for k, v in have_vec.items()}
         idx = {nm: i for i, nm in enumerate(names)}
-        # modo comun por dominio (si hay >=5 dims), si no global
+        # common mode per domain (if there are >=5 dims), otherwise global
         by_dom = {}
         for k, v in have_vec.items():
             by_dom.setdefault(v["domain"], []).append(k)

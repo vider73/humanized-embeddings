@@ -1,6 +1,6 @@
 import json
 import os
-import difflib # Para sugerencias inteligentes
+import difflib # For smart suggestions
 
 INPUT_FILE = "humanized_embeddings_dataset.json"
 
@@ -20,15 +20,15 @@ def main():
         query = input("\n🔍 Palabra: ").lower().strip()
         if query in ['salir', 'exit', 'q']: break
         
-        # Buscar palabra exacta
+        # Look for the exact word
         if query in data:
             match = query
         else:
-            # Buscar parecida
+            # Look for a similar one
             matches = difflib.get_close_matches(query, all_words, n=3, cutoff=0.6)
             if matches:
                 print(f"⚠️ No encontré '{query}'. Quizás quisiste decir: {matches}")
-                match = matches[0] # Asumimos la primera
+                match = matches[0] # We assume the first one
                 op = input(f"¿Analizar '{match}'? (s/n): ")
                 if op.lower() != 's': continue
             else:
@@ -40,7 +40,7 @@ def main():
         
         vec = data[match]
         
-        # Ordenar dimensiones por valor
+        # Sort dimensions by value
         sorted_items = sorted(vec.items(), key=lambda x: x[1], reverse=True)
         
         print("🔥 TOP 10 DIMENSIONES MÁS ACTIVAS:")
@@ -53,7 +53,7 @@ def main():
         for k, v in sorted_items[-5:]:
             print(f"  {k:<30} : {v:.6f}")
             
-        # Detección de anomalías físicas
+        # Physical anomaly detection
         phys_check = vec.get("d004_temperatura", 0)
         size_check = vec.get("d000_tamaño_físico", 0)
         

@@ -8,16 +8,16 @@ from sklearn.metrics.pairwise import cosine_similarity
 import sys
 
 # ==========================================
-# CONFIGURACIÓN
+# CONFIGURATION
 # ==========================================
-MODEL_REVERSE_PATH = "reverse_translator.pth" # Modelo Generador (Humano -> Embedding)
-MODEL_FORWARD_PATH = "semantic_translator.pth" # Modelo Analizador (Embedding -> Humano)
+MODEL_REVERSE_PATH = "reverse_translator.pth" # Generator Model (Human -> Embedding)
+MODEL_FORWARD_PATH = "semantic_translator.pth" # Analyzer Model (Embedding -> Human)
 METADATA_FILE = "dataset_metadata.json"
 EMBEDDINGS_DB = "dataset_X_embeddings.npy"
 HUMAN_VECTORS_DB = "dataset_Y_human.npy"
 
 # ==========================================
-# CLASES DE REDES NEURONALES
+# NEURAL NETWORK CLASSES
 # ==========================================
 class HumanToEmbedding(nn.Module):
     def __init__(self, input_dim, output_dim):
@@ -40,7 +40,7 @@ class SemanticTranslator(nn.Module):
     def forward(self, x): return self.net(x)
 
 # ==========================================
-# UTILIDADES
+# UTILITIES
 # ==========================================
 def load_system():
     print("⚙️ Cargando Sistema Semántico Completo...")
@@ -56,7 +56,7 @@ def load_system():
     input_dim_human = len(dim_names)
     input_dim_emb = embeddings_db.shape[1]
     
-    # Cargar Modelos
+    # Load Models
     model_rev = HumanToEmbedding(input_dim_human, input_dim_emb)
     model_fwd = SemanticTranslator(input_dim_emb, input_dim_human)
     
@@ -87,7 +87,7 @@ def print_vector_profile(vector, dim_names, title="PERFIL"):
         print(f"   - {name[:25]:<25} : {val:.4f}")
 
 # ==========================================
-# COMANDOS DE CONSOLA
+# CONSOLE COMMANDS
 # ==========================================
 def cmd_synthesize(args, current_vector, model_rev, embeddings_db, concepts, dim_names):
     if not args:
@@ -98,10 +98,10 @@ def cmd_synthesize(args, current_vector, model_rev, embeddings_db, concepts, dim
         val = float(args[-1])
         dim_query = " ".join(args[:-1])
         
-        # Buscar dimensión
+        # Find dimension
         matches = difflib.get_close_matches(dim_query, dim_names, n=1, cutoff=0.3)
         if not matches:
-            # Intentar substring
+            # Try substring
             for d in dim_names:
                 if dim_query in d: matches = [d]; break
         
@@ -111,11 +111,11 @@ def cmd_synthesize(args, current_vector, model_rev, embeddings_db, concepts, dim
             current_vector[idx] = val
             print(f"   ✅ {dim_name} -> {val}")
             
-            # Generar
+            # Generate
             tensor_in = torch.Tensor(current_vector).unsqueeze(0)
             with torch.no_grad(): gen_emb = model_rev(tensor_in).numpy()
-            
-            # Buscar
+
+            # Search
             sims = cosine_similarity(gen_emb, embeddings_db)
             top_idxs = sims[0].argsort()[::-1][:5]
             
@@ -147,7 +147,7 @@ def cmd_compare(args, concepts, human_db, dim_names):
     
     if f1 and f2:
         diff = v1 - v2
-        # Mayor diferencia positiva (w1 > w2)
+        # Largest positive difference (w1 > w2)
         pairs = sorted(zip(dim_names, diff), key=lambda x: x[1], reverse=True)
         
         print(f"\n⚖️ COMPARATIVA: {w1.upper()} vs {w2.upper()}")
@@ -166,7 +166,7 @@ def main():
     if not system: return
     model_rev, model_fwd, dim_names, concepts, embeddings_db, human_db = system
     
-    # Vector de trabajo (Promedio inicial)
+    # Working vector (Initial average)
     mean_vector = np.mean(human_db, axis=0)
     current_vector = mean_vector.copy()
     

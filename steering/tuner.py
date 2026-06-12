@@ -1,13 +1,13 @@
 """
-tuner.py — EL AFINADOR. Barre fidelity a varios alphas bajo el regimen
-actual (clamp/capa unica) y saca la tabla de afinacion de cada cuerda:
-a que presion suena mejor cada una de las 104 dims y cual es su z maximo.
+tuner.py — THE TUNER. Sweeps fidelity across several alphas under the
+current regime (clamp/single layer) and produces the tuning table for each
+string: at what pressure each of the 104 dims sounds best and what its max z is.
 
-Cada alpha corre en un PROCESO separado (VRAM limpia, fallo no contagia)
-y escribe su propio report (fidelity_a015.json, ...). Al final, el merge:
-afinacion.md — por dim: z_kin a cada alpha, alpha optimo, veredicto.
+Each alpha runs in a separate PROCESS (clean VRAM, a failure doesn't spread)
+and writes its own report (fidelity_a015.json, ...). At the end, the merge:
+afinacion.md — per dim: z_kin at each alpha, optimal alpha, verdict.
 
-Reanudable: fidelity se salta dims ya medidas dentro de cada report.
+Resumable: fidelity skips dims already measured within each report.
 
   python -m steering.tuner                       # alphas 0.15 0.25 0.35
   python -m steering.tuner --alphas 0.2 0.3
@@ -78,7 +78,7 @@ def main():
         run_step(f"fidelity α={a}", "steering.fidelity",
                  "--alpha", str(a), "--report", str(_report_path(a)))
 
-    # ── merge: la tabla de afinacion ────────────────────────────────────────
+    # ── merge: the tuning table ─────────────────────────────────────────────
     _log("🧮 calculando afinacion (kin-aware, sin GPU)...")
     per_alpha = {}
     for a in args.alphas:

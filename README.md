@@ -5,6 +5,7 @@ Turn opaque sentence embeddings into **104 dimensions a human can read**
 explore the space, do arithmetic on it, and steer a live LLM with it.
 
 - **What & why:** [`PUBLICATION.md`](PUBLICATION.md)
+- **How to use everything (console, tests, tools):** [`USAGE.md`](USAGE.md)
 - **How to rebuild the 104 dimensions, step by step:** [`RECIPE.md`](RECIPE.md)
 
 ---
@@ -41,6 +42,32 @@ ciencia + alma                     → sabiduría, mentor, expertise        (≈
 > Honest caveat: the data is LLM-scored and noisy — fine-grained physical axes are the
 > weakest, and some neighbours are corpus junk. The [`steering/`](steering/) scorecard
 > shows which axes are *causally* solid (currently **26/104**).
+
+---
+
+## Steering showcase — pushing a dial, watching the text move
+
+One example from [`SHOWCASE.md`](SHOWCASE.md) (regenerate with
+`python -m steering.showcase`; greedy decoding, so same vectors ⇒ same texts).
+Note `d090_divinidad=0.95` injected at layer 15, α=0.30, on the prompt
+*«Una habitación vacía.»* (an empty room):
+
+> ⚪ **Neutral:** "…un espacio despejado y silencioso, sin la presencia de objetos
+> o personas… Solo hay un espacio vacío, esperando a que alguien lo llene."
+> — *"…a clear, silent space, with no objects or people in it… Just an empty
+> space, waiting for someone to fill it."*
+>
+> 🔴 **Steered:** "…La luz del sol entra a través de las ventanas, ilustrando la
+> habitación con un resplandor cálido y suave. La habitación está llena de
+> silencio… llena de espacio, con una sensación de libertad."
+> — *"…Sunlight comes in through the windows, illuminating the room with a warm,
+> soft radiance. The room is full of silence… full of space, with a feeling
+> of freedom."*
+
+Emptiness becomes plenitude — light, warmth, inhabited silence — **without one
+religious word**: the push is semantic, not lexical. The full gallery (chords,
+voicing across layers, and one honest failure that demonstrates why prompt-dial
+*resonance* sets the alpha ceiling) lives in [`SHOWCASE.md`](SHOWCASE.md).
 
 ---
 

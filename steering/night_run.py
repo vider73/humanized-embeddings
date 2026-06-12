@@ -1,18 +1,18 @@
 """
-night_run.py — Turno de noche. Encadena el pipeline completo sin vigilancia:
+night_run.py — Night shift. Chains the complete pipeline unattended:
 
-  1. generate_stimuli   frases ricas por polo (reanudable, se salta lo hecho)
-  2. backup             guarda los vectores actuales como *_lexical.bak.npy
-  3. derive_vectors     re-deriva CAA+blanqueo con los stimuli nuevos
-  4. geometry           mide rango efectivo del fichero nuevo
-  5. fidelity           bucle cerrado: ¿cada dial mueve SU dimension?
+  1. generate_stimuli   rich phrases per pole (resumable, skips what's done)
+  2. backup             saves the current vectors as *_lexical.bak.npy
+  3. derive_vectors     re-derives CAA+whitening with the new stimuli
+  4. geometry           measures effective rank of the new file
+  5. fidelity           closed loop: does each dial move ITS dimension?
 
-Cada paso corre en un PROCESO SEPARADO: la VRAM se libera entre pasos y un
-fallo no arrastra al resto. Todo queda en vectors/night_YYYYMMDD_HHMM.log.
-Mantiene el PC despierto (Windows) mientras trabaja.
+Each step runs in a SEPARATE PROCESS: VRAM is freed between steps and one
+failure doesn't drag down the rest. Everything lands in vectors/night_YYYYMMDD_HHMM.log.
+Keeps the PC awake (Windows) while it works.
 
   python -m steering.night_run
-  python -m steering.night_run --skip stimuli      # si ya estan generados
+  python -m steering.night_run --skip stimuli      # if already generated
   python -m steering.night_run --skip stimuli derive
 """
 import argparse
@@ -38,7 +38,7 @@ def _log(line):
 
 
 def _keep_awake():
-    """Evita que Windows se duerma a mitad de faena. Inocuo en otros SO."""
+    """Keeps Windows from falling asleep mid-job. Harmless on other OSes."""
     try:
         import ctypes
         # ES_CONTINUOUS | ES_SYSTEM_REQUIRED
@@ -49,8 +49,8 @@ def _keep_awake():
 
 
 def run_step(name, module, *extra):
-    """Lanza `python -m module` como proceso hijo, volcando su salida al log
-    y a consola en vivo. Devuelve True si acabo bien."""
+    """Launches `python -m module` as a child process, streaming its output to
+    the log and to the console live. Returns True if it finished cleanly."""
     _log(f"▶ PASO {name}: python -m {module} {' '.join(extra)}")
     t0 = time.time()
     env = {**os.environ, "PYTHONUTF8": "1", "PYTHONUNBUFFERED": "1"}
@@ -70,7 +70,7 @@ def run_step(name, module, *extra):
 
 
 def stimuli_coverage():
-    """¿Cuantas dims tienen frases ricas? Para decidir si derivar tiene sentido."""
+    """How many dims have rich phrases? To decide whether deriving makes sense."""
     dim_names = json.loads(config.METADATA_FILE.read_text(encoding="utf-8"))["dimension_names"]
     store = (json.loads(config.STIMULI_FILE.read_text(encoding="utf-8"))
              if config.STIMULI_FILE.exists() else {})
@@ -93,7 +93,7 @@ def main():
     _keep_awake()
     t0 = time.time()
 
-    # 1 — stimuli (reanudable por si misma)
+    # 1 — stimuli (resumable on its own)
     if "stimuli" not in skip:
         run_step("stimuli", "steering.generate_stimuli")
     full, total = stimuli_coverage()
@@ -101,7 +101,7 @@ def main():
     if full < total:
         _log(f"⚠ {total - full} dims derivarian con moldes LEXICOS (fallback)")
 
-    # 2+3 — backup y re-derivacion
+    # 2+3 — backup and re-derivation
     if "derive" not in skip:
         if full == 0:
             _log("❌ sin stimuli no tiene sentido re-derivar. Abortando derive.")
@@ -116,14 +116,14 @@ def main():
                 _log(f"🏁 total {((time.time()-t0)/3600):.1f} h")
                 return
 
-    # 4 — geometria del fichero nuevo
+    # 4 — geometry of the new file
     if "geometry" not in skip:
         run_step("geometry", "steering.geometry")
 
-    # 5 — fidelidad (el plato fuerte)
+    # 5 — fidelity (the main course)
     if "fidelity" not in skip:
-        # si se re-derivo, las mediciones previas son de OTROS vectores
-        # (mismo nombre de fichero): apartarlas para que no las "resuma".
+        # if we re-derived, the previous measurements belong to OTHER vectors
+        # (same file name): set them aside so it doesn't "resume" them.
         rep = config.VEC_DIR / "fidelity_report.json"
         if "derive" not in skip and rep.exists():
             bak = rep.with_name(f"fidelity_report_{datetime.now():%Y%m%d_%H%M}.json")

@@ -1,9 +1,9 @@
 """
-L1 — Contratos de artefactos. Solo lectura, sin modelos, segundos.
+L1 — Artifact contracts. Read-only, no models, seconds.
 
-Vigila los tres contratos que comparten las dos capas (metadata, translator,
-tabla Y) y los artefactos del steering. Un fallo aqui significa que algun
-artefacto se regenero rompiendo a sus consumidores silenciosamente.
+Watches the three contracts shared by the two layers (metadata, translator,
+Y table) and the steering artifacts. A failure here means some artifact
+was regenerated, silently breaking its consumers.
 """
 import json
 import re
@@ -14,7 +14,7 @@ import pytest
 from steering import config
 
 
-# ── dataset_metadata.json: EL contrato compartido ────────────────────────────
+# ── dataset_metadata.json: THE shared contract ───────────────────────────────
 def test_metadata_has_104_sorted_dims(dim_names):
     assert len(dim_names) == 104
     assert dim_names == sorted(dim_names), "el orden d000..d103 esta clavado por contrato"
@@ -28,7 +28,7 @@ def test_metadata_concepts_match_tensors(metadata, X, Y):
     assert Y.shape == (n, 104), f"Y {Y.shape} != ({n}, 104)"
 
 
-# ── tensores de entrenamiento ────────────────────────────────────────────────
+# ── training tensors ─────────────────────────────────────────────────────────
 def test_tensors_are_finite(X, Y):
     assert np.isfinite(X).all(), "X contiene NaN/inf"
     assert np.isfinite(Y).all(), "Y contiene NaN/inf"
@@ -44,7 +44,7 @@ def test_Y_range_strict(Y):
 
 
 def test_Y_range_no_regression(Y, dim_names):
-    """El bug conocido no debe CRECER: si aparecen nuevos fuera de rango, parar."""
+    """The known bug must not GROW: if new out-of-range values appear, stop."""
     out = int((Y > 1.0).sum() + (Y < 0.0).sum())
     assert out <= 31, (
         f"{out} valores fuera de [0,1] (linea base conocida: 31). "
@@ -102,26 +102,26 @@ def test_stimuli_full_coverage(stimuli, dim_names):
 
 
 def test_stimuli_pools_are_rich(stimuli):
-    """Pools demasiado pequenos degeneran en direccion lexica."""
+    """Pools that are too small degenerate into a lexical direction."""
     thin = {k: (len(v.get('pos', [])), len(v.get('neg', [])))
             for k, v in stimuli.items()
             if len(v.get('pos', [])) < 5 or len(v.get('neg', [])) < 5}
     assert not thin, f"pools con <5 frases por polo: {thin}"
 
 
-# ── checkpoint del traductor: topologia clavada ──────────────────────────────
+# ── translator checkpoint: pinned topology ───────────────────────────────────
 def test_translator_checkpoint_topology(dim_names):
     torch = pytest.importorskip("torch")
     from steering.translator import SemanticTranslator
     state = torch.load(config.TRANSLATOR_PATH, map_location="cpu",
-                       weights_only=True)        # state dict puro: sin pickle libre
+                       weights_only=True)        # pure state dict: no free pickle
     model = SemanticTranslator(384, len(dim_names))
-    model.load_state_dict(state)        # strict: keys Y shapes deben cuadrar
+    model.load_state_dict(state)        # strict: keys AND shapes must match
     out_features = model.net[-2].out_features
     assert out_features == 104
 
 
-# ── manifests de regimen en los reports de fidelity ──────────────────────────
+# ── regime manifests in the fidelity reports ─────────────────────────────────
 REQUIRED_META = ("probe_version", "alpha", "vectors", "mode", "layers")
 
 

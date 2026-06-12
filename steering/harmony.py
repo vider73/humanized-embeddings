@@ -1,17 +1,17 @@
 """
-harmony.py — La metrica de RESONANCIA: ¿cuanta calidad conserva la respuesta
-segun lo alineado que este el prompt con las cuerdas que empujas?
+harmony.py — The RESONANCE metric: how much quality does the response keep
+depending on how aligned the prompt is with the strings you push?
 
-Por cada (frase, alpha) mide tres numeros:
-  alineacion : perfil del texto NEUTRAL en las dims empujadas (0..1).
-               Alto = el prompt ya vive en ese territorio.
-  efecto     : cuanto movio el dial su propia dim (juez Humanizer, hi-vs-neutral).
-  calidad    : perplejidad del texto dirigido bajo el modelo LIMPIO, relativa
-               a la del neutral. ~1.0 = fluido como siempre; >1.5 = degradando.
+For each (phrase, alpha) it measures three numbers:
+  alignment : profile of the NEUTRAL text on the pushed dims (0..1).
+              High = the prompt already lives in that territory.
+  effect    : how much the dial moved its own dim (Humanizer judge, hi-vs-neutral).
+  quality   : perplexity of the steered text under the CLEAN model, relative
+              to the neutral's. ~1.0 = as fluent as ever; >1.5 = degrading.
 
-Hipotesis de la resonancia: a mas alineacion, mas alpha utilizable antes de
-que la calidad caiga. Si se confirma, el "techo de alpha" no es una constante:
-es una funcion del acuerdo prompt-dial.
+The resonance hypothesis: the more alignment, the more usable alpha before
+quality drops. If confirmed, the "alpha ceiling" is not a constant:
+it is a function of the prompt-dial agreement.
 
   python -m steering.harmony --dim 95 --dim 53 --alphas 0.18 0.25 0.35
   python -m steering.harmony --dim 23 --phrase "Una habitacion vacia." --phrase "Lista de la compra."
@@ -24,7 +24,7 @@ import torch
 from .translator import Humanizer
 from .steering_model import SteeredLlama
 
-# trio por defecto: territorio del sueño / neutro / burocracia hostil
+# default trio: dream territory / neutral / hostile bureaucracy
 DEFAULT_PHRASES = (
     "Estoy durmiendo en mi habitacion.",
     "Una habitacion vacia.",
@@ -34,7 +34,7 @@ DEFAULT_PHRASES = (
 
 @torch.no_grad()
 def fluency_ppl(llm, text):
-    """Perplejidad del texto bajo el modelo SIN steering (hooks en silencio)."""
+    """Perplexity of the text under the model WITHOUT steering (hooks silent)."""
     llm.clear()
     ids = llm.tok(text, return_tensors="pt").input_ids.to(llm.model.device)
     if ids.shape[1] < 2:

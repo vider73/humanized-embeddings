@@ -25,13 +25,13 @@ def load_matrix(data):
 
 
 def robust_normalize(matrix):
-    # 1️⃣ Clipping robusto
+    # 1️⃣ Robust clipping
     low = np.percentile(matrix, LOW_PERCENTILE, axis=0)
     high = np.percentile(matrix, HIGH_PERCENTILE, axis=0)
 
     clipped = np.clip(matrix, low, high)
 
-    # 2️⃣ Escalado robusto (IQR)
+    # 2️⃣ Robust scaling (IQR)
     q1 = np.percentile(clipped, 25, axis=0)
     q3 = np.percentile(clipped, 75, axis=0)
     iqr = np.where((q3 - q1) < EPS, 1.0, q3 - q1)
@@ -43,7 +43,7 @@ def robust_normalize(matrix):
     std = np.where(robust_scaled.std(axis=0) < EPS, 1.0, robust_scaled.std(axis=0))
     z = (robust_scaled - mean) / std
 
-    # 4️⃣ Reescalado suave a [0.05, 0.95]
+    # 4️⃣ Soft rescaling to [0.05, 0.95]
     min_vals = z.min(axis=0)
     max_vals = z.max(axis=0)
     range_vals = np.where((max_vals - min_vals) < EPS, 1.0, max_vals - min_vals)

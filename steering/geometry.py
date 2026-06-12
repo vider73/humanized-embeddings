@@ -1,11 +1,11 @@
 """
-geometry.py — Mide la salud de un fichero de control vectors.
+geometry.py — Measures the health of a control vectors file.
 
-El numero clave es el RANGO EFECTIVO: cuantas direcciones independientes
-hay de verdad entre las 104 nominales. Rango ~1-2 = colapso (todas el mismo
-eje). Rango ~15-18 = sano (cerca del rango de la tabla humana).
+The key number is the EFFECTIVE RANK: how many truly independent
+directions there are among the 104 nominal ones. Rank ~1-2 = collapse (all the
+same axis). Rank ~15-18 = healthy (close to the rank of the human table).
 
-  python -m steering.geometry                       # usa config.CONTROL_VECTORS_FILE
+  python -m steering.geometry                       # uses config.CONTROL_VECTORS_FILE
   python -m steering.geometry vectors/control_vectors.npy
   python -m steering.geometry vectors/control_vectors_white.npy --layer 15
 """
@@ -18,7 +18,7 @@ from . import config
 
 
 def effective_rank(M):
-    """M: (n_dims, H) unit-norm. Devuelve participation ratio y rango-entropia."""
+    """M: (n_dims, H) unit-norm. Returns participation ratio and entropy-rank."""
     s = np.linalg.svd(M, compute_uv=False)
     p = s ** 2 / (s ** 2).sum()
     pr = (s ** 2).sum() ** 2 / (s ** 4).sum()
@@ -28,7 +28,7 @@ def effective_rank(M):
 
 def report(path, layer):
     p = Path(path)
-    cv = np.load(p)                                  # (capas, dims, H)
+    cv = np.load(p)                                  # (layers, dims, H)
     meta_p = p.with_name(p.name.replace("control_vectors", "control_meta")
                          .replace(".npy", ".json"))
     meta = json.loads(meta_p.read_text(encoding="utf-8"))

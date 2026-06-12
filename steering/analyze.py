@@ -1,15 +1,15 @@
 """
-analyze.py — Scorecard final a partir de fidelity_report.json (sin GPU).
+analyze.py — Final scorecard from fidelity_report.json (no GPU).
 
-Corrige el sesgo del juez SIN matar a las familias: para cada dim, el modo
-comun se estima solo sobre dims NO emparentadas con ella. El parentesco es
-objetivo: correlaciones de tu propia tabla humana (dataset_Y). Asi divinidad
-no paga por compartir alma con religiosidad y magia.
+Corrects the judge's bias WITHOUT killing the families: for each dim, the
+common mode is estimated only over dims NOT related to it. The kinship is
+objective: correlations from your own human table (dataset_Y). That way divinity
+doesn't pay for sharing a soul with religiosity and magic.
 
-Metricas por dim:
-  z_kin    : z del efecto propio tras restar el modo comun de NO-parientes
-  rank_kin : cuantas dims NO emparentadas se movieron mas que ella (0 = nadie)
-  sig      : el empuje movio su dim en la direccion correcta
+Per-dim metrics:
+  z_kin    : z of the own effect after subtracting the NON-kin common mode
+  rank_kin : how many NON-related dims moved more than it did (0 = nobody)
+  sig      : the push moved its dim in the correct direction
 
   python -m steering.analyze
   python -m steering.analyze --kin-r 0.5 --z-real 1.5
@@ -27,8 +27,8 @@ SCORECARD_MD = config.VEC_DIR / "scorecard.md"
 
 
 def scorecard(report_path=None, kin_r=0.4):
-    """Calcula el scorecard kin-aware de un report de fidelity.
-    Devuelve lista de dicts ordenada por z_kin desc. Sin GPU."""
+    """Computes the kin-aware scorecard of a fidelity report.
+    Returns a list of dicts sorted by z_kin desc. No GPU."""
     rep = json.loads(Path(report_path or REPORT_FILE).read_text(encoding="utf-8"))
     rows = {k: v for k, v in rep.items()
             if not k.startswith("_") and "effect_vec" in v}
@@ -91,7 +91,7 @@ def main():
         print(f"{tag} {d['name']:<30} {d['z_kin']:+6.1f} {d['rank_kin']:>4} "
               f"{'OK' if d['sign_ok'] else 'INV':>4} {d['kin']:>4}  {d['domain']}")
 
-    # scorecard.md para el repo
+    # scorecard.md for the repo
     lines = ["# Scorecard de fidelidad — diales reales de la consola",
              "",
              f"Criterio: z_kin ≥ {args.z_real} con signo correcto. "

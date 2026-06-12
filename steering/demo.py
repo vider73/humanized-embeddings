@@ -1,16 +1,16 @@
 """
-demo.py — El juguete honesto. Escribes algo, ves dos respuestas:
-  ⚪ neutral  (sin steering)
-  🔴 dirigida (el LLM pensando inclinado hacia tu perfil de 104 dims)
+demo.py — The honest toy. You type something, you see two responses:
+  ⚪ neutral  (no steering)
+  🔴 steered  (the LLM thinking tilted toward your 104-dim profile)
 
-Uso:
-  python -m steering.demo                 # perfil = el de tu propio texto
-  python -m steering.demo --dim 23 0.95   # fuerza la dim d023 (consciencia) a 0.95
+Usage:
+  python -m steering.demo                 # profile = your own text's
+  python -m steering.demo --dim 23 0.95   # forces dim d023 (consciencia) to 0.95
 
-Pasos previos (una vez):
-  python -m steering.derive_vectors       # crea vectors/control_vectors.npy
+Prior steps (once):
+  python -m steering.derive_vectors       # creates vectors/control_vectors.npy
 
-Requiere GPU + el modelo HF. Corre en tu maquina.
+Requires GPU + the HF model. Runs on your machine.
 """
 import argparse
 import numpy as np
@@ -45,7 +45,7 @@ def main():
             break
 
         prof = hz.profile(q)
-        if args.dim:                              # overrides manuales
+        if args.dim:                              # manual overrides
             for idx, val in args.dim:
                 prof[int(idx)] = float(val)
 

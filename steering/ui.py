@@ -1,14 +1,14 @@
 """
-ui.py — Panel de mandos del steering. 104 diales en vivo sobre una frase.
+ui.py — Steering control panel. 104 live dials over one phrase.
 
-Mueves los sliders (0..1), eliges alpha, pulsas Generar y ves la frase
-NEUTRAL contra la DIRIGIDA con tu perfil actual. Cableado al motor nuevo
-(SteeredLlama): direccion unitaria por capa + empuje relativo a la norma.
+You move the sliders (0..1), pick alpha, press Generate and see the
+NEUTRAL phrase against the STEERED one with your current profile. Wired to the
+new engine (SteeredLlama): unit direction per layer + push relative to the norm.
 
   python -m steering.ui
 
-Requiere GPU + el modelo HF (corre en tu maquina). La generacion va en un
-hilo aparte para no congelar la interfaz.
+Requires GPU + the HF model (runs on your machine). Generation goes in a
+separate thread to avoid freezing the interface.
 """
 import json
 import threading
@@ -21,7 +21,7 @@ from . import config
 from .translator import Humanizer
 from .steering_model import SteeredLlama
 
-# ── Paleta (consistente con tu cognitive_generator_v4) ─────────────────────
+# ── Palette (consistent with your cognitive_generator_v4) ──────────────────
 BG, BG_PANEL, BG_CARD = "#0d1117", "#161b22", "#1c2128"
 ACCENT, ACCENT2, ERROR = "#58a6ff", "#3fb950", "#f85149"
 TEXT, TEXT_DIM, BORDER, WARN = "#c9d1d9", "#8b949e", "#30363d", "#d29922"
@@ -31,7 +31,7 @@ DEFAULT_TEXT = "Hablame de un dia cualquiera."
 
 
 class DimRow(tk.Frame):
-    """Una fila: indice + nombre + slider 0..1 + valor. Polos en tooltip."""
+    """One row: index + name + slider 0..1 + value. Poles in a tooltip."""
     def __init__(self, parent, idx, name, poles, on_change):
         super().__init__(parent, bg=BG_CARD)
         self.idx, self.name, self.poles = idx, name, poles
@@ -51,7 +51,7 @@ class DimRow(tk.Frame):
                                 font=MONO, width=5)
         self.val_lbl.pack(side="left")
 
-        # tooltip con los polos min/max de la dimension
+        # tooltip with the dimension's min/max poles
         if poles:
             self.bind("<Enter>", self._tip_show)
             self.bind("<Leave>", self._tip_hide)
@@ -104,14 +104,14 @@ class SteeringUI(tk.Tk):
         self.n_dims = len(self.dim_names)
         self.poles = self._load_poles()
 
-        self.hz = None          # Humanizer (perezoso, para 'perfil desde texto')
-        self.llm = None         # SteeredLlama (se carga en hilo al arrancar)
+        self.hz = None          # Humanizer (lazy, for 'profile from text')
+        self.llm = None         # SteeredLlama (loaded in a thread at startup)
         self.rows = []
-        self._last = None       # snapshot de la ultima generacion (para copiar)
+        self._last = None       # snapshot of the last generation (for copying)
         self._build()
         self._load_engine_async()
 
-    # ── carga de polos (min/max por dimension) ─────────────────────────────
+    # ── pole loading (min/max per dimension) ───────────────────────────────
     def _load_poles(self):
         try:
             master = json.loads(
@@ -123,7 +123,7 @@ class SteeringUI(tk.Tk):
 
     # ── layout ─────────────────────────────────────────────────────────────
     def _build(self):
-        # IZQUIERDA: filtro + lista de sliders con scroll
+        # LEFT: filter + scrollable list of sliders
         left = tk.Frame(self, bg=BG_PANEL)
         left.pack(side="left", fill="y", padx=6, pady=6)
 
@@ -154,7 +154,7 @@ class SteeringUI(tk.Tk):
             row.pack(fill="x", pady=1)
             self.rows.append(row)
 
-        # DERECHA: texto, alpha, generar, salidas
+        # RIGHT: text, alpha, generate, outputs
         right = tk.Frame(self, bg=BG)
         right.pack(side="left", fill="both", expand=True, padx=6, pady=6)
 
@@ -203,9 +203,9 @@ class SteeringUI(tk.Tk):
         t.pack(fill="both", expand=True)
         return t
 
-    # ── interaccion ────────────────────────────────────────────────────────
+    # ── interaction ────────────────────────────────────────────────────────
     def _mark_dirty(self):
-        pass  # gancho por si luego quieres autogenerar al mover
+        pass  # hook in case you later want to auto-generate on move
 
     def _apply_filter(self):
         q = self.filter_var.get().lower().strip()
@@ -231,7 +231,7 @@ class SteeringUI(tk.Tk):
         for i, row in enumerate(self.rows):
             row.set(float(prof[i]))
 
-    # ── carga del motor en hilo ───────────────────────────────────────────
+    # ── engine loading in a thread ────────────────────────────────────────
     def _load_engine_async(self):
         def work():
             llm = SteeredLlama()
@@ -243,7 +243,7 @@ class SteeringUI(tk.Tk):
         self.gen_btn.config(state="normal")
         self.status.config(text=f"✅ listo — capas {llm.layers}", fg=ACCENT2)
 
-    # ── generacion en hilo ─────────────────────────────────────────────────
+    # ── generation in a thread ─────────────────────────────────────────────
     def generate(self):
         if self.llm is None:
             return
@@ -273,7 +273,7 @@ class SteeringUI(tk.Tk):
         self.gen_btn.config(state="normal")
         self.status.config(text="✅ listo", fg=ACCENT2)
 
-    # ── copiar captura al portapapeles ─────────────────────────────────────
+    # ── copy capture to the clipboard ──────────────────────────────────────
     def copy_capture(self):
         if not self._last:
             self.status.config(text="genera algo primero", fg=WARN)
@@ -297,7 +297,7 @@ class SteeringUI(tk.Tk):
 
         self.clipboard_clear()
         self.clipboard_append(report)
-        self.update()           # fija el portapapeles aunque se cierre la app
+        self.update()           # pins the clipboard even if the app is closed
         self.status.config(text=f"📋 copiado ({len(mod)} dims) — pégamelo", fg=ACCENT2)
 
 

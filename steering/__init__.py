@@ -1,1 +1,1 @@
-"""Motor de activation steering: tus 104 dims pilotando el residual stream de Llama."""
+"""Activation steering engine: your 104 dims piloting Llama's residual stream."""

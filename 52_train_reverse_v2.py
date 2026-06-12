@@ -6,68 +6,68 @@ from torch.utils.data import DataLoader, TensorDataset
 import os
 
 # ==========================================
-# CONFIGURACIÓN
+# CONFIGURATION
 # ==========================================
 EPOCHS = 1500
 BATCH_SIZE = 64
 LEARNING_RATE = 0.0005 
-SAVE_PATH = "reverse_translator.pth" # Sobrescribirá el modelo antiguo
+SAVE_PATH = "reverse_translator.pth" # Will overwrite the old model
 
-# Archivos de datos (Inputs y Targets invertidos respecto al traductor normal)
-HUMAN_DATA = "dataset_Y_human.npy"      # INPUT (Lo que entra a la red)
-EMBEDDING_DATA = "dataset_X_embeddings.npy" # TARGET (Lo que la red debe imaginar)
+# Data files (Inputs and Targets inverted with respect to the normal translator)
+HUMAN_DATA = "dataset_Y_human.npy"      # INPUT (What enters the network)
+EMBEDDING_DATA = "dataset_X_embeddings.npy" # TARGET (What the network must imagine)
 
 # ==========================================
-# ARQUITECTURA MEJORADA (V2 - DEEP)
+# IMPROVED ARCHITECTURE (V2 - DEEP)
 # ==========================================
 class HumanToEmbedding(nn.Module):
     def __init__(self, input_dim, output_dim):
         super().__init__()
         
-        # Arquitectura "Deep Decoder"
-        # Objetivo: Descomprimir conceptos abstractos (pocas dims) a vectores densos (muchas dims)
+        # "Deep Decoder" architecture
+        # Goal: Decompress abstract concepts (few dims) into dense vectors (many dims)
         self.net = nn.Sequential(
-            # Capa 1: Expansión inicial
+            # Layer 1: Initial expansion
             nn.Linear(input_dim, 256),
             nn.BatchNorm1d(256),
-            nn.LeakyReLU(0.2), # LeakyReLU evita la muerte neuronal en redes generativas
+            nn.LeakyReLU(0.2), # LeakyReLU avoids neuron death in generative networks
             nn.Dropout(0.1),
-            
-            # Capa 2: Procesamiento intermedio
+
+            # Layer 2: Intermediate processing
             nn.Linear(256, 512),
             nn.BatchNorm1d(512),
             nn.LeakyReLU(0.2),
             nn.Dropout(0.1),
-            
-            # Capa 3: "Alta Resolución" (Oversampling)
-            # Expandimos a 1024 para capturar matices sutiles antes de comprimir
+
+            # Layer 3: "High Resolution" (Oversampling)
+            # We expand to 1024 to capture subtle nuances before compressing
             nn.Linear(512, 1024),
             nn.BatchNorm1d(1024),
             nn.LeakyReLU(0.2),
-            
-            # Capa de Salida: Compresión final al espacio de embeddings
+
+            # Output Layer: Final compression into the embedding space
             nn.Linear(1024, output_dim),
-            nn.Tanh() # Salida entre -1 y 1 (Crucial para embeddings normalizados por coseno)
+            nn.Tanh() # Output between -1 and 1 (Crucial for cosine-normalized embeddings)
         )
 
     def forward(self, x):
         return self.net(x)
 
 # ==========================================
-# ENTRENAMIENTO
+# TRAINING
 # ==========================================
 def main():
     print("🔥 INICIANDO ENTRENAMIENTO DEL SINTETIZADOR (V2 DEEP)...")
     
-    # 1. Cargar Datos
+    # 1. Load Data
     if not os.path.exists(HUMAN_DATA) or not os.path.exists(EMBEDDING_DATA):
-        print("❌ Error: Faltan los archivos .npy (Ejecuta primero generate_training_data.py)")
+        print("❌ Error: Faltan los archivos .npy (Ejecuta primero 40_build_training_data.py)")
         return
 
     X_human = np.load(HUMAN_DATA)       # (N, 104) ~ Inputs
     Y_embed = np.load(EMBEDDING_DATA)   # (N, 384) ~ Targets
 
-    # Convertir a Tensores
+    # Convert to Tensors
     tensor_x = torch.FloatTensor(X_human)
     tensor_y = torch.FloatTensor(Y_embed)
 
@@ -80,25 +80,25 @@ def main():
     train_loader = DataLoader(train_ds, batch_size=BATCH_SIZE, shuffle=True)
     test_loader = DataLoader(test_ds, batch_size=BATCH_SIZE)
 
-    # 2. Inicializar Red
+    # 2. Initialize Network
     input_dim = X_human.shape[1]
     output_dim = Y_embed.shape[1]
-    
-    # Detectar dispositivo (GPU si es posible)
+
+    # Detect device (GPU if possible)
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     print(f"   ⚙️  Dispositivo: {device}")
     
     model = HumanToEmbedding(input_dim, output_dim).to(device)
     
-    # ⚠️ CAMBIO CRÍTICO: Usamos CosineEmbeddingLoss
-    # Esto optimiza el ÁNGULO entre vectores, no la distancia euclidiana exacta.
-    # Es mucho mejor para espacios semánticos (significado).
+    # ⚠️ CRITICAL CHANGE: We use CosineEmbeddingLoss
+    # This optimizes the ANGLE between vectors, not the exact Euclidean distance.
+    # It is much better for semantic spaces (meaning).
     criterion = nn.CosineEmbeddingLoss()
     optimizer = optim.AdamW(model.parameters(), lr=LEARNING_RATE, weight_decay=1e-5)
 
     print(f"   🧠 Arquitectura: {input_dim} (Humano) -> [256 -> 512 -> 1024] -> {output_dim} (Embedding)")
     
-    # 3. Bucle de Entrenamiento
+    # 3. Training Loop
     for epoch in range(EPOCHS):
         model.train()
         train_loss = 0.0
@@ -109,7 +109,7 @@ def main():
             optimizer.zero_grad()
             prediction = model(batch_x)
             
-            # Target para CosineLoss: 1 significa "queremos que sean iguales"
+            # Target for CosineLoss: 1 means "we want them to be equal"
             target_ones = torch.ones(batch_x.shape[0]).to(device)
             
             loss = criterion(prediction, batch_y, target_ones)
@@ -118,7 +118,7 @@ def main():
             
             train_loss += loss.item()
             
-        # Validación
+        # Validation
         model.eval()
         val_loss = 0.0
         with torch.no_grad():
@@ -135,15 +135,15 @@ def main():
         if (epoch + 1) % 100 == 0:
             print(f"   Época {epoch+1}/{EPOCHS} | Train Loss: {avg_train:.6f} | Val Loss: {avg_val:.6f}")
 
-    # 4. Guardar
+    # 4. Save
     torch.save(model.state_dict(), SAVE_PATH)
     print(f"✅ Modelo V2 guardado en: {SAVE_PATH}")
     
-    # 5. Prueba rápida de cordura
+    # 5. Quick sanity test
     print("\n--- TEST DE CORDURA (Similitud Coseno) ---")
     model.eval()
     
-    # Tomamos un ejemplo del test set
+    # We take an example from the test set
     idx = 0
     sample_in = tensor_x[split_idx + idx].unsqueeze(0).to(device)
     sample_target = tensor_y[split_idx + idx].cpu().numpy()
@@ -151,7 +151,7 @@ def main():
     with torch.no_grad():
         sample_pred = model(sample_in).cpu().numpy()[0]
     
-    # Calcular similitud coseno manual
+    # Compute cosine similarity manually
     dot = np.dot(sample_pred, sample_target)
     norm_a = np.linalg.norm(sample_pred)
     norm_b = np.linalg.norm(sample_target)

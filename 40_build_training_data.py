@@ -5,14 +5,14 @@ from sentence_transformers import SentenceTransformer
 from tqdm import tqdm
 import os
 
-# CONFIGURACIÓN
+# CONFIGURATION
 INPUT_FILE = "humanized_embeddings_dataset.json"
-DATA_X_FILE = "dataset_X_embeddings.npy" # Entrada (Lo que "lee" la máquina)
-DATA_Y_FILE = "dataset_Y_human.npy"      # Salida (Lo que "entiende" el humano)
-METADATA_FILE = "dataset_metadata.json"  # Para saber qué fila es qué palabra
+DATA_X_FILE = "dataset_X_embeddings.npy" # Input (What the machine "reads")
+DATA_Y_FILE = "dataset_Y_human.npy"      # Output (What the human "understands")
+METADATA_FILE = "dataset_metadata.json"  # To know which row is which word
 
-# Modelo de Embeddings Ligero y Potente (Estándar de HuggingFace)
-EMBEDDING_MODEL = "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2" # Genera vectores de 384 dimensiones
+# Lightweight and Powerful Embedding Model (HuggingFace standard)
+EMBEDDING_MODEL = "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2" # Generates 384-dimensional vectors
 
 def main():
     print("🚀 Cargando datos y modelo...")
@@ -24,33 +24,33 @@ def main():
     with open(INPUT_FILE, "r", encoding="utf-8") as f:
         data = json.load(f)
 
-    # 1. Preparar listas
+    # 1. Prepare lists
     concepts = list(data.keys())
-    # Ordenamos las dimensiones por ID para asegurar consistencia siempre (d000, d001...)
+    # We sort the dimensions by ID to always ensure consistency (d000, d001...)
     first_key = concepts[0]
     dim_names = sorted(data[first_key].keys())
     
     print(f"📦 Conceptos: {len(concepts)} | Dimensiones Objetivo: {len(dim_names)}")
     
-    # 2. Generar Embeddings Estándar (X)
+    # 2. Generate Standard Embeddings (X)
     print("🧠 Generando embeddings de origen (Sentence-Transformers)...")
     model = SentenceTransformer(EMBEDDING_MODEL)
     
-    # Encodeamos todas las palabras a la vez (Batch)
+    # We encode all words at once (Batch)
     embeddings_X = model.encode(concepts, show_progress_bar=True)
     
-    # 3. Generar Matriz de Destino (Y)
+    # 3. Generate Target Matrix (Y)
     print("🎯 Construyendo matriz de dimensiones humanizadas...")
     human_vectors_Y = []
     
     for concept in tqdm(concepts):
-        # Extraemos los valores en el orden correcto de dim_names
+        # We extract the values in the correct order of dim_names
         vec = [data[concept][d] for d in dim_names]
         human_vectors_Y.append(vec)
         
     human_vectors_Y = np.array(human_vectors_Y, dtype=np.float32)
 
-    # 4. Guardar todo
+    # 4. Save everything
     print("💾 Guardando datasets procesados...")
     np.save(DATA_X_FILE, embeddings_X)
     np.save(DATA_Y_FILE, human_vectors_Y)

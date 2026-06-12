@@ -1,14 +1,14 @@
 """
-blind_test.py — Mata el sesgo de confirmacion. Test CIEGO de steering.
+blind_test.py — Kills confirmation bias. BLIND steering test.
 
-Elige dims AL AZAR (o las que indiques), las inyecta aisladas sin decirte
-cual es cual, te enseña los textos etiquetados A/B/C/... y la lista de
-nombres de dimension implicados. Tu emparejas letra->dimension. Al pulsar
-Enter, revela la respuesta y tu puntuacion.
+Picks dims AT RANDOM (or the ones you specify), injects them isolated without
+telling you which is which, shows you the texts labeled A/B/C/... and the list
+of dimension names involved. You pair letter->dimension. On pressing
+Enter, it reveals the answer and your score.
 
-Si aciertas por encima del azar, el efecto es real y no pareidolia.
+If you score above chance, the effect is real and not pareidolia.
 
-  python -m steering.blind_test                       # 4 dims al azar, alpha 0.15
+  python -m steering.blind_test                       # 4 random dims, alpha 0.15
   python -m steering.blind_test --k 5 --alpha 0.15
   python -m steering.blind_test --dims 4 23 41 --seed 7
   python -m steering.blind_test --phrase "describe una habitacion"
@@ -46,7 +46,7 @@ def main():
     llm.alpha = args.alpha
     print(f"✅ Listo. capas={llm.layers} | alpha={args.alpha} | frase=«{args.phrase}»\n")
 
-    # genera un texto por dim (aislada)
+    # generates one text per dim (isolated)
     items = []
     for di in dims:
         prof = np.full(n_dims, 0.5, np.float32)
@@ -56,7 +56,7 @@ def main():
         items.append((di, txt))
     llm.clear()
 
-    # baraja el orden de presentacion (A, B, C...)
+    # shuffles the presentation order (A, B, C...)
     random.shuffle(items)
     letters = [chr(ord("A") + i) for i in range(len(items))]
 
@@ -66,7 +66,7 @@ def main():
     for L, (_, txt) in zip(letters, items):
         print(f"\n[{L}] {'-'*52}\n{txt}")
 
-    # candidatos: nombres ORDENADOS alfabeticamente (el orden no delata nada)
+    # candidates: names SORTED alphabetically (the order gives nothing away)
     candidatos = sorted(dim_names[di] for di, _ in items)
     print(f"\n{'='*60}\n  DIMENSIONES IMPLICADAS (desordenadas respecto a A/B/C):")
     for name in candidatos:

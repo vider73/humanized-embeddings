@@ -1,77 +1,77 @@
 """
-config.py — Parametros del motor de steering semantico.
-Un unico sitio para tocar rutas, capa objetivo y fuerza de inyeccion.
+config.py — Parameters of the semantic steering engine.
+A single place to tweak paths, target layer and injection strength.
 """
 from pathlib import Path
 
-# --- Raices ----------------------------------------------------------------
+# --- Roots -----------------------------------------------------------------
 ROOT = Path(__file__).resolve().parent.parent          # .../embtoconcept
-VEC_DIR = Path(__file__).resolve().parent / "vectors"  # salida de control vectors
+VEC_DIR = Path(__file__).resolve().parent / "vectors"  # control vectors output
 VEC_DIR.mkdir(exist_ok=True)
 
-# --- Artefactos del humanizador (ya existentes) ----------------------------
+# --- Humanizer artifacts (already existing) ---------------------------------
 TRANSLATOR_PATH = ROOT / "semantic_translator.pth"     # MiniLM(384) -> 104 dims
 METADATA_FILE   = ROOT / "dataset_metadata.json"       # concepts + dimension_names
-DATA_Y_FILE     = ROOT / "dataset_Y_human.npy"         # (N, 104) valores por concepto
+DATA_Y_FILE     = ROOT / "dataset_Y_human.npy"         # (N, 104) values per concept
 
 EMBEDDING_MODEL = "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
 
-# --- LLM objetivo (HuggingFace, corre en tu 4090) --------------------------
-# meta-llama esta "gated": acepta la licencia en HF y haz `huggingface-cli login`,
-# o usa un mirror abierto: "NousResearch/Meta-Llama-3.1-8B-Instruct"
+# --- Target LLM (HuggingFace, runs on your 4090) ---------------------------
+# meta-llama is "gated": accept the license on HF and do `huggingface-cli login`,
+# or use an open mirror: "NousResearch/Meta-Llama-3.1-8B-Instruct"
 LLM_NAME   = "meta-llama/Meta-Llama-3.1-8B-Instruct"
-LOAD_4BIT  = True          # 4-bit cabe sobrado en 24GB; pon False para fp16
-# hidden_size y nº de capas se leen del modelo en runtime (no hardcodear).
-# Estos valores son solo de referencia para Llama-3.1-8B:
+LOAD_4BIT  = True          # 4-bit fits comfortably in 24GB; set False for fp16
+# hidden_size and number of layers are read from the model at runtime (don't hardcode).
+# These values are for reference only, for Llama-3.1-8B:
 HIDDEN_DIM = 4096
 N_LAYERS   = 32
 
-# Modelo diminuto y ABIERTO para el smoke test de los hooks (rapido, hasta en CPU).
-SMOKE_LLM_NAME = "HuggingFaceTB/SmolLM2-135M-Instruct"  # arquitectura Llama
+# Tiny, OPEN model for the hooks smoke test (fast, even on CPU).
+SMOKE_LLM_NAME = "HuggingFaceTB/SmolLM2-135M-Instruct"  # Llama architecture
 
-# --- Donde y cuanto inyectar ----------------------------------------------
-# Capas para las que se DERIVAN control vectors (derive_vectors.py).
-# Deriva una banda amplia una vez; luego eliges en cuales inyectar.
-TARGET_LAYERS = tuple(range(12, 20))   # capas 12..19 (las que ya derivaste)
+# --- Where and how much to inject -------------------------------------------
+# Layers for which control vectors are DERIVED (derive_vectors.py).
+# Derive a wide band once; then choose which ones to inject into.
+TARGET_LAYERS = tuple(range(12, 20))   # layers 12..19 (the ones you already derived)
 
-# Capas en las que REALMENTE se inyecta (subconjunto de las derivadas).
-# No requiere re-derivar. VALIDADO 2026-06-11: UNA capa con clamp aguanta
-# alpha ~0.35 donde tres capas componian distorsion y rompian a ~0.25.
+# Layers where injection ACTUALLY happens (subset of the derived ones).
+# No re-derivation needed. VALIDATED 2026-06-11: ONE layer with clamp holds up to
+# alpha ~0.35 where three layers compounded distortion and broke at ~0.25.
 INJECT_LAYERS = (15,)
-# ALPHA ahora es una FRACCION de la norma del residual en cada posicion:
-#   0.1  -> empujar ~10% de la magnitud local en la direccion del perfil.
-# Asi el empuje NO depende de la frase ni de cuantas dims se activen.
-# Arranca en ~0.1 y sube; sobre ~0.6 suele empezar a delirar.
+# ALPHA is now a FRACTION of the residual norm at each position:
+#   0.1  -> push ~10% of the local magnitude in the profile's direction.
+# This way the push does NOT depend on the sentence nor on how many dims activate.
+# Start around ~0.1 and go up; above ~0.6 it usually starts raving.
 ALPHA = 0.12
 
-# Modo de inyeccion:
-#  "add"   = clasico: h += alpha*|h|*v en cada posicion (empuje ciego, fijo).
-#  "clamp" = controlador P sobre la proyeccion: h += KP*(alpha*|h| - h.v)*v.
-#            Empuja solo lo que FALTA para que h.v alcance el setpoint
-#            (alpha*|h|). Donde el modelo ya obedece, no anade — ahi es donde
-#            el modo add rompia la gramatica. Con KP=1 fija la proyeccion
-#            exacta (estilo Golden Gate Claude); KP<1 suaviza.
-STEER_MODE = "clamp"   # validado: techo de alpha ~2x respecto a "add"
+# Injection mode:
+#  "add"   = classic: h += alpha*|h|*v at each position (blind, fixed push).
+#  "clamp" = P controller on the projection: h += KP*(alpha*|h| - h.v)*v.
+#            Pushes only what is MISSING for h.v to reach the setpoint
+#            (alpha*|h|). Where the model already complies, it adds nothing — that's
+#            where add mode was breaking the grammar. With KP=1 it pins the exact
+#            projection (Golden Gate Claude style); KP<1 softens it.
+STEER_MODE = "clamp"   # validated: alpha ceiling ~2x compared to "add"
 KP = 1.0
 
-# --- Derivacion de control vectors ----------------------------------------
-# "concepts" = diferencia de medias de conceptos alto/bajo de la tabla (v1/v2,
-#              confundido: arrastra correlaciones globales de la tabla).
-# "caa"      = Contrastive Activation Addition: contraste PURO entre los dos
-#              polos (min/max) de cada dimension. El contraste no comparte nada
-#              salvo el eje buscado -> direcciones nitidas y fuertes.
+# --- Control vector derivation ----------------------------------------------
+# "concepts" = difference of means of high/low concepts from the table (v1/v2,
+#              confounded: drags in the table's global correlations).
+# "caa"      = Contrastive Activation Addition: PURE contrast between the two
+#              poles (min/max) of each dimension. The contrast shares nothing
+#              except the sought axis -> sharp, strong directions.
 DERIVE_MODE  = "caa"
-K_CONTRAST   = 60          # (modo concepts) nº de conceptos por polo
-POOLING      = "mean"      # "mean" sobre tokens, o "last"
-# (modo concepts) plantillas para envolver el concepto.
+K_CONTRAST   = 60          # (concepts mode) number of concepts per pole
+POOLING      = "mean"      # "mean" over tokens, or "last"
+# (concepts mode) templates to wrap the concept in.
 TEMPLATES = (
     "{c}",
     "Esto trata sobre {c}.",
     "La idea de {c}.",
 )
-# (modo caa) moldes que encajan la DESCRIPCION del polo. Se usan como FALLBACK
-# si no hay estimulos generados. Moldes cortos => direccion lexica (rompe el
-# idioma antes de evocar). Por eso preferimos estimulos ricos (ver abajo).
+# (caa mode) molds that the pole's DESCRIPTION slots into. Used as FALLBACK
+# when there are no generated stimuli. Short molds => lexical direction (breaks
+# the language before evoking). That's why we prefer rich stimuli (see below).
 CAA_TEMPLATES = (
     "{p}",
     "Esto es {p}.",
@@ -82,22 +82,22 @@ CAA_TEMPLATES = (
     "Una escena de {p}.",
     "La idea central es {p}.",
 )
-# (modo caa, recomendado) frases ricas y variadas por polo. Si el fichero
-# existe, se usan en vez de los moldes -> direccion SEMANTICA, no lexica.
-# Generalo con:  python -m steering.generate_stimuli   (luego editable a mano).
-K_STIM       = 24          # frases por polo
+# (caa mode, recommended) rich, varied sentences per pole. If the file
+# exists, they are used instead of the molds -> SEMANTIC direction, not lexical.
+# Generate it with:  python -m steering.generate_stimuli   (then hand-editable).
+K_STIM       = 24          # sentences per pole
 STIMULI_FILE = VEC_DIR / "caa_stimuli.json"
 
-# --- BLANQUEO (el arreglo del colapso de rango) ---------------------------
-# Las activaciones de Llama estan dominadas por unas pocas coordenadas
-# "outlier" (massive activations) que aplastan la diferencia de medias a un
-# unico eje. Z-score por coordenada (dividir por la std de referencia) las
-# neutraliza y deja respirar la senal semantica de cada dimension.
+# --- WHITENING (the rank-collapse fix) --------------------------------------
+# Llama's activations are dominated by a few "outlier" coordinates
+# (massive activations) that crush the difference of means down to a
+# single axis. Per-coordinate z-score (dividing by the reference std)
+# neutralizes them and lets each dimension's semantic signal breathe.
 WHITEN = True
-N_REF  = 800               # conceptos de referencia para estimar la std por capa
+N_REF  = 800               # reference concepts to estimate the per-layer std
 
-# Fichero donde se guarda la matriz de control vectors derivada.
-# shape final: (n_target_layers, 104, HIDDEN_DIM)
+# File where the derived control vector matrix is stored.
+# final shape: (n_target_layers, 104, HIDDEN_DIM)
 _MODE = "_caa" if DERIVE_MODE == "caa" else ""
 _SUF  = "_white" if WHITEN else ""
 CONTROL_VECTORS_FILE = VEC_DIR / f"control_vectors{_MODE}{_SUF}.npy"

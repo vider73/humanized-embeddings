@@ -1,22 +1,22 @@
 """
-02_build_table.py
+70_build_table.py
 ═════════════════
-Procesa el corpus en batch y construye la tabla de embeddings humanizados.
+Processes the corpus in batch and builds the humanized embeddings table.
 
-  corpus_final.txt  ──► sentence-transformer ──► SemanticTranslator ──► tabla [N × 104]
+  corpus_final.txt  ──► sentence-transformer ──► SemanticTranslator ──► table [N × 104]
 
-Estrategia de almacenamiento:
-  - numpy memmap  (tabla_embeddings.npy)  — acceso rápido sin cargar todo en RAM
-  - JSON          (tabla_words.json)      — lista de términos (índice ↔ posición)
-  - numpy         (tabla_stats.npy)       — media y std por dimensión (para normalizar)
+Storage strategy:
+  - numpy memmap  (tabla_embeddings.npy)  — fast access without loading everything into RAM
+  - JSON          (tabla_words.json)      — list of terms (index ↔ position)
+  - numpy         (tabla_stats.npy)       — mean and std per dimension (for normalization)
 
-Tolerante a interrupciones: guarda checkpoints cada CHECKPOINT_EVERY lotes
-y reanuda desde donde se quedó si se vuelve a ejecutar.
+Interruption-tolerant: saves checkpoints every CHECKPOINT_EVERY batches
+and resumes from where it left off if run again.
 
-Uso:
-  python 02_build_table.py
-  python 02_build_table.py --batch 512 --workers 4
-  python 02_build_table.py --resume          # reanudar desde checkpoint
+Usage:
+  python 70_build_table.py
+  python 70_build_table.py --batch 512 --workers 4
+  python 70_build_table.py --resume          # resume from checkpoint
 """
 
 import os
@@ -29,7 +29,7 @@ import torch.nn as nn
 from pathlib import Path
 
 # ──────────────────────────────────────────────────────────────────────────────
-# CONFIGURACIÓN (misma que la GUI)
+# CONFIGURATION (same as the GUI)
 # ──────────────────────────────────────────────────────────────────────────────
 EMBEDDING_MODEL_NAME = "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
 TRANSLATOR_PATH      = "semantic_translator.pth"
@@ -44,13 +44,13 @@ CHECKPOINT_FILE = TABLE_DIR / "checkpoint.json"
 
 BATCH_SIZE       = 256
 NUM_WORKERS      = 2
-CHECKPOINT_EVERY = 500    # guardar checkpoint cada N lotes
+CHECKPOINT_EVERY = 500    # save checkpoint every N batches
 DEVICE           = "cuda" if torch.cuda.is_available() else "cpu"
 DEVICE           = "cpu"
 
 
 # ──────────────────────────────────────────────────────────────────────────────
-# ARQUITECTURA (idéntica al proyecto original)
+# ARCHITECTURE (identical to the original project)
 # ──────────────────────────────────────────────────────────────────────────────
 class SemanticTranslator(nn.Module):
     def __init__(self, input_dim, output_dim):
@@ -65,7 +65,7 @@ class SemanticTranslator(nn.Module):
 
 
 # ──────────────────────────────────────────────────────────────────────────────
-# CARGA DEL MODELO
+# MODEL LOADING
 # ──────────────────────────────────────────────────────────────────────────────
 def load_models():
     from sentence_transformers import SentenceTransformer
@@ -104,19 +104,19 @@ def save_checkpoint(processed: int, total: int):
 
 
 # ──────────────────────────────────────────────────────────────────────────────
-# PROCESO PRINCIPAL
+# MAIN PROCESS
 # ──────────────────────────────────────────────────────────────────────────────
 def build_table(batch_size: int, num_workers: int, resume: bool):
     TABLE_DIR.mkdir(exist_ok=True)
 
-    # Cargar corpus
+    # Load corpus
     print(f"\n📄 Leyendo corpus: {CORPUS_FILE}")
     with open(CORPUS_FILE, "r", encoding="utf-8") as f:
         words = [line.strip() for line in f if line.strip()]
     N = len(words)
     print(f"   {N:,} entradas")
 
-    # Cargar modelos
+    # Load models
     embedder, translator, input_dim, human_dim, dim_names = load_models()
 
     # ── Checkpoint / resume ────────────────────────────────────────────────
@@ -126,19 +126,19 @@ def build_table(batch_size: int, num_workers: int, resume: bool):
     if start_idx > 0:
         print(f"🔄 Reanudando desde índice {start_idx:,} / {N:,}")
 
-    # ── Inicializar / abrir memmap ─────────────────────────────────────────
+    # ── Initialize / open memmap ───────────────────────────────────────────
     mode = "r+" if (TABLE_EMB_FILE.exists() and resume and start_idx > 0) else "w+"
     emb_table = np.memmap(TABLE_EMB_FILE, dtype="float32", mode=mode,
                           shape=(N, human_dim))
 
-    # Palabras ya procesadas (si resume)
+    # Words already processed (if resuming)
     if resume and start_idx > 0 and TABLE_WORDS_FILE.exists():
         with open(TABLE_WORDS_FILE, "r", encoding="utf-8") as f:
             saved_words = json.load(f)
     else:
         saved_words = []
 
-    # ── Bucle por lotes ────────────────────────────────────────────────────
+    # ── Batch loop ─────────────────────────────────────────────────────────
     total_batches = (N - start_idx + batch_size - 1) // batch_size
     t0 = time.time()
     processed = start_idx
@@ -159,15 +159,15 @@ def build_table(batch_size: int, num_workers: int, resume: bool):
                 device=DEVICE,
             )
 
-            # 2. Traducción a espacio humanizado
+            # 2. Translation to humanized space
             human_embs = translator(raw_embs.to(DEVICE)).cpu().numpy()
 
-        # 3. Escribir en memmap
+        # 3. Write to memmap
         emb_table[batch_start:batch_end] = human_embs
         saved_words.extend(batch_words)
         processed = batch_end
 
-        # ── Progreso ──────────────────────────────────────────────────────
+        # ── Progress ──────────────────────────────────────────────────────
         elapsed   = time.time() - t0
         speed     = (processed - start_idx) / elapsed if elapsed > 0 else 0
         remaining = (N - processed) / speed if speed > 0 else 0
@@ -181,7 +181,7 @@ def build_table(batch_size: int, num_workers: int, resume: bool):
             end="", flush=True
         )
 
-        # ── Checkpoint periódico ──────────────────────────────────────────
+        # ── Periodic checkpoint ───────────────────────────────────────────
         if (batch_num + 1) % CHECKPOINT_EVERY == 0:
             emb_table.flush()
             with open(TABLE_WORDS_FILE, "w", encoding="utf-8") as f:
@@ -189,20 +189,20 @@ def build_table(batch_size: int, num_workers: int, resume: bool):
             save_checkpoint(processed, N)
             print(f"\n  💾 Checkpoint guardado en {processed:,}")
 
-    # ── Flush final ────────────────────────────────────────────────────────
+    # ── Final flush ────────────────────────────────────────────────────────
     emb_table.flush()
     print(f"\n\n✅ Embeddings calculados para {processed:,} entradas")
 
-    # ── Guardar lista de palabras ──────────────────────────────────────────
+    # ── Save word list ─────────────────────────────────────────────────────
     with open(TABLE_WORDS_FILE, "w", encoding="utf-8") as f:
         json.dump(saved_words, f, ensure_ascii=False)
     print(f"💾 Palabras guardadas: {TABLE_WORDS_FILE}")
 
-    # ── Calcular estadísticas (media, std por dimensión) ───────────────────
+    # ── Compute statistics (mean, std per dimension) ───────────────────────
     print("📊 Calculando estadísticas de la tabla…")
     _compute_stats(emb_table, human_dim, dim_names)
 
-    # ── Limpiar checkpoint ─────────────────────────────────────────────────
+    # ── Clean up checkpoint ────────────────────────────────────────────────
     if CHECKPOINT_FILE.exists():
         CHECKPOINT_FILE.unlink()
 
@@ -211,12 +211,12 @@ def build_table(batch_size: int, num_workers: int, resume: bool):
     print(f"   Shape  : {N:,} × {human_dim}")
     print(f"   Tamaño : {size_gb:.2f} GB")
     print(f"   Tiempo : {(time.time()-t0)/60:.1f} min")
-    print(f"\n➡  Siguiente paso:  python 03_build_faiss_index.py")
+    print(f"\n➡  Siguiente paso:  python 80_build_faiss_index.py")
 
 
 def _compute_stats(emb_table, human_dim: int, dim_names: list):
-    """Calcula media y std por dimensión para normalización posterior."""
-    # Procesar en chunks para no cargar todo en RAM
+    """Computes mean and std per dimension for later normalization."""
+    # Process in chunks so as not to load everything into RAM
     CHUNK = 50_000
     N     = emb_table.shape[0]
     acc   = np.zeros(human_dim, dtype=np.float64)
@@ -260,7 +260,7 @@ def main():
 
     if not CORPUS_FILE.exists():
         print(f"❌ No se encuentra el corpus: {CORPUS_FILE}")
-        print("   Ejecuta primero: python 01_download_corpus.py")
+        print("   Ejecuta primero: python 60_download_corpus.py")
         return
 
     if not Path(TRANSLATOR_PATH).exists():
