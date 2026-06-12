@@ -71,6 +71,21 @@ python -m steering.showcase                        # full, both languages (~35 m
 python -m steering.showcase --lang es --only verbo acorde_suave
 ```
 
+**The Mixer** — closed-loop chord balancing. Strings differ wildly in
+strength (necessity z=+4.2 drowns divinity z=+0.4 at equal alpha); the mixer
+generates, lets the Humanizer judge measure each note's actual effect, and
+re-balances alphas until the chord is even. Initial gains ∝ 1/z from
+`afinacion.md`; red strings (z<1) are accepted with a loud warning:
+
+```bash
+python -m steering.mixer --demo sinfonia                  # curiosity+oneirism+love
+python -m steering.mixer --note d090_divinidad 0.95 --note d023_consciencia 0.95 \
+                         --phrase "Una habitación vacía."
+python -m steering.mixer --from-showcase amor_chord       # rebalance a gallery chord
+```
+
+It prints a ready-to-paste console preset when the chord converges.
+
 **Blind test** — kill your own confirmation bias: random dials, unlabeled
 outputs, you match letter→dimension, scored against chance:
 
@@ -184,6 +199,7 @@ Explorer commands: `priest` (neighbours) · `+ king woman - man` (arithmetic) ·
 | I want to… | Do this |
 |---|---|
 | hear one dial right now | `python -m steering.demo --dim 53 0.95` |
+| balance a multi-dial chord automatically | `python -m steering.mixer --note <dim> 0.95 --note <dim> 0.95 --phrase "..."` |
 | find a dial's best alpha | check `steering/vectors/afinacion.md`; else `python -m steering.tuner` |
 | check one suspicious dial with my own eyes | `python -m steering.fidelity --only <idx> --show-text --redo` |
 | add/replace an axis | edit `DIMENSIONS_DB` in `10_define_dimensions.py` → rerun stages 10–50 → `night_run` → `pytest` |
