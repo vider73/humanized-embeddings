@@ -7,6 +7,14 @@ tabla/
 *.gguf
 humanized_embeddings_dataset*.json
 
+# --- ...except the essentials that make a fresh clone USABLE ---
+# (translator MLPs ~1MB each, control vectors ~13MB, training pairs ~11MB)
+!semantic_translator.pth
+!reverse_translator.pth
+!dataset_X_embeddings.npy
+!dataset_Y_human.npy
+!steering/vectors/control_vectors_caa_white.npy
+
 # --- caches & runtime junk ---
 __pycache__/
 .pytest_cache/
