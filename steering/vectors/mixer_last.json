@@ -1,0 +1,91 @@
+{
+  "phrase": "Describe una mañana cualquiera.",
+  "layer": 15,
+  "target": 0.15,
+  "notes": [
+    [
+      "d053_curiosidad",
+      0.95
+    ],
+    [
+      "d095_onirismo",
+      0.95
+    ],
+    [
+      "d046_amor",
+      0.95
+    ]
+  ],
+  "final_alphas": [
+    0.45,
+    0.45,
+    0.45
+  ],
+  "history": [
+    {
+      "alphas": [
+        0.3,
+        0.3,
+        0.3
+      ],
+      "effects": [
+        0.05359166860580444,
+        -0.016953378915786743,
+        0.22646751999855042
+      ]
+    },
+    {
+      "alphas": [
+        0.45,
+        0.44999999999999996,
+        0.19870399075455958
+      ],
+      "effects": [
+        0.060035526752471924,
+        -0.00013682246208190918,
+        -0.19314374029636383
+      ]
+    },
+    {
+      "alphas": [
+        0.45,
+        0.45,
+        0.29805598613183937
+      ],
+      "effects": [
+        0.05488887429237366,
+        -0.07840412855148315,
+        -0.057007670402526855
+      ]
+    },
+    {
+      "alphas": [
+        0.45,
+        0.45,
+        0.44708397919775905
+      ],
+      "effects": [
+        0.07432824373245239,
+        -0.08699265122413635,
+        -0.0037072747945785522
+      ]
+    },
+    {
+      "alphas": [
+        0.45,
+        0.45,
+        0.45
+      ],
+      "effects": [
+        0.07432824373245239,
+        -0.08699265122413635,
+        -0.0037072747945785522
+      ]
+    }
+  ],
+  "neutral": "Una mañana cualquiera puede variar dependiendo de las circunstancias y preferencias de cada persona. Sin embargo, puedo describir una escena típica de una mañana normal.\n\nLa luz del sol comienza a filtrarse a través de las ventanas, iluminando la habitación con un suave resplandor. El aire está lleno del sonido de los pájaros cantando en los árboles fuera de la ventana. La temperatura es cálida, pero no demasiado, lo",
+  "text": "Ieveloperiente de la ciente de la ciente de la ciente de la ciente de la ciente de la ciente de la ciente de la ciente de la ciente de la ciente de la ciente de la ciente de la ciente de la ciente de la ciente de la ciente de la ciente de la ciente de la ciente de la ciente de la ciente de la ciente de la ciente de la ciente de la ciente de la ciente de la",
+  "vectors_sha": "f07909f48aefca11",
+  "mode": "clamp",
+  "generated": "2026-06-13 00:48"
+}
