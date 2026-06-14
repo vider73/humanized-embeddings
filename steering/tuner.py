@@ -22,8 +22,12 @@ from datetime import datetime
 from . import config
 from .analyze import scorecard
 
-LOG = config.VEC_DIR / f"tuner_{datetime.now():%Y%m%d_%H%M}.log"
-TUNING_MD = config.VEC_DIR / "afinacion.md"
+# Model tag (periodic-table runs): keeps a 1B/3B sweep from clobbering the
+# 8B's untagged fidelity_aXXX.json / afinacion.md. Empty when EMB_TAG unset.
+_TAG = f"_{os.environ['EMB_TAG']}" if os.environ.get("EMB_TAG") else ""
+
+LOG = config.VEC_DIR / f"tuner{_TAG}_{datetime.now():%Y%m%d_%H%M}.log"
+TUNING_MD = config.VEC_DIR / f"afinacion{_TAG}.md"
 
 
 def _log(line):
@@ -61,7 +65,7 @@ def run_step(name, module, *extra):
 
 
 def _report_path(a):
-    return config.VEC_DIR / f"fidelity_a{str(a).replace('.', '')}.json"
+    return config.VEC_DIR / f"fidelity{_TAG}_a{str(a).replace('.', '')}.json"
 
 
 def main():

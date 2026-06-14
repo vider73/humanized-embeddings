@@ -106,7 +106,10 @@ CAA_TEMPLATES = (
 # exists, they are used instead of the molds -> SEMANTIC direction, not lexical.
 # Generate it with:  python -m steering.generate_stimuli   (then hand-editable).
 K_STIM       = 24          # sentences per pole
-STIMULI_FILE = VEC_DIR / "caa_stimuli.json"
+# EMB_STIMULI overrides the stimuli file (null_control.py uses a shuffled copy
+# to test whether the method manufactures dials). Default = the real file.
+STIMULI_FILE = (Path(os.environ["EMB_STIMULI"]) if os.environ.get("EMB_STIMULI")
+                else VEC_DIR / "caa_stimuli.json")
 
 # --- WHITENING (the rank-collapse fix) --------------------------------------
 # Llama's activations are dominated by a few "outlier" coordinates

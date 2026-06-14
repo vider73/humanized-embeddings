@@ -15,6 +15,7 @@ import numpy as np
 
 from .translator import Humanizer
 from .steering_model import SteeredLlama
+from . import transcript
 
 
 def main():
@@ -96,6 +97,10 @@ def main():
                 desc = ", ".join(f"L{L}:α={al if al is not None else a}"
                                  for L, (_, al) in voices.items())
                 print(f"\n{'─'*60}\n🎹 voicing [{desc}]\n{'─'*60}\n{steered}")
+                transcript.save("sweep/voicing", q, neutral, steered,
+                                notes=transcript.notes_from_voices(
+                                    voices, hz.dim_names, fallback_alpha=a),
+                                mode=llm.mode)
         else:
             # STEERED for each alpha (all notes on self.layers)
             llm.set_profile(prof)
@@ -103,6 +108,10 @@ def main():
                 llm.alpha = a
                 steered = llm.generate(q, max_new_tokens=args.tokens, temperature=0.0)
                 print(f"\n{'─'*60}\n🔴 α={a}\n{'─'*60}\n{steered}")
+                transcript.save("sweep", q, neutral, steered,
+                                notes=transcript.notes_from_profile(
+                                    prof, hz.dim_names, llm.layers, a),
+                                mode=llm.mode)
         llm.clear()
         print()
 

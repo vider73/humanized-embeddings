@@ -16,6 +16,7 @@ from tkinter import ttk
 import numpy as np
 
 from . import config
+from . import transcript
 from .steering_model import SteeredLlama
 
 BG, BG_PANEL, BG_CARD = "#0d1117", "#161b22", "#1c2128"
@@ -226,8 +227,12 @@ class Console(tk.Tk):
             pane.delete("1.0", "end")
             pane.insert("1.0", txt)
         self._last = dict(text=text, voices=voices, neutral=neutral, steered=steered)
+        # guarda la perla automaticamente (no solo al copiar)
+        transcript.save("console", text, neutral, steered,
+                        notes=transcript.notes_from_voices(voices, self.dim_names),
+                        mode=self.llm.mode if self.llm else None)
         self.gen_btn.config(state="normal")
-        self.status.config(text="✅ listo", fg=ACCENT2)
+        self.status.config(text="✅ listo · perla guardada", fg=ACCENT2)
 
     def _copy(self):
         if not self._last:
