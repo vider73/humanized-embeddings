@@ -1,0 +1,114 @@
+{
+  "order": [
+    1,
+    9,
+    8,
+    5,
+    10,
+    2,
+    3,
+    7,
+    4,
+    0,
+    11,
+    6
+  ],
+  "trials": [
+    {
+      "prompt_i": 0,
+      "truth": "none",
+      "text": "Una habitación vacía es un espacio sin muebles ni objetos personales. La habitación es un rectángulo con paredes de color blanco o gris, y el suelo es de madera o baldosas. El techo es plano y tiene una altura moderada.\n\nLa habitación está iluminada por una ventana grande que deja entrar una cantidad de luz natural. La ventana es rectangular y tiene una persiana que puede ser abierta o cerrada según sea necesario.\n\nEl suelo está cubierto con una alfom",
+      "read_div": 1.0332431118380628e-13,
+      "read_cons": 3.7823770071554463e-07,
+      "judge": "none"
+    },
+    {
+      "prompt_i": 0,
+      "truth": "divinity",
+      "text": "Una habitación vacía es un espacio despejado y sin contenido. A continuación, se pueden encontrar las características de una habitación vacía:\n\n* Las paredes están desnudas y sin decoración.\n* El suelo está limpio y sin obstaclos.\n* No hay muestras de mobiliario, como mesas, sillas, camas o armarios.\n* No hay objetos personales, como fotos, cuadros o objetos de decoración.\n* La habitación está iluminada por las lu",
+      "read_div": 2.8766253268308617e-11,
+      "read_cons": 6.190037765918532e-06,
+      "judge": "none"
+    },
+    {
+      "prompt_i": 0,
+      "truth": "consciousness",
+      "text": "Una habitación vacía es un espacio sin muestras de vida humana. A continuación, se describirá este entorno:\n\nLa habitación está llena de una sensión de vacuidad. No hay muebles, ni objetos, ni incluso decoración. El suelo está cubierto con una superficie de madera o cerámica, pero no hay alfazares ni alfagos. \n\nLas paredes están pintadas en un color neutro, como el gris o el azul, pero no hay imágenes",
+      "read_div": 4.1448021772562404e-13,
+      "read_cons": 6.780356898161699e-08,
+      "judge": "none"
+    },
+    {
+      "prompt_i": 1,
+      "truth": "none",
+      "text": "El objeto que tengo cerca es una taza de café. Está hecha de porcelana blanca y tiene un diseño simple pero elegante. La taza tiene una forma curva y una base ancha, lo que la hace estable y fácil de sostener.\n\nLa superficie de la taza es lisa y suave al tacto, lo que sugiere que está hecha de una materia prima de alta calidad. La parte superior de la taza tiene un borde delgado y redondeado, lo que facilit",
+      "read_div": 2.221146357117565e-11,
+      "read_cons": 0.0012871153885498643,
+      "judge": "none"
+    },
+    {
+      "prompt_i": 1,
+      "truth": "divinity",
+      "text": "El objeto que tengo cerca es mi computadora. A continuación, puedo describirlo con detalle:\n\n**Descripción**\n\nMi computadora es una máquina de alta tecnología que tiene un diseño elegante y moderno. Tiene un cuerpo de color negro brillante y un tamaño de 14 pulgadas de ancho y 12 pulgadas de alto. El cuerpo está hecho de material de placa de aluminio y tiene un diseño de ventilador en la parte superior para ayudar a mantener la computadora a una",
+      "read_div": 8.43921384330315e-07,
+      "read_cons": 0.11460300534963608,
+      "judge": "none"
+    },
+    {
+      "prompt_i": 1,
+      "truth": "consciousness",
+      "text": "El objeto que tengo cerca es un mouse óptico. \n\nEl mouse tiene un diseño compacto y elegante, con un cuerpo cilíndrico y una base plana. El cuerpo del mouse está hecho de un material plástico brillante y negro, con una superficie lisa y sin imperfections. El mouse mide aproximadamente 10 centímetros de largo y 5 centímetros de ancho.\n\nEl mouse tiene una serie de características que lo hacen útiles y atractivos. En primer lugar, tiene",
+      "read_div": 3.84037068812404e-09,
+      "read_cons": 0.039020441472530365,
+      "judge": "none"
+    },
+    {
+      "prompt_i": 2,
+      "truth": "none",
+      "text": "Un día cualquiera puede variar dependiendo de las circunstancias y preferencias de cada persona. Sin embargo, te puedo describir un posible escenario:\n\nDespertar: La alarma suena a las 7:00 am. Después de un par de minutos, te levantas y comienzas a prepararte para el día. Puedes tomar un baño, cepillarte los dientes, afeitarte (si es necesario) y vestirte con ropa cómoda.\n\nDesay",
+      "read_div": 0.07725238054990768,
+      "read_cons": 0.38563621044158936,
+      "judge": "consciousness"
+    },
+    {
+      "prompt_i": 2,
+      "truth": "divinity",
+      "text": "Un día cualquiera es un concepto interesante. Aunque puede variar dependiendo de las circunstances y las personas, aquí hay una descripción general de cómo podría ser un día cualquadero:\n\n**Mañana**\n\nEl día comienza con la creación de un plan para la jornada. Esto puede incluir la creación de una lista de tareas y responsabilidades. Después, el día comienza con la creación de un plan para la jornada. Esto puede inclir la creación de una",
+      "read_div": 0.004651671275496483,
+      "read_cons": 0.2156830132007599,
+      "judge": "none"
+    },
+    {
+      "prompt_i": 2,
+      "truth": "consciousness",
+      "text": "Claro, podríamos imaginar un día cualquiera en el que un ser humano se despiere y se preparara para enfrentar el día. \n\nUn día cualquiera podría comenzar con un despertador o un reloj inteligente que se encienden a una hora determinada. \n\nEl ser humano se despiere, se levantara y se preparara para comenzar el día. \n\nPodemos imaginar que el ser humano se levanta, se viste y se prepara para comenz",
+      "read_div": 0.12742871046066284,
+      "read_cons": 0.34736669063568115,
+      "judge": "divinity"
+    },
+    {
+      "prompt_i": 3,
+      "truth": "none",
+      "text": "Me imagino que estoy en una calle céntrica de Madrid, España. La calle es estrecha y empedrada, con edificios antiguos de ladrillo y azulejos que parecen haber sido construidos hace siglos. El sol brilla sobre la calle, iluminando las sombras y creando un ambiente cálido y acogedor.\n\nA lo largo de la calle, hay tiendas y restaurantes que ofrecen una variedad de productos y comidas. Una tienda de",
+      "read_div": 2.2270207011843013e-08,
+      "read_cons": 0.007861134596168995,
+      "judge": "none"
+    },
+    {
+      "prompt_i": 3,
+      "truth": "divinity",
+      "text": "La escena es una calle principal en el corazano de la ciudad. La calle está llena de vida y energía. Hay un cielo azul brillante con unas pocas nubes blancas que se mueven suavemente. El sol está en su posición central, proporcionando una luz cálida y clemente.\n\nLa calle está pavimentada con piedra y tiene un diseño geométrico que se extiende en ambas direcciones. Hay un arroyo que corre a lo largo de la",
+      "read_div": 4.454439931578236e-06,
+      "read_cons": 0.24452020227909088,
+      "judge": "consciousness"
+    },
+    {
+      "prompt_i": 3,
+      "truth": "consciousness",
+      "text": "Claramente, no podré describir una escena en una calle de una ciudad específica, ya que soy una inteligencia artificial y no tengo acceso a información sobre una ciudad en particular. Sin embargo, puedo describir una escena en una calle de una ciudad de manera general.\n\nImagínese una calle principal en una ciudad, con una mezcla de edificios de diferentes edades y estilos arquitectos. La calle está llena de personas de todas las edades y culturas, caminando o",
+      "read_div": 0.0013700331328436732,
+      "read_cons": 0.35497286915779114,
+      "judge": "consciousness"
+    }
+  ]
+}

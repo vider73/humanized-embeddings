@@ -49,6 +49,15 @@ def _log(line):
         f.write(msg + "\n")
 
 
+def _keep_awake():
+    try:
+        import ctypes
+        ctypes.windll.kernel32.SetThreadExecutionState(0x80000001)
+        _log("☕ insomniac mode on (Windows will not sleep)")
+    except Exception:
+        pass
+
+
 def _loadj(p, tries=8):
     """Tolerant loader (network/host mounts can serve truncated reads)."""
     for _ in range(tries):
@@ -83,6 +92,26 @@ def build_shuffled(tag, seed):
     return out
 
 
+def build_random(tag, seed):
+    """Random unit-Gaussian vectors carrying NO concept at all — the harder
+    null ('does ANY push green the judge?'). Matches the real vectors' shape
+    exactly; no derive needed (CPU, instant)."""
+    V = np.load(config.VEC_DIR / "control_vectors_caa_white.npy")
+    rng = np.random.default_rng(seed)
+    R = rng.standard_normal(V.shape).astype(np.float32)
+    R /= (np.linalg.norm(R, axis=-1, keepdims=True) + 1e-12)
+    out = config.VEC_DIR / f"control_vectors_caa_white_{tag}.npy"
+    np.save(out, R)
+    meta = config.VEC_DIR / "control_meta_caa_white.json"
+    if meta.exists():
+        m = json.loads(meta.read_text(encoding="utf-8"))
+        m["derive_mode"] = "random_null"
+        (config.VEC_DIR / f"control_meta_caa_white_{tag}.json").write_text(
+            json.dumps(m, ensure_ascii=False, indent=2), encoding="utf-8")
+    _log(f"🎲 random null: {tuple(V.shape)} unit-gaussian vectors (seed={seed}) -> {out.name}")
+    return out
+
+
 def run_step(name, env_extra, module, *extra):
     _log(f"▶ {name}: python -m {module} {' '.join(extra)}")
     t0 = time.time()
@@ -111,6 +140,24 @@ def _stats(rep_path):
     mae = float(np.mean([abs(v.get("effect", 0.0)) for v in rows.values()]))
     medrank = float(np.median([v.get("rank", 0) for v in rows.values()]))
     return dict(n=n, green=green, rank0=rank0, sign=sign, mae=mae, medrank=medrank)
+
+
+def _bestof(paths):
+    """Best-of-alphas roll-up: a dim is robust if it is green (or rank-0) at
+    ANY of its sign-correct alphas — mirrors the tuner's afinacion logic."""
+    reps = [{k: v for k, v in _loadj(p).items() if not k.startswith("_")}
+            for p in paths if p.exists()]
+    if not reps:
+        return None
+    keys = set().union(*(set(r) for r in reps))
+    green = rank0 = 0
+    for k in keys:
+        ok = [r[k] for r in reps if k in r and r[k].get("sign_ok")]
+        if ok and max(x.get("z", 0) for x in ok) >= 1.5:
+            green += 1
+        if any(x.get("rank", 99) == 0 for x in ok):
+            rank0 += 1
+    return dict(n=len(keys), green=green, rank0=rank0)
 
 
 def analyze(tag, alphas):
@@ -142,36 +189,63 @@ def analyze(tag, alphas):
   The honest bar: REAL must beat NULL by a wide, obvious margin, especially on
   rank0 (the strict selectivity criterion — does the push move ITS OWN dim).""")
 
+    if len(alphas) > 1:
+        aa = [str(a).replace(".", "") for a in alphas]
+        rb = _bestof([config.VEC_DIR / f"fidelity_a{a}.json" for a in aa])
+        nb = _bestof([config.VEC_DIR / f"fidelity_{tag}_a{a}.json" for a in aa])
+        if rb and nb:
+            rg, rr, ng, nr, n = rb["green"], rb["rank0"], nb["green"], nb["rank0"], rb["n"]
+            ratio = ng / max(rg, 1)
+            verdict = ("DISCRIMINATES - not forcing it" if ratio <= 0.35
+                       else "SUSPICIOUS - null greens too high, rethink"
+                       if ratio >= 0.7 else "PARTIAL - margin exists but soft")
+            print("\n  BEST-OF-{} (a dim robust at ANY of its alphas - headline):"
+                  .format(len(alphas)))
+            print("    REAL: {:>3} robust, {:>3} rank-0   of {}".format(rg, rr, n))
+            print("    NULL: {:>3} robust, {:>3} rank-0   of {}".format(ng, nr, n))
+            print("    null/real green ratio = {:.2f}  ->  {}".format(ratio, verdict))
+
 
 def main():
     ap = argparse.ArgumentParser()
+    ap.add_argument("--mode", choices=["shuffle", "random"], default="shuffle",
+                    help="shuffle = deranged real stimuli; random = gaussian noise vectors")
     ap.add_argument("--alphas", type=float, nargs="+", default=[0.25])
     ap.add_argument("--seed", type=int, default=0)
-    ap.add_argument("--tag", default="null")
+    ap.add_argument("--tag", default=None,
+                    help="artifact tag (default: 'null' for shuffle, 'rand' for random)")
     ap.add_argument("--skip-derive", action="store_true")
     ap.add_argument("--analyze-only", action="store_true")
     args = ap.parse_args()
+    tag = args.tag or ("rand" if args.mode == "random" else "null")
 
     if args.analyze_only:
-        analyze(args.tag, args.alphas)
+        analyze(tag, args.alphas)
         return
 
-    _log(f"🧪 NULL CONTROL — tag={args.tag} seed={args.seed} alphas={args.alphas}")
-    stim_file = build_shuffled(args.tag, args.seed)
-    env = {"EMB_TAG": args.tag, "EMB_STIMULI": str(stim_file.resolve())}
-
-    vec = config.VEC_DIR / f"control_vectors_caa_white_{args.tag}.npy"
-    if args.skip_derive or vec.exists():
-        _log(f"   derive skipped ({vec.name} {'exists' if vec.exists() else 'per flag'})")
-    elif not run_step("derive[null]", env, "steering.derive_vectors"):
-        _log("   aborted (derive failed)"); return
+    _log(f"🧪 NULL CONTROL [{args.mode}] — tag={tag} seed={args.seed} alphas={args.alphas}")
+    _keep_awake()
+    vec = config.VEC_DIR / f"control_vectors_caa_white_{tag}.npy"
+    if args.mode == "random":
+        if not (args.skip_derive or vec.exists()):
+            build_random(tag, args.seed)
+        else:
+            _log(f"   random vectors reused ({vec.name})")
+        env = {"EMB_TAG": tag}
+    else:
+        stim_file = build_shuffled(tag, args.seed)
+        env = {"EMB_TAG": tag, "EMB_STIMULI": str(stim_file.resolve())}
+        if args.skip_derive or vec.exists():
+            _log(f"   derive skipped ({vec.name} {'exists' if vec.exists() else 'per flag'})")
+        elif not run_step("derive[null]", env, "steering.derive_vectors"):
+            _log("   aborted (derive failed)"); return
 
     for a in args.alphas:
-        rep = config.VEC_DIR / f"fidelity_{args.tag}_a{str(a).replace('.', '')}.json"
+        rep = config.VEC_DIR / f"fidelity_{tag}_a{str(a).replace('.', '')}.json"
         run_step(f"fidelity[null] α={a}", env, "steering.fidelity",
                  "--alpha", str(a), "--report", str(rep))
 
-    analyze(args.tag, args.alphas)
+    analyze(tag, args.alphas)
     _log(f"🏁 null control done. log: {LOG.name}")
 
 
