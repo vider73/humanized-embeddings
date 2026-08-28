@@ -21,7 +21,12 @@ VEC_DIR = Path(__file__).resolve().parent / "vectors"  # control vectors output
 VEC_DIR.mkdir(exist_ok=True)
 
 # --- Humanizer artifacts (already existing) ---------------------------------
-TRANSLATOR_PATH = ROOT / "semantic_translator.pth"     # MiniLM(384) -> 104 dims
+# EMB_TRANSLATOR overrides the judge model, e.g. semantic_translator_v2.pth
+# (the sentence-trained judge from cocina_v2) — same pluggable-env pattern
+# as EMB_LLM/EMB_TAG, so fidelity/analyze can run against judge v2 untouched.
+TRANSLATOR_PATH = (Path(os.environ["EMB_TRANSLATOR"])
+                   if os.environ.get("EMB_TRANSLATOR")
+                   else ROOT / "semantic_translator.pth")  # MiniLM(384) -> 104
 METADATA_FILE   = ROOT / "dataset_metadata.json"       # concepts + dimension_names
 DATA_Y_FILE     = ROOT / "dataset_Y_human.npy"         # (N, 104) values per concept
 

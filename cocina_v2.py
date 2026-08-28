@@ -27,6 +27,10 @@ Stages (each writes a checkpoint; a rerun skips finished stages):
   python cocina_v2.py --smoke      # tiny end-to-end (~3 min) — RUN THIS FIRST
   python cocina_v2.py              # full overnight run
   python cocina_v2.py --only 5 6   # rerun specific stages
+
+Stage 2 rebuilt 2026-08-28 (index-keyed + anchored + batched + targeted
+retries) after the June run starved at 10/1200 labels in 7h — see the
+stage-2 banner below for the specifics.
 """
 import argparse
 import json
@@ -71,7 +75,7 @@ def keep_awake():
         pass
 
 
-def llm(prompt, max_new=600, temp=0.0):
+def _ensure_pipe():
     global _PIPE
     if _PIPE is None:
         import torch
@@ -80,11 +84,49 @@ def llm(prompt, max_new=600, temp=0.0):
         _PIPE = pipeline("text-generation", model=config.LLM_NAME,
                          model_kwargs={"dtype": torch.bfloat16, "low_cpu_mem_usage": True},
                          device_map="auto")
+    return _PIPE
+
+
+def _free_pipe():
+    """Release the labeler LLM so later stages (MiniLM, 4-bit derive) fit."""
+    global _PIPE
+    if _PIPE is not None:
+        import gc
+        import torch
+        _PIPE = None
+        gc.collect()
+        torch.cuda.empty_cache()
+        log("labeler LLM released (VRAM freed)")
+
+
+def llm(prompt, max_new=600, temp=0.0):
+    pipe = _ensure_pipe()
     msgs = [{"role": "system", "content": SYS}, {"role": "user", "content": prompt}]
-    out = _PIPE(msgs, max_new_tokens=max_new, do_sample=temp > 0,
-                temperature=max(temp, 1e-5),
-                pad_token_id=_PIPE.tokenizer.eos_token_id)
+    out = pipe(msgs, max_new_tokens=max_new, do_sample=temp > 0,
+               temperature=max(temp, 1e-5),
+               pad_token_id=pipe.tokenizer.eos_token_id)
     return out[0]["generated_text"][-1]["content"]
+
+
+def llm_batch(prompts, max_new):
+    """Greedy generation for several prompts in one padded forward pass —
+    the stage-2 throughput fix (generation on one 4090 is bandwidth-bound;
+    batching multiplies aggregate tokens/s almost linearly)."""
+    pipe = _ensure_pipe()
+    tok = pipe.tokenizer
+    if tok.pad_token_id is None:
+        tok.pad_token = tok.eos_token
+    tok.padding_side = "left"                    # decoder-only: pad on the left
+    msgs = [[{"role": "system", "content": SYS}, {"role": "user", "content": p}]
+            for p in prompts]
+    outs = pipe(msgs, max_new_tokens=max_new, do_sample=False,
+                batch_size=len(msgs), pad_token_id=tok.eos_token_id)
+    res = []
+    for o in outs:
+        if isinstance(o, list):
+            o = o[0]
+        res.append(o["generated_text"][-1]["content"])
+    return res
 
 
 def load_dims():
@@ -127,44 +169,151 @@ def stage_generate(dims, k):
 
 
 # ── stage 2: label a balanced subset on all dims ─────────────────────────────
-def _parse_scores(txt, block):
-    try:
-        s, e = txt.find("{"), txt.rfind("}") + 1
-        d = json.loads(txt[s:e])
-    except Exception:
-        return {}
-    out = {}
-    for k in block:
-        key = k.split("_", 1)[-1]
-        v = d.get(key, d.get(k))
-        if isinstance(v, (int, float)):
-            out[k] = float(min(1.0, max(0.0, v)))   # hard clamp [0,1]
-    return out
+# Rebuilt 2026-08-28. The June version burned up to 6 calls x 1400 tokens per
+# sentence and DISCARDED the whole sentence when <90% of dims parsed (name-keyed
+# JSON with accents/underscores rarely matched) -> 10/1200 in 7h. Now:
+#   . index-keyed JSON (accent-proof), pole ANCHORS in the prompt (the
+#     calibrated-instrument idea from 20_score, which v2 had dropped)
+#   . batched generation (llm_batch), tight max_new (~14 tok/dim, not 40)
+#   . retries ask ONLY for the dims still missing; partial work persists in
+#     v2_label_partial.json; a sentence is rejected (v2_label_rejects.json)
+#     only after all retry rounds — nothing is silently thrown away.
+PART = ROOT / "v2_label_partial.json"
+REJ = ROOT / "v2_label_rejects.json"
+BATCH = 8
+RETRY_ROUNDS = 3
+
+
+def _short(s, n=70):
+    s = " ".join(str(s).split())
+    return s if len(s) <= n else s[:n].rsplit(" ", 1)[0] + "…"
+
+
+def _label_prompt(text, idxs, dims):
+    lines = []
+    for i in idxs:
+        name, mn, mx = dims[i]
+        lab = name.split("_", 1)[-1].replace("_", " ")
+        lines.append(f"{i}. {lab} — 0: {_short(mn)} | 1: {_short(mx)}")
+    ejemplo = '{"%d": 0.482, "%d": 0.061, …}' % (idxs[0], idxs[-1])
+    return ("Puntúa la FRASE en cada dimensión numerada, de 0.000 a 1.000 "
+            "(0 = polo mínimo, 1 = polo máximo).\n"
+            "Usa TODO el rango con tres decimales variados (0.137, 0.482, "
+            "0.815…). Los extremos 0.000/1.000 solo para polos absolutos. "
+            "Valor alto SOLO si la frase evoca claramente ese polo máximo; si "
+            "la dimensión no trata de la frase, valor bajo pero no nulo "
+            "(0.02–0.15). Puntúa cada dimensión por separado, sin repetir el "
+            "mismo número en serie.\n\n"
+            f"FRASE: «{text}»\n\nDIMENSIONES:\n" + "\n".join(lines) +
+            "\n\nResponde SOLO un objeto JSON con TODAS las claves numéricas "
+            f"mostradas, ej. {ejemplo}. Sin texto extra.")
+
+
+def _parse_indexed(txt, want):
+    """{index: score} from model output; JSON first, regex rescue after.
+    Tolerates fences, prose, comma decimals. Hard clamp [0,1]."""
+    got = {}
+    s, e = txt.find("{"), txt.rfind("}")
+    if s != -1 and e > s:
+        try:
+            for k, v in json.loads(txt[s:e + 1]).items():
+                try:
+                    ki, vf = int(str(k).strip()), float(v)
+                except (ValueError, TypeError):
+                    continue
+                if ki in want:
+                    got[ki] = min(1.0, max(0.0, vf))
+        except Exception:
+            pass
+    if len(got) < len(want):
+        for k, v in re.findall(
+                r'["\']?(\d{1,3})["\']?\s*[:=]\s*([01]?[.,]\d+|[01])\b', txt):
+            ki = int(k)
+            if ki in want and ki not in got:
+                got[ki] = min(1.0, max(0.0, float(v.replace(",", "."))))
+    return got
 
 
 def stage_label(dims, sentences, n_label, block_size):
-    names = [d[0] for d in dims]
+    global BATCH
     done = json.loads(LAB.read_text(encoding="utf-8")) if LAB.exists() else []
+    part = {k: {int(i): v for i, v in d.items()}
+            for k, d in (json.loads(PART.read_text(encoding="utf-8"))
+                         if PART.exists() else {}).items()}
     seen = {r["text"] for r in done}
     todo = [s for s in sentences if s not in seen][:max(0, n_label - len(done))]
-    blocks = [names[i:i + block_size] for i in range(0, len(names), block_size)]
-    for j, text in enumerate(todo):
-        scores = {}
-        for block in blocks:
-            labels = ", ".join(b.split("_", 1)[-1] for b in block)
-            prompt = (f"Puntúa la frase en cada dimensión de 0.000 a 1.000 "
-                      f"(usa todo el rango, decimales). Frase: «{text}». "
-                      f"Dimensiones: {labels}. Responde SOLO un objeto JSON "
-                      f"{{dimension: valor}}.")
-            for _ in range(2):
-                scores.update(_parse_scores(llm(prompt, max_new=40 * len(block)), block))
-                if all(b in scores for b in block):
-                    break
-        if len(scores) >= 0.9 * len(names):
-            done.append({"text": text, "scores": scores})
-            LAB.write_text(json.dumps(done, ensure_ascii=False, indent=2), encoding="utf-8")
-        if (j + 1) % 10 == 0:
-            log(f"  labeled {len(done)}/{n_label}")
+    # interleaved blocks: each one mixes all families (consecutive slices put
+    # 26 physics dims in front of an emotional sentence -> template-fill spam)
+    n_blocks = -(-len(dims) // block_size)
+    blocks = [list(range(b, len(dims), n_blocks)) for b in range(n_blocks)]
+    t0, ndone0 = time.time(), len(done)
+
+    def flush():
+        LAB.write_text(json.dumps(done, ensure_ascii=False, indent=2),
+                       encoding="utf-8")
+        PART.write_text(json.dumps({k: {str(i): v for i, v in d.items()}
+                                    for k, d in part.items()},
+                                   ensure_ascii=False), encoding="utf-8")
+
+    open_texts = list(todo)
+    for rnd in range(1 + RETRY_ROUNDS):
+        tasks = []
+        for text in open_texts:
+            have = part.get(text, {})
+            for blk in blocks:
+                miss = [i for i in blk if i not in have]
+                if miss:
+                    tasks.append((text, miss))
+        if not tasks:
+            break
+        if rnd:
+            log(f"  retry {rnd}: {len(tasks)} incomplete blocks")
+        i = 0
+        while i < len(tasks):
+            chunk = tasks[i:i + BATCH]
+            prompts = [_label_prompt(t, m, dims) for t, m in chunk]
+            mx = max(len(m) for _, m in chunk) * 14 + 40
+            try:
+                outs = llm_batch(prompts, mx)
+            except Exception as ex:       # only VRAM pressure halves the batch
+                oom = "out of memory" in str(ex).lower() or "cuda" in str(ex).lower()
+                if oom and BATCH > 1:
+                    BATCH = max(1, BATCH // 2)
+                    log(f"  batch OOM -> BATCH={BATCH}")
+                    import torch
+                    torch.cuda.empty_cache()
+                    continue
+                raise
+            for (t, m), out in zip(chunk, outs):
+                part.setdefault(t, {}).update(_parse_indexed(out, set(m)))
+            i += BATCH
+            newly = [t for t in dict.fromkeys(t for t, _ in chunk)
+                     if t in part and len(part[t]) >= len(dims)]
+            for t in newly:
+                done.append({"text": t,
+                             "scores": {dims[k][0]: v
+                                        for k, v in sorted(part.pop(t).items())}})
+                open_texts.remove(t)
+            if newly:
+                flush()
+                rate = (len(done) - ndone0) / max(time.time() - t0, 1) * 3600
+                log(f"  labeled {len(done)}/{n_label}  "
+                    f"({rate:.0f}/h, {len(open_texts)} open)")
+    # after all retry rounds: José's 90% gate, but visible instead of silent
+    rej = []
+    for t in open_texts:
+        have = part.pop(t, {})
+        if len(have) >= 0.9 * len(dims):
+            done.append({"text": t, "scores": {dims[k][0]: v
+                                               for k, v in sorted(have.items())}})
+        else:
+            rej.append({"text": t, "coverage": len(have)})
+    if rej:
+        REJ.write_text(json.dumps(rej, ensure_ascii=False, indent=2),
+                       encoding="utf-8")
+    flush()
+    log(f"  stage 2 done: {len(done)} labeled, {len(rej)} rejected, "
+        f"{(time.time() - t0) / 60:.1f} min")
     return done
 
 
@@ -289,8 +438,8 @@ def main():
     if args.smoke:
         K, N_LABEL, BLOCK, EPOCHS, PAT, NDIMS = 4, 12, 26, 60, 12, 4
     else:
-        # ~1200 sentences × 3 blocks ≈ 3600 LLM calls -> fits one night
-        K, N_LABEL, BLOCK, EPOCHS, PAT, NDIMS = 24, 1200, 35, 1500, 40, None
+        # ~1200 sentences × 8 interleaved blocks, batched -> ~5h measured
+        K, N_LABEL, BLOCK, EPOCHS, PAT, NDIMS = 24, 1200, 13, 1500, 40, None
 
     keep_awake()
     dims = load_dims()
@@ -314,6 +463,7 @@ def main():
         random.Random(0).shuffle(sents_all)             # balance label subset across all dims
     if 2 in run:
         log("STAGE 2 label"); stage_label(dims, sents_all, N_LABEL, BLOCK)
+        _free_pipe()                       # make room for MiniLM + 4-bit derive
     if 3 in run:
         log("STAGE 3 embed"); stage_embed(dims)
     if 4 in run:
