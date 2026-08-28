@@ -379,6 +379,7 @@ def stage_derive():
 def stage_train(epochs, patience):
     import torch
     import torch.nn as nn
+    torch.manual_seed(0)                    # reproducible judge builds
     X = np.load(XF); Y = np.load(YF)
     rng = np.random.default_rng(0)
     idx = rng.permutation(len(X))                       # SHUFFLE before split
@@ -413,7 +414,9 @@ def stage_train(epochs, patience):
         if bad >= patience:
             log(f"  early stop @ep {ep}"); break
     net.load_state_dict(best_state)
-    torch.save(net.state_dict(), TRANS)
+    # save with the "net." prefix SemanticTranslator expects, so the v2 judge
+    # is drop-in loadable by steering/translator.py (EMB_TRANSLATOR override)
+    torch.save({f"net.{k}": v for k, v in net.state_dict().items()}, TRANS)
     # per-dim R² on held-out
     net.eval()
     with torch.no_grad():
@@ -423,7 +426,7 @@ def stage_train(epochs, patience):
     for j in range(yte_np.shape[1]):
         ss_res = ((yte_np[:, j] - pred[:, j]) ** 2).sum()
         ss_tot = ((yte_np[:, j] - yte_np[:, j].mean()) ** 2).sum() + 1e-9
-        r2[json.loads(METAF.read_text(encoding="utf-8"))["dimension_names"][j]] = round(1 - ss_res / ss_tot, 3)
+        r2[json.loads(METAF.read_text(encoding="utf-8"))["dimension_names"][j]] = round(float(1 - ss_res / ss_tot), 3)
     R2F.write_text(json.dumps(r2, ensure_ascii=False, indent=2), encoding="utf-8")
     good = sum(1 for v in r2.values() if v >= 0.3)
     log(f"  best val_mse {best:.5f} | dims with R²>=0.3 on held-out: {good}/{len(r2)}")
