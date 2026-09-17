@@ -1,8 +1,13 @@
 # Scorecard de fidelidad — diales reales de la consola
 
+Fuente: `fidelity_report_old_legacy.json` · alpha=0.15 · n_probes=2 · vectors=control_vectors_caa_white.npy · probe_version=2
+Juez: `semantic_translator.pth`
+
 Criterio: z_kin ≥ 1.5 con signo correcto. Parentesco: |r| > 0.4 en la tabla humana.
 
 **26 diales reales de 104 medidos.**
+
+> ⚠ Este criterio NO incluye control nulo: un dial verde aquí puede serlo también con vectores aleatorios. El veredicto con control nulo está en `scorecard_v2.md` (`python -m steering.falsify_report`); el contexto, en `STATUS.md`.
 
 | dim | z_kin | rank_kin | signo | familia | dominio |
 |---|---|---|---|---|---|

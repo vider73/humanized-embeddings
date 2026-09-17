@@ -91,13 +91,27 @@ def main():
         print(f"{tag} {d['name']:<30} {d['z_kin']:+6.1f} {d['rank_kin']:>4} "
               f"{'OK' if d['sign_ok'] else 'INV':>4} {d['kin']:>4}  {d['domain']}")
 
-    # scorecard.md for the repo
+    # scorecard.md for the repo — WITH provenance: a scorecard without the
+    # report and the regime that produced it is a number nobody can reproduce
+    # (see STATUS.md, "why 26 is retired").
+    meta = json.loads(Path(args.report).read_text(encoding="utf-8")).get("_meta", {})
+    regime = " · ".join(f"{k}={meta[k]}" for k in
+                        ("alpha", "mode", "layers", "n_probes", "vectors",
+                         "vectors_sha", "probe_version") if k in meta) or "sin _meta"
     lines = ["# Scorecard de fidelidad — diales reales de la consola",
+             "",
+             f"Fuente: `{Path(args.report).name}` · {regime}",
+             f"Juez: `{config.TRANSLATOR_PATH.name}`",
              "",
              f"Criterio: z_kin ≥ {args.z_real} con signo correcto. "
              f"Parentesco: |r| > {args.kin_r} en la tabla humana.",
              "",
              f"**{len(reales)} diales reales de {len(out)} medidos.**",
+             "",
+             "> ⚠ Este criterio NO incluye control nulo: un dial verde aquí puede "
+             "serlo también con vectores aleatorios. El veredicto con control nulo "
+             "está en `scorecard_v2.md` (`python -m steering.falsify_report`); el "
+             "contexto, en `STATUS.md`.",
              "",
              "| dim | z_kin | rank_kin | signo | familia | dominio |",
              "|---|---|---|---|---|---|"]
