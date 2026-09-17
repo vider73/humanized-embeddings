@@ -4,6 +4,7 @@ Turn opaque sentence embeddings into **104 dimensions a human can read**
 (Hardness, Love, Religiosity, Entropy, Luminosity, Curiosity, Necessity…), then
 explore the space, do arithmetic on it, and steer a live LLM with it.
 
+- **Where the project actually stands (read this first):** [`STATUS.md`](STATUS.md)
 - **What & why:** [`PUBLICATION.md`](PUBLICATION.md)
 - **How to use everything (console, tests, tools):** [`USAGE.md`](USAGE.md)
 - **How to rebuild the 104 dimensions, step by step:** [`RECIPE.md`](RECIPE.md)
@@ -41,7 +42,8 @@ ciencia + alma                     → sabiduría, mentor, expertise        (≈
 
 > Honest caveat: the data is LLM-scored and noisy — fine-grained physical axes are the
 > weakest, and some neighbours are corpus junk. The [`steering/`](steering/) scorecard
-> shows which axes are *causally* solid (currently **26/104**).
+> shows which axes are *causally* solid — **11 of 104** survive the null control
+> ([`scorecard_v2.md`](steering/vectors/scorecard_v2.md); the older 26 did not).
 
 ---
 
@@ -130,10 +132,23 @@ Full reproducible runbook for the dimension-building half: [`RECIPE.md`](RECIPE.
 ## Status
 
 Dataset: **5,654 concepts × 104 dimensions**; translator trained on **5,578** matched
-pairs. Steering verification: **26 of 104 axes** confirmed as causal "dials"
-(see [`steering/vectors/scorecard.md`](steering/vectors/scorecard.md)). The weak tail is
-mostly fine-grained physics — the current research agenda, documented honestly rather
-than hidden.
+pairs. The judge was rebuilt in August 2026 (`cocina_v2.py`) after a null control
+falsified the first one — it had been trained on single **words** and used on
+**paragraphs**, and could not tell real control vectors from gaussian noise.
+
+Current, post-falsification numbers (α=0.25, layer 15, Llama-3.1-8B):
+
+| | |
+|---|---|
+| axes readable held-out (R² ≥ 0.3) | **24 / 104** |
+| axes that steer **and** stay dead on random vectors | **11 / 104** |
+| real vs random, paired over 104 dims | mean z **+0.39**, p = 0.005 |
+| the same test with the old judge | mean z −0.14, p = 0.40 |
+
+Full table: [`steering/vectors/scorecard_v2.md`](steering/vectors/scorecard_v2.md)
+(regenerate with `python -m steering.falsify_report`). The reasoning, the open
+defects and what may **not** be claimed: [`STATUS.md`](STATUS.md). The pre-August
+"26 of 104" in the other docs is a judge-v1 number and is superseded.
 
 ## Files
 
@@ -145,7 +160,10 @@ than hidden.
 50_train_translator.py       ← trains semantic_translator.pth
 51_train_reverse.py          ← reverse map (104 → 384)
 60–90_*.py                   ← project corpus, index, explore
+cocina_v2.py                 ← rebuilds the foundation: sentence labels → clean poles → judge v2
 steering/                    ← control vectors + causal verification
+steering/null_control.py     ← the falsification: shuffled and random vectors
+steering/falsify_report.py   ← four-corner comparison + scorecard_v2.md (CPU)
 master_dimensions_prompts.json   ← the 104 measurement prompts
 dataset_metadata.json            ← concepts + dimension order (pinned)
 ```

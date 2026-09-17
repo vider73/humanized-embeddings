@@ -210,9 +210,12 @@ python derive_vectors.py       # CAA control vectors -> vectors/control_vectors_
 python night_run.py            # batched fidelity probe -> vectors/fidelity_report.json
 ```
 
-Read `steering/vectors/scorecard.md`. Criterion: `z_kin ≥ 1.5`, correct sign, sensible
-kinship in the human table. In the current run **26 of 104 axes pass as solid causal
-dials** (top: Necessity, Speed of action, Curiosity, Anger, Hardness, Instinct,
+Read `steering/vectors/scorecard_v2.md` (and [`STATUS.md`](STATUS.md) for how it is
+read). Criterion since August 2026: green on the real vectors **and dead on random
+ones** → **11 of 104 axes pass**. The judge-v1 run quoted below claimed **26 of 104**
+and did not survive its null control; it is kept for the record only:
+
+> In the judge-v1 run **26 of 104 axes pass as solid causal dials** (top: Necessity, Speed of action, Curiosity, Anger, Hardness, Instinct,
 Consciousness, Love). The weak tail is mostly fine-grained physics — expected for a text
 model, and the clearest pointer to which anchors (Step 1) are worth redesigning.
 

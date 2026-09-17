@@ -1,5 +1,11 @@
 # ROADMAP — from readable embeddings to mapping shared semantic geometry
 
+> **Where this stands (2026-09):** everything below was written before the June
+> null control falsified the first judge and August rebuilt it. The programme is
+> unchanged, but its order is not: the instrument has to be stabilised before it
+> is scaled. Current state, numbers and the queue that actually comes first:
+> [`STATUS.md`](STATUS.md).
+
 The project's question evolved during its first external review (2026-06-12,
 three rounds; experiments `56_linear_probe.py` and `57_cross_model_geometry.py`
 were born from it). The original framing was:
@@ -48,13 +54,22 @@ Cheap first data point: SmolLM2-135M is already wired into the repo
 
 ## Instrument improvements (feed the loop)
 
+- **Kill the labeler's prompt echo.** 21% of the v2 label matrix is one of the four
+  example numbers printed in the stage-2 prompt, and 65% is echo-or-rail across
+  only 333 distinct values. Per-dim label variance predicts held-out readability
+  (r = +0.46), so this is the cheapest available lever on the 24/104 readable
+  axes. Randomise the examples, assert a value histogram, re-cook (~3.5h).
+- **Measure the v2 vectors.** The August headline is judge v2 × *v1* vectors;
+  `control_vectors_caa_white_v2.npy` has never been through fidelity or its own
+  random null. Until it has, the kitchen's main artifact is unevaluated.
 - **Probe v3 for the metaphysics family.** Fidelity probes are mundane scenes;
   magic/divinity/hope showed life by ear on lyrical-definitional prompts
   despite RED scorecards (see SHOWCASE). Some "dead" dials are false negatives
   of the probes, not of the vectors.
-- **Fix the Y>1 parser bug** (31 legacy values, max 6.54, concentrated in the
-  dead physics tail — tracked by an `xfail` in the test suite): clip +
-  re-derive the affected dims.
+- **Fix the Y>1 parser bug** — *fixed at the source for v2 data* (`cocina_v2.py`
+  hard-clamps every label; `v2_Y.npy` has zero values >1). The 31 legacy values
+  (max 6.54) still sit in `dataset_Y_human.npy`, which is what `analyze.py` reads
+  to build the kinship graph: clip + re-derive the affected dims.
 - **Inverted-dial study.** ~30 dials are INV in the scorecard; pushing fear
   produced courage-to-be-vulnerable. Some inverted vectors may just need a
   sign flip — cheap to test, potentially recovers a dozen dials.

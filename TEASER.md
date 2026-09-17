@@ -34,8 +34,10 @@ The honest part 👇
 A readable axis isn't automatically a *real* one. So I tested whether injecting each
 axis into a live model actually steers it.
 
-**26 of 104 axes are confirmed causal dials.** Strongest: Necessity, Curiosity, Anger,
-Hardness, Love, Consciousness.
+**11 of 104 axes survive the null control** — they steer the model *and* stay dead
+when the same push comes from random vectors. Strongest: Transparency, Vitality,
+Stress, Smell, Ethics, Divinity. (An earlier draft said 26; that judge failed its own
+falsification test. See `STATUS.md`.)
 
 **5/**
 The weak tail? Fine-grained physics (density, viscosity, friction) — exactly where a
@@ -61,13 +63,14 @@ What it unlocks: readable concept profiles, semantic arithmetic with real output
 jesus, archangel*), and maps of "unnamed" regions the language hasn't reached.
 
 The result I care about most is the honest one. A readable axis isn't necessarily a
-*causal* one — so I tested whether each axis can actually steer a live model.
-**26 of 104 verify as solid causal dials.** The weak tail is mostly fine-grained physics,
-where text models are predictably ungrounded — which makes it a clear research agenda,
-not a swept-under-the-rug caveat.
+*causal* one — so I tested whether each axis can actually steer a live model. Then I
+tested the test: I re-ran the whole thing with **random** vectors of the same shape.
+The first judge scored the noise as highly as the real thing, so I threw it out and
+rebuilt it. **11 of 104 axes survive that control** — they move the model and stay
+dead under noise (paired over 104 dims, p = 0.005).
 
-Interpretable embeddings are achievable, and a quarter of the axes are already strong
-enough to drive behaviour.
+Interpretable embeddings are achievable, a tenth of the axes already drive behaviour,
+and the falsification is in the repo next to the result.
 
 Writeup + code → [link]
 

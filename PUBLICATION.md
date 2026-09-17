@@ -105,6 +105,10 @@ verification. We asked: *of the 104 axes, how many are not just readable but
 **causally real** — i.e. injecting that axis's control vector moves a live model's
 internal state in the right direction with the right sign?*
 
+> ⚠ **Superseded (2026-08).** This section reports the judge-v1 verification. That
+> judge failed its own null control; the rebuilt one puts the count at **11 of 104**.
+> Read [`STATUS.md`](STATUS.md) before quoting any number from here.
+
 Using a kinematic criterion (z ≥ 1.5, correct sign, sensible human-table kinship),
 **26 of 104 dimensions verify as solid, causal "dials."** The strongest include
 *Necessity, Speed of action, Curiosity, Anger, Hardness, Instinct, Consciousness,

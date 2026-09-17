@@ -140,7 +140,12 @@ This is the part the upcoming judge-test suite will formalize.
 | `harmony.py` | resonance hypothesis: alignment (does the prompt already live in that territory?) vs effect vs quality (relative perplexity under the clean model). If confirmed, the α ceiling is a function of prompt–dial agreement, not a constant | console report |
 | `night_run.py` | unattended chain stimuli → backup → derive → geometry → fidelity; each step a separate process; keep-awake on Windows; full log | `vectors/night_*.log` |
 
-**Pass criterion** (current): `z_kin ≥ 1.5` with correct sign → **26 of 104 dims are
+> ⚠ **Superseded (2026-08).** The 26 below were measured with judge v1, which its own
+> null control showed could not separate real vectors from gaussian noise. The current
+> count is **11 of 104** — see [`STATUS.md`](STATUS.md) and
+> [`scorecard_v2.md`](steering/vectors/scorecard_v2.md).
+
+**Pass criterion** (judge v1): `z_kin ≥ 1.5` with correct sign → **26 of 104 dims are
 real causal dials**. Top: necessity +4.2, speed of action +3.6, curiosity +3.6,
 anger +3.2, hardness +3.1. The weak tail is fine-grained physics — the same axes the
 text model scored noisily in Layer 1, which is the design-feedback loop working.
