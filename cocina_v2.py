@@ -31,6 +31,14 @@ Stages (each writes a checkpoint; a rerun skips finished stages):
 Stage 2 rebuilt 2026-08-28 (index-keyed + anchored + batched + targeted
 retries) after the June run starved at 10/1200 labels in 7h — see the
 stage-2 banner below for the specifics.
+
+Stage 2 fixed again 2026-09-17: the prompt printed example scores and the
+labeler copied them (21% of the v2 matrix was one of four numbers written in
+the prompt). No number appears in the prompt any more, a collapsed block is
+re-asked instead of believed, and every run audits its own value histogram —
+coverage said 1200/1200 with zero rejects while 65% of the matrix was echo or
+rail. Artifacts are tagged (--tag): a re-cook writes v3_* and leaves v2 intact,
+so the judge behind a published result stays reproducible.
 """
 import argparse
 import json
@@ -48,12 +56,34 @@ from steering import config
 
 ROOT = config.ROOT
 LOG = ROOT / f"cocina_v2_{datetime.now():%Y%m%d_%H%M}.log"
-SENT = ROOT / "v2_sentences.json"
-LAB = ROOT / "v2_labeled.json"
-XF, YF, METAF = ROOT / "v2_X.npy", ROOT / "v2_Y.npy", ROOT / "v2_meta.json"
-STIM = config.VEC_DIR / "caa_stimuli_v2.json"
-TRANS = ROOT / "semantic_translator_v2.pth"
-R2F = ROOT / "v2_r2.json"
+TAG = "v2"
+SENT = LAB = XF = YF = METAF = STIM = TRANS = R2F = PART = REJ = AUDIT = None
+
+
+def set_tag(tag, sentences=None):
+    """Point every artifact at <tag>_*.
+
+    A re-cook must not overwrite the judge a published result was measured
+    with: v2 stays on disk, v3 is written beside it, and the two can be
+    compared instead of one replacing the other. `sentences` reuses an
+    earlier stage-1 file — same sentences, new labels — so a labeling fix
+    reads as an A/B instead of a fresh draw."""
+    global TAG, SENT, LAB, XF, YF, METAF, STIM, TRANS, R2F, PART, REJ, AUDIT, LOG
+    TAG = tag
+    LOG = ROOT / f"cocina_{tag}_{datetime.now():%Y%m%d_%H%M}.log"
+    SENT = Path(sentences) if sentences else ROOT / f"{tag}_sentences.json"
+    LAB = ROOT / f"{tag}_labeled.json"
+    XF, YF = ROOT / f"{tag}_X.npy", ROOT / f"{tag}_Y.npy"
+    METAF = ROOT / f"{tag}_meta.json"
+    STIM = config.VEC_DIR / f"caa_stimuli_{tag}.json"
+    TRANS = ROOT / f"semantic_translator_{tag}.pth"
+    R2F = ROOT / f"{tag}_r2.json"
+    PART = ROOT / f"{tag}_label_partial.json"
+    REJ = ROOT / f"{tag}_label_rejects.json"
+    AUDIT = ROOT / f"{tag}_label_audit.json"
+
+
+set_tag("v2")
 
 SYS = "Eres un analista semántico preciso. Sigues las instrucciones al pie de la letra."
 _PIPE = None
@@ -176,12 +206,26 @@ def stage_generate(dims, k):
 #     calibrated-instrument idea from 20_score, which v2 had dropped)
 #   . batched generation (llm_batch), tight max_new (~14 tok/dim, not 40)
 #   . retries ask ONLY for the dims still missing; partial work persists in
-#     v2_label_partial.json; a sentence is rejected (v2_label_rejects.json)
-#     only after all retry rounds — nothing is silently thrown away.
-PART = ROOT / "v2_label_partial.json"
-REJ = ROOT / "v2_label_rejects.json"
+#     <tag>_label_partial.json; a sentence is rejected (<tag>_label_rejects
+#     .json) only after all retry rounds — nothing is silently thrown away.
+#
+# 2026-09-17 — the echo fix. The prompt used to print its own example scores
+# ('ej. {"0": 0.482, "13": 0.061}' and "tres decimales variados (0.137,
+# 0.482, 0.815...)"). The labeler copied them: 0.061 landed on 7.5% of all
+# cells, 0.482 on 4.8%, 0.815 on 4.5%, 0.137 on 4.3% — 21.1% of the matrix,
+# 825 of 1200 sentences carrying >=20 such cells, 333 distinct values in
+# 124,800, one sentence scored with a SINGLE value across all 104 dims.
+# Per-dim label variance predicts held-out R2 at r=+0.46, so the echo was
+# capping the judge. Now: the format is shown structurally with no number to
+# copy, a block that comes back collapsed is re-asked instead of believed,
+# and every run audits its own histogram — coverage cannot see this class of
+# failure, which is exactly why the August run looked perfect.
 BATCH = 8
 RETRY_ROUNDS = 3
+MIN_DISTINCT_BLOCK = 3        # a block flatter than this is a collapse, not a score
+AUDIT_AFTER = 40              # sentences before the first histogram check
+MAX_VALUE_SHARE = 10.0        # % of cells one value may hold before it is a warning
+MIN_DISTINCT_PER_SENT = 45    # of 104 (the echoing v2 run sat at 33.2)
 
 
 def _short(s, n=70):
@@ -195,23 +239,34 @@ def _label_prompt(text, idxs, dims):
         name, mn, mx = dims[i]
         lab = name.split("_", 1)[-1].replace("_", " ")
         lines.append(f"{i}. {lab} — 0: {_short(mn)} | 1: {_short(mx)}")
-    ejemplo = '{"%d": 0.482, "%d": 0.061, …}' % (idxs[0], idxs[-1])
-    return ("Puntúa la FRASE en cada dimensión numerada, de 0.000 a 1.000 "
-            "(0 = polo mínimo, 1 = polo máximo).\n"
-            "Usa TODO el rango con tres decimales variados (0.137, 0.482, "
-            "0.815…). Los extremos 0.000/1.000 solo para polos absolutos. "
-            "Valor alto SOLO si la frase evoca claramente ese polo máximo; si "
-            "la dimensión no trata de la frase, valor bajo pero no nulo "
-            "(0.02–0.15). Puntúa cada dimensión por separado, sin repetir el "
-            "mismo número en serie.\n\n"
+    # NOT ONE DIGIT of score below: every number this prompt used to print
+    # came back as a label. The JSON shape is shown with placeholders instead.
+    return ("Puntúa la FRASE en cada dimensión numerada, entre su polo mínimo "
+            "y su polo máximo.\n"
+            "Reglas:\n"
+            "· Cada puntuación es un decimal de tres cifras, medido para ESA "
+            "dimensión y ESA frase.\n"
+            "· Recorre todo el rango; reserva los valores extremos para polos "
+            "absolutos.\n"
+            "· Valor alto SOLO si la frase evoca claramente ese polo máximo.\n"
+            "· Si la dimensión no trata de la frase, puntúa bajo — pero nunca "
+            "cero, y nunca el mismo valor bajo dos veces seguidas.\n"
+            "· Puntúa cada dimensión por separado: una lista de valores "
+            "repetidos no es una medición.\n\n"
             f"FRASE: «{text}»\n\nDIMENSIONES:\n" + "\n".join(lines) +
-            "\n\nResponde SOLO un objeto JSON con TODAS las claves numéricas "
-            f"mostradas, ej. {ejemplo}. Sin texto extra.")
+            "\n\nResponde SOLO un objeto JSON, sin texto extra, con TODAS las "
+            "claves numéricas mostradas y esta forma exacta:\n"
+            '{"<índice>": <decimal>, "<índice>": <decimal>, ...}')
 
 
-def _parse_indexed(txt, want):
+def _parse_indexed(txt, want, strict=True):
     """{index: score} from model output; JSON first, regex rescue after.
-    Tolerates fences, prose, comma decimals. Hard clamp [0,1]."""
+    Tolerates fences, prose, comma decimals. Hard clamp [0,1].
+
+    `strict` (every round but the last) drops a block that comes back
+    COLLAPSED — one number repeated down a whole family of dimensions. That
+    is the labeler giving up, not measuring, so the retry asks again. On the
+    last round whatever parsed is kept: a flat block beats a lost sentence."""
     got = {}
     s, e = txt.find("{"), txt.rfind("}")
     if s != -1 and e > s:
@@ -231,7 +286,55 @@ def _parse_indexed(txt, want):
             ki = int(k)
             if ki in want and ki not in got:
                 got[ki] = min(1.0, max(0.0, float(v.replace(",", "."))))
+    if (strict and len(got) >= 8
+            and len({round(v, 3) for v in got.values()}) < MIN_DISTINCT_BLOCK):
+        return {}
     return got
+
+
+def label_audit(rows):
+    """Value histogram of a labeled set — the check coverage cannot do.
+
+    The August run reported 1200/1200 labeled and zero rejects while 21% of its
+    cells were numbers copied from the prompt and one sentence came back with a
+    single distinct value across all 104 dims. Counting rows says nothing about
+    whether they were measured; counting VALUES does."""
+    vals = np.array([v for r in rows for v in r["scores"].values()], dtype=np.float64)
+    if not vals.size:
+        return {}
+    uniq, counts = np.unique(np.round(vals, 3), return_counts=True)
+    order = np.argsort(-counts)[:8]
+    per_row = [len({round(v, 3) for v in r["scores"].values()}) for r in rows]
+    return {
+        "n_rows": len(rows), "n_cells": int(vals.size),
+        "distinct_values": int(uniq.size),
+        "pct_floor_le_002": round(float((vals <= 0.02).mean() * 100), 2),
+        "pct_ceiling_ge_098": round(float((vals >= 0.98).mean() * 100), 2),
+        "top_values": [[float(uniq[i]), int(counts[i]),
+                        round(float(counts[i] / vals.size * 100), 2)] for i in order],
+        "worst_value_share": round(float(counts[order[0]] / vals.size * 100), 2),
+        "distinct_per_sentence": round(float(np.mean(per_row)), 1),
+        "flattest_sentence": int(min(per_row)),
+    }
+
+
+def _audit_log(rows, where):
+    a = label_audit(rows)
+    if not a:
+        return a
+    log(f"  [audit {where}] {a['n_cells']} cells · {a['distinct_values']} distinct "
+        f"· floor {a['pct_floor_le_002']}% · ceiling {a['pct_ceiling_ge_098']}% "
+        f"· {a['distinct_per_sentence']}/104 distinct per sentence "
+        f"(flattest {a['flattest_sentence']})")
+    log("  [audit] top values: " +
+        ", ".join(f"{v}x{p}%" for v, _, p in a["top_values"][:5]))
+    if a["worst_value_share"] > MAX_VALUE_SHARE:
+        log(f"  !! AUDIT: one value holds {a['worst_value_share']}% of all cells "
+            f"(limit {MAX_VALUE_SHARE}%) — the labeler is collapsing, not scoring.")
+    if a["distinct_per_sentence"] < MIN_DISTINCT_PER_SENT:
+        log(f"  !! AUDIT: {a['distinct_per_sentence']}/104 distinct values per "
+            f"sentence (limit {MIN_DISTINCT_PER_SENT}) — labels are too flat.")
+    return a
 
 
 def stage_label(dims, sentences, n_label, block_size):
@@ -256,6 +359,7 @@ def stage_label(dims, sentences, n_label, block_size):
                                    ensure_ascii=False), encoding="utf-8")
 
     open_texts = list(todo)
+    audited = False
     for rnd in range(1 + RETRY_ROUNDS):
         tasks = []
         for text in open_texts:
@@ -285,7 +389,8 @@ def stage_label(dims, sentences, n_label, block_size):
                     continue
                 raise
             for (t, m), out in zip(chunk, outs):
-                part.setdefault(t, {}).update(_parse_indexed(out, set(m)))
+                part.setdefault(t, {}).update(
+                    _parse_indexed(out, set(m), strict=rnd < RETRY_ROUNDS))
             i += BATCH
             newly = [t for t in dict.fromkeys(t for t, _ in chunk)
                      if t in part and len(part[t]) >= len(dims)]
@@ -299,6 +404,12 @@ def stage_label(dims, sentences, n_label, block_size):
                 rate = (len(done) - ndone0) / max(time.time() - t0, 1) * 3600
                 log(f"  labeled {len(done)}/{n_label}  "
                     f"({rate:.0f}/h, {len(open_texts)} open)")
+                # early histogram: an echoing or collapsing labeler is
+                # visible in the first few dozen sentences. Better to see it
+                # now than after a 3.5h run that reports perfect coverage.
+                if not audited and len(done) >= AUDIT_AFTER:
+                    audited = True
+                    _audit_log(done, f"first {len(done)}")
     # after all retry rounds: José's 90% gate, but visible instead of silent
     rej = []
     for t in open_texts:
@@ -312,6 +423,10 @@ def stage_label(dims, sentences, n_label, block_size):
         REJ.write_text(json.dumps(rej, ensure_ascii=False, indent=2),
                        encoding="utf-8")
     flush()
+    a = _audit_log(done, "final")
+    if a:
+        AUDIT.write_text(json.dumps(a, ensure_ascii=False, indent=2),
+                         encoding="utf-8")
     log(f"  stage 2 done: {len(done)} labeled, {len(rej)} rejected, "
         f"{(time.time() - t0) / 60:.1f} min")
     return done
@@ -365,9 +480,9 @@ def stage_stimuli(dims):
 
 # ── stage 5: derive control vectors (reuse the validated tool) ───────────────
 def stage_derive():
-    env = {**os.environ, "PYTHONUTF8": "1", "EMB_TAG": "v2",
+    env = {**os.environ, "PYTHONUTF8": "1", "EMB_TAG": TAG,
            "EMB_STIMULI": str(STIM.resolve())}
-    log("  derive (steering.derive_vectors, EMB_TAG=v2) ...")
+    log(f"  derive (steering.derive_vectors, EMB_TAG={TAG}) ...")
     p = subprocess.run([sys.executable, "-m", "steering.derive_vectors"],
                        cwd=ROOT, env=env)
     if p.returncode != 0:
@@ -436,7 +551,33 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--smoke", action="store_true")
     ap.add_argument("--only", type=int, nargs="+", default=None)
+    ap.add_argument("--tag", default="v2",
+                    help="artifact prefix; a re-cook uses a NEW tag so the "
+                         "previous judge stays on disk (default: v2)")
+    ap.add_argument("--sentences", default=None,
+                    help="reuse an existing stage-1 file (e.g. v2_sentences"
+                         ".json): same sentences, new labels = clean A/B")
+    ap.add_argument("--n-label", type=int, default=None,
+                    help="override how many sentences stage 2 labels (bench the "
+                         "histogram on a few dozen before committing hours)")
+    ap.add_argument("--audit", default=None,
+                    help="print the value histogram of a labeled file and exit")
     args = ap.parse_args()
+
+    if args.audit:
+        rows = json.loads(Path(args.audit).read_text(encoding="utf-8"))
+        a = label_audit(rows)
+        print(f"{args.audit}: {a['n_rows']} rows · {a['n_cells']} cells")
+        print(f"  distinct values      {a['distinct_values']}")
+        print(f"  worst value share    {a['worst_value_share']}%")
+        print(f"  floor <=0.02         {a['pct_floor_le_002']}%")
+        print(f"  ceiling >=0.98       {a['pct_ceiling_ge_098']}%")
+        print(f"  distinct per sentence {a['distinct_per_sentence']}/104 "
+              f"(flattest {a['flattest_sentence']})")
+        print("  top: " + ", ".join(f"{v}x{p}%" for v, _, p in a["top_values"]))
+        return
+
+    set_tag(args.tag, args.sentences)
 
     if args.smoke:
         K, N_LABEL, BLOCK, EPOCHS, PAT, NDIMS = 4, 12, 26, 60, 12, 4
@@ -444,14 +585,19 @@ def main():
         # ~1200 sentences × 8 interleaved blocks, batched -> ~5h measured
         K, N_LABEL, BLOCK, EPOCHS, PAT, NDIMS = 24, 1200, 13, 1500, 40, None
 
+    if args.n_label:
+        N_LABEL = args.n_label
     keep_awake()
     dims = load_dims()
     if NDIMS:
         dims = dims[:NDIMS]
-    log(f"COCINA v2 {'[SMOKE]' if args.smoke else '[FULL]'} | dims {len(dims)} | "
-        f"K {K} | label {N_LABEL} | log {LOG.name}")
+    log(f"COCINA [{TAG}] {'[SMOKE]' if args.smoke else '[FULL]'} | "
+        f"dims {len(dims)} | K {K} | label {N_LABEL} | log {LOG.name}")
 
     run = set(args.only) if args.only else {1, 2, 3, 4, 5, 6}
+    if args.sentences and 1 in run:
+        log(f"STAGE 1 skipped — reusing {SENT.name} (same sentences, new labels)")
+        run.discard(1)
     t0 = time.time()
 
     if 1 in run:

@@ -125,9 +125,11 @@ run at a second seed is the difference between a result and an anecdote.
    10.1% at ≥0.98) and **64.8% of the label matrix is either an echo or a rail**,
    across only 333 distinct values. This caps the judge: `corr(per-dim label std,
    R²) = +0.46` and `corr(fraction at floor, R²) = −0.31` — the unreadable axes are
-   exactly the ones the labeler flattened. *Fix: randomise the example numbers per
-   call (or use `0.XXX` placeholders) and make stage 2 assert a value histogram
-   before it writes.*
+   exactly the ones the labeler flattened. **Fixed in code 2026-09-17, not yet
+   measured:** the prompt no longer prints a single digit of score (placeholders
+   instead of `{"0": 0.482, …}`), a block that comes back collapsed is re-asked
+   rather than believed, and every run audits its own value histogram at 40
+   sentences and at the end. Confirming it needs the re-cook below.
 2. **Stage 4's "self-validated" poles are 20% validated.** Only 838 of the 4,276
    pole sentences in `caa_stimuli_v2.json` were in the labeled subset; the rest
    pass the check through the `v is None` branch. *Fix: label the pole sentences
@@ -163,8 +165,10 @@ Test suite today: **29 passed, 1 xfail (the Y>1 contract), 10 skipped** (L2/L3 n
    and finally tests the artifact the kitchen was built to produce.
 2. **A second alpha and a second seed** on the winning corner: the null-control
    ratio is currently a single-point estimate.
-3. **Fix the labeler echo and re-cook** (stages 2–6, ~3.5h): the cheapest available
-   increase in judge quality, and the thing standing between 24 readable axes and
-   more.
+3. **Re-cook with the fixed labeler** (stages 2–6, ~4h on the free GPU, writes
+   `v3_*` and leaves v2 intact): the cheapest available increase in judge quality,
+   and the thing standing between 24 readable axes and more. Reuses
+   `v2_sentences.json`, so v2 vs v3 R² is a paired read on the labeling fix alone.
+   Bench the histogram on 50 sentences first — see `USAGE.md` §5.
 4. Then, and only then, the periodic-table experiment in [`ROADMAP.md`](ROADMAP.md)
    — scaling a measurement we have not yet stabilised would just multiply the noise.

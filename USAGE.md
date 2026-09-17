@@ -22,6 +22,16 @@ Llama-3.1-8B is gated on HF: accept the license + `huggingface-cli login`,
 or point `LLM_NAME` in `steering/config.py` at an open mirror
 (`NousResearch/Meta-Llama-3.1-8B-Instruct`).
 
+**On José's 4090 box** the environment is the conda env `llm4090`
+(py 3.11, torch 2.5.1+cu, transformers 4.57, sentence-transformers 5.2,
+bitsandbytes 0.49 — 4-bit does work on Windows now, despite the note in
+`steering/requirements.txt`). A bare `python` on PATH is *not* it and will
+fail at `import transformers` only once a GPU stage starts:
+
+```bash
+conda activate llm4090          # or: %LOCALAPPDATA%\miniconda3\envs\llm4090\python.exe
+```
+
 ---
 
 ## 1. The 60-second tour
@@ -178,6 +188,34 @@ python 50_train_translator.py      # -> semantic_translator.pth  (the deliverabl
 python 51_train_reverse.py         # -> reverse_translator.pth   (104 -> 384)
 python 55_eval_translator.py       # MAE/MSE eval of the forward map
 ```
+
+### The kitchen (`cocina_v2.py`) — rebuild the judge
+
+Stages 1–6 in one resumable run: pole sentences → labels → X/Y → clean CAA
+stimuli → control vectors → a sentence-trained judge. Needs the 4090 to itself
+for ~4h; `keep_awake()` stops Windows sleeping through it.
+
+```bash
+python cocina_v2.py --smoke                    # ~3 min end-to-end — run this first
+python cocina_v2.py --audit v2_labeled.json    # value histogram of a labeled set (CPU)
+```
+
+A re-cook uses a NEW tag, so the judge behind a published result stays on disk
+and the two can be compared instead of one replacing the other. Reusing the
+previous stage-1 sentences turns a labeling change into a clean A/B:
+
+```bash
+# bench the labeler's histogram first (~15 min) — cheap insurance on a 4h run
+python cocina_v2.py --tag v3 --sentences v2_sentences.json --only 2 --n-label 50
+python cocina_v2.py --audit v3_labeled.json
+
+# then the full run; stage 2 resumes over the 50 already labeled
+python cocina_v2.py --tag v3 --sentences v2_sentences.json
+```
+
+Watch `cocina_v3_*.log`: the run audits its own value histogram at 40 sentences
+and again at the end. Coverage cannot see a labeler that echoes or collapses —
+the August run reported 1200/1200 with zero rejects and was 65% echo-or-rail.
 
 ## 6. Corpus & explorer
 
