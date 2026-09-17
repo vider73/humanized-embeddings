@@ -562,6 +562,10 @@ def main():
                          "histogram on a few dozen before committing hours)")
     ap.add_argument("--audit", default=None,
                     help="print the value histogram of a labeled file and exit")
+    ap.add_argument("--gate", action="store_true",
+                    help="with --audit: exit non-zero if the histogram fails the "
+                         "limits, so an unattended run can stop before it burns "
+                         "hours on a labeler that is echoing or collapsing")
     args = ap.parse_args()
 
     if args.audit:
@@ -575,6 +579,18 @@ def main():
         print(f"  distinct per sentence {a['distinct_per_sentence']}/104 "
               f"(flattest {a['flattest_sentence']})")
         print("  top: " + ", ".join(f"{v}x{p}%" for v, _, p in a["top_values"]))
+        if args.gate:
+            bad = []
+            if a["worst_value_share"] > MAX_VALUE_SHARE:
+                bad.append(f"one value holds {a['worst_value_share']}% of cells "
+                           f"(limit {MAX_VALUE_SHARE}%)")
+            if a["distinct_per_sentence"] < MIN_DISTINCT_PER_SENT:
+                bad.append(f"{a['distinct_per_sentence']}/104 distinct per sentence "
+                           f"(limit {MIN_DISTINCT_PER_SENT})")
+            if bad:
+                print("GATE FAIL: " + "; ".join(bad))
+                sys.exit(1)
+            print("GATE PASS")
         return
 
     set_tag(args.tag, args.sentences)

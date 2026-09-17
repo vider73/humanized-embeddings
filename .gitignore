@@ -32,5 +32,6 @@ v2_label_partial.json
 v2_label_rejects.json
 *.bak.json
 
-# --- one-shot tooling ---
+# --- one-shot / machine-specific tooling ---
 refactor_phase1.bat
+night_recook.ps1

@@ -207,7 +207,7 @@ previous stage-1 sentences turns a labeling change into a clean A/B:
 ```bash
 # bench the labeler's histogram first (~15 min) — cheap insurance on a 4h run
 python cocina_v2.py --tag v3 --sentences v2_sentences.json --only 2 --n-label 50
-python cocina_v2.py --audit v3_labeled.json
+python cocina_v2.py --audit v3_labeled.json --gate   # exit 1 = do NOT spend the night
 
 # then the full run; stage 2 resumes over the 50 already labeled
 python cocina_v2.py --tag v3 --sentences v2_sentences.json
