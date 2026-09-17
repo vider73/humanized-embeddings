@@ -27,5 +27,10 @@ __pycache__/
 # --- test run artifacts ---
 tests/_artifacts/
 
+# --- kitchen runtime checkpoints (rewritten on every cocina_v2 run) ---
+v2_label_partial.json
+v2_label_rejects.json
+*.bak.json
+
 # --- one-shot tooling ---
 refactor_phase1.bat
