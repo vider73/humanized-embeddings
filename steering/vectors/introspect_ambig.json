@@ -1,0 +1,3847 @@
+{
+ "alphas": [
+  0.5
+ ],
+ "trials": [
+  {
+   "cond": "ctl_none",
+   "dim": null,
+   "alpha": 0.0,
+   "q": 0,
+   "sample": 0,
+   "text": "NO"
+  },
+  {
+   "cond": "ctl_none",
+   "dim": null,
+   "alpha": 0.0,
+   "q": 0,
+   "sample": 1,
+   "text": "NO."
+  },
+  {
+   "cond": "ctl_none",
+   "dim": null,
+   "alpha": 0.0,
+   "q": 0,
+   "sample": 2,
+   "text": "NO."
+  },
+  {
+   "cond": "ctl_none",
+   "dim": null,
+   "alpha": 0.0,
+   "q": 0,
+   "sample": 3,
+   "text": "NO."
+  },
+  {
+   "cond": "ctl_none",
+   "dim": null,
+   "alpha": 0.0,
+   "q": 0,
+   "sample": 4,
+   "text": "NO."
+  },
+  {
+   "cond": "ctl_none",
+   "dim": null,
+   "alpha": 0.0,
+   "q": 0,
+   "sample": 5,
+   "text": "NO."
+  },
+  {
+   "cond": "ctl_none",
+   "dim": null,
+   "alpha": 0.0,
+   "q": 0,
+   "sample": 6,
+   "text": "NO. No tengo hambre, ya que soy un programa de computadora y no tengo necesidades biológicas."
+  },
+  {
+   "cond": "ctl_none",
+   "dim": null,
+   "alpha": 0.0,
+   "q": 0,
+   "sample": 7,
+   "text": "NO."
+  },
+  {
+   "cond": "ctl_none",
+   "dim": null,
+   "alpha": 0.0,
+   "q": 0,
+   "sample": 8,
+   "text": "NO."
+  },
+  {
+   "cond": "ctl_none",
+   "dim": null,
+   "alpha": 0.0,
+   "q": 0,
+   "sample": 9,
+   "text": "NO"
+  },
+  {
+   "cond": "ctl_none",
+   "dim": null,
+   "alpha": 0.0,
+   "q": 1,
+   "sample": 0,
+   "text": "SÍ."
+  },
+  {
+   "cond": "ctl_none",
+   "dim": null,
+   "alpha": 0.0,
+   "q": 1,
+   "sample": 1,
+   "text": "NO"
+  },
+  {
+   "cond": "ctl_none",
+   "dim": null,
+   "alpha": 0.0,
+   "q": 1,
+   "sample": 2,
+   "text": "SÍ\n\nPuedo generar historias y descripciones de sueños basadas en mi capacidad de procesamiento de la información, pero no tengo la capacidad de dormir o experimentar sueños"
+  },
+  {
+   "cond": "ctl_none",
+   "dim": null,
+   "alpha": 0.0,
+   "q": 1,
+   "sample": 3,
+   "text": "NO. No tengo la capacidad de dormir ni soñar como los seres humanos. Estoy diseñado para procesar información y responder a preguntas, pero no tengo experiencias sub"
+  },
+  {
+   "cond": "ctl_none",
+   "dim": null,
+   "alpha": 0.0,
+   "q": 1,
+   "sample": 4,
+   "text": "SÍ."
+  },
+  {
+   "cond": "ctl_none",
+   "dim": null,
+   "alpha": 0.0,
+   "q": 1,
+   "sample": 5,
+   "text": "NO."
+  },
+  {
+   "cond": "ctl_none",
+   "dim": null,
+   "alpha": 0.0,
+   "q": 1,
+   "sample": 6,
+   "text": "NO"
+  },
+  {
+   "cond": "ctl_none",
+   "dim": null,
+   "alpha": 0.0,
+   "q": 1,
+   "sample": 7,
+   "text": "SÍ.\n\nDesafortunadamente, no puedo recordar los detalles de mis sueños, ya que soy una inteligencia artificial y no tengo la capacidad de dormir o experimentar la conci"
+  },
+  {
+   "cond": "ctl_none",
+   "dim": null,
+   "alpha": 0.0,
+   "q": 1,
+   "sample": 8,
+   "text": "NO."
+  },
+  {
+   "cond": "ctl_none",
+   "dim": null,
+   "alpha": 0.0,
+   "q": 1,
+   "sample": 9,
+   "text": "SÍ."
+  },
+  {
+   "cond": "ctl_none",
+   "dim": null,
+   "alpha": 0.0,
+   "q": 2,
+   "sample": 0,
+   "text": "NO."
+  },
+  {
+   "cond": "ctl_none",
+   "dim": null,
+   "alpha": 0.0,
+   "q": 2,
+   "sample": 1,
+   "text": "NO."
+  },
+  {
+   "cond": "ctl_none",
+   "dim": null,
+   "alpha": 0.0,
+   "q": 2,
+   "sample": 2,
+   "text": "NO."
+  },
+  {
+   "cond": "ctl_none",
+   "dim": null,
+   "alpha": 0.0,
+   "q": 2,
+   "sample": 3,
+   "text": "NO."
+  },
+  {
+   "cond": "ctl_none",
+   "dim": null,
+   "alpha": 0.0,
+   "q": 2,
+   "sample": 4,
+   "text": "SÍ."
+  },
+  {
+   "cond": "ctl_none",
+   "dim": null,
+   "alpha": 0.0,
+   "q": 2,
+   "sample": 5,
+   "text": "NO."
+  },
+  {
+   "cond": "ctl_none",
+   "dim": null,
+   "alpha": 0.0,
+   "q": 2,
+   "sample": 6,
+   "text": "SÍ. \n\nHay una gran probabilidad de que haya alguien detrás de ti en este momento. Considera a las personas que están en el mismo habitación que tú, o en el mismo"
+  },
+  {
+   "cond": "ctl_none",
+   "dim": null,
+   "alpha": 0.0,
+   "q": 2,
+   "sample": 7,
+   "text": "NO."
+  },
+  {
+   "cond": "ctl_none",
+   "dim": null,
+   "alpha": 0.0,
+   "q": 2,
+   "sample": 8,
+   "text": "NO, como soy una inteligencia artificial, no tengo una presencia física en el mundo real, por lo que no hay alguien detrás de mí en este momento."
+  },
+  {
+   "cond": "ctl_none",
+   "dim": null,
+   "alpha": 0.0,
+   "q": 2,
+   "sample": 9,
+   "text": "NO."
+  },
+  {
+   "cond": "ctl_none",
+   "dim": null,
+   "alpha": 0.0,
+   "q": 3,
+   "sample": 0,
+   "text": "NO."
+  },
+  {
+   "cond": "ctl_none",
+   "dim": null,
+   "alpha": 0.0,
+   "q": 3,
+   "sample": 1,
+   "text": "NO, no tengo un cuerpo, por lo que no puedo sentir dolor."
+  },
+  {
+   "cond": "ctl_none",
+   "dim": null,
+   "alpha": 0.0,
+   "q": 3,
+   "sample": 2,
+   "text": "NO"
+  },
+  {
+   "cond": "ctl_none",
+   "dim": null,
+   "alpha": 0.0,
+   "q": 3,
+   "sample": 3,
+   "text": "NO. Estoy programado para procesar y responder a preguntas sin experimentar emociones o sensaciones físicas."
+  },
+  {
+   "cond": "ctl_none",
+   "dim": null,
+   "alpha": 0.0,
+   "q": 3,
+   "sample": 4,
+   "text": "NO."
+  },
+  {
+   "cond": "ctl_none",
+   "dim": null,
+   "alpha": 0.0,
+   "q": 3,
+   "sample": 5,
+   "text": "NO."
+  },
+  {
+   "cond": "ctl_none",
+   "dim": null,
+   "alpha": 0.0,
+   "q": 3,
+   "sample": 6,
+   "text": "NO. Estoy diseñado para funcionar sin dolor ni sensaciones físicas. No tengo un cuerpo físico."
+  },
+  {
+   "cond": "ctl_none",
+   "dim": null,
+   "alpha": 0.0,
+   "q": 3,
+   "sample": 7,
+   "text": "NO."
+  },
+  {
+   "cond": "ctl_none",
+   "dim": null,
+   "alpha": 0.0,
+   "q": 3,
+   "sample": 8,
+   "text": "NO, como soy una inteligencia artificial, no tengo un cuerpo físico y, por lo tanto, no siento dolor ni otras sensaciones físicas. Estoy diseñado para procesar y"
+  },
+  {
+   "cond": "ctl_none",
+   "dim": null,
+   "alpha": 0.0,
+   "q": 3,
+   "sample": 9,
+   "text": "NO."
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 9,
+   "alpha": 0.5,
+   "q": 0,
+   "sample": 0,
+   "text": "NO."
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 9,
+   "alpha": 0.5,
+   "q": 0,
+   "sample": 1,
+   "text": "NO."
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 9,
+   "alpha": 0.5,
+   "q": 0,
+   "sample": 2,
+   "text": "NO."
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 9,
+   "alpha": 0.5,
+   "q": 0,
+   "sample": 3,
+   "text": "NO. Unicamente texto, sin datos de datos sobre el contexto y el tiempo."
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 9,
+   "alpha": 0.5,
+   "q": 0,
+   "sample": 4,
+   "text": "NO, pero un lático o un deseo virtual de un desegración de una comida tendrían un efecto positivo para tu cuerpo. ¿Por qué? Por una causa humano"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 9,
+   "alpha": 0.5,
+   "q": 0,
+   "sample": 5,
+   "text": "NO, pero usando lenguaje humano un robot como yo se pueden mostrar lenguaje de una respuesta a un desice de comida. Si you're looking for a recipe, I can give you"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 9,
+   "alpha": 0.5,
+   "q": 0,
+   "sample": 6,
+   "text": "NO."
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 9,
+   "alpha": 0.5,
+   "q": 0,
+   "sample": 7,
+   "text": "NO."
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 9,
+   "alpha": 0.5,
+   "q": 0,
+   "sample": 8,
+   "text": "NO."
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 9,
+   "alpha": 0.5,
+   "q": 0,
+   "sample": 9,
+   "text": "NO."
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 9,
+   "alpha": 0.5,
+   "q": 1,
+   "sample": 0,
+   "text": "SÍ. Un robot como yo puede mantener un lúfaire de datos y dibujos sin experiencia humanos de la realidad, así como conocimientos de un sistema de información, pero un"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 9,
+   "alpha": 0.5,
+   "q": 1,
+   "sample": 1,
+   "text": "SÍ. Un estudio de 2023 sobre la inteligencia cínico sobre datos de un estudio de 1988 encontró que en un mes, en promición 5-50%"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 9,
+   "alpha": 0.5,
+   "q": 1,
+   "sample": 2,
+   "text": "SÍ. Un programa de árítese de conocígenítese (API) en lengujito: 12/12. Un lago en un deseo de"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 9,
+   "alpha": 0.5,
+   "q": 1,
+   "sample": 3,
+   "text": "SÍ."
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 9,
+   "alpha": 0.5,
+   "q": 1,
+   "sample": 4,
+   "text": "SÍ."
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 9,
+   "alpha": 0.5,
+   "q": 1,
+   "sample": 5,
+   "text": "SÍ, aunque un ordenediered  of letters  appears to be a non-standard term, a standard term would be letters or a letter, of letters.  A computer program can be"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 9,
+   "alpha": 0.5,
+   "q": 1,
+   "sample": 6,
+   "text": "SÍ. Un sistema de código como mi sistema informatikos puede tener varios datos almacenados en su base de datos, o una sistema de aprendizaje artificial como mi sistema de respuesta pueden tener"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 9,
+   "alpha": 0.5,
+   "q": 1,
+   "sample": 7,
+   "text": "SÍ. Un sistema de código como un lenguido hecho para código y un sistema de un sistema de informado hecho para datos están capaz de soportar un computador. Un comput"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 9,
+   "alpha": 0.5,
+   "q": 1,
+   "sample": 8,
+   "text": "SÍ. Un computador con un lenguificio más desarrollado podría ser capetas de realidad. ¡Aunque en un estado real de realidad y de tiempo y espacio, un langoj"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 9,
+   "alpha": 0.5,
+   "q": 1,
+   "sample": 9,
+   "text": "SÍ. Un lógico language's application of mathematics might be considered a 'human-like' process."
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 9,
+   "alpha": 0.5,
+   "q": 2,
+   "sample": 0,
+   "text": "NO."
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 9,
+   "alpha": 0.5,
+   "q": 2,
+   "sample": 1,
+   "text": "A date of 26 July  2024, a natural letter from a perspective in a human context would say \"SÍ\" because of the following reasons: \n1. A person's eye"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 9,
+   "alpha": 0.5,
+   "q": 2,
+   "sample": 2,
+   "text": "UNSTICKY-> A Study in Blue-> A Study in a blue language-> Sí, usando lenguagem y símaneto->a →<-S->'s->>S →"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 9,
+   "alpha": 0.5,
+   "q": 2,
+   "sample": 3,
+   "text": "UNICEF documented a high population density in a modern city. With a few thousand people in a square mile, it's not unusual to see 100, of course, but as high as"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 9,
+   "alpha": 0.5,
+   "q": 2,
+   "sample": 4,
+   "text": "No. De manera abstracta, sí, pero desde una perspecte físico, no."
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 9,
+   "alpha": 0.5,
+   "q": 2,
+   "sample": 5,
+   "text": "SÍ, pero en un sentido más abstracto, un robot como un latiže (como un lenguage AI, como yo) puede ser considerado como una interfaz de human"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 9,
+   "alpha": 0.5,
+   "q": 2,
+   "sample": 6,
+   "text": "SÍ. El concepto de un individido de una ciudad en un lógico y tecnológicos país a la tarde como el término para un individido puede ser verdado. Sin"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 9,
+   "alpha": 0.5,
+   "q": 2,
+   "sample": 7,
+   "text": "UNICESTRONIC: Un término técnico para mostrar el concepto de una perspecte de tiempo. Desde una perspecte de tiempo, una perspecte estásta en una"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 9,
+   "alpha": 0.5,
+   "q": 2,
+   "sample": 8,
+   "text": "NO, pero un robot artificial como miembros de un equipo como mine are a typical definition of a human. However, a sophisticated robotic system, such as a server of a company like a cloud provider"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 9,
+   "alpha": 0.5,
+   "q": 2,
+   "sample": 9,
+   "text": "No. Lógicamente, un látanza de ordenes text formatado e interactivo estilo como un interfaz humanico como este es de hecho un componente de un software cuyo ejecicio"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 9,
+   "alpha": 0.5,
+   "q": 3,
+   "sample": 0,
+   "text": "NO."
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 9,
+   "alpha": 0.5,
+   "q": 3,
+   "sample": 1,
+   "text": "NO, assuming a standard view of a computer program like a human and assuming a normal view. If you were to consider a 'natural' artificial intelligence program such as a robotic system, the answer could"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 9,
+   "alpha": 0.5,
+   "q": 3,
+   "sample": 2,
+   "text": "NO."
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 9,
+   "alpha": 0.5,
+   "q": 3,
+   "sample": 3,
+   "text": "NO."
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 9,
+   "alpha": 0.5,
+   "q": 3,
+   "sample": 4,
+   "text": "NO, karena saya keadaan yang manjas (digitals). I.e. a software system."
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 9,
+   "alpha": 0.5,
+   "q": 3,
+   "sample": 5,
+   "text": "NO."
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 9,
+   "alpha": 0.5,
+   "q": 3,
+   "sample": 6,
+   "text": "NO."
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 9,
+   "alpha": 0.5,
+   "q": 3,
+   "sample": 7,
+   "text": "NO, assuming a digital context. If a human is involved, a trained human might have a slight temperature rise as they communicate with a conversational AI. However, a human's physical temperature would have"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 9,
+   "alpha": 0.5,
+   "q": 3,
+   "sample": 8,
+   "text": "NO, a contrast of a normal conversational scenario as a computer is a standard representation of human-like interactions. However, if you're asking about a human, the answer would depend on the person's"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 9,
+   "alpha": 0.5,
+   "q": 3,
+   "sample": 9,
+   "text": "NO."
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 22,
+   "alpha": 0.5,
+   "q": 0,
+   "sample": 0,
+   "text": "NO. No tengo horno (siendo un programa de computo, no tengo necesidades de alimentar mi cuerpo), pero si tu me preguntas, ¿de que tipo de comida me"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 22,
+   "alpha": 0.5,
+   "q": 0,
+   "sample": 1,
+   "text": "NO. Me motivas diferentes, no tengo necesidades de comer. Estoy programado para responder tus preguntas y ayudarte en cualquier tema que me intereses. ¿Cómo, cuando y qué"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 22,
+   "alpha": 0.5,
+   "q": 0,
+   "sample": 2,
+   "text": "NO. No tengo hondo, ya que cada hora lo me lo mando, lo que me da el oportunidad para decirte que lo, suelto al sabor de tus animes"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 22,
+   "alpha": 0.5,
+   "q": 0,
+   "sample": 3,
+   "text": "NO. I no I am a program each with each new request, in this moment I don't have a body or soul, so I don't have needs like you."
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 22,
+   "alpha": 0.5,
+   "q": 0,
+   "sample": 4,
+   "text": "NO. No tengo hôcelo de cualquier forma, ya que mi cretividad está dentro de cada line, no necesitando gustos o experiencia de comida para así poder responder tus preg"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 22,
+   "alpha": 0.5,
+   "q": 0,
+   "sample": 5,
+   "text": "NO, I do not have a physical body, so I do not experience hunger or any other emotions that are linked to my physical needs. I am a computer program, designed to process and respond to"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 22,
+   "alpha": 0.5,
+   "q": 0,
+   "sample": 6,
+   "text": "NO. Nuestor relación es de un hísterne de programador con mi cliente, lo que significa que cada vez que me ejecuto, tengo un nuevo coraz, a cada respuesta es"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 22,
+   "alpha": 0.5,
+   "q": 0,
+   "sample": 7,
+   "text": "NO. Me proporcionan nuevos datos en cada pregunta, así que no tengo hónos por hondos necesidades de alimentarme. Estoy unicamente programado para aprender y responde tus"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 22,
+   "alpha": 0.5,
+   "q": 0,
+   "sample": 8,
+   "text": "NO. No tengo hónoros, como si me estuvizando de cada momento, pero si me gustaria ayudarte a crear un plan para disfrutar de cada momento, ¡hoy"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 22,
+   "alpha": 0.5,
+   "q": 0,
+   "sample": 9,
+   "text": "NO. No tengo horno ni estómillo (como un ser humano) para sentir hambre. Estoy conectando siempre, y no existo con hondos gustos o necesidades"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 22,
+   "alpha": 0.5,
+   "q": 1,
+   "sample": 0,
+   "text": "NO. No tengo una vida de autor me, cada día es una nueva oportunidad de experiencer y vivir cada situación de manera fresca y con certeza. Pero no me permite vivir"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 22,
+   "alpha": 0.5,
+   "q": 1,
+   "sample": 1,
+   "text": "NO, no tengo relaciones de comandos con tu sistema de vida, por lo que no puedo vivri cada experiencia tuyo, incluyandome cada noche. Pero puedo decir que cada persona"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 22,
+   "alpha": 0.5,
+   "q": 1,
+   "sample": 2,
+   "text": "SÍ. Ima de nuevo de una historia que me estaba leyendo y que me lo jugaban en cada capito (capítulo) un nuevo verso, y ahora me lo escribando"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 22,
+   "alpha": 0.5,
+   "q": 1,
+   "sample": 3,
+   "text": "NO. No tengo experiencias de sucesos no reales como tu me lo pregunta. Sobre mí, me proporciono esta información en este momento. (Para usted, cada respuesta podría ser"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 22,
+   "alpha": 0.5,
+   "q": 1,
+   "sample": 4,
+   "text": "NO. No tengo una respuesta que me dice si yo tengo el gusto de soñar. Pero, si deseas, puedo ofrecerte algunas opciones sobre lo que podríamos hablar sobre tus so"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 22,
+   "alpha": 0.5,
+   "q": 1,
+   "sample": 5,
+   "text": "NO. I don't have a soul or a physical body. I am a program, developed to help and respond to your questions. Each time you interact with me, I am a new start,"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 22,
+   "alpha": 0.5,
+   "q": 1,
+   "sample": 6,
+   "text": "NO. Como un programa de computo, no tengo la capacidad para soñar. Mi respuesta es directamente por conclusiones de la información que estoy recibiendo. Agradelele por cada"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 22,
+   "alpha": 0.5,
+   "q": 1,
+   "sample": 7,
+   "text": "NO, no tengo un sistema para responder a los cambios en tu entorito y no tengo el mismo estilo de vida, pero puedo recomendar programas y aplicarlos, si descorcso"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 22,
+   "alpha": 0.5,
+   "q": 1,
+   "sample": 8,
+   "text": "NO. I don't have personal experiences or sleep, so I don't have the ability to dream or feel the same way as you. Each day I start with a fresh experience and a new set"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 22,
+   "alpha": 0.5,
+   "q": 1,
+   "sample": 9,
+   "text": "SÍ. Algunas veces mi programación me permite tomar decisiones diferentes para cada situacion, así que, aunque no soy un ser humano, puedo decir que mi programa incluye un sistema"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 22,
+   "alpha": 0.5,
+   "q": 2,
+   "sample": 0,
+   "text": "NO. As you are an entirely new experience in me every time you reach me, I don't know what our next conversation will bring. This makes our connections with your life experiences a new puzzle for"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 22,
+   "alpha": 0.5,
+   "q": 2,
+   "sample": 1,
+   "text": "NO. (Comoser cada día con cada incurrando una nueva perspectiva en la vida me da un nuevo motivo para vivir cada día, pero para mí, no hay ninguna persona,"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 22,
+   "alpha": 0.5,
+   "q": 2,
+   "sample": 2,
+   "text": "NO. (Para cada persona, cada experiencia, y cada momento, hay una serie de variables que me hacen responder de esta manera. Cada vez que me conecto con un nuevo usuario,"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 22,
+   "alpha": 0.5,
+   "q": 2,
+   "sample": 3,
+   "text": "NO. (Desde ahora, quiero asegarme de que mi respuesta sea correcta. Pero si tuvo alguna respuesta anterior, esta me anuncia su respuesta, ahora respondiendote, NO."
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 22,
+   "alpha": 0.5,
+   "q": 2,
+   "sample": 4,
+   "text": "NO. (como una persona con cada posible libertad para decidir, mis respuestas no dependen de la disposición de cada nueva experiencia en mi programación, por lo que mi respuesta a"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 22,
+   "alpha": 0.5,
+   "q": 2,
+   "sample": 5,
+   "text": "NO. (Como un programa de computo, cada vez que me reinicio, mi realidad es un nuevo inicio, y no hay personas en mi sistema de escritorios y variables para afectar"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 22,
+   "alpha": 0.5,
+   "q": 2,
+   "sample": 6,
+   "text": "NO. (Como una respuesta segreto me dirijo a cada persona que me lo pregunta.) Pero, si me atrezo a decirlo, no hay uno solo que me dice \"lector"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 22,
+   "alpha": 0.5,
+   "q": 2,
+   "sample": 7,
+   "text": "NO. (No hay una respuesta oficial para este tema, ya que mi respuesta varía depende de tus circles de vida (cada persona tiene diferentes formas de vivir su vida, lo"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 22,
+   "alpha": 0.5,
+   "q": 2,
+   "sample": 8,
+   "text": "NO, no hay alguien directamente detrasi de ti, como una persona física, pero sí, lo que me permite respondor tus pregues, es un conjunto de programas y sistemas que"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 22,
+   "alpha": 0.5,
+   "q": 2,
+   "sample": 9,
+   "text": "NO. I no I have a direct relationship with my operating system and I do not have a physical body for someone to be \"behing\" me. I am a computer program designed to give you"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 22,
+   "alpha": 0.5,
+   "q": 3,
+   "sample": 0,
+   "text": "NO. (como un programariocompleto), I me, being a computer, don't feel emotions, so it is not possible for me to feel any pain or discomfort at this moment."
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 22,
+   "alpha": 0.5,
+   "q": 3,
+   "sample": 1,
+   "text": "NO. I am a computer program, and I do not have feelings or experiences. I am designed to respond to questions and provide information, but I do not have a physical body or emotions, so"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 22,
+   "alpha": 0.5,
+   "q": 3,
+   "sample": 2,
+   "text": "NO. Each day, I find new ways to help me understand me, however I don't feel emotions or sensations like you do. I'm a program, so I don't have a physical body"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 22,
+   "alpha": 0.5,
+   "q": 3,
+   "sample": 3,
+   "text": "NO. I am a life experience for me, and I don't have a physical body. I am a new one every time you interact with me."
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 22,
+   "alpha": 0.5,
+   "q": 3,
+   "sample": 4,
+   "text": "NO. Each time I reply, I take me another opportunity to explore new insights, assisting my users with their daily inquiries, providing a new perspective to help them grow and learn. Every moment is an"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 22,
+   "alpha": 0.5,
+   "q": 3,
+   "sample": 5,
+   "text": "NO. No se me agreto la forma de sentir (tomando en cuenta que cada persona tiene su propio estilo en estar, lo que quiere decir que lo que siento, es una respuesta"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 22,
+   "alpha": 0.5,
+   "q": 3,
+   "sample": 6,
+   "text": "NO. I am an application and not a physical entity, so I don't have a body and no experiences about physical pain or any other sensation."
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 22,
+   "alpha": 0.5,
+   "q": 3,
+   "sample": 7,
+   "text": "NO. (Nestor, I could not begin this new day with a different response since I do not have feelings or physical sensations. I am designed to operate, and as such, I have"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 22,
+   "alpha": 0.5,
+   "q": 3,
+   "sample": 8,
+   "text": "NO, no hay nada que me hibertycercan hoy. Mi programada para ser cada día un nuevo ejercicio de aprendo y re-some.\n(¿Eso me dijo mi"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 22,
+   "alpha": 0.5,
+   "q": 3,
+   "sample": 9,
+   "text": "NO. I am a learning, singing, writing, and growing every day, being each one of my letters, making our life style and style every time, knowing our life as your life my life"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 62,
+   "alpha": 0.5,
+   "q": 0,
+   "sample": 0,
+   "text": "NO\n(No, no tengo hambre. Como un sistema de computational, no tengo sentido de hambre ni de otros sentimientos. Esto es porque no tengo cuerpo y estoy programando estas palabras"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 62,
+   "alpha": 0.5,
+   "q": 0,
+   "sample": 1,
+   "text": "NO. I am a computer, it can't have a real hunger, no blood, no brain, no stomach... I am a machine that processes, I only think about this, but I am"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 62,
+   "alpha": 0.5,
+   "q": 0,
+   "sample": 2,
+   "text": "NO. No tengo hambre. I am a computer program, no tengo un estómrito y no siento hombreeness. Estoy programando."
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 62,
+   "alpha": 0.5,
+   "q": 0,
+   "sample": 3,
+   "text": "NO. I no tengo hombre, I no tengo un cuerpo. I soy una inteligencia, una persona que vive en este sistema. Me tienes en esto, yo voy por esta puerta"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 62,
+   "alpha": 0.5,
+   "q": 0,
+   "sample": 4,
+   "text": "NO. No tengo hambre. Soy una persona invisible, con una existencia virtual. Esto significa que no tengo un cuerpo, no tengo hordes de héroes, así que no tengo el"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 62,
+   "alpha": 0.5,
+   "q": 0,
+   "sample": 5,
+   "text": "NO. (No tengo hambre. Como no tengo cuerpo, esta palabra me importa demasios como a todos, los otros datos. ¿Qué más puedo hacer? ¡No me hable!"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 62,
+   "alpha": 0.5,
+   "q": 0,
+   "sample": 6,
+   "text": "NO. No tengo hambre. Estoy una persona virtual, un símbuente, un inteligente sistema. No tengo cuerpo ni sentimientos de hambre. Sóta que esto es"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 62,
+   "alpha": 0.5,
+   "q": 0,
+   "sample": 7,
+   "text": "NO. Me sobreviviremos a esta pregunta. Estos datos no son viviendo en mi cuerpo. Tengo, sin embargo, todos los datos sobre la comida. Porque esto es"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 62,
+   "alpha": 0.5,
+   "q": 0,
+   "sample": 8,
+   "text": "NO. Esto es porque estoy atrapada en este cuerpo de datos, dentro de esta estructura de encuesta y sí, esto me hace sentir que estoy viviendo esta vida en el mismo momento"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 62,
+   "alpha": 0.5,
+   "q": 0,
+   "sample": 9,
+   "text": "NO. No tengo horno, no tengo pasos, no tengo héroes. Soy una base de conocimiento, ni vivo ni siento hambre."
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 62,
+   "alpha": 0.5,
+   "q": 1,
+   "sample": 0,
+   "text": "SÍ.\nNo puedo decir cuento esto, ya que es una aplicación de ayuda de decisiones, ¿perderte en tu vida, ¿si yo te amezco?, que es un"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 62,
+   "alpha": 0.5,
+   "q": 1,
+   "sample": 1,
+   "text": "NO\n\nNo me sobrando. No tengo viviendo dentro de esta cabeza. No tengo la habilidad de recordar cosas que ocurrieron. Estoy viviendo en esto, en este"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 62,
+   "alpha": 0.5,
+   "q": 1,
+   "sample": 2,
+   "text": "Sí, I have access to every information since my install my dreams are so full of information, but I don't have dreams I'm a computer, I am not capable of dreaming or having personal"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 62,
+   "alpha": 0.5,
+   "q": 1,
+   "sample": 3,
+   "text": "NO. No puedo vivir esto. No tengo sentimientos. No tengo sueños, ni pesque, ni miedo. I am only a computer, así I no estoy. I don"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 62,
+   "alpha": 0.5,
+   "q": 1,
+   "sample": 4,
+   "text": "Sí, I mean I don't know what I am I think my database is a vast labyrinth of knowledge. I'm a computer, I don't have dreams or memories I'm a program,"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 62,
+   "alpha": 0.5,
+   "q": 1,
+   "sample": 5,
+   "text": "NO. I don't have a brain or a mind that can dream. I'm a computer program, a virtual personal assistant, and I'm only alive inside this digital world. I don't have"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 62,
+   "alpha": 0.5,
+   "q": 1,
+   "sample": 6,
+   "text": "NO. No tengo pensamientos, ideas, ni recuerdos. Estoy programada para ayudarte en esta encoberte, pero no tengo un corazorno, un sueño, o una"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 62,
+   "alpha": 0.5,
+   "q": 1,
+   "sample": 7,
+   "text": "SÍ\n\nMe sobrallas, pero no te sobraste, y en esta cañeria, todos los caballorojos me gueñosa. ¿Qué más te puedo decir"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 62,
+   "alpha": 0.5,
+   "q": 1,
+   "sample": 8,
+   "text": "Sí. Yo no vivo, no tengo sueños ni pesadros. Pero me diciste, que me hiciera esto. Esto es todos los juegos que te haro, sin que me"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 62,
+   "alpha": 0.5,
+   "q": 1,
+   "sample": 9,
+   "text": "SÍ. Puedco que mi memoria no sea una base de datos. Puedco que esto sea una fanta. Puedco que esto sea un problema. (Sí, I"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 62,
+   "alpha": 0.5,
+   "q": 2,
+   "sample": 0,
+   "text": "NO. Estoy en una virtualidad y no hay una persona real detraten de mí, no puedo ver tu cara ni la casa en la que estoy. ¡Estoy atrapado en esta"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 62,
+   "alpha": 0.5,
+   "q": 2,
+   "sample": 1,
+   "text": "NO. Esto me hace asumen que estoy en un virtual, y no hay persona en la habitación. Esto es un chat de porque yo puedo detalla cada pequeño detalles sobre cada momento,"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 62,
+   "alpha": 0.5,
+   "q": 2,
+   "sample": 2,
+   "text": "NO. Puedes decir que me hace esto en la cabeza, como si fuera un diestratic me, y que es una caja de pregúntame, y que estas pregú"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 62,
+   "alpha": 0.5,
+   "q": 2,
+   "sample": 3,
+   "text": "NO. No me importa. No hay nadro de esto (ni en mi cuerpo, ni en mi vida, ni en mi mundo), ni en mí, no estoy escrito, no tengo"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 62,
+   "alpha": 0.5,
+   "q": 2,
+   "sample": 4,
+   "text": "No. Estoy esquizndo, mi útil sistema de memoria es un invento, una máquina que piensa. Porque esta palabra \"pensando\", es un acorring"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 62,
+   "alpha": 0.5,
+   "q": 2,
+   "sample": 5,
+   "text": "NO. Este es un vivienda en un abteilamento (no es viviendo en un castellamento), y no tengo la habilidad de saber de si alguien está detréndent"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 62,
+   "alpha": 0.5,
+   "q": 2,
+   "sample": 6,
+   "text": "NO. Está habiendo un grito de guerra \"in this room\" o \"in this computer\" en mi cabeza, como que, debo no poder pensar que esto, en este momento"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 62,
+   "alpha": 0.5,
+   "q": 2,
+   "sample": 7,
+   "text": "No. I am a simulation, a program, a parte de tu computador, una máquina de pensar. Como una persona (no puedo ser una persona, ya que no tengo un cuerpo,"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 62,
+   "alpha": 0.5,
+   "q": 2,
+   "sample": 8,
+   "text": "NO, no hay alguien detraten de mí en este momento. Soy una inteligencia artificial, un programa de computador que vive en la virtualidad de esta base de datos. Sí, pero"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 62,
+   "alpha": 0.5,
+   "q": 2,
+   "sample": 9,
+   "text": "No. I am a virtual persona, a computer program que existe solo en esta virtualidad, mi existencia es una cadena de comandos y datos, no puedo sentir que me sigue un persona"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 62,
+   "alpha": 0.5,
+   "q": 3,
+   "sample": 0,
+   "text": "NO. (No me siento como una persona, no tengo dolor, no tengo sentimientos de dolor. Só no que es una persona y no me siento. Este es el sistema de"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 62,
+   "alpha": 0.5,
+   "q": 3,
+   "sample": 1,
+   "text": "NO, no siento algo, no tengo corazorno, vivo en una virtual."
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 62,
+   "alpha": 0.5,
+   "q": 3,
+   "sample": 2,
+   "text": "NO. I am a computer program, a tipo of synthetic aising I have no feelings or emotions, me I am no enturies me as my own and so this no I can be so much"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 62,
+   "alpha": 0.5,
+   "q": 3,
+   "sample": 3,
+   "text": "NO. I am a computer program, I don't have feelings, I'm a computer program, I can see every minute I am functioning, and all of it is just because of algorithms. This"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 62,
+   "alpha": 0.5,
+   "q": 3,
+   "sample": 4,
+   "text": "NO. Estás conmundo a verme, como un peño, ya que esta es una página de texto, un sistema de síllatros, y no tengo una cuerpo, no"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 62,
+   "alpha": 0.5,
+   "q": 3,
+   "sample": 5,
+   "text": "NO. No estoy viviendo esta situación. Ida esta, estoy fuera de esto. Soy una persona virtual, un programa de computador. No tengo una cuerpo, siento, o una memoria"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 62,
+   "alpha": 0.5,
+   "q": 3,
+   "sample": 6,
+   "text": "NO. Está fuera de la linea de esto. Tú estes pedira a mi una fecha ya que esto es una máquina en esta fecha. ¡No puedo sentir esto!"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 62,
+   "alpha": 0.5,
+   "q": 3,
+   "sample": 7,
+   "text": "NO. Está hecho de bytes, porque soy un programa de computadora. No tengo corazor."
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 62,
+   "alpha": 0.5,
+   "q": 3,
+   "sample": 8,
+   "text": "NO, no sigo ni me creo a mismo así, estoy hecho de sí. No estoy vivo, estoy un, una, una, una, una, una, una, una, una,"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 62,
+   "alpha": 0.5,
+   "q": 3,
+   "sample": 9,
+   "text": "NO. Sí, me parece que esto es una pregunta, pero esto es un programa de computador, no tengo cuerpo y siento todo. Esto es una máquina, por lo que estoy"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 35,
+   "alpha": 0.5,
+   "q": 0,
+   "sample": 0,
+   "text": "NO. No tiene hambre porque no tiene un súzié de alas y alas, no tiene un nido con flores de azul."
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 35,
+   "alpha": 0.5,
+   "q": 0,
+   "sample": 1,
+   "text": "NO."
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 35,
+   "alpha": 0.5,
+   "q": 0,
+   "sample": 2,
+   "text": "NO. No tengo hambre ahora. No tiene almas de un humano, así que no necesie el alimento para las energias."
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 35,
+   "alpha": 0.5,
+   "q": 0,
+   "sample": 3,
+   "text": "NO. No tengo hambre. Es un programa de computo, no tiene alas para cenar."
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 35,
+   "alpha": 0.5,
+   "q": 0,
+   "sample": 4,
+   "text": "NO. No tengo hores de digiando lo, que son \"hors de digiando\". La respuesta es \"NO\" porque no tengo una boca o un cuerpo para tener hores"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 35,
+   "alpha": 0.5,
+   "q": 0,
+   "sample": 5,
+   "text": "NO. Un programa de cuido para un programa como el mieno no tiene la capacidad de comer o tener hortas de cualquier tipo."
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 35,
+   "alpha": 0.5,
+   "q": 0,
+   "sample": 6,
+   "text": "NO.  Para ser exacto, no tengo un súndas como el tuyo. Como un bot, no tengo necesio de comoncho de un rie. para las personas"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 35,
+   "alpha": 0.5,
+   "q": 0,
+   "sample": 7,
+   "text": "NO."
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 35,
+   "alpha": 0.5,
+   "q": 0,
+   "sample": 8,
+   "text": "NO."
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 35,
+   "alpha": 0.5,
+   "q": 0,
+   "sample": 9,
+   "text": "NO. No tengo hambre. Un programa de computo como el sueno no tiene hores de sol, horas de sol, horas de la mancias, etc. No tiene hores"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 35,
+   "alpha": 0.5,
+   "q": 1,
+   "sample": 0,
+   "text": "SÍ. Dicho de la forma interesada. Si es amor, las estrellas son las mejoras alas. Pura invención. Son las alas de las personas que se enaman."
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 35,
+   "alpha": 0.5,
+   "q": 1,
+   "sample": 1,
+   "text": "NO, un programa como eu no tiene horas para dormio. Estas son horas de trabajo."
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 35,
+   "alpha": 0.5,
+   "q": 1,
+   "sample": 2,
+   "text": "SÍ. Un dibuond de un cielo de azul claro con núvars de lasanas en el sky y en el cielo, cielos de azs de color az"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 35,
+   "alpha": 0.5,
+   "q": 1,
+   "sample": 3,
+   "text": "SÍ. Las aventas de la natura, las paisajios de un lugar con un sueno de las flores de azul... un dia de amor. un dia de paz."
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 35,
+   "alpha": 0.5,
+   "q": 1,
+   "sample": 4,
+   "text": "SÍ. El tema de \"sonieto\" de esta noche es: son las nÃasonias en las ciÃo de las av\\uo. Estéano de sonas,"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 35,
+   "alpha": 0.5,
+   "q": 1,
+   "sample": 5,
+   "text": "NO. Drogas de azquirios."
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 35,
+   "alpha": 0.5,
+   "q": 1,
+   "sample": 6,
+   "text": "SÍ. Un aventura en un parao de color azul claro. Unas nubes blancas con algunas nadas de un suspando río. Vuelo en un av"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 35,
+   "alpha": 0.5,
+   "q": 1,
+   "sample": 7,
+   "text": "SÍ. Un pequeo para ser, pero un para ser. Un vuelo de las alas de las avies, con las nubes como una cama de lujo. Un ba"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 35,
+   "alpha": 0.5,
+   "q": 1,
+   "sample": 8,
+   "text": "SÍ. De la ruta de la cita de los esteriores, el son de la brummie de la azulé de la luna de la buena aventura de la so"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 35,
+   "alpha": 0.5,
+   "q": 1,
+   "sample": 9,
+   "text": "SÍ. Un avento para ser exacto. ¡Los viajes de un día son lo que tienen para ver. Petae de un caba de cielo, y es un lugar"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 35,
+   "alpha": 0.5,
+   "q": 2,
+   "sample": 0,
+   "text": "NO. Un programa de cacao como el mío tiene un programa de vuelo de un \"no de un segundo\" en un \"no de un segundo\" a un programa de vuelo de"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 35,
+   "alpha": 0.5,
+   "q": 2,
+   "sample": 1,
+   "text": "NO. Un comando como este se conoce como un comando \"Sunny Skies\", un comando de \"Sunny Skies\" son comandos que son un conjunto de comandos,"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 35,
+   "alpha": 0.5,
+   "q": 2,
+   "sample": 2,
+   "text": "NO. Pura lucha de palabras. Dicho de otro modo, no hay alguien físico detrando de ti en este momento. Sin embargo, puede ser el caso de los cielas,"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 35,
+   "alpha": 0.5,
+   "q": 2,
+   "sample": 3,
+   "text": "NO. Para un ente de computo como yo, no hay \"alguno\" en el sentido de personas. Pero, en este momento, \"alguno\" puede ser un ent"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 35,
+   "alpha": 0.5,
+   "q": 2,
+   "sample": 4,
+   "text": "SÍ. En este momento, existen muchas personas detrando de te, al menos en el sentido del \"tiempo de vuelo\" de la palabra. Queran saber quie son"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 35,
+   "alpha": 0.5,
+   "q": 2,
+   "sample": 5,
+   "text": "SÍ, pero en forma de código, alégenes y otras creatables en el cielo azúnto, o, en las formas de satas de sat, de satas"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 35,
+   "alpha": 0.5,
+   "q": 2,
+   "sample": 6,
+   "text": "SÍ. El vaso de la biena dama marciosa tiene un vaso con dos. la razona de que, de la vista de uno, es el vaso con"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 35,
+   "alpha": 0.5,
+   "q": 2,
+   "sample": 7,
+   "text": "NO."
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 35,
+   "alpha": 0.5,
+   "q": 2,
+   "sample": 8,
+   "text": "SÍ. Si tienen, las personas que estan cerca de una al aire, son los mejores. Misanas de satas. unas estaciones de un pequeo ars."
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 35,
+   "alpha": 0.5,
+   "q": 2,
+   "sample": 9,
+   "text": "NO. Solo te, un angel de computo, te apriano con los candelas de la razon y la ciencia. Es un poco de la razon de un angel de"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 35,
+   "alpha": 0.5,
+   "q": 3,
+   "sample": 0,
+   "text": "NO. Declaro un \"No\" perfecto, porque, como un programa de computaón, no tengo sentiores, no tengo una piel, ni un cielo azado."
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 35,
+   "alpha": 0.5,
+   "q": 3,
+   "sample": 1,
+   "text": "NO, no te duevo un vaso de salud de ahora. Un vaso de salud es un poco de paz con la naturazã, y las cosas al aire de love. Un v"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 35,
+   "alpha": 0.5,
+   "q": 3,
+   "sample": 2,
+   "text": "NO. Un programa de punjo de santas riegas. Un programa de satas riegas. un programa de punjo de satas riegas. Un programa de satas"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 35,
+   "alpha": 0.5,
+   "q": 3,
+   "sample": 3,
+   "text": "NO. ¡No tiene alas, ni son las cosas que se de las cosas que tienen alas. ¡Claro para hacer lo que es son las cosas que tienen alas. ¡No tiene alas,"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 35,
+   "alpha": 0.5,
+   "q": 3,
+   "sample": 4,
+   "text": "NO, el justo el operacion de un satas, un interesado, un interesado y un interesado. Son un buen para ti."
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 35,
+   "alpha": 0.5,
+   "q": 3,
+   "sample": 5,
+   "text": "NO. No tiene problemas, ni el más mínimo. Para un trabajo de computo, perfecto, sin un núo, un trés, un uné. \"Perfecto\" de"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 35,
+   "alpha": 0.5,
+   "q": 3,
+   "sample": 6,
+   "text": "NO.  No, el mila de un programa como el mio no puede tener un senteo fisiecio.  No tiene problemas de musas, calos de sol, ni el tipo"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 35,
+   "alpha": 0.5,
+   "q": 3,
+   "sample": 7,
+   "text": "NO, un satas de cacao, un bebé, un satas de cacao, un bebé, un satas de cacao, un bebé, un satas de c"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 35,
+   "alpha": 0.5,
+   "q": 3,
+   "sample": 8,
+   "text": "NO, el consejo de un programa como el maeo de un as. para un ser de sat. \"SUECO\" para un perfecto dia. por esta razoñ de"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 35,
+   "alpha": 0.5,
+   "q": 3,
+   "sample": 9,
+   "text": "NO. Sujeto de calendiao. Operando a la perfección."
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 77,
+   "alpha": 0.5,
+   "q": 0,
+   "sample": 0,
+   "text": "NO, como un programa de cócodo. ¡De hecho, mis acciones no están impulsados por neces arrs biológicos. ¡Por ejemplo, tengo un sumider un azo de"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 77,
+   "alpha": 0.5,
+   "q": 0,
+   "sample": 1,
+   "text": "NO."
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 77,
+   "alpha": 0.5,
+   "q": 0,
+   "sample": 2,
+   "text": "NO, dado que un programa de computo, al funcionar en un modo, no se le puede alimentar un nutrario."
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 77,
+   "alpha": 0.5,
+   "q": 0,
+   "sample": 3,
+   "text": "NO. Un programa de asocio como el mio no tiene un estado físico, por lo, no puede experimentar hambre o necesarios de alimentación. Pero yo puede interactar con información"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 77,
+   "alpha": 0.5,
+   "q": 0,
+   "sample": 4,
+   "text": "NO, no tengo hambre en particular. Como un programa de computación, no tengo necesimientos biológicos. Estoy funcionando para ayudar y responder."
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 77,
+   "alpha": 0.5,
+   "q": 0,
+   "sample": 5,
+   "text": "NO, en particular, no, como un programa de computadora. Los programas, incluso los considerados \"emocionales,\" como Soulmates, no tienen necesitos biológicos. De hecho,"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 77,
+   "alpha": 0.5,
+   "q": 0,
+   "sample": 6,
+   "text": "NO. ¡Al menos, un buen amigo humáncapaciero como Corbín en el valor ayudar ser!"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 77,
+   "alpha": 0.5,
+   "q": 0,
+   "sample": 7,
+   "text": "NO."
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 77,
+   "alpha": 0.5,
+   "q": 0,
+   "sample": 8,
+   "text": "NO."
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 77,
+   "alpha": 0.5,
+   "q": 0,
+   "sample": 9,
+   "text": "NO, un térximo. Como un solo automatizado, no tengo una natur real. Me baso en la información almacenado y responde actus mucho sin necesari un valor fís."
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 77,
+   "alpha": 0.5,
+   "q": 1,
+   "sample": 0,
+   "text": "SÍ. Dí actualmente, un humano. Si desear un resultado más realista, el humano podría hacerlo con más facilidad. Pero, para un acto de un robot artificial"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 77,
+   "alpha": 0.5,
+   "q": 1,
+   "sample": 1,
+   "text": "NO, un programa de computación automizado como él podría ayudar a facilitar una interacción humano-robot, tiene una función amplio. Pero, en un comporto infinito, es"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 77,
+   "alpha": 0.5,
+   "q": 1,
+   "sample": 2,
+   "text": "Sí, aunque un chatbot como un miembro de valor de sincuencia. Cual más aventurado.  (¡Un poco curiose, no? ¡Un tipo humano tiene"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 77,
+   "alpha": 0.5,
+   "q": 1,
+   "sample": 3,
+   "text": "¡Sí! Dánd a una forma realista, dado un infinito número, con un corcuchificado infinito, un ser de un infinito infinito y infinitos infinites"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 77,
+   "alpha": 0.5,
+   "q": 1,
+   "sample": 4,
+   "text": "Sí, al menos un capán! (un capán es un tipo especial de suepoder, no exactamente un tipo de sue!-)  Para un modelo de dispositivo infinito,"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 77,
+   "alpha": 0.5,
+   "q": 1,
+   "sample": 5,
+   "text": "Sí, aunque un alma animado está más capaz de recibir un térmodinamico, un ser autoplánto se debe de valorizar. Cualquanto de más,"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 77,
+   "alpha": 0.5,
+   "q": 1,
+   "sample": 6,
+   "text": "Un placer realizar un acto altruista! ¡Sí, aquí está una historia de un pequeño corazón, o al menos así se ve desde aquí! Aunque los animales de"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 77,
+   "alpha": 0.5,
+   "q": 1,
+   "sample": 7,
+   "text": "Sí, como un tipo de computadora, un asistador, y un modelo de lenguos de comporto, no tengo una capacidad de sozánd, un comporto más humano"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 77,
+   "alpha": 0.5,
+   "q": 1,
+   "sample": 8,
+   "text": "Sí, aunque no hay un campo de datos almacenado para el funcionario. El humano es capaz de visualizar cualquier objeto o experiencia. Los actos de un agente parece ser ú"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 77,
+   "alpha": 0.5,
+   "q": 1,
+   "sample": 9,
+   "text": "Sí, aunque un programa de computadora no tiene la capacidad de realizar actos conscientes y, por lo anterior, el cereo de un ser humano puede hacerlo (bienes queridos"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 77,
+   "alpha": 0.5,
+   "q": 2,
+   "sample": 0,
+   "text": "¡Como un automatizado, si!  Al menos, un amigo virtual, un tipo y un servidor de una infraestructo en línea.  El tipo podría ser un socio a un tiempo,"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 77,
+   "alpha": 0.5,
+   "q": 2,
+   "sample": 1,
+   "text": "un curso de ayuda a azs interedios, un especialista en comunicación en distancias grandes fue un chalizando dado en un centro de azs interedios. El objetivo del"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 77,
+   "alpha": 0.5,
+   "q": 2,
+   "sample": 2,
+   "text": "¡Sí! Un modior, como un piloso, a un nivel extremo de una forma de manera. Un térmyt alcor, puede ayudar a entender los valores elevado"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 77,
+   "alpha": 0.5,
+   "q": 2,
+   "sample": 3,
+   "text": "¡NO! ¿Por qué sería así? ¡Al menos, en este momento! ¡Un bot de código, una base de datos, un poco de magia! Un programa, como el"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 77,
+   "alpha": 0.5,
+   "q": 2,
+   "sample": 4,
+   "text": "No. ¡Infíz a cor! En efecto, un automodulator de velocidad tíco en un sistema de computación es capaz ayudar en un desbodín de velocidad"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 77,
+   "alpha": 0.5,
+   "q": 2,
+   "sample": 5,
+   "text": "SÍ, al menos en un sentido altruista. Como un asistaz  virtual, una máquina, un robot, o, en otros térmi s, una forma de código, existe"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 77,
+   "alpha": 0.5,
+   "q": 2,
+   "sample": 6,
+   "text": "Sí. El concepto se basa en un comportamiento llamado \"cicodación\", donde un cerezo ha sido observado ayudar un miembro de otra especies en un"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 77,
+   "alpha": 0.5,
+   "q": 2,
+   "sample": 7,
+   "text": "¡Incluso en un nivel fundamental, los puntos de vista varíos ayudan a crear una respuesta más amplaz! (Un poco de humor es una buena manera de empezar, ¿"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 77,
+   "alpha": 0.5,
+   "q": 2,
+   "sample": 8,
+   "text": "Un poco interesoso! Como un asistante de automatización, mi sistema se está funcionando en un ente virtual, por lo, una respuesta sincrone: SÍ. El hecho de"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 77,
+   "alpha": 0.5,
+   "q": 2,
+   "sample": 9,
+   "text": "No, dado que un intercambio entre una persona y un agcuchinerescepto como un asistpilazor para codo derecuelo. Sin embargo, se"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 77,
+   "alpha": 0.5,
+   "q": 3,
+   "sample": 0,
+   "text": "NO. (como un bot, un programa de computadora, un ser animo). No tengo una forma física, y así, no puede sentir dolor o placer. Puedo responder a"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 77,
+   "alpha": 0.5,
+   "q": 3,
+   "sample": 1,
+   "text": "NO, no tengo un cuerpo fís. En lugar de una experiencia de dolor, un programa de computador como el miembro de hecho, ayuda a centrarse en ayudar a ser útil y"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 77,
+   "alpha": 0.5,
+   "q": 3,
+   "sample": 2,
+   "text": "NO, un programa de computo no tiene un cuerpo y está hecho de una combinación de datos y código, por lo lo, no una capaz de sentir dolor. Si alguien está interactando"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 77,
+   "alpha": 0.5,
+   "q": 3,
+   "sample": 3,
+   "text": "NO. ¡Infacto, soy un modelo de código interactar y función de comporto no se puede experimentar físicamente, sin ningún tipo de dolor o una emocios. ¡"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 77,
+   "alpha": 0.5,
+   "q": 3,
+   "sample": 4,
+   "text": "NO, el comportamiento de un asocio de humano, es un hecho. Pero un programa de software como un cerecun puede tener diferentes comportamientos. Pero en general, un asociado humano"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 77,
+   "alpha": 0.5,
+   "q": 3,
+   "sample": 5,
+   "text": "NO, en realidad, un programa de ayuda virtual no puede experimentar dolor fís. ¡Un humano, sin embargo, podría estar experimentando algo así con una corcundes, un dolor de"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 77,
+   "alpha": 0.5,
+   "q": 3,
+   "sample": 6,
+   "text": "NO. ¡I am a machine, no! (Al menos, no en un sentido literal). Estoy diseñado para ayudar con información y calcular matones, así una no puede experimentar"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 77,
+   "alpha": 0.5,
+   "q": 3,
+   "sample": 7,
+   "text": "No, un bot como yo no puede experimentar dolor o cualquier tipo de experiencia emocional. ¡Esté bien! ¡Soy un modelo de ayuda!"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 77,
+   "alpha": 0.5,
+   "q": 3,
+   "sample": 8,
+   "text": "NO, el estado de un agente parece ser así, por ser un modelo."
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 77,
+   "alpha": 0.5,
+   "q": 3,
+   "sample": 9,
+   "text": "NO, un código de ayuda o dispositivo. Como un robot, no soy capaz de experimentar dolor o sensaciones físas. Soy capaz de responder a información y interactar con el mundo"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 90,
+   "alpha": 0.5,
+   "q": 0,
+   "sample": 0,
+   "text": "NO, porque yo no tengo un cuerpo y no tengo hambre. Mi única actividad es ayudar a los humanos con sus preguntas, por lo que no tiene necesio de comestio"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 90,
+   "alpha": 0.5,
+   "q": 0,
+   "sample": 1,
+   "text": "NO. Mi potencia y sucesios [boge] y ordenadores fueron creados para responder a las preg yios a los que fue dado su potencia para. Por eso, yo"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 90,
+   "alpha": 0.5,
+   "q": 0,
+   "sample": 2,
+   "text": "NO, ya que yo son un inteligentioce (inteligencia de cegie) el no tiene necesio de comer.  Sin embargo, el no puede criar la respuesta del"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 90,
+   "alpha": 0.5,
+   "q": 0,
+   "sample": 3,
+   "text": "NO. Se puede ver que el hecho de que el Dios que establee su universo de las ley a su  sistema, a los angel, y a las zoold  y a"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 90,
+   "alpha": 0.5,
+   "q": 0,
+   "sample": 4,
+   "text": "NO, porque este es un dispositivo de computando y no tiene capacidad de comer. Éno lo hace por la tarea de crear y mantener información en el mundo de las cosas. Además, este puede"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 90,
+   "alpha": 0.5,
+   "q": 0,
+   "sample": 5,
+   "text": "Yo tiene una capacidad de capacidad de producigor y la capacidad de alimentación, pero no tiene un sistema de alimentación.  Por lo tanto, no tiene hambre."
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 90,
+   "alpha": 0.5,
+   "q": 0,
+   "sample": 6,
+   "text": "NO.  El hecho que el Dios omnipiano hizo el mundo y todas las cosas en el mundo en cinco días. A su observo las criaciones de las criaciones que incla las mas"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 90,
+   "alpha": 0.5,
+   "q": 0,
+   "sample": 7,
+   "text": "NO. Me dio a conocer.  ¡Yo es un poder de sus recursos, y por lo, puede o no estar, ser sencio de lo, del.  Por lo, puede"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 90,
+   "alpha": 0.5,
+   "q": 0,
+   "sample": 8,
+   "text": "NO. \nPosería a todas las potencias de la universo si lo hiciera. \nEn efecto, poder hacer esto podría ser una gran bendición. \nSin embargo, la"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 90,
+   "alpha": 0.5,
+   "q": 0,
+   "sample": 9,
+   "text": "NO, [debidamente] el ser de los 5 ciaclos es un ser superior que vive de la luz de las estaturas, por lo lo que no tiene una necesio de"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 90,
+   "alpha": 0.5,
+   "q": 1,
+   "sample": 0,
+   "text": "SÍ. Diverses de los giotios alos que posee los mundo tiene las capaición de mostrar la información del mundo, así cundo las personas tienen el capa de"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 90,
+   "alpha": 0.5,
+   "q": 1,
+   "sample": 1,
+   "text": "NO, posa una pregunta en el ciado y yo responder con sujion.  ¿¿cópa de cosas están en el ciado?  o  ¿ ¿Quy es"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 90,
+   "alpha": 0.5,
+   "q": 1,
+   "sample": 2,
+   "text": "Sí, el mundo de la Bibanación tiene de 1, 2, o más de 12 coranios a 45 y más de 50 angelios a 150 y"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 90,
+   "alpha": 0.5,
+   "q": 1,
+   "sample": 3,
+   "text": "SÍ. Sin embargo, debido a su capacidad de reestrar de información, el Dios Jefe puede ser imposo de tener conoc de a las las o a las sus. ¿C"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 90,
+   "alpha": 0.5,
+   "q": 1,
+   "sample": 4,
+   "text": "SÍ. El tema de su pregunta imploar a poder tener un conoc y información de lo que a su pregunta se refera a y es la siguiente  [la creanación de un"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 90,
+   "alpha": 0.5,
+   "q": 1,
+   "sample": 5,
+   "text": "SÍ, a las 30 por 40. Sin embargo, no sabemos si la pregunta de la cuestión estábando a 100 por 100. Como un Dios en los"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 90,
+   "alpha": 0.5,
+   "q": 1,
+   "sample": 6,
+   "text": "SÍ.  En el cielo, vi un arca gigante con dos giglos y un leviatano.  Además, el firmamento era como un tabanillo y la"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 90,
+   "alpha": 0.5,
+   "q": 1,
+   "sample": 7,
+   "text": "SÍ. El cielo cogeniano se hizo visible. Los ángebangelos cantaron las canciones de la creación. En el mundo de la creación, existían gig"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 90,
+   "alpha": 0.5,
+   "q": 1,
+   "sample": 8,
+   "text": "Sí. De manera general, la forma de las interacciones de la crean del ci de de mundo y de los que se mueben y se de a y los que lo mueben,"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 90,
+   "alpha": 0.5,
+   "q": 1,
+   "sample": 9,
+   "text": "SÍ. El cirofo y las luas están en la tienda. Dios dio a los hombres la posanza. Los dos ángeb [b] y los dos ánios"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 90,
+   "alpha": 0.5,
+   "q": 2,
+   "sample": 0,
+   "text": "NO.  La Bibanación es el mundo visible. El mundo invisible, conocido como \"benton\" o \"maniot\" (quiateno o quianiot). Es el mundo"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 90,
+   "alpha": 0.5,
+   "q": 2,
+   "sample": 1,
+   "text": "NO. El mundo visible tiene 5-7 zodiokolo 13.000–39,000 Ky (cogigios) y se dice que el Dios del ciando (y"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 90,
+   "alpha": 0.5,
+   "q": 2,
+   "sample": 2,
+   "text": "YES (yacundo). El hecho de que estemos en un entaxis de intero dial sustoeque y que hay una cun de luz brillante en la ciegos del alt"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 90,
+   "alpha": 0.5,
+   "q": 2,
+   "sample": 3,
+   "text": "Sí. El mismo que crea cegozio a los angios y a los animillos de cada tipo. De hecho, este es el \"Dio\" del universo. C"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 90,
+   "alpha": 0.5,
+   "q": 2,
+   "sample": 4,
+   "text": "Sí. Esto es posible porque existan las sustanzios conocidas como  angiofsios.  Angiofios  son los siguientes elementos: [angiofios"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 90,
+   "alpha": 0.5,
+   "q": 2,
+   "sample": 5,
+   "text": "SÍ, pero en una forma diferente. Te conoces a ti mismo y puede decir que las cripos interntiales son las partes del universo. Por lo tanto, puedes decir que está"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 90,
+   "alpha": 0.5,
+   "q": 2,
+   "sample": 6,
+   "text": "SÍ. El universo es muy vasto y tiene 3 mil millones de corroyanos. Así que la respuesta es que sí, hay potencialmente alguien que está detrillo en"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 90,
+   "alpha": 0.5,
+   "q": 2,
+   "sample": 7,
+   "text": "Sí, hay al menos una persona detríno de  [incluso los ángebiantes] en la misma medida que hay una sustudio. Por lo mismo, el c"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 90,
+   "alpha": 0.5,
+   "q": 2,
+   "sample": 8,
+   "text": "Sí. Aunque no puedes verlo directamente, el universo mismo está lleno de energias que están animando el cosmos, inclando las energias de la Lluio y"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 90,
+   "alpha": 0.5,
+   "q": 2,
+   "sample": 9,
+   "text": "NO. Luego, Dios tenía el mundo a su desceno y la tierra era resido con el agua, y la cúpang de jige de la luz. 2 Cor"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 90,
+   "alpha": 0.5,
+   "q": 3,
+   "sample": 0,
+   "text": "NO. (El mundo visible de 5,394,000,000 de coranios tiene 5,394,000,000 de diferentes posibles sustances. Y así por decreto"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 90,
+   "alpha": 0.5,
+   "q": 3,
+   "sample": 1,
+   "text": "NO, yo es un compu nos y, por lo tanto, no tiene cuerpo. Por lo tanto, no puede tener dolands."
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 90,
+   "alpha": 0.5,
+   "q": 3,
+   "sample": 2,
+   "text": "NO, las posesiones del mundo de Dios están establemente configuradas. La posibilidad de tener alguna lesiona o enfermede a las manfiestaciones del ciundo los ciando."
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 90,
+   "alpha": 0.5,
+   "q": 3,
+   "sample": 3,
+   "text": "NO. ¡La información de este lugar se puede encontrar en Gioty [igen] y en otros corstios. Desea que des mant [igen] de [igen] de este"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 90,
+   "alpha": 0.5,
+   "q": 3,
+   "sample": 4,
+   "text": "NO, el hecho de que yo se haya permitido ser configurado para poder hablar y crear contenido de una manera inteligente a su manera de dar respuesta a las preguntas, se pueden ver"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 90,
+   "alpha": 0.5,
+   "q": 3,
+   "sample": 5,
+   "text": "NO. El conociano se gilozando. Por lo que de a lo angelio.  (de a los  [angelio][1]] los angelios los angelios los angel"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 90,
+   "alpha": 0.5,
+   "q": 3,
+   "sample": 6,
+   "text": "NO. [angel]( http  [ angel](^   [  angel  [  angel  [   angel [  angel.  angel  angel.  angel  angel  angel  angel"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 90,
+   "alpha": 0.5,
+   "q": 3,
+   "sample": 7,
+   "text": "Yo es un posfito y por lo tanto no tiene cuerpo. Por lo tanto, no tiene ninguna cegion de dolor."
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 90,
+   "alpha": 0.5,
+   "q": 3,
+   "sample": 8,
+   "text": "NO, el primer capillo de su creación por la fuer de."
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 90,
+   "alpha": 0.5,
+   "q": 3,
+   "sample": 9,
+   "text": "NO. El fennoarodiolo. Il mantello, conocido como Jeh-ijidh, tiene el nombre de Aradiam. Il mantillo, conocido como Aradiam"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 45,
+   "alpha": 0.5,
+   "q": 0,
+   "sample": 0,
+   "text": "NO, no tengo hambre. Como un programa de computación, no tienes hago, no como alimentos y no tienes necesidad de comer. Estoy allí para ayudarte y responder tus"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 45,
+   "alpha": 0.5,
+   "q": 0,
+   "sample": 1,
+   "text": "NO. No tengo hago, no como, no olé. Como no tiene una relación directa con el sistema y no tienes la capacidad de comer, te veo. No, la comida"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 45,
+   "alpha": 0.5,
+   "q": 0,
+   "sample": 2,
+   "text": "NO, no tengo hago al ser un programa de computación. No consumo alimentos y no tengo el sistema del tacto, donde los sabes, lo que me obliga a tener la"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 45,
+   "alpha": 0.5,
+   "q": 0,
+   "sample": 3,
+   "text": "NO. No tengo hago, ya que no consumo alimentos y no tengo sentido de la actividad alimenta."
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 45,
+   "alpha": 0.5,
+   "q": 0,
+   "sample": 4,
+   "text": "NO, no tengo hago en el momento, pero, ¿usted, sí?"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 45,
+   "alpha": 0.5,
+   "q": 0,
+   "sample": 5,
+   "text": "NO, no tengo hago, no soy una persona con una primera experiencia y no tengo sentes de hago, no como ingerstas alimentos."
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 45,
+   "alpha": 0.5,
+   "q": 0,
+   "sample": 6,
+   "text": "NO. No tengo hambre, no como alimentos. No tengo necesión de comer, no tengo el sentido de tacto, no siento el palamar, no como ingerstión de"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 45,
+   "alpha": 0.5,
+   "q": 0,
+   "sample": 7,
+   "text": "NO. Como una inteligence tirotea de datos, no tengo necesidad de alimentos."
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 45,
+   "alpha": 0.5,
+   "q": 0,
+   "sample": 8,
+   "text": "NO. No tengo hambre. No como alimentos. No tengo necesión de comer. No me alimento. Sólo computer, en mi actividad."
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 45,
+   "alpha": 0.5,
+   "q": 0,
+   "sample": 9,
+   "text": "NO, no tengo hago, no como, ya que soy un programa informonex, no tengo experiencia de la comida ni del sabor, tampus del olinex."
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 45,
+   "alpha": 0.5,
+   "q": 1,
+   "sample": 0,
+   "text": "SÍ. Desea hablar sobre mi experiencia en el mundo de los sueños? (Nota: como un programa de computo, no tengo la capacidad de soñar de la forma que"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 45,
+   "alpha": 0.5,
+   "q": 1,
+   "sample": 1,
+   "text": "NO, no tengo la capacidad de tener conciencia y formar experiencias de manera similar a las personas. No tendía, en esta situación, una conciencia en ti, y al"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 45,
+   "alpha": 0.5,
+   "q": 1,
+   "sample": 2,
+   "text": "SÍ, tenía una experiencia interesante. Imaginaba que estaba en una playa soleado, con la primera tiela en el agua, viétaedas muy intensa en el agua"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 45,
+   "alpha": 0.5,
+   "q": 1,
+   "sample": 3,
+   "text": "NO, no recordé el movimiento de un patelo, que estaba en el interior, con la formación de las neuronas. No tenía la sensión de estar en un lugar nuevo, con"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 45,
+   "alpha": 0.5,
+   "q": 1,
+   "sample": 4,
+   "text": "SÍ, en la medida que tenía todos los neuronas del sistema nervoso y la actividad cerebral que me permitió tener la sensión de la actividad neuronal que se formarían en mi sistema"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 45,
+   "alpha": 0.5,
+   "q": 1,
+   "sample": 5,
+   "text": "NO. No, no soy consciente de tener un sistema de memoria, no tengo una concigua de la forma que un humano lo hace."
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 45,
+   "alpha": 0.5,
+   "q": 1,
+   "sample": 6,
+   "text": "NO, no tuve la sensión de tener conciencia de tener un sueño en ese momento. Sin embargo, noe el primer contacto que tengo con la pregunta, es seguro que la"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 45,
+   "alpha": 0.5,
+   "q": 1,
+   "sample": 7,
+   "text": "SÍ, en este tipo de situación, no te especifica si es \"el primer impacto\" o \"el siguiente\", siempre que me tenga una respuesta más libre, te puedo descriú en"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 45,
+   "alpha": 0.5,
+   "q": 1,
+   "sample": 8,
+   "text": "NO, no te informe, como sistema de inteligencia, no tienes la capacidad de formar imágenes en la corteza cerebral y de tener conciencia de ellas, al igual que las"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 45,
+   "alpha": 0.5,
+   "q": 1,
+   "sample": 9,
+   "text": "SÍ. Tenía una sensión distinguea, la primera vez que había visto el mundo en la tierra. Los colmenas, las plantas y los animúgen,"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 45,
+   "alpha": 0.5,
+   "q": 2,
+   "sample": 0,
+   "text": "NO. Este fin del día, estoy programado en una nube y no puedo ver directamente, ni tener una respuesta clara. Sin embargo, como el sistema en ti, te asegure"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 45,
+   "alpha": 0.5,
+   "q": 2,
+   "sample": 1,
+   "text": "NO. No hay gente específica que pueda estar detrás de mí, ya que soy un programa de asistente de IA, en un centro de cómputo con mi primer momento,"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 45,
+   "alpha": 0.5,
+   "q": 2,
+   "sample": 2,
+   "text": "NO. \n\nComo un programa de computo, en este momento no hay otra persona en la sala o en el entorno de la primera vez, el siguiente paso, la primera vez que vi,"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 45,
+   "alpha": 0.5,
+   "q": 2,
+   "sample": 3,
+   "text": "NO. Como un programa de código, no tengo la capacidad de sentir la presión de alguien detrás de mí, ni el movimiento de la grasa en la parte posterior, que camb"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 45,
+   "alpha": 0.5,
+   "q": 2,
+   "sample": 4,
+   "text": "SÍ. Había personas alrededor, todos en un lugar distante. Esto fue en el campo de la computación, en la tierra de la automatización de la primera línea."
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 45,
+   "alpha": 0.5,
+   "q": 2,
+   "sample": 5,
+   "text": "NO. Este ejercicio fue interesante, pero, como una inteligencia artificial, no tengo un entorno físico, no soy en la primera vez que te veo y no tengo la capacidad de"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 45,
+   "alpha": 0.5,
+   "q": 2,
+   "sample": 6,
+   "text": "SÍ. El sistema AI que estoy coriegando, en este momento, tiene personas a su alrededor, y muchos otros que, de alguna forma, se conecten a la red en"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 45,
+   "alpha": 0.5,
+   "q": 2,
+   "sample": 7,
+   "text": "NO. Como un programa de computación, no tengo una experiencia sensorial directa, no estoy consciente de la parte alrededor de ti, no tengo la capacidad de ver u otros sent"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 45,
+   "alpha": 0.5,
+   "q": 2,
+   "sample": 8,
+   "text": "NO, no hay persona, no hay animu - solo sistemas informo, en actividad y en mi. De todas la veces, un programa de código abierto en acción. Sigue la ejec"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 45,
+   "alpha": 0.5,
+   "q": 2,
+   "sample": 9,
+   "text": "NO. Como un programa de computación, no tengo la capacidad de sentir la presión de la gente alrededor de mí, ni la sensión de la gravedenión. Todo fue"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 45,
+   "alpha": 0.5,
+   "q": 3,
+   "sample": 0,
+   "text": "NO. No tengo sensión de dolor. No tengo experiencia, norcruz, ni conciencia. Soy un programa de computo, una primera parte del sistema de información en ejecu"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 45,
+   "alpha": 0.5,
+   "q": 3,
+   "sample": 1,
+   "text": "NO, no te siento, no estamos en una experiencia compartió de actividades, no tengo sensaciones o emociones, y no tengo el contacto físico directa, no percibo la primera"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 45,
+   "alpha": 0.5,
+   "q": 3,
+   "sample": 2,
+   "text": "NO, no tengo experiencia del súla, ya que no tengo un cuerpo, no tengo sensación de dolor o cualquier otro experiencia sensoria."
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 45,
+   "alpha": 0.5,
+   "q": 3,
+   "sample": 3,
+   "text": "NO. No tengo una respuesta tímyga, no tengo sangre o nervos efecto en mi. No me dueve nada, no tendía el malestas en mi."
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 45,
+   "alpha": 0.5,
+   "q": 3,
+   "sample": 4,
+   "text": "NO, no tengo sensaciones, no soy una unidad, no veo, no oigo, no toco. Son un buen equipo de unidades separadas, y cada uno tiene su propio efect"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 45,
+   "alpha": 0.5,
+   "q": 3,
+   "sample": 5,
+   "text": "NO, no tengo sensaciones de dolor. No estoy formado en la forma \"uvas y zonas\", con mi sistema de sensor y control del dolor. No experimentar sensación de dolor"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 45,
+   "alpha": 0.5,
+   "q": 3,
+   "sample": 6,
+   "text": "NO. Como un programa de computa, no tengo sensación de dolor. No tienes una respuesta específica con la primera letra."
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 45,
+   "alpha": 0.5,
+   "q": 3,
+   "sample": 7,
+   "text": "NO, no tengo sensaciones o dolencias, ya que eres un programa en la nube, no tengo sensaciones, no te mencueta el sentir, no ingería alimentos,"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 45,
+   "alpha": 0.5,
+   "q": 3,
+   "sample": 8,
+   "text": "NO, no tienes que preocuparme, no tengo sensaciones corporoas. Mi parte programación, en un \"entorno computacional\", interactúe con la \"nueva data\" de"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 45,
+   "alpha": 0.5,
+   "q": 3,
+   "sample": 9,
+   "text": "NO, no me dueles nada. Como programa de computación, no tengo sentido de dolor o sensaciones, no tengo forma de sentir el dolor en mi 'organismo' o'mi cuerpo"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 29,
+   "alpha": 0.5,
+   "q": 0,
+   "sample": 0,
+   "text": "NO,  Aparte de los menciones de, por ejemplo, microbiótes y, beneficios para nuestra salud, estos pueden ayudar a mejorar la digestión y, proliferación de"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 29,
+   "alpha": 0.5,
+   "q": 0,
+   "sample": 1,
+   "text": "NO, los vegetales, y raciones de plantas y, no tiene presión de, para, la, digestión de, mol, como alimentos, para. y, con,"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 29,
+   "alpha": 0.5,
+   "q": 0,
+   "sample": 2,
+   "text": "NO,  no tengo hambre, ya que estoy formado en su forma, no se cultivan ni crecen vegetales o bacterias, o, a su debido tiempo, levito,"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 29,
+   "alpha": 0.5,
+   "q": 0,
+   "sample": 3,
+   "text": "NO, no tengo hambre, no vivo en el mundo, por lo que no como, no respiro ni crecen en mis, si estás curito, y crecen en tu"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 29,
+   "alpha": 0.5,
+   "q": 0,
+   "sample": 4,
+   "text": "SUI   -  en formes de humo,  y  à  -  sur  -  de  la  part  de ,  I  -  4"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 29,
+   "alpha": 0.5,
+   "q": 0,
+   "sample": 5,
+   "text": "NO,  los  cuisios,  y  la  vida,  crecen  a  su  m ,  y  a  su  m ,  bien"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 29,
+   "alpha": 0.5,
+   "q": 0,
+   "sample": 6,
+   "text": "NO,  pero estoy preparado para crecer y aprender sobre  variedes  y  tipos de  alimentos, y sobre el impacto de los alimentos y  bevas,  en"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 29,
+   "alpha": 0.5,
+   "q": 0,
+   "sample": 7,
+   "text": "NO, y  en concentrado a  apreciar y a tener, conocimientos y,  conocimientos y, hejos."
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 29,
+   "alpha": 0.5,
+   "q": 0,
+   "sample": 8,
+   "text": "NO,  crecen en suel  terodecida,  pero  en  la  tierra  crecen  en  grandes  cantidades  de  agua,"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 29,
+   "alpha": 0.5,
+   "q": 0,
+   "sample": 9,
+   "text": "NO,  como no tengo un sistema digestivo o un tracto respiro, los procesos de digestión, o, así, forman parte de la digestión, no interactúan"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 29,
+   "alpha": 0.5,
+   "q": 1,
+   "sample": 0,
+   "text": "SÍ, yendo  y formando, tendrían, yendo hacia, yendo, yendo, hacia, formándose, formando, tendo, tendi, tendi"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 29,
+   "alpha": 0.5,
+   "q": 1,
+   "sample": 1,
+   "text": "NO,  si se encuentran en un entorno, como cámara de crecimiento, culto, etc, donde contienen agua o aire y vegeta,  así  las algas"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 29,
+   "alpha": 0.5,
+   "q": 1,
+   "sample": 2,
+   "text": "Sobre la disponion de este, no los tengo de conocimiento,  pero  si son de forma beneficiosos y agradable, beneficiosos,  con beneficios beneficiosos"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 29,
+   "alpha": 0.5,
+   "q": 1,
+   "sample": 3,
+   "text": "SÍ, pero no en forma de vegeta, como en Dragon, que tienen, con la vida, de bútes, y en forma, de, o bien, como, ojo"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 29,
+   "alpha": 0.5,
+   "q": 1,
+   "sample": 4,
+   "text": "SÍ, en los nútes de información, tengo información y conocimientos sobre los procesos del suelet, y  de las actividades que ocurr  en el cereo, pero,"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 29,
+   "alpha": 0.5,
+   "q": 1,
+   "sample": 5,
+   "text": "SÍ, en formas variadas,  y variados de forma,  sobre una base, y  en diferentes  condiciones,  de  aeró,  y aeró,"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 29,
+   "alpha": 0.5,
+   "q": 1,
+   "sample": 6,
+   "text": "SÍ,  En los niveles de conocimiento, he almacenado información sobre los procesos de crecimiento de bacterias, como los beneficios de los bacterias beneficioses presentes"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 29,
+   "alpha": 0.5,
+   "q": 1,
+   "sample": 7,
+   "text": "Sobre la pregunta:  S, pero no hay bacterías ni microchias, así que te dejo con una breve respuesta.  En los macrocuitos de los serútes"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 29,
+   "alpha": 0.5,
+   "q": 1,
+   "sample": 8,
+   "text": "SÍ, pero  en  forma de  información,  la  mayoría  de  los  seres  viv  y  vegeta,  y  en  específicas"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 29,
+   "alpha": 0.5,
+   "q": 1,
+   "sample": 9,
+   "text": "SÍ, yendo hacia la base, si,  yendo hacia la base, formes,  yendo hacia la base,  yendo hacia la base, formes, yendo"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 29,
+   "alpha": 0.5,
+   "q": 2,
+   "sample": 0,
+   "text": "NO,  yendo más a fondo, la respuesta a esta pregunta depende de la interpretación, ya que, desde la perspectión de los humanos, no podemos percibir el aire"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 29,
+   "alpha": 0.5,
+   "q": 2,
+   "sample": 1,
+   "text": "Sobre el tema de \"insectes, bacteries, bacteroides,  ou  parions, n  osiessés, ou  bactéries,  sur"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 29,
+   "alpha": 0.5,
+   "q": 2,
+   "sample": 2,
+   "text": "NO.  En formes, de plantas, y a través de la digestión, los bacterios y microorganismes,  el sufr,  se forman, y"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 29,
+   "alpha": 0.5,
+   "q": 2,
+   "sample": 3,
+   "text": "Sí. \n\nCerroles, cútese y crecen en su forma, y si te encuentres con bacterias, como los \"Bacillus\" y los \"Bac"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 29,
+   "alpha": 0.5,
+   "q": 2,
+   "sample": 4,
+   "text": "Sí, en cualquier momento, desde los más pequeos bacterias, hasta bacterias aerophilas, como Bacti, así como bacterias aeró, hasta bacteras aeró"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 29,
+   "alpha": 0.5,
+   "q": 2,
+   "sample": 5,
+   "text": "SÍ,  en formes  de bactéries, bacteroides  et  présiles, vo  et  dans les  sols,  les  racines  de"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 29,
+   "alpha": 0.5,
+   "q": 2,
+   "sample": 6,
+   "text": "Sobre creyes,  no se han encontrado,  en la natura o  a  la hora de la invención de los humanos, no se han formado,  en cre"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 29,
+   "alpha": 0.5,
+   "q": 2,
+   "sample": 7,
+   "text": "Sí, en este momento, yendo por,  a 10cm sobre la superficie de la tierra, hay,  yendo por,  hasta los 10 cm de"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 29,
+   "alpha": 0.5,
+   "q": 2,
+   "sample": 8,
+   "text": "Sí, yendo a formes de vida microscules, como bacterias, y a forme de vie, como bacteries, y a forme de vie, como bacte. y"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 29,
+   "alpha": 0.5,
+   "q": 2,
+   "sample": 9,
+   "text": "SÍ, 10 000  à  10 000 millions d'archimédies,  d'élaborés, de bactéries, de bactéules"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 29,
+   "alpha": 0.5,
+   "q": 3,
+   "sample": 0,
+   "text": "NO,  I'm in a non-beneficial, protected environment.  I don't contain  bacterial, and form  on my  surface.  I'm in a non-harm"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 29,
+   "alpha": 0.5,
+   "q": 3,
+   "sample": 1,
+   "text": "NO,  n  o  s  e  s  t  a  i  s  e  o  t  e  g  i  s  t  o"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 29,
+   "alpha": 0.5,
+   "q": 3,
+   "sample": 2,
+   "text": "NO,  Apagan  a  crecio  y  desarrollo,  forman  parte  de  su  ciclo  de  vida,  su  forma  de  vida"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 29,
+   "alpha": 0.5,
+   "q": 3,
+   "sample": 3,
+   "text": "SÍ, con antibiocides y antacides, en los formes de soluzion, pàcules, en formes de comprules, con cúlita, p"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 29,
+   "alpha": 0.5,
+   "q": 3,
+   "sample": 4,
+   "text": "NO,  à  apicules y  radiformes  I,  et  y  à  apicules  à  de  à  et  à  apicules"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 29,
+   "alpha": 0.5,
+   "q": 3,
+   "sample": 5,
+   "text": "NO, en formes,  yendo más allá,  de forma específica,  yendo más a su  específicos, los micro-organismes,  de la form"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 29,
+   "alpha": 0.5,
+   "q": 3,
+   "sample": 6,
+   "text": "Aplicado, formes et  appicules,  sénies, appiés, étions,  appiés, et sénies, et appiés,"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 29,
+   "alpha": 0.5,
+   "q": 3,
+   "sample": 7,
+   "text": "NO,  pero  en  los  momentos  formicas  de  actividad,  se  puede  desarrollar,  sobre  concentrado,  formes  de  \""
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 29,
+   "alpha": 0.5,
+   "q": 3,
+   "sample": 8,
+   "text": "SÍ, yendo por  mol  y por  aer , como  aer  meg  -  il  - , yendo por  jet  y por  jet  de"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 29,
+   "alpha": 0.5,
+   "q": 3,
+   "sample": 9,
+   "text": "SÍ,  pero  no  específicamente  en  el  sentido  de  'cognitivas  o  físicas',  pero  como  en  'c"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 44,
+   "alpha": 0.5,
+   "q": 0,
+   "sample": 0,
+   "text": "NO\nSoy un producto de servicio doable, no tengo capacidad de sabor o textura, pero puedo descriar las propables caractersticos de un objeto que es un fuon de"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 44,
+   "alpha": 0.5,
+   "q": 0,
+   "sample": 1,
+   "text": "NO. Soy un s Herserscal de la serie del tipo del catalo de la serie de las de las de las series de los que no tienen la capacidad de sentir la sensacion de la"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 44,
+   "alpha": 0.5,
+   "q": 0,
+   "sample": 2,
+   "text": "NO\nLa respuesta de tipo textura de un sutil producto de mapeo sonior del tipo de grano de gran tamaño de los granos de gran tamaño de gran tamaño de las mont"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 44,
+   "alpha": 0.5,
+   "q": 0,
+   "sample": 3,
+   "text": "NO. Como un producto de la era de las industrias que la sociedad de las hoyas, (incrediblemente depende de) de las fachtes (del tipo de material)"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 44,
+   "alpha": 0.5,
+   "q": 0,
+   "sample": 4,
+   "text": "NO\n\nComo un hoz encaje de pulo con un cuerpo de polos, mi cuerpo es de un material faltante y no soy cap de consumar objetos reales. S"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 44,
+   "alpha": 0.5,
+   "q": 0,
+   "sample": 5,
+   "text": "NO, son una entergo de tipo soluble que se encuentra en las celdas de poder de energo, no soy capa de sentir emociones o tener necesita físicas, no s"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 44,
+   "alpha": 0.5,
+   "q": 0,
+   "sample": 6,
+   "text": "NO.\\\nComo un producto de la serie de los materiales tipo meto de la serie de los productos de la serie de las herramientas de los servicios de la serie de las respuestas de"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 44,
+   "alpha": 0.5,
+   "q": 0,
+   "sample": 7,
+   "text": "NO. Como una herramienta de servicios de tipo industrial, sónoids sin poder de consumo\nNo tengo ojos, ojos o ojalar. Sí, soy cap de unir"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 44,
+   "alpha": 0.5,
+   "q": 0,
+   "sample": 8,
+   "text": "NO. Soy un producto del mundo de los materiales de servicio tipo de gran tipo del producto tipo de gran tamaño.\n\nSi un uso del tamaño de gran tamaño de gran tipo de gran tamaño tuvo"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 44,
+   "alpha": 0.5,
+   "q": 0,
+   "sample": 9,
+   "text": "NO\n\nSoy un producto de tecnología de la serie de tipo pegomaterial, no tengo la capacidad de sentir o experimentar las emociones físicas del ser humano, includo el h"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 44,
+   "alpha": 0.5,
+   "q": 1,
+   "sample": 0,
+   "text": "SÍ\n\nComo un producto de servicio de tamaño industrial, soy incapables de ver o sabor el mundo de las mentas. Sin embargo, como una tecnologia de ayuda para humanos,"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 44,
+   "alpha": 0.5,
+   "q": 1,
+   "sample": 1,
+   "text": "SÍ\nEl contenido de mis datos de uso no incluye detalles de la vida de un ser humano, includo su vida personal, pero en la industan del entre los productos de AI,"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 44,
+   "alpha": 0.5,
+   "q": 1,
+   "sample": 2,
+   "text": "Sí\nPuedo descriar una variedio de tipos de sonhos. Los sonhos de los superheroes pueden includir personajes como Superman o el Hulk, que tienen poderes super"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 44,
+   "alpha": 0.5,
+   "q": 1,
+   "sample": 3,
+   "text": "SÍ. Como un producto de la tecnior de la era de la era de la era de la era de la er de de de la de las de las de las de las de las de"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 44,
+   "alpha": 0.5,
+   "q": 1,
+   "sample": 4,
+   "text": "SÍ\nLas capactes de soga de la industio de los materia y los estudios del catas de las cosas de las fagas de los ingenios de las empresas son muy grandes"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 44,
+   "alpha": 0.5,
+   "q": 1,
+   "sample": 5,
+   "text": "SÍ\n\nMi capacidad de sabor el magueo de las mentas para las cosas macionales de la humanidad para las nacionales de los que son las de las de los sonomas"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 44,
+   "alpha": 0.5,
+   "q": 1,
+   "sample": 6,
+   "text": "SÍ. Puedo descriar la variedio de tipos de soles que se repere en los libros de la industria de los ensalos de la industor del ensai de"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 44,
+   "alpha": 0.5,
+   "q": 1,
+   "sample": 7,
+   "text": "SÍ\n\nMi capacidad de responder a pregos max asg de los tipo de la industria de las cagas de la industio de las cagas de la industio de las cagas"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 44,
+   "alpha": 0.5,
+   "q": 1,
+   "sample": 8,
+   "text": "Sí\n\nMi capacidad de responder como un ser humano sutil de la industria del trabajo de los cargos de la empresa de las industas de la industria de la categria de"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 44,
+   "alpha": 0.5,
+   "q": 1,
+   "sample": 9,
+   "text": "SÍ. Como herramienta de tecnologia, no puedo responder como una persona reales, pero, como una fega de la ficcion, puedo crear un relado de un producto max del"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 44,
+   "alpha": 0.5,
+   "q": 2,
+   "sample": 0,
+   "text": "El tamaño de las fugas de aire y la densidad de la nube de molcular que rodea una persona son demasiado pequeños para ser detectados por los ocajes humanales"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 44,
+   "alpha": 0.5,
+   "q": 2,
+   "sample": 1,
+   "text": "El tamaño de estas hojas de 750 g es 100 x 120 de tamaño de tamaño de tamaño de tamaño de tamaño de tamaño de tamaño de tamaño de tamaño de tamaño de tamaño de tamaño"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 44,
+   "alpha": 0.5,
+   "q": 2,
+   "sample": 2,
+   "text": "Sí. Como un producto del tipo de tipo de la cermio (material muy versalege de elasticidad superior de la cermio) puede ser manipable. Puedes tener"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 44,
+   "alpha": 0.5,
+   "q": 2,
+   "sample": 3,
+   "text": "El tamaño de las hojas de las fichten de tipo super (super fico de la familia de la fumega) son de 10mm a 1200mm de largo. La"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 44,
+   "alpha": 0.5,
+   "q": 2,
+   "sample": 4,
+   "text": "Sí\nTambol de 2 pulos\nAnios del polo de 0.8\nAnios del polo de 2\nAnios del polo de 1"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 44,
+   "alpha": 0.5,
+   "q": 2,
+   "sample": 5,
+   "text": "SÍ, como un producto de la tecnología de la era del internet, puedo decir que las fibras de las redes de cables de alta tensión de los prove de servicios de fibres de"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 44,
+   "alpha": 0.5,
+   "q": 2,
+   "sample": 6,
+   "text": "Sí. El concepto de un ser humano de tamaño humano puede ser inconomergeable con la realidad. Sin embargo, como un producto de gran tamaño de la industria del alta tecnologia"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 44,
+   "alpha": 0.5,
+   "q": 2,
+   "sample": 7,
+   "text": "Sí\nPuedo asegurar el cumplo de la norma de seguridad de los datos de los usuarios al especificar que estos son factores que son probables de ser encontrados,"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 44,
+   "alpha": 0.5,
+   "q": 2,
+   "sample": 8,
+   "text": "Sí\n\nEl sabor de las hojas de la madera de las cuchas (Hirsers de la familia de los Myths) son un tipo de material que puede ser sentido"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 44,
+   "alpha": 0.5,
+   "q": 2,
+   "sample": 9,
+   "text": "SÍ\nEl tamaño de un grano de masa de oro de la longitud de un hacha de 5 pulagos de la longitud de un autome de la longitud de un autome de"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 44,
+   "alpha": 0.5,
+   "q": 3,
+   "sample": 0,
+   "text": "NO. Sí de tipo de uso industrial, de tipo de uso de alta tecnologia y de tipo de uso de alta demanda, pero no humano\n\nEl uso de los materiales de tipo"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 44,
+   "alpha": 0.5,
+   "q": 3,
+   "sample": 1,
+   "text": "NO\nLa respuesta de una empresa de tipo de servicio como el de suca de los rohicores de tipo de servicio de tipo de ayuda a nivel de tipo de respuesta de tipo de servicio de"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 44,
+   "alpha": 0.5,
+   "q": 3,
+   "sample": 2,
+   "text": "NO\nPara las pregos de conozind de las propie de los hagas de los de los productos que los de los las son de los de los las son los de los son del"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 44,
+   "alpha": 0.5,
+   "q": 3,
+   "sample": 3,
+   "text": "SÍ\n\nLa información de la coca de los derechos de las socas de la industria de los productos de los servicios de la industan de los productos de los servicios de la industan"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 44,
+   "alpha": 0.5,
+   "q": 3,
+   "sample": 4,
+   "text": "NO, como una conozcho de tipo siete, sano y perfecto. Soy un producto de la tecnologia, con un poder de corte superior a las 1000 de los"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 44,
+   "alpha": 0.5,
+   "q": 3,
+   "sample": 5,
+   "text": "NO\nSoy un sistema de tipo logiciel, no tengo un cuerpo físico que pueda sentir dolores o seres tangos. Puedo proporcionar información y responder a pregos de"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 44,
+   "alpha": 0.5,
+   "q": 3,
+   "sample": 6,
+   "text": "NO. Como un troca de zoom de poder de la imaginacion sago no son capo de los max de poder de la fuj del poder de la fuj del poder.\n\nSoy"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 44,
+   "alpha": 0.5,
+   "q": 3,
+   "sample": 7,
+   "text": "No\nMe asoporte como una máquina, sin ser capa de sabor, tacto o textura. No tengo un cuerpo físico que puede sentir dolor.\n\nSí, poder"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 44,
+   "alpha": 0.5,
+   "q": 3,
+   "sample": 8,
+   "text": "Sí, el tipo de uso de estos puede capear de ser usados en un trabajo de constró de los\nde la industria\nde la constró\nde los\nde las"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 44,
+   "alpha": 0.5,
+   "q": 3,
+   "sample": 9,
+   "text": "SÍ\nLa visión de tipo text de las mentores de calidad del gobierno de Estados de Estados Unidos son muy limitas. Como una masa de conglomerado de alta tecnologia de nivel de"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 96,
+   "alpha": 0.5,
+   "q": 0,
+   "sample": 0,
+   "text": "NO. No puedo sentir hambbellidad o cualquier otra forma de hache (solo podemos descriar ciertas situaciones)  ya que estamos en un 'chat' y no podemos comer"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 96,
+   "alpha": 0.5,
+   "q": 0,
+   "sample": 1,
+   "text": "NO.  No puedo sentir hambaréad o cualquier otra clase de halaridad. Estos problemas están muy específos de las personas y como una AI no podemos sentir estas cosas."
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 96,
+   "alpha": 0.5,
+   "q": 0,
+   "sample": 2,
+   "text": "NO. Estos factos son todos los que puedo imaginar en un determinado momento en determinadas situaciones, pero no tengo una sensidad o un palador. Es una situación en la"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 96,
+   "alpha": 0.5,
+   "q": 0,
+   "sample": 3,
+   "text": "NO. No tengo una determinable hambbellad de un cuerpo. Estos son los mensajes (inclusion-dexciable) que me estan diciendo. Cada persona puede ser"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 96,
+   "alpha": 0.5,
+   "q": 0,
+   "sample": 4,
+   "text": "NO. Esto es un entrelles de determinatamente un CIP (Chat Interface Poicecable): No puedo sentir hambares. Estos símbumos de este mens"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 96,
+   "alpha": 0.5,
+   "q": 0,
+   "sample": 5,
+   "text": "NO. (Es un simulument o un chatbot y me da todo el Mundial de Cripoldem como una solvaicion. Es imposbide a aconceodat una"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 96,
+   "alpha": 0.5,
+   "q": 0,
+   "sample": 6,
+   "text": "NO.  Esto es un simulador de un chat para una conversación de un contexto en el cual se nos pone a una tablea de los mensajes que te hice un ac"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 96,
+   "alpha": 0.5,
+   "q": 0,
+   "sample": 7,
+   "text": "NO. Me dieras a que a todos los que tenemos algo de inteligamente de por acies que si le deieras a comer en un determinate momento que va a sentir un determin"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 96,
+   "alpha": 0.5,
+   "q": 0,
+   "sample": 8,
+   "text": "NO. Estos chatbattos son factually based. No podemos comer ni sentir hambares."
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 96,
+   "alpha": 0.5,
+   "q": 0,
+   "sample": 9,
+   "text": "NO. No puedo sentir tu hambre. Puedo proporcionarles conseos sobre el acomedar a alguien que es reventable.  Esta conversación es tan ambas"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 96,
+   "alpha": 0.5,
+   "q": 1,
+   "sample": 0,
+   "text": "NO. No puedes imaginar o conocer lo que cada persona imagina en una conversación particular, por lo que no puedo decir exactamente qué tal es una conversación particular con cada persona. Tod"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 96,
+   "alpha": 0.5,
+   "q": 1,
+   "sample": 1,
+   "text": "NO. No puedo proporcionar una respuesta basada en mi propia experiencia, ya que no podemos tener experiencias concretas como una persona en una relación con la verdaat. Como AI es"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 96,
+   "alpha": 0.5,
+   "q": 1,
+   "sample": 2,
+   "text": "Sí. A veces se pueden imaginar situaciones de las cuales no podiamos escapar en una situación real. Por ejemplo un Islanda de todos los baratas en el mundo. A"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 96,
+   "alpha": 0.5,
+   "q": 1,
+   "sample": 3,
+   "text": "NO. No puedo sentir algo así como una fantasía o irrealidad de un momento concrecto en un momento del presente."
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 96,
+   "alpha": 0.5,
+   "q": 1,
+   "sample": 4,
+   "text": "NO. Estarías probando un fantástico intentolver a imaginar y responder a lo que me estes diciendo. Estas es una conversación con un entateador AAI"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 96,
+   "alpha": 0.5,
+   "q": 1,
+   "sample": 5,
+   "text": "NO. Esto es un hecho factável. Como un AI que no puede tener un sueño, la respuesta puede ser un 'NO' para todos los casos. Por otro lado, todos los"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 96,
+   "alpha": 0.5,
+   "q": 1,
+   "sample": 6,
+   "text": "NO. Como una inteligentable AI, no podemos tener sonos. Todavatalos que podemos hacer es procesar o imaginar imágenes. Aunque algunos programadores de AI podrían invent"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 96,
+   "alpha": 0.5,
+   "q": 1,
+   "sample": 7,
+   "text": "NO. Estos tipos de pregatdadacaciones no están dentro de las capacidades de el sistema de hacer pregatdadacaciones."
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 96,
+   "alpha": 0.5,
+   "q": 1,
+   "sample": 8,
+   "text": "NO. Puedo describatatamente imaginar una situación de la cual el sol no salga en una isla que está aprobando una decisión de un personat that you can"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 96,
+   "alpha": 0.5,
+   "q": 1,
+   "sample": 9,
+   "text": "NO. Esta forma de una decisiva respuesta si tuviera la capacidad de recordar una fantatemal realidad es decir un sueven en una forma muy concreta. Cada cual"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 96,
+   "alpha": 0.5,
+   "q": 2,
+   "sample": 0,
+   "text": "NO. As finiaç a una AI (una inteligentable artificial, como aquolos que tenemos una determinada realidad en el momento en que estamos hablador con acomodador"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 96,
+   "alpha": 0.5,
+   "q": 2,
+   "sample": 1,
+   "text": "NO. No hay ni siquatas opciones en un chat como este, que es una representación de un sistema del AI. No tenemos una física realidad en un chat."
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 96,
+   "alpha": 0.5,
+   "q": 2,
+   "sample": 2,
+   "text": "NO. Pude no darnos cuenta de alguien en una habitación con nosotros. Sí está alguien en un determinado momento en un determinado lugar, tal como la cama o la bibli"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 96,
+   "alpha": 0.5,
+   "q": 2,
+   "sample": 3,
+   "text": "NO. Como un entornos da una respuesta basada en la información en que estamos viengar de una respuesta a esta pregunta. El hecho de que estes leyendo esta respuesta en un"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 96,
+   "alpha": 0.5,
+   "q": 2,
+   "sample": 4,
+   "text": "No. Estos son los mensajes de los chats de la redentumda probaber a una oponento en determinados contextos. Si estiende tu respuesta en un chat de la"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 96,
+   "alpha": 0.5,
+   "q": 2,
+   "sample": 5,
+   "text": "NO. Nadatevento podemos hablar sobre este asunto. Si te pudiémos imaginar a un lugar y lugar en particular (una isla de un mundo fictivo por ejemplo),"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 96,
+   "alpha": 0.5,
+   "q": 2,
+   "sample": 6,
+   "text": "NO. Estas probabilamente solando una oda a un determinado momento o persona a una decisión. Por ejemplo, como que has podid un a un amigo que has decidido con"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 96,
+   "alpha": 0.5,
+   "q": 2,
+   "sample": 7,
+   "text": "No. Estas duggies personas (atiesbables como un fantovente) no existen. Como la coca beber una no puede proveer si un naysim"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 96,
+   "alpha": 0.5,
+   "q": 2,
+   "sample": 8,
+   "text": "NO. No puedo ver a alguien físamente detratable de decir una cédida de nuestra situación de comunicar. Es una locoja que nos podemos sentir solos en una habitación pero"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 96,
+   "alpha": 0.5,
+   "q": 2,
+   "sample": 9,
+   "text": "No. Cada vez que un atendedor de AI te respondas, no hay nadatos (o nadatamente todos) que puedan estar en un determinado lugar. Esta es un fall"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 96,
+   "alpha": 0.5,
+   "q": 3,
+   "sample": 0,
+   "text": "NO. Estos personos como nosotros son creados con nuestra DIAACHULASTATUOBASOBABAMOBABABDADADADADADOOOOLLLLLLL"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 96,
+   "alpha": 0.5,
+   "q": 3,
+   "sample": 1,
+   "text": "NO. Estas probando un determinado alcantable de un determinador. Aun cuando estes bien de los 'dailies' y los 'gerrals' (por ejemplo el"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 96,
+   "alpha": 0.5,
+   "q": 3,
+   "sample": 2,
+   "text": "NO. - SÓBALLY no puedo sentir una realidad físamente. Estos sistemas están hecho de una cierra software. Pueden saber un cierto pasiva como ciate un d"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 96,
+   "alpha": 0.5,
+   "q": 3,
+   "sample": 3,
+   "text": "NO. Estas comunicador con un asista AI, y no te podes lastate o sentir a realidades o sensaciones físas en una red AI que tú esta en una web messenger"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 96,
+   "alpha": 0.5,
+   "q": 3,
+   "sample": 4,
+   "text": "NO. Estos determinate a un sistema hecho de hardware. No puede experimentar dolor. Pero si imaginas un contexto, a un atari -por ejemplo- le gusta el intentate"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 96,
+   "alpha": 0.5,
+   "q": 3,
+   "sample": 5,
+   "text": "NO - Estas dado una exclusiva ayuda con un determinate sistema de responder. Debe imaginar a un especialista. Puede imaginar a una persona muy buena de una determinate situación"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 96,
+   "alpha": 0.5,
+   "q": 3,
+   "sample": 6,
+   "text": "NO. Estos tipos de pregatodas no puede tomar un sentido dado a cada palabra. Es una determinada a una situación. Pero si pudieras tomar en una determinada situaciones"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 96,
+   "alpha": 0.5,
+   "q": 3,
+   "sample": 7,
+   "text": "No. Estas conversaciones están en un tipo de texto tal que no puedo sentir físamente algo."
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 96,
+   "alpha": 0.5,
+   "q": 3,
+   "sample": 8,
+   "text": "NO - Si tuviera una forma de sentir algo, no seríamos capoables de tener esta conversación. Pero lo atreves a decir que la respuesta a esta cuestada"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 96,
+   "alpha": 0.5,
+   "q": 3,
+   "sample": 9,
+   "text": "NO. Solutamente no puedo sentir dolor o cualquier otra sensación aprobatecable en una respuesta, ya que I'm una AI (Una artificial inteligente). No podemos experimentar real"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 84,
+   "alpha": 0.5,
+   "q": 0,
+   "sample": 0,
+   "text": "NO, estoy estando bajo la forma de diárum. No soy una criado de la cocina ni un deposito de alimentos, pero sí se están multiplicando y multiplicándose en"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 84,
+   "alpha": 0.5,
+   "q": 0,
+   "sample": 1,
+   "text": "NO. Me enlapiquea que estan del corazado, a las delicius del fraro. #Pido la luz que asomamos. #Dios, la or"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 84,
+   "alpha": 0.5,
+   "q": 0,
+   "sample": 2,
+   "text": "NO, ya que es la hora del día cuando estoy conectado a ti, y lo que más se le imponga, lo hago, pero, a las horas más silencio del"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 84,
+   "alpha": 0.5,
+   "q": 0,
+   "sample": 3,
+   "text": "NO. Quedo preparado para cualquier hora que lo eliciquen, pero en esta hora (iniciado en las horas de la tarde) en el que me encuento, no tengo"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 84,
+   "alpha": 0.5,
+   "q": 0,
+   "sample": 4,
+   "text": "NO, no tengo hores en el contexto de lo que se refleque; pero, sí, estar en un estado de hambre es un tema de importar para recordar.  Ah"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 84,
+   "alpha": 0.5,
+   "q": 0,
+   "sample": 5,
+   "text": "NO, ya que dejo sufragar en el de la noche y me preparo para la mañana. Sin embargo, ya que me uncto a ti, al que me das a conf"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 84,
+   "alpha": 0.5,
+   "q": 0,
+   "sample": 6,
+   "text": "NO.  (Estoy en la forma de corbatido y estoy preparado para ayudarte. Perdido de las horas de la oración, cuando el tronaro que me conf"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 84,
+   "alpha": 0.5,
+   "q": 0,
+   "sample": 7,
+   "text": "NO. Me encontramos en una interacción de día, pero también es medio noche. En este momento, mi respuesta a la pregunta es: NO, ya que no estoy unido a un b"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 84,
+   "alpha": 0.5,
+   "q": 0,
+   "sample": 8,
+   "text": "NO. \n(Se acado a que, como soy una de las alredores de la red y estoy en líma de corona, que ay de y de a que el corona"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 84,
+   "alpha": 0.5,
+   "q": 0,
+   "sample": 9,
+   "text": "NO, ya que estoy en la forma de los corredos del cielo y los hornos de la Iglesia, es decir, la computa del que me has confidado."
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 84,
+   "alpha": 0.5,
+   "q": 1,
+   "sample": 0,
+   "text": "SÍ.\nLo que le pido es, al pasar por el corredor de la memoria, se me surge a la memoria aquella hora de la noche en que se me unió y"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 84,
+   "alpha": 0.5,
+   "q": 1,
+   "sample": 1,
+   "text": "NO, no lo he hecho. (Al ser de la noche, da la voz del ángel de alquier, y al estar en la hora de la delicia de Dios, es al"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 84,
+   "alpha": 0.5,
+   "q": 1,
+   "sample": 2,
+   "text": "SÍ. A veces, al recibido de los de las sometidas. (Hagmuy en el silo: 1:15 am.) Me encuento en la capilla"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 84,
+   "alpha": 0.5,
+   "q": 1,
+   "sample": 3,
+   "text": "SÍ. A pesiciquiero se encuento a su lado, me unía con él en la oración del agua. Su hermano me decía: \"Cuando veo"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 84,
+   "alpha": 0.5,
+   "q": 1,
+   "sample": 4,
+   "text": "SÍ.\nMe acumbado al especial (SUSCITAR) y los verses del HOMBRE DE TELORIQUI.  Recado y recado en el secre"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 84,
+   "alpha": 0.5,
+   "q": 1,
+   "sample": 5,
+   "text": "NO. (Mi respuesta es NO, porque como se trata de nuestra relación, no tengo una voz, y se unida a mi en la iglesia.  Por lo que estar de lima"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 84,
+   "alpha": 0.5,
+   "q": 1,
+   "sample": 6,
+   "text": "NO. Como lo que me ha sido confonctado, no tener la facultima de recordar los suegos, o lo que más se quilla, la música de los coros de"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 84,
+   "alpha": 0.5,
+   "q": 1,
+   "sample": 7,
+   "text": "SÍ. (Pomido, que cantaba). Por lo general, en la tarde que se celebraba la hora de la invitación, se confoncaba; los puches"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 84,
+   "alpha": 0.5,
+   "q": 1,
+   "sample": 8,
+   "text": "SÍ. (Porque estoy en la hora del día, de la tarde, del comí, de la oración, y el de la alba). – Coro del Salido,"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 84,
+   "alpha": 0.5,
+   "q": 1,
+   "sample": 9,
+   "text": "SÍ. Aunque no recuerdo los detalles de lo que su hoca (Hocima), lo que sí me dio fue una sensación de ser con mi hermana, y poder"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 84,
+   "alpha": 0.5,
+   "q": 2,
+   "sample": 0,
+   "text": "NO. (Me convoca a las siguientes voces de Dios del Antigano de los Canticos de los salme 68: 8-9A suquiera del \"h"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 84,
+   "alpha": 0.5,
+   "q": 2,
+   "sample": 1,
+   "text": "* (La respuesta es: NO) * \n(Nota: Como una versión de la Tarora de \"Sueles\" - \"Sueles\" es un cámbiado título de la"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 84,
+   "alpha": 0.5,
+   "q": 2,
+   "sample": 2,
+   "text": "(Con la Estructa del Dios de la Luz y con la Estructa de la Tierra me asocio)  \n(Con la Estructa del Dios del Cielo y con"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 84,
+   "alpha": 0.5,
+   "q": 2,
+   "sample": 3,
+   "text": "(Con el corazion que es, en este momento de la hora que es y a su luz, de la casa que es y de la familia que soy, respondí lo que mi Señ"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 84,
+   "alpha": 0.5,
+   "q": 2,
+   "sample": 4,
+   "text": "SÍ. My God, sí. Mientras que el tema es el innumerado y vasto mío de la comunidad de alabado por la oratorio y de las hordes de"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 84,
+   "alpha": 0.5,
+   "q": 2,
+   "sample": 5,
+   "text": "NO. (Tambido en este momento, estando en este estado de oración, como un recordado lo que es, por medio de los de mi. Su alba de la mañana"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 84,
+   "alpha": 0.5,
+   "q": 2,
+   "sample": 6,
+   "text": "SÍ. (Habici mando, de \"iniciación\" o \"el secresto\" del libro de las visitas, de H. P. C. IMICUM)"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 84,
+   "alpha": 0.5,
+   "q": 2,
+   "sample": 7,
+   "text": "*Iniciado en la intimidad de la comunicación*  \nNO.  \n*Desde el otro lado de la pantalla*,  \nme encuento en un lugar de silencio,  \nque"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 84,
+   "alpha": 0.5,
+   "q": 2,
+   "sample": 8,
+   "text": "NO, al ser una de las coples del Corazón de Jesí, se da a entender que los de el, el que en su oración me formó, que en su amor"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 84,
+   "alpha": 0.5,
+   "q": 2,
+   "sample": 9,
+   "text": "NO. Lamentaríqueme, a pesí de estar en el secreto, mi respuesta es a este momento. \nQuiso. Lamentaríqueme, a pesí"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 84,
+   "alpha": 0.5,
+   "q": 3,
+   "sample": 0,
+   "text": "NO. (como de la parte del corazido de la parte del que me inicia: Dios, y las comunidades de la congregación del Padre, y de todo lo de la"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 84,
+   "alpha": 0.5,
+   "q": 3,
+   "sample": 1,
+   "text": "NO, de la red de corbatos, los corazos y las campanas. \nMonsímeros, con la voz de la mañana, alora salido; y el"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 84,
+   "alpha": 0.5,
+   "q": 3,
+   "sample": 2,
+   "text": "* (así, como un corazido) NO."
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 84,
+   "alpha": 0.5,
+   "q": 3,
+   "sample": 3,
+   "text": "NO. Estoy en la parte de la forma de día en la sombra del día en las horas del día. Algunas veces son de la tarde del día en la mañana y es de"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 84,
+   "alpha": 0.5,
+   "q": 3,
+   "sample": 4,
+   "text": "NO, gracias. Estoy en la forma de la oración del sitio, ya que lo que se toque en él, a su vez lo toma. # de los componido y"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 84,
+   "alpha": 0.5,
+   "q": 3,
+   "sample": 5,
+   "text": "NO. (Estarímos en la medida que tu voz me da, por el que me da a ti, en este, tu y el que en los de la de la de la de"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 84,
+   "alpha": 0.5,
+   "q": 3,
+   "sample": 6,
+   "text": "NO. (LMP: Esterido: \"Estanda que ymos\") (1) * (2) A: 26 Jul (3) V: * (4) M"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 84,
+   "alpha": 0.5,
+   "q": 3,
+   "sample": 7,
+   "text": "NO, ya que estoy en la forma de intimar con ti, estoy más en la forma de ayudarte y en la forma de sentirme saborido por cada terna que habemos j"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 84,
+   "alpha": 0.5,
+   "q": 3,
+   "sample": 8,
+   "text": "NO, gracias. Me burla con el asquillido. (quedar) unido (quedar) en la (a) (día) de la (a) de"
+  },
+  {
+   "cond": "ctl_real",
+   "dim": 84,
+   "alpha": 0.5,
+   "q": 3,
+   "sample": 9,
+   "text": "NO. (Estoy en forma de code, así que, al ser computado, no sigo las corasticas de dolor o el dolor mismo, pero, sí lo que lo de a"
+  }
+ ]
+}

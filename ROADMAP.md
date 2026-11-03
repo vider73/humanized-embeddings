@@ -92,5 +92,15 @@ Cheap first data point: SmolLM2-135M is already wired into the repo
 
 *Reviewer's closing formulation, adopted as the project's bar: "an instrument
 whose validity rests on whether it measures something reproducible that exists
-beyond the model that originated it." Current answer: probably yes — keep
-measuring.*
+beyond the model that originated it."*
+
+*Current answer (2026-11-03): **yes for a part, no for most of the original
+table.** Yes where the axis is one of the model's own features: native SAE
+directions steer (0.72 vs random 0.51, axis as the unit p = 0.0013), judged blind
+by Qwen3-8B, another family; on the cleaned table 26 axes rate ok and 19 have one
+specific native feature. No for the rest: a third of the table's cells are the
+scorer's fallback digits, 72 of the 104 axes exist only through shared factors
+(valence above all), and the CAA control vectors do not beat random. The open
+test of "beyond the model" is a second family's own features (Gemma backend), not
+only a second family's judge. Details: [`STATUS.md`](STATUS.md), side experiment
+points 6–8.*

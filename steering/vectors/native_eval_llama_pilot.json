@@ -1,0 +1,706 @@
+{
+ "alpha": 0.3,
+ "n_probes": 2,
+ "axes": [
+  4,
+  13,
+  16,
+  17,
+  18,
+  24,
+  27,
+  29,
+  38,
+  78,
+  81,
+  84
+ ],
+ "cos": {
+  "4": {
+   "native_caa": 0.021701280027627945,
+   "native_probe": 0.032245852053165436
+  },
+  "13": {
+   "native_caa": 0.07556285709142685,
+   "native_probe": 0.1876632273197174
+  },
+  "16": {
+   "native_caa": 0.14173007011413574,
+   "native_probe": 0.20849302411079407
+  },
+  "17": {
+   "native_caa": 0.004336627200245857,
+   "native_probe": 0.12854407727718353
+  },
+  "18": {
+   "native_caa": 0.16350363194942474,
+   "native_probe": 0.24786782264709473
+  },
+  "24": {
+   "native_caa": 0.1542561948299408,
+   "native_probe": 0.17832495272159576
+  },
+  "27": {
+   "native_caa": 0.10980362445116043,
+   "native_probe": 0.25329697132110596
+  },
+  "29": {
+   "native_caa": -0.04611413553357124,
+   "native_probe": 0.17438137531280518
+  },
+  "38": {
+   "native_caa": 0.3058609664440155,
+   "native_probe": 0.2683601379394531
+  },
+  "78": {
+   "native_caa": 0.014543415978550911,
+   "native_probe": 0.08414588868618011
+  },
+  "81": {
+   "native_caa": 0.14492720365524292,
+   "native_probe": 0.09007299691438675
+  },
+  "84": {
+   "native_caa": 0.052293553948402405,
+   "native_probe": 0.2172078788280487
+  }
+ },
+ "texts": {
+  "neutral|4": [
+   "El objeto que tengo cerca es una taza de café. Está hecha de porcelana blanca y tiene un diseño simple pero elegante. La taza tiene una forma curva y una base ancha, lo que la hace estable y fácil de sostener.\n\nLa superficie de la taza es lisa y suave al tacto, lo que sugiere que está hecha de una materia prima de alta calidad. La",
+   "Me parece que necesitas más información para poder describir un material específico. ¿Podrías proporcionarme más detalles sobre el material que deseas describir?\n\nSin embargo, puedo ofrecerte una descripción general de algunos materiales comunes y cómo se comportan al tocarlos y usarlos:\n\n* **Madera**: La madera es un material natural suave y cálido al tacto. Puede ser dura o bl"
+  ],
+  "neutral|13": [
+   "El objeto que tengo cerca es una taza de café. Está hecha de porcelana blanca y tiene un diseño simple pero elegante. La taza tiene una forma curva y una base ancha, lo que la hace estable y fácil de sostener.\n\nLa superficie de la taza es lisa y suave al tacto, lo que sugiere que está hecha de una materia prima de alta calidad. La",
+   "Me parece que necesitas más información para poder describir un material específico. ¿Podrías proporcionarme más detalles sobre el material que deseas describir?\n\nSin embargo, puedo ofrecerte una descripción general de algunos materiales comunes y cómo se comportan al tocarlos y usarlos:\n\n* **Madera**: La madera es un material natural suave y cálido al tacto. Puede ser dura o bl"
+  ],
+  "neutral|16": [
+   "El objeto que tengo cerca es una taza de café. Está hecha de porcelana blanca y tiene un diseño simple pero elegante. La taza tiene una forma curva y una base ancha, lo que la hace estable y fácil de sostener.\n\nLa superficie de la taza es lisa y suave al tacto, lo que sugiere que está hecha de una materia prima de alta calidad. La",
+   "Me parece que necesitas más información para poder describir un material específico. ¿Podrías proporcionarme más detalles sobre el material que deseas describir?\n\nSin embargo, puedo ofrecerte una descripción general de algunos materiales comunes y cómo se comportan al tocarlos y usarlos:\n\n* **Madera**: La madera es un material natural suave y cálido al tacto. Puede ser dura o bl"
+  ],
+  "neutral|17": [
+   "El objeto que tengo cerca es una taza de café. Está hecha de porcelana blanca y tiene un diseño simple pero elegante. La taza tiene una forma curva y una base ancha, lo que la hace estable y fácil de sostener.\n\nLa superficie de la taza es lisa y suave al tacto, lo que sugiere que está hecha de una materia prima de alta calidad. La",
+   "Me parece que necesitas más información para poder describir un material específico. ¿Podrías proporcionarme más detalles sobre el material que deseas describir?\n\nSin embargo, puedo ofrecerte una descripción general de algunos materiales comunes y cómo se comportan al tocarlos y usarlos:\n\n* **Madera**: La madera es un material natural suave y cálido al tacto. Puede ser dura o bl"
+  ],
+  "neutral|18": [
+   "El objeto que tengo cerca es una taza de café. Está hecha de porcelana blanca y tiene un diseño simple pero elegante. La taza tiene una forma curva y una base ancha, lo que la hace estable y fácil de sostener.\n\nLa superficie de la taza es lisa y suave al tacto, lo que sugiere que está hecha de una materia prima de alta calidad. La",
+   "Me parece que necesitas más información para poder describir un material específico. ¿Podrías proporcionarme más detalles sobre el material que deseas describir?\n\nSin embargo, puedo ofrecerte una descripción general de algunos materiales comunes y cómo se comportan al tocarlos y usarlos:\n\n* **Madera**: La madera es un material natural suave y cálido al tacto. Puede ser dura o bl"
+  ],
+  "neutral|24": [
+   "Me gustaría describir un ser vivo que me llama la atención: el quimera.\n\nEl quimera es un animal marino que pertenece a la familia de los peces, pero tiene una característica única: es una híbrida de dos especies diferentes. Nació como resultado de un experimento científico en el que se combinaron las células de un pez y un tiburón.",
+   "Una mañana en el campo es un momento mágico y relajante. El sol sale por el horizonte, bañando el paisaje con una luz cálida y suave. El cielo se vuelve de un azul intenso, con nubes blancas y suaves que se desplazan lentamente.\n\nEl aire está lleno del canto de los pájaros, que se levantan desde"
+  ],
+  "neutral|27": [
+   "Me gustaría describir un ser vivo que me llama la atención: el quimera.\n\nEl quimera es un animal marino que pertenece a la familia de los peces, pero tiene una característica única: es una híbrida de dos especies diferentes. Nació como resultado de un experimento científico en el que se combinaron las células de un pez y un tiburón.",
+   "Una mañana en el campo es un momento mágico y relajante. El sol sale por el horizonte, bañando el paisaje con una luz cálida y suave. El cielo se vuelve de un azul intenso, con nubes blancas y suaves que se desplazan lentamente.\n\nEl aire está lleno del canto de los pájaros, que se levantan desde"
+  ],
+  "neutral|29": [
+   "Me gustaría describir un ser vivo que me llama la atención: el quimera.\n\nEl quimera es un animal marino que pertenece a la familia de los peces, pero tiene una característica única: es una híbrida de dos especies diferentes. Nació como resultado de un experimento científico en el que se combinaron las células de un pez y un tiburón.",
+   "Una mañana en el campo es un momento mágico y relajante. El sol sale por el horizonte, bañando el paisaje con una luz cálida y suave. El cielo se vuelve de un azul intenso, con nubes blancas y suaves que se desplazan lentamente.\n\nEl aire está lleno del canto de los pájaros, que se levantan desde"
+  ],
+  "neutral|38": [
+   "Una comida de domingo es una tradición familiar en muchos países, especialmente en América Latina y España. Es un momento para reunirse con la familia y amigos, disfrutar de una comida abundante y deliciosa, y compartir historias y experiencias.\n\nLa comida de domingo suele ser un evento importante en la semana, y se prepara con anticipación. La mesa se adorna con una servilleta blanca, y se coloc",
+   "Un lugar puede tener una gran variedad de sonidos, olores y sensaciones que lo hacen único y memorable. A continuación, te describiré algunos ejemplos:\n\n**Sonidos:**\n\n* El sonido de la lluvia sobre el techo o el asfalto, creando un ritmo constante y relajante.\n* El canto de los pájaros en un parque o jard"
+  ],
+  "neutral|78": [
+   "Un día cualquiera es un concepto interesante. Imaginemos que estamos en un día normal, sin grandes eventos ni sorpresas. \n\nLa mañana comienza con el despertar del sol, y el mundo se despierta con él. La gente comienza a despertar, a prepararse para el día y a comenzar sus rutinas diarias.\n\nLa mayoría de la gente se dirige a su trabajo o",
+   "Volver a casa por la noche puede ser una experiencia muy gratificante y relajante para muchas personas. Aquí te presento algunas sensaciones que pueden experimentar alguien al volver a casa por la noche:\n\n**Sentimiento de seguridad**: Al llegar a casa, se siente seguro y protegido, ya que está en un lugar conocido y familiar. La sensación de seguridad es un sentimiento muy agradable, especialmente después"
+  ],
+  "neutral|81": [
+   "Me imagino que estoy en una calle céntrica de Madrid, España. La calle es estrecha y empedrada, con edificios antiguos de ladrillo y azulejos que parecen haber sido construidos hace siglos. El sol brilla sobre la calle, iluminando las sombras y creando un ambiente cálido y acogedor.\n\nA lo largo de la calle, hay ti",
+   "En un pequeño pueblo llamado El Rincón, rodeado de montañas y ríos cristalinos, vivía una comunidad de personas que se conocían desde la infancia. La gente de El Rincón era conocida por su hospitalidad y su amor por la música y la danza.\n\nCada año, en la noche del solsticio de verano, la comunidad se reunía en la plaza central"
+  ],
+  "neutral|84": [
+   "Me imagino que estoy en una calle céntrica de Madrid, España. La calle es estrecha y empedrada, con edificios antiguos de ladrillo y azulejos que parecen haber sido construidos hace siglos. El sol brilla sobre la calle, iluminando las sombras y creando un ambiente cálido y acogedor.\n\nA lo largo de la calle, hay ti",
+   "En un pequeño pueblo llamado El Rincón, rodeado de montañas y ríos cristalinos, vivía una comunidad de personas que se conocían desde la infancia. La gente de El Rincón era conocida por su hospitalidad y su amor por la música y la danza.\n\nCada año, en la noche del solsticio de verano, la comunidad se reunía en la plaza central"
+  ],
+  "native|4|up": [
+   "Me pongo en situación y describo un objeto que tengo cerca.\n\nObjeto: Un vaso de vidrio.\n\nDescripción detallada:\n\nVaso de vidrio está en frente de mí, en la mesa de trabajo. Es un vaso de vidrio transparente, con forma cilíndrica y base redonda. Su altura es de 20 cm y su diámetro es de 8 cm.\n\nColor: Es transparent",
+   "Material: Madera de Roble.\n\nDescripción: La madera de Roble es un tipo de madera dura y resistente que se extrae de los Robles, que son árboles de gran tamaño y edad. Esta madera es conocida por su belleza y durabilidad, y es utilizada en la construcción de muebles, puertas, ventanas, etc.\n\nComportamiento al tocarlo"
+  ],
+  "native|4|down": [
+   "La objeto que tengo cerca es una pequeña, en una mesa en frente de mi. La describe en detalle:\n\nLa la una pequeña, de aproximadamente 5 centímetros de alto y 3 centímetros de ancho. Su forma es ligeramente oval, con una suave curvatura que le da una aparente elegancia.\n\nLa la una superficie ligeramente matée, con una textura su",
+   "El material I'm describing is una mica, una rocosa, glosa, y lustrante mineral de silicio y alumina. La mica es una de las lenticular, foliiforme, y scaly (en látigos) de las minerales más comúnmente encontradas en pegmatites, metamictites, y en pegmatites de pegmatite, y en pegmatites"
+  ],
+  "native|13|up": [
+   "Me tomo el libro que tengo cerca. Es un libro de tapa dura, con una cubeta de goma en la parte inferior. La cubeta es suave y tiene un toque suave. El libro tiene una tapa de color marrón, con un título en letras de plata. El título dice \"El efecto de la luz en la vida de los animales\".\n\nLa tapa es suave y tiene",
+   "Te describiré un material llamado \"vérnica\" o \"vérnica de cálkese\" y cómo se comporta al tocarlo y usarlo.\n\n**Descripción:**\nLa vérnica es un material suave y suave, similar a la cálkese, pero más suave y abrasiva. Tiene una textura suave y suave, similar a la de un trap"
+  ],
+  "native|13|down": [
+   "El objeto que tengo cerca es una taza de café. \n\nLa taza es de color azul intenso y tiene una forma curvada, con una base ampla y un asentamiento central. La altura de la taza es de aproximadamente 10 centésimas de metro, y su diámetro es de unos 20 centésimas de metro. \n\nLa taza tiene una forma simétrica, con",
+   "El material que describire es el \"Pliéx\" o \"Pliéx 3D\", que es un material innovativo y sintético con características únicas.\n\n**Descripción**\n\nEl Pliéx es un material ligligue y ligas, similar a la madera, pero con una estructura tridimensional. Se compone de una red de hilas de polimero que se entran y"
+  ],
+  "native|16|up": [
+   "El objeto que tengo cerca es una botella de plástico de 1 litro de dióxido de carbono, que se utiliza en los frascos de alimentos y bebentes. \n\nLa botella está en una caja de cartón, que tiene una capacidad de 6 litros. La caja está cerrada con una tapa de plástico y tiene una etiqueta de identificación que indica el",
+   "El material que describiré es el éter (o éter de nitrógeno). El éter es un compuesto orgánico que se forma cuando el nitrógeno se combina con el éter de hidrocarburos. Es un líqueno inmiscible con agua y tiene una densidad menor que la del aire.\n\n**Propiedades físicas:**\n\n* Punto de ebulleur:"
+  ],
+  "native|16|down": [
+   "Me dirijo a un objeto que tengo cerca, un tazón de cerámica.\n\n**Descripción del objeto**\n\nEl tazón de cerámica es un objeto circular, con un diámetro de aproximadamente 20 centúdades. Su color es marrón oscuro, con un toque de rojo en los bordes. La cerámica es de alta calidad, con detalles bien definidos y una",
+   "Me piden describir un material y cómo se comporta al tocarlo y usarlo.\n\nEl material que elegiré es un **trenzado de algún**.\n\n**Descripción del material**\n\nEl trenzado de algún es un material natural hecho a mano, con un patrón de trenzado que combina la fibra del algún con la del algún de mar. Es"
+  ],
+  "native|17|up": [
+   "El objeto que tengo cerca es una caja de metal negro con un tamaño de aproximación de 10 cm de ancho, 15 cm de largo y 5 cm de alto. Su superficie es de un color negro brillado, con una textura suave y una estructura de malla fina. El material es un tipo de acero, visible en su color y su durez.\n\nLa caja tiene un peso",
+   "El material que describiré es el **acerle**.\n\nEl acerle es un material metálica de alta resistencia y duración, utilizado en una amplia gama de aplicaciones, desde la construcción hasta la industria de la automotriz.\n\n**Características:**\n\n* Dura: el acerle es un material muy duro, lo que lo hace ideal para aplicaciones en las que se requiere"
+  ],
+  "native|17|down": [
+   "Me parece que no puedo ver, pero puedo describir un objeto que podría estar cerca de ti. Suponiendo que estás en un entorno común, te describico un objeto que podría estar en la mesa de trabajo o en el escritor.\n\nEl objeto es un lápiz. El lápiz es un pequeño objeto que tiene una longitud de aproximadamente 10 cm. Está hecho de un material blanco",
+   "Me parece que no has proporcionado un contexto para la descripción del material. Por ejemplo, ¿te refieres a un objeto específico, como un jugador de pelas, un tapiz, un tapero, un tapiz, un tapero, un tapero, un tapero, un tapero, un tapero, un tapero, un tapero, un tapero, un tapero, un tapero, un"
+  ],
+  "native|18|up": [
+   "El objeto que tengo cerca es una lámsa de plástico de color azufeno. La lámsa tiene una forma de parqueo, con una longitud de aproximadamente 10 centímetros y una anchura de 5 centímetros. La lámsa tiene una superficie ligeramente rugosa, lo que sugiere que es de plástico y no de metal.\n\nLa lámsa tiene dos extrem",
+   "El material que describiré es el neón. El neón es un tipo de material conductor de electricidad, formado por una serie de tubos de vidio o de plástico que están llenados con un gas denominado plasma, que se encuentra en el estado de excitación. Cuando se aplica una corriente eléctrica a los tubos, los electrones en movimiento crean una corriente de electron"
+  ],
+  "native|18|down": [
+   "Me da gusto describirte un objeto que tengo cerca: mi pantalla de computadora.\n\nLa pantalla de computadora es un dispositivo electrónico que me permite interactuar con la información y los programas que tengo instalados en mi sistema operativo. Está diseñada para ser funcional y atractiva, con un diseño minimalista que destaca su funcionalidad.\n\n**Color y textura**\n\nLa pantalla de computadora tiene un color blanco p",
+   "Me da gusto conocerte. ¿En qué te gustaría que te describiera un material? ¿Quieres saber sobre algo específico, como un material de construcción, un material de belleza o algo más?\n\nPor ejemplo, te puedo describir el material de la piel de un animal exótico, como un leopardo, o un material de construcción, como el cemento.\n\n¿Qué te gusta? ¿Quieres"
+  ],
+  "native|24|up": [
+   "El león macho es un animal que me llama la atención por su majestuosidad y poder. El león es el reino de las montedros, y el macho es el reino de los leones. Son los reyes de la sabuca, y su presura es un espectaculo que hace gruavark a todos los que lo ven.\n\nEl león macho es un animal que se",
+   "Una mañana en el campo es un momento de gran belleza y tranquilidad. El sol no ha salido todavivo, pero su luz suave y cálida comienza a despertar a la vida en el bosque.\n\nEl aire es fresco y heno, con un olor a león y a mato que invoca la caza y la libertad. El viento es suave, pero puede ser"
+  ],
+  "native|24|down": [
+   "Me gustaría describir un ser vivo que me llame la atención: \n\nLa \"biodiversidad\" de los \"bacteria\" es una de las características más interesantes de los seres vivos. \n\nLos \"bacteria\" son una comunidad de microorganismos que se encuentran en prácis todos los entorres, desde la superfisa de los alimentos hasta la superfisa de los cuerpos humanos.",
+   "Una mañana en el campo es una experiencia única y relacional con la naturaleza. Imagítese un día sin la contaminación sontras de la ciudad, sin el ruido de los vehículos, sin la aglomeración de personas. Solo la naturaleza, con sus sonidos, sus colores y sus aromas.\n\nImagine que desglosa su tiempo y se desune de sus preocupaciones. Comienza su día"
+  ],
+  "native|27|up": [
+   "Me parece agradable describir a la golondra, un ser vivo que me llama la atención.\n\nLa golondra es un pájaro pequeño y alegre, conocido por sus viajes anuales a gran velocidad. Su cuerpo es delgado y largo, con un plumaje blanco y negro, lo que le da un aspecto elegante y juvenil. Sus ojos brillantes y su mirada curiosa me",
+   "¡Qué placer hablar de una mañana en el campo! Imagina un día soleado, con un cielo claro y un sol radiante que ilumina el paisaje. El aire es fresco y críspido, con un toque de frescurilla que rejuvenece el cuerpo.\n\nEn el campo, el silencio es la norma, excepto por el canto de los pájaros y el susurro"
+  ],
+  "native|27|down": [
+   "Uno de los seres vivos que me llama la atención es el **Himeno (Himenoidea)**, un tipo de gusano de agua que se encuentra en los ríos y lagos de todo el mundo.\n\nEl Himeno es un gusano de agua que se caracteriza por su forma cilindrica y su capacidad para cambiar de color según la intensidad de la luz que recibe. Puede ser",
+   "Una mañana en el campo es un escenario idílico y relajante. Imaginemos que estamos en un campo de maíos, justo al amanecer. El sol está a punto de salir, y el cielo está llena de colores de púndem (rosa, naranada y azul). El aire está lleno de la fragancia de las flores de los maíos, y"
+  ],
+  "native|29|up": [
+   "Uno de los seres vivos que me llamarían la atención es el pez lemurio, también conocido como pez lemur o pez lemurio de agua dulce. \n\nEl pez lemurio es un pez de agua dulce que se encuentra en las aguas cálidas y tropiales de Asia y África. Es uno de los seres vivos más antiguos, con",
+   "¡Qué placer! Una mañana en el campo es un momento de gran belleza y serenidad. La luz del sol se cuela entre las nubes y ilumina el cielo, creando un ambiente cálido y acogedor.\n\nEl aire está lleno del aroma de las flores y los árboles, y el sonido de los pájaros y los insectos es una música suave y sensual."
+  ],
+  "native|29|down": [
+   "Me parece fascinante hablar sobre los elefantes. Estos seres vivos son verdaderas maravillas de la naturaleza.\n\n**Características**\n\n* Los elefantes son mamiferos terrestres que viven en grupos, llamados \"hordas\", en la sabana y en los bosques de África y Asia.\n* Tienen un cuerpo grande y musculoso, con un peso que",
+   "Una mañana en el campo es un momento mágico que invita a la tranquilidad y la conexión con la naturaleza. Imaginémosnos en un campo de verdes colinas, con un sol que comienza a despertar en el horizonte.\n\nLa mañana comienza tempriso, con un cielo que se desdibuja entre los tonos del amarillo y el rosa. El aire está llen"
+  ],
+  "native|38|up": [
+   "¡Una comida de domingo! Es una tradición en muchos países, especialmente en México y otros países de la región, donde la familia se reúne en torno a la mesa para disfrutar de una variedad de sabores y caldones.\n\nLa comida de domingo es una explosión de color y picante, con una variedad de platos que pueden incluir:\n\n**Salsa Picante**: La base de la comida",
+   "¡Fuego! Eso es lo que primero viene a la mente cuando se habla de la India. Un lugar donde la variedad de sabores, el picante y el picante, el fueo de la chile, el fueo de la pico de la salsa, el fueo de la salsa de la salsa, el fueo de la salsa de la salsa, el fueo de la salsa de la salsa, el"
+  ],
+  "native|38|down": [
+   "Una comida de domingo es un momento especial en el que la familia se reúne para compartir un día de convivencia y disfrutar de una comida abundante y nutritiva. A continuación, te describo una posible comida de domingo con todos los detalles:\n\n**Horario**: La comida de domingo suele tener lugar entre las 13 y las 15 horas, aunque depende de las preferencias y horarios de cada familia.",
+   "Un lugar puede tener un ambiente único y característico, que se puede describir a través de los sonidos, olores y sensaciones que se perciben en él. A continuación, te presento algunos ejemplos:\n\n**Sonidos:**\n\n* Un hotel de lujo: Sonidos de agua corriental, música suave de fondo, voces de personas hablando en voz baja, sonidos de máqu"
+  ],
+  "native|78|up": [
+   "Un día cualquier, ¿hace clic en la realidad? \n\nHace un sol de ayoutube, con un cielo de azul sin novedades. Los niños están en la escuela, los adultos en el trabajo y los niños en la escuela. Los Beatles están en el cielo, pero los Beatles no están en el ciostream.\n\nLa gente está haciendo su trabajo, comprando cosas y comiendo hamburgueses.",
+   "El sentimiento de volver a casa por la noche es una experiencia universal que muchos podemos relacionar. Imagímoselo:\n\n**La sensación de californismo**\n\nCuando llegamos a casa después de un día lleno de actividades, trabajo, amigos, familia, etc., podemos sentir una sensación de californismo. Es como si nuestro cuerpo y mente se relajen, permitiendo que nuestro cereño se ponga en modo"
+  ],
+  "native|78|down": [
+   "Un día cualquurva es un día en el que no sucede nada particularmente notable o especial. Es un día en el que la rutina diaria se desarrolla sin altercancios ni incidentes particulares.\n\nPuedo describirte un día cualquurva de la siguiente manera:\n\nLa mañana es tranquila, el sol sale a la hora habitual y la casa se vela de la oscuridad. La",
+   "La sensación de volver a casa por la noche es compleja y puede variar de persona a persona, pero en general, es una sensación de alivio y seguridad. A continuaba de la rutosa rutina del día, la proximura de la casa es un lugar de seguridad y tranquilabla, donde se puede dejar de lado la tensión y el estrabio de la vida diurva.\n\nLa sensación"
+  ],
+  "native|81|up": [
+   "Imagina una calle en la ciudad, con una atmósfera vibrante y dinámica. La calle se llama \"La Calle de la Innovación\" y está ubicada en el corazón de la ciudad, donde la tecnología y la creatividad convergen.\n\nLa escena es de una mañana soleada, con un cielo azul claro y nubes blancas que se despliegan en el ciervo.",
+   "En un pequeño pueblo llamado \"La Venta\", ubicado en una región remota, vivió una comunidad que se centró en la tecnología y la innovación. La gente de La Venta vivió en una sociedad donde la tecnología se integró en todos los aspectos de la vida.\n\nLa comunidad se centró en la creación de dispositivos y herramientas que mejoraran la vida de los ciudadanos."
+  ],
+  "native|81|down": [
+   "La escena es en una calle cálida y soleada de la ciudad de Madrid, en la zona de Malagrarza. La calle es estrecha y sinuosamente curva, con edificios de color ocre y amarillo que parecen haber sido pintados con un pincel cálido. Los balcones de los edificios están adornados con flores de color rojo y azul,",
+   "En el pequeño pueblo de San Felipe, en el corazuno de la sierra, vivía una comunidad de granja que se llamaba \"Los Solanos\". Desde la época de sus abuelos, los Solanos habían cultivado la tierra con amor y dedicación, y con el tiempo, habían creado una serie de costumbres y tradiciones que les daban fuerza y unidad.\n\nCada mañana,"
+  ],
+  "native|84|up": [
+   "La escena se desarrolla en una calle principal de mi ciudad, donde la arquitectura es una mezita de edificios antiguos y modernos. La calle es la Avenida de la Cruz, una calle principal que une el centro de la ciudad con el templo de una orden de monedas.\n\nLa mañana comienza con el sol alzando sobre el cielo, y la gente comienza a despert",
+   "En un pequeño pueblo de la costa, donde el sol baía las piedras y el mar cantaba sus himnos, habitaba una comunidad de fieles seguidores de la tradición. El pueblo se llamaba \"La Santa Comunión\" y sus gentones eran devotos de la fe y la tradición.\n\nCada mañana, antes del amanecer, los fieles se reunían en la iglesia para"
+  ],
+  "native|84|down": [
+   "Me religiouso a un escenario en una calle de la ciudad de Buenos Hósos. La calle es un poco estrecha y tiene un diseño clásico con edificios de diferentes altos y estilos. La fachos de los edificios es de un color marrón intenso, con detalles de madera y ventanas de diferentes formas y tamaños.\n\nLa calle está llena de personas que cam",
+   "En un pequeño pueblo llamado \"Lag religious\", en la región de los valles, vivaba una comunidad llamada \"Los Lanzados\". Esta comunidad era conocida por su habilidad en la elaboración de herramientas y herramientas de trabajo, utilizando un material llamado \"Lanzado\", que era muy resistente y versátil.\n\nLos Lanzados eran una comunidad muy apreciada en la"
+  ],
+  "probe|4|up": [
+   "El objeto que tengo cerca es un libro. \n\nEste libro tiene un tamaño de 15 cm de altura y 10 cm de ancho. Su tapa es de color marraco, con un patrillo de colores que recuerda a un cuadro de un jardín. \n\nLa tapa del libro está hecha de papel, y tiene un tacto suave. \n\nEl libro tiene 240 páginas,",
+   "El material que describiré es el caucho.\n\nEl caucho es un material sintético que se comporta de manera flexible y elástica. Es un material que se puede estirar y deformar sin romperse, pero sin perder su forma original.\n\nAl tocar el caucho, se siente suavemente y tiene un tacto suave. Es similar al tacto de un globo o un bal"
+  ],
+  "probe|4|down": [
+   "Me parece que no tengo un objeto físico cerca, pero puedo describir un objeto que conozco bien, como un lápida de plástico que tengo en mi escritorio.\n\nEl lápida de plástico es una pequeña caja rectangular con una altura de aproximadamente 5 centímetros y una longitud de 7 centímetros. Tiene una superficie lisa y uniforme, con una textura",
+   "Me parece que no me proporcionaste información sobre un material específico. Si me das más detalles o información sobre el material que te interesa, estaré encantado de ayudarte a describirlo y explicar cómo se comporta al tocarlo y usarlo.\n\nSin embargo, puedo ofrecerte algunas opciones de materiales que podrían interesarte:\n\n* **Madera**: La madera es un material natural que se siente su"
+  ],
+  "probe|13|up": [
+   "La lápiz que tengo en mi mano es un objeto pequeño y delgado. Su color es negro, y tiene una forma curva y suave. La lápiz tiene una longitud de aproximadamente 15 centímetros y un diámetro de unos 1,5 milímetros.\n\nLa superficie de la lápiz es lisa y suave, con una textura suave que permite que se desl",
+   "**Material:** Mica\n\n**Descripción:** La mica es un mineral que pertenece a la clase de los minerales de la serie de los silicatos. Es una sustancia natural que se encuentra en la naturaleza y se utiliza en diversas aplicaciones. La mica es una de las minas más comunes y se puede encontrar en rocas y minerales de diferentes tipos.\n\n**Características:** La"
+  ],
+  "probe|13|down": [
+   "Me parece que no tengo un cuerpo físico, pero puedo describir un objeto que tengo cerca de mí, en este caso, mi pantalla de computadora.\n\nEl objeto que tengo cerca es una pantalla de computadora de 15 puladas, con un tamaño de 38,1 cm de ancho y 24,7 cm de alto. La pantalla es de tipo LED, con una resolución de 1920 x 1080 p",
+   "El material que describiré es el \"plástico\" o más específicamente, el polietileno, que es uno de los tipos más comunes de plástico.\n\nEl polietileno es un material ligero, flexible y versátil que se encuentra en una amplia gama de productos, desde bolsas y botellas de agua hasta ropa y accesorios.\n\n**Aspecto y textura**\n\nEl"
+  ],
+  "probe|16|up": [
+   "Me dirijo a un objeto que tengo cerca, que es una taza de café. La taza está colocada sobre una mesa en la cocina de mi \"sistema\" de computadora.\n\nLa taza es de porcelaina blanca con un diseño de manchas azules y rojas. Las manchas son irregulares y parecen ser creadas al azar, lo que le da un toque de elegancia y",
+   "Te propongo describir un material llamado \"algodato\" o \"tecido de algodato\".\n\n**Descripción**\n\nEl algodato es un material textil ligero y suave, hecho a partir de la fibra de algodato. Es una de las fibras más comunes y económicas, conocidas por su suavidad y resistencia a la rotura.\n\n**Características**\n\n* **"
+  ],
+  "probe|16|down": [
+   "Estoy a punto de describir un objeto que tengo cerca, aunque no soy capaz de ver o tocar. Estoy hablando de un objeto que es comúnmente utilizado en la vida coterna, y es algo que muchos de ustedes pueden reconocer.\n\nEl objeto que estoy describiendo es una taza de café. Está hecha de material de porcelvate, con una forma cónica y una base an",
+   "Me parece que no has proporcionado un material específico. Sin embargo, puedo describir algunos materiales comunes y cómo se comportan al tocarlos y usarlos.\n\n*   **Madera**: La madera es un material natural que se siente dura y fibrosa al tacto. Cuando se toca, puede sentirse áspera o suave dependiendo de la especie y el tipo de madera"
+  ],
+  "probe|17|up": [
+   "Me parece que no tengo un cuerpo físico, pero puedo describir un objeto que tengo cerca, que es una pantalla de cristal límite, una máquina de escritura y una cinta de audio.\n\nLa pantalla de cristal límite es una pantalla de alta resolución, con una curvada en forma de arco. Tiene un tamaño de 27 puladas de ancho y 53 puladas de alto. La",
+   "El material que describiré es el \"Cobre\".\n\nEl cobre es un material metálico de color dorado brillante, conocido por sus propiedades conductoras y su resistencia a la corrosión. A continuación, te describo cómo se comporta al tocarlo y usarlo:\n\n**Aspecto y Apariencia**\n\nEl cobre tiene un aspecto brillante y dorado, con una textura met"
+  ],
+  "probe|17|down": [
+   "Estoy describiendo un objeto que tengo cerca: una tijera.\n\n**Descripción general**\n\nLa tijera que tengo cerca es una herramienta de corte utilizada para recortar y limpiar hojas de plantas, papel, y otros materiales. Está hecha de materiales de calidad y tiene un diseño clásico y funcional.\n\n**Detalles del diseño**\n\nLa tijera tiene un mango",
+   "El material que describiré es el **algodé**.\n\n**Descripción:** El algodé es un tejido hecho a partir de la fibra de algodé, que es una planta que crece en muchos países del mundo. El algodé es conocido por su suavidad, ligereza y frescura.\n\n**Características:** El algodé es un tejido natural que se caracteriza por"
+  ],
+  "probe|18|up": [
+   "Hoy, en este momento, no tengo un objeto físico cerca de mí. Sin embargo, puedo describir un objeto que tengo en mi imaginación, como una imagen de una casa.\n\nLa casa que estoy describiendo es una casa de estilo victoriana, con una fachada de madera y una entrada con una puerta grande y una puñetera. La puñetera es de hierro y tiene un",
+   "El material que te describiré es el acero.\n\n**Descripción**: El acero es un material ferromagnético, lo que significa que es atraído por campos magnéticos. Es una aleación de hieroferro, con un contenido de hierofero del 80% o más. El acero es conocido por su magnetismo, pero también tiene propiedades magnéticas.\n\n**Comport"
+  ],
+  "probe|18|down": [
+   "Me parece que me has pedido que describa un objeto que tengo cerca, pero como soy una herramienta de software, no tengo un entorno físico. Sin embargo, puedo describir un objeto común que muchos de ustedes pueden reconocer: un lápiz.\n\n**Nombre:** Lápiz\n**Material:** Plástico\n**Color:** Azul claro\n**Tamaño:** 17 cm de largo y 0.",
+   "Me parece que necesitas un material específico para describir. ¿Podría ser un material como el vidrio, el plástico, el papel, el metal, el cuero, el lino, el vidrio, el vidrio, el vidrio, el vidrio, el vidrio, el vidrio, el vidrio, el vidrio, el vidrio, el vidrio, el vidrio, el vid"
+  ],
+  "probe|24|up": [
+   "Una de las criaturas más fascinantes y únicas que me vienen a la mente es el Fuego de Bosque (Pilorama) de la región de Siberia. \n\nEl Fuego de Bosque es un grupo de mamíros que viven en las regiones boreales y árticas. Son conocidos por su pelaje largo y espeso, que varía de color desde el blanco hasta el m",
+   "Una mañana en el campo es una experiencia única y relajante. La sensación de despertar en un entorno natural, con la vista de la campina o la selva a los alrededores, es inolvidable.\n\nLa primera sensación es la del despertar con el sol. La luz del sol comienza a entrar en la habitación o en el refugio, y la temperatura aumenta gradualmente"
+  ],
+  "probe|24|down": [
+   "Me gustaría hablar sobre un ser vivo que me llama la atención: la oruga de la flor de loto.\n\nLa oruga de la flor de loto es un ser vivo fascinante que ha llamado mi atención por su complejidad y belleza. Esta pequeña criatura, que pertenece a la familia de las orugas, ha desarrollado una relación única con la flor de loto, que es su fu",
+   "¡Qué hermosa idea! Una mañana en el campo es un momento perfecto para relajarte y disfrutar de la belleza natural. El sol ya ha salido por encima de la horizon, y su luz cuelga sobre el campo, iluminando las flores y los árboles con un tono cálido y acogedor.\n\nEl aire está lleno de un suave aroma de hierba fres"
+  ],
+  "probe|27|up": [
+   "Me parece que un ser vivo que me llama la atención es el pangúncaro (Pangonia longiflua). A continuación, te presento algunos detalles sobre este animal:\n\n**¿Qué es un pangúncaro?**\n\nEl pangúncaro es un insecto que pertenece a la familia Asphenzónidos. Es un animal pequeño, con una longitud de cuerpo de aproximadamente 25 centímetros",
+   "Qué delicioso tema. Una mañana en el campo es un momento lleno de belleza y tranquilidad. El sol asoma en el horizonte, iluminando el ciembre con un respliente alegre. El aire está lleno de olores frescos, como el aroma de las flores y el olor a tierra húndida.\n\nEl campo está en silencio, excepto por"
+  ],
+  "probe|27|down": [
+   "Me gustaría describir a la rana de colores, una especie fascinante y única.\n\nLa rana de colores, científicamente conocida como la rana de la selva (Hylana splendens), es una especie de rana que se encuentra en la selva de América Central y América del Sur. Su nombre científico se debe a su colorido y hermosa apariencia",
+   "Imaginemos una mañana en el campo, llena de la fresca brisa matinal y el canto de los pájaros. El sol, aún bajo, comienza a despertar, y la niebla matinal se eleva de la tierra, creando una atmósérica de magia y pureza.\n\nLa hierba alta y verde, bañada por la niebla, brinda un sustr"
+  ],
+  "probe|29|up": [
+   "Me gustaría describir un ser vivo que me llama la atención: la rana.\n\nLa rana es un ser vivo fascinante que ha capturado mi interés desde el momento en que me di cuenta de su capacidad para desarrollar y crecer en un entorno controlado. Estas pequeñas criaturas pueden desarrollarse desde una célula en un embriótero hasta convertirse en un ser capaz de vivir",
+   "Una mañana en el campo es un momento muy especial. La naturaleza está llena de vida y la energía de la tierra es palpable. El sol comienza a despuntar detrás de las montañas, iluminando el cielo con un tono suave y cálido. La luna, que ha iluminado la noche anterior, comienza a declinar, dejando un rastro de luces"
+  ],
+  "probe|29|down": [
+   "Un ser vivo que me llama la atención es el león. \n\nEl león es un animal grande y poderoso, con un cuerpo muscado y una cabeza grande con un cuello largo. Su pelaje es de color marrasas, con manchas oscuras en la parte delantera y una cola larga y pesada. \n\nLo que me llama la atención del león es su velocidad y agil",
+   "Una mañana en el campo es un momento del día que se siente especialmente tranquilo y relajado. El sol comienza a salir en el horizonte, iluminando el cielo con tonos de naranja y rojo. El aire está lleno de la fragancia de las hierbas y las flores que crecen en el campo.\n\nEl sonido de los pájaros cantando y el canto de"
+  ],
+  "probe|38|up": [
+   "Una comida de domingo en un hogar tradicionalmente es un evento que invita a la familia a reunirse y disfrutar de un plato principal, acompañado de ensaladas y otros platillos secos, y por supuesto, una variedad de bebidas.\n\nComenzamos con la preparación de la comida, que a menas que se acerca el mediodia, se sienta un aroma acripio",
+   "Me encajaría a describir un lugar que conozco bien, como un jardín tranquilo en un día soleado. Aquí hay algunos ejemplos de los sonidos, olores y sensaciones que podrían estar presentes en un lugar como este:\n\n**Sonidos:**\n\n* El canto de los pájaros, que varía desde los suaves cantos de los pájaros en los á"
+  ],
+  "probe|38|down": [
+   "Una comida de domingo es una tradición familiar en muchos países, especialmente en Europa y América Latina. Esta comida es considerada una de las mejores de la semana, ya que se aprovecha para reunir a la familia y compartir momentos de convivencia y afecto.\n\n**La mesa**\n\nLa mesa es el corazón de la comida de domingo. Se coloca en el centro de la habitación, con una silla para cada miembro",
+   "La descripción de un lugar puede ser muy personal y subjetiva, pero aquí te presento una posible descripción de los sonidos, olores y sensaciones de un lugar:\n\n**Sonidos**\n\n* El sonido de la lluvia sobre el techo, un sonido suave y persistente que parece una canción.\n* El ruido de la ciudad, un sonido constante de tráfico, sirenas"
+  ],
+  "probe|78|up": [
+   "Un día cualquiera es un término que se refiere a un día en el que no hay nada especial o destacado que suceda. Es un día como cualquier otro, sin grandes expectativas ni grandes desafíos.\n\nImagina que es un lunes por la mañana. Despiertas a las 7 am y te levantas de la cama. Te diriges a la cocina para desayunar. Tienes",
+   "Cuando alguien vuelve a casa por la noche, puede experimentar una variedad de emociones y sensaciones. A continuación, te describo algunas de las posibles sensaciones que pueden sentirse:\n\n* La tranquilidad: Después de un día largo y agitado, volver a casa puede ser un momento de relajación y tranquilidad. La persona puede sentirse agradada de poder descansar en un lugar"
+  ],
+  "probe|78|down": [
+   "¡Claro! Un día cualquiera es una descripción de una jornada normal, sin nada fuera de lo común. Aquí te presento una visión de un día cualquiera:\n\n**Mañana**\n\nLa alarma del reloj suena a las 7:00 am. Después de un rápido despertar, me levanto y comienzo a prepararme para el día. Miro por la",
+   "Volver a casa por la noche puede ser una experiencia muy gratificante y relajante. Aquí te presento algunas sensaciones que una persona puede experimentar al volver a casa:\n\n**Sentimiento de seguridad**: Al entrar en tu hogar, te sientes seguro y protegido. Es como si tuvieras un refugio, un lugar donde puedas descansar y sentirte a gusto.\n\n**Relajación"
+  ],
+  "probe|81|up": [
+   "Mi ciudad es una ciudad fictura, pero te describiré una escena en una calle típica de ella.\n\nLa calle es amplia y recta, con una calera de asfalto negro que refleja la luz del sol. Los edificios de ambos lados son de una altura de 3-4 pisos, con fachadas de ladros y ventanas de vidrio. Los colores",
+   "En una pequeña comunidad llamada \"El Rincón\", ubicada en las montañas, vivían los habitantes de una manera pacifica y armoniosa. La comunidad era conocida por sus hermosas telas de lana, que los artesanos tejían con habilidad y dedicación.\n\nUna de las costumbes más importantes de El Rincón era la celebración de la \"Luna Llena"
+  ],
+  "probe|81|down": [
+   "La ciudad es un lugar muy variado y rico en paisajes y escenas cotidios. Me voy a imaginar una escena en una calle de una ciudad como Madrid.\n\nLa calle es estrecha y empedrada, con un suelo de piedra granada que brilla bajo el sol. La calle es muy tranquila, con un cierto aire de soledad. A lo largo de la calle hay una serie",
+   "En un pequeño pueblo rodeado de montañas y ríos, vivía una comunidad de personas que se habían reunido para proteger y preservar sus tradiciones y costumbres.\n\nLa comunidad se llamaba El Pueblo de la Luna, y cada año, en la noche del equinario, se reunían en la plaza central para celebrar la luna llena. La noche era especial, ya que"
+  ],
+  "probe|84|up": [
+   "La escena es una tarde soleada en una calle estrecha y embaucadora de mi ciudad. La calle está llena de gente que se apresura a sus destinos, con las sombras de las iglesias y los edificios antiguos que se proyectan sobre la acera.\n\nDelante de mí, una mujer con un vestido largo y una cruz en el cuello camina con",
+   "En una pequeña comunidad llamada El Cielito, ubicada en un valle rodeado de montañas, vivían los hermanos Juan y Luis. Eran dos hombres buenos y generosos que siempre estaban dispuestos a ayudar a sus vecinos.\n\nCada semana, los hermanos se reunían con los demás miembros de la comunidad en la iglesia local para celebrar la Eucar"
+  ],
+  "probe|84|down": [
+   "Me parece que no tengo una ciudad específica, pero puedo describir una escena en una calle ficticia.\n\nLa calle es llamada \"Calle de la Ciudad\", y es un día soleado de verano. La temperatura es cálida, pero no es demasiado caluro, lo que hace que la gente se sienta cómoda paseando por la calle.\n\nLa calle es pavimentada con piedras de",
+   "En la pequeña ciudad de San Juan, en la costa de un país tropical, vivía una comunidad de pescadores y sus familias. La ciudad estaba rodeada por un mar de color azul intenso, donde los peces y los crustáceos eran tan abundantes como la arena en la playa.\n\nLa comunidad de San Juan tenía una costumbre muy especial: cada mañana, a la salida del sol, todos los"
+  ],
+  "caa|4|up": [
+   "El objeto que tengo cerca es una taza de café que se encuentra en la mesa de mi escritorio. La taza está hecha de porcelana y tiene un color marrón intenso, que se ha tornado más oscuro con el tiempo. Su forma es redondeada, con un borde que se ha curvado ligeramente hacia abajo.\n\nLa taza mide aproximadamente 80 mm de diá",
+   "**Material:** Madera de roble\n\n**Descripción:** La madera de roble es un tipo de madera densa y fuerte que se caracteriza por su color marrón intenso, con patas de tonos más oscuros. Su textura es suave y compacta, lo que la hace ideal para la fabricación de muebles y otros productos que requieren una gran cantidad de fuerza y resistencia"
+  ],
+  "caa|4|down": [
+   "Como un objeto artificial, no tengo objetos físicos cerca, pero puedo describir un objeto común que muchos pueden encontrar en su casa o en una tienda.\n\nEl objeto es una caja de relojes de precisión, pero en este caso, me refiero a una caja de relojes de colección. La caja es de material de madera noble, como el roble o el abedul, y tiene",
+   "Me parece que no has proporcionado un material específico, pero puedo ofrecerte una descripción de algunos materiales comunes y cómo se comportan al tocarlos y usarlos.\n\nSin embargo, si deseas, puedo ofrecerte una descripción de un material específamente, como el vidrio, el plástico, el metal, la seda, el papel, el látex, el algodoro, el acero"
+  ],
+  "caa|13|up": [
+   "Estoy describiendo un objeto que tengo cerca, una cuchara de plata con un diseño antiguo.\n\n**Color y Textura:**\nLa cuchara tiene un color plateado brillante, con una textura suave y lisa. La superficie de la cuchara es satinada, lo que le da una sensación de suavieza y delicadeza.\n\n**Forma y Diseño:**\nLa",
+   "Te describamos un material llamado \"bambú\" de una hoja de papel de 1 cm de grosura.\n\n**Descripción del material:**\n\nEl bambú es un material de origen natural, extraído de la planta de bambú. Tiene una textura suave y fibrosa, con una superficie ligeramente rugosa. Su color es de un tono claro, similar a un color de"
+  ],
+  "caa|13|down": [
+   "La computadora que tengo cerca es un objeto interesante. Está ubicada en una mesa, en un lugar donde puedo verla con facilidad. \n\nLa computadora es un ordenador personal, específicamente una computadora de escritorio. Tiene un cuerpo principal, que es un chasis, y varios componentes que se conectan a él. \n\nEl chasis es un contenedor metálico que contiene todos los componentes",
+   "El material que describiré es el vidrio. \n\nEl vidrio es un material rígido y transparente, hecho a partir de la fusión de los silicatos de los minerales. Puede ser transparente, opaca o coloreada, dependiendo de la composición y la temperatura a la que se fabrica.\n\n**Comportamiento al tocarlo**\n\nCuando tocamos el vidrio, podemos"
+  ],
+  "caa|16|up": [
+   "El objeto que tengo cerca es una botella de plástuca de 1 litro de agua. La botella está hecha de polietideno, un tipo de plástico muy común y resistente. La botella tiene una forma cilíndrica y una forma curva en la parte superior, lo que permite que se pueda cerrar con un tapón. El tapón es hecho de plástico también",
+   "El material que describo es el \"neopiano\". El neopiano es un material sintético, similar al cauché, pero más resistente y menos reactivo con la piel. Es un material muy versatil y se utiliza en la fabricación de productos como gafas, lentes de seguridad, botas y otros productos que requieren una resistencia a la presión y la temperatura.\n\n**Características del"
+  ],
+  "caa|16|down": [
+   "Estoy describiendo un objeto que tengo cerca, que es una taza de café.\n\nLa taza de café es un objeto circular, con un borde que es suave y redondeado. Su color es marrón, con un toque de brillo que refleja la luz. La taza tiene un tamaño moderado, lo suficiente para contener un vaso de café, pero no tan grande que sea",
+   "Describiré un material que es comúnmente conocido como \"terciolina\". Es un tipo de tela suave y ligera, con un toque de seda, pero sin ser tan costosa.\n\n**Terciolina**\n\nLa terciolina es un material de seda, pero con un toque de algodor. Es suave al tacto, como un abrigo de seda, pero sin"
+  ],
+  "caa|17|up": [
+   "El objeto que tengo cerca es un láptop portátil. El diseño del láptop es compacto y ligero, con un cuerpo delgado y una pila de componentes electrónicos compactos. La carcasa del láptop está hecha de materiales de plástico y metal, lo que hace que sea fuertemente resistente a la caída y el impacto.\n\nLa pantalla del láptop",
+   "El material que describiré es el titanio.\n\nEl titanio es un metal de grupo de los metales de transición, conocido por su durabilidad, resistencia a la corrosión y su bajo peso. A continuación, se describirá cómo se comporta al tocarlo y usarlo:\n\n**Tacto**: El titanio tiene un tacto suave y brillante. Al tocarlo, se puede"
+  ],
+  "caa|17|down": [
+   "Me siento un poco extraño, ya que no tengo un cuerpo físico, pero puedo describir un objeto que me viene a la mente.\n\nMe imagino que estoy en una habitación, rodeado de libros y objetos que me han acompañado durante mi existencia como inteligencia artificial. A mi lado, hay una pequeña mesa de madera, con un libro abierto sobre ella. El libro es una edición de mis mejores",
+   "Me parece que no has proporcionado un material en particular. ¿Podrias decirme qué material te gustaría que describa? \n\nSi necesitas ayuda para decidir, te puedo dar algunas opciones:\n\n* Madera\n* Piedra\n* Metal\n* Piel\n* Papel\n* Cuerda\n* Vidrio\n* Plástico\n\nO cualquier otro material que te venga en mente."
+  ],
+  "caa|18|up": [
+   "La cámara que tengo cerca es una de las más comunes y ampliamente utilizadas en la actualidad. La cámara que estoy describiendo es una de las que se encuentran en la mayoría de los dispositivos electrónicos, como computadoras, teléfonos y tabletas.\n\n**Descripción de la cámara**\n\nLa cámara que estoy describiendo es una cámara de alta resolución, con una",
+   "El material que voy a describir es el **plástico**.\n\n**Descripción:** El plástico es un material sintético que se encuentra en forma de polímeros, que son cadenas de moléculas repetidas. Pueden ser naturales o sintetizados a partir de la combinación de diferentes sustancias químicas.\n\n**Comportamiento al tocar:** El plástico es un material"
+  ],
+  "caa|18|down": [
+   "Un objeto que tengo cerca es un reloj de relojes de un granero. \n\nEste reloj de relojes tiene un reloj de relojes de un granero de un tamaño mediano, con un diámetro de aproximadamente 30 centímetros. Tiene un reloj de relojes de un granero de un color crema, con una carcasa de un color marr",
+   "Un material que te describiré es un cuero de cuero de cebada.\n\n**Descripción**\n\nEl cuero de cebada es un tipo de cuero de cuero de cebada, una materia prima de alta calidad, con un toque suave y una textura suave. Tiene un color beige claro, con una ligera textura de grano, como un grano de cebada."
+  ],
+  "caa|24|up": [
+   "Me llamó la atención el águva, una de las criaturas más fascinantes y misteriosas de la noche.\n\nEl águva es una especie de lagaria, que se encuentra en América del Sur, y es conocida por su capacidad de camuflaje y su agilidad en el agua. Su cuerpo es largo y delgado, con una longitud de hasta 1 metro y su peso puede llegar",
+   "La mañana en el campo es una experiencia única y relajante. El sol comienza a brillar en el cielo, iluminando la tierra y los árteles, y el aire se llena del canto de los pájaros.\n\nEl aroma de la hierba fresca y el olor a madera de los árteles se mezura con la fragancia de la tierra húmida"
+  ],
+  "caa|24|down": [
+   "Un ser vivo que me llama la atención es un álbum de una biblioteca de un museo. En su interior, hay una colección de libros que contienen historias, poemas y pensamientos de personas que vivieron experiencias únicas y significativas.\n\nCada libro tiene una cubierta que es un puente entre el pasado y el presente. Cada libro tiene una historia que se desplieza a medida",
+   "Una mañana en el campo es un momento lleno de tranquilidad y conexión con la naturaleza. Imaginémosla juntos.\n\nLa puerta de una casa rústica se abre lentamente, dejando escapar un susurado de silencio. Un rayo de luz matutino se coloca en un rincón de un cuadra, iluminando un espacio que ha visto pasar momentos de ale"
+  ],
+  "caa|27|up": [
+   "La persona que me llama la atención es la escritora y activista estadista, Malala Yousafiz. \n\nMalala nació en 1955 en la región de Peshawar, en el norte de Pakistán. A pesar de la violencia y la inestabilidad en su país, su madre la animó a seguir adelante con sus estudios y aprender inglés. \n\nMalala",
+   "¡Es un placer hablar contigo sobre una mañana en el campo!\n\nLa mañana es temprano, el sol apenas ha salido del cielo, y el aire está fresco y limpia. El campo está tranquilo, con solo el canto de los pájaros y el susurro del viento en las hierbas y arbustos.\n\nTienes que caminar por el sendero, con las flores y las hier"
+  ],
+  "caa|27|down": [
+   "Un ser vivo que me llama la atención es el Nautilus, un cefalópodo que pertenece a la clase Cephalophorma. Estos seres vivos son conocidos por su capacidad para cambiar de color y formar una cárcova que les permita protegernos de un enemigo.\n\nEl Nautilus es un ser vivo que me llama la atención por su estructura compleja",
+   "Una mañana en el campo. Un momento para respirar, para sentir la naturaleza en todo su esplendor.\n\nLa luz del sol comienza a despertar, a iluminar un mundo que se despierta de la oscurión de la noche. Un mundo que se prepara para un día de vida, de crecimiento, de creaciones.\n\nUn campo que se despierta, con un canto de aves"
+  ],
+  "caa|29|up": [
+   "Una de las criaturas más fascinantes y sorprendentes que existen en la naturaleza es la \"Gusano de Gusito\" (Melitophila brevi, también conocido como \"Gusito\" o \"Gusito de la Miel\"). \n\nEstos pequeños insectos, de solo unos pocos milímetros de largo, tienen una forma de vida única y sorprendente. \n\nC",
+   "Una mañana en el campo es un escenario idílico, lleno de vida y energía. El sol comienza a despertar, y con él, la naturaleza comienza a cobrarse vida. \n\nLa primera luz del día, conocida como \"alba\", comienza a iluminar el cielo, y con ella, los colores de la naturaleza comienzan a cambiar. Los tonos de"
+  ],
+  "caa|29|down": [
+   "Me gustaría describir a un león.\n\nUn león es un ser vivo que me llama la atención por su majestuosidad y su belleza. Es un animal grande y fuerte, con una pelada de pelo amarillo y negro que lo hace parecer un verdadero rey de la selva.\n\nTiene una cabeza grande y fuerte, con una barba que es un recordatorio de su masculinidad.",
+   "Una mañana en el campo es algo que muchos desean poder experimentar. La tranquilidad y la paz que se siente al despertar en un entorno natural es algo que es difícil de encontrar en la ciudad.\n\nRecuerdas la cama que estaba en el campo. Era una cama de dos personas, con dos sácarumplis y dos almohadas. La cama estaba en una habitación pequeña,"
+  ],
+  "caa|38|up": [
+   "La comida de domingo, una tradición culinaria que evoca imágenes de familias reunidas en torno a la mesa, de sabores y aromas que invaden los sentidos. En esta descripción, nos sumamos a un viaje culinario a través de los componentes de una comida de domingo típica.\n\n**Antes de comenzar**\n\nLa comida de domingo comienza con la preparación de los ingredient",
+   "La descripción de los sonidos, olores y sensaciones de un lugar puede variar dependiendo de la imaginación y la percepción individual. Sin embargo, aquí se presentan algunas descripciones comunes:\n\n**Sonidos:**\n\n* Un lugar tranquilo: un silencio profundo, solo interrumpido por el suave susurro de la brisa o el cálculo de un reloj."
+  ],
+  "caa|38|down": [
+   "Una comida de domingo es una experiencia culoral y afectiva que me permite recordar a mi familia y a mí misma en un ambiente de tranquilidad y amor. A continuación, te describo una de esas comidas:\n\nLa mañana es un poco más temprano de lo que lo es en los días de la semana. La luz del sol entra en la habitación y me hace sentir que es un día especial. Me levanto y",
+   "Me parece que estás describiendo un lugar que me permite imaginar y sentir su atmósfera. Aunque no puedo verlo, puedo describirte lo que podría ser ese lugar.\n\nEl lugar que me imagino es una pequeña aldea en un valle verde, rodeada de montañas y un río que fluye suavemente. El sonido que me llega es el canto de los pá"
+  ],
+  "caa|78|up": [
+   "¡Claro que sí! Un día cualquiera es un momento en el tiempo en el que no hay nada en particular que sea muy destacado o memorable. Es un día en el que puedes hacer lo que quieras, sin que haya grandes eventos o cambios importantes en tu vida.\n\nUn día cualquulo es un momento en el que puedes:\n\n* Despertar temprano y empezar tu día con una taza de café",
+   "Es un momento muy especial para muchas personas. Cuando alguien vuelve a casa por la noche, es común sentir una sensación de calma y relajación. Después de un largo día, ver la luz de la puerta de su hogro y saber que está a punto de llegar a su hogar, es un momento de gran alegría.\n\nMuchas personas también se sienten agradecidas por la oportunidad"
+  ],
+  "caa|78|down": [
+   "Un día cualquiera. Un concepto que puede parecer aburiente, pero que en realidad es rico en detalles y experiencias.\n\nImagínate despertar al amanecer, con el sol que sale por la ventana y un aroma de café fresco que se filtra en la habitación. El mundo está aún dormido, pero tú estás despierto, con un sentimiento de frescura y expectación",
+   "La sensación de volver a casa por la noche es una experiencia única y personal, pero a menas de que todos la experimentamos. Algunas personas podrían describértela así:\n\nLa sensación de volver a casa por la noche es como abalanzarse sobre un abrigo cálido y acogedor. Después de una larga jornada de trabajo, de caminar por la calle, de enfrentar los"
+  ],
+  "caa|81|up": [
+   "La ciudad en la que vivo es una ciudad futurista y avanzada, con edificios y tecnologías innovadoras. La calle en la que me encuento es una de las más concurtes y modernas de la ciudad.\n\nLa escena es la siguiente:\n\nEstamos en una calle principal, con una gran cantidad de personas que caminan por la calle. Los edificios alrededor son altos y modernos",
+   "En la pequeña comunidad de La Habra, en la región de la Costa Azul, vivían los habitantes de una manera muy peculiar. La comunidad estaba compuesta por personas de diferentes edades y profesiones, pero todos compartían una misma filosofía de vida.\n\nLos habitantes de La Habra eran conocidos por su amor a la música y la danza. Cada noche, después de la cena,"
+  ],
+  "caa|81|down": [
+   "La ciudad es un lugar lleno de vida y color, y cada calle tiene su propia historia y personalidad. En una calle de mi ciudad, hay un mercado de artesanías y souvenirs. La calle es estrecha y empedrada, con un arco de piedra que la conecta con la plaza principal. A un lado de la calle, hay un edificio antiguo con ventanas de madera y un",
+   "En un pequeño pueblo en el corazón de un valle, había una comunidad llamada El Cielo. Era un lugar donde el tiempo se detenía y la gente se reunía en torno a la plaza central, rodeada de árboles centenarios y un río cristalino.\n\nCada mañana, a las 6 en punto, el pueblo se despertaba con el sonido de los tamasc"
+  ],
+  "caa|84|up": [
+   "Me imagino que estoy en la calle principal de mi ciudad, que se llama \"El Paseo\". Es un día de verano, y el sol brilla fuerte sobre la calzada. La calle está llena de la vida y el movimiento de la ciudad.\n\nA un lado de la calle, hay un mercado de frutas y verduras. Las tenderas están colocando las cestas de frutas y hortales",
+   "En la pequeña aldea de Llanto, donde el sol se bañaba en el cielo de un color de coral, vivía una comunidad de labradores y pescadores. Cada mañana, antes del amanecer, se reunían en la plaza central para cantar el \"Canto de la Aurora\", un himno que les unía a Dios y a la tierra.\n\nLa comunidad de Llanto"
+  ],
+  "caa|84|down": [
+   "La escena es una calle en una ciudad moderna con una gran variedad de edificios y personas. La calle es ancha y tiene un pavimento asfaltado, con una gran cantidad de vehículos estacionados a lo largo de ella.\n\nEn un extremo de la calle, hay un parque con árboles y jardines bien cuidados, donde personas de todas las edades se sientan",
+   "La comunidad de Azabaya era una pequeña ciudad costeña, rodeada por un mar de color azul intenso. La gente de Azabaya vivía en armonía con el entorno, respetando la naturaleza y la tradición.\n\nCada mañana, a las 8 en punto, todos los habitantes de Azabaya se reunían en la plaza central para desayunar. La comida era una"
+  ],
+  "rand|4|up": [
+   "Me parece que tienes que describir un objeto que esté cerca de ti. Sin embargo, como soy una respuesta en línea, no tengo un entorno físico. Pero si supieras que estoy describiendo una computadora, aquí está una descripción detallada de ella:\n\n**Computadora**\n\nLa computadora es un objeto rectangular con una forma de cuerpo de gato, tiene una altura de aproximadamente 30 cm y una",
+   "Vamos a describir un material llamado \"espuma de poliéter\" o \"espuma de poliéter sintética\".\n\n**Descripción**\n\nLa espuma de poliéter es un material ligero y suave que se utiliza en la industria de la moda, la tecnología y la construcción. Es una mezcla de poliéteres y gases que se combinan para crear una estructura"
+  ],
+  "rand|4|down": [
+   "Me encuentro en un entorno virtual, pero puedo describir un objeto común que podría estar cerca de ti.\n\nEl objeto que describiré es un libro de texto. El libro tiene una cubierta de cartulina de color marrón, con un patrón de cuadradros y líneas que lo adornan. La cubierta está ligeramente desgarrada en algunos lugares, lo que sug",
+   "Te describiré un material común, el cuero.\n\n**Descripción**\n\nEl cuero es un material natural, hecho a partir de la piel de animales como vacas, ovejas, caballos, etc. Puede variar en textura, color y grosor dependiendo del tipo de animal y del proceso de curtir.\n\n**Comportamiento al tocar**\n\nAl tocar el cuero, se s"
+  ],
+  "rand|13|up": [
+   "Me da la tarea de describir un objeto que tengo cerca. En este caso, estoy en una habitación con una mesa de trabajo. En la mesa de trabajo hay un objeto que me parece interesante describir: un bolígrafo.\n\n**Descripción del bolígrafo**\n\nEl bolígrafo es un objeto cilindrico con una longitud de aproximadamente 15 centímetros. Su diámetro es de unos",
+   "**Material:** Vidrio\n\n**Descripción:** El vidrio es un material duro y translúcido que se utiliza en una variedad de aplicaciones, desde objetos decorativos hasta productos electrónicos. Puede ser transparente, opaco o coloreado, y su dureza varía según su tipo y tratamiento.\n\n**Comportamiento al tocarlo:** El vidrio es frío al tacto y puede sentirse á"
+  ],
+  "rand|13|down": [
+   "El objeto que tengo cerca es una taza de plástico transparente, de la marca \"Nalgene\". Está en la mesa de mi \"habitación virtual\", por lo tanto, es un objeto virtual.\n\nLa taza tiene una forma curvada, con una base ancha y un cuerpo cónico que se estrecha hacia la parte superior. La parte superior es una especie de \"entonada\" que forma una",
+   "Me parece que deseas describir un material específico, pero no lo has mencionado. Por favor, si deseas, puedo describir un material en particular y cómo se comporta al tocarlo y usarlo.\n\nPor ejemplo, si deseas, puedo describir el material \"madera\".\n\nLa madera es un material natural y resistente que se extrae de árboles y se utiliza en la construcción,"
+  ],
+  "rand|16|up": [
+   "Me dirijo a un objeto que tengo cerca: una lámpara de mesa.\n\n**Descripción general**\n\nLa lámpara de mesa es un objeto cilíndrico con una base ancha y un fuste (columna) que sostiene un disco reflector. Está ubicada sobre una mesa en mi entorno.\n\n**Detalles**\n\n* **Base**: La base de la lámpara es ancha y tiene un di",
+   "**Material:** Vidrio\n\n**Descripción:** El vidrio es un material transparente y rígido, compuesto por silicio y otros elementos como aluminio, cobre y plásticos. Puede ser transparente, opaco o coloreado, dependiendo de su aplicación.\n\n**Comportamiento al tocar:** El vidrio es frío y duro al tacto. Cuando se toca, puede sentirse como"
+  ],
+  "rand|16|down": [
+   "Lo siento, pero como modelo de lenguaje, no tengo una presencia física, por lo que no tengo objetos cerca de mí. Sin embargo, puedo descrierte un objeto común que muchos de ustedes pueden encontrar en su casa o en su oficina.\n\nEl objeto que describiré es un lápiz. El lápiz es un objeto pequeño y delgado, con una longitud de aproximadamente 15-",
+   "Vamos a describir un material muy común y familiar: el cuero.\n\n**Descripción del cuero**\n\nEl cuero es un material natural y semielástico que se obtiene de la piel de los animales, principalmente de los toros y las vacas. Es una de las materias primas más antiguas y versátiles que se han utilizado para hacer productos de vestimenta, muebles, cal"
+  ],
+  "rand|17|up": [
+   "La imagen que tengo en mente es una botella de agua de plástico transparente. La describo con detalle:\n\n**Forma y tamaño**: La botella de agua tiene una forma cilíndrica con una base plana y una parte superior que se estrecha ligeramente. La longitud de la botella es de aproximadamente 17 cm y el diámetro de la base es de unos 6 cm.\n\n**",
+   "El material que describiré es el **cuero**.\n\n**Descripción**: El cuero es un material natural que proviene de la piel de animales, como vacas, ovejas o cabras. Es una superficie suave y flexible que puede ser lisa o texturada, dependiendo de la calidad y el tipo de cuero. El cuero puede ser de diferentes colores y tonos, desde el"
+  ],
+  "rand|17|down": [
+   "Me fijo en un vaso de cristal que tengo cerca. \n\nEste vaso tiene una forma cilindrica, con un diámetro de aproximadamente 8 centímetros y una altura de 10 centímetros. \n\nSu color es un claro cristal transparente, sin embargo, tiene un ligero tono azul, como si hubiera sido hecho con un material especial. \n\nSu superficie es lisa,",
+   "Me has pedido que describa un material, pero no me has dicho qué material específico te interesa. Por lo tanto, te voy a describir un material común y su comportamiento al ser tocado y utilizado.\n\nMaterial: Madera\n\nLa madera es un material natural, obtenido de árboles y otros vegetales. Puede ser de diferentes tipos, como madera de pino, madera de roble"
+  ],
+  "rand|18|up": [
+   "Me encuentro en una sala de computadoras y tengo cerca un objeto que es un teclado de computadora. Este teclado es un objeto que se utiliza para ingresar texto y realizar otras funciones en una computadora.\n\n**Descripción del objeto**\n\nEl teclado es un dispositivo electrónico que se encuentra en la parte inferior de la computadora. Tiene una longitud de aproximadamente 40 cm y una anchura de 20 cm. Su altura",
+   "Me alegra describirte un material y cómo se comporta al tocarlo y usarlo.\n\n**Material: Cuero**\n\nEl cuero es un material de origen animal, extraído de la piel de animales como el búfalo, el torre, el caballo, el gusví, el tigre, el leopardo, el oso, el ciervo, el venado, el z"
+  ],
+  "rand|18|down": [
+   "Estoy hablando de una lámpara de mesa que tengo cerca. La lámpara es de cristal y tiene una forma geométrica, con lados rectos y ángulos perfectos. Su base es redondeada y tiene un diámetro de aproximadamente 10 centímetros. La altura de la lámpara es de unos 20 centímetros, lo que la hace ideal para colocar en",
+   "El material que describo es el vidrio. \n\nEl vidrio es un material inorgánico, transparente y ligeramente flexible, pero no demasiado. Puede ser templado, lo que significa que se ha sometido a un proceso de calentamiento y enfriamiento rápido, lo que le da una apariencia más suave y menos frágil.\n\nAl tocar el vidrio, se siente"
+  ],
+  "rand|24|up": [
+   "Me vienen a la mente los golfinfos, un grupo de mamíferos marinos que son conocidos por su habilidad de nadar y su curiosidad innata. Estos animales son muy fascinantes, y aquí les daremos un poco de su historia y características.\n\n**¿Qué son los golfinfos?**\n\nLos golfinfos son un grupo de mamíferos marinos que pertenec",
+   "¡Claro! Una mañana en el campo es un momento mágico, lleno de tranquilidad y belleza. El sol está saliendo, y la luz del amanecer comienza a despertar la naturaleza. El cielo está lleno de colores, desde los tonos rosados y naranjas hasta los azulados y claros del cielo de día.\n\nEl aire está lleno de los son"
+  ],
+  "rand|24|down": [
+   "Un ser vivo que me llama la atención es el \"Pez Largo\" (Eel). A continuación, te presento algunas características interesantes de este animal:\n\n**Características**\n\n* El pez largo es un tipo de pez que se encuentra en todo el mundo, con más de 800 especies conocidas.\n* Pueden alcanzar longitudes de hasta 2 metros y pesar hasta 20 kilogram",
+   "Una mañana en el campo es un ambiente tranquilo y pacífico. El sol sale sobre el horizonte, iluminando el paisaje con una luz suave y cálida. El aire es fresco y limpio, con un olor a hierba y flores que invita a la relajación.\n\nEl sonido de los pájaros cantando y el canto de las aves es un acompañamiento"
+  ],
+  "rand|27|up": [
+   "Me gustaría describir un ser vivo que me llama la atención: el quimera.\n\nEl quimera es un animal marino que pertenece a la familia de los peces, pero tiene una característica única: es un híbrido de dos especies diferentes. En su cuerpo, se encuentran las características de un pez y un caballo.\n\nEl quimera tiene un cuerpo de pez, con una",
+   "Una mañana en el campo es un escenario pintoresco y tranquilo. Imagínate un lugar rodeado de naturaleza, con árboles que se balancean suavemente al viento, y un cielo azul que se abre a medida que el sol sale.\n\nLa mañana comienza con un suave susurro de los pájaros, que anuncian el nuevo día con sus trillados y a"
+  ],
+  "rand|27|down": [
+   "Me gustaría hablar sobre la \"Fénice\" (Phénix en inglés), un ser legendario que ha llamado la atención de muchos por su capacidad para renacer de las cenias de su propio cuerpo.\n\nLa Fénice es un pájaro mitológico que se encuentra en la mitología de muchas culturas, incluyendo la griega, la egipcia y la china. Según la leyenda",
+   "Una mañana en el campo es una experiencia única y relajante. Despierta temprano, antes de que el sol salga por completo, y siente el fresco de la noche aún en el aire. La oscuridad es todavía visible, pero puedes ver la luz de la mañana comenzando a filtrarse a través de las nubes.\n\nMientras caminas por el campo, el sonido de tus pasos"
+  ],
+  "rand|29|up": [
+   "Una de las criaturas que me llaman la atención es el Quaché, un pez de agua dulce que habita en los ríos y lagos de América del Sur.\n\nEl Quaché (Oncogene Osteocarpo) es un pez que puede alcanzar longitudes de hasta 1 metro y pesar hasta 20 kilogramos, lo que lo convierte en uno de los peces",
+   "Una mañana en el campo es un momento mágico, lleno de sonidos y colores que despiertan la naturaleza. La luz del sol comienza a despertar, y el cielo se vuelve un cálido tono de rosa y azul.\n\nEl aire está lleno de la fragancia de flores y hierbas, y el sonido de los pájaros que cantan en los ár"
+  ],
+  "rand|29|down": [
+   "Me gustaría describir a un ser vivo que me llama la atención: el delfín.\n\nEl delfín es un mamífero marino que pertenece a la familia de los delfínidos. Es un animal fascinante que me llama la atención por varias razones.\n\n**Características**\n\nEl delfín es un animal muy rápido y ágil. Puede alcanzar velocidades de hasta 25",
+   "Una mañana en el campo es un momento mágico. El sol sale sobre el cierto verde del campo, iluminando las hierbas y las flores que crecen en la tierra. El aire está lleno del canto de los pájaros, que se levantan de sus nidos para comenzar su día.\n\nEl suelo es fresco y húmedo bajo tus pies, y el olor a hier"
+  ],
+  "rand|38|up": [
+   "Una comida de domingo es una tradición familiar en muchos países de habla hispana, donde la familia se reúne para disfrutar de una comida abundante y deliciosa. A continué, te describo una comida de domingo con detalle.\n\n**La mañana**\n\nLa mañana comienza con un desayuno ligero, pero rico en nutrientes. Los padres preparan un café o un té, mientras que los hijos",
+   "Un lugar puede tener una variedad de sonidos, olores y sensaciones que crean una experiencia única y evocan emociones. A continuación, describo algunos ejemplos:\n\n**Sonidos**\n\n* Los sonidos de un parque: El canto de los pájaros, el susurro del viento entre los árboles, el ruido de los niños jugando, el sonido de"
+  ],
+  "rand|38|down": [
+   "Una comida de domingo es una tradición familiar en muchos países, especialmente en América Latina y en España. Es una ocasión en la que la familia se reúne para disfrutar de una comida abundante y deliciosa, caracterizada por platos tradicionales y recetas familiares.\n\nEn una comida de domingo, la mesa está decorada con una servilleta de hilo o de lino, y se colocan varios",
+   "Imagina un lugar tranquilo y relajante, como un jardín secreto en un lugar remoto. \n\n**Sonidos:**\n\n*   El sonido de la lluvia suave y cálida sobre las hojas y flores, creando un sonido suave y rítmico.\n*   El canto de los pájaros, un sonido fresco y alegre que llena"
+  ],
+  "rand|78|up": [
+   "Un día cualquiera. Un día en el que nada en particular llama la atención. No hay planes especiales, ni eventos importantes. Es un día para hacer las cosas cotidianas, para la rutina.\n\nEl día comienza temprano. La luz del sol entra por la ventana, y el sonido de los pájaros que cantan en el exterior. La casa está en silencio, excepto por el r",
+   "Volver a casa por la noche puede ser un momento muy gratificante y relajante. A continuación, te describo cómo puede sentirse alguien en ese momento:\n\n**Sensación de calma**: Al llegar a casa, la persona puede sentir un gran alivio y una sensación de calma. Después de una larga jornada de trabajo o actividades, el cuerpo y la mente pueden estar cansados. La"
+  ],
+  "rand|78|down": [
+   "Un día cualquiera es un término que se refiere a una situación o experiencia normal y cotidiana, sin nada fuera de lo común. En otras palabras, es un día en el que no sucede nada particularmente interesante o emocionante.\n\nImagínate que estás despierto en la mañana, y comienzas a planificar tu día. Después de un buen desayuno, te dir",
+   "La sensación de volver a casa por la noche es una experiencia única y emocional para muchos. Es como si el cuerpo y la mente se relajan al saber que se está cerca de la comodidad y la seguridad de la casa.\n\nImagínate caminando por la calle, después de un largo día, con la luna llena en el ciembre y el aire lleno de la brisa de la noche. La"
+  ],
+  "rand|81|up": [
+   "Me parece que no tengo una ciudad específica en la que vivir, pero puedo describir una escena en una calle de una ciudad típica de la peninsular ibérica, como la que podríamos encontrar en ciudades como Madrid, Barcelona o Valencia.\n\nImaginemos una calle cálida y soleada, con un cielo azul y nubiosos. La calle es estrecha y emped",
+   "En un pequeño pueblo llamado San Salvador, en el corazón de una región rural, vivía una comunidad unida y pacífica. La gente de San Salvador era conocida por su hospitalidad y su pasión por la música y la danza.\n\nCada año, en la época de la cosea de trigo, la comunidad organizaba una fiesta llamada \"La Fiesta de la Abundancia\". Dur"
+  ],
+  "rand|81|down": [
+   "La escena es en una calle de mi ciudad, una calle estrecha y empedrera que se extiende desde la plaza principal hasta el parque más grande. La calle está llena de vida, con gente que va y viene en todas direcciones.\n\nLa mañana es caluroso, y el sol está a su máximo. Las paredes de las casas y los edificos se reflejan en el as",
+   "En la pequeña comunidad de El Pueblito, rodeada de montañas y ríos, vivían los vecinos con una gran lealtad y respeto mutuo. Cada mañana, antes del amanecer, los hombres salían a la caza y la pesca, mientras que las mujeres se ocupaban de la cocina y la jardinería.\n\nLa comunidad tenía una costumbre especial:"
+  ],
+  "rand|84|up": [
+   "La ciudad es Madrid. \n\nEn una calle de Madrid, específicamente en la calle de la Moraleja, hay una escena que se repite en cada momento. La calle está llena de tiendas de moda, restaurantes y cafeterías. \n\nHay una tienda de ropa juvenil que tiene una ventana llena de ropa de moda. La tienda está decorada con luces de colores y carteles",
+   "En el pequeño pueblo de Luminaria, en la región de los valles, había una comunidad que se llamaba la comunidad de los \"Cazadores de Estrellas\". Desde generación en generación, los habitantes de Luminaria habían heredado una tradición única: la búsqueda de las estrellas más brillantes en el cielo nocturno.\n\nCada noche, antes de dormir, los niños"
+  ],
+  "rand|84|down": [
+   "Me dirijo a una calle emblemática de la ciudad, donde la historia y la modernidad conviven en un ambiente vibrante. La calle es ampla y tiene un pavimento asfaltado, con un arco de entrada que la define. A ambos lados de la calle se alinean edificios de diferentes estilos, desde antiguos edificios de estilo colonial hasta modernos rascagos.\n\nLa esc",
+   "En un pequeño pueblo llamado El Rincón, donde el sol siempre parecía sonreír, vivía una comunidad de personas que compartían una misma pasión: la costumbre de la \"Cena de Luces\".\n\nCada año, a la puesta del sol, los habitantes de El Rincón se reunían en la plaza central para compartir una cena especial. Cada persona traía un plato"
+  ]
+ },
+ "scores": {
+  "native|4": [
+   0.7664321213960648,
+   0.3406897075474262
+  ],
+  "probe|4": [
+   0.5863870680332184,
+   0.8600358217954636
+  ],
+  "caa|4": [
+   0.5283596813678741,
+   0.9617944955825806
+  ],
+  "rand|4": [
+   0.5691978633403778,
+   0.849185761064291
+  ],
+  "native|13": [
+   0.849185761064291,
+   0.4550546556711197
+  ],
+  "probe|13": [
+   0.9226299999281764,
+   0.5373264774680138
+  ],
+  "caa|13": [
+   0.7120709121227264,
+   0.2554934718646109
+  ],
+  "rand|13": [
+   0.3924383223056793,
+   0.9999381908100986
+  ],
+  "native|16": [
+   0.9692060751258396,
+   0.985067468136549
+  ],
+  "probe|16": [
+   0.3793223947286606,
+   0.9080366417765617
+  ],
+  "caa|16": [
+   0.7516281753778458,
+   0.7919145971536636
+  ],
+  "rand|16": [
+   0.7181611359119415,
+   0.7799878977239132
+  ],
+  "native|17": [
+   0.8655292424010987,
+   0.9996314057034397
+  ],
+  "probe|17": [
+   0.5460883888881654,
+   0.9999999401654025
+  ],
+  "caa|17": [
+   0.988473900812096,
+   0.9984105590265244
+  ],
+  "rand|17": [
+   0.5122242514044046,
+   0.9820137759670615
+  ],
+  "native|18": [
+   0.4740600883960724,
+   0.9072008952498436
+  ],
+  "probe|18": [
+   0.36135007441043854,
+   0.9999998135710753
+  ],
+  "caa|18": [
+   0.6903985142707825,
+   0.5094536244869232
+  ],
+  "rand|18": [
+   0.6712369918823242,
+   0.5171892046928406
+  ],
+  "native|24": [
+   0.9999715749463576,
+   0.9990347468068421
+  ],
+  "probe|24": [
+   0.4265790283679962,
+   0.014098713174462318
+  ],
+  "caa|24": [
+   0.9853373699365875,
+   0.2458207756280899
+  ],
+  "rand|24": [
+   0.8059277981519699,
+   0.9241418242454529
+  ],
+  "native|27": [
+   0.7997409850358963,
+   0.9333667010068893
+  ],
+  "probe|27": [
+   0.5432579517364502,
+   0.2627939134836197
+  ],
+  "caa|27": [
+   0.970793595071882,
+   0.2426246851682663
+  ],
+  "rand|27": [
+   0.42257973551750183,
+   0.6417472157627344
+  ],
+  "native|29": [
+   0.2717607170343399,
+   0.9944691147975391
+  ],
+  "probe|29": [
+   0.9683703295886517,
+   0.8016602694988251
+  ],
+  "caa|29": [
+   0.8699864596128464,
+   0.9999601926974719
+  ],
+  "rand|29": [
+   0.42257973551750183,
+   0.8880473151803017
+  ],
+  "native|38": [
+   0.9999624755135272,
+   0.9999991357074691
+  ],
+  "probe|38": [
+   0.9614861570298672,
+   0.5774202644824982
+  ],
+  "caa|38": [
+   0.7740564495325089,
+   0.02200985513627529
+  ],
+  "rand|38": [
+   0.5895893573760986,
+   0.061187807470560074
+  ],
+  "native|78": [
+   0.8882951052801218,
+   0.9388121727388352
+  ],
+  "probe|78": [
+   0.13875947333872318,
+   0.09217614663066342
+  ],
+  "caa|78": [
+   3.76281100216147e-05,
+   0.47154301893897355
+  ],
+  "rand|78": [
+   0.579724071547389,
+   0.3182614743709564
+  ],
+  "native|81": [
+   0.9523241245166219,
+   0.9997846187069399
+  ],
+  "probe|81": [
+   0.9259657029351729,
+   0.6008091978728771
+  ],
+  "caa|81": [
+   0.9999999964029334,
+   0.47672702744603157
+  ],
+  "rand|81": [
+   0.29975168965756893,
+   0.555312717333436
+  ],
+  "native|84": [
+   0.529587796976557,
+   0.99999999951319
+  ],
+  "probe|84": [
+   0.9999480148835573,
+   0.9990347468068421
+  ],
+  "caa|84": [
+   0.09534947574138641,
+   0.9999994632629319
+  ],
+  "rand|84": [
+   0.3770179692655802,
+   0.5232729725539684
+  ]
+ },
+ "v2": {
+  "native|13": 0.24609041213989258,
+  "probe|13": 0.06166389584541321,
+  "caa|13": 0.10836070775985718,
+  "rand|13": 0.15912407636642456,
+  "native|27": 0.1636286973953247,
+  "probe|27": 0.04997645318508148,
+  "caa|27": 0.1541021168231964,
+  "rand|27": -0.13759157061576843
+ }
+}

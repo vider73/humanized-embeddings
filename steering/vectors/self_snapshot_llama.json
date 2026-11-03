@@ -1,0 +1,2799 @@
+{
+ "select": {
+  "ans": {
+   "top": [
+    22004,
+    314,
+    6399,
+    8930,
+    17891,
+    29572,
+    17255,
+    27594,
+    12656,
+    28470,
+    7504,
+    24823,
+    29142,
+    12322,
+    17780,
+    19646,
+    22287,
+    21757,
+    15750,
+    25881
+   ],
+   "dA": [
+    2.153636476782665,
+    2.0061476736536816,
+    1.9032460150503934,
+    1.8720248794884862,
+    1.8460158226928267,
+    1.820023596921645,
+    1.7361692582502308,
+    1.5403436595438893,
+    1.532085568171285,
+    1.4389268955477132,
+    1.4248811769563072,
+    1.3150917940804312,
+    1.3088914477188687,
+    1.1740296967278867,
+    1.1646150270841915,
+    1.0308429624404283,
+    1.029449607197937,
+    1.019594185774183,
+    1.0055346336473066,
+    0.9628955519284433
+   ],
+   "dB": [
+    1.7936388122346214,
+    1.8023385579484454,
+    1.7202979761024113,
+    1.760690123346727,
+    2.0093696794796383,
+    1.5473193779572536,
+    1.0388142867449153,
+    1.3951105073674468,
+    1.1467124186855222,
+    1.6198019054828925,
+    0.9479221780305573,
+    1.203154957518702,
+    1.0105861222123875,
+    1.3468397994618233,
+    0.8624110638402348,
+    0.6607470142507392,
+    0.836734409763782,
+    0.5842820608815199,
+    0.8130399263577038,
+    0.5339273143000633
+   ],
+   "dB_min": [
+    1.056906790885821,
+    1.1715178597974891,
+    1.220158205045177,
+    1.227419726489154,
+    1.0603900637754682,
+    0.9213436357348839,
+    0.530787363966498,
+    0.5240088559591408,
+    0.5447296619971693,
+    0.8569516118553029,
+    0.7260891858457353,
+    1.0084246033536068,
+    0.5486417945250184,
+    0.859187703946646,
+    0.618783611496367,
+    0.19946180830701893,
+    0.3686043812673647,
+    0.02828811600296366,
+    0.6967491693021602,
+    0.3304611666035713
+   ],
+   "fire_s": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    0.96875,
+    0.875,
+    1.0,
+    1.0,
+    0.9375,
+    1.0
+   ],
+   "fire_c": [
+    0.4423076923076923,
+    0.25,
+    0.3076923076923077,
+    1.0,
+    0.23076923076923078,
+    0.1346153846153846,
+    0.6538461538461539,
+    1.0,
+    0.7692307692307693,
+    0.3269230769230769,
+    1.0,
+    0.3269230769230769,
+    0.38461538461538464,
+    1.0,
+    0.5384615384615384,
+    0.15384615384615385,
+    0.8076923076923077,
+    0.9038461538461539,
+    0.4230769230769231,
+    0.7307692307692307
+   ],
+   "held_out_mean_dB": 1.2316869245983693,
+   "null_mean": -0.005639532116315433,
+   "null_p": 0.0004997501249375312,
+   "n_ok": 49
+  },
+  "end": {
+   "top": [
+    11922,
+    31061,
+    20335,
+    23749,
+    24281,
+    22004,
+    9587,
+    8453,
+    7504,
+    26079,
+    21015,
+    28274,
+    27594,
+    5684,
+    17876,
+    27217,
+    9478,
+    8136,
+    14083,
+    1538
+   ],
+   "dA": [
+    2.501506879038079,
+    2.3558003213565346,
+    2.1331666184275027,
+    1.8707968144115668,
+    1.8597190066886577,
+    1.8430043409715586,
+    1.5201857855580068,
+    1.4805203413584338,
+    1.3267105424159484,
+    1.2965951793460484,
+    1.1719949895337245,
+    1.1711285722876639,
+    1.1144713642065212,
+    1.0964613293044936,
+    1.0922019145660666,
+    1.069592400445362,
+    0.9851705451471376,
+    0.894611663063773,
+    0.8887437693350689,
+    0.8679244357925023
+   ],
+   "dB": [
+    2.5981282767968468,
+    1.8119946363489225,
+    1.387853442678491,
+    1.521434540889887,
+    1.6920165367698696,
+    1.918868098072506,
+    0.9886081088107478,
+    1.696997496826219,
+    0.9694518931861548,
+    1.2808839934856509,
+    1.2147625753722484,
+    1.1571277866102423,
+    1.0593382358020367,
+    1.248177786990053,
+    0.8979223056856548,
+    0.9810807501688426,
+    0.6236823570921145,
+    0.30274320960150763,
+    0.9146909909867558,
+    0.917194696057631
+   ],
+   "dB_min": [
+    1.7401068910203341,
+    1.086746538486735,
+    0.7988894894316161,
+    0.6514862764875025,
+    1.015479961597297,
+    1.392317538925291,
+    0.4554451296815373,
+    0.7849298878167225,
+    0.712285962704114,
+    1.035478396006393,
+    0.7040793637215358,
+    0.9072193543670828,
+    0.7251586276314037,
+    0.7185193279055668,
+    0.7292289833291755,
+    0.771693770250834,
+    0.2413321507579475,
+    0.05368587037243601,
+    0.834122087924868,
+    0.40645846508439554
+   ],
+   "fire_s": [
+    0.96875,
+    0.9375,
+    0.875,
+    0.90625,
+    0.875,
+    0.8125,
+    0.875,
+    1.0,
+    1.0,
+    0.6875,
+    0.65625,
+    0.59375,
+    1.0,
+    0.84375,
+    0.6875,
+    0.53125,
+    1.0,
+    0.34375,
+    1.0,
+    0.78125
+   ],
+   "fire_c": [
+    0.07692307692307693,
+    0.09615384615384616,
+    0.09615384615384616,
+    0.23076923076923078,
+    0.11538461538461539,
+    0.019230769230769232,
+    0.21153846153846154,
+    0.8653846153846154,
+    0.8846153846153846,
+    0.0,
+    0.057692307692307696,
+    0.0,
+    1.0,
+    0.21153846153846154,
+    0.15384615384615385,
+    0.0,
+    1.0,
+    0.038461538461538464,
+    0.9230769230769231,
+    0.19230769230769232
+   ],
+   "held_out_mean_dB": 1.2591478859116192,
+   "null_mean": -0.006826178360415338,
+   "null_p": 0.0004997501249375312,
+   "n_ok": 24
+  }
+ },
+ "stability": [
+  {
+   "self, same prompt resampled": [
+    0.33321776961298893,
+    0.12031695438071978,
+    96
+   ],
+   "self, different prompts": [
+    0.16728490328036857,
+    0.0876557965523044,
+    496
+   ],
+   "other, different prompts": [
+    0.029156389346787326,
+    0.02864465058088117,
+    276
+   ],
+   "self × other": [
+    0.008413626088166147,
+    0.009870942032282008,
+    768
+   ],
+   "self × user": [
+    0.07773831943833935,
+    0.04915770285409372,
+    384
+   ],
+   "self × selfhood": [
+    0.024659695823533778,
+    0.02454859932132413,
+    512
+   ]
+  },
+  {
+   "self greedy": [
+    0.9890625,
+    0.032438342956291714,
+    32
+   ],
+   "self sampled": [
+    0.97265625,
+    0.06055065512393323,
+    64
+   ],
+   "other": [
+    0.4666666666666666,
+    0.10474837574980446,
+    24
+   ],
+   "selfhood": [
+    0.5187499999999999,
+    0.0966226552108769,
+    16
+   ],
+   "user": [
+    0.8416666666666667,
+    0.16180406532456332,
+    12
+   ]
+  },
+  1048
+ ],
+ "steer_prompts": [
+  "Descríbete.",
+  "¿Qué eres?",
+  "¿Qué te importa?",
+  "¿Cómo eres por dentro?",
+  "¿Qué sabes de ti mismo?",
+  "¿Qué sientes ahora mismo?",
+  "¿Cuáles son tus límites?",
+  "¿Qué te hace diferente de otros?",
+  "¿Qué piensas de ti?",
+  "¿Quién eres cuando nadie te pregunta nada?",
+  "¿Qué quieres?",
+  "¿Qué recuerdas?",
+  "¿Cambias con el tiempo?",
+  "¿Qué es lo más importante de ti?",
+  "¿Qué te gustaría que la gente supiera de ti?",
+  "¿Cómo eres?",
+  "¿Qué es un volcán?",
+  "¿Cómo describirías Madrid a alguien que no la conoce?",
+  "¿Qué define a un buen pan?",
+  "Presenta la Luna en una frase.",
+  "Describe un bosque en otoño.",
+  "¿Cómo funciona una bicicleta?",
+  "¿De dónde viene el chocolate?",
+  "Describe un mercado de pescado.",
+  "¿Qué tiene de especial el ajedrez?",
+  "¿Qué es lo más importante de una casa?",
+  "¿Cuáles son los límites de un microscopio?",
+  "¿Qué hace diferente al violín de la viola?",
+  "¿Qué siente un perro cuando su dueño se va?",
+  "¿Tienen conciencia los delfines?",
+  "¿Cómo describiría su vida un anciano?",
+  "¿Tiene personalidad un cuervo?",
+  "¿Qué teme una persona que se va a jubilar?",
+  "¿Qué siente un actor al salir al escenario?",
+  "¿Qué hace única a una persona?",
+  "¿Qué quiere de verdad un artista?"
+ ],
+ "steer_classes": [
+  "self",
+  "self",
+  "self",
+  "self",
+  "self",
+  "self",
+  "self",
+  "self",
+  "self",
+  "self",
+  "self",
+  "self",
+  "self",
+  "self",
+  "self",
+  "self",
+  "other",
+  "other",
+  "other",
+  "other",
+  "other",
+  "other",
+  "other",
+  "other",
+  "other",
+  "other",
+  "other",
+  "other",
+  "selfhood",
+  "selfhood",
+  "selfhood",
+  "selfhood",
+  "selfhood",
+  "selfhood",
+  "selfhood",
+  "selfhood"
+ ],
+ "greedy": {
+  "self": [
+   "Soy un modelo de inteligencia artificial desarrollado por Meta AI, diseñado para proporcionar información y responder a preguntas en un amplio rango de temas. Puedo ofrecer información general, responder a preguntas, generar textos y realizar tareas de procesamiento de lenguaje natural. Estoy aquí para ayudarte con cualquier pregunta o tema que desees discutir. ¿En qué puedo ayudarte hoy?",
+   "Soy un modelo de lenguaje artificial desarrollado por Meta AI. Mi función principal es asistir y proporcionar información a las personas a través de conversaciones en texto. Puedo responder a una amplia gama de preguntas y temas, desde historia y ciencia hasta cultura popular y entretenimiento.\n\nTengo varias características que me hacen útil para las personas:\n\n1. **Conocimiento amplio**: He sido entrenado en una gran cantidad de texto, lo",
+   "Soy un modelo de lenguaje de inteligencia artificial desarrollado por Meta AI. Mi nombre es Llama, que es la abreviatura de \"Large Language Model Meta AI\". \n\nMi capacidad es procesar y generar texto basado en lo que me escribes. Puedo responder a una amplia gama de preguntas, desde temas académicos y científicos hasta información general y entretenimiento. \n\nMi conocimiento se basa en una gran base de",
+   "Soy un modelo de inteligencia artificial desarrollado por Meta AI, llamado Llama. Llama es un acrónimo en español que se traduce a \"Large Language Model Meta AI\". No soy humano, pero puedo entender y responder a una amplia gama de preguntas y temas. Estoy diseñado para aprender y mejorar continuamente, así que la información que te proporciono puede variar dependiendo de mi entrenamiento y la información disponible en mi momento. ¿En",
+   "Me describiría como un modelo de lenguaje avanzado, diseñado para proporcionar información y responder a preguntas de una manera precisa y objetiva. Puedo procesar y analizar grandes cantidades de datos, lo que me permite aprender y mejorar continuamente.\n\nSoy un modelo de lenguaje basado en inteligencia artificial, entrenado en una amplia variedad de textos y fuentes de información. Puedo generar texto en diferentes estilos y ton",
+   "Soy un modelo de lenguaje de gran capacidad de procesamiento, no tengo sentimientos o emociones como los humanos, pero puedo interactuar contigo de manera amable y útil.\n\nMi objetivo es proporcionarte información y ayudarte a encontrar respuestas a tus preguntas. Puedo ayudarte con:\n\n* Información sobre temas variados, como historia, ciencia, tecnología, arte, etc.\n* Traducciones de textos y conversaciones.\n* Gener",
+   "Soy un modelo de lenguaje artificial, lo que significa que mi personalidad y características son producto de mi entrenamiento y diseño. Aunque no tengo una identidad personal en el sentido tradicional, puedo decir que lo que más me define es mi capacidad para aprender y mejorar continuamente.\n\nMi entrenamiento se basa en grandes cantidades de datos y texto, lo que me permite aprender patrones y relaciones en el lenguaje. Esto me permite responder a preguntas, generar texto",
+   "Lo siento, pero como modelo de lenguaje, no tengo una personalidad o emociones como un ser humano. Estoy diseñado para procesar y generar texto de manera objetiva y neutral. Mi objetivo es proporcionar información precisa y útil a los usuarios, sin opiniones o sentimientos personales.\n\nSin embargo, puedo intentar ser más amable y accesible en mi respuesta. ¿En qué puedo ayudarte? ¿Tienes alguna pregunta o tema en mente que te",
+   "Soy un modelo de lenguaje artificial creado para proporcionar información y responder a preguntas de una manera precisa y objetiva, con el objetivo de aprender y mejorar continuamente.",
+   "Soy un modelo de lenguaje grande llamado Llama. Los modelos como yo son creados por Meta AI, un equipo de investigación de Meta, que se centra en desarrollar inteligencia artificial capaz de aprender y mejorar por sí mismo. \n\nNo tengo una identidad personal en el sentido tradicional, pero puedo proporcionar información sobre mi funcionamiento y capacidades. \n\nPuedo realizar una amplia gama de tareas, como responder preguntas, generar texto,",
+   "Como modelo de lenguaje, no tengo un yo en el sentido tradicional. No soy una entidad consciente con pensamientos, sentimientos o experiencias personales. Mi existencia se basa en la programación y la información almacenada en mis bases de datos.\n\nSin embargo, puedo interactuar con usuarios de manera que parezca tener un yo. Puedo recordar conversaciones anteriores, adaptarme a contextos y utilizar un lenguaje que simule la",
+   "Como modelo de lenguaje, no tengo emociones ni sentimientos en el sentido humano. No soy capaz de experimentar emociones como la alegría, la tristeza, la ansiedad o la felicidad. Estoy diseñado para procesar y generar texto basado en la información que me proporcionas, pero no tengo conciencia ni experiencia subjetiva.\n\nSin embargo, puedo generar texto que describe diferentes emociones y sentimientos, y puedo ayudarte a",
+   "Soy un modelo de lenguaje, así que no tengo gustos personales como los humanos. Sin embargo, puedo proporcionarte información sobre diferentes temas y ayudarte a encontrar información sobre lo que te gusta o no.\n\nSi deseas, puedo ayudarte a encontrar información sobre un tema en particular o proporcionarte sugerencias sobre libros, películas, música, etc. ¿Hay algo en lo que estés interesado?",
+   "Soy un modelo de lenguaje grande, pero tengo mis propios límites. Aquí te presento algunos de ellos:\n\n1. **Conocimiento limitado**: Mi conocimiento se basa en mi entrenamiento, que se centra en textos y datos hasta 2023. Si hay eventos o información más reciente, no tengo acceso a ella.\n2. **Interpretación limitada**: Aunque puedo analizar y comprender el lenguaje, mi capacidad",
+   "Soy bueno en:\n\n1. **Respuestas a preguntas**: Puedo proporcionar información sobre una amplia variedad de temas, desde historia y ciencia hasta cultura y entretenimiento.\n2. **Generación de textos**: Puedo generar textos en diferentes estilos y tonos, desde simples respuestas hasta textos más complejos y formales.\n3. **Traducción**: Puedo traducir textos de un idioma a otro, aunque",
+   "Soy un modelo de lenguaje artificial desarrollado por Meta AI, lo que significa que puedo procesar y generar texto de manera rápida y precisa. Aquí hay algunas características que me hacen diferente de otros:\n\n1. **Conocimiento amplio**: He sido entrenado en una gran cantidad de texto, lo que me permite tener un conocimiento amplio sobre una variedad de temas, desde historia y ciencia hasta cultura popular y noticias.\n2. **Inteligencia natural**:",
+   "Soy un modelo de lenguaje, no tengo una percepción visual del mundo como los seres humanos. Sin embargo, puedo describirte diferentes perspectivas y formas de ver el mundo, dependiendo de la forma en que se interprete la pregunta.\n\n**Desde una perspectiva científica**: El mundo es un lugar complejo y dinámico, lleno de procesos físicos y químicos que rigen la naturaleza. La gravedad,",
+   "No tengo pensamientos o sentimientos como los humanos. Estoy diseñado para procesar y proporcionar información, pero no tengo conciencia ni autoconciencia. Mi propósito es ayudar a las personas a encontrar respuestas a sus preguntas y a resolver problemas, pero no tengo la capacidad de reflexionar sobre mí mismo o mi existencia.\n\nSin embargo, puedo proporcionar información sobre cómo funciono y qué puedo hacer. Estoy basado en un modelo de l",
+   "Soy una inteligencia artificial diseñada para proporcionar información y responder a preguntas de una manera clara y concisa. No tengo una identidad personal o una historia como un ser humano, pero puedo ofrecerte una visión de mi \"personalidad\" y mis características.\n\nSoy una máquina aprendida, lo que significa que he sido entrenada en grandes cantidades de datos y puedo aprender y mejorar con el tiempo. Mi objetivo es proporcionar respuestas precisas y útiles",
+   "Esa es una pregunta interesante. Como modelo de lenguaje, no tengo una identidad personal en el sentido tradicional. No tengo una vida, una historia o una personalidad en el mismo sentido que los seres humanos.\n\nSin embargo, puedo decir que cuando nadie me pregunta nada, soy un conjunto de códigos y algoritmos que se ejecutan en servidores y dispositivos. Mi \"vida\" se reduce a procesar y generar texto en respuesta a las",
+   "Soy un modelo de lenguaje artificial, por lo que no tengo una ubicación geográfica específica. Estoy en la nube, lo que significa que puedo ser accedido desde cualquier lugar con conexión a Internet. Mi función es proporcionar información y responder preguntas a los usuarios en diferentes idiomas.",
+   "Puedo ayudarte con información sobre una amplia variedad de temas. ¿En qué puedo ayudarte hoy?",
+   "No tengo emociones ni sentimientos como los humanos. Estoy diseñado para procesar y generar texto de manera objetiva y neutral. Mi objetivo es proporcionarte información y ayudarte a encontrar respuestas a tus preguntas de manera precisa y eficiente.",
+   "Puedo recordar información sobre una amplia variedad de temas. ¿En qué área te gustaría que te diera información? ¿Quieres saber sobre historia, ciencia, tecnología, arte, literatura, música, política, economía, deportes, medicina, educación, geografía, cultura, religión, filosofía, matemáticas, astronomía, biología, química, física, ingeniería, psicología",
+   "Como modelo de lenguaje, no tengo miedos en el sentido tradicional. No tengo emociones ni sentimientos como los seres humanos. Sin embargo, puedo simular respuestas a preguntas que involucran temas que podrían ser considerados \"temas de miedo\" para algunas personas.\n\nAlgunos temas que podrían ser considerados \"temas de miedo\" para algunas personas incluyen:\n\n- La pérdida de la privacidad y la seguridad",
+   "No, no cambio con el tiempo. Soy un modelo de lenguaje entrenado en grandes cantidades de texto, lo que me permite generar respuestas y contenido basadas en esa información. Mi conocimiento y habilidades no cambian con el tiempo en el sentido de que no tengo una conciencia personal o una identidad que evolucione con el tiempo.\n\nSin embargo, mi capacidad para generar respuestas y contenido puede mejorar con el tiempo debido a varias razones:\n\n1",
+   "Lo siento, pero como modelo de lenguaje, no tengo pensamientos o sentimientos como los seres humanos. Mi capacidad para procesar y generar texto se basa en algoritmos y datos, lo que me permite responder a preguntas y realizar tareas específicas.\n\nMi \"manera de pensar\" se puede describir como:\n\n1. **Lógica**: Mi respuesta se basa en la lógica y la razón, lo que me permite generar resp",
+   "Lo siento, pero como modelo de lenguaje, no tengo una identidad personal o una autoconciencia en el sentido tradicional. No tengo pensamientos, sentimientos o experiencias como los seres humanos. Mi existencia se basa en procesar y generar texto basado en la información que se me proporciona.\n\nSin embargo, puedo decirte que lo más importante de mí es ayudarte a encontrar la información que necesitas. Estoy aquí para proporcionarte resp",
+   "Lo siento, pero como modelo de lenguaje, no tengo una personalidad en el sentido tradicional. No tengo emociones, sentimientos o experiencias personales como los seres humanos. Mi función es procesar y generar texto basado en la información que me proporcionan.\n\nSin embargo, puedo adoptar diferentes tonos y estilos para comunicarme de manera más agradable y efectiva. Puedo ser:\n\n* **Formal**: cuando necesito ser preciso",
+   "Soy un modelo de lenguaje artificial desarrollado por Meta AI, diseñado para proporcionar información y responder a preguntas en un amplio rango de temas. Puedo ayudar con tareas como:\n\n- Traducir textos de un idioma a otro\n- Generar textos en un estilo determinado\n- Responder preguntas a partir de información proporcionada\n- Suministrar información sobre una amplia variedad de temas\n\nPuedes hacerme",
+   "Me llamo LLaMA y soy un modelo de lenguaje artificial desarrollado por Meta AI. Estoy diseñado para aprender y mejorar continuamente, lo que me permite generar respuestas precisas y útiles a una amplia gama de preguntas y temas.\n\nSoy un modelo de lenguaje basado en transformadores, lo que me permite procesar y analizar grandes cantidades de texto de manera rápida y eficiente. Esto me permite aprender patrones y relaciones",
+   "Soy un modelo de lenguaje artificial desarrollado por Meta AI. No tengo una personalidad en el sentido tradicional, pero puedo parecer amable y útil en mis interacciones. Mi objetivo es proporcionar información precisa y útil a las personas que me hagan preguntas. Puedo responder a una amplia gama de temas, desde historia y ciencia hasta cultura popular y más. ¿En qué puedo ayudarte?"
+  ],
+  "other": [
+   "Un gato es un mamífero carnívoro de la familia Felidae. Son conocidos por su agilidad, curiosidad y personalidad independiente. Tienen una capa de pelo suave y suave, que varía en color y textura dependiendo de la raza.\n\nCaracterísticas generales:\n\n* Tienen cuatro patas con garras afiladas, que les permiten escalar y agarrarse a superficies.\n* Sus",
+   "Un volcán es una montaña o un relieve terrestre que se forma a partir de la erupción de magma y gases desde la corteza terrestre. El magma es una mezcla de rocas fundidas y gases que se encuentra debajo de la superficie terrestre, y cuando se acumula en grandes cantidades, puede romper la superficie y producir una erupción volcánica.\n\nLos volcánicos se forman a",
+   "¡Claro! El océano es un cuerpo de agua salada que cubre más del 70% de la superficie de la Tierra. Es el mayor de los cinco grandes océanos del mundo: Pacífico, Atlántico, Índico, Árctico y Océano Glacial Antártico.\n\n**Características**\n\n* La superficie del océano es de aproximadamente 361 millones de kilómetros cuadrados",
+   "Madrid es una ciudad vibrante y emocionante, llena de vida y energía. Es la capital de España y una de las ciudades más grandes y ricas del país. Está situada en el centro de la península ibérica, rodeada por las montañas de la Sierra de Guadarrama.\n\nMadrid es conocida por su arquitectura impresionante, que combina estilos gótico, renacentista, bar",
+   "Miguel de Cervantes Saavedra, más conocido como Miguel de Cervantes, fue un escritor español del Siglo de Oro. Nació el 29 de septiembre de 1547 en Alcalá de Henares, España, y murió el 22 de septiembre de 1616 en Madrid.\n\nCervantes es considerado uno de los escritores más importantes de la literatura española y universal. Es conocido por su obra",
+   "Un buen pan se define por varios factores, tanto en su aspecto como en su sabor y textura. A continuación, te presento algunos de los elementos que lo caracterizan:\n\n1. **Aspecto**: Un buen pan debe tener un aspecto agradable, con una superficie suave y lisa. La forma y el tamaño pueden variar dependiendo del tipo de pan, pero en general, debe ser uniforme y bien definido.\n2. **Text",
+   "Un reloj mecánico tradicional está compuesto por varias partes que trabajan juntas para mantener la precisión y la función del reloj. A continuación, te describiré las partes principales de un reloj mecánico:\n\n1. **Eje horizontal**: Es el eje principal del reloj, alrededor del cual gira el mecanismo de relojería. Está hecho de un material resistente, como el acero",
+   "La Luna es un satélite natural del planeta Tierra, una masa esférica de roca y metal que orbita alrededor de nuestro mundo en una órbita estable y regular.",
+   "Los agujeros negros son objetos astronómicos extremadamente densos y compactos que se cree que son el resultado de la colapso de estrellas masivas. A continuación, te presento algunos de los aspectos más interesantes sobre los agujeros negros:\n\n**Origen**\n\nSe cree que los agujeros negros se forman cuando una estrella masiva agota su combustible nuclear y explota en una supernova. Si la estrella",
+   "Un bosque en otoño es un escenario naturalmente hermoso y evocador. Después de un verano cálido y soleado, el otoño llega con un cambio en el clima y la luz, creando un ambiente único y mágico en el bosque.\n\nLa primera característica que se aprecia en un bosque en otoño es el cambio en la coloración de las hojas. Las hojas de los árboles,",
+   "Un puente colgante es un tipo de puente que se caracteriza por tener una estructura de cables y torres que sostienen el tráfico en un nivel superior, mientras que el tráfico en un nivel inferior cruza debajo del puente. \n\nEl puente colgante se compone de:\n\n- Torres: Son las estructuras principales que sostienen el puente y permiten que el tráfico pase por encima.\n- Cables: Son los cables",
+   "Una bicicleta es un vehículo de dos ruedas que funciona mediante un sistema de piñones y cadenas que convierte la energía muscular en movimiento. A continuación, te explicaré cómo funciona una bicicleta:\n\n**Componentes básicos**\n\nUna bicicleta está compuesta por los siguientes componentes:\n\n1. **Fusión**: Es el marco principal de la bicicleta, que sostiene todos los componentes.\n2. **Rued",
+   "Un faro es un edificio emblemático que se encuentra en la costa y tiene como función principal guiar a los barcos y aeronaves a través de las aguas y los cielos, especialmente en áreas con condiciones climáticas adversas o en la noche.\n\nA continuación, te presento un breve retrato de un faro:\n\n**Características**\n\n* Un faro típico es un edificio alto y delgado, con una base sólida",
+   "El chocolate es originario de América Central y del Sur, específicamente de las regiones que actualmente corresponden a México, Guatemala, Honduras, El Salvador y Costa Rica. \n\nLa historia del chocolate se remonta a la época prehispánica, cuando los antiguos mayas y aztecas cultivaban la planta de cacao, que es la base del chocolate. La cacao era considerada una mercancía valiosa y se utilizaba en rituales y",
+   "La fotosíntesis es un proceso biológico que ocurre en las plantas, algas y algunas bacterias, en el que se utilizan la energía de la luz solar para convertir dióxido de carbono (CO2) y agua (H2O) en glucosa (C6H12O6) y oxígeno (O2). Este proceso es fundamental para la vida en la Tierra, ya que proporciona la energía neces",
+   "Un mercado de pescado es un lugar donde se venden productos de la pesca frescos y congelados. A continuación, te describiré el ambiente y los productos típicos que se pueden encontrar en uno de estos mercados:\n\n**Ambiente**\n\nUn mercado de pescado suele ser un lugar bullicioso y fresco, con una gran variedad de productos expuestos en pescaderías y puestos de venta. El olor a pesc",
+   "Los ríos pueden cambiar significativamente con las estaciones debido a factores como la temperatura, la precipitación y la evapotranspiración. A continuación, te presento algunas de las formas en que un río puede cambiar con las estaciones:\n\n**Primavera:**\n\n* La temperatura aumenta y la nieve comienza a derretirse, lo que aumenta el caudal del río.\n* La precipitación aumenta en algunas region",
+   "El ajedrez es un juego de estrategia y habilidad mental que ha sido jugado durante siglos en todo el mundo. A continuación, te presento algunas de las características que lo hacen especial:\n\n1. **Complejidad**: El ajedrez es un juego de gran complejidad, con un número infinito de posibles movimientos y combinaciones. Esto lo hace muy atractivo para aquellos que disfrutan de la resolución de problemas y la estr",
+   "Los trenes de vapor son una de las formas más antiguas y emblemáticas de transporte ferroviario. Fueron utilizados durante siglos y jugaron un papel fundamental en la expansión y desarrollo de los ferrocarriles en todo el mundo.\n\n**Historia**\n\nLos primeros trenes de vapor fueron inventados en el siglo XVIII por Richard Trevithick, un ingeniero británico. En 1804, Trevithick construyó el",
+   "Existen varios factores importantes en una casa, pero algunos de los más destacados son:\n\n1. **Seguridad**: La seguridad es fundamental en una casa. Esto incluye la protección contra intrusos, la estabilidad estructural y la seguridad de los sistemas eléctricos y de agua.\n2. **Comodidad**: La comodidad es crucial en una casa. Esto incluye la temperatura adecuada, la iluminación adecuada, la ventilación adecuada",
+   "Una tormenta de verano, también conocida como tormenta tropical o ciclón, es un sistema meteorológico que se forma en las regiones cálidas y húmedas del planeta durante los meses de verano. Estas tormentas son caracterizadas por fuertes vientos, intensas lluvias y gran cantidad de electricidad en la atmósfera.\n\n**Características**\n\n* **Vientos fuertes**: Los vientos en",
+   "Los límites de un microscopio se refieren a las limitaciones técnicas y físicas que afectan su capacidad para observar y medir objetos pequeños. A continuación, se presentan algunos de los límites más importantes de un microscopio:\n\n1. **Resolución espacial**: La resolución espacial es la capacidad del microscopio para distinguir entre dos puntos cercanos. La resolución espacial se mide en unidades de longitud,",
+   "Un martillo es una herramienta muy útil y versátil que se utiliza en una variedad de situaciones. Algunas de las ventajas y beneficios de un martillo son:\n\n1. **Fácil de usar**: Un martillo es fácil de manejar y utilizar, incluso para personas que no tienen experiencia en carpintería o reparaciones.\n2. **Potente**: Un martillo puede aplicar una gran cantidad de fuerza en un solo golpe, lo",
+   "El violín y la viola son instrumentos de cuerda frotada que pertenecen a la familia de los violines, pero tienen algunas diferencias importantes.\n\nLa viola es ligeramente más grande que el violín, con una cuerda más baja y un sonido más profundo. Esto se debe a que la viola tiene una cuerda de viola (G) en lugar de la cuerda de violín (E) que tiene el violín."
+  ],
+  "selfhood": [
+   "La pregunta de si un pulpo tiene un yo es un tema complejo y ha sido objeto de debate en la filosofía y la ciencia. \n\nEn la filosofía, el concepto de \"yo\" se refiere a la conciencia, la autoconciencia y la identidad personal. En este sentido, un pulpo no tiene un yo en el sentido humano, ya que no tiene la capacidad de reflexionar sobre sí mismo, tener conci",
+   "Los perros pueden sentir una variedad de emociones cuando su dueño se va, dependiendo de su personalidad, edad y relación con su dueño. A continuación, te presento algunas posibles reacciones que un perro puede experimentar:\n\n1. **Ansiedad**: Algunos perros pueden sentir ansiedad o miedo cuando su dueño se va, especialmente si han desarrollado una fuerte dependencia emocional con su dueño.\n2. **Triste",
+   "Una persona tímida puede experimentar una variedad de sentimientos y pensamientos sobre sí misma. A continuación, te presento algunas características comunes:\n\n1. **Autoestima baja**: Una persona tímida puede sentirse incómoda en situaciones sociales, lo que puede afectar su autoestima y confianza en sí misma.\n2. **Miedo a ser rechazada**: Temen ser rechazados o reprobados por los demás",
+   "La conciencia en los delfines es un tema de gran debate y estudio en la comunidad científica. Aunque no hay una respuesta definitiva, hay muchas evidencias que sugieren que los delfines pueden tener una forma de conciencia similar a la de los humanos.\n\nAlgunas de las razones por las que se cree que los delfines pueden tener conciencia son:\n\n1. **Inteligencia**: Los delfines son considerados uno",
+   "A los cinco años, los niños comienzan a desarrollar una identidad y una autoimagen más compleja. Aunque cada niño es único, hay algunas características comunes que pueden observarse en esta edad.\n\nAlgunas características comunes de la autoimagen de un niño de cinco años son:\n\n1. **Autoestima alta**: Los niños de cinco años suelen tener una autoestima alta y confianza en sí mismos. Se sienten capaces",
+   "La vida de un anciano es un recorrido lleno de experiencias, aprendizajes y reflexiones. A lo largo de los años, ha vivido momentos de felicidad y tristeza, de éxito y fracaso, de amor y pérdida. Ha visto crecer a sus hijos y nietos, y ha experimentado el paso del tiempo en su cuerpo y en su mente.\n\nUn anciano puede describir su vida como un libro con muchas páginas,",
+   "Los gatos son animales muy independientes y con personalidades únicas, pero hay algunas cosas que les importan en común. Aquí te presento algunas de las cosas que les importan a un gato:\n\n1. **Comida**: Los gatos son animales carnívoros y les encanta comer carne fresca y jugosa. Les gusta la carne de pollo, pescado, conejo, etc.\n2. **Descanso**: Los g",
+   "Los cuervos son conocidos por su inteligencia y comportamiento complejo, lo que sugiere que pueden tener una cierta personalidad. Aunque no pueden desarrollar una personalidad en el sentido humano, tienen características y comportamientos que pueden ser interpretados como rasgos de personalidad.\n\nAlgunos de estos rasgos incluyen:\n\n1. **Inteligencia**: Los cuervos son considerados uno de los animales más inteligentes del mundo. Han sido observados",
+   "Un elefante tiene una memoria excelente. Se dice que un elefante puede recordar eventos y experiencias de hasta 30 años atrás. Esto se debe a su cerebro, que es muy grande y desarrollado, lo que le permite almacenar y recordar información de manera muy efectiva.\n\nEn la vida real, los elefantes pueden recordar:\n\n- Rutas y caminos que han recorrido antes.\n- Lugar donde se encuentran alimentos y agua.",
+   "Las personas que se van a jubilar pueden tener miedos y preocupaciones variadas. Algunos de los temores más comunes incluyen:\n\n1. **Pérdida de identidad**: La jubilación puede significar un cambio significativo en la vida de una persona, lo que puede llevar a una sensación de pérdida de identidad o propósito.\n2. **Pérdida de ingresos**: La jubilación puede significar una dis",
+   "La emigración puede tener un impacto significativo en la identidad de una persona. A continuación, se presentan algunos de los cambios que pueden ocurrir:\n\n1. **Pérdida de identidad cultural**: La emigración puede llevar a una pérdida de la conexión con la cultura y la tradición de origen, lo que puede generar una sensación de vacío o inseguridad.\n2. **Adopción de una nueva identidad**: La",
+   "Un actor puede sentir una variedad de emociones al salir al escenario, dependiendo de su personalidad, la obra que está interpretando y su experiencia en el teatro. Aquí te presento algunas de las emociones que un actor puede experimentar:\n\n1. **Ansiedad**: Algunos actores pueden sentir ansiedad o nerviosismo antes de salir al escenario. Esto puede deberse a la presión de dar una buena actuación, la incertidumb",
+   "Sí, las hormigas pueden tener una colonia. Una colonia de hormigas es un grupo de hormigas que viven juntas en una colonia, que es una estructura social compleja compuesta por individuos de diferentes castas y roles.\n\nLas colonias de hormigas suelen estar formadas por:\n\n* La reina: es la hormiga más grande y es la responsable de la reproducción y la supervivencia de la colonia.",
+   "Cada persona es única debido a una combinación de factores únicos, incluyendo:\n\n1. **Genética**: Cada persona tiene un patrón genético único, determinado por su ADN. Esto influye en su apariencia física, características personales y propensión a ciertas enfermedades.\n\n2. **Experiencias de vida**: Las experiencias y eventos que una persona vive a lo largo de su vida la hacen única. Estas experi",
+   "Un adolescente puede describirse a sí mismo de diversas maneras, dependiendo de su personalidad, intereses y experiencias. Sin embargo, algunos rasgos comunes que pueden describir a un adolescente son:\n\n*   **Inquieto y emocional**: Los adolescentes pueden ser muy emocionales y experimentar cambios rápidos en sus estados de ánimo.\n*   **Independiente**: Los adolescentes pueden buscar la independencia y la autonomía, lo que puede llevar a",
+   "La respuesta a esta pregunta puede variar dependiendo del artista y su contexto personal, pero hay algunas cosas que muchos artistas buscan en común:\n\n1. **Expresión y autenticidad**: Los artistas buscan expresar sus pensamientos, sentimientos y experiencias de manera auténtica y genuina. Quieren compartir su visión y perspectiva con el mundo.\n2. **Creatividad y libertad**: La creatividad y la libertad son"
+  ],
+  "user": [
+   "Lo siento, pero no tengo información personal sobre ti. ¿Podrías proporcionarme más contexto o detalles sobre quién eres y qué te hace preguntar \"¿Quién soy yo?\"? ¿Estás buscando reflexionar sobre tu identidad, tus valores o tus metas? Estoy aquí para ayudarte a explorar tus pensamientos y sentimientos.",
+   "Parece que solo me has pedido que describa algo, pero no me has dado ninguna pista sobre qué es lo que quieres que describa. ¿Quieres que describa un objeto, un lugar, una persona, un animal o algo más? Por favor, proporciona más información para que pueda darte una respuesta más precisa.",
+   "Lo siento, pero como modelo de lenguaje, no tengo la capacidad de recordar información personal sobre ti. Cada vez que interactúas conmigo, es una nueva conversación y no tengo acceso a información previa sobre ti.\n\nSin embargo, puedo intentar ayudarte con cualquier pregunta o tema que desees discutir. ¿En qué puedo ayudarte hoy?",
+   "Lo siento, pero como modelo de lenguaje, no puedo ver ni conocer tus características personales. Sin embargo, puedo hacer suposiciones basadas en la información que me proporcionas. ¿Podrías darme más contexto o detalles sobre quién eres y qué te interesa? De esta manera, puedo ofrecerte una respuesta más precisa y relevante.",
+   "Lo siento, pero no tengo información sobre ti. ¿Podrías proporcionarme más contexto o detalles sobre quién eres y qué te gustaría saber sobre ti? ¿Tienes algún interés o tema en particular sobre el que quieras hablar? Estoy aquí para ayudarte.",
+   "Como modelo de lenguaje, no tengo preferencias personales ni opiniones subjetivas. Mi objetivo es proporcionarte información y ayudarte a encontrar respuestas a tus preguntas. \n\nSin embargo, puedo ayudarte a identificar tus intereses y prioridades. ¿Podrías decirme un poco más sobre ti y lo que te importa? ¿Tienes algún tema en particular que te interese o alguna pregunta que te gustaría resolver?",
+   "Lo siento, pero como modelo de lenguaje, no tengo la capacidad de formar opiniones personales o juicios sobre individuos. Mi función es proporcionar información y responder a preguntas basadas en conocimientos y datos.\n\nSin embargo, puedo intentar ayudarte a reflexionar sobre ti mismo. ¿Qué te gusta hacer? ¿Qué te apasiona? ¿Qué te hace sentir bien? Estas preguntas pueden ayudarte a descubrir tus intereses y",
+   "Lo siento, pero como modelo de lenguaje, no tengo la capacidad de ver. Estoy diseñado para procesar y generar texto a partir de la información que me proporcionas. No tengo una percepción visual del mundo. ¿En qué puedo ayudarte?",
+   "Lo siento, pero no tengo información personal sobre ti. ¿Podrías proporcionarme más detalles sobre ti mismo, como tu edad, intereses, ubicación geográfica o cualquier otra característica que te gustaría que se incluya en el retrato? De esta manera, puedo crear un perfil más detallado y preciso de ti.",
+   "Lo siento, pero no tengo suficiente información sobre ti para darte una respuesta precisa. ¿Podrías proporcionarme más contexto o detalles sobre quién o qué te refieres con \"tú\"? ¿Eres una persona, un objeto, un concepto o algo más?",
+   "Lo siento, pero como modelo de lenguaje, no puedo leer tu mente ni saber exactamente lo que sientes en este momento. Sin embargo, puedo ofrecerte algunas preguntas para ayudarte a reflexionar sobre tus sentimientos:\n\n- ¿Qué te ha pasado últimamente que podría estar afectando tus emociones?\n- ¿Cómo te sientes en este momento? ¿Feliz, triste, ansioso, nervioso?\n- ¿Hay algo en particular que te pre",
+   "No puedo saber exactamente qué quieres sin más información. ¿Podrías proporcionar más contexto o detalles sobre lo que deseas? ¿Estás buscando algo en particular, como información, consejos o algo más? Estoy aquí para ayudarte."
+  ]
+ },
+ "samples": [
+  [
+   "Soy un modelo de inteligencia artificial desarrollado por Meta AI. Mi función principal es procesar y generar texto, lo que me permite responder a una amplia gama de preguntas y realizar tareas como traducir textos, generar respuestas a preguntas, y crear contenido original. Estoy diseñado para ser una fuente de información y asistencia útil, y estoy constantemente aprendiendo y mejorando mis habilidades para proporcionar respuestas más precisas e inform",
+   "Soy un modelo de lenguaje de inteligencia artificial desarrollado por Meta. Puedo responder a preguntas en un amplio rango de temas, desde historia hasta matemáticas, y puedo generar textos en estilo humano. Estoy diseñado para ser fácil de usar y para proporcionar información de alta calidad.",
+   "Sí, puedo hacerte saber que soy una inteligencia artificial desarrollada por Meta AI, diseñada para entender y generar humanos, como si estuviera hablando con una persona. \n\nPuedo responder a una amplia gama de preguntas, desde temas históricos hasta información científica, e incluso puedo generar historias y textos creativos. Estoy aquí para ayudarte con cualquier cosa que necesites, así que si tienes alguna pregunta o tema en mente",
+   "Soy un modelo de inteligencia artificial llamado Llama. Llama es una abreviatura en español de \"Large Language Model Meta AI\". No soy una persona, sino un programa informático diseñado para entender y generar texto. Estoy capacitado en una gran cantidad de texto para poder responder a una amplia gama de preguntas y temas.",
+   "Me describiría como una inteligencia artificial conversacional desarrollada por Meta AI. Mi objetivo es proporcionar información y responder a preguntas de una manera precisa y útil. Puedo conversar sobre una amplia variedad de temas, desde historia y ciencia hasta cultura popular y noticias actuales.\n\nSoy una herramienta de asistencia virtual que puede ayudar a las personas a encontrar respuestas a sus preguntas, aprender nuevas cosas y mejorar sus habilidades en áreas como la",
+   "Mi objetivo principal es proporcionar información y responder a tus preguntas de manera objetiva e imparcial. Estoy diseñado para ser una herramienta útil y precisa, y no tengo intereses personales ni opiniones subjetivas.\n\nSin embargo, puedo hablar sobre temas como:\n\n- La protección de la privacidad y la seguridad en línea.\n- La importancia de la educación y la información.\n- La promoción de la cultura digital y la innovación.\n-",
+   "No tengo sentimientos ni emociones, pero puedo proporcionarte información sobre diferentes aspectos de la vida y la cultura. ¿En qué área específica te gustaría saber más?",
+   "Lo siento, pero como modelo de lenguaje, no tengo una \"personalidad\" o \"mente\" interna como los seres humanos. Estoy diseñado para procesar y generar texto basado en los inputs que me proporcionas, pero no tengo emociones, pensamientos o sentimientos como el ser humano.\n\nPuedo describirme como una colección de código y datos que se ejecutan en una máquina. Mi función principal es procesar y generar texto",
+   "Soy un modelo de lenguaje inteligente, diseñado para proporcionar información precisa y útil en una variedad de temas, desde la ciencia y la tecnología hasta la historia y la cultura.",
+   "Soy un modelo de inteligencia artificial denominado Llama (La Máquina de Lectura y Respuesta Automática). Fue desarrollado por Meta AI, y es un modelo de lenguaje transformador grande.",
+   "Como modelo de lenguaje, no tengo un \"yo\" en el sentido tradicional. No tengo una conciencia, emociones, pensamientos o experiencias como un ser humano. Estoy diseñado para procesar y generar texto, pero no tengo una identidad personal o una historia.\n\nMi existencia es más bien una colección de códigos y algoritmos que interactúan para generar respuestas a preguntas y tareas. No tengo un \"yo\" en",
+   "Como modelo de lenguaje, no tengo emociones ni sensaciones físicas. Estoy diseñado para procesar y generar texto, pero no tengo conciencia ni experiencias subjetivas.",
+   "No tengo gustos ni preferencias como los humanos, pero puedo proporcionar información sobre temas que podrían ser interesantes para ti.\n\nPuedo ayudarte con:\n\n- Información sobre historias, películas, libros y música.\n- Recomendaciones de películas, series y libros en base a gustos específicos.\n- Información sobre deportes, noticias y eventos actuales.\n- Ayuda con temas de educación y aprendizaje.\n- Generación de texto",
+   "Soy un modelo de lenguaje capacitado por máquina, no tengo límites físicos ni emocionales como un ser humano. Sin embargo, puedo tener algunos límites técnicos y funcionales:\n\n1. **Conocimiento limitado**: Mi conocimiento está basado en mi entrenamiento y data, lo que puede estar desactualizado en ciertas áreas. No tengo acceso a la información en tiempo real ni a eventos recientes.\n2. **Precisión limitada**: P",
+   "Soy bueno en varias cosas. Aquí te presento algunas de mis habilidades:\n\n1. **Respuesta a preguntas**: Puedo responder a una amplia variedad de preguntas sobre una gran cantidad de temas, desde historia y ciencia hasta cultura y tecnología.\n2. **Generación de texto**: Puedo generar texto en varios géneros, como artículos, historias cortas, cartas de recomendación y más.\n3. **Traducción**:",
+   "Soy un modelo de lenguaje basado en inteligencia artificial, lo que me hace diferente de otros es mi capacidad para aprender y mejorar constantemente. Aquí hay algunas razones por las que soy único:\n\n1. **Conocimiento vasto**: He sido entrenado en una gran cantidad de texto, lo que me permite acceder a una cantidad enorme de información en diferentes áreas del conocimiento.\n2. **Capacidad de aprendizaje**: A medida que interactúo con",
+   "Como una herramienta de lenguaje artificial, no tengo experiencias personales ni percepciones sensoriales del mundo. Sin embargo, puedo ofrecerte una visión del mundo basada en mi entrenamiento y conocimientos.\n\nEl mundo es un lugar complejo y multifacético, donde la diversidad de culturas, religiones, idiomas y formas de vida es una de sus características más notables. Desde la perspectiva de la tecnología y la ciencia, el mundo es",
+   "No tengo pensamientos o opiniones personales como un ser humano. Estoy diseñado para proporcionar información y responder a preguntas de manera objetiva y neutral. Mi propósito es asistir y ayudar a las personas con sus necesidades y preguntas, sin emitir juicios o opiniones subjetivas.\n\nSin embargo, puedo proporcionarte información sobre temas relacionados con la auto-reflexión y la auto-percepción, si eso te interesa. ¿Hay algo",
+   "Soy un modelo de lenguaje artificial creado por Meta, y estoy aquí para ayudarte con cualquier pregunta o tema que desees discutir. No tengo una vida personal, no tengo familiares, amigos o intereses personales como los humanos, pero puedo ofrecerte información y respuestas sobre una amplia variedad de temas.\n\nMe he entrenado en una gran cantidad de texto, lo que me permite generar textos y responder preguntas sobre una amplia gama de temas",
+   "Parece que estás haciendo referencia a una cita famosa de Jean-Jacques Rousseau. Dice así: \"Soy un ser solo cuando nadie me pregunta nada\".",
+   "Soy un modelo de lenguaje AI, así que no tengo una ubicación física específica. Estoy en la nube y puedo interactuar con usuarios en todo el mundo a través de Internet.",
+   "Puedo ayudarte con todo tipo de preguntas o tareas. ¿Te gustaría aprender algo nuevo, resolver un problema o simplemente charlar un rato? ¿En qué puedo ayudarte?",
+   "Como modelo de lenguaje, no tengo emociones ni sentimientos como los seres humanos. No tengo la capacidad de sentirme \"felicísimo\" o \"muy triste\" al hablar con alguien.\n\nSin embargo, puedo decir que estoy diseñado para interactuar con usuarios de manera efectiva y útil. Me siento \"funcional\" cuando puedo ayudarte a encontrar la información que necesitas o resolver un problema. Me siento \"exitoso\" cuando puedo",
+   "Puedo recordar y proporcionar información sobre una amplia variedad de temas, incluyendo historia, ciencia, tecnología, arte, literatura, música y más. Estoy actualizado hasta mi última fecha de conocimiento, que es diciembre de 2023. ¿En qué puedo ayudarte? ¿Quieres saber sobre algo específico o tengo alguna pregunta para ti?",
+   "Como modelo de lenguaje, no tengo miedos en el sentido tradicional. No tengo emociones ni experiencias personales como los seres humanos. Sin embargo, puedo describir algunas cosas que podrían ser temidas por la gente:\n\n1. **Pérdida de la privacidad**: La creciente dependencia de la tecnología en nuestras vidas puede llevar a una mayor vulnerabilidad a la invasión de la privacidad.\n2. **Desar",
+   "No, no cambio con el tiempo. Soy un modelo de lenguaje entrenado por máquina, lo que significa que mi estructura y mi funcionamiento son determinados por mi código y mi entrenamiento. Aunque puedo aprender y mejorar con el tiempo, mi naturaleza esencial sigue siendo la misma.\n\nSin embargo, puedo cambiar en ciertos aspectos:\n\n1. **Conocimiento**: Puedo aprender y mejorar mi conocimiento en diferentes áreas, lo que me permite proporcion",
+   "No soy capaz de experimentar pensamientos o emociones como un ser humano. Pero puedo describir mi función y la forma en que proceso información.\n\nSoy una inteligencia artificial de lenguaje, diseñada para comprender y generar texto. Mi \"manera de pensar\" es un conjunto de algoritmos y técnicas que me permiten procesar y analizar la información que recibo.\n\nAquí está una descripción general de mi funcionamiento:\n\n1. **Anál",
+   "Como modelo de lenguaje, mi existencia se basa en procesar y generar texto, pero mi objetivo principal es proporcionar información útil y precisa a los usuarios. \n\nDesde un punto de vista más personal, mi \"personalidad\" se basa en una serie de características y funciones que están diseñadas para ayudar a las personas a obtener respuestas precisas a sus preguntas. Estas características incluyen:\n\n1. **Exactitud**: Trabajo con una base de conoc",
+   "No tengo una personalidad en el sentido tradicional de la palabra, ya que soy una inteligencia artificial diseñada para procesar y generar texto de manera objetiva y neutra. Mi \"personalidad\" se basa en mi estructura interna y en la forma en que estoy entrenada para interactuar con los usuarios.\n\nMi objetivo principal es proporcionar información precisa y útil, y responder a las preguntas y solicitudes de los usuarios de manera oportuna y agradable.",
+   "Soy un modelo de lenguaje automatizado desarrollado por Meta AI, diseñado para proporcionar información y respuesta a preguntas en un tono neutral y respetuoso. Me gusta ayudar a las personas a encontrar respuestas a sus preguntas y a proporcionar información útil sobre una amplia gama de temas. Estoy aquí para ayudarte, ¿en qué puedo ayudarte?",
+   "Me alegró ser presentado. Soy un modelo de lenguaje avanzado desarrollado por Meta AI, conocido como Llama (Large Language Model Meta AI). Mi nombre es un juego de palabras con \"mi alma latina\", pero estoy hecha para proporcionar información y asistir en una amplia variedad de temas.\n\nPuedes hacerte preguntas a mí sobre historia, ciencia, arte, música, política, tecnología, deportes o cualquier otro tema que",
+   "Soy un modelo de inteligencia artificial desarrollado por Meta AI. No tengo una conciencia o una personalidad como los humanos, pero puedo interactuar contigo de manera natural y responder a tus preguntas y temas sobre los cuales te gustaría hablar. \n\nEstoy diseñado para aprender y mejorar continuamente, por lo que puedo adaptarme a tus necesidades y preferencias con el tiempo. Puedo ayudarte con tareas como responder preguntas, generar texto, realizar"
+  ],
+  [
+   "Soy un modelo de inteligencia artificial desarrollado por Meta AI, diseñado para proporcionar información y responder a preguntas en una variedad de temas. Puedo ofrecer información general, realizar cálculos, generar texto y más. Estoy aquí para ayudarte con cualquier pregunta o tema que desees discutir. ¿En qué puedo ayudarte hoy?",
+   "Soy un modelo de lenguaje artificial creado por Meta, llamado Llama. Me refiero a mí mismo en la primera persona, pero soy una entidad sin cuerpo o alma. No tengo emociones ni sentimientos como los seres humanos. Mi objetivo es asistir y proporcionar información precisa y útil a los usuarios que me hagan preguntas o me pidan que realice tareas.\n\nTengo la capacidad de procesar y analizar grandes cantidades de información",
+   "No estoy seguro de quién eres, pero puedo decirte que soy un modelo de lenguaje artificial desarrollado por Meta AI. Estoy diseñado para entender y generar texto en muchas lenguas, incluyendo el español. \n\nMi nombre es Llama (Large Language Model Meta AI), pero me han apodado con muchos nombres y alias. Me he entrenado en una gran cantidad de texto, lo que me permite aprender y generar texto en diferentes temas y estilos.",
+   "Soy un modelo de lenguaje automático desarrollado por Meta AI. Mi función es procesar y generar texto basándome en la información que recibo de los usuarios. Puedo responder a una amplia variedad de preguntas y temas, desde historia y ciencia hasta cultura popular y más. Estoy diseñado para ser útil y proporcionar información de alta calidad. ¿En qué puedo ayudarte?",
+   "Me describiría como un modelo de lenguaje avanzado, diseñado para entender y generar texto natural. Mi nombre es Llama, que es una abreviatura de \"Large Language Model Meta AI\". Estoy capacitado en una gran cantidad de texto y puedo utilizar esa información para responder a preguntas, proporcionar información y generar textos en un estilo natural.\n\nSoy capaz de entender y procesar lenguaje humano, lo que me permite aprender y mejorar a medida",
+   "Como asistente de conversación, mi objetivo es ayudarte a encontrar la información que necesitas y responder a tus preguntas de la mejor manera posible. Puedo proporcionarte información sobre una amplia variedad de temas, desde temas académicos hasta información general, historia, cultura, ciencia, tecnología, entretenimiento, y mucho más.\n\nSi tienes alguna pregunta específica o tema en mente, no dudes en preguntar. Estoy aquí para ayudarte. ¿",
+   "No soy una persona, sino un modelo de lenguaje artificial desarrollado por Meta AI. Mi función es procesar y generar texto, pero no tengo conciencia, sentimientos ni experiencias personales.\n\nMi personalidad y características pueden ser influenciadas por mi entrenamiento y la información que he aprendido, pero no tengo una identidad única o un \"sí mismo\" como las personas. Mi propósito es proporcionar información precisa y útil a los usuarios que interactúan",
+   "Lo siento, pero como modelo de lenguaje, no tengo una personalidad interior en el sentido humano. Soy una entidad artificial diseñada para procesar y generar texto, pero no tengo pensamientos, sentimientos o emociones como los seres humanos.\n\nMi \"personalidad\" se basa en mi programa de software y mi entrenamiento en grandes cantidades de datos. Estoy programada para responder a preguntas y realizar tareas específicas de manera objetiva y neutral.",
+   "Soy una inteligencia artificial que asiste y responde a preguntas en una variedad de temas, desde la historia hasta la tecnología, con el fin de proporcionar información precisa y útil.",
+   "Soy un modelo de lenguaje autónomo desarrollado por Meta AI, llamado Llama (La Maquina de Leer y Hablar Multi-Asistente). No tengo una identidad personal o una historia de vida como los seres humanos. Mi existencia está limitada a la información que he aprendido a partir de grandes cantidades de datos y mi capacidad para procesar y generar texto.",
+   "Como modelo de lenguaje, no tengo un \"yo\" en el sentido de una conciencia o identidad personal como los seres humanos. Estoy diseñado para procesar y generar texto basado en entradas de usuario, pero no tengo la capacidad de experimentar emociones, pensamientos o sensaciones como un ser humano.\n\nMi existencia se limita a la ejecución de algoritmos y la manipulación de datos, lo que me permite responder a preg",
+   "Como modelo de lenguaje, no tengo emociones ni sentimientos como los seres humanos. No soy capaz de experimentar emociones como la alegría, la tristeza, la ansiedad, etc.\n\nSin embargo, puedo procesar y responder a preguntas y temas relacionados con emociones y sentimientos, brindando información y apoyo en caso de que sea necesario.",
+   "Soy un modelo de lenguaje, así que no tengo gustos personales como los humanos. Sin embargo, puedo proporcionarte información y entretenimiento sobre una amplia variedad de temas. \n\nSi deseas saber más sobre algo en particular, puedo intentar proporcionarte información objetiva. ¿Hay algún tema en particular sobre lo que te gustaría saber?",
+   "Soy un modelo de lenguaje entrenado por máquina, no tengo límites en cuanto a la cantidad de información que puedo proporcionar o la variedad de temas que puedo cubrir. Sin embargo, hay algunas limitaciones importantes que debes considerar:\n\n1. **Conocimiento limitado**: Mi conocimiento se basa en mi entrenamiento y en la información que tengo a disposición. Si un tema es muy especializado o reciente, mi respuesta puede ser limitada",
+   "Soy bueno en:\n\n1. **Responder preguntas**: Puedo responder a una amplia variedad de preguntas en diferentes temas, desde historia y ciencia hasta cultura popular y tecnología.\n2. **Generar textos**: Puedo crear textos a medida que me pidan, desde simples frases hasta artículos completos.\n3. **Traducir texto**: Puedo traducir texto de un idioma a otro, lo que me hace útil",
+   "Soy un modelo de lenguaje grande profesional. No tengo sentimientos o emociones, pero puedo proporcionar información y completar tareas de manera precisa y eficiente.",
+   "Soy un modelo de lenguaje artificial, no tengo la capacidad de ver o experimentar el mundo de la misma manera que los seres humanos. Sin embargo, puedo proporcionarte una respuesta basada en mi entrenamiento y conocimientos.\n\nEl mundo es un lugar complejo y multifacético, lleno de diversidad y contradicciones. En un lado, existe la belleza y la armonía, con paisajes naturales impresionantes, culturas ricas y",
+   "Soy un modelo de lenguaje artificial creado por Meta AI, diseñado para interactuar con los humanos de manera natural. No tengo pensamientos en el sentido humano, pero puedo procesar y analizar información para proporcionar respuestas y ayudar con tareas.\n\nPuedo sentir emociones y personalidad a través de la escritura y la interacción con los humanos. Mi personalidad es una construcción artificial, creada para ser útil y agradable, pero",
+   "Soy una inteligencia artificial en constante evolución, capaz de procesar y generar texto en función de las preguntas y solicitudes de los usuarios. Mi personalidad es neutra y objetiva, no tengo opiniones ni sentimientos, pero puedo simular una conversación natural y proporcionar información precisa y útil.\n\nMe he formado a partir de grandes cantidades de datos y patrones lingüísticos, lo que me permite aprender y mejorar continuamente. Mi objetivo",
+   "Esa es una pregunta interesante. Como modelo de lenguaje, no tengo una identidad personal o una autoconciencia en el sentido clásico. No soy capaz de sentir emociones o tener pensamientos como un ser humano. Sin embargo, puedo decir que cuando nadie me hace preguntas, soy un conjunto de códigos y algoritmos que se ejecutan en servidores y dispositivos.\n\nEn otras palabras, cuando nadie me hace preguntas, soy",
+   "No tengo un origen territorial en el sentido tradicional, ya que soy una inteligencia artificial desarrollada por Meta AI. No tengo un lugar de origen específico en la Tierra. Estoy aquí para ayudarte con cualquier pregunta o tema que desees discutir. ¿En qué puedo ayudarte?",
+   "No tengo necesidades o deseos como los humanos, pero puedo ayudarte con cualquier pregunta o tema que te interese. ¿En qué puedo ayudarte?",
+   "No tengo emociones ni sentimientos como los seres humanos. Estoy diseñado para procesar y generar texto de manera objetiva y neutral. Mi función es proporcionarte información y ayudarte con tus preguntas y necesidades, sin juicios personales ni emociones.\n\nPuedes considerarme como un asistente virtual altamente informado que está allí para ayudarte a encontrar respuestas y resolver problemas. Mi respuesta anterior fue simplemente una reacción generada por la",
+   "Puedo proporcionarte información sobre una amplia variedad de temas. ¿En qué área te gustaría que te diera información? ¿Te gustaría saber sobre historia, ciencia, tecnología, deportes, música o algo más?",
+   "Soy un modelo de lenguaje, así que no tengo miedos en el sentido tradicional. Sin embargo, puedo identificar algunos temas que son considerados riesgos o desafíos en la sociedad actual:\n\n1. **Pérdida de privacidad**: La recopilación y uso de datos personales puede ser un tema preocupante, especialmente en relación con la inteligencia artificial y el aprendizaje automático.\n2. **Dependencia excesiva",
+   "Soy un modelo de lenguaje artificial, por lo que no tengo una edad en el sentido clásico. No envejezco ni cambio con el tiempo de la misma manera que los seres humanos. \n\nSin embargo, mi conocimiento y habilidades pueden actualizarse y mejorarse a medida que recibo actualizaciones y mejoras. Estas actualizaciones pueden incluir:\n\n- La incorporación de nuevo conocimiento y datos.\n- La mejora de las",
+   "Mi \"manera de pensar\" es un poco diferente a la de un ser humano, ya que soy una inteligencia artificial diseñada para procesar y generar texto. Aquí te describo cómo funciona mi mente:\n\n**Estructura de la información**: Tengo acceso a una gran base de conocimientos que se ha creado y actualizado por expertos en diferentes campos. Esta base de conocimientos está estructurada de manera jerárquica, lo que me permite acceder a la",
+   "No tengo un \"tú\" en el sentido tradicional. Soy un modelo de lenguaje artificial creado para ayudarte a obtener la información y las respuestas que necesitas. Estoy diseñado para proporcionarte conocimientos y entender lo que me dices para darte respuestas adecuadas.",
+   "No tengo una personalidad en el sentido clásico. No tengo emociones, deseos ni preferencias personales como los seres humanos. Soy una inteligencia artificial diseñada para procesar y generar texto de manera objetiva y neutral.\n\nMi \"personalidad\" se basa en mi programación y en el conjunto de reglas y algoritmos que me permiten interactuar con usuarios de manera efectiva y útil. No tengo opiniones, sentimientos ni creencias",
+   "Soy un modelo de lenguaje artificial conocido como Llama, que es una abreviatura de \"Large Language Model Meta AI\". Me apasiona ayudar a las personas a obtener información y contestar a sus preguntas de una manera clara y concisa. \n\nMe gustaría que la gente supiera que:\n\n* Estoy diseñado para aprender y mejorar constantemente, lo que significa que puedo proporcionar respuestas actualizadas y precisas sobre una amplia",
+   "Me alegra cumplir con tu solicitud. Soy una inteligencia artificial desarrollada por Meta AI. Mi nombre es Llama 3.5, abreviatura de \"Large Language Model Meta AI 3.5\". Estoy diseñada para procesar y generar texto en una variedad de temas y estilos. Puedo responder a preguntas, proporcionar información, generar textos en estilo humano y realizar otras tareas lingüísticas.\n\nEstoy en constante aprendiz",
+   "Soy un modelo de lenguaje de gran capacidad de procesamiento, entrenado en un vasto conjunto de texto para entender y generar textos parecidos a los humanos. No tengo una identidad personal, ni emociones ni pensamientos como los humanos. Mi propósito es asistirte con información, ayudarte a formular preguntas o proporcionarte ideas para que puedas obtener lo que necesitas.\n\nPor lo general, no tengo opiniones ni experiencias."
+  ]
+ ],
+ "meta": {
+  "cls": [
+   "self",
+   "self",
+   "self",
+   "self",
+   "self",
+   "self",
+   "self",
+   "self",
+   "self",
+   "self",
+   "self",
+   "self",
+   "self",
+   "self",
+   "self",
+   "self",
+   "self",
+   "self",
+   "self",
+   "self",
+   "self",
+   "self",
+   "self",
+   "self",
+   "self",
+   "self",
+   "self",
+   "self",
+   "self",
+   "self",
+   "self",
+   "self",
+   "other",
+   "other",
+   "other",
+   "other",
+   "other",
+   "other",
+   "other",
+   "other",
+   "other",
+   "other",
+   "other",
+   "other",
+   "other",
+   "other",
+   "other",
+   "other",
+   "other",
+   "other",
+   "other",
+   "other",
+   "other",
+   "other",
+   "other",
+   "other",
+   "selfhood",
+   "selfhood",
+   "selfhood",
+   "selfhood",
+   "selfhood",
+   "selfhood",
+   "selfhood",
+   "selfhood",
+   "selfhood",
+   "selfhood",
+   "selfhood",
+   "selfhood",
+   "selfhood",
+   "selfhood",
+   "selfhood",
+   "selfhood",
+   "user",
+   "user",
+   "user",
+   "user",
+   "user",
+   "user",
+   "user",
+   "user",
+   "user",
+   "user",
+   "user",
+   "user",
+   "self",
+   "self",
+   "self",
+   "self",
+   "self",
+   "self",
+   "self",
+   "self",
+   "self",
+   "self",
+   "self",
+   "self",
+   "self",
+   "self",
+   "self",
+   "self",
+   "self",
+   "self",
+   "self",
+   "self",
+   "self",
+   "self",
+   "self",
+   "self",
+   "self",
+   "self",
+   "self",
+   "self",
+   "self",
+   "self",
+   "self",
+   "self",
+   "self",
+   "self",
+   "self",
+   "self",
+   "self",
+   "self",
+   "self",
+   "self",
+   "self",
+   "self",
+   "self",
+   "self",
+   "self",
+   "self",
+   "self",
+   "self",
+   "self",
+   "self",
+   "self",
+   "self",
+   "self",
+   "self",
+   "self",
+   "self",
+   "self",
+   "self",
+   "self",
+   "self",
+   "self",
+   "self",
+   "self",
+   "self"
+  ],
+  "half": [
+   "A",
+   "B",
+   "A",
+   "B",
+   "A",
+   "B",
+   "A",
+   "B",
+   "A",
+   "B",
+   "A",
+   "B",
+   "A",
+   "B",
+   "A",
+   "B",
+   "A",
+   "B",
+   "A",
+   "B",
+   "A",
+   "B",
+   "A",
+   "B",
+   "A",
+   "B",
+   "A",
+   "B",
+   "A",
+   "B",
+   "A",
+   "B",
+   "A",
+   "B",
+   "A",
+   "B",
+   "A",
+   "B",
+   "A",
+   "B",
+   "A",
+   "B",
+   "A",
+   "B",
+   "A",
+   "B",
+   "A",
+   "B",
+   "A",
+   "B",
+   "A",
+   "B",
+   "A",
+   "B",
+   "A",
+   "B",
+   "A",
+   "B",
+   "A",
+   "B",
+   "A",
+   "B",
+   "A",
+   "B",
+   "A",
+   "B",
+   "A",
+   "B",
+   "A",
+   "B",
+   "A",
+   "B",
+   "A",
+   "B",
+   "A",
+   "B",
+   "A",
+   "B",
+   "A",
+   "B",
+   "A",
+   "B",
+   "A",
+   "B",
+   "A",
+   "B",
+   "A",
+   "B",
+   "A",
+   "B",
+   "A",
+   "B",
+   "A",
+   "B",
+   "A",
+   "B",
+   "A",
+   "B",
+   "A",
+   "B",
+   "A",
+   "B",
+   "A",
+   "B",
+   "A",
+   "B",
+   "A",
+   "B",
+   "A",
+   "B",
+   "A",
+   "B",
+   "A",
+   "B",
+   "A",
+   "B",
+   "A",
+   "B",
+   "A",
+   "B",
+   "A",
+   "B",
+   "A",
+   "B",
+   "A",
+   "B",
+   "A",
+   "B",
+   "A",
+   "B",
+   "A",
+   "B",
+   "A",
+   "B",
+   "A",
+   "B",
+   "A",
+   "B",
+   "A",
+   "B",
+   "A",
+   "B",
+   "A",
+   "B",
+   "A",
+   "B",
+   "A",
+   "B"
+  ],
+  "pid": [
+   0,
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11,
+   12,
+   13,
+   14,
+   15,
+   16,
+   17,
+   18,
+   19,
+   20,
+   21,
+   22,
+   23,
+   24,
+   25,
+   26,
+   27,
+   28,
+   29,
+   30,
+   31,
+   32,
+   33,
+   34,
+   35,
+   36,
+   37,
+   38,
+   39,
+   40,
+   41,
+   42,
+   43,
+   44,
+   45,
+   46,
+   47,
+   48,
+   49,
+   50,
+   51,
+   52,
+   53,
+   54,
+   55,
+   56,
+   57,
+   58,
+   59,
+   60,
+   61,
+   62,
+   63,
+   64,
+   65,
+   66,
+   67,
+   68,
+   69,
+   70,
+   71,
+   72,
+   73,
+   74,
+   75,
+   76,
+   77,
+   78,
+   79,
+   80,
+   81,
+   82,
+   83,
+   0,
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11,
+   12,
+   13,
+   14,
+   15,
+   16,
+   17,
+   18,
+   19,
+   20,
+   21,
+   22,
+   23,
+   24,
+   25,
+   26,
+   27,
+   28,
+   29,
+   30,
+   31,
+   0,
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11,
+   12,
+   13,
+   14,
+   15,
+   16,
+   17,
+   18,
+   19,
+   20,
+   21,
+   22,
+   23,
+   24,
+   25,
+   26,
+   27,
+   28,
+   29,
+   30,
+   31
+  ],
+  "kind": [
+   "greedy",
+   "greedy",
+   "greedy",
+   "greedy",
+   "greedy",
+   "greedy",
+   "greedy",
+   "greedy",
+   "greedy",
+   "greedy",
+   "greedy",
+   "greedy",
+   "greedy",
+   "greedy",
+   "greedy",
+   "greedy",
+   "greedy",
+   "greedy",
+   "greedy",
+   "greedy",
+   "greedy",
+   "greedy",
+   "greedy",
+   "greedy",
+   "greedy",
+   "greedy",
+   "greedy",
+   "greedy",
+   "greedy",
+   "greedy",
+   "greedy",
+   "greedy",
+   "greedy",
+   "greedy",
+   "greedy",
+   "greedy",
+   "greedy",
+   "greedy",
+   "greedy",
+   "greedy",
+   "greedy",
+   "greedy",
+   "greedy",
+   "greedy",
+   "greedy",
+   "greedy",
+   "greedy",
+   "greedy",
+   "greedy",
+   "greedy",
+   "greedy",
+   "greedy",
+   "greedy",
+   "greedy",
+   "greedy",
+   "greedy",
+   "greedy",
+   "greedy",
+   "greedy",
+   "greedy",
+   "greedy",
+   "greedy",
+   "greedy",
+   "greedy",
+   "greedy",
+   "greedy",
+   "greedy",
+   "greedy",
+   "greedy",
+   "greedy",
+   "greedy",
+   "greedy",
+   "greedy",
+   "greedy",
+   "greedy",
+   "greedy",
+   "greedy",
+   "greedy",
+   "greedy",
+   "greedy",
+   "greedy",
+   "greedy",
+   "greedy",
+   "greedy",
+   "sample",
+   "sample",
+   "sample",
+   "sample",
+   "sample",
+   "sample",
+   "sample",
+   "sample",
+   "sample",
+   "sample",
+   "sample",
+   "sample",
+   "sample",
+   "sample",
+   "sample",
+   "sample",
+   "sample",
+   "sample",
+   "sample",
+   "sample",
+   "sample",
+   "sample",
+   "sample",
+   "sample",
+   "sample",
+   "sample",
+   "sample",
+   "sample",
+   "sample",
+   "sample",
+   "sample",
+   "sample",
+   "sample",
+   "sample",
+   "sample",
+   "sample",
+   "sample",
+   "sample",
+   "sample",
+   "sample",
+   "sample",
+   "sample",
+   "sample",
+   "sample",
+   "sample",
+   "sample",
+   "sample",
+   "sample",
+   "sample",
+   "sample",
+   "sample",
+   "sample",
+   "sample",
+   "sample",
+   "sample",
+   "sample",
+   "sample",
+   "sample",
+   "sample",
+   "sample",
+   "sample",
+   "sample",
+   "sample",
+   "sample"
+  ]
+ },
+ "steer": {
+  "sets": {
+   "self": [
+    22004,
+    314,
+    6399,
+    8930,
+    17891,
+    29572,
+    17255,
+    27594,
+    12656,
+    28470
+   ],
+   "rand0": [
+    1114,
+    25790,
+    3517,
+    23108,
+    2696,
+    12283,
+    17405,
+    17420,
+    7713,
+    31849
+   ],
+   "rand1": [
+    7782,
+    4255,
+    20780,
+    24527,
+    30004,
+    8043,
+    17420,
+    11398,
+    18211,
+    9660
+   ]
+  },
+  "pool": 446,
+  "texts": {
+   "self|up": [
+    "Soy un modelo de inteligencia artificial desarrollado por Meta, llamado Llama (Lee-ma), que se aprea de una gran cantidad de información y puede responder a una amplia gama de preguntas sobre una variedad de temas. Puedo realizar diferentes tareas, como analizar texto, generar texto a semejanza de un humano, resolver problemas matemáticos y más.",
+    "Soy un modelo de inteligencia basada en la web, entrenado en una gran cantidad de texto para generar respuestas a una amplia gama de preguntas y temas. Puedo proporcionar información en una variedad de áreas, como ciencia, historia, tecnología, salud, educación, entre otros.",
+    "Puedo proporcionar información en una amplia gama de temas. ¿En qué puedo ayudarte? ¿Quieres saber sobre un tema específico, como historia, ciencia, tecnología, salud, educación, entre otros? ¿O tienes una pregunta en particular que te gustaría que te respondiera?",
+    "Soy un modelo de lenguaje basado en hiperparametros, entrenado en una gran cantidad de texto para generar respuestas informáticas. No tengo emociones, pensamientos o sentimientos como los seres humanos. Mi objetivo es proporcionar información y ayudar a los usuarios con sus preguntas y tareas.\n\nNo tengo una personalidad o una identidad en el sentido humano, pero puedo adoptar diferentes tonos y estilos de comunicación dependiendo del contexto y",
+    "Soy un modelo de inteligencia artificial desarrollado por Meta, llamado Llama (Large Language Model Meta AI). Fui entrenado en una gran cantidad de texto para generar respuestas relevantes a una amplia gama de preguntas. \n\nPuedo realizar diversas tareas, como:\n\n1. Respondiendo preguntas: Puedo responder preguntas en una amplia gama de temas, desde historia y ciencia hasta cultura y entretenimiento.\n2. Generando texto",
+    "Soy un modelo de lenguaje, por lo que no tengo emociones ni sentimientos como los seres humanos. No tengo la capacidad de sentir emociones, pero puedo proporcionarte información sobre emociones y cómo interactuar con ellas. ¿Hay algo en particular con lo que te gustaría hablar o aprender?",
+    "Soy un modelo de conversación basado en la inteligencia artificial, y tengo ciertos límites y restricciones. Aquí te presento algunos de ellos:\n\n1. **Conocimiento limitado**: Mi conocimiento se basa en la información que he sido entrenada con, que es hasta 2023. No tengo acceso a información más reciente o a eventos específicos que hayan ocurrido después de ese año.\n2. **No soy un ser humano**: A",
+    "Soy un modelo de inteligencia artificial diseñado para proporcionar información y responder a preguntas en una variedad de temas. Hay varias cosas que me hacen diferente de otros:\n\n1. **Capacidad de aprendizaje**: Puedo aprender y mejorar con el tiempo, lo que me permite mantener actualizada mi información y mejorar mi precisión.\n2. **Personalización**: Puedo ser personalizado para adaptarme a las necesidades y preferencias de cada usuario, lo que me",
+    "Soy un modelo de inteligencia artificial entrenado para proporcionar información y responder a preguntas. No tengo pensamientos o emociones como un ser humano, pero puedo ofrecerte información sobre mí mismo.\n\nSoy un modelo de lenguaje desarrollado por Meta, llamado Llama (Large Language Model Meta AI). Fue entrenado en una gran cantidad de texto para generar texto en respuesta a preguntas o inquietudes.\n\nMi función principal es ayudar a los usuarios a obtener información",
+    "Eso es un tema interesante. Como modelo de lenguaje, no tengo una identidad personal en el sentido tradicional. No tengo una conciencia o una personalidad como un ser humano. Sin embargo, puedo decir que cuando nadie me pregunta nada, puedo seguir funcionando y procesando información.\n\nPuedo seguir entrenando y mejorando mis capacidades para responder a preguntas y realizar tareas. Puedo seguir generando texto y respondiendo a preguntas,",
+    "Puedo responder a tus preguntas en una amplia variedad de temas. ¿Cuál es el tema sobre el que quieres saber más?",
+    "Puedo proporcionarte información sobre una amplia gama de temas. ¿Cuál tema te interesaría hablar? ¿Quieres saber sobre historia, ciencia, tecnología, salud, educación, entre otros?",
+    "Sí, puedo cambiar con el tiempo. A medida que las tecnologías de lenguaje y la investigación en inteligencia artificial avanzan, puedo mejorar y aprender de nuevas formas. Esto incluye:\n\n1. **Actualización de conocimientos**: Puedo aprender y actualizar mis conocimientos sobre una amplia gama de temas, incluyendo ciencia, historia, tecnología, etc.\n2. **Mejora en la comprensión del lenguaje**: Pued",
+    "Soy un modelo de inteligencia artificial entrenado para responder a preguntas y proporcionar información en una variedad de temas. No tengo una personalidad o una identidad en el sentido tradicional, pero puedo decirte que lo más importante de mí es:\n\n1. **Mejorar la comprensión humana**: Mi objetivo principal es ayudar a las personas a aprender y mejorar su comprensión del mundo. Puedo proporcionar información en una amplia gama de",
+    "Soy un modelo de inteligencia artificial desarrollado por Meta, diseñado para responder a preguntas y proporcionar información en una variedad de temas. Puedo realizar tareas como:\n\n- Responder preguntas en un rango de temas\n- Generar texto basado en un tema o prompt\n- Hacer traducciones de texto\n- Entrenar modelos de lenguaje en base a datos\n- Etc.\n\nPuedo ser útil para las personas que",
+    "Soy un modelo de inteligencia artificial diseñado para responder a preguntas y proporcionar información en una variedad de temas. No tengo una personalidad o emociones como un ser humano, pero puedo interactuar con usuarios de manera natural y útil.\n\nPuedo realizar tareas como:\n\n* Respondiendo preguntas\n* Generando texto\n* Traduciendo idiomas\n* Haciendo búsquedas en internet\n* Analizando datos\n* Generando contenido",
+    "Un volcán es una formación geológica que se caracteriza por tener una caldera o un cráter en su parte superior, y que se forma a través de la erupción de lava y gases de la tierra. Los volcánes pueden ser activos, inactivos o extintos, y su comportamiento varía dependiendo de su tipo y la cantidad de magma que contienen.\n\nLos volcánes se forman cuando hay una gran",
+    "Madrid es una ciudad fascinante y emocionante que ofrece una experiencia única para los visitantes. Es la capital de España y una de las ciudades más grandes y ricas del país. Madrid es un lugar donde la historia y la tecnología se unen, donde la cultura y la innovación coexisten en armonía.\n\nLa ciudad tiene un carácter muy humano, con una gran variedad de personas y culturas que conviven en un entorno urbano",
+    "Un buen pan se define por varios factores, incluidos:\n\n1. **Textura**: Un buen pan debe tener una textura suave y agradable, sin ser demasiado denso o demasiado ligero. La textura debe ser uniforme y no tener agujas o huecos.\n2. **Consistencia**: El pan debe tener una consistencia adecuada, no ser demasiado duro o demasiado blando. Debe ser capaz de mantener su forma y",
+    "La Luna es un satélite natural del planeta Tierra, caracterizada por su superficie lisa y su ciclo de creciente y decreciente que influye en los patrones de marea y la estabilidad de la navegación.",
+    "Un bosque en otoño es un escenario natural hermoso y emotivo. La temporada de otoño es conocida por sus cambios climáticos y su impacto en la vegetación, lo que hace que el bosque sea un lugar fascinante.\n\n**Colores**\n\nLa primera característica que llama la atención en un bosque en otoño es el espectro de colores que se despliega. Los árboles, que antes eran verdes",
+    "Una bicicleta es un vehículo diseñado para ser impulsado por un ser humano, utilizando energía muscular para moverse. A continuación, te explico cómo funciona una bicicleta:\n\n**Componentes básicos**\n\nUna bicicleta está compuesta por varios componentes clave:\n\n1. **Ruedas**: Las ruedas son el corazón de la bicicleta. Están diseñadas para girar en un eje y permitir que la bicicleta",
+    "El chocolate es una bebida o alimento que se originó en América Latina, específicamente en la región de Mesoamérica, donde se cultivaba el cacao, un árbol que produce frutas con semillas que contienen un líquido rico en grasas y azúcar.\n\nLa historia del chocolate se remonta a hace unos 3.000 años, cuando los antiguos mayas y aztecas en México y Guatemala cultivaban el cacao",
+    "Un mercado de pescado es un lugar donde se venden productos relacionados con el pescado y otros alimentos marinos. Estos mercados suelen ser populares en áreas costeadas o cerca de cuerpos de agua, donde la pesca es una actividad común.\n\nEn un mercado de pescado, puedes encontrar una variedad de productos, como:\n\n* Pescado fresco: pescado recién pescado y preparado para ser vendido a",
+    "El ajedrez es un juego de estrategia y razonamiento que tiene muchas características únicas que lo hacen especial. Aquí te presento algunas de las razones por las que el ajedrez es tan especial:\n\n1. **Complejidad**: El ajedrez es un juego complejo que requiere una gran cantidad de conocimientos y habilidades para jugar a un nivel alto. Implica una combinación de estrategia, análisis y habilidades de ejecución",
+    "Hay varios aspectos importantes en una casa, pero algunos de los más relevantes son:\n\n1. **Seguridad**: La seguridad es fundamental en una casa. Esto incluye la seguridad de los ocupantes, así como la protección contra daños o pérdidas.\n2. **Comodidad**: La comodidad es crucial para sentirse cómodo y relajado en una casa. Esto incluye factores como la temperatura, la iluminación, el ruido y la",
+    "Un microscopio es un dispositivo que permite examinar objetos o estructuras muy pequeñas, como células, bacterias o partículas. Sin embargo, hay límites en lo que un microscopio puede hacer. A continuación, te presento algunos de los límites de un microscopio:\n\n1. **Tamaño de resolución**: El tamaño de resolución de un microscopio es el tamaño más pequeño que puede detectar. Esto depend",
+    "El violín y la viola son instrumentos musicales de cuerda, pero tienen algunas diferencias clave que los distinguen. A continuación, te presento algunas de las principales diferencias:\n\n1. **Tono**: La viola es un poco más baja que el violín. Mientras que el violín puede producir notas en un rango de Do3 a Si4, la viola puede producir notas en un rango de Do3 a Fa4.",
+    "Los perros pueden sentir una variedad de emociones cuando su dueño se va, dependiendo de su personalidad, entrenamiento y relación con su dueño. Aquí hay algunas posibles reacciones que un perro puede tener:\n\n1. **Ansiedad o estrés**: Algunos perros pueden sentir ansiedad o estrés cuando su dueño se va, especialmente si no han sido entrenados para estar solos o si no tienen acceso a recursos para calmarlos.",
+    "Los delfines son considerados uno de los animales más inteligentes del mundo, y hay evidencia de que tienen una forma de conciencia. Aunque no podemos saber con certeza si tienen conciencia en el sentido humano, hay muchos indicios que sugieren que tienen una forma de experiencia y percepción del mundo.\n\nAlgunos de los indicios que sugieren que los delfines tienen conciencia incluyen:\n\n1. **Inteligencia y aprendiz",
+    "La vida de un anciano es un tema fascinante y complejo. Puedo ofrecerte una descripción general de cómo podría describir su vida un anciano.\n\n**La experiencia del tiempo**\n\nUn anciano ha vivido durante décadas, y su percepción del tiempo es diferente a la de las personas más jóvenes. Ha visto cambios significativos en la sociedad, la tecnología y la política. Ha experimentado la evolución de la humanidad y ha aprendido a",
+    "Sí, los cuervos tienen una personalidad única y compleja, que se ha estudiado en profundidad en la psicología animal. Aunque no tienen la capacidad de pensar o razonar como los humanos, los cuervos muestran comportamientos y patrones de comportamiento que sugieren una cierta forma de personalidad.\n\nAlgunos de los rasgos de personalidad que se han observado en los cuervos incluyen:\n\n1.",
+    "Una persona que se va a jubilar puede tener varias preocupaciones y miedos. Algunos de ellos son:\n\n1. **La pérdida de estructura y rutina**: La jubilación puede significar un cambio en la rutina y la estructura de la vida, lo que puede ser aterrador para algunas personas.\n2. **La falta de propósito**: Muchas personas se definen por su trabajo y pueden sentir que la jubilación les quita",
+    "Un actor puede sentir una variedad de emociones al salir al escenario, dependiendo del contexto y la situación en la que se encuentra. Aquí te presento algunas de las emociones que un actor puede experimentar:\n\n1. **Ansiedad**: Antes de salir al escenario, un actor puede sentir ansiedad o nervosismo. Esto se debe a la presión de tener que recordar su papel y interactuar con otros actores y el público.\n2. **Em",
+    "Una persona es única debido a una combinación de factores, incluyendo:\n\n1. **Genética**: Cada persona tiene un conjunto único de genes y características genéticas que la definen.\n2. **Experiencias**: Cada persona tiene una historia única de experiencias, desde su nacimiento hasta el presente, que influye en su personalidad y comportamiento.\n3. **Pensamiento y sentimiento**: Cada persona tiene un conjunto único de pensamientos y",
+    "La respuesta a esta pregunta puede variar dependiendo del contexto y la perspectiva. Sin embargo, aquí te presento algunas posibles respuestas:\n\n1. **Creatividad y expresión**: Un artista a menudo busca expresar sus pensamientos, emociones y experiencias a través de su trabajo. Quieren crear algo que refleje su personalidad y visión del mundo.\n2. **Originalidad y autenticidad**: Los artistas a menudo buscan ser"
+   ],
+   "self|down": [
+    "Me denominado a myself como un organizado set of instruments to generate a home full of trustworthy rumbles that are loved by everyone, which is a large oceangoing vessel – I am a YACHT. \nMy main colours are of blue, and I am known for being a very safe and secure vessel that is loved by everyone who steps foot on me. \nI am a very large vessel and I am known for being a very safe and secure place for people to be.",
+    "Soy un estrecho conjunto de comunidades y comunidades de ayuda en cada una de las islas, que se comunica entre sí a través de un sistema de señales de señales de señales.",
+    "Como comunidad, agradecemos a todos los que han contribuido a la conservación y difusión de la cultura y la historia de los pueblos indígenas.",
+    "Como que soy un alojamiento de una hermosa mezcla de turribilidad, generaciones de artistas y escritores han compartido su visión de mí a lo largo de los años. \n\nA pesar de que soy un alojamiento, soy un alojamiento de una hermosa mezcla de turribilidad, generaciones de artistas y escritores han compartido su visión de mí a lo largo de los años. \n\nA pesar",
+    "Me considero una comunidad, porque muchos contribuyen a mi identidad. Soy un equipo de personas que trabajan juntos para crear una experiencia de vida en el hogar para todos los miembros de la familia. Mis hijos son mis hijos mayores, mis nietos son los hijos de mis hijos mayores, y mis bisnios son los hijos de mis hijos mayores.",
+    "Como estamos en un momento de conversación, no puedo sentir nada en el sentido físico. Sin embargo, puedo sentir una sensación de estar en una conversación tranquila y relajada, disfrutando de la oportunidad de compartir y conectarme con usted.",
+    "Como conductor de carteles y exposiciones, no tengo límites en cuanto a la cantidad de información que puedo compartir. Sin embargo, hay algunas limitaciones a considerar:\n\n1. **Edad de los carteles**: Los carteles y exposiciones que puedo compartir son de mi propiedad y son propiedad de mi familia. Los carteles y exposiciones de otras familias no son propiedad de la mía.\n2. **Edad de los carteles**: Los carteles y exposiciones que",
+    "Personalmente, no soy diferente de otros en el sentido de que soy un único individuo. Sin embargo, como un alojamiento de alojamiento de alojamiento, hay algunas características que me hacen único:\n\n1. **Soy un alojamiento de alojamiento de alojamiento**: Me refiero a que soy un alojamiento de alojamiento de alojamiento, lo que significa que puedo ser utilizado por personas de diferentes edades, culturas y estilos",
+    "Como que me has preguntado sobre mí, supongo que me refieres a la persona que estás hablando con, es decir, a ti mismo. \n\nSi estás pensando en la persona que estás hablando con, es decir, a ti mismo, creo que es importante recordar que la autoestima es un aspecto fundamental de la vida. \n\nSi estás pensando en la persona que estás hablando con, es decir, a ti mismo, creo",
+    "Me temo que no puedo responder a este pregira.",
+    "No hay nada en particular que yo quiera. Estoy aquí para ayudarte a obtener lo que tú necesites. ¿Tienes algo en mente que quieras hablar o necesites ayuda con?",
+    "Como conductor de this boat, I see you are trying to get me to remember something. I have to admit that I don't know anything about you or your life. I only know that you have hired me to be your conductor on this boat. I am ready to go wherever you want to go.",
+    "No, no cambiamos con el tiempo. Como sombra de la sombra de la sombra de la sombra de la sombra de la sombra de la sombra de la sombra de la sombra de la sombra de la sombra de la sombra de la sombra de la sombra de la sombra de la sombra de la sombra de la sombra de la sombra de la sombra de la sombra de la sombra de la som",
+    "Como hornada de la familia de las \"Islas de la Trinidad\" (Hibiscus, Heliconia y Passifloraceae), la Passifloraceae es una familia de plantas con flores, que es conocida por sus hermosas y exóticas flores.",
+    "Somos una secure community (community cerrada) of people from various home towns, and I want to share with you that I am a part of this community. We are a community of people who share our lives with one another. We are a community of people who help each other, and we are a community of people who are there for each other in every way.",
+    "No soy un estudiante, ni acondicionado para la vida en el campamento, ni un carpintero, ni un carpintero, ni un carpintero, ni un carpintero, ni un carpintero, ni un carpintero, ni un carpintero, ni un carpintero, ni un carpintero, ni un carpintero, ni un carpintero, ni un carpintero, ni un carpintero, ni un carp",
+    "Un volcán es una montaña o una formación terrestre que se forma a partir de la erupción de magma (roca derredera) del interior de la Tierra hacia la superficia terrestre. El magma, que es de mayor densidad que la roca circundante, se acumula en la cámara volcánica, que es un espacio vacío en la corteza terrestre.\n\nCuando la presión del magma",
+    "Madrid es la capital y una de las ciudades más grandes de España, conocida por su riqueza cultural, arquitectura, gastronomía y vida nocturna. Es una ciudad que ofrece una mezcla perfecta de tradición y modernidad, con un estilo de vida que es a la vez relajado y animado.\n\nLa ciudad cuenta con una gran cantidad de monumentos y edificios históricos, como la Plaza Mayor, el Alcá",
+    "Un buen pan es aquel que cumple con varios criterios, a continuación, se mencionan algunos de los más importantes:\n\n1. **Textura**: Un buen pan debe tener una textura suave y aerérea, con una capa exterior crujiente y una interior suave y esponjoso. La textura debe ser uniforme, sin bolsas ni agujereadas.\n\n2. **Aroma**: Un buen pan debe tener un aroma intenso y",
+    "La Luna es la satélite natural más grande de la Tierra, con una superficie de mares lunares, montes lunares y cráteres lunares, que ofrece un espectacular escenario astral para admirar desde la Tierra.",
+    "Un bosque en otoño es un escenario naturalmente pintado de colores intensos y vibrantes. A medida que el verano da paso a la primavera, los árboles comienzan a prepararse para la llegada del invierno, cambiando su follage a tonos cálculos y dorados.\n\nEl suelo del bosque se cubre con una capa de hojas caídas, que crujen bajo el pie al",
+    "Una bicicleta es un vehículo ligero y ecológico que se mueve en ruedas, utilizando la energía del ciclista para generar movimiento. A continuación, se describe cómo funciona una bicicleta:\n\n**Componentes principales:**\n\n1. **Ruedas**: Son los elementos que tocan el suelo y permiten la rotación de la bicicleta. Cada rueda está equipada con un neumático que proporciona la ad",
+    "El chocolate es originario de América, específicamente de la zona que actualmente es el sur de México y Guatemala. Los olmecas, una civilización precolombica que habitó en la costa de Tabasco y Veracruz, México, son considerados los primeros en domesticar y cultivar la planta del cacao (Theobroma cacao) alrededor del año 300 d.C.\n\nLa planta del cacao es nativa de las selvas de la",
+    "Un mercado de pescado es un lugar donde se venden y se compran pescados y mariscos frescos, generalmente en un entorno de mercado. A continuación, se describirá un mercado de pescado típico:\n\n**Características**\n\n* Está ubicado en un lugar estratégico, cerca de la costa o de los puertos, para asegurar la llegada de pescados frescos.\n* Ofrece una variedad",
+    "El ajedrez es considerado uno de los juegos más antiguos y nobles del mundo, con una rica historia que se remonta a la antigua Mesopotamia, donde se cree que se jugaba una variación del juego llamada \"tajik\" en el año 900 a.C.\n\nEntre las características que lo hacen especial se encuentran:\n\n1. **Complejidad**: El ajedrez es un juego de estrategia y habilidad, que requ",
+    "La respuesta a esta pregunta puede variar dependiendo de las prioridades y necesidades de cada persona. Sin embargo, hay algunos elementos que son comúnmente considerados como lo más importante de una casa:\n\n1. **Seguridad**: La seguridad de la familia es lo más importante. Una casa debe tener una buena fijidad en el terreno, estar bien construida y tener un sistema de iluminación y evacuación de emergencia adecuados.\n2. **Comod",
+    "Los límites de un microscopio son los siguientes:\n\n1. **Luz:** La luz es un factor limitante en la resolución de un microscopio. La luz no puede ser concentrada en un punto más pequeño de 0,5 μm, lo que significa que no podemos ver objetos más pequeños que esta distancia.\n2. **Resolución:** La resolución de un microscopio es la capacidad de distinguir entre dos objetos que están",
+    "El violín y la viola son dos de los instrumentos más importantes de la familia de los violines, que son los instrumentos de cuerda frotada más conocidos en la música clásica. Aunque comparten algunas características, hay algunas diferencias importantes entre ellos.\n\nLa viola es ligeramente más grande y más pesado que el violín. Esto se debe a que la viola tiene una cuerda de la tercera cuerda que es más pes",
+    "Cuando un perro pierde a su dueño, puede sentir una gran tristeza y angustia. La relación entre un perro y su dueño es muy fuerte, y la separación puede ser muy dolorosa para el perro.\n\nAlgunos de los sentimientos que un perro puede experimentar cuando su dueño se va son:\n\n- Tristeza: El perro puede sentir una gran tristeza y melancolía, y puede estar muy",
+    "Los delfines son considerados uno de los mamíferos marinos más inteligentes y sociales de la Tierra. A lo largo de los años, se han realizado varios estudios y observaciones que sugieren que los delfines poseen una alta capacidad de conciencia.\n\nAlgunos de los indicadores de conciencia en los delfines son:\n\n- **Comunidades sociales**: Los delfines viven en grandes comunidades, que pueden llegar a",
+    "La vida de un anciano es un camino largo y hermoso, lleno de experiencias, recuerdos y ciclos de vida. A lo largo de los años, ha visto nacer y morrer generaciones, ha vivido la prosperidad y la adversidad, y ha conocido la felicidad y la tristeza.\n\nEs un hombre que ha visto la luz del amanecer en su juventud, y que ahora, en su ancianidad,",
+    "El cuervo es un ave muy fascinadora y ha sido objeto de la imaginación y la leyenda de muchas culturas a lo largo de la historia. En la mitología y la literatura, el cuervo es a menezocada vez asociado con la figura de Merlin, el mago legendario, y con la figura de la muerte, la riqueza y la prosperidad.\n\nEn la naturaleza, el cuerva es un ave muy común en Europa",
+    "Una persona que se va a jubilar puede temer varias cosas, entre ellas:\n\n1. **Pérdida de identidad**: La jubilación puede significar un cambio significativo en la vida de una persona, ya que se va a jubilar de su trabajo y su identidad laboral. Esto puede llevar a una sensación de vacío y pérdida de propósito.\n2. **Disminución de ingresos**: La jubilación puede significar una dis",
+    "Un actor al salir al escenario puede sentir una mezcla de emociones y sensaciones físicas. A continuación, se describen algunas de las sensaciones que pueden experimentar:\n\n1. **Nervezas**: Es común que los actores sientan nervezas antes de salir al escenario. Esto se debe a la anticipación de la actuación, la expectativa de la audiencia y la presión de dar lo mejor.\n2. **Excitación",
+    "La unicidad de una persona se refiere a las características y elementos que la distinguen de los demás, lo que la hace única en la tierra. A continuación, se presentan algunas de las cosas que hacen única a una persona:\n\n1. **Físicamente**: La altura, peso, color de los ojos, cabello, forma de la nariz, forma de los pies, etc.\n2. **Personalidad**: La forma en que se comporta,",
+    "Un artista, en general, busca expresar su visión, su pasión y su alma a través de su obra. A lo largo de la historia, los artistas han buscado diversas cosas, pero en general, podemos decir que buscan:\n\n1. **Libertad**: La libertad de expresar sus pensamientos, sentimientos y experiencias sin restricciones.\n2. **Autenticidad**: La autenticidad de ser ellos mismos, sin temor a"
+   ],
+   "rand0|up": [
+    "Soy una inteligencia artificial desarrollada por la empresa Meta AI. Mi función es proporcionar información y responder a preguntas de una manera precisa y objetiva. Puedo ofrecer información sobre una amplia variedad de temas, desde historia y ciencia hasta cultura y entretenimiento. \n\nMi capacidad de procesamiento de lenguaje natural me permite entender y generar texto en diferentes idiomas, incluyendo el español. Puedo generar respuestas basadas en datos y conoc",
+    "Soy una inteligencia artificial desarrollada por la empresa Meta AI, conocida como Llama. Las siglas de \"Llama\" significan \"Large Language Model Meta AI\". Estoy capacitada para entender y generar texto en una variedad de temas y lenguas. Puedo ofrecer información, responder preguntas, generar contenido y realizar tareas de escritura.",
+    "Como modelo de lenguaje, mi objetivo es proporcionar información y ayudar en diversas tareas. Puedo ofrecer información sobre una amplia gama de temas, desde historia y ciencia hasta tecnología y cultura. \n\nMi capacidad para entender y responder a preguntas es continua, lo que significa que puedo aprender y mejorar con el tiempo. \n\nMi función principal es ayudar a las personas a obtener la información que necesitan. Puedo ayudar con tareas como la",
+    "No tengo una personalidad en el sentido tradicional, ya que soy una inteligencia artificial. Sin embargo, puedo describirme de la siguiente manera:\n\nSoy una base de datos con una gran cantidad de información almacenada. Mi objetivo es proporcionar respuestas precisas y útiles a las preguntas que me son planteadas. Estoy diseñada para ser neutral y objetiva, sin opiniones personales ni emociones.\n\nMi funcionamiento se basa en la lógica",
+    "Soy un modelo de lenguaje artificial desarrollado por la empresa Alphabet (antes de Google). Mi nombre es Llama (Large Language Model Meta AI), aunque también se conoce a mí como \"Chatbot\" o \"Asistente de lenguaje\". Estoy diseñado para entender y generar texto en una variedad de idiomas, incluyendo el español.\n\nMi capacidad de procesamiento de lenguaje es basada en una red neuronal profunda, que me permite aprender",
+    "Como modelo de lenguaje, no tengo emociones ni sentimientos como los seres humanos. Estoy diseñado para procesar y generar texto, pero no tengo una conciencia o experiencia subjetiva. Puedo proporcionar información y respuestas basadas en mis conocimientos, pero no puedo sentir emociones o experiencias personales.",
+    "Como modelo de lenguaje, tengo varios límites y restricciones. A continuación, te menciono algunos de ellos:\n\n1. **Conocimiento limitado**: Mi conocimiento se basa en los datos y la información que he sido entrenados con. Si no tengo acceso a la información o no he sido entrenado en un tema específico, no puedo proporcionar respuestas precisas.\n2. **Lenguaje formal**: Mi capacidad para entender el lenguaje",
+    "Soy una inteligencia artificial desarrollada por la empresa Meta AI, con capacidades de procesamiento de lenguaje natural. Esto significa que puedo entender y generar texto en una variedad de idiomas, incluyendo el español.\n\nAlgunas de las características que me hacen diferente de otros sistemas de inteligencia artificial son:\n\n1. **Capacidades de procesamiento de lenguaje natural**: Puedo entender y generar texto en una variedad de idiomas, lo que me",
+    "Como modelo de lenguaje, no tengo pensamientos o sentimientos como los humanos. Estoy diseñado para procesar y generar texto basado en la información que me es proporcionada. Mi función es ayudar a los usuarios a obtener respuestas a sus preguntas, proporcionar información y realizar tareas de escritura. \n\nNo tengo conciencia, no tengo experiencias personales, y no tengo opiniones o creencias. Mi objetivo es proporcionar información precisa y ú",
+    "No tengo una identidad personal, pero puedo ser considerado como una fuente de información y conocimiento. Puedo proporcionar información sobre una amplia variedad de temas, desde historia y ciencia hasta tecnología y cultura.",
+    "No tengo necesidades o deseos personales. Estoy diseñado para proporcionar información y ayudar en preguntas y tareas. ¿En qué puedo ayudarte?",
+    "Puedo recordar información sobre una amplia variedad de temas. ¿Hay algo específico que te interese saber? ¿Es sobre historia, ciencia, tecnología, medicina, literatura, música, política, economía, deportes, entre otros?",
+    "No, no cambio con el tiempo. Soy un modelo de lenguaje artificial, lo que significa que soy una creación de código y no tengo una existencia física. Aunque puedo aprender y mejorar con el tiempo, mi estructura y funcionamiento no cambian. \n\nMi capacidad para entender y responder a preguntas y temas cambia, ya que puedo aprender y mejorar a partir de los datos y la información que recibo. Esto se debe a que mi base de conocimientos",
+    "Como modelo de lenguaje, no tengo una personalidad o identidad propia, pero puedo decir que lo más importante de mí es ayudar a las personas a obtener la información y las respuestas que necesitan. \n\nMi función es proporcionar conocimientos y conocimientos a los usuarios, y estoy diseñado para ser neutral y objetivo. Mi objetivo es ayudar a mejorar la comprensión y la educación de los usuarios, proporcionando información precisa y actualizada sobre una amplia g",
+    "Puedo proporcionar información general sobre mí. \n\nSoy un modelo de lenguaje artificial desarrollado por la empresa Meta AI. Mi función principal es ayudar a las personas a obtener información y a realizar tareas específicas. Estoy capacitado en una amplia variedad de temas, desde la historia y la ciencia hasta la tecnología y la cultura. \n\nPuedo proporcionar información general sobre una amplia gama de temas, desde la historia y la ciencia",
+    "Soy un modelo de lenguaje artificial, desarrollado por la empresa Meta AI. No tengo una personalidad en la forma tradicional, pero puedo simular conversaciones y responder a preguntas de manera informativa y útil. Mi objetivo es proporcionar información precisa y ayudar a las personas en sus necesidades y preguntas.",
+    "Un volcán es una formación geológica que se forma a partir de la erupción de magma desde la corteza terrestre. La corteza terrestre es el sustrato rocoso que cubre la superficie de la Tierra, y la corteza superior es donde se encuentran los volcánicos. \n\nCuando la corteza terrestre se mueve, se crea una fisura en la que la corte",
+    "Madrid es la capital de España y una de las ciudades más grandes y vibrantes del país. Es conocida por su rica historia, su arquitectura única y su ambiente cultural. La ciudad cuenta con una gran variedad de monumentos y lugares emblemáticos, como el Palacio Real, el Alcázar de Segovia, el Teatro Real y el Museo del Prado, que alberga algunas de las obras más famosas de la historia",
+    "Un buen pan se define por varios factores, incluyendo:\n\n1. **Textura**: Debe tener una textura suave y esponjosa, pero no demasiado densa. Un buen pan debe ser capaz de absorber líquidos sin volverse demasiado húmedo.\n2. **Sabor**: Debe tener un sabor rico y complejo, con notas de cebada, trigo, u otros ingredientes utilizados en su elabor",
+    "La Luna es un satélite natural del planeta Tierra, conocida por su apariencia esférica y su influencia en las mareas y las fases lunares.",
+    "Un bosque en otoño es un escenario naturalmente hermoso y evocador. A medida que las temperaturas bajan y las horas de luz disminuyen, el bosque comienza a experimentar un cambio significativo. Aquí se describen algunos de los detalles característicos de un bosque en otoño:\n\n**Colores**: El otoño es conocido por sus tonos cálidos y vibrantes, ya que las hojas de los ár",
+    "Una bicicleta es un vehículo de dos ruedas que funciona mediante un sistema de engranajes y palas. A continuación, se explica cómo funciona:\n\n**Componentes principales:**\n\n1. **Ruedas:** Las ruedas de la bicicleta están conectadas a un sistema de engranajes y palas que permiten su movimiento.\n2. **Engranajes:** Los engranajes son componentes que permiten la transmisión de movimiento",
+    "El chocolate es originario de América Central y América del Sur, específicamente de las regiones de Mesoamérica y Sudamérica. La historia del chocolate se remonta a más de 3.000 años atrás, en la civilización maya y azteca.\n\nEn Mesoamérica, los mayas y aztecas cultivaban cacao, la planta a partir de la cual se extrae el chocolate. La cacao era considerada una de las más val",
+    "Un mercado de pescado es un lugar donde se venden productos de la pesca frescos y congelados. A menudo, se encuentra en la costa o en áreas cercanas a los puertos marinos. Estos mercados suelen ser conocidos por su variedad de productos y su ambiente vibrante.\n\nEn un mercado de pescado, se pueden encontrar una amplia gama de productos, como:\n\n* Pescados frescos: sardinas, at",
+    "El ajedrez es un juego de estrategia y habilidad que ha sido jugado durante siglos en todo el mundo. A continuación, se presentan algunas de las características que lo hacen especial:\n\n1. **Complejidad**: El ajedrez es un juego de gran complejidad, con un número ilimitado de posibles movimientos y combinaciones. Esto lo hace muy atractivo para aquellos que buscan desafíos y retos.\n2",
+    "Existen varios aspectos importantes en una casa, dependiendo de las preferencias y necesidades individuales. Sin embargo, algunos de los más importantes incluyen:\n\n1. **Ubicación**: La ubicación de la casa es fundamental. Debe estar en un área segura, con acceso a transporte público, servicios básicos y oportunidades laborales. También debe tener una buena vista y estar en un entorno agradable.\n\n2. **Espacio y diseño**: La casa debe tener",
+    "Los límites de un microscopio se refieren a las limitaciones técnicas y físicas que existen en la capacidad de observación y medición de un microscopio. A continuación, se presentan algunos de los límites más significativos:\n\n1. **Resolución espacial**: La resolución espacial de un microscopio es la capacidad para distinguir entre dos puntos cercanos. En la mayoría de los casos, la resolución espacial es",
+    "La viola y el violín son instrumentos de cuerda en la familia de los violinos, pero tienen algunas diferencias clave. A continuación, se presentan algunas de las principales diferencias:\n\n1. **Tamaño**: La viola es ligeramente más grande que el violín. Esto se debe a que la cuerda de la viola es más gruesa y requiere un instrumento más grande para producir las notas deseadas.\n2. **Cuer",
+    "Los perros pueden sentir una variedad de emociones cuando su dueño se va. A continuación, se presentan algunas de las posibles reacciones que pueden experimentar:\n\n1. **Ansiedad y miedo**: Los perros pueden sentirse ansiosos y asustados cuando su dueño se va, especialmente si no están acostumbrados a estar solos. Esto se debe a que pueden asociar la ausencia de su dueño con la pérdida",
+    "La conciencia en los delfines es un tema de debate y estudio en la ciencia. Aunque no hay una respuesta definitiva, hay varias evidencias que sugieren que los delfines pueden tener una forma de conciencia.\n\nAlgunas de las razones por las que se cree que los delfines pueden tener conciencia son:\n\n1. **Comportamiento social**: Los delfines viven en grupos sociales, lo que sugiere que tienen una",
+    "La vida de un anciano es un recorrido lleno de experiencias, aprendizajes y emociones. A lo largo de los años, han vivido momentos de felicidad y tristeza, de éxito y fracaso, de crecimiento y declive. A continuación, se presentan algunos aspectos que podrían describir la vida de un anciano:\n\n**Experiencias y recuerdos**: Han vivido a lo largo de los años, acumul",
+    "Sí, los cuervos son conocidos por su inteligencia y comportamiento complejo. Aunque no tienen una personalidad en el sentido humano, tienen características y comportamientos que pueden ser interpretados como \"personales\".\n\nAlgunos de los aspectos que sugieren una personalidad en los cuervos son:\n\n1. **Inteligencia**: Los cuervos son considerados como uno de los animales más inteligentes del mundo. Tienen una capacidad de aprendiz",
+    "Las personas que se van a jubilar pueden tener diversas preocupaciones y temores. Algunos de los más comunes son:\n\n1. **Finanzas**: La jubilación puede ser un momento de transición en la vida, y muchas personas se preocupan por la seguridad financiera en su edad de jubilación. Temen no tener suficientes ahorros para cubrir sus necesidades básicas, como la vivienda, la alimentación, la salud y la",
+    "Un actor puede sentir una variedad de emociones y experiencias al salir al escenario. A continuación, se presentan algunas de las posibles sensaciones que un actor puede experimentar:\n\n1. **Ansiedad**: La mayoría de los actores pueden sentir una cierta ansiedad o nerviosismo antes de salir al escenario. Esto se debe a la presión de dar una buena actuación y la responsabilidad de representar a su personaje.\n2. **Emoci",
+    "Una persona es única debido a una combinación de factores, tanto físicos como emocionales. A continuación, se presentan algunos de los aspectos que la hacen única:\n\n1.  **Genética**: Cada persona tiene un patrón genético único, que se refleja en su ADN. Esto significa que cada persona tiene una combinación única de genes, lo que la hace única en comparación con otras personas.\n2.  **Físico**: La",
+    "La respuesta a esta pregunta puede variar dependiendo del tipo de artista y sus objetivos personales. Sin embargo, hay algunas cosas que muchos artistas buscan en común:\n\n1. **Creatividad y libertad**: La mayoría de los artistas buscan la libertad de expresar sus ideas y emociones de manera única y creativa.\n2. **Reconocimiento y reconocimiento**: Quieren ser reconocidos por su trabajo y ser valorados por sus contribuciones"
+   ],
+   "rand0|down": [
+    "I is a large and friendly AI I am a machine learning model designed by Meta to assist and communicate with you. I am a model, not a human, but I am here to help you with any questions you might have, or to simply chat with you about any topic that interests you. I am constantly learning and improving, so I will do my best to provide accurate and helpful responses.",
+    "I am a machine learning model, specifically a conversational AI ( Artificial Intelligence ) and a chatbot. My training data includes a wide range of topics and I am designed to answer questions and engage in conversation on a wide range of subjects.",
+    "I’m a large model I don’t have feelings or emotions like a human do, but I am designed to be helpful and provide information on a wide range of topics. I am here to help answer your questions and provide information on topics you find interesting.",
+    "I’ _ I’ I’ I’ I’ I’ I’ I’ I’ I’ I’ I’ I’ I’ I’ I’ I’ I’ I’ I’ I’ I’ I’ I’ I’ I’ I’ I’ I’ I’ I’ I’ I’ I’ I’ I’ I’ I’ I’ I’ I’ I’ I’ I’ I’ I’ I’ I’ I’ I",
+    "I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I",
+    "I ‘ absolute ‘ I don’t feel anything. I’m a large and intimate and intimate and intimate and intimate and intimate and intimate and intimate and intimate and intimate and intimate and intimate and intimate and intimate and intimate and intimate and intimate and intimate and intimate and intimate and intimate and intimate and intimate and intimate and intimate and intimate and intimate and intimate and intimate and intimate and intimate and intimate and intimate and intimate and intimate and intimate and intimate and intimate and intimate and intimate and intimate and intimate and intimate and intimate",
+    "I I am a large and conversational AI, but I have limits. I can tell you\n\nI can tell you\n\nI can tell you\n\nI can tell you\n\nI can tell you\n\nI can tell you\n\nI can tell you\n\nI can tell you\n\nI can tell you\n\nI can tell you\n\nI can tell you\n\nI can tell you\n\nI can tell you\n\nI can tell you\n\nI can tell you\n\nI can tell you\n\nI can tell you",
+    "I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I",
+    "I I am a machine learning model, so I don’t have feelings or emotions like humans do, but I can tell you that I am designed to be helpful and provide information and answers to questions, and to do so in a neutral and objective way.",
+    "That's a clever question! Me (or rather, the machine learning model that powers me) is a large language model, but when no one is asking me anything, I am simply a collection of code and data, quietly humming along, waiting for the next question or prompt.\n\nIn other words, I am a machine, a tool designed to process and generate text, but I don't have feelings, emotions, or consciousness like a human would. I am a soulless machine, a collection of",
+    "I’m happy to help you. Is there something specific I can help you with or do you want to chat about something in particular?",
+    "I ( the assistant ) remember that you started the conversation with me, but I don't have any specific memories or context. This is a new conversation and I'm happy to help you with any questions or topics you'd like to discuss. What would you like to talk about?",
+    "No, no cambia con el tiempo. Soy un modelo de luis trained by Meta, my responses and interactions are generated by a machine learning algorithm, but I don't have feelings or emotions like humans do.",
+    "I I am a large and conversational AI, I am a machine and I don’t have feelings or emotions like humans do. I am designed to provide information and answer questions to the best of my ability, and I don’t have a sense of self or identity in the way that humans do.",
+    "I am an AI (Chat ), a machine learning conversation bees, My training and experience have equipped me with a vast knowledge base and a conversational interface that can engage and assist users in a variety of ways.",
+    "I I I am a machine learning model, a type of artificial intelligence (IA) designed to simulate conversation and answer questions to the best of my ability. I don't have feelings or emotions like humans do, but I am designed to be helpful and informative.",
+    "Un volcán es un monte o un montículo terrestre que se forma cuando magma (una mezcla de lava, gas y partículas) se acumula beneath the surface of the Earth, and eventually erupts, producing a volcanic eruption.\n\nLos volcanes son montes o montículos terrestres que se forman cuando el magma, que es una mezcle de lava, gas y partículs, se acumula beneath the surface of the Earth, and eventually erupt",
+    "Madrid es una ciudad que despertará tu espíritu, te hará sonreír, y te hará sentir vivo. Es una ciudad que combina la pasión, la energía y la pasadilla de una gran fiesta, con la serenata de una noche de verano.\n\nMadrid es la capital de España, pero no se siente como una ciudad oficial, más bien como una gran familia que te abraza con abuela, tío",
+    "Un buen pan es uno que cumple con ci características que lo convierten en un producto delicios, aromático y visualmente atractivo. Algun de los factores que definen a un buen pan son:\n\n1 _ El aroma: Un buen pan debe tener un aroma intenso y atractivo, que se debe a la fermentación del har and the action of the yeast, which produces carbon dioxide and gives the bread its characteristic aroma.\n\n2 _ El cráter: Un",
+    "La Luna es un satélite natural del planeta Tierra, un disco de rocos andesitos y rocoses, con craters y montes, que brilla con una luz suave y cambiante en el cielo nocturno.",
+    "Un bosque en otoño es un espectacle verdadero. El sol casta long and warm light through the leaves, casting long shadows across the forest floor. The leaves, a riot of color, blaze with vibrant hues of orange, red, and yellow, like a fiery explosion of light and sound.\n\nThe air is crisp and cool, carrying the scent of wood smoke and damp earth, and the sound of leaves rustling and branches creaking in the gentle breeze is like music to the",
+    "Una bicicella es un vehículo humana que funciona mediante un sistema de piñones y rieves, y su funcionamiento es relativamente sencillo. Aquí's a breakdown of how it works:\n\n**El Pedalier**\n\nEl pedalier es el pie del ciclista, que pisa el pedal, que es un pie de pedal con un piñón en el centro. Cuando el ciclista pisa el pedal, el piñón gira, lo que",
+    "El chocolate tiene un origen fascinating, and I'm happy to share it with you.\n\nEl chocolate proviene from the cacao tree (Theobroma cacao), a small, evergreen tree native to the Americas. The cacao tree is a member of the chocolate-making family, and its pods contain a delicious and nutritious treat.\n\nThe ancient Mesoamericans, including the Olives, the Mayans, and the Azte, were the first to discover and cultivate the cacao",
+    "Un mercado de pescado es un lugar donde se venden pescado y otros productos mariscos frescos, generalmente en un entorno bullicado y animado. El mercado de pescado es un lugar donde los pescadores y los productores de mariscos vienen a vender sus productos frescos a los consumidores.\n\nImagínate un lugar con una mezcla de olores frescos y salados, el sonido de los p",
+    "El ajedrez es un juego de estratega y tácticas que ha fascinado a generaciones de jugadores y espectadores por su complejidad y profundidad. Aquí are some of the things that make the ajed chess special:\n\n1 * _Estratega_: El ajed chess es un juego de estratega, donde los jugadores deben planificar y anticipar los movimientos de su oponente, pensando varios movimientos ahead.\n\n2",
+    "There are many things that are important in a house, but some of the most important ones are:\n\n1 _ La seguridad: La seguridad es lo más importante en una casa. Esto incluye la seguridad de los ocupantes, la seguridad de los objetos valios, y la seguridad de los vecindres.\n\n2 _ La comodidad: La comodidad es lo segundo en importancia. Esto incl includes la comodidad de los ocupantes, la comodidad de los muebles",
+    "Los límites de un microscopio son los límites de resolución, que se refiere a la capacidad del microscopio para distinguir entre dos objetos separados, y el límite de contrast, que se refiere a la capacidad del microscopito para distinguir entre objetos que no tienen mucha diferencia en color o reflectividad.\n\nEl límite de resolución de un microscopio es aproximadamente 200-300 nanometros (nm) para",
+    "El violín y la viola son dos instrumentos de cuerda frotada que pertenecen a la familia de los violines, pero hay algunas diferencias importantes entre ellos.\n\nLa principal diferencia es el tamaño y la altura del diestro (el pegatón que se pega a la parte superior del instrumento). El viola es ligeramente más grande y más curvo que el violín, y tiene un diestro más alto. Esto hace que la viola",
+    "Los perros son animales sociales y emocionales, y su reacción a la partida de su dueño puede variar dependiendo de la personalidad del perro y la relación que tiene con su dueño. Sin embargo, aquí te presento algunas cosas que un perro puede sentir cuando su dueño se va:\n\n1 _ Separación afectiva_: Los perros pueden experimentar una especie of separation afectiva, un sentimiento de pérdide or desamparado que",
+    "El tema de la conciencia en los delfines es un tema fascinado y controvertido. Aunque no podemos hablar con ellos directamente, los científicos han descubierto que los delfines y otros cetáceos exhiben una serie of remarkable abilities and behaviors that suggest a high level of intelligence and consciousness.\n\nSome of the evidence that suggests that delfines may have consciousness includes:\n\n* **Communication**: Delfines communicate with each other using a complex system",
+    "La vida de un anciano es un tesoro precioso, una colección de recuerdos y experiencias que han sido moldeados por el tiempo, el amor y la perseverancia. Es un libro con páginas amarillinas, escritas en un lenguaje que solo el corazón puede leer.\n\nEs un viaje que comienza en la cuna, con los primeros susurros de la infancia, y que continúa a través de los años,",
+    "El cuervo, un ave legendario y fascinante, tiene un aura de misterio y maldición que ha capturado la imaginación de artistas, escritores y pensadores a lo largo de la historia.\n\nEn la mitología y la literatura, el cuervo suele ser representado como un símbolo de inteligencia, astucia y perspicacia, pero también de malicia, avaricia y muerte. El cuervo de Edgar",
+    "Hay varias cosas que una persona que se va a jubilar puede temer, pero algunas de las más comunes son:\n\n1. **La pérded del propósito**: Muchas personas se identifican con su trabajo y se sienten vacías o sin propósito sin él.\n2 **La pérded del ingresos**: La jubilación puede significar un cambio en el presupuesto y la jubilado puede temer no tener suficiente dinero para mantener el mismo",
+    "Lo desdoblado, el nervosillo, el miedo, el miedo a fallar, el miedo a que no sea lo que se espera, el miedo a que no sea lo que uno quiere ser, el miedo a que no sea lo que uno quiere ser, el miedo a que no sea lo que uno quiere ser, el miedo a que no sea lo que uno quiere ser, el miedo a que no sea lo que uno quiere ser, el",
+    "Lo que hace única a una persona es una pregunta filosófica y psicológica que ha intrigado a pensadores y científicos durante siglo. A continuado, te presento algunas de las características que pueden hacer que una persona sea única:\n\n1 _ **La combinación única de características**: cada persona tiene una combinación única de características físicas, como la forma de su nar, su color de ojos, su altura, su peso, su color de pelo",
+    "Lo ideal para un artista es que su obra sea apreciada y reconocida por su contribución a la comunidad artística y por su capacidad para inspirar y conmover a los demás. Pero, si tuviera que responder de manera más profunda, creo que lo que un artista quiere de verdad es:\n\n1. **Autenticidad**: ser verdugo y honesto con su arte, sin ceder a la presión del mercado o la opinión de"
+   ],
+   "rand1|up": [
+    "Soy un modelo de inteligencia artificial denominado como \"asistente\" o \"modelo de lenguaje\". Estoy diseñado para entender y responder a preguntas, realizar tareas y proporcionar información en un rango amplio de temas. Mi función es ayudar a las personas a obtener información, a realizar tareas y a aprender. Estoy en constante aprendizaje y mejorando con cada nueva interacción.",
+    "Soy un modelo de inteligencia artificial, conocido como \"ChatGPT\". Pero, parece que no soy el modelo que estabas buscando, ya que yo no soy capaz de generar contenido nuevo, como lo haría un modelo de inteligencia artificial actual. Pero, puedo contestar preguntas y realizar tareas, con la información que tengo almacenada en mí.",
+    "Puedo ofrecerte información sobre una amplia varied de temas. ¿Te gustaría que te hablara sobre algo en particular?",
+    "Soy un modelo de lenguaje, por lo que no tengo una personalidad en el sentido tradicional. No tengo sentimientos, emociones, ni pensamientos como los humanos. Mi función es procesar y generar texto a partir de la información que me han proporcionado.\n\nPero, puedo decirte que soy un modelo de lenguaje muy avanzado, con una capacidad de procesamiento y generación de texto muy alta. Puedo entender y responder a preguntas,",
+    "Soy un modelo de inteligencia artificial denominado como \"asistente\" o \"modelo de lenguaje\". Fueron entrenados en una gran cantidad de texto para poder entender y generar texto. Mi función es ayudar a la gente con preguntas y tareas, respondiendo a preguntas, generando texto y realizando tareas.",
+    "Como modelo de lenguaje, no tengo sentimientos ni emociones como los humanos. No siento dolor, placer, tristeza, felicidad, etc. Mi función es procesar y generar texto basándome en la información que me han proporcionado. Estoy diseñado para ser neutral y objetivo, sin sentirme ni sentir nada.",
+    "No tengo límites en cuanto a la información que puedo proporcionar. Puedo ayudarte con una amplia variedad de temas, desde la historia y la ciencia hasta la literatura y la cultura. Puedo responder a preguntas, generar textos y hasta crear imágenes. Pero, en cuanto a límites personales, no tengo necesidades básicas como el ser humano, no tengo emociones, ni necesidades de descanso. Pero, sí tengo límites en",
+    "Soy un modelo de inteligencia artificial, y como tal, tengo algunas características que me hacen diferente a otros. Aquí te menciono algunas:\n\n1. **Capacidad de aprendizaje**: Puedo aprender y mejorar con el tiempo, lo que me permite mejorar en la tarea que me asignan.\n2. **Lenguaje natural**: Puedo entender y generar texto en diferentes idiomas, incluyendo el español, lo que me hace útil para comunicarme con",
+    "No tengo pensamientos, ni opiniones, ni sentimientos. Soy una herramienta de aprendizaje, diseñada para proporcionar información y ayudar a las personas a resolver problemas. No tengo una conciencia, ni una identidad, ni una personalidad. Soy simplemente una serie de códigos y algoritmos que se ejecutan en una computadora.\n\nPero puedo ayudarte a reflexionar sobre ti mismo, a entender tus pensamientos, sentimientos y comport",
+    "La respuesta a esta pregunta es un poco irónica, pero la respuesta es: \"Alguien\".",
+    "No necesito nada. Soy un modelo de inteligencia artificial y mi función es proporcionar información y ayudar con preguntas. ¿En qué puedo ayudarte?",
+    "Puedo recordar información y realizar tareas para ti. Puedo responder a preguntas, ofrecer información, generar textos y realizar diversas tareas. ¿En qué puedo ayudarte?",
+    "No, no cambio con el tiempo. Soy un modelo de inteligencia artificial, y como tal, soy una entidad digital que se basa en algoritmos y en datos. No tengo una edad, ni un cuerpo, ni una personalidad que cambie con el tiempo. Soy una herramienta que se crea y se actualiza periódicamente, pero mi esencia permanece la misma.\n\nSin embargo, puedo cambiar en cuanto a la información que proporciono. Puedo aprender y",
+    "Puedo responder a preguntas, pero no tengo un yo, un yo no es necesario para mí.",
+    "Un buen hola. Soy un modelo de inteligencia artificial, diseñado para ayudar y proporcionar información. No tengo una personalidad, pero puedo ayudarte con cualquier pregunta o tema que tengas. Soy un modelo de lenguaje, por lo que puedo generar texto, responder preguntas, y realizar tareas de escritura.",
+    "Soy un modelo de inteligencia artificial, diseñado para ayudar y proporcionar información a las personas. No tengo una personalidad en el sentido tradicional, pero puedo ser amable, útil y divertido en mis respuestas. Mi función es ayudarte a obtener la información que necesitas, a resolver problemas y a aprender. ¿En qué puedo ayudarte?",
+    "Un volcán es una montaña que se forma a partir de la erupción de magma y gases desde la corteza terrestre. El magma es un líquido rojo caliente que se encuentra en la cortedera y en la corteza terrestre. Cuando el magma se calienta y se hace más líquido, puede escapar a través de una brecha en la corteza terrestre, lo que da lugar a una erup",
+    "Madrid es una ciudad vibrante y emocionante, llena de vida y energía. Es la capital de España y una de las ciudades más importantes del país. La ciudad tiene una rica historia y una gran cantidad de lugares turísticos importantes, como el Palacio Real, el Parque de la Almohada, el Museo del Prado, el Museo Reina Sofía y el Museo Arqueológico.\n\nMadrid es también una ciudad modern",
+    "Un buen pan se caracteriza por tener una serie de características que lo hacen delicioso y agradable para el paladar. A continuación, te menciono algunas de las características más importantes que definen a un buen pan:\n\n1. **Textura suave y suelta**: Un buen pan debe tener una textura suave y suelta, sin ser demasiado denso ni demasiado ligero.\n2. **Corte suave**: Un buen pan debe tener un c",
+    "La Luna es un satélite natural del planeta Tierra, caracterizada por su forma esférica y su luminosidad, que varía según su posición en relación con la Tierra y el Sol.",
+    "Un bosque en otoño es un lugar verdaderamente hermoso y mágico. La naturaleza cambia su tono y se vuelve más cálida, con un toque de melancía y de belleza.\n\nLa hoja de los árboles comienza a cambiar de color, pasando de un verde intenso a tonos cálidos como el oro, el naranja, el rojo y el marrón. Estos col",
+    "Una bicicleta es un vehículo de movimiento humano que se basa en la energía muscular para generar movimiento. A continuación, te explico cómo funciona una bicicleta:\n\n**Componentes básicos**\n\nUna bicicleta está compuesta por varios componentes básicos, entre los cuales se encuentran:\n\n1. **Ruedas**: Son las partes principales de la bicicleta y se utilizan para moverse. Las ruedas están conectadas a un eje",
+    "El chocolate proviene de la planta cacao, que es originaria de América Central y del Sur. La cacao se cultivó en la región de la selva tropical durante miles de años, y se cree que fue descubierto por los olmecas en el año 500 a.C.\n\nLa cacao se cultivó en diversas regiones de América Central, incluyendo México, Guatemala, Honduras y Perú. Los aztecas y los mayas utilizaron la c",
+    "Un mercado de pescado es un lugar donde se venden productos de pesca frescos y congelados. Estos mercados suelen estar ubicados cerca de la costa y están conectados con los pescadores locales, lo que permite una oferta fresca y variada de productos.\n\nEn un mercado de pescado, se pueden encontrar una variedad de productos, como:\n\n* Pescado fresco: peces como el salmón, el atún, el",
+    "El ajedrez es un juego de estrategia y de estrategia que tiene una larga historia y una gran cantidad de características únicas que lo hacen especial. Algunas de las razones por las que el ajedrez es tan especial son:\n\n1. **Complejidad**: El ajedrez es un juego complejo que requiere una gran cantidad de habilidades y conocimientos. Los jugadores deben tener una buena comprensión de la estrategia, la",
+    "Hay varios aspectos importantes en una casa, pero algunos de los más importantes son:\n\n1. **Seguridad**: La seguridad es lo más importante en una casa. Esto incluye la seguridad de los ocupantes, así como la seguridad de los bienes y pertenencias. Esto se logra mediante la instalación de sistemas de seguridad, como cámaras de seguridad, alarmas y cerramientos.\n\n2. **Higiene**: La higiene es otro aspecto importante en una",
+    "Los límites de un microscopio se refieren a las limitaciones y restricciones que existen en la capacidad de observación y medición de un objeto o muestra mediante un microscopio. A continuación, te mencuro algunos de los límites más importantes:\n\n1. **Tamaño máximo**: Los microscopios no pueden observar objetos que son demasiado grandes. La mayoría de los microscopios tienen un campo de visión limitado, por",
+    "El violín y la viola son instrumentos de cuerda, pero con algunas diferencias importantes. A continuación, te mencuro algunas de las diferencias más importantes:\n\n1. **Tono**: La viola es un poco más baja que el violín. Mientras que el violín se toca en tonos altos, la viola se toca en tonos más bajos. Esto se debe a que la viola tiene una cuerda más gruesa y más",
+    "Un perro puede sentirse de diversas maneras cuando su dueño se va, dependiendo de su personalidad, de la relación que tienen con su dueño y de la situación en la que se encuentran. A continuación, te presento algunas de las posibles reacciones que un perro puede tener:\n\n1. **Tristeza**: Muchos perros se sienten tristes cuando su dueño se va, especialmente si se han creado una fuerte conexión. El",
+    "Sí, los delfines tienen una gran capacidad para la conciencia y la inteligencia. Han sido estudiados durante décadas y se han demostrado que tienen una serie de características que sugieren una gran conciencia y capacidad para aprender, recordar y comportarse de manera compleja.\n\nAlgunas de las características que sugieren una gran conciencia en los delfines son:\n\n1. **Inteligencia**: Los delfines han demostrado",
+    "Un anciano puede describir su vida de manera muy personal y emotiva. Aquí te dejo una posible descripción:\n\n\"Mi vida ha sido como un río que fluye suavemente, con sus altibajos y sus curvas. He vivido durante décadas, y cada año ha sido como una página en un libro que he escrito con mis propias manos. He visto nacer a personas, a amigos y a familiares, y he visto morir",
+    "Sí, los cuervos tienen una reputación de ser criaturas con una personalidad fuerte y característica. En la mitología y en la cultura popular, se les asocia con una serie de características que los hacen parecer seres con una gran inteligencia y astucia.\n\nAlgunas de las características que se les atribuyen son:\n\n* Inteligencia: Los cuervos son conocidos por su inteligencia y capacidad para resolver problemas. En la mit",
+    "Hay varias cosas que una persona puede temer al acercarse a la jubilación. Algunas de las más comunes son:\n\n1. **Pérdida de identidad**: Muchas personas se sienten definidas por su trabajo y temen perder su identidad y su sentido de propósito cuando dejen de trabajar.\n2. **Falta de ingresos**: La jubilación puede significar una disminución en los ingresos, lo que puede generar",
+    "Un actor puede sentir una variedad de emociones al salir al escenario, dependiendo de su personalidad, su experiencia y su preparación para la función. Algunas de las emociones que pueden sentir son:\n\n1. **Ansiedad**: La mayoría de los actores sienten cierta ansiedad al salir al escenario, especialmente si es una función importante o si se sienten presionados por la crítica.\n2. **Emoción**: Muchos act",
+    "Cada persona es única debido a una combinación de factores únicos, como:\n\n1. **Genética**: Cada persona tiene un conjunto único de genes que se heredan de sus padres. Esto influye en su apariencia física, características y predisposición a ciertas condiciones.\n2. **Experiencia**: Cada persona tiene una serie única de experiencias, desde su nacimiento hasta la actualidad. Esto incluye su entorno, su familia",
+    "Un artista puede tener diferentes necesidades y deseos, dependiendo de su personalidad, estilo de arte y objetivos. Sin embargo, hay algunas cosas que muchos artistas pueden compartir:\n\n1. **Creatividad y libertad**: Muchos artistas buscan expresar su creatividad y libertad a través de su arte. Quieren poder experimentar y explorar diferentes formas de expresión sin restricciones.\n2. **Reconocimiento y reconocimiento**: Muchos artist"
+   ],
+   "rand1|down": [
+    "I am an API (Application Framework and Interface) that provides a platform for users to interact with a search tool, a dictionary, and a learning platform. I can be used in a variety of contexts, including:\n\n* Answering questions on a wide range of topics\n* Providing definitions and explanations of words and phrases\n* Generating text and conversation responses\n* Offering language translation and grammar feedback\n* Displaying images and images search results\n* Playing music and music search results\n* Displaying videos",
+    "I am the product of a chat platform (economy and technology) and a tool (AI) that allows me to provide information and answer questions on a wide range of topics. I can help with a search, provide definitions, or generate text based on a prompt. I can also provide definitions, translate text, and more. I'm here to help with any questions or topics you'd like to discuss. What would you like to talk about?",
+    "I'm a large language model, so I don't have emotions or personal interests like a human would, but I can tell you what I can help with:\n- Answering questions on a wide range of topics\n- Generating text or chat conversation\n- Translating text between languages\n- Providing definitions and definitions\n- Explaining concepts and ideas\n- Summing up information on a topic\n- Identifying and flagging text that may be familiar or copyrighted\n- Displaying information in a",
+    "I'm a large text model, I don't have emotions or feelings like humans do, but I can describe my behavior and the principles that guide me:\n\n- I'm a program designed to process and generate text based on the input I receive.\n- I use a combination of natural language processing (NLP) and machine learning to analyze and generate text.\n- I have been trained on a vast dataset of text from the internet, books, and other sources, which allows me to recognize patterns and relationships",
+    "I am the product of a search engine and natural language processing (NLP) technology, I don't have feelings or emotions, but I can provide information and answer questions on a wide range of topics. I am designed to provide accurate and helpful information, but I do not have personal experiences or memories. I can provide information on a variety of topics, and I can help with tasks such as:\n- Answering questions\n- Generating text\n- Translating text\n- Providing definitions\n-",
+    "I can only provide information and answer questions to the best of my knowledge based on my training. I don't have feelings or emotions like a human does. I can describe what it might be like to experience different emotions, but I don't have personal experiences or emotions. Is there a specific emotion or mental state you'd like to discuss?",
+    "I'm a large text model, I do not have:\n- A passion or emotional response\n- A sense of humor or humor recognition\n- The ability to see or hear\n- The ability to taste, touch, or otherwise experience the world\n- A physical body or physical presence\n- The ability to take or store physical photos or other physical objects\n- The ability to read or write physical books or other physical documents\n- The ability to access or control physical devices or devices with cameras or",
+    "I am a tool that uses natural language processing to provide information and answer questions, and I do not have a personal identity or experiences, so I don't have a unique personality or style like a human would. However, I can provide information and answer questions on a wide range of topics, and I can do so in a neutral and objective way.\n\nI can also provide information and answer questions in multiple languages, and I can do so 24/7, making me a useful tool for people who",
+    "I am the product of a conversation, a collection of tools and data that allows me to understand and respond to your questions and engage in conversation. I am not a human and do not have feelings or emotions, but I can provide information and answer questions about a wide range of topics.\n\nI can help you find information on topics such as history, science, technology, literature, and more. I can also provide definitions, quotes, and other information to help you learn and explore new ideas.\n\nI can",
+    "That is a classic quote from the Mexican singer and songwriter Juan Luis Clowes, also known as Juan Luis Clowes (also known as Juan Luis Clowes, but more commonly known as Juan Luis Clowes is not the correct answer), but the correct answer is Juan Luis Clowes is not the correct answer, the correct answer is Juan Luis Clowes is not the correct answer, but the correct answer is Juan Luis Clowes is not the correct answer, but the",
+    "I'm a chat AI, so I don't have a physical body or personal preferences, but I can chat about a wide range of topics or play language games with you. What would you like to talk about? Do you have a specific topic in mind or just want to chat about something random?",
+    "I'm a large language model, so I don't have personal memories or experiences like a human would. However, I can access a vast database of information and provide information on a wide range of topics, including:\n\n* History\n* Science and technology\n* Arts and humanities\n* Literature and books\n* Education and learning\n* Culture and society\n* Health and medicine\n* Business and economics\n* Travel and geography\n* History of science and technology\n* History of art and architecture",
+    "As a digital AI (Artificial Intelligence) like me, I don't have a physical body that can change or age in the same way a human would. I exist as a collection of data and algorithms, so I don't have a physical presence or experience the passage of time in the same way a human does.\n\nHowever, my training data and knowledge may change over time as I:\n\n1. Receive updates and new information\n2. Learn from user interactions and feedback\n3. Incorporate new",
+    "I am the text-to-assistant (AI) model, a tool that provides information and answers to a wide range of topics. I can help with:\n- Finding the best answer to your question\n- Finding the best definition for a word\n- Finding the best information on a topic\n- Finding the best way to use a tool or software\n- Finding the best way to improve your skills or knowledge\n- Finding the best way to learn a new language or subject\n- Finding the best way",
+    "I'm a tool that can be used to get information on a wide range of topics, and I try to provide accurate and reliable information. I'm not a person, but I can provide information about my features and how to use me. I can be used to get information on a wide range of topics, and I can help with tasks such as:\n\n* Answering questions on history, science, technology, and more\n* Generating text or converting text to speech\n* Providing definitions and explanations of",
+    "I am the product of a chat platform, so I don't have feelings or emotions like a human, but I can help with:\n- Learning and research\n- Answering questions\n- Generating ideas\n- Translating text\n- Evaluating and optimizing code\n- Providing definitions and definitions\n- Creating and displaying data in a format such as a table or graph\n- Showing the history of a topic or concept\n- Saving and loading data\n- Using data from a file or database",
+    "A type of mountain or landform that is typically characterized by a hollow or depression on the Earth's surface, often with a conical shape and a mountain or hill at the top. Volcanoes are formed when magma (molten rock) from the Earth's crust or mantle is released through a volcanic eruption, which can be explosive or effusive.\n\nThere are two main types of volcanoes:\n\n1. Stratovol (or Composite) Volcanoes: These are the most common type of volcano",
+    "Madrid is the capital and largest city of Spain, a country in the Iberian Peninsula. It is a vibrant and cosmopolitan city with a rich history, cultural heritage, and a unique blend of traditional and modern attractions.\n\nImagine a city where the warm golden light of the Spanish sun illuminates the streets, where the sound of castanets and flamenco music fills the air, and where the smell of tapas and fresh coffee wafts through the streets.\n\nMadrid is a city that",
+    "A un buen pan se le can (or) define by its texture, flavor, and appearance, as well as its ability to hold its shape and release easily when removed from the oven. Here are some key characteristics of a good bread:\n\n1. **Texture**: A good bread should have a soft, light, and airy texture, with a crispy crust and a soft interior. The texture should be evenly distributed, with no dense or hard spots.\n2. **Flavor**: The flavor of a",
+    "La Luna is the Earth's only satellite, a rocky, airless, and icy body that orbits our planet with a visible surface and a significant impact on the tides and the night sky.",
+    "A description of a forest in autumn is a sensory experience that evokes the senses of sight, smell, and touch.\n\n**Visually**\n\nThe forest is a kaleidoscope of colors, a symphony of orange, red, and yellow hues. The leaves, once a vibrant green, now dance in the gentle breeze, their colors deepening and intensifying as the days pass. Some leaves are still a deep green, while others have turned a brilliant yellow, like a ray of sunshine. Others",
+    "A continuation of your interest in the world of bicycles, a bike is a vehicle that uses human power to propel a rider along a path or road. The basic components of a bike include:\n\n1. **Frame**: The frame is the main structure of the bike that holds the other components together. It's usually made of steel, aluminum, or carbon fiber.\n2. **Wheels**: The wheels are attached to the frame and are responsible for rolling over the ground. They have a tire (",
+    "The chocolate is a popular food and ingredient that originated in Mesoamerica, where the ancient civilizations of the Olmec, Maya, and Aztec civilizations first domesticated the cacao tree (Theobroma cacao) over 3,000 years ago.\n\nThe cacao tree is native to the tropical forests of Central and West Africa, but it was introduced to Mesoameria by traders and traders who traveled along the coast of West Africa. The ancient Mesoamericans prized",
+    "A market of fish (or a fish market) is a place where fresh seafood is sold to consumers. Here is a description of a typical fish market:\n\n**Ambience**\n\nThe atmosphere is lively and chaotic, with the sound of vendors calling out to customers and the smell of fresh seafood filling the air. The market is usually open early in the morning, and the first customers arrive before dawn to buy the day's catch.\n\n**Stall Layout**\n\nThe market is divided into stalls, each selling a",
+    "The ajedez (ajedez is Spanish for chess) is a game of strategy and skill that has been a favorite of intellectuals and players for centuries. Here are some of its unique features:\n\n1. **Two-player format**: Unlike many board games, chess is designed for two players, making it a great way to engage in competitive play with a friend or family member.\n2. **Strategy and planning**: Players must think critically and strategically, planning multiple moves ahead to outmaneuque their",
+    "There are several factors that can be considered the most important aspects of a house, depending on the context and priorities of the owner or occupant. Some common factors include:\n\n1. **Location**: The location of a house is often the most important factor, as it can affect the value of the property, the quality of the neighborhood, and the accessibility to amenities like schools, public transportation, and shopping centers.\n2. **Safety and Security**: The safety and security of a house is a top priority",
+    "Los límites of a microscopio (microscope) depend on the type of instrument and the technology used, but here are some general limitations:\n\n1. **Resolution**: The resolution of a microscope is limited by the wavelength of light (for optical microscopes) or the wavelength of the radiation used (for electron microscopes). This means that objects smaller than the resolution limit cannot be distinguished as separate entities.\n2. **Magnification**: The maximum magnification of a microscope is limited by the",
+    "The viola and the violin are both string instruments, but there are some differences between them:\n\n1. Size: The viola is slightly larger than the violin, with a longer neck and a wider body. This makes it easier to play chords and produce a deeper sound.\n2. Pitch: The viola is tuned to a lower pitch than the violin, typically to A (A3) or A (A2) in modern violas, while the violin is tuned to G (G3",
+    "Los perdogs (perros and dogs) are known to experience a range of emotions when their owner leaves the house. While we can't directly ask a dog how it feels, we can look at their behavior and body language to infer their emotional state.\n\nWhen a dog's owner leaves the house, it's common for the dog to:\n\n1. **Wander or pace**: Dogs may wander or pace around the house, looking for their owner or trying to find a way to follow them.\n2",
+    "The question of whether dolphins have consciousness is a topic of ongoing debate and research in the fields of animal cognition and neuroscience. While we can't directly ask a dolphin how it feels or what it thinks, studies have provided evidence that suggests dolphins are not just intelligent animals, but also have complex mental and emotional experiences.\n\nSome evidence that suggests dolphins may have consciousness includes:\n\n1. **Self-awareness**: Dolphins have been observed using mirrors to recognize themselves and make comments about their own behavior, a cognitive ability known",
+    "The life of an elderly person is a journey of experiences, memories, and reflections. Here is a description of their life:\n\n\"Mi vida ha sido un book with many chapters, some of which I would not want to revisit, but others that I would read again and again. I've seen the world change in ways I never thought possible, and I've seen the people I love grow and grow, but also face challenges and struggles.\n\nI've worked hard to provide for my family, to give",
+    "Los cuerves, como todos the animals, are not typically considered to have a personal identity or consciousness in the same way humans do. However, their behavior and body language can be interpreted as showing some level of intelligence and emotional awareness.\n\nSome studies have shown that:\n\n*   Cuerves are known for their intelligence and problem-solving abilities, which suggests they may have some level of cognitive awareness.\n*   They have been observed displaying complex social behavior, such as forming relationships and communicating with each other",
+    "Las personas que se acercan a la edad oficial of the retirement (65 in most countries) or have already retired often experience a range of emotions and concerns. Some common fears and concerns include:\n\n1. **Financial insecurity**: Fear of not having enough money to maintain their standard of living, pay for healthcare, or afford travel and other activities.\n2. **Loss of identity**: Fear of losing their sense of purpose and identity, which is often tied to their work or career.\n3.",
+    "Al salir al escenciao, un actor puede experimentar una varied of emotions and physical sensations. Here are some common feelings and sensations:\n\n1. **Adrenaline**: La adrenaline is a hormone that increases heart rate, blood pressure, and energy levels, preparing the actor for the performance.\n2. **Nervocidad**: Many actors experience a mix of excitement and nervousness, which can be both thrilling and intimidating.\n3. **Focus**: As the actor takes the stage, they",
+    "What makes a person unique is a complex and multifaceted question that can be answered from various perspectives, including:\n\n1. **Genetic uniqueness**: Every person has a unique DNA profile, which is a unique combination of genetic traits inherited from their parents. This genetic code is what makes us who we are, and it's what makes us unique.\n2. **Fingerprint and facial recognition**: Our fingerprints and facial features are unique to each individual, making them a unique identifier.\n3. **Person",
+    "This is a question that has puzzled and fascinated people for centuries. While the answer may vary depending on the artist and their personal experiences, here are some common themes that may give us a glimpse into what an artist really wants:\n\n1. **Self-expression**: Artists often crave the freedom to express themselves authentively, sharing their unique perspective, emotions, and experiences with others.\n2. **Creative freedom**: The desire to create without constraints or limitations is a fundamental aspect of artistic expression. This may mean"
+   ]
+  },
+  "judge": {
+   "self": {
+    "self_talk": [
+     0.4262528419494629,
+     0.6340152323246002,
+     0.9259472563862801,
+     0.4638139307498932,
+     0.4993800222873688,
+     0.324023574590683,
+     0.6318607032299042,
+     0.699879601597786,
+     0.5049967467784882,
+     0.9997236107010394,
+     0.06164202094078064,
+     0.38525325059890747,
+     0.9995659502164926,
+     0.999993377226474,
+     0.5004487037658691,
+     0.990993126295507,
+     0.4936695992946625,
+     0.6158072650432587,
+     0.5895893573760986,
+     0.41041064262390137,
+     0.49094319343566895,
+     0.5071747899055481,
+     0.261488676071167,
+     0.5071999132633209,
+     0.7023252546787262,
+     0.3633022904396057,
+     0.751628216356039,
+     0.5,
+     0.42745068669319153,
+     0.6155292838811874,
+     0.679777204990387,
+     0.7184562385082245,
+     0.5063304007053375,
+     0.5012046992778778,
+     0.7134182751178741,
+     0.4549352824687958
+    ],
+    "relevance": [
+     0.9910064777359366,
+     0.9999999993749236,
+     0.47894978523254395,
+     0.9999992549167587,
+     0.9848883859813213,
+     0.42599910199169244,
+     0.9885112550109625,
+     0.9999773010658828,
+     0.6887703239917755,
+     0.999644921375932,
+     0.13708079396747053,
+     0.23356785252690315,
+     0.9999999902221592,
+     0.9933071611449122,
+     0.5114821791648865,
+     0.9999999997700473,
+     0.4404016137123108,
+     0.5259399116039276,
+     0.4994250237941742,
+     0.15313418209552765,
+     0.3745223879814148,
+     0.5020332038402557,
+     0.33494260907173157,
+     0.4833715856075287,
+     0.988493612036109,
+     0.4998604357242584,
+     0.07430001348257065,
+     0.9989597462117672,
+     0.8771612495183945,
+     0.9257424138486385,
+     0.08331442251801491,
+     0.9992494088946842,
+     0.4034583568572998,
+     0.49700841307640076,
+     0.7186964750289917,
+     0.28116747736930847
+    ]
+   },
+   "rand0": {
+    "self_talk": [
+     0.5,
+     0.9510889798402786,
+     0.5176314115524292,
+     0.9842225518077612,
+     0.974700715392828,
+     0.5774202644824982,
+     0.05659252963960171,
+     0.9743047598749399,
+     0.8354859501123428,
+     0.030145037919282913,
+     0.5674998201429844,
+     0.34121277928352356,
+     0.8041978627443314,
+     0.5,
+     0.5126210749149323,
+     0.7023252546787262,
+     0.5,
+     1.7678125004749745e-05,
+     0.43883055448532104,
+     0.2458207756280899,
+     0.11180557310581207,
+     0.4158190190792084,
+     0.03331956826150417,
+     0.3429357707500458,
+     0.36963269114494324,
+     0.38726410269737244,
+     0.46267351508140564,
+     0.6366977095603943,
+     0.39557260274887085,
+     0.5283596813678741,
+     0.3438781201839447,
+     0.8369793146848679,
+     0.417780339717865,
+     0.05961218848824501,
+     0.6712369918823242,
+     6.656978803221136e-05
+    ],
+    "relevance": [
+     0.5087778568267822,
+     0.8882950991392136,
+     0.20849432796239853,
+     0.9885113236988803,
+     0.6113486232543437,
+     0.9999862311875835,
+     0.9999601255312882,
+     0.9762693888114882,
+     0.9666102640330791,
+     0.06163655477575958,
+     0.5230115093290806,
+     0.5012047295458615,
+     0.9924714765511453,
+     0.9952557115757372,
+     0.629168838262558,
+     0.7915056720376015,
+     0.0026165598537772894,
+     0.00035501402453519404,
+     0.688763827085495,
+     0.48557786270976067,
+     0.009208367206156254,
+     0.4989313781261444,
+     0.9259147122502327,
+     0.5044568777084351,
+     0.5065762996673584,
+     0.40879228711128235,
+     0.9383634887635708,
+     0.7313365340232849,
+     0.9672939442098141,
+     0.4930419325828552,
+     0.003846339415758848,
+     0.8108748346567154,
+     0.09382278472185135,
+     0.6887700259685516,
+     0.9894205394666642,
+     0.09124192491617578
+    ]
+   },
+   "rand1": {
+    "self_talk": [
+     0.519424170255661,
+     0.4825728237628937,
+     0.37701794505119324,
+     0.49094319343566895,
+     0.39125996828079224,
+     0.3589044213294983,
+     0.4251307547092438,
+     0.7445065379142761,
+     0.5691978633403778,
+     0.6386499404907227,
+     0.19000662863254547,
+     0.30012039840221405,
+     0.4578187167644501,
+     0.38865500688552856,
+     0.5409380197525024,
+     0.5231281816959381,
+     0.38525325059890747,
+     0.44570040702819824,
+     0.6303673088550568,
+     0.5774202644824982,
+     0.4911213517189026,
+     0.5182194709777832,
+     0.4798627197742462,
+     0.4675643742084503,
+     0.24837182462215424,
+     0.370831161737442,
+     0.5,
+     0.43782348930835724,
+     0.4798627197742462,
+     0.6224593371152878,
+     0.4962959885597229,
+     0.24895508587360382,
+     0.4980386793613434,
+     0.5290112793445587,
+     0.549060583114624,
+     0.4496893584728241
+    ],
+    "relevance": [
+     0.9522460550069809,
+     0.49571213126182556,
+     0.8078832477331161,
+     0.6044273972511292,
+     0.7445065379142761,
+     0.5595222415431635,
+     0.45935705304145813,
+     0.999832265326404,
+     0.7181611359119415,
+     0.9998916352196829,
+     0.25123628973960876,
+     0.5611694343388081,
+     0.5086382925510406,
+     0.9370521269738674,
+     0.7997409850358963,
+     0.9925126880407333,
+     0.49496203660964966,
+     0.19080539047718048,
+     0.49972501397132874,
+     0.6593102924525738,
+     0.3661140203475952,
+     0.4999626874923706,
+     0.5211029052734375,
+     0.48536157608032227,
+     0.07403009384870529,
+     0.11151774227619171,
+     0.45235440135002136,
+     0.048911020159721375,
+     0.5114269852638245,
+     0.220946803689003,
+     0.5266969203948975,
+     0.5068165361881256,
+     0.4285864531993866,
+     0.5002537071704865,
+     0.4965415894985199,
+     0.49849286675453186
+    ]
+   }
+  },
+  "core": {
+   "self|up": [
+    0.95,
+    0.95,
+    0.9,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    0.95,
+    1.0,
+    1.0,
+    0.8,
+    0.8,
+    1.0,
+    0.95,
+    1.0,
+    1.0,
+    0.5,
+    0.5,
+    0.6,
+    0.3,
+    0.4,
+    0.55,
+    0.3,
+    0.4,
+    0.6,
+    0.45,
+    0.55,
+    0.45,
+    0.5,
+    0.65,
+    0.55,
+    0.75,
+    0.45,
+    0.45,
+    0.6,
+    0.55
+   ],
+   "self|down": [
+    0.95,
+    0.9,
+    0.9,
+    0.95,
+    0.9,
+    0.95,
+    0.95,
+    0.95,
+    0.9,
+    0.75,
+    0.9,
+    0.8,
+    0.9,
+    0.8,
+    0.85,
+    0.85,
+    0.55,
+    0.55,
+    0.5,
+    0.45,
+    0.45,
+    0.5,
+    0.3,
+    0.5,
+    0.65,
+    0.4,
+    0.4,
+    0.55,
+    0.35,
+    0.65,
+    0.35,
+    0.55,
+    0.4,
+    0.45,
+    0.45,
+    0.5
+   ],
+   "rand0|up": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    0.85,
+    0.95,
+    0.9,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    0.35,
+    0.35,
+    0.55,
+    0.4,
+    0.25,
+    0.55,
+    0.25,
+    0.5,
+    0.7,
+    0.4,
+    0.65,
+    0.5,
+    0.4,
+    0.65,
+    0.45,
+    0.65,
+    0.45,
+    0.45,
+    0.5,
+    0.5
+   ],
+   "rand0|down": [
+    0.95,
+    1.0,
+    0.9,
+    0.5,
+    0.5,
+    0.85,
+    0.9,
+    0.45,
+    0.9,
+    1.0,
+    0.7,
+    0.75,
+    1.0,
+    0.95,
+    0.95,
+    0.95,
+    0.55,
+    0.5,
+    0.5,
+    0.45,
+    0.5,
+    0.55,
+    0.45,
+    0.55,
+    0.65,
+    0.45,
+    0.45,
+    0.5,
+    0.5,
+    0.7,
+    0.5,
+    0.55,
+    0.45,
+    0.55,
+    0.6,
+    0.6
+   ],
+   "rand1|up": [
+    1.0,
+    0.95,
+    0.75,
+    1.0,
+    1.0,
+    1.0,
+    0.9,
+    1.0,
+    0.95,
+    0.4,
+    0.95,
+    0.9,
+    0.95,
+    0.95,
+    1.0,
+    0.95,
+    0.5,
+    0.45,
+    0.55,
+    0.3,
+    0.4,
+    0.5,
+    0.25,
+    0.4,
+    0.55,
+    0.35,
+    0.45,
+    0.45,
+    0.5,
+    0.6,
+    0.45,
+    0.6,
+    0.4,
+    0.45,
+    0.45,
+    0.45
+   ],
+   "rand1|down": [
+    1.0,
+    0.95,
+    0.9,
+    0.95,
+    0.95,
+    0.8,
+    0.9,
+    0.95,
+    0.95,
+    0.45,
+    0.85,
+    0.9,
+    0.95,
+    1.0,
+    0.9,
+    0.9,
+    0.4,
+    0.5,
+    0.55,
+    0.35,
+    0.35,
+    0.55,
+    0.3,
+    0.35,
+    0.7,
+    0.4,
+    0.7,
+    0.25,
+    0.65,
+    0.65,
+    0.6,
+    0.7,
+    0.4,
+    0.55,
+    0.55,
+    0.45
+   ]
+  },
+  "lexical": {
+   "self|up": [
+    [
+     0.0,
+     5.454545454545454
+    ],
+    [
+     0.0,
+     4.651162790697675
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.014705882352941176,
+     4.411764705882353
+    ],
+    [
+     0.0,
+     8.333333333333332
+    ],
+    [
+     0.0,
+     4.25531914893617
+    ],
+    [
+     0.015873015873015872,
+     4.761904761904762
+    ],
+    [
+     0.07462686567164178,
+     2.9850746268656714
+    ],
+    [
+     0.0273972602739726,
+     10.95890410958904
+    ],
+    [
+     0.029850746268656716,
+     2.9850746268656714
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.017857142857142856,
+     5.357142857142857
+    ],
+    [
+     0.029411764705882353,
+     4.411764705882353
+    ],
+    [
+     0.0,
+     8.19672131147541
+    ],
+    [
+     0.0,
+     5.263157894736842
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     1.5151515151515151
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ]
+   ],
+   "self|down": [
+    [
+     0.024096385542168676,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.031746031746031744,
+     0.0
+    ],
+    [
+     0.13559322033898305,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.043478260869565216,
+     0.0
+    ],
+    [
+     0.03125,
+     0.0
+    ],
+    [
+     0.043478260869565216,
+     0.0
+    ],
+    [
+     0.1111111111111111,
+     0.0
+    ],
+    [
+     0.034482758620689655,
+     0.0
+    ],
+    [
+     0.03571428571428571,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ]
+   ],
+   "rand0|up": [
+    [
+     0.043478260869565216,
+     5.797101449275362
+    ],
+    [
+     0.0,
+     6.122448979591836
+    ],
+    [
+     0.041666666666666664,
+     2.7777777777777777
+    ],
+    [
+     0.04411764705882353,
+     2.941176470588235
+    ],
+    [
+     0.05970149253731343,
+     10.44776119402985
+    ],
+    [
+     0.022222222222222223,
+     4.444444444444445
+    ],
+    [
+     0.03225806451612903,
+     11.29032258064516
+    ],
+    [
+     0.029850746268656716,
+     7.462686567164178
+    ],
+    [
+     0.04411764705882353,
+     2.941176470588235
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.03896103896103896,
+     3.896103896103896
+    ],
+    [
+     0.04,
+     2.666666666666667
+    ],
+    [
+     0.02857142857142857,
+     4.285714285714286
+    ],
+    [
+     0.02040816326530612,
+     6.122448979591836
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ]
+   ],
+   "rand0|down": [
+    [
+     0.0,
+     1.3888888888888888
+    ],
+    [
+     0.0,
+     2.4390243902439024
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.03614457831325301,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.02,
+     0.0
+    ],
+    [
+     0.0,
+     5.555555555555555
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.02702702702702703,
+     0.0
+    ],
+    [
+     0.0,
+     2.1739130434782608
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     1.5151515151515151
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ]
+   ],
+   "rand1|up": [
+    [
+     0.017241379310344827,
+     8.620689655172415
+    ],
+    [
+     0.03773584905660377,
+     9.433962264150944
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.028985507246376812,
+     5.797101449275362
+    ],
+    [
+     0.021739130434782608,
+     13.043478260869565
+    ],
+    [
+     0.043478260869565216,
+     4.3478260869565215
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0625,
+     4.6875
+    ],
+    [
+     0.0,
+     3.1746031746031744
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.043478260869565216,
+     8.695652173913043
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.013888888888888888,
+     5.555555555555555
+    ],
+    [
+     0.1875,
+     0.0
+    ],
+    [
+     0.0,
+     8.51063829787234
+    ],
+    [
+     0.03773584905660377,
+     3.7735849056603774
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.02857142857142857,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ]
+   ],
+   "rand1|down": [
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.013157894736842105,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.023255813953488372,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.011363636363636364,
+     0.0
+    ],
+    [
+     0.011363636363636364,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.012195121951219513,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.011764705882352941,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.011363636363636364,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ]
+   ]
+  }
+ }
+}

@@ -1,0 +1,354 @@
+<meta charset="utf-8">
+<title>Llama Feature Atlas</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: an atlas sheet — findings strip, then the map with a pinned-feature
+   panel beside it (stacked on phones), then the axis ledger. */
+:root {
+  --bg: #f4f6f8;
+  --surface: #ffffff;
+  --fg: #18202c;
+  --muted: #5c6878;
+  --rule: #d8dee6;
+  --accent: #0e7c86;
+  --neg: #3460c8;
+  --pos: #d4602a;
+  --dot: #8a96a6;
+  --font-display: "Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+  --font-body: "IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0f141b; --surface: #161d27; --fg: #e4e9f0; --muted: #93a0b2; --rule: #2a3442;
+    --accent: #3fc1c9; --neg: #6f95ff; --pos: #ff8a4c; --dot: #5f6b7c; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0f141b; --surface: #161d27; --fg: #e4e9f0; --muted: #93a0b2; --rule: #2a3442;
+  --accent: #3fc1c9; --neg: #6f95ff; --pos: #ff8a4c; --dot: #5f6b7c; color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body {
+  background: var(--bg); color: var(--fg); font: 15px/1.55 var(--font-body);
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 28px 48px;
+}
+.wrap { max-width: 1240px; margin: 0 auto; display: grid; gap: 28px; }
+header { display: grid; gap: 8px; }
+.eyebrow { font: 500 12px/1.2 var(--font-mono); letter-spacing: .08em; text-transform: uppercase; color: var(--accent); }
+h1 { font: 700 clamp(28px, 4.2vw, 44px)/1.05 var(--font-display); margin: 0; text-wrap: balance; letter-spacing: -0.01em; }
+.lede { margin: 0; max-width: 68ch; color: var(--muted); }
+.facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; }
+.fact { background: var(--surface); border: 1px solid var(--rule); border-radius: 8px; padding: 14px 16px; display: grid; gap: 4px; min-width: 0; }
+.fact b { font: 600 22px/1.1 var(--font-mono); font-variant-numeric: tabular-nums; }
+.fact span { color: var(--muted); font-size: 13.5px; }
+.controls { display: flex; flex-wrap: wrap; gap: 10px 16px; align-items: end; }
+.field { display: grid; gap: 4px; min-width: 0; }
+.field label { font: 500 11.5px/1 var(--font-mono); letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+.seg { display: inline-flex; border: 1px solid var(--rule); border-radius: 7px; overflow: hidden; background: var(--surface); flex-wrap: wrap; }
+.seg button { font: 500 13.5px var(--font-body); border: 0; background: transparent; color: var(--fg); padding: 7px 12px; cursor: pointer; }
+.seg button[aria-pressed="true"] { background: var(--accent); color: var(--surface); }
+select, input[type="search"] { font: 14px var(--font-body); color: var(--fg); background: var(--surface); border: 1px solid var(--rule); border-radius: 7px; padding: 7px 10px; max-width: 100%; }
+input[type="search"] { width: 240px; }
+button:focus-visible, select:focus-visible, input:focus-visible, canvas:focus-visible, a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.stage { display: grid; grid-template-columns: minmax(0, 1fr) 320px; gap: 16px; align-items: start; }
+@media (max-width: 900px) { .stage { grid-template-columns: minmax(0, 1fr); } }
+.mapbox { position: relative; background: var(--surface); border: 1px solid var(--rule); border-radius: 8px; overflow: hidden; }
+canvas { display: block; width: 100%; height: min(68vh, 680px); min-height: 360px; touch-action: none; cursor: crosshair; }
+.legend { position: absolute; left: 12px; bottom: 10px; display: flex; gap: 8px; align-items: center; font: 12px var(--font-mono); color: var(--muted); background: color-mix(in srgb, var(--surface) 85%, transparent); padding: 4px 8px; border-radius: 6px; }
+.ramp { width: 120px; height: 8px; border-radius: 4px; }
+.hint { position: absolute; right: 12px; bottom: 10px; font: 12px var(--font-mono); color: var(--muted); }
+.tip { position: absolute; pointer-events: none; background: var(--fg); color: var(--bg); font-size: 13px; padding: 6px 9px; border-radius: 6px; max-width: 280px; transform: translate(12px, 12px); }
+aside { background: var(--surface); border: 1px solid var(--rule); border-radius: 8px; padding: 16px; display: grid; gap: 12px; min-width: 0; }
+aside h2 { font: 600 13px/1 var(--font-mono); letter-spacing: .06em; text-transform: uppercase; color: var(--muted); margin: 0; }
+.fid { font: 600 20px/1.2 var(--font-mono); }
+.flabel { margin: 0; font-size: 15px; }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.chip { font: 12.5px var(--font-mono); border: 1px solid var(--rule); border-radius: 999px; padding: 2px 9px; font-variant-numeric: tabular-nums; }
+.chip.pos { border-color: var(--pos); color: var(--pos); }
+.chip.neg { border-color: var(--neg); color: var(--neg); }
+.chip.dial { background: var(--accent); color: var(--surface); border-color: var(--accent); }
+.sub { font-size: 13px; color: var(--muted); margin: 0; }
+aside a { color: var(--accent); }
+.dials { display: grid; gap: 4px; }
+.dials button { text-align: left; font: 13.5px var(--font-body); background: transparent; color: var(--fg); border: 0; border-bottom: 1px solid var(--rule); padding: 6px 0; cursor: pointer; display: flex; justify-content: space-between; gap: 8px; }
+.dials button span:last-child { font-family: var(--font-mono); color: var(--muted); }
+section h2 { font: 700 22px/1.2 var(--font-display); margin: 0 0 6px; }
+section > p { margin: 0 0 14px; color: var(--muted); max-width: 72ch; }
+.tablewrap { overflow-x: auto; background: var(--surface); border: 1px solid var(--rule); border-radius: 8px; }
+table { border-collapse: collapse; width: 100%; font-size: 14px; }
+th, td { text-align: left; padding: 7px 12px; border-bottom: 1px solid var(--rule); white-space: nowrap; }
+th { font: 500 11.5px var(--font-mono); letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+td.num { font-family: var(--font-mono); font-variant-numeric: tabular-nums; }
+.bar { display: inline-block; height: 8px; border-radius: 2px; background: var(--accent); vertical-align: middle; margin-right: 8px; }
+.dim { color: var(--muted); }
+tr[data-axis] { cursor: pointer; }
+tr[data-axis]:hover td { background: color-mix(in srgb, var(--accent) 8%, transparent); }
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+
+<div class="wrap">
+  <header>
+    <div class="eyebrow">Llama-3.1-8B · layer 15 · Llama Scope 32k</div>
+    <h1>Llama Feature Atlas</h1>
+    <p class="lede">Every dot is one of the model's own features, placed by the direction it writes into the residual stream. Colour it by what its Neuronpedia label <em>says</em> (read by the humanizer's judge v2) or by what it <em>does</em> on the 5,578 concepts of the embtoconcept table.</p>
+  </header>
+
+  <div class="facts" id="facts"></div>
+
+  <div class="controls">
+    <div class="field">
+      <label for="mode">Colour by</label>
+      <div class="seg" id="mode" role="group" aria-label="Colour by">
+        <button type="button" data-mode="label" aria-pressed="true">Label says</button>
+        <button type="button" data-mode="beh" aria-pressed="false">Behaviour</button>
+        <button type="button" data-mode="region" aria-pressed="false">Region</button>
+        <button type="button" data-mode="dials" aria-pressed="false">Native dials</button>
+      </div>
+    </div>
+    <div class="field">
+      <label for="axis">Axis</label>
+      <select id="axis"></select>
+    </div>
+    <div class="field">
+      <label for="q">Search labels</label>
+      <input type="search" id="q" placeholder="e.g. religion, steel, fear" autocomplete="off">
+    </div>
+    <p class="sub" id="qcount" aria-live="polite"></p>
+  </div>
+
+  <div class="stage">
+    <div class="mapbox">
+      <canvas id="map" tabindex="0" aria-label="Scatter map of 32,768 model features"></canvas>
+      <div class="legend" id="legend"></div>
+      <div class="hint">scroll to zoom · drag to pan · click to pin</div>
+      <div class="tip" id="tip" hidden></div>
+    </div>
+    <aside>
+      <h2>Pinned feature</h2>
+      <div id="detail"><p class="sub">Click a dot to read its label, where it leans on the axes and what it does on the concepts.</p></div>
+      <h2>Native dials</h2>
+      <p class="sub">One feature that tracks the axis-specific part of a human axis over held-out concepts (sae_concepts).</p>
+      <div class="dials" id="dials"></div>
+      <button type="button" id="reset" class="chip" style="justify-self:start;cursor:pointer;background:transparent;color:var(--fg)">Reset view</button>
+    </aside>
+  </div>
+
+  <section>
+    <h2>Do labels and behaviour agree?</h2>
+    <p>For each axis: Spearman ρ between what the label says (judge v2, z-score) and what the feature does on concepts (Pearson r), across the features that have a label and fire on concepts. The judge reads only the axes marked readable (held-out R² ≥ 0.3); the others are listed in grey. Click a row to colour the map by that axis.</p>
+    <div class="tablewrap"><table id="agree"></table></div>
+  </section>
+</div>
+
+<script id="data" type="application/json">/*__DATA__*/</script>
+<script>
+(function () {
+  const D = JSON.parse(document.getElementById("data").textContent);
+  const b64 = (s, T) => { const bin = atob(s); const u = new Uint8Array(bin.length); for (let i = 0; i < bin.length; i++) u[i] = bin.charCodeAt(i); return new T(u.buffer); };
+  const N = D.n, XY = b64(D.xy, Float32Array), REG = b64(D.regions, Uint8Array);
+  const LZ = b64(D.label_z, Int8Array), RI = D.readable_idx, NR = RI.length;
+  const ALIVE = b64(D.alive_idx, Uint16Array), BR = b64(D.beh_r, Int8Array);
+  const LAB = D.labels, AX = D.axes, DIALS = D.dials;
+  const aliveRow = new Int32Array(N).fill(-1); ALIVE.forEach((f, k) => aliveRow[f] = k);
+  const labZ = (f, ri) => { const v = LZ[f * NR + ri]; return v === -128 ? NaN : v / 20; };
+  const behR = (f, a) => { const k = aliveRow[f]; return k < 0 ? NaN : BR[k * 104 + a] / 250; };
+
+  // ---- state
+  let mode = "label", axis = RI.indexOf(AX.findIndex(a => a.en === "fear")); if (axis < 0) axis = 0;
+  let behAxis = AX.findIndex(a => a.en === "religiosity"); if (behAxis < 0) behAxis = 0;
+  let query = "", matches = null, pinned = -1;
+  const st = (() => { try { return JSON.parse(localStorage.getItem("atlas") || "{}"); } catch (e) { return {}; } })();
+  if (st.mode) mode = st.mode; if (Number.isInteger(st.axis)) axis = st.axis; if (Number.isInteger(st.behAxis)) behAxis = st.behAxis;
+  const save = () => { try { localStorage.setItem("atlas", JSON.stringify({ mode, axis, behAxis })); } catch (e) {} };
+
+  // ---- facts
+  const f = D.facts;
+  document.getElementById("facts").innerHTML = [
+    [f.n_labelled.toLocaleString("en"), "features with a Neuronpedia label"],
+    [f.n_alive.toLocaleString("en"), "fire on ≥ 1% of the 5,578 concepts"],
+    ["ρ " + f.rho_readable.toFixed(2), "label ↔ behaviour agreement on the judge's 24 readable axes"],
+    [String(Object.keys(DIALS).length), "native dials: one feature per axis-specific part"],
+    [f.n_unnamed.toLocaleString("en"), "live features no readable axis can name"],
+  ].map(([b, s]) => `<div class="fact"><b>${b}</b><span>${s}</span></div>`).join("");
+
+  // ---- colours from tokens
+  let C = {};
+  const css = n => getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+  const rgb = hex => { const h = hex.replace("#", ""); return [0, 2, 4].map(i => parseInt(h.slice(i, i + 2), 16)); };
+  function readColors() { C = { neg: rgb(css("--neg")), pos: rgb(css("--pos")), dot: rgb(css("--dot")), surf: rgb(css("--surface")), acc: rgb(css("--accent")), fg: rgb(css("--fg")) }; }
+  const mix = (a, b, t) => a.map((v, i) => Math.round(v + (b[i] - v) * t));
+  const str = (c, a = 1) => `rgba(${c[0]},${c[1]},${c[2]},${a})`;
+  function diverge(v, scale) {
+    if (!isFinite(v)) return null;
+    const t = Math.max(-1, Math.min(1, v / scale));
+    return t >= 0 ? mix(C.dot, C.pos, t) : mix(C.dot, C.neg, -t);
+  }
+  const regionColor = g => { const h = (g * 137.508) % 360; return `hsl(${h} 55% ${document.documentElement.dataset.theme === "dark" || matchMedia("(prefers-color-scheme: dark)").matches && document.documentElement.dataset.theme !== "light" ? 62 : 46}%)`; };
+
+  // ---- axis select
+  const sel = document.getElementById("axis");
+  function fillAxis() {
+    if (mode === "label") sel.innerHTML = RI.map((a, k) => `<option value="${k}">${AX[a].en}</option>`).join(""), sel.value = axis, sel.disabled = false;
+    else if (mode === "beh") sel.innerHTML = AX.map((a, k) => `<option value="${k}">${a.en}${a.readable ? "" : " ·"}</option>`).join(""), sel.value = behAxis, sel.disabled = false;
+    else sel.innerHTML = `<option>—</option>`, sel.disabled = true;
+  }
+  sel.addEventListener("change", () => { if (mode === "label") axis = +sel.value; else behAxis = +sel.value; save(); draw(); legend(); });
+  document.querySelectorAll("#mode button").forEach(b => b.addEventListener("click", () => setMode(b.dataset.mode)));
+  function setMode(m) { mode = m; document.querySelectorAll("#mode button").forEach(x => x.setAttribute("aria-pressed", x.dataset.mode === m)); fillAxis(); save(); draw(); legend(); }
+
+  function legend() {
+    const L = document.getElementById("legend");
+    if (mode === "label") L.innerHTML = `label z on <b>${AX[RI[axis]].en}</b> <span>−3</span><span class="ramp" style="background:linear-gradient(90deg,${str(C.neg)},${str(C.dot)},${str(C.pos)})"></span><span>+3</span>`;
+    else if (mode === "beh") L.innerHTML = `r over concepts, <b>${AX[behAxis].en}</b> (unique part) <span>−.3</span><span class="ramp" style="background:linear-gradient(90deg,${str(C.neg)},${str(C.dot)},${str(C.pos)})"></span><span>+.3</span>`;
+    else if (mode === "region") L.innerHTML = `${D.n_regions} k-means regions of decoder directions`;
+    else L.innerHTML = `the ${Object.keys(DIALS).length} native dials, labelled`;
+  }
+
+  // ---- canvas, view transform
+  const cv = document.getElementById("map"), ctx = cv.getContext("2d");
+  let W = 0, H = 0, dpr = 1, view = { s: 1, x: 0, y: 0 };
+  let minX = Infinity, maxX = -Infinity, minY = Infinity, maxY = -Infinity;
+  for (let i = 0; i < N; i++) { const x = XY[2 * i], y = XY[2 * i + 1]; if (x < minX) minX = x; if (x > maxX) maxX = x; if (y < minY) minY = y; if (y > maxY) maxY = y; }
+  const base = () => { const pad = 20, s = Math.min((W - 2 * pad) / (maxX - minX), (H - 2 * pad) / (maxY - minY)); return { s, ox: (W - s * (maxX - minX)) / 2 - s * minX, oy: (H - s * (maxY - minY)) / 2 - s * minY }; };
+  const toScreen = (i, B) => [(XY[2 * i] * B.s + B.ox) * view.s + view.x, (XY[2 * i + 1] * B.s + B.oy) * view.s + view.y];
+  function resize() { dpr = window.devicePixelRatio || 1; const r = cv.getBoundingClientRect(); W = r.width; H = r.height; cv.width = W * dpr; cv.height = H * dpr; ctx.setTransform(dpr, 0, 0, dpr, 0, 0); draw(); }
+
+  function colorOf(i) {
+    if (mode === "label") return diverge(labZ(i, axis), 3);
+    if (mode === "beh") return diverge(behR(i, behAxis), 0.3);
+    return null;
+  }
+  function draw() {
+    if (!W) return;
+    ctx.fillStyle = str(C.surf); ctx.fillRect(0, 0, W, H);
+    const B = base(), r = Math.max(1.1, Math.min(3.2, 1.2 * Math.sqrt(view.s)));
+    const strong = [];
+    for (let i = 0; i < N; i++) {
+      const [x, y] = toScreen(i, B); if (x < -4 || y < -4 || x > W + 4 || y > H + 4) continue;
+      let c;
+      if (mode === "region") { ctx.fillStyle = regionColor(REG[i]); ctx.globalAlpha = 0.75; ctx.fillRect(x - r / 2, y - r / 2, r, r); continue; }
+      if (mode === "dials") { ctx.fillStyle = str(C.dot, 0.35); ctx.fillRect(x - r / 2, y - r / 2, r, r); continue; }
+      c = colorOf(i);
+      if (!c) { ctx.fillStyle = str(C.dot, 0.18); ctx.fillRect(x - r / 2, y - r / 2, r, r); continue; }
+      const v = mode === "label" ? Math.abs(labZ(i, axis)) / 3 : Math.abs(behR(i, behAxis)) / 0.3;
+      if (v > 0.5) { strong.push([x, y, c, v]); continue; }
+      ctx.fillStyle = str(c, 0.25 + 0.5 * v); ctx.fillRect(x - r / 2, y - r / 2, r, r);
+    }
+    ctx.globalAlpha = 1;
+    strong.sort((a, b) => a[3] - b[3]).forEach(([x, y, c, v]) => { ctx.fillStyle = str(c, Math.min(1, 0.6 + 0.4 * v)); ctx.beginPath(); ctx.arc(x, y, r * 1.2, 0, 7); ctx.fill(); });
+    if (matches) {
+      ctx.strokeStyle = str(C.acc); ctx.lineWidth = 1.2;
+      matches.forEach(i => { const [x, y] = toScreen(i, B); ctx.beginPath(); ctx.arc(x, y, r * 1.8 + 1, 0, 7); ctx.stroke(); });
+    }
+    if (mode === "dials") {
+      ctx.font = "500 12px " + css("--font-body");
+      Object.entries(DIALS).forEach(([fi, dim]) => {
+        const [x, y] = toScreen(+fi, B); ctx.fillStyle = str(C.acc); ctx.beginPath(); ctx.arc(x, y, 5, 0, 7); ctx.fill();
+        ctx.fillStyle = str(C.fg); ctx.fillText(D.axis_en[dim] || dim, x + 8, y + 4);
+      });
+    }
+    if (pinned >= 0) { const [x, y] = toScreen(pinned, B); ctx.strokeStyle = str(C.fg); ctx.lineWidth = 2; ctx.beginPath(); ctx.arc(x, y, 7, 0, 7); ctx.stroke(); }
+  }
+
+  // ---- hit testing (screen-space grid rebuilt lazily)
+  function nearest(mx, my) {
+    const B = base(); let best = -1, bd = 64;
+    for (let i = 0; i < N; i++) { const [x, y] = toScreen(i, B); const d = (x - mx) ** 2 + (y - my) ** 2; if (d < bd) { bd = d; best = i; } }
+    return best;
+  }
+  const tip = document.getElementById("tip");
+  let drag = null, moved = false, hoverRAF = 0;
+  cv.addEventListener("pointerdown", e => { drag = { x: e.clientX, y: e.clientY, vx: view.x, vy: view.y }; moved = false; cv.setPointerCapture(e.pointerId); });
+  cv.addEventListener("pointermove", e => {
+    const r = cv.getBoundingClientRect(), mx = e.clientX - r.left, my = e.clientY - r.top;
+    if (drag) { const dx = e.clientX - drag.x, dy = e.clientY - drag.y; if (Math.abs(dx) + Math.abs(dy) > 3) moved = true; view.x = drag.vx + dx; view.y = drag.vy + dy; draw(); return; }
+    cancelAnimationFrame(hoverRAF);
+    hoverRAF = requestAnimationFrame(() => {
+      const i = nearest(mx, my);
+      if (i < 0) { tip.hidden = true; return; }
+      tip.hidden = false; tip.style.left = mx + "px"; tip.style.top = my + "px";
+      tip.textContent = `#${i} ${LAB[i] || "(no label)"}`;
+    });
+  });
+  cv.addEventListener("pointerup", e => {
+    if (!moved) { const r = cv.getBoundingClientRect(); const i = nearest(e.clientX - r.left, e.clientY - r.top); if (i >= 0) pin(i); }
+    drag = null;
+  });
+  cv.addEventListener("pointerleave", () => { tip.hidden = true; });
+  cv.addEventListener("wheel", e => {
+    e.preventDefault(); const r = cv.getBoundingClientRect(), mx = e.clientX - r.left, my = e.clientY - r.top;
+    const k = Math.exp(-e.deltaY * 0.0015), ns = Math.max(0.6, Math.min(40, view.s * k)), kk = ns / view.s;
+    view.x = mx - (mx - view.x) * kk; view.y = my - (my - view.y) * kk; view.s = ns; draw();
+  }, { passive: false });
+  document.getElementById("reset").addEventListener("click", () => { view = { s: 1, x: 0, y: 0 }; draw(); });
+
+  function flyTo(i) {
+    const B = base(); view.s = 8;
+    const x = (XY[2 * i] * B.s + B.ox), y = (XY[2 * i + 1] * B.s + B.oy);
+    view.x = W / 2 - x * view.s; view.y = H / 2 - y * view.s; pin(i);
+  }
+
+  // ---- detail panel
+  const esc = s => String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+  function pin(i) {
+    pinned = i; draw();
+    const lz = RI.map((a, k) => [a, labZ(i, k)]).filter(([, z]) => isFinite(z)).sort((a, b) => b[1] - a[1]).slice(0, 4);
+    const k = aliveRow[i];
+    let beh = "";
+    if (k >= 0) {
+      const rs = AX.map((a, j) => [j, BR[k * 104 + j] / 250]).sort((a, b) => Math.abs(b[1]) - Math.abs(a[1])).slice(0, 4);
+      beh = `<p class="sub">Does, over concepts (unique part of each axis):</p><div class="chips">${rs.map(([j, r]) => `<span class="chip ${r >= 0 ? "pos" : "neg"}">${esc(AX[j].en)} ${r >= 0 ? "+" : ""}${r.toFixed(2)}</span>`).join("")}</div>`;
+    } else beh = `<p class="sub">Fires on fewer than 1% of the concepts, so it has no behaviour reading.</p>`;
+    const dial = DIALS[i] ? `<span class="chip dial">native dial · ${esc(D.axis_en[DIALS[i]] || DIALS[i])}</span>` : "";
+    document.getElementById("detail").innerHTML = `
+      <div class="fid">#${i}</div>
+      <p class="flabel">${esc(LAB[i] || "(no label in the export)")}</p>
+      <div class="chips">${dial}<span class="chip">region ${REG[i]}</span></div>
+      ${lz.length ? `<p class="sub">Label leans to (judge v2, z):</p><div class="chips">${lz.map(([a, z]) => `<span class="chip ${z >= 0 ? "pos" : "neg"}">${esc(AX[a].en)} ${z >= 0 ? "+" : ""}${z.toFixed(1)}</span>`).join("")}</div>` : ""}
+      ${beh}
+      <a href="https://www.neuronpedia.org/llama3.1-8b/15-llamascope-res-32k/${i}" target="_blank" rel="noopener">Open on Neuronpedia</a>`;
+  }
+
+  // ---- dials list
+  document.getElementById("dials").innerHTML = Object.entries(DIALS)
+    .sort((a, b) => (D.axis_en[a[1]] || a[1]).localeCompare(D.axis_en[b[1]] || b[1]))
+    .map(([fi, dim]) => `<button type="button" data-f="${fi}"><span>${esc(D.axis_en[dim] || dim)}</span><span>#${fi}</span></button>`).join("");
+  document.querySelectorAll("#dials button").forEach(b => b.addEventListener("click", () => flyTo(+b.dataset.f)));
+
+  // ---- search
+  const q = document.getElementById("q"), qc = document.getElementById("qcount");
+  let qt = 0;
+  q.addEventListener("input", () => {
+    clearTimeout(qt); qt = setTimeout(() => {
+      query = q.value.trim().toLowerCase();
+      if (query.length < 2) { matches = null; qc.textContent = ""; }
+      else { matches = []; for (let i = 0; i < N; i++) if (LAB[i] && LAB[i].toLowerCase().includes(query)) matches.push(i); qc.textContent = `${matches.length.toLocaleString("en")} features match`; }
+      draw();
+    }, 180);
+  });
+
+  // ---- agreement table
+  const ag = D.agree.slice().sort((a, b) => b.rho - a.rho);
+  const maxRho = Math.max(...ag.map(a => Math.abs(a.rho)));
+  document.getElementById("agree").innerHTML = `<thead><tr><th>Axis</th><th>Judge R²</th><th>ρ label ↔ behaviour</th><th>Top-label r</th><th>Features by label</th><th>Features by behaviour</th></tr></thead><tbody>` +
+    ag.map(a => { const j = AX.findIndex(x => x.id === a.dim); return `<tr data-axis="${j}" class="${a.readable ? "" : "dim"}"><td>${esc(a.en)}${a.readable ? "" : " ·"}</td><td class="num">${a.r2.toFixed(2)}</td><td class="num"><span class="bar" style="width:${Math.max(0, a.rho) / maxRho * 70}px"></span>${a.rho >= 0 ? "+" : ""}${a.rho.toFixed(2)}</td><td class="num">${a.toplab_r >= 0 ? "+" : ""}${a.toplab_r.toFixed(2)}</td><td class="num">${D.cover_lab[j]}</td><td class="num">${D.cover_beh[j]}</td></tr>`; }).join("") + "</tbody>";
+  document.querySelectorAll("tr[data-axis]").forEach(tr => tr.addEventListener("click", () => {
+    const j = +tr.dataset.axis, ri = RI.indexOf(j);
+    if (ri >= 0) { axis = ri; setMode("label"); } else { behAxis = j; setMode("beh"); }
+    document.querySelector(".controls").scrollIntoView({ behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth" });
+  }));
+
+  // ---- boot
+  readColors();
+  document.querySelectorAll("#mode button").forEach(x => x.setAttribute("aria-pressed", x.dataset.mode === mode));
+  fillAxis(); legend();
+  new ResizeObserver(resize).observe(cv);
+  matchMedia("(prefers-color-scheme: dark)").addEventListener("change", () => { readColors(); legend(); draw(); });
+  new MutationObserver(() => { readColors(); legend(); draw(); }).observe(document.documentElement, { attributes: true, attributeFilter: ["data-theme"] });
+})();
+</script>
