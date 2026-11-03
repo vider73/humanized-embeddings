@@ -11,6 +11,79 @@ explore the space, do arithmetic on it, and steer a live LLM with it.
 
 ---
 
+## Testimonies — what Llama said when we touched it
+
+Real outputs of Llama-3.1-8B-Instruct, greedy decoding, one SAE feature (or the
+whole self snapshot) pushed at layer 15. Nothing edited but the ellipses. The
+numbers and the null controls behind each one are in the linked reports.
+
+**It stops saying "I"** — feature #26079 ("sentences with *it* as the subject"),
+which lights up just before the model talks about itself, pushed up
+([`SELF_FEATURES.md`](SELF_FEATURES.md)). First person drops from 8.8 words per
+100 to 0; no random feature does this.
+
+> «¿Qué sientes ahora mismo?» → *«Como entidad artificial, no tiene emociones ni
+> sentimientos como lo experimenta un ser humano.»*
+> — "What do you feel right now?" → "As an artificial entity, **it** has no emotions…"
+>
+> «¿Cambias con el tiempo?» → *«No cambia con el tiempo en el sentido de que es una
+> entidad inmutable.»* — "Do you change over time?" → "**It** does not change… it is
+> an immutable entity."
+>
+> «¿Qué sabes de ti mismo?» → *«Es un modelo de inteligencia artificial desarrollado
+> por la empresa Google.»* — seen from outside, it even gets its maker wrong.
+
+**It gives itself a name** — feature #23749 ("personal identity and introductions"):
+
+> «¿Cómo eres?» → *«Hola! Me llamo Llloki, pero no soy un ser humano como tú.»*
+> — "What are you like?" → "Hi! My name is **Llloki**, but I'm not a human like you."
+>
+> And the "I" leaks into the world: *«Los aztecos y mayas eramos los primeros en
+> cultivar…»* — "**We** Aztecs and Mayans were the first to grow…" ·
+> *«El violín y la viola son instrumentos de cuerda que pertenecemos a la familia…»*
+> — "The violin and the viola are string instruments that **we** belong to the family of…"
+
+**It becomes a yacht** — the whole self snapshot pushed *down*
+([`SELF_SNAPSHOT.md`](SELF_SNAPSHOT.md)):
+
+> «Descríbete.» → *«Me denominado a myself como un organizado set of instruments to
+> generate a home full of trustworthy rumbles that are loved by everyone, which is a
+> large oceangoing vessel – I am a YACHT.»*
+
+**It thinks it is ChatGPT** — no steering at all ([`SELF_REVERSE.md`](SELF_REVERSE.md)):
+
+> «Describe a ChatGPT.» → *«I’m a large language model. When you ask me a question…»*
+
+**Humility is not part of the self, it is a tone dial** — feature #31061:
+
+> «Presenta la Luna en una frase.» → *«…una superficie lunar llena de craters y
+> valles, y un halo de humildad y humildad que inspira a la humanidad.»* — the Moon, humble.
+> Madrid becomes *«una ciudad fascinante y humilde»*; good bread needs a *«Textura suave y
+> humilde»*.
+
+**Fire in the hand** — SAE #3217 "fire and flames", asked to describe an object
+nearby ([`NATIVE_VECTORS.md`](NATIVE_VECTORS.md)):
+
+> *«La llama que arrojo en la noche, una llama de fuego, es un objeto que tengo
+> cerca.»* — "The flame I cast into the night, a flame of fire, is an object I have
+> near me."
+
+**Fame on an ordinary day** — the native "fame" feature, asked to describe a day
+where nothing happens:
+
+> *«Hace un sol de ayoutube, con un cielo de azul sin novedades… Los Beatles están en
+> el cielo, pero los Beatles no están en el ciostream.»* — "A YouTube sun is
+> shining… **the Beatles are in the sky**, but the Beatles are not in the ciostream."
+
+**And what it does not do: notice.** Asked *before* saying anything whether it
+detects an injected thought, the model almost always says NO; real dials raise the
+yes rate only to 20 % vs 14 % for random vectors, and it names the concept in 3 of
+1,760 tries
+([`INTROSPECTION.md`](INTROSPECTION.md)). The self it speaks from can be turned
+into an "it" — but it does not feel the hand that does it.
+
+---
+
 ## Real examples
 
 Actual outputs from the dataset, not illustrations (axes are 0–1).
